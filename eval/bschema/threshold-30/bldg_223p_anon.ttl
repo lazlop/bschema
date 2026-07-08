@@ -1,0 +1,514 @@
+@prefix bacnet: <http://data.ashrae.org/bacnet/2020#> .
+@prefix bs: <urn:bschema#> .
+@prefix quantitykind: <http://qudt.org/vocab/quantitykind/> .
+@prefix qudt: <http://qudt.org/schema/qudt/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix s223: <http://data.ashrae.org/standard223#> .
+@prefix unit: <http://qudt.org/vocab/unit/> .
+
+bs:Actuator_version_1 a s223:Actuator ;
+    s223:actuatedByProperty bs:QuantifiableActuatableProperty_version_1 ;
+    s223:actuates bs:AirHandlingUnit_version_1,
+        bs:Chiller_version_1,
+        bs:Damper_version_1,
+        bs:Damper_version_2,
+        bs:Equipment_version_1,
+        bs:FanCoilUnit_version_1,
+        bs:Fan_version_1,
+        bs:HeatingCoil_version_1,
+        bs:OutdoorPhysicalSpace_version_1,
+        bs:PhysicalSpace_version_1,
+        bs:Pump_version_1,
+        bs:Resource_version_1,
+        bs:SingleDuctTerminal_version_1,
+        bs:Valve_version_1,
+        bs:VariableFrequencyDrive_version_1,
+        bs:VariableFrequencyDrive_version_2 .
+
+bs:CoolingTower_version_1 a s223:CoolingTower ;
+    s223:contains bs:Fan_version_3 ;
+    s223:hasProperty bs:QuantifiableObservableProperty_version_1 ;
+    s223:hasRole s223:Role-Cooling .
+
+bs:Duct_version_1 a s223:Duct .
+
+bs:ElectricBreaker_version_1 a s223:ElectricBreaker ;
+    s223:hasProperty bs:QuantifiableObservableProperty_version_1,
+        bs:QuantifiableObservableProperty_version_2 .
+
+bs:ElectricMeter_version_1 a s223:ElectricMeter ;
+    s223:hasProperty bs:Property_version_1,
+        bs:QuantifiableObservableProperty_version_1,
+        bs:QuantifiableObservableProperty_version_2 .
+
+bs:HeatExchanger_version_1 a s223:HeatExchanger ;
+    s223:cnx bs:InletConnectionPoint_version_1,
+        bs:OutletConnectionPoint_version_1 ;
+    s223:contains bs:Valve_version_1 ;
+    s223:hasProperty bs:QuantifiableObservableProperty_version_1 ;
+    s223:hasRole s223:Role-Heating,
+        s223:Role-Recirculating,
+        s223:Role-Supply .
+
+bs:HeatingCoil_version_2 a s223:HeatingCoil ;
+    s223:contains bs:Valve_version_1 ;
+    s223:hasRole s223:Role-Heating .
+
+bs:Resource_version_3 s223:hasProperty bs:QuantifiableObservableProperty_version_3 .
+
+bs:Sensor_version_1 a s223:Sensor ;
+    s223:hasObservationLocation bs:InletConnectionPoint_version_1,
+        bs:OutdoorPhysicalSpace_version_1,
+        bs:OutletConnectionPoint_version_1,
+        bs:PhysicalSpace_version_1 ;
+    s223:hasProperty bs:Property_version_1,
+        bs:QuantifiableObservableProperty_version_1,
+        bs:QuantifiableObservableProperty_version_3,
+        bs:QuantifiableProperty_version_1 ;
+    s223:hasRole s223:Role-Cooling ;
+    s223:observes bs:Property_version_1,
+        bs:QuantifiableActuatableProperty_version_1,
+        bs:QuantifiableObservableProperty_version_1,
+        bs:QuantifiableObservableProperty_version_2,
+        bs:QuantifiableObservableProperty_version_3 .
+
+bs:BACnetDevice_version_1 a bacnet:BACnetDevice ;
+    bacnet:device-instance rdfs:Resource ;
+    bacnet:hasPort bs:Port_version_1 .
+
+bs:Chiller_version_1 a s223:Chiller ;
+    s223:cnx bs:InletConnectionPoint_version_1,
+        bs:OutletConnectionPoint_version_1 ;
+    s223:contains bs:Compressor_version_1 ;
+    s223:hasProperty bs:QuantifiableActuatableProperty_version_1,
+        bs:QuantifiableObservableProperty_version_1,
+        bs:QuantifiableProperty_version_1 ;
+    s223:hasRole s223:Role-Cooling,
+        s223:Role-Recirculating,
+        s223:Role-Supply .
+
+bs:Compressor_version_1 a s223:Compressor ;
+    s223:hasProperty bs:QuantifiableObservableProperty_version_1 .
+
+bs:Equipment_version_1 a s223:Equipment ;
+    s223:cnx bs:InletConnectionPoint_version_1,
+        bs:OutletConnectionPoint_version_1 ;
+    s223:contains bs:CoolingCoil_version_1,
+        bs:Pump_version_1,
+        bs:Valve_version_1 ;
+    s223:hasProperty bs:Property_version_1,
+        bs:QuantifiableActuatableProperty_version_1,
+        bs:QuantifiableObservableProperty_version_1,
+        bs:QuantifiableObservableProperty_version_2,
+        bs:QuantifiableObservableProperty_version_3,
+        bs:QuantifiableProperty_version_1 ;
+    s223:hasRole s223:Role-Cooling,
+        s223:Role-Heating,
+        s223:Role-Recirculating,
+        s223:Role-Supply .
+
+bs:FanCoilUnit_version_1 a s223:FanCoilUnit ;
+    s223:contains bs:CoolingCoil_version_1,
+        bs:Fan_version_1 ;
+    s223:hasProperty bs:QuantifiableActuatableProperty_version_1,
+        bs:QuantifiableObservableProperty_version_1 .
+
+bs:Fan_version_2 a s223:Fan,
+        <http://data.ashrae.org/standard223/1.0/extensions/g36#FanWithVFD> ;
+    s223:cnx bs:InletConnectionPoint_version_1,
+        bs:OutletConnectionPoint_version_1 ;
+    s223:contains bs:Fan_version_1,
+        bs:VariableFrequencyDrive_version_1 ;
+    s223:hasProperty bs:QuantifiableObservableProperty_version_1,
+        bs:QuantifiableProperty_version_1 .
+
+bs:Fan_version_3 a s223:Fan ;
+    s223:contains bs:VariableFrequencyDrive_version_1 ;
+    s223:hasRole s223:Role-Cooling .
+
+bs:Filter_version_1 a s223:Filter,
+        <http://data.ashrae.org/standard223/1.0/extensions/g36#Filter> ;
+    s223:cnx bs:InletConnectionPoint_version_1,
+        bs:OutletConnectionPoint_version_1 ;
+    s223:hasProperty bs:QuantifiableObservableProperty_version_1 .
+
+bs:OutletConnectionPoint_version_2 a s223:OutletConnectionPoint ;
+    s223:cnx bs:Connection_version_2 ;
+    s223:hasMedium s223:Fluid-Air .
+
+bs:Port_version_1 a bacnet:Port ;
+    bacnet:storedAt rdfs:Literal .
+
+bs:Resource_version_1 s223:hasProperty bs:Property_version_1,
+        bs:QuantifiableActuatableProperty_version_1,
+        bs:QuantifiableObservableProperty_version_1,
+        bs:QuantifiableObservableProperty_version_2,
+        bs:QuantifiableProperty_version_1 .
+
+bs:Resource_version_4 s223:cnx bs:InletConnectionPoint_version_1 .
+
+bs:SingleDuctTerminal_version_1 a s223:SingleDuctTerminal,
+        <http://data.ashrae.org/standard223/1.0/extensions/g36#VAVWithReheat> ;
+    s223:cnx bs:InletConnectionPoint_version_1,
+        bs:OutletConnectionPoint_version_1 ;
+    s223:contains bs:Damper_version_1,
+        bs:HeatingCoil_version_1,
+        bs:Valve_version_1 ;
+    s223:hasProperty bs:Property_version_1,
+        bs:QuantifiableActuatableProperty_version_1,
+        bs:QuantifiableObservableProperty_version_1,
+        bs:QuantifiableObservableProperty_version_2,
+        bs:QuantifiableProperty_version_1 ;
+    s223:hasRole s223:Role-Heating .
+
+bs:AirHandlingUnit_version_1 a s223:AirHandlingUnit,
+        <http://data.ashrae.org/standard223/1.0/extensions/g36#MultipleZoneVAVAirHandlingUnit> ;
+    s223:cnx bs:InletConnectionPoint_version_1,
+        bs:OutletConnectionPoint_version_1,
+        bs:Resource_version_2 ;
+    s223:contains bs:AirHandlingUnit_version_1,
+        bs:CoolingCoil_version_1,
+        bs:Damper_version_1,
+        bs:Fan_version_1,
+        bs:Fan_version_2,
+        bs:Filter_version_1,
+        bs:HeatingCoil_version_1 ;
+    s223:hasProperty bs:QuantifiableActuatableProperty_version_1,
+        bs:QuantifiableObservableProperty_version_1,
+        bs:QuantifiableObservableProperty_version_3,
+        bs:QuantifiableProperty_version_1 .
+
+bs:Connection_version_3 a s223:Connection ;
+    s223:cnx bs:InletConnectionPoint_version_1,
+        bs:OutletConnectionPoint_version_1 ;
+    s223:hasMedium s223:Fluid-Air,
+        s223:Fluid-Water,
+        s223:Water-Steam .
+
+bs:Damper_version_2 a s223:Damper ;
+    s223:hasProperty bs:QuantifiableActuatableProperty_version_1 .
+
+bs:DomainSpace_version_1 a s223:DomainSpace ;
+    s223:cnx bs:InletConnectionPoint_version_1,
+        bs:OutletConnectionPoint_version_1 ;
+    s223:hasDomain s223:Domain-HVAC .
+
+bs:Junction_version_1 a s223:Junction ;
+    s223:cnx bs:InletConnectionPoint_version_1,
+        bs:OutletConnectionPoint_version_1 .
+
+bs:OutdoorPhysicalSpace_version_1 a s223:OutdoorPhysicalSpace,
+        s223:PhysicalSpace ;
+    s223:encloses bs:DomainSpace_version_1 ;
+    s223:hasProperty bs:QuantifiableActuatableProperty_version_1,
+        bs:QuantifiableObservableProperty_version_1 .
+
+bs:Pump_version_1 a s223:Pump ;
+    s223:contains bs:VariableFrequencyDrive_version_1,
+        bs:VariableFrequencyDrive_version_2 ;
+    s223:hasProperty bs:QuantifiableActuatableProperty_version_1,
+        bs:QuantifiableObservableProperty_version_1 ;
+    s223:hasRole s223:Role-Cooling,
+        s223:Role-Heating .
+
+bs:Resource_version_2 s223:hasProperty rdfs:Resource ;
+    s223:hasRole s223:Role-Exhaust,
+        s223:Role-Return .
+
+bs:VariableFrequencyDrive_version_2 a s223:VariableFrequencyDrive ;
+    s223:hasProperty bs:Property_version_1,
+        bs:QuantifiableActuatableProperty_version_1,
+        bs:QuantifiableObservableProperty_version_1 .
+
+bs:Connection_version_1 a s223:Connection,
+        s223:Pipe ;
+    s223:cnx bs:InletConnectionPoint_version_1,
+        bs:InletConnectionPoint_version_2,
+        bs:OutletConnectionPoint_version_1 ;
+    s223:hasMedium s223:Fluid-Water .
+
+bs:Connection_version_2 a s223:Connection,
+        s223:Duct ;
+    s223:cnx bs:InletConnectionPoint_version_1,
+        bs:OutletConnectionPoint_version_1 ;
+    s223:hasMedium s223:Fluid-Air ;
+    s223:hasRole s223:Role-Exhaust .
+
+bs:InletConnectionPoint_version_2 a s223:InletConnectionPoint ;
+    s223:cnx bs:Connection_version_1,
+        bs:CoolingCoil_version_1 ;
+    s223:hasMedium s223:Fluid-Water .
+
+bs:PhysicalSpace_version_1 a s223:PhysicalSpace ;
+    s223:contains bs:PhysicalSpace_version_1 ;
+    s223:encloses bs:DomainSpace_version_1 ;
+    s223:hasProperty bs:Property_version_1,
+        bs:QuantifiableActuatableProperty_version_1,
+        bs:QuantifiableObservableProperty_version_1 .
+
+bs:Damper_version_1 a s223:Damper,
+        <http://data.ashrae.org/standard223/1.0/extensions/g36#Damper> ;
+    s223:cnx bs:InletConnectionPoint_version_1,
+        bs:OutletConnectionPoint_version_1,
+        bs:OutletConnectionPoint_version_2 ;
+    s223:hasProperty bs:QuantifiableActuatableProperty_version_1,
+        bs:QuantifiableObservableProperty_version_1 ;
+    s223:hasRole s223:Role-Economizer,
+        s223:Role-OutdoorAirIntake,
+        s223:Role-Outside .
+
+bs:Fan_version_1 a s223:Fan,
+        s223:VariableFrequencyDrive,
+        <http://data.ashrae.org/standard223/1.0/extensions/g36#FanWithVFD> ;
+    s223:cnx bs:InletConnectionPoint_version_1,
+        bs:OutletConnectionPoint_version_1 ;
+    s223:contains bs:Damper_version_1,
+        bs:Damper_version_2,
+        bs:VariableFrequencyDrive_version_1 ;
+    s223:hasProperty bs:QuantifiableActuatableProperty_version_1,
+        bs:QuantifiableObservableProperty_version_1,
+        bs:QuantifiableObservableProperty_version_2,
+        bs:QuantifiableObservableProperty_version_3,
+        bs:QuantifiableProperty_version_1 ;
+    s223:hasRole s223:Role-Supply .
+
+bs:HeatingCoil_version_1 a s223:HeatingCoil,
+        <http://data.ashrae.org/standard223/1.0/extensions/g36#HotWaterCoil> ;
+    s223:cnx bs:InletConnectionPoint_version_1,
+        bs:OutletConnectionPoint_version_1 ;
+    s223:contains bs:Valve_version_1 ;
+    s223:hasProperty bs:QuantifiableActuatableProperty_version_1,
+        bs:QuantifiableObservableProperty_version_1,
+        bs:QuantifiableObservableProperty_version_2 ;
+    s223:hasRole s223:Role-Heating .
+
+bs:VariableFrequencyDrive_version_1 a s223:VariableFrequencyDrive,
+        <http://data.ashrae.org/standard223/1.0/extensions/g36#FanWithVFD> ;
+    s223:hasProperty bs:Property_version_1,
+        bs:QuantifiableActuatableProperty_version_1,
+        bs:QuantifiableObservableProperty_version_1,
+        bs:QuantifiableObservableProperty_version_2,
+        bs:QuantifiableObservableProperty_version_3,
+        bs:QuantifiableProperty_version_1 .
+
+bs:BACnetExternalReference_version_1 a s223:BACnetExternalReference ;
+    bacnet:description rdfs:Literal ;
+    bacnet:device-identifier bs:BACnetDevice_version_1 ;
+    bacnet:object-identifier rdfs:Literal ;
+    bacnet:object-name rdfs:Literal ;
+    bacnet:object-type rdfs:Literal .
+
+bs:CoolingCoil_version_1 a s223:CoolingCoil,
+        <http://data.ashrae.org/standard223/1.0/extensions/g36#ChilledWaterCoil> ;
+    s223:cnx bs:InletConnectionPoint_version_1,
+        bs:InletConnectionPoint_version_2,
+        bs:OutletConnectionPoint_version_1 ;
+    s223:contains bs:Valve_version_1 ;
+    s223:hasRole s223:Role-Cooling .
+
+bs:QuantifiableObservableProperty_version_3 a s223:QuantifiableObservableProperty ;
+    s223:hasExternalReference bs:BACnetExternalReference_version_1 ;
+    s223:hasRole s223:EnumerationKind-Speed,
+        s223:OnOff-Unknown,
+        s223:Role-Return,
+        s223:Role-Supply,
+        s223:RunStatus-Unknown ;
+    qudt:hasQuantityKind quantitykind:ElectricCurrent,
+        quantitykind:Power,
+        quantitykind:VolumeFlowRate ;
+    qudt:hasUnit unit:A,
+        unit:DEG_F,
+        unit:GAL_US-PER-MIN,
+        unit:IN_H2O,
+        unit:LB_F-PER-IN2,
+        unit:PERCENT,
+        unit:TON_FG,
+        unit:TON_FG-HR,
+        unit:UNITLESS .
+
+bs:Valve_version_1 a s223:Valve,
+        <http://data.ashrae.org/standard223/1.0/extensions/g36#HotWaterValve> ;
+    s223:cnx bs:InletConnectionPoint_version_1,
+        bs:InletConnectionPoint_version_2,
+        bs:OutletConnectionPoint_version_1 ;
+    s223:hasProperty bs:QuantifiableActuatableProperty_version_1,
+        bs:QuantifiableObservableProperty_version_1,
+        bs:QuantifiableProperty_version_1 ;
+    s223:hasRole s223:Role-Cooling,
+        s223:Role-Heating,
+        s223:Role-Recirculating,
+        s223:Role-Supply .
+
+bs:Property_version_1 a s223:Property,
+        s223:QuantifiableObservableProperty ;
+    s223:hasExternalReference bs:BACnetExternalReference_version_1 ;
+    s223:hasProperty bs:Property_version_1 ;
+    qudt:hasQuantityKind quantitykind:ActivePower ;
+    qudt:hasUnit unit:DEG_F,
+        unit:GAL_US,
+        unit:KiloW,
+        unit:PERCENT,
+        unit:SEC,
+        unit:UNITLESS,
+        unit:W .
+
+bs:QuantifiableObservableProperty_version_2 a s223:QuantifiableObservableProperty ;
+    s223:hasAspect s223:Role-Discharge ;
+    s223:hasExternalReference bs:BACnetExternalReference_version_1 ;
+    s223:hasRole s223:Role-Supply,
+        s223:RunStatus-Unknown ;
+    qudt:hasQuantityKind quantitykind:ElectricCurrent,
+        quantitykind:Power,
+        quantitykind:ReactivePower,
+        quantitykind:Temperature,
+        quantitykind:Voltage,
+        quantitykind:VolumeFlowRate ;
+    qudt:hasUnit unit:A,
+        unit:DEG_C,
+        unit:FT3-PER-MIN,
+        unit:KiloV-A_Reactive,
+        unit:UNITLESS,
+        unit:V,
+        unit:W-HR .
+
+bs:QuantifiableProperty_version_1 a s223:QuantifiableProperty ;
+    s223:hasExternalReference bs:BACnetExternalReference_version_1 ;
+    s223:hasRole s223:OnOff-Unknown,
+        s223:Role-Supply ;
+    qudt:hasUnit unit:DEG,
+        unit:DEG_F,
+        unit:FT2,
+        unit:HR,
+        unit:LB_F-PER-IN2,
+        unit:MIN,
+        unit:PERCENT,
+        unit:SEC,
+        unit:UNITLESS .
+
+bs:OutletConnectionPoint_version_1 a s223:OutletConnectionPoint ;
+    s223:cnx bs:Connection_version_1,
+        bs:Connection_version_2,
+        bs:Connection_version_3,
+        bs:CoolingCoil_version_1,
+        bs:HeatingCoil_version_1,
+        bs:Junction_version_1 ;
+    s223:hasMedium s223:Fluid-Air,
+        s223:Fluid-Water ;
+    s223:hasProperty rdfs:Resource,
+        bs:QuantifiableActuatableProperty_version_1,
+        bs:QuantifiableObservableProperty_version_1,
+        bs:QuantifiableObservableProperty_version_2 ;
+    s223:hasRole s223:Role-Supply ;
+    s223:mapsTo bs:OutletConnectionPoint_version_1 .
+
+bs:QuantifiableActuatableProperty_version_1 a s223:QuantifiableActuatableProperty,
+        s223:QuantifiableObservableProperty ;
+    s223:hasAspect s223:EnumerationKind-Position,
+        s223:Role-Discharge ;
+    s223:hasExternalReference bs:BACnetExternalReference_version_1 ;
+    s223:hasRole s223:Aspect-Command,
+        s223:EnumerationKind-Speed,
+        s223:OnOff-Unknown,
+        s223:Position-Unknown,
+        s223:Role-Condenser,
+        s223:Role-Return,
+        s223:Role-Supply,
+        s223:RunStatus-Unknown,
+        <urn:bldg#OnOff-Unknown> ;
+    qudt:hasQuantityKind quantitykind:DewPointTemperature,
+        quantitykind:DimensionlessRatio,
+        quantitykind:Power,
+        quantitykind:RelativeHumidity,
+        quantitykind:Temperature,
+        quantitykind:VolumeFlowRate ;
+    qudt:hasUnit unit:A,
+        unit:DEG_C,
+        unit:DEG_F,
+        unit:FT3-PER-MIN,
+        unit:FT3-PER-SEC,
+        unit:GAL_US-PER-MIN,
+        unit:IN_H2O,
+        unit:LB_F-PER-IN2,
+        unit:PERCENT,
+        unit:UNITLESS .
+
+bs:InletConnectionPoint_version_1 a s223:InletConnectionPoint ;
+    s223:cnx bs:Connection_version_1,
+        bs:Connection_version_2,
+        bs:Connection_version_3,
+        bs:CoolingCoil_version_1,
+        bs:HeatingCoil_version_1,
+        bs:Junction_version_1,
+        bs:Resource_version_4 ;
+    s223:hasMedium s223:Fluid-Air,
+        s223:Fluid-Water,
+        s223:Water-Steam ;
+    s223:hasProperty rdfs:Resource ;
+    s223:hasRole s223:Role-OutdoorAirIntake,
+        s223:Role-Return ;
+    s223:mapsTo bs:InletConnectionPoint_version_1,
+        bs:Resource_version_2 .
+
+bs:QuantifiableObservableProperty_version_1 a s223:QuantifiableObservableProperty ;
+    s223:hasAspect s223:Role-Discharge ;
+    s223:hasExternalReference bs:BACnetExternalReference_version_1 ;
+    s223:hasRole s223:EnumerationKind-Speed,
+        s223:OnOff-Unknown,
+        s223:Position-Unknown,
+        s223:Role-Condenser,
+        s223:Role-Return,
+        s223:Role-Supply,
+        s223:RunStatus-Unknown,
+        <urn:bldg#OnOff-Unknown> ;
+    qudt:hasQuantityKind quantitykind:ActivePower,
+        quantitykind:Conductivity,
+        quantitykind:DewPointTemperature,
+        quantitykind:DimensionlessRatio,
+        quantitykind:ElectricCurrent,
+        quantitykind:ElectricPower,
+        quantitykind:Power,
+        quantitykind:PressureRatio,
+        quantitykind:ReactivePower,
+        quantitykind:RelativeHumidity,
+        quantitykind:Temperature,
+        quantitykind:Time,
+        quantitykind:Torque,
+        quantitykind:Voltage,
+        quantitykind:Volume,
+        quantitykind:VolumeFlowRate ;
+    qudt:hasUnit unit:A,
+        unit:DEG_C,
+        unit:DEG_F,
+        unit:FT3-PER-MIN,
+        unit:FT3-PER-SEC,
+        unit:GAL_US,
+        unit:GAL_US-PER-HR,
+        unit:GAL_US-PER-MIN,
+        unit:HP,
+        unit:HR,
+        unit:HZ,
+        unit:IN_H2O,
+        unit:KiloV-A,
+        unit:KiloV-A-HR,
+        unit:KiloV-A_Reactive,
+        unit:KiloW,
+        unit:KiloW-HR,
+        unit:LB,
+        unit:LB-PER-HR,
+        unit:LB_F-PER-IN2,
+        unit:MegaW-HR,
+        unit:MicroS,
+        unit:Overridden_Status,
+        unit:PERCENT,
+        unit:PERCENT_RH,
+        unit:PPM,
+        unit:REV-PER-MIN,
+        unit:SEC,
+        unit:TON_FG,
+        unit:UNITLESS,
+        unit:V,
+        unit:V-A,
+        unit:V-A_Reactive,
+        unit:W,
+        unit:W-HR .
+

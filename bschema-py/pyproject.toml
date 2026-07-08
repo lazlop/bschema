@@ -1,0 +1,21 @@
+[build-system]
+requires = ["maturin>=1.7,<2.0"]
+build-backend = "maturin"
+
+[project]
+name = "bschema-rs"
+version = "0.1.0"
+description = "Rust/Oxigraph implementation of bschema, with Python bindings"
+requires-python = ">=3.9"
+readme = "README.md"
+
+[project.optional-dependencies]
+rdflib = ["rdflib>=7.0.0"]
+
+[project.scripts]
+create-bschema-rs = "bschema_rs.cli:run"
+
+[tool.maturin]
+python-source = "python"
+module-name = "bschema_rs._bschema_rs"
+features = ["pyo3/extension-module"]

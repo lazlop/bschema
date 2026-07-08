@@ -1,0 +1,422 @@
+//! Core bschema algorithm, ported from `graph-pattern-id/bschema/bschema.py`.
+
+use crate::canon::{common_triple_count, is_isomorphic};
+use crate::error::Result;
+use crate::graph::RdfGraph;
+use crate::namespace::{
+    self, ex_ontology_subject, named_node_predicates, A, OWL_ONTOLOGY, RDFS_LITERAL,
+    RDFS_RESOURCE, RDF_SEQ, RDFS_MEMBER,
+};
+use crate::util::{common_pattern, local_name};
+use oxigraph::model::{NamedNode, NamedOrBlankNode, Term, Triple};
+use std::collections::{HashMap, HashSet};
+
+/// Extracts the subgraph within `num_hops` of `central_node`, including
+/// `rdf:type` triples for every entity encountered. Ports
+/// `get_subgraph_with_hops`.
+pub fn subgraph_with_hops(
+    graph: &RdfGraph,
+    central_node: &NamedOrBlankNode,
+    num_hops: usize,
+    get_classes: bool,
+) -> Result<RdfGraph> {
+    let subgraph = RdfGraph::new()?;
+    let mut visited: HashSet<NamedOrBlankNode> = HashSet::new();
+    let mut current_layer: HashSet<NamedOrBlankNode> = HashSet::from([central_node.clone()]);
+
+    for class_uri in graph.objects(central_node, &A) {
+        subgraph.insert(&Triple::new(central_node.clone(), A.clone(), class_uri));
+    }
+
+    for _ in 0..num_hops {
+        let mut next_layer: HashSet<NamedOrBlankNode> = HashSet::new();
+
+        for node in &current_layer {
+            if visited.contains(node) {
+                continue;
+            }
+            visited.insert(node.clone());
+
+            for (p, o) in graph.predicate_objects(node) {
+                subgraph.insert(&Triple::new(node.clone(), p, o.clone()));
+                if let Term::NamedNode(o_named) = &o {
+                    let o_subj = NamedOrBlankNode::NamedNode(o_named.clone());
+                    next_layer.insert(o_subj.clone());
+                    for class_uri in graph.objects(&o_subj, &A) {
+                        subgraph.insert(&Triple::new(o_subj.clone(), A.clone(), class_uri));
+                    }
+                }
+            }
+
+            for (s, p) in graph.subject_predicates(&Term::from(node.clone())) {
+                subgraph.insert(&Triple::new(s.clone(), p, Term::from(node.clone())));
+                if let NamedOrBlankNode::NamedNode(_) = &s {
+                    next_layer.insert(s.clone());
+                    for class_uri in graph.objects(&s, &A) {
+                        subgraph.insert(&Triple::new(s.clone(), A.clone(), class_uri));
+                    }
+                }
+            }
+        }
+
+        current_layer = next_layer;
+    }
+
+    if get_classes {
+        for t in subgraph.triples() {
+            for class_uri in graph.objects(&t.subject, &A) {
+                subgraph.insert(&Triple::new(t.subject.clone(), A.clone(), class_uri));
+            }
+            if let Term::NamedNode(o_named) = &t.object {
+                let o_subj = NamedOrBlankNode::NamedNode(o_named.clone());
+                for class_uri in graph.objects(&o_subj, &A) {
+                    subgraph.insert(&Triple::new(o_subj.clone(), A.clone(), class_uri));
+                }
+            }
+        }
+    }
+
+    Ok(subgraph)
+}
+
+/// Gets the class of a node, preferring a `bs:`-namespaced class if present,
+/// else the first `rdf:type` found, else a default for literals/resources.
+/// Ports `get_class`.
+pub fn get_class(node: &Term, data_graph: &RdfGraph) -> NamedNode {
+    let subject = match node {
+        Term::NamedNode(n) => Some(NamedOrBlankNode::NamedNode(n.clone())),
+        Term::BlankNode(b) => Some(NamedOrBlankNode::BlankNode(b.clone())),
+        Term::Literal(_) => None,
+    };
+
+    if let Some(subject) = subject {
+        let types = data_graph.objects(&subject, &A);
+        if let Some(Term::NamedNode(bs_class)) = types
+            .iter()
+            .find(|o| matches!(o, Term::NamedNode(n) if n.as_str().contains(namespace::BS_BASE)))
+        {
+            return bs_class.clone();
+        }
+        if let Some(Term::NamedNode(first)) = types.first() {
+            return first.clone();
+        }
+    }
+
+    match node {
+        Term::Literal(_) => RDFS_LITERAL.clone(),
+        _ => RDFS_RESOURCE.clone(),
+    }
+}
+
+/// Builds the class-level pattern `(class(s), p, class(o))` for a triple,
+/// treating a fixed set of "named node" predicates (units, quantity kinds,
+/// aspects, ...) as already denoting the class of their object. Ports
+/// `create_class_pattern`.
+pub fn class_pattern(triple: &Triple, data_graph: &RdfGraph) -> Triple {
+    let s_class = get_class(&Term::from(triple.subject.clone()), data_graph);
+
+    let o_class = if triple.predicate == *A {
+        match &triple.object {
+            Term::NamedNode(n) => n.clone(),
+            other => get_class(other, data_graph),
+        }
+    } else if named_node_predicates().iter().any(|p| **p == triple.predicate) {
+        match &triple.object {
+            Term::NamedNode(n) => n.clone(),
+            other => get_class(other, data_graph),
+        }
+    } else {
+        get_class(&triple.object, data_graph)
+    };
+
+    Triple::new(s_class, triple.predicate.clone(), o_class)
+}
+
+/// Ports `create_class_graph`: the deduplicated set of class-patterns for
+/// every triple in `data_graph`.
+pub fn class_graph(data_graph: &RdfGraph) -> Result<RdfGraph> {
+    let out = RdfGraph::new()?;
+    for t in data_graph.triples() {
+        let pattern = class_pattern(&t, data_graph);
+        if !out.contains(&pattern) {
+            out.insert(&pattern);
+        }
+    }
+    Ok(out)
+}
+
+pub struct ClassIsomorphisms {
+    pub distinct_class_subgraphs: Vec<Vec<Triple>>,
+    pub equivalent_subjects: Vec<Vec<NamedOrBlankNode>>,
+    pub subject_classes: Vec<NamedNode>,
+}
+
+/// Groups subjects of `data_graph` by the isomorphism (or, if
+/// `similarity_threshold` is set, high overlap) of their 1-hop class
+/// pattern subgraph. Ports `get_class_isomorphisms`.
+pub fn class_isomorphisms(
+    data_graph: &RdfGraph,
+    similarity_threshold: Option<f64>,
+) -> Result<ClassIsomorphisms> {
+    let mut distinct_class_subgraphs: Vec<Vec<Triple>> = Vec::new();
+    let mut seen_subjects: HashSet<NamedOrBlankNode> = HashSet::new();
+    let mut equivalent_subjects: Vec<Vec<NamedOrBlankNode>> = Vec::new();
+    let mut subject_classes: Vec<NamedNode> = Vec::new();
+
+    for t in data_graph.triples() {
+        let s = &t.subject;
+        if seen_subjects.contains(s) {
+            continue;
+        }
+        seen_subjects.insert(s.clone());
+
+        let subject_class = get_class(&Term::from(s.clone()), data_graph);
+        let subgraph = subgraph_with_hops(data_graph, s, 1, false)?;
+        let pattern_graph = class_graph(&subgraph)?.triples();
+
+        if equivalent_subjects.is_empty() {
+            equivalent_subjects.push(vec![s.clone()]);
+            distinct_class_subgraphs.push(pattern_graph);
+            subject_classes.push(subject_class);
+            continue;
+        }
+
+        let indices: Vec<usize> = subject_classes
+            .iter()
+            .enumerate()
+            .filter(|(_, c)| **c == subject_class)
+            .map(|(i, _)| i)
+            .collect();
+
+        let mut found = false;
+        for i in indices {
+            let existing = &distinct_class_subgraphs[i];
+            let matched = if let Some(threshold) = similarity_threshold {
+                let intersection = common_triple_count(&pattern_graph, existing);
+                let smaller = pattern_graph.len().min(existing.len()).max(1);
+                (intersection as f64 / smaller as f64) > threshold
+            } else {
+                is_isomorphic(&pattern_graph, existing)
+            };
+
+            if matched {
+                if similarity_threshold.is_some() {
+                    // Union the two class-pattern graphs, mirroring the
+                    // Python `distinct_class_subgraphs[i] = class_graph + g`.
+                    let mut merged = existing.clone();
+                    for triple in &pattern_graph {
+                        if !merged.contains(triple) {
+                            merged.push(triple.clone());
+                        }
+                    }
+                    distinct_class_subgraphs[i] = merged;
+                }
+                equivalent_subjects[i].push(s.clone());
+                found = true;
+                break;
+            }
+        }
+
+        if !found {
+            distinct_class_subgraphs.push(pattern_graph);
+            equivalent_subjects.push(vec![s.clone()]);
+            subject_classes.push(subject_class);
+        }
+    }
+
+    Ok(ClassIsomorphisms { distinct_class_subgraphs, equivalent_subjects, subject_classes })
+}
+
+/// Debugging helper: pairs of sublists across two iterations with high
+/// overlap (overlap coefficient) that aren't identical. Ports
+/// `find_similar_sublists`.
+pub fn find_similar_sublists(
+    list1: &[Vec<NamedOrBlankNode>],
+    list2: &[Vec<NamedOrBlankNode>],
+    min_intersection_ratio: f64,
+) -> Vec<(usize, usize, f64)> {
+    let mut pairs = Vec::new();
+    for (i, sub1) in list1.iter().enumerate() {
+        let set1: HashSet<&NamedOrBlankNode> = sub1.iter().collect();
+        for (j, sub2) in list2.iter().enumerate() {
+            let set2: HashSet<&NamedOrBlankNode> = sub2.iter().collect();
+            if set1 == set2 {
+                continue;
+            }
+            let intersection = set1.intersection(&set2).count();
+            let smaller = set1.len().min(set2.len()).max(1);
+            let overlap = intersection as f64 / smaller as f64;
+            if overlap >= min_intersection_ratio {
+                pairs.push((i, j, overlap));
+            }
+        }
+    }
+    pairs
+}
+
+/// Ports `lists_have_same_members`: order-independent equality of two
+/// lists-of-lists, treated as sets of sets.
+pub fn lists_have_same_members(
+    list1: &[Vec<NamedOrBlankNode>],
+    list2: &[Vec<NamedOrBlankNode>],
+) -> bool {
+    if list1.len() != list2.len() {
+        return false;
+    }
+    let sets1: HashSet<Vec<NamedOrBlankNode>> = list1.iter().map(|s| sorted(s)).collect();
+    let sets2: HashSet<Vec<NamedOrBlankNode>> = list2.iter().map(|s| sorted(s)).collect();
+    sets1 == sets2
+}
+
+fn sorted(nodes: &[NamedOrBlankNode]) -> Vec<NamedOrBlankNode> {
+    let mut v = nodes.to_vec();
+    v.sort_by(|a, b| node_key(a).cmp(&node_key(b)));
+    v
+}
+
+fn node_key(n: &NamedOrBlankNode) -> String {
+    match n {
+        NamedOrBlankNode::NamedNode(n) => n.as_str().to_string(),
+        NamedOrBlankNode::BlankNode(b) => b.as_str().to_string(),
+    }
+}
+
+/// Assigns a fresh `bs:`-namespaced class name to each equivalence group,
+/// deriving the name from the common substring of the group's original
+/// subject IRIs (or, if disabled, by versioning the existing class name).
+/// Ports `assign_new_classes`.
+pub fn assign_new_classes(
+    equivalent_subjects: &[Vec<NamedOrBlankNode>],
+    subject_classes: &[NamedNode],
+    use_original_names: bool,
+    counter: &mut HashMap<String, u32>,
+) -> HashMap<NamedOrBlankNode, NamedNode> {
+    let mut new_subject_classes = HashMap::new();
+
+    for (i, subj_list) in equivalent_subjects.iter().enumerate() {
+        let new_cls_name = if use_original_names {
+            let iris: Vec<String> = subj_list.iter().map(node_key).collect();
+            let mut name = common_pattern(&iris);
+            if name.contains(namespace::BNODE_BASE) {
+                name = "bnode".to_string();
+            }
+            let count = counter.entry(name.clone()).and_modify(|c| *c += 1).or_insert(1);
+            let name_no_uri = local_name(&name);
+            namespace::ns(namespace::BS_BASE, &format!("{name_no_uri}{count}"))
+        } else {
+            let cls_name = &subject_classes[i];
+            let local = local_name(cls_name.as_str());
+            let name = local.split("_version_").next().unwrap_or(local).to_string();
+            let count = counter.entry(name.clone()).and_modify(|c| *c += 1).or_insert(1);
+            oxigraph::model::NamedNode::new_unchecked(format!("{name}_version_{count}"))
+        };
+
+        for s in subj_list {
+            let bs_local = local_name(new_cls_name.as_str());
+            new_subject_classes.insert(s.clone(), namespace::ns(namespace::BS_BASE, bs_local));
+        }
+    }
+
+    new_subject_classes
+}
+
+pub struct BschemaResult {
+    pub class_graph: RdfGraph,
+    pub member_graph: RdfGraph,
+    pub iterations: usize,
+}
+
+/// Ports `create_bschema`: iteratively summarizes `original_data_graph`
+/// into a compact class graph (`H` in the paper) plus a membership graph
+/// (`M` in the paper) mapping each derived class back to its members.
+pub fn create_bschema(
+    original_data_graph: &RdfGraph,
+    iterations: usize,
+    similarity_threshold: Option<f64>,
+    remove_added_labels: bool,
+    use_original_names: bool,
+) -> Result<BschemaResult> {
+    let mut counter: HashMap<String, u32> = HashMap::new();
+
+    original_data_graph.remove(&Triple::new(
+        ex_ontology_subject(),
+        A.clone(),
+        OWL_ONTOLOGY.clone(),
+    ));
+    let data_graph = original_data_graph.skolemize()?;
+
+    let mut equivalent_subjects: Vec<Vec<NamedOrBlankNode>> = Vec::new();
+    let mut subject_classes: Vec<NamedNode> = Vec::new();
+    let mut prev_equivalent_subjects: Option<Vec<Vec<NamedOrBlankNode>>> = None;
+    let mut prev_subject_classes: Option<HashMap<NamedOrBlankNode, NamedNode>> = None;
+    let mut final_iteration = 0;
+
+    for iteration in 0..iterations {
+        counter.clear();
+        final_iteration = iteration;
+
+        let result = class_isomorphisms(&data_graph, similarity_threshold)?;
+        equivalent_subjects = result.equivalent_subjects;
+        subject_classes = result.subject_classes;
+
+        let new_subject_classes =
+            assign_new_classes(&equivalent_subjects, &subject_classes, use_original_names, &mut counter);
+
+        if iteration >= 1 {
+            if let Some(prev) = &prev_equivalent_subjects {
+                if lists_have_same_members(&equivalent_subjects, prev) {
+                    break;
+                }
+            }
+        }
+
+        if let Some(prev_classes) = &prev_subject_classes {
+            for (s, cls_name) in prev_classes {
+                data_graph.remove(&Triple::new(s.clone(), A.clone(), cls_name.clone()));
+            }
+        }
+
+        for (s, cls_name) in &new_subject_classes {
+            data_graph.insert(&Triple::new(s.clone(), A.clone(), cls_name.clone()));
+        }
+
+        prev_subject_classes = Some(new_subject_classes);
+        prev_equivalent_subjects = Some(equivalent_subjects.clone());
+
+        if similarity_threshold == Some(0.0) {
+            break;
+        }
+    }
+
+    let class_graph_result = class_graph(&data_graph)?;
+
+    if remove_added_labels {
+        for t in class_graph_result.triples() {
+            if t.predicate == *A {
+                if let Term::NamedNode(n) = &t.object {
+                    if n.as_str().contains(namespace::BS_BASE) {
+                        class_graph_result.remove(&t);
+                    }
+                }
+            }
+        }
+    }
+
+    let member_graph = RdfGraph::new()?;
+    for (i, subject_class) in subject_classes.iter().enumerate() {
+        member_graph.insert(&Triple::new(
+            subject_class.clone(),
+            A.clone(),
+            RDF_SEQ.clone(),
+        ));
+        for s in &equivalent_subjects[i] {
+            member_graph.insert(&Triple::new(
+                subject_class.clone(),
+                RDFS_MEMBER.clone(),
+                Term::from(s.clone()),
+            ));
+        }
+    }
+
+    Ok(BschemaResult { class_graph: class_graph_result, member_graph, iterations: final_iteration })
+}
