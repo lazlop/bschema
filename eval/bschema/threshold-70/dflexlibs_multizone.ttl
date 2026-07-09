@@ -16,97 +16,97 @@ bs:AHU_version_1 a brick:AHU ;
         bs:Supply_Air_Temperature_Setpoint_version_1 .
 
 bs:Building_version_1 a brick:Building ;
-    brick:area bs:Resource_version_25 ;
+    brick:area bs:Resource_version_27 ;
     brick:hasPart bs:HVAC_Zone_version_1 .
 
 bs:CO2_Sensor_version_1 a brick:CO2_Sensor ;
-    ref:hasExternalReference bs:Resource_version_18 .
+    ref:hasExternalReference bs:Resource_version_4 .
 
 bs:Chilled_Water_Return_Temperature_Sensor_version_1 a brick:Chilled_Water_Return_Temperature_Sensor ;
-    ref:hasExternalReference bs:Resource_version_12 .
+    ref:hasExternalReference bs:Resource_version_24 .
 
 bs:Chilled_Water_Supply_Temperature_Sensor_version_1 a brick:Chilled_Water_Supply_Temperature_Sensor ;
-    ref:hasExternalReference bs:Resource_version_15 .
+    ref:hasExternalReference bs:Resource_version_19 .
 
 bs:Chiller_version_1 a brick:Chiller ;
-    brick:feeds bs:Pump_version_2 ;
+    brick:feeds bs:Pump_version_1 ;
     brick:hasPoint bs:Chilled_Water_Return_Temperature_Sensor_version_1,
         bs:Chilled_Water_Supply_Temperature_Sensor_version_1,
-        bs:Electric_Power_Sensor_version_3 .
+        bs:Electric_Power_Sensor_version_7 .
 
 bs:Cooling_Coil_version_1 a brick:Cooling_Coil ;
-    brick:hasPoint bs:Electric_Power_Sensor_version_1 ;
+    brick:hasPoint bs:Electric_Power_Sensor_version_5 ;
     brick:isFedBy bs:Chiller_version_1 .
 
 bs:Damper_Position_Setpoint_version_1 a brick:Damper_Position_Setpoint ;
-    ref:hasExternalReference bs:Resource_version_5 .
-
-bs:Discharge_Air_Flow_Sensor_version_1 a brick:Discharge_Air_Flow_Sensor ;
     ref:hasExternalReference bs:Resource_version_6 .
 
+bs:Discharge_Air_Flow_Sensor_version_1 a brick:Discharge_Air_Flow_Sensor ;
+    ref:hasExternalReference bs:Resource_version_14 .
+
 bs:Discharge_Air_Static_Pressure_Sensor_version_1 a brick:Discharge_Air_Static_Pressure_Sensor ;
-    ref:hasExternalReference bs:Resource_version_26 .
+    ref:hasExternalReference bs:Resource_version_18 .
 
 bs:Discharge_Air_Temperature_Sensor_version_1 a brick:Discharge_Air_Temperature_Sensor ;
-    ref:hasExternalReference bs:Resource_version_11 .
+    ref:hasExternalReference bs:Resource_version_15 .
 
 bs:Electric_Power_Sensor_version_1 a brick:Electric_Power_Sensor ;
-    ref:hasExternalReference bs:Resource_version_23,
+    ref:hasExternalReference bs:Resource_version_22,
         bs:TimeseriesReference_version_6 .
 
 bs:Electric_Power_Sensor_version_2 a brick:Electric_Power_Sensor ;
-    ref:hasExternalReference bs:Resource_version_3,
-        bs:TimeseriesReference_version_3 .
-
-bs:Electric_Power_Sensor_version_3 a brick:Electric_Power_Sensor ;
-    ref:hasExternalReference bs:Resource_version_24,
-        bs:TimeseriesReference_version_7 .
-
-bs:Electric_Power_Sensor_version_4 a brick:Electric_Power_Sensor ;
-    ref:hasExternalReference bs:Resource_version_27,
-        bs:TimeseriesReference_version_11 .
-
-bs:Electric_Power_Sensor_version_5 a brick:Electric_Power_Sensor ;
-    ref:hasExternalReference bs:Resource_version_8,
-        bs:TimeseriesReference_version_13 .
-
-bs:Electric_Power_Sensor_version_6 a brick:Electric_Power_Sensor ;
-    ref:hasExternalReference bs:Resource_version_21,
+    ref:hasExternalReference bs:Resource_version_28,
         bs:TimeseriesReference_version_9 .
 
+bs:Electric_Power_Sensor_version_3 a brick:Electric_Power_Sensor ;
+    ref:hasExternalReference bs:Resource_version_26,
+        bs:TimeseriesReference_version_13 .
+
+bs:Electric_Power_Sensor_version_4 a brick:Electric_Power_Sensor ;
+    ref:hasExternalReference bs:Resource_version_23,
+        bs:TimeseriesReference_version_12 .
+
+bs:Electric_Power_Sensor_version_5 a brick:Electric_Power_Sensor ;
+    ref:hasExternalReference bs:Resource_version_10,
+        bs:TimeseriesReference_version_11 .
+
+bs:Electric_Power_Sensor_version_6 a brick:Electric_Power_Sensor ;
+    ref:hasExternalReference bs:Resource_version_3,
+        bs:TimeseriesReference_version_7 .
+
 bs:Electric_Power_Sensor_version_7 a brick:Electric_Power_Sensor ;
-    ref:hasExternalReference bs:Resource_version_14,
-        bs:TimeseriesReference_version_4 .
+    ref:hasExternalReference bs:Resource_version_7,
+        bs:TimeseriesReference_version_5 .
 
 bs:Heating_Coil_version_1 a brick:Heating_Coil ;
     brick:hasPoint rdfs:Resource,
-        bs:Electric_Power_Sensor_version_4 ;
-    brick:isFedBy bs:Pump_version_1 .
+        bs:Electric_Power_Sensor_version_6 ;
+    brick:isFedBy bs:Pump_version_2 .
 
 bs:Hot_Water_Pump_version_1 a brick:Hot_Water_Pump ;
-    brick:hasPoint bs:Electric_Power_Sensor_version_2 .
+    brick:hasPoint bs:Electric_Power_Sensor_version_1 .
 
 bs:Max_Air_Temperature_Setpoint_version_1 a brick:Max_Air_Temperature_Setpoint ;
-    ref:hasExternalReference bs:Resource_version_7,
-        bs:TimeseriesReference_version_2 .
+    ref:hasExternalReference bs:Resource_version_2,
+        bs:TimeseriesReference_version_8 .
 
 bs:Min_Air_Temperature_Setpoint_version_1 a brick:Min_Air_Temperature_Setpoint ;
-    ref:hasExternalReference bs:Resource_version_13,
-        bs:TimeseriesReference_version_5 .
+    ref:hasExternalReference bs:Resource_version_5,
+        bs:TimeseriesReference_version_10 .
 
 bs:Mixed_Air_Temperature_Sensor_version_1 a brick:Mixed_Air_Temperature_Sensor ;
-    ref:hasExternalReference bs:Resource_version_4 .
+    ref:hasExternalReference bs:Resource_version_13 .
 
 bs:Occupancy_Sensor_version_1 a brick:Occupancy_Sensor ;
-    ref:hasExternalReference bs:Resource_version_2,
-        bs:TimeseriesReference_version_12 .
+    ref:hasExternalReference bs:Resource_version_20,
+        bs:TimeseriesReference_version_3 .
 
 bs:Pump_version_1 a brick:Pump ;
-    brick:feeds bs:Hot_Water_Pump_version_1 ;
-    brick:hasPoint bs:Electric_Power_Sensor_version_6 .
+    brick:hasPoint bs:Electric_Power_Sensor_version_2 .
 
 bs:Pump_version_2 a brick:Pump ;
-    brick:hasPoint bs:Electric_Power_Sensor_version_5 .
+    brick:feeds bs:Hot_Water_Pump_version_1 ;
+    brick:hasPoint bs:Electric_Power_Sensor_version_3 .
 
 bs:Resource_version_1 ref:hasTimeseriesId rdfs:Literal .
 
@@ -142,11 +142,11 @@ bs:Resource_version_23 ref:hasTimeseriesId rdfs:Literal .
 
 bs:Resource_version_24 ref:hasTimeseriesId rdfs:Literal .
 
-bs:Resource_version_25 brick:value rdfs:Literal .
+bs:Resource_version_25 ref:hasTimeseriesId rdfs:Literal .
 
 bs:Resource_version_26 ref:hasTimeseriesId rdfs:Literal .
 
-bs:Resource_version_27 ref:hasTimeseriesId rdfs:Literal .
+bs:Resource_version_27 brick:value rdfs:Literal .
 
 bs:Resource_version_28 ref:hasTimeseriesId rdfs:Literal .
 
@@ -165,23 +165,23 @@ bs:Resource_version_8 ref:hasTimeseriesId rdfs:Literal .
 bs:Resource_version_9 ref:hasTimeseriesId rdfs:Literal .
 
 bs:Return_Air_Flow_Sensor_version_1 a brick:Return_Air_Flow_Sensor ;
-    ref:hasExternalReference bs:Resource_version_20 .
+    ref:hasExternalReference bs:Resource_version_21 .
 
 bs:Return_Air_Temperature_Sensor_version_1 a brick:Return_Air_Temperature_Sensor ;
-    ref:hasExternalReference bs:Resource_version_10 .
+    ref:hasExternalReference bs:Resource_version_12 .
 
 bs:Supply_Air_Flow_Sensor_version_1 a brick:Supply_Air_Flow_Sensor ;
-    ref:hasExternalReference bs:Resource_version_28 .
+    ref:hasExternalReference bs:Resource_version_25 .
 
 bs:Supply_Air_Temperature_Sensor_version_1 a brick:Supply_Air_Temperature_Sensor ;
-    ref:hasExternalReference bs:Resource_version_16 .
+    ref:hasExternalReference bs:Resource_version_9 .
 
 bs:Supply_Air_Temperature_Setpoint_version_1 a brick:Supply_Air_Temperature_Setpoint ;
-    ref:hasExternalReference bs:Resource_version_22 .
+    ref:hasExternalReference bs:Resource_version_8 .
 
 bs:Supply_Fan_version_1 a brick:Supply_Fan ;
     brick:hasPoint bs:Discharge_Air_Static_Pressure_Sensor_version_1,
-        bs:Electric_Power_Sensor_version_7 .
+        bs:Electric_Power_Sensor_version_4 .
 
 bs:TimeseriesReference_version_1 a ref:TimeseriesReference ;
     ref:hasTimeseriesId rdfs:Literal ;
@@ -259,15 +259,15 @@ bs:Variable_Air_Volume_Box_With_Reheat_version_1 a brick:Variable_Air_Volume_Box
 
 bs:Zone_Air_Cooling_Temperature_Setpoint_version_1 a brick:Zone_Air_Cooling_Temperature_Setpoint ;
     ref:hasExternalReference bs:Resource_version_1,
-        bs:TimeseriesReference_version_8 .
+        bs:TimeseriesReference_version_4 .
 
 bs:Zone_Air_Heating_Temperature_Setpoint_version_1 a brick:Zone_Air_Heating_Temperature_Setpoint ;
-    ref:hasExternalReference bs:Resource_version_19,
-        bs:TimeseriesReference_version_1 .
+    ref:hasExternalReference bs:Resource_version_16,
+        bs:TimeseriesReference_version_2 .
 
 bs:Zone_Air_Temperature_Sensor_version_1 a brick:Zone_Air_Temperature_Sensor ;
-    ref:hasExternalReference bs:Resource_version_9,
-        bs:TimeseriesReference_version_10 .
+    ref:hasExternalReference bs:Resource_version_11,
+        bs:TimeseriesReference_version_1 .
 
 bs:HVAC_Zone_version_1 a brick:HVAC_Zone ;
     rdfs:label rdfs:Literal ;

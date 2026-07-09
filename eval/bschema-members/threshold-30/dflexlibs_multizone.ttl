@@ -1,0 +1,293 @@
+@prefix bs: <urn:bschema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+bs:AHU_version_1 a rdf:Seq ;
+    rdfs:member <urn:bldg/hvac_ahu> .
+
+bs:Building_version_1 a rdf:Seq ;
+    rdfs:member <urn:bldg/Building> .
+
+bs:CO2_Sensor_version_1 a rdf:Seq ;
+    rdfs:member <urn:bldg/hvac_reaZonCor_CO2Zon_y>,
+        <urn:bldg/hvac_reaZonEas_CO2Zon_y>,
+        <urn:bldg/hvac_reaZonNor_CO2Zon_y>,
+        <urn:bldg/hvac_reaZonSou_CO2Zon_y>,
+        <urn:bldg/hvac_reaZonWes_CO2Zon_y> .
+
+bs:Chilled_Water_Return_Temperature_Sensor_version_1 a rdf:Seq ;
+    rdfs:member <urn:bldg/chi_reaTRet_y> .
+
+bs:Chilled_Water_Supply_Temperature_Sensor_version_1 a rdf:Seq ;
+    rdfs:member <urn:bldg/chi_reaTSup_y> .
+
+bs:Chiller_version_1 a rdf:Seq ;
+    rdfs:member <urn:bldg/chiller> .
+
+bs:Cooling_Coil_version_1 a rdf:Seq ;
+    rdfs:member <urn:bldg/cooling_coil> .
+
+bs:Damper_Position_Setpoint_version_1 a rdf:Seq ;
+    rdfs:member <urn:bldg/hvac_oveZonActCor_yDam_u>,
+        <urn:bldg/hvac_oveZonActEas_yDam_u>,
+        <urn:bldg/hvac_oveZonActNor_yDam_u>,
+        <urn:bldg/hvac_oveZonActSou_yDam_u>,
+        <urn:bldg/hvac_oveZonActWes_yDam_u> .
+
+bs:Discharge_Air_Flow_Sensor_version_1 a rdf:Seq ;
+    rdfs:member <urn:bldg/hvac_reaZonCor_V_flow_y>,
+        <urn:bldg/hvac_reaZonEas_V_flow_y>,
+        <urn:bldg/hvac_reaZonNor_V_flow_y>,
+        <urn:bldg/hvac_reaZonSou_V_flow_y>,
+        <urn:bldg/hvac_reaZonWes_V_flow_y> .
+
+bs:Discharge_Air_Static_Pressure_Sensor_version_1 a rdf:Seq ;
+    rdfs:member <urn:bldg/hvac_reaAhu_dp_sup_y> .
+
+bs:Discharge_Air_Temperature_Sensor_version_1 a rdf:Seq ;
+    rdfs:member <urn:bldg/hvac_reaZonCor_TSup_y>,
+        <urn:bldg/hvac_reaZonEas_TSup_y>,
+        <urn:bldg/hvac_reaZonNor_TSup_y>,
+        <urn:bldg/hvac_reaZonSou_TSup_y>,
+        <urn:bldg/hvac_reaZonWes_TSup_y> .
+
+bs:Electric_Power_Sensor_version_1 a rdf:Seq ;
+    rdfs:member <urn:bldg/chi_reaPChi_y>,
+        <urn:bldg/chi_reaPPumDis_y>,
+        <urn:bldg/heaPum_reaPHeaPum_y>,
+        <urn:bldg/heaPum_reaPPumDis_y>,
+        <urn:bldg/hvac_reaAhu_PFanSup_y>,
+        <urn:bldg/hvac_reaAhu_PPumCoo_y>,
+        <urn:bldg/hvac_reaAhu_PPumHea_y> .
+
+bs:HVAC_Zone_version_1 a rdf:Seq ;
+    rdfs:member <urn:bldg/hvac_cor_zone>,
+        <urn:bldg/hvac_eas_zone>,
+        <urn:bldg/hvac_nor_zone>,
+        <urn:bldg/hvac_sou_zone>,
+        <urn:bldg/hvac_wes_zone> .
+
+bs:Heating_Coil_version_1 a rdf:Seq ;
+    rdfs:member <urn:bldg/heating_coil> .
+
+bs:Hot_Water_Pump_version_1 a rdf:Seq ;
+    rdfs:member <urn:bldg/hwd_pump> .
+
+bs:Max_Air_Temperature_Setpoint_version_1 a rdf:Seq ;
+    rdfs:member <urn:bldg/UpperSetp_cor>,
+        <urn:bldg/UpperSetp_eas>,
+        <urn:bldg/UpperSetp_nor>,
+        <urn:bldg/UpperSetp_sou>,
+        <urn:bldg/UpperSetp_wes> .
+
+bs:Min_Air_Temperature_Setpoint_version_1 a rdf:Seq ;
+    rdfs:member <urn:bldg/LowerSetp_cor>,
+        <urn:bldg/LowerSetp_eas>,
+        <urn:bldg/LowerSetp_nor>,
+        <urn:bldg/LowerSetp_sou>,
+        <urn:bldg/LowerSetp_wes> .
+
+bs:Mixed_Air_Temperature_Sensor_version_1 a rdf:Seq ;
+    rdfs:member <urn:bldg/hvac_reaAhu_TMix_y> .
+
+bs:Occupancy_Sensor_version_1 a rdf:Seq ;
+    rdfs:member <urn:bldg/occ_cor>,
+        <urn:bldg/occ_eas>,
+        <urn:bldg/occ_nor>,
+        <urn:bldg/occ_sou>,
+        <urn:bldg/occ_wes> .
+
+bs:Pump_version_1 a rdf:Seq ;
+    rdfs:member <urn:bldg/chi_pump>,
+        <urn:bldg/heat_pump> .
+
+bs:Resource_version_1 a rdf:Seq ;
+    rdfs:member <urn:bschema-rs:skolem:a0c3afea1b0292b71f2c63e6450bc6d3>,
+        <urn:bschema-rs:skolem:a22e26b682ca70576377c9cf2e9b2d5f>,
+        <urn:bschema-rs:skolem:a4f1ce14242d8a037f67ef18f6cb96af>,
+        <urn:bschema-rs:skolem:a4f6fcdd081d6b82f4ff1f7e47857cfc>,
+        <urn:bschema-rs:skolem:aab2b29880b6dc6006d412de218ff0fb>,
+        <urn:bschema-rs:skolem:ac0a962fab4abec7f5847c3c5e2b5597>,
+        <urn:bschema-rs:skolem:ad8aa79e80c5a7d37c69e67488fdc356>,
+        <urn:bschema-rs:skolem:aeca5837d8dcac335d78740c232385ed>,
+        <urn:bschema-rs:skolem:b2fa503f6665b7f24c578ed6e4150f2a>,
+        <urn:bschema-rs:skolem:b44530918062baf0fac1640b234e6227>,
+        <urn:bschema-rs:skolem:b6ef0cfd598e21a3c9be87f5815e0fe4>,
+        <urn:bschema-rs:skolem:b8830b244491be8561141b98cdcd9125>,
+        <urn:bschema-rs:skolem:bb68d0d8573ef545bc77b7cdfbc7e91e>,
+        <urn:bschema-rs:skolem:bbfb28ad8f08ccac31a0271d7731eb23>,
+        <urn:bschema-rs:skolem:be4b81877a8b3c4a721373826223177d>,
+        <urn:bschema-rs:skolem:c114cdb0decfa24df2f51659c12b0eba>,
+        <urn:bschema-rs:skolem:c11dd47cec64946f1ccf202d1dab7f67>,
+        <urn:bschema-rs:skolem:c17a41ee0b427a3c54316678f6facb61>,
+        <urn:bschema-rs:skolem:c1943d5c58b83582e54e8366dab995d7>,
+        <urn:bschema-rs:skolem:c20d611c25680e092445233c09575f97>,
+        <urn:bschema-rs:skolem:c3eea2828530ce775d56fcf173719950>,
+        <urn:bschema-rs:skolem:c3fd184b3fca4f5809d85b4c57e03f3>,
+        <urn:bschema-rs:skolem:c584a6293c480a3e307a75b41bb24a59>,
+        <urn:bschema-rs:skolem:c6c05df93810685e75e08af08db2e45c>,
+        <urn:bschema-rs:skolem:c826271cbb3754a34f9966a69e4af52d>,
+        <urn:bschema-rs:skolem:c900aaa78daf431cb8a4873d1b52e012>,
+        <urn:bschema-rs:skolem:ca747d8f07466e5b083332f98bc5fae1>,
+        <urn:bschema-rs:skolem:cade5d064f8a3fbd5f5a190e7c7f3b4b>,
+        <urn:bschema-rs:skolem:cb0bf715fb3ef664d9886c4541227064>,
+        <urn:bschema-rs:skolem:cbe138acd96cb662abeeb2f0fc295ba6>,
+        <urn:bschema-rs:skolem:cc9e51648b0472b23a537c30aeadca3>,
+        <urn:bschema-rs:skolem:cdaa104669e8807c01320fc0f91c093d>,
+        <urn:bschema-rs:skolem:cf418d1950d8f4e49346633e30a37cd4>,
+        <urn:bschema-rs:skolem:cfe127f4872b50347966e4f958bd0e5d>,
+        <urn:bschema-rs:skolem:d054930269ab944012b1f763ce5170f5>,
+        <urn:bschema-rs:skolem:d165d9b6d38e5c6d5e10f18730305af5>,
+        <urn:bschema-rs:skolem:d29c3adeba876a62500192af6bdf8714>,
+        <urn:bschema-rs:skolem:d309e107669c6705ea7844a03b8c1df7>,
+        <urn:bschema-rs:skolem:d3fb441bd17a68007179040b4904fbfe>,
+        <urn:bschema-rs:skolem:d54998f0a4e518291e46ea83f721b6d2>,
+        <urn:bschema-rs:skolem:d577afe4ee82148a16ae3d20bd1b3428>,
+        <urn:bschema-rs:skolem:d6dab9c2d7a7b6c04fca5a735db5502c>,
+        <urn:bschema-rs:skolem:d7316406c75b8789d2169c15434883ec>,
+        <urn:bschema-rs:skolem:d8dac1e111c9bf6ddb00ae4ca11b677e>,
+        <urn:bschema-rs:skolem:d9743ce288de81d72db7a0ee16adbc74>,
+        <urn:bschema-rs:skolem:da2a26655eea8d604978b7a6671cc9e1>,
+        <urn:bschema-rs:skolem:dbbf17bdf1f48ad72085f18e3f09960c>,
+        <urn:bschema-rs:skolem:dd7ca96e82a049f87c7170c9ab2d8a92>,
+        <urn:bschema-rs:skolem:e06c047bfb67cd3d8428fc8dde3968c>,
+        <urn:bschema-rs:skolem:e197cfe82f9eda2a463a51e2c48b34>,
+        <urn:bschema-rs:skolem:e3b3197713103beb00b85fc59938ce36>,
+        <urn:bschema-rs:skolem:e3f5f09c7dcce2a8743478e3d586c837>,
+        <urn:bschema-rs:skolem:e4130d8a1213994c6c07c5a09ea07e8d>,
+        <urn:bschema-rs:skolem:e79665ece680d7147f2d1e14d81abef7>,
+        <urn:bschema-rs:skolem:e7967fc434cdb70d794c69da91bca752>,
+        <urn:bschema-rs:skolem:e992c141576aee1c7a0245a8bf972069>,
+        <urn:bschema-rs:skolem:ec2f17cb7817d77c5311f53433aec7b6>,
+        <urn:bschema-rs:skolem:f0634fb0a8333218ddd18ad270282841>,
+        <urn:bschema-rs:skolem:f15f4862b5debd50784a4be7a82f5a61>,
+        <urn:bschema-rs:skolem:f2391014c79175e63b789e048fa741ed>,
+        <urn:bschema-rs:skolem:f318eb64f80c1d5e7b4274888899f9e4>,
+        <urn:bschema-rs:skolem:f58902d6d89ff4b471110b388acbe471>,
+        <urn:bschema-rs:skolem:f647476939a63acd6e7079739bf79e2b>,
+        <urn:bschema-rs:skolem:f7bca40776a1e41b576cde3a1d7c3ee2>,
+        <urn:bschema-rs:skolem:f92ad00ca02abfbc61e84329584f2ef1>,
+        <urn:bschema-rs:skolem:f99a6dd5ec861eadc2ebaf482db6ce9e>,
+        <urn:bschema-rs:skolem:fadb8a550236045d67b3a126c612b06f>,
+        <urn:bschema-rs:skolem:fdbe9a30d09b50d0a4f7b11b332767f4>,
+        <urn:bschema-rs:skolem:fe2ad6f5e689d6c3dc82b2d5c6561761>,
+        <urn:bschema-rs:skolem:fe8c976fd7743226f027c5d891f3dd78>,
+        <urn:bschema-rs:skolem:ffd1fbad3b38825d4cbdd70876519300> .
+
+bs:Resource_version_2 a rdf:Seq ;
+    rdfs:member <urn:bschema-rs:skolem:c0b48e977a02b20fbedd50cd8b8a5f1a> .
+
+bs:Return_Air_Flow_Sensor_version_1 a rdf:Seq ;
+    rdfs:member <urn:bldg/hvac_reaAhu_V_flow_ret_y> .
+
+bs:Return_Air_Temperature_Sensor_version_1 a rdf:Seq ;
+    rdfs:member <urn:bldg/hvac_reaAhu_TRet_y> .
+
+bs:Supply_Air_Flow_Sensor_version_1 a rdf:Seq ;
+    rdfs:member <urn:bldg/hvac_reaAhu_V_flow_sup_y> .
+
+bs:Supply_Air_Temperature_Sensor_version_1 a rdf:Seq ;
+    rdfs:member <urn:bldg/hvac_reaAhu_TSup_y> .
+
+bs:Supply_Air_Temperature_Setpoint_version_1 a rdf:Seq ;
+    rdfs:member <urn:bldg/hvac_oveAhu_TSupSet_u> .
+
+bs:Supply_Fan_version_1 a rdf:Seq ;
+    rdfs:member <urn:bldg/hvac_fanSup> .
+
+bs:TimeseriesReference_version_1 a rdf:Seq ;
+    rdfs:member <urn:bschema-rs:skolem:a4773ad44bf4a4a4728618b44aef8732>,
+        <urn:bschema-rs:skolem:a4ffeb2d55779d64b623fab165fcbb1a>,
+        <urn:bschema-rs:skolem:a6cd073c09661d137a96a53f08ef40ad>,
+        <urn:bschema-rs:skolem:a75cee03199f41f2899de005d0cb05a5>,
+        <urn:bschema-rs:skolem:a7d5b5c0f6424932e2cfa0f63d91855>,
+        <urn:bschema-rs:skolem:a840ca1883b2e82e982b4e54e6e55f42>,
+        <urn:bschema-rs:skolem:b0f86c9d8db3c4fcad74d3ea0808ceba>,
+        <urn:bschema-rs:skolem:b1e9de9ce7e7a189a71aa4c9b3c11fec>,
+        <urn:bschema-rs:skolem:b373a120965b39e1fb115f244fbc3938>,
+        <urn:bschema-rs:skolem:b41f3d156640a37877d1129761ff71ed>,
+        <urn:bschema-rs:skolem:b87aa81996ff2aed28bbbb33e51f5af6>,
+        <urn:bschema-rs:skolem:bc78f4d33780875c901da73c39fa3dc7>,
+        <urn:bschema-rs:skolem:be2a79cafad47bbb09f2c5e138300913>,
+        <urn:bschema-rs:skolem:c0e7987071cbc5c169b1144da3abf6e3>,
+        <urn:bschema-rs:skolem:c1b94f1a331a5826b05df17a01b073e3>,
+        <urn:bschema-rs:skolem:c227ac078630a1a0216449ef3a045a00>,
+        <urn:bschema-rs:skolem:c282afb69b86dc19b9c58531b2defaeb>,
+        <urn:bschema-rs:skolem:c538efebe3133d6031ef14b42f5816d>,
+        <urn:bschema-rs:skolem:c7773a64cf139c82b0469f393f9ed4cc>,
+        <urn:bschema-rs:skolem:c93b6f88a09e4e4a7192ea438c5edeb8>,
+        <urn:bschema-rs:skolem:cd01d8f3330538cbe1ea4536eb2b6160>,
+        <urn:bschema-rs:skolem:d03b183a50cc825289e1cd68f474d017>,
+        <urn:bschema-rs:skolem:d0a4a16346db484e019c2f2fa32d8bc4>,
+        <urn:bschema-rs:skolem:d21c54bd2252abfe71e77b2a0b685fde>,
+        <urn:bschema-rs:skolem:d328bb977b27c95bc3cba6bdcfcfda02>,
+        <urn:bschema-rs:skolem:d35651ceb9defbe620efad7aca56d8fe>,
+        <urn:bschema-rs:skolem:d3bddc54fd1ac7a7a05a11595816d0f6>,
+        <urn:bschema-rs:skolem:d58589ea9c1b9100c7ac158112ace06f>,
+        <urn:bschema-rs:skolem:d76497c320178e7ac3e3874f3712fbd>,
+        <urn:bschema-rs:skolem:d80bc47ddabfc1121e3318b9da4476ba>,
+        <urn:bschema-rs:skolem:d94787fee5d27b32cd2bd51637459007>,
+        <urn:bschema-rs:skolem:d963370c540399093ad07cd503eb4592>,
+        <urn:bschema-rs:skolem:d9cdae8f8caf5f41614eb9bc57f1b5c>,
+        <urn:bschema-rs:skolem:da38ae72d0ad54f21524a16c87113017>,
+        <urn:bschema-rs:skolem:e19a6f3d125b0e86b7bb56a741f5e17a>,
+        <urn:bschema-rs:skolem:e36d61c89b3bddd3fefec60426cf69f7>,
+        <urn:bschema-rs:skolem:e3bdf526b4ddb146cf2125a078cb16d6>,
+        <urn:bschema-rs:skolem:e50b022bc1f81d5f88bd59390c5292ed>,
+        <urn:bschema-rs:skolem:e82830d74edb5faf0b4e5d8121c37fd5>,
+        <urn:bschema-rs:skolem:e9c1d705aa80a04b4552cdd290296d3e>,
+        <urn:bschema-rs:skolem:e9f78e8b1e2bc5387974dc4892867ad1>,
+        <urn:bschema-rs:skolem:eb74efc05e00255df43bc4f2b75cd938>,
+        <urn:bschema-rs:skolem:ee8b6c5c0c02090dc1341c8cd14e22a5>,
+        <urn:bschema-rs:skolem:ef4781e0fd80a66fd3daeec683007931>,
+        <urn:bschema-rs:skolem:f288b0ab9406c3d4a58476cf94f95134>,
+        <urn:bschema-rs:skolem:f2db9f487859ceedb94feddee9d2106a>,
+        <urn:bschema-rs:skolem:f383593c6ac6ce95432a6ba591e9af6>,
+        <urn:bschema-rs:skolem:f5b95df5b7e701f0fb73be02a8181911>,
+        <urn:bschema-rs:skolem:f670a79a3db738686467a70b8d218276>,
+        <urn:bschema-rs:skolem:f77eda7431873d1a4d8ad803a7016885>,
+        <urn:bschema-rs:skolem:f93245222d985b38c14df77ae6100772>,
+        <urn:bschema-rs:skolem:fa4c1c96d68a9b0e9f24307dbddb78fd>,
+        <urn:bschema-rs:skolem:fa748692c3dc52f9658603d627129550>,
+        <urn:bschema-rs:skolem:fa85601f068efdf1413dfb9422a9f080>,
+        <urn:bschema-rs:skolem:fb4fbbfe002618955f44f8e367497249>,
+        <urn:bschema-rs:skolem:fbde6381d55d7c7b74d2fc9617d1b952>,
+        <urn:bschema-rs:skolem:fca0e337d54dc928470c7f100000ec6a>,
+        <urn:bschema-rs:skolem:fe3e7ea83f65a7b73c9b0b1b4fe6cf23>,
+        <urn:bschema-rs:skolem:fff56c8123efda163c63267034b1809> .
+
+bs:Valve_Command_version_1 a rdf:Seq ;
+    rdfs:member <urn:bldg/hvac_oveZonActCor_yReaHea_u>,
+        <urn:bldg/hvac_oveZonActEas_yReaHea_u>,
+        <urn:bldg/hvac_oveZonActNor_yReaHea_u>,
+        <urn:bldg/hvac_oveZonActSou_yReaHea_u>,
+        <urn:bldg/hvac_oveZonActWes_yReaHea_u> .
+
+bs:Variable_Air_Volume_Box_With_Reheat_version_1 a rdf:Seq ;
+    rdfs:member <urn:bldg/vav_cor>,
+        <urn:bldg/vav_eas>,
+        <urn:bldg/vav_nor>,
+        <urn:bldg/vav_sou>,
+        <urn:bldg/vav_wes> .
+
+bs:Zone_Air_Cooling_Temperature_Setpoint_version_1 a rdf:Seq ;
+    rdfs:member <urn:bldg/hvac_oveZonSupCor_TZonCooSet_u>,
+        <urn:bldg/hvac_oveZonSupEas_TZonCooSet_u>,
+        <urn:bldg/hvac_oveZonSupNor_TZonCooSet_u>,
+        <urn:bldg/hvac_oveZonSupSou_TZonCooSet_u>,
+        <urn:bldg/hvac_oveZonSupWes_TZonCooSet_u> .
+
+bs:Zone_Air_Heating_Temperature_Setpoint_version_1 a rdf:Seq ;
+    rdfs:member <urn:bldg/hvac_oveZonSupCor_TZonHeaSet_u>,
+        <urn:bldg/hvac_oveZonSupEas_TZonHeaSet_u>,
+        <urn:bldg/hvac_oveZonSupNor_TZonHeaSet_u>,
+        <urn:bldg/hvac_oveZonSupSou_TZonHeaSet_u>,
+        <urn:bldg/hvac_oveZonSupWes_TZonHeaSet_u> .
+
+bs:Zone_Air_Temperature_Sensor_version_1 a rdf:Seq ;
+    rdfs:member <urn:bldg/hvac_reaZonCor_TZon_y>,
+        <urn:bldg/hvac_reaZonEas_TZon_y>,
+        <urn:bldg/hvac_reaZonNor_TZon_y>,
+        <urn:bldg/hvac_reaZonSou_TZon_y>,
+        <urn:bldg/hvac_reaZonWes_TZon_y> .
+
