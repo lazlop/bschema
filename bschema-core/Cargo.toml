@@ -6,3 +6,4 @@ edition = "2024"
 [dependencies]
 oxigraph = { version = "0.5.9", default-features = false }
 thiserror = "2.0.18"
+rayon = "1.10.0"

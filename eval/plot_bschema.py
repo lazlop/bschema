@@ -1,0 +1,75 @@
+import pandas as pd
+import matplotlib.pyplot as plt
+import numpy as np
+
+df = pd.read_csv('bschema/stats.csv')
+
+def threshold_label(t):
+    if pd.isna(t):
+        return 'full'
+    return str(t)
+
+df['threshold_label'] = df['threshold'].apply(threshold_label)
+
+threshold_order = ['0.0', '0.3', '0.5', '0.7', 'full']
+display_labels = {'0.0': '0.0', '0.3': '0.3', '0.5': '0.5', '0.7': '0.7', 'full': '1.0'}
+colors = plt.cm.viridis(np.linspace(0, 0.85, len(threshold_order)))
+
+fig, ax = plt.subplots(figsize=(8, 4))
+
+for color, label in zip(colors, threshold_order):
+    subset = df[df['threshold_label'] == label].sort_values('graph_length')
+    ax.plot(
+        subset['graph_length'],
+        subset['runtime'],
+        marker='o',
+        color=color,
+        linewidth=2,
+        markersize=6,
+        label=f'τ = {display_labels[label]}',
+    )
+
+ax.set_xscale('log')
+ax.set_yscale('log')
+ax.set_xlabel('Original Graph Size (triples)', fontsize=12)
+ax.set_ylabel('Runtime (seconds)', fontsize=12)
+ax.set_title('BSchema Runtime vs. Original Graph Size', fontsize=14, fontweight='bold')
+ax.legend(fontsize=10)
+ax.grid(True, alpha=0.3, which='both')
+
+plt.tight_layout()
+plt.savefig('bschema/bschema_runtime.png', dpi=300, bbox_inches='tight')
+plt.show()
+print("Saved to bschema/bschema_runtime.png")
+
+
+fig, ax = plt.subplots(figsize=(8, 4))
+# Reference line y=x
+all_lengths = df['graph_length'].unique()
+xref = np.array([all_lengths.min(), all_lengths.max()])
+ax.plot(xref, xref, 'k--', linewidth=1, alpha=0.4, label='No Compression')
+
+for color, label in zip(colors, threshold_order):
+    subset = df[df['threshold_label'] == label].sort_values('graph_length')
+    ax.plot(
+        subset['graph_length'],
+        subset['bschema_length'],
+        marker='o',
+        color=color,
+        linewidth=2,
+        markersize=6,
+        label=f'τ = {display_labels[label]}',
+    )
+
+ax.set_xscale('log')
+ax.set_yscale('log')
+ax.set_xlabel('Original Graph Size (triples)', fontsize=12)
+ax.set_ylabel('BSchema Size (triples)', fontsize=12)
+ax.set_title('BSchema Compression vs. Original Graph Size', fontsize=14, fontweight='bold')
+ax.legend(fontsize=10)
+ax.grid(True, alpha=0.3, which='both')
+
+plt.tight_layout()
+plt.savefig('bschema/bschema_size_comparison.png', dpi=300, bbox_inches='tight')
+plt.show()
+print("Saved to bschema/bschema_size_comparison.png")

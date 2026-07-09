@@ -1,6 +1,6 @@
 //! Core bschema algorithm, ported from `graph-pattern-id/bschema/bschema.py`.
 
-use crate::canon::{common_triple_count, is_isomorphic};
+use crate::canon::{canonicalize, common_canon_triple_count, CanonTriple};
 use crate::error::Result;
 use crate::graph::RdfGraph;
 use crate::namespace::{
@@ -9,6 +9,7 @@ use crate::namespace::{
 };
 use crate::util::{common_pattern, local_name};
 use oxigraph::model::{NamedNode, NamedOrBlankNode, Term, Triple};
+use rayon::prelude::*;
 use std::collections::{HashMap, HashSet};
 
 /// Extracts the subgraph within `num_hops` of `central_node`, including
@@ -93,7 +94,7 @@ pub fn get_class(node: &Term, data_graph: &RdfGraph) -> NamedNode {
         let types = data_graph.objects(&subject, &A);
         if let Some(Term::NamedNode(bs_class)) = types
             .iter()
-            .find(|o| matches!(o, Term::NamedNode(n) if n.as_str().contains(namespace::BS_BASE)))
+            .find(|o| matches!(o, Term::NamedNode(n) if n.as_str().starts_with(namespace::BS_BASE)))
         {
             return bs_class.clone();
         }
@@ -146,7 +147,7 @@ pub fn class_graph(data_graph: &RdfGraph) -> Result<RdfGraph> {
 }
 
 pub struct ClassIsomorphisms {
-    pub distinct_class_subgraphs: Vec<Vec<Triple>>,
+    pub distinct_class_subgraphs: Vec<HashSet<CanonTriple>>,
     pub equivalent_subjects: Vec<Vec<NamedOrBlankNode>>,
     pub subject_classes: Vec<NamedNode>,
 }
@@ -158,25 +159,29 @@ pub fn class_isomorphisms(
     data_graph: &RdfGraph,
     similarity_threshold: Option<f64>,
 ) -> Result<ClassIsomorphisms> {
-    let mut distinct_class_subgraphs: Vec<Vec<Triple>> = Vec::new();
-    let mut seen_subjects: HashSet<NamedOrBlankNode> = HashSet::new();
+    let subjects: HashSet<NamedOrBlankNode> = data_graph.triples().into_iter().map(|t| t.subject.clone()).collect();
+
+    let results: Vec<Result<(NamedOrBlankNode, NamedNode, HashSet<CanonTriple>)>> = subjects
+        .par_iter()
+        .map(|s| {
+            let subject_class = get_class(&Term::from(s.clone()), data_graph);
+            let subgraph = subgraph_with_hops(data_graph, s, 1, false)?;
+            let pattern_graph = class_graph(&subgraph)?.triples();
+            let canon_pattern = canonicalize(&pattern_graph);
+            Ok((s.clone(), subject_class, canon_pattern))
+        })
+        .collect();
+
+    let mut distinct_class_subgraphs: Vec<HashSet<CanonTriple>> = Vec::new();
     let mut equivalent_subjects: Vec<Vec<NamedOrBlankNode>> = Vec::new();
     let mut subject_classes: Vec<NamedNode> = Vec::new();
 
-    for t in data_graph.triples() {
-        let s = &t.subject;
-        if seen_subjects.contains(s) {
-            continue;
-        }
-        seen_subjects.insert(s.clone());
-
-        let subject_class = get_class(&Term::from(s.clone()), data_graph);
-        let subgraph = subgraph_with_hops(data_graph, s, 1, false)?;
-        let pattern_graph = class_graph(&subgraph)?.triples();
+    for res in results {
+        let (s, subject_class, canon_pattern) = res?;
 
         if equivalent_subjects.is_empty() {
             equivalent_subjects.push(vec![s.clone()]);
-            distinct_class_subgraphs.push(pattern_graph);
+            distinct_class_subgraphs.push(canon_pattern);
             subject_classes.push(subject_class);
             continue;
         }
@@ -192,23 +197,17 @@ pub fn class_isomorphisms(
         for i in indices {
             let existing = &distinct_class_subgraphs[i];
             let matched = if let Some(threshold) = similarity_threshold {
-                let intersection = common_triple_count(&pattern_graph, existing);
-                let smaller = pattern_graph.len().min(existing.len()).max(1);
+                let intersection = common_canon_triple_count(&canon_pattern, existing);
+                let smaller = canon_pattern.len().min(existing.len()).max(1);
                 (intersection as f64 / smaller as f64) > threshold
             } else {
-                is_isomorphic(&pattern_graph, existing)
+                canon_pattern == *existing
             };
 
             if matched {
                 if similarity_threshold.is_some() {
-                    // Union the two class-pattern graphs, mirroring the
-                    // Python `distinct_class_subgraphs[i] = class_graph + g`.
                     let mut merged = existing.clone();
-                    for triple in &pattern_graph {
-                        if !merged.contains(triple) {
-                            merged.push(triple.clone());
-                        }
-                    }
+                    merged.extend(canon_pattern.clone());
                     distinct_class_subgraphs[i] = merged;
                 }
                 equivalent_subjects[i].push(s.clone());
@@ -218,7 +217,7 @@ pub fn class_isomorphisms(
         }
 
         if !found {
-            distinct_class_subgraphs.push(pattern_graph);
+            distinct_class_subgraphs.push(canon_pattern);
             equivalent_subjects.push(vec![s.clone()]);
             subject_classes.push(subject_class);
         }
