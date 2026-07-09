@@ -23,7 +23,7 @@ bs:Building_Electrical_Meter_version_1 a brick:Building_Electrical_Meter ;
     ref:hasExternalReference bs:Resource_version_1 .
 
 bs:Building_version_1 a brick:Building ;
-    brick:area bs:Resource_version_4 .
+    brick:area bs:Resource_version_2 .
 
 bs:Damper_version_1 a brick:Damper ;
     brick:hasPoint bs:Damper_Position_Setpoint_version_1 ;
@@ -68,7 +68,7 @@ bs:Chilled_Water_Supply_Temperature_Setpoint_version_1 a brick:Chilled_Water_Sup
 bs:Command_version_1 a brick:Command,
         brick:Heating_Command ;
     rdfs:label rdfs:Literal ;
-    ref:hasExternalReference bs:Resource_version_3 .
+    ref:hasExternalReference bs:Resource_version_1 .
 
 bs:Command_version_2 a brick:Command ;
     rdfs:label rdfs:Literal ;
@@ -77,7 +77,7 @@ bs:Command_version_2 a brick:Command ;
 bs:Cooling_Command_version_1 a brick:Cooling_Command,
         brick:Valve_Command ;
     rdfs:label rdfs:Literal ;
-    ref:hasExternalReference bs:Resource_version_2 .
+    ref:hasExternalReference bs:Resource_version_1 .
 
 bs:Damper_Position_Command_version_1 a brick:Damper_Position_Command ;
     rdfs:label rdfs:Literal ;
@@ -101,11 +101,7 @@ bs:Mode_version_1 a brick:Mode ;
     rdfs:label rdfs:Literal ;
     ref:hasExternalReference bs:Resource_version_1 .
 
-bs:Resource_version_2 ref:hasTimeseriesId rdfs:Literal .
-
-bs:Resource_version_3 ref:hasTimeseriesId rdfs:Literal .
-
-bs:Resource_version_4 brick:hasUnits rdfs:Resource ;
+bs:Resource_version_2 brick:hasUnits rdfs:Resource ;
     brick:value rdfs:Literal .
 
 bs:Return_Air_Temperature_Sensor_version_1 a brick:Return_Air_Temperature_Sensor ;

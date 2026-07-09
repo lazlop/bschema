@@ -6,16 +6,7 @@ bs:Building_version_1 a rdf:Seq ;
     rdfs:member <http://openmetrics.eu/openmetrics#Building_142> .
 
 bs:Delay_Parameter_version_1 a rdf:Seq ;
-    rdfs:member <http://openmetrics.eu/openmetrics#RC04N0048_Delay_Parameter>,
-        <http://openmetrics.eu/openmetrics#RC04N0049_Delay_Parameter>,
-        <http://openmetrics.eu/openmetrics#RC04N0050_Delay_Parameter>,
-        <http://openmetrics.eu/openmetrics#RC04N0051_Delay_Parameter>,
-        <http://openmetrics.eu/openmetrics#RC04N0052_Delay_Parameter>,
-        <http://openmetrics.eu/openmetrics#RC04N0054_Delay_Parameter>,
-        <http://openmetrics.eu/openmetrics#RC04N0055_Delay_Parameter>,
-        <http://openmetrics.eu/openmetrics#RC04N0056_Delay_Parameter>,
-        <http://openmetrics.eu/openmetrics#RC04N0057_Delay_Parameter>,
-        <http://openmetrics.eu/openmetrics#RC04N0058_Delay_Parameter> .
+    rdfs:member <http://openmetrics.eu/openmetrics#RC04N0041_Delay_Parameter> .
 
 bs:Delay_Parameter_version_2 a rdf:Seq ;
     rdfs:member <http://openmetrics.eu/openmetrics#RC04N0042_Delay_Parameter>,
@@ -29,7 +20,16 @@ bs:Delay_Parameter_version_3 a rdf:Seq ;
         <http://openmetrics.eu/openmetrics#RC04N0053_Delay_Parameter> .
 
 bs:Delay_Parameter_version_4 a rdf:Seq ;
-    rdfs:member <http://openmetrics.eu/openmetrics#RC04N0041_Delay_Parameter> .
+    rdfs:member <http://openmetrics.eu/openmetrics#RC04N0048_Delay_Parameter>,
+        <http://openmetrics.eu/openmetrics#RC04N0049_Delay_Parameter>,
+        <http://openmetrics.eu/openmetrics#RC04N0050_Delay_Parameter>,
+        <http://openmetrics.eu/openmetrics#RC04N0051_Delay_Parameter>,
+        <http://openmetrics.eu/openmetrics#RC04N0052_Delay_Parameter>,
+        <http://openmetrics.eu/openmetrics#RC04N0054_Delay_Parameter>,
+        <http://openmetrics.eu/openmetrics#RC04N0055_Delay_Parameter>,
+        <http://openmetrics.eu/openmetrics#RC04N0056_Delay_Parameter>,
+        <http://openmetrics.eu/openmetrics#RC04N0057_Delay_Parameter>,
+        <http://openmetrics.eu/openmetrics#RC04N0058_Delay_Parameter> .
 
 bs:Energy_version_1 a rdf:Seq ;
     rdfs:member <http://openmetrics.eu/openmetrics#EnergyProperty> .
@@ -38,6 +38,9 @@ bs:Humidity_version_1 a rdf:Seq ;
     rdfs:member <http://openmetrics.eu/openmetrics#HumProperty> .
 
 bs:IFCReference_version_1 a rdf:Seq ;
+    rdfs:member <http://openmetrics.eu/openmetrics#ZoneRef_62124> .
+
+bs:IFCReference_version_2 a rdf:Seq ;
     rdfs:member <http://openmetrics.eu/openmetrics#ZoneRef_62229>,
         <http://openmetrics.eu/openmetrics#ZoneRef_62384>,
         <http://openmetrics.eu/openmetrics#ZoneRef_62459>,
@@ -49,40 +52,28 @@ bs:IFCReference_version_1 a rdf:Seq ;
         <http://openmetrics.eu/openmetrics#ZoneRef_62985>,
         <http://openmetrics.eu/openmetrics#ZoneRef_63060> .
 
-bs:IFCReference_version_2 a rdf:Seq ;
-    rdfs:member <urn:bschema-rs:skolem:c0596cd90c8102099f9e270ee233a3e1> .
-
 bs:IFCReference_version_3 a rdf:Seq ;
+    rdfs:member <http://openmetrics.eu/openmetrics#ZoneRef_62310>,
+        <http://openmetrics.eu/openmetrics#ZoneRef_62761> .
+
+bs:IFCReference_version_4 a rdf:Seq ;
+    rdfs:member <http://openmetrics.eu/openmetrics#ZoneRef_63135> .
+
+bs:IFCReference_version_5 a rdf:Seq ;
     rdfs:member <http://openmetrics.eu/openmetrics#ZoneRef_63211>,
         <http://openmetrics.eu/openmetrics#ZoneRef_63286>,
         <http://openmetrics.eu/openmetrics#ZoneRef_63361>,
         <http://openmetrics.eu/openmetrics#ZoneRef_63436>,
         <http://openmetrics.eu/openmetrics#ZoneRef_63511> .
 
-bs:IFCReference_version_4 a rdf:Seq ;
-    rdfs:member <http://openmetrics.eu/openmetrics#ZoneRef_62310>,
-        <http://openmetrics.eu/openmetrics#ZoneRef_62761> .
-
-bs:IFCReference_version_5 a rdf:Seq ;
-    rdfs:member <http://openmetrics.eu/openmetrics#ZoneRef_63135> .
-
 bs:IFCReference_version_6 a rdf:Seq ;
-    rdfs:member <urn:bschema-rs:skolem:ae2f2ba6e0a2102fc5efa43a1631e86c> .
+    rdfs:member <urn:bschema-rs:skolem:cfe6648f2ed1c3c850126fd5c1491b6c> .
 
 bs:IFCReference_version_7 a rdf:Seq ;
-    rdfs:member <http://openmetrics.eu/openmetrics#ZoneRef_62124> .
+    rdfs:member <urn:bschema-rs:skolem:fbd73fe69159e68e066f5ec0eea79466> .
 
 bs:Lockout_Command_version_1 a rdf:Seq ;
-    rdfs:member <http://openmetrics.eu/openmetrics#RC04N0048_Lockout_Command>,
-        <http://openmetrics.eu/openmetrics#RC04N0049_Lockout_Command>,
-        <http://openmetrics.eu/openmetrics#RC04N0050_Lockout_Command>,
-        <http://openmetrics.eu/openmetrics#RC04N0051_Lockout_Command>,
-        <http://openmetrics.eu/openmetrics#RC04N0052_Lockout_Command>,
-        <http://openmetrics.eu/openmetrics#RC04N0054_Lockout_Command>,
-        <http://openmetrics.eu/openmetrics#RC04N0055_Lockout_Command>,
-        <http://openmetrics.eu/openmetrics#RC04N0056_Lockout_Command>,
-        <http://openmetrics.eu/openmetrics#RC04N0057_Lockout_Command>,
-        <http://openmetrics.eu/openmetrics#RC04N0058_Lockout_Command> .
+    rdfs:member <http://openmetrics.eu/openmetrics#RC04N0041_Lockout_Command> .
 
 bs:Lockout_Command_version_2 a rdf:Seq ;
     rdfs:member <http://openmetrics.eu/openmetrics#RC04N0042_Lockout_Command>,
@@ -96,9 +87,32 @@ bs:Lockout_Command_version_3 a rdf:Seq ;
         <http://openmetrics.eu/openmetrics#RC04N0053_Lockout_Command> .
 
 bs:Lockout_Command_version_4 a rdf:Seq ;
-    rdfs:member <http://openmetrics.eu/openmetrics#RC04N0041_Lockout_Command> .
+    rdfs:member <http://openmetrics.eu/openmetrics#RC04N0048_Lockout_Command>,
+        <http://openmetrics.eu/openmetrics#RC04N0049_Lockout_Command>,
+        <http://openmetrics.eu/openmetrics#RC04N0050_Lockout_Command>,
+        <http://openmetrics.eu/openmetrics#RC04N0051_Lockout_Command>,
+        <http://openmetrics.eu/openmetrics#RC04N0052_Lockout_Command>,
+        <http://openmetrics.eu/openmetrics#RC04N0054_Lockout_Command>,
+        <http://openmetrics.eu/openmetrics#RC04N0055_Lockout_Command>,
+        <http://openmetrics.eu/openmetrics#RC04N0056_Lockout_Command>,
+        <http://openmetrics.eu/openmetrics#RC04N0057_Lockout_Command>,
+        <http://openmetrics.eu/openmetrics#RC04N0058_Lockout_Command> .
 
 bs:Max_Air_Temperature_Setpoint_version_1 a rdf:Seq ;
+    rdfs:member <http://openmetrics.eu/openmetrics#RC04N0041_TempSetpointMax> .
+
+bs:Max_Air_Temperature_Setpoint_version_2 a rdf:Seq ;
+    rdfs:member <http://openmetrics.eu/openmetrics#RC04N0042_TempSetpointMax>,
+        <http://openmetrics.eu/openmetrics#RC04N0043_TempSetpointMax>,
+        <http://openmetrics.eu/openmetrics#RC04N0044_TempSetpointMax>,
+        <http://openmetrics.eu/openmetrics#RC04N0045_TempSetpointMax>,
+        <http://openmetrics.eu/openmetrics#RC04N0046_TempSetpointMax> .
+
+bs:Max_Air_Temperature_Setpoint_version_3 a rdf:Seq ;
+    rdfs:member <http://openmetrics.eu/openmetrics#RC04N0047_TempSetpointMax>,
+        <http://openmetrics.eu/openmetrics#RC04N0053_TempSetpointMax> .
+
+bs:Max_Air_Temperature_Setpoint_version_4 a rdf:Seq ;
     rdfs:member <http://openmetrics.eu/openmetrics#RC04N0048_TempSetpointMax>,
         <http://openmetrics.eu/openmetrics#RC04N0049_TempSetpointMax>,
         <http://openmetrics.eu/openmetrics#RC04N0050_TempSetpointMax>,
@@ -110,28 +124,21 @@ bs:Max_Air_Temperature_Setpoint_version_1 a rdf:Seq ;
         <http://openmetrics.eu/openmetrics#RC04N0057_TempSetpointMax>,
         <http://openmetrics.eu/openmetrics#RC04N0058_TempSetpointMax> .
 
-bs:Max_Air_Temperature_Setpoint_version_2 a rdf:Seq ;
-    rdfs:member <http://openmetrics.eu/openmetrics#RC04N0047_TempSetpointMax>,
-        <http://openmetrics.eu/openmetrics#RC04N0053_TempSetpointMax> .
-
-bs:Max_Air_Temperature_Setpoint_version_3 a rdf:Seq ;
-    rdfs:member <http://openmetrics.eu/openmetrics#RC04N0042_TempSetpointMax>,
-        <http://openmetrics.eu/openmetrics#RC04N0043_TempSetpointMax>,
-        <http://openmetrics.eu/openmetrics#RC04N0044_TempSetpointMax>,
-        <http://openmetrics.eu/openmetrics#RC04N0045_TempSetpointMax>,
-        <http://openmetrics.eu/openmetrics#RC04N0046_TempSetpointMax> .
-
-bs:Max_Air_Temperature_Setpoint_version_4 a rdf:Seq ;
-    rdfs:member <http://openmetrics.eu/openmetrics#RC04N0041_TempSetpointMax> .
-
 bs:Min_Air_Temperature_Setpoint_version_1 a rdf:Seq ;
+    rdfs:member <http://openmetrics.eu/openmetrics#RC04N0041_TempSetpointMin> .
+
+bs:Min_Air_Temperature_Setpoint_version_2 a rdf:Seq ;
     rdfs:member <http://openmetrics.eu/openmetrics#RC04N0042_TempSetpointMin>,
         <http://openmetrics.eu/openmetrics#RC04N0043_TempSetpointMin>,
         <http://openmetrics.eu/openmetrics#RC04N0044_TempSetpointMin>,
         <http://openmetrics.eu/openmetrics#RC04N0045_TempSetpointMin>,
         <http://openmetrics.eu/openmetrics#RC04N0046_TempSetpointMin> .
 
-bs:Min_Air_Temperature_Setpoint_version_2 a rdf:Seq ;
+bs:Min_Air_Temperature_Setpoint_version_3 a rdf:Seq ;
+    rdfs:member <http://openmetrics.eu/openmetrics#RC04N0047_TempSetpointMin>,
+        <http://openmetrics.eu/openmetrics#RC04N0053_TempSetpointMin> .
+
+bs:Min_Air_Temperature_Setpoint_version_4 a rdf:Seq ;
     rdfs:member <http://openmetrics.eu/openmetrics#RC04N0048_TempSetpointMin>,
         <http://openmetrics.eu/openmetrics#RC04N0049_TempSetpointMin>,
         <http://openmetrics.eu/openmetrics#RC04N0050_TempSetpointMin>,
@@ -143,18 +150,18 @@ bs:Min_Air_Temperature_Setpoint_version_2 a rdf:Seq ;
         <http://openmetrics.eu/openmetrics#RC04N0057_TempSetpointMin>,
         <http://openmetrics.eu/openmetrics#RC04N0058_TempSetpointMin> .
 
-bs:Min_Air_Temperature_Setpoint_version_3 a rdf:Seq ;
-    rdfs:member <http://openmetrics.eu/openmetrics#RC04N0047_TempSetpointMin>,
-        <http://openmetrics.eu/openmetrics#RC04N0053_TempSetpointMin> .
-
-bs:Min_Air_Temperature_Setpoint_version_4 a rdf:Seq ;
-    rdfs:member <http://openmetrics.eu/openmetrics#RC04N0041_TempSetpointMin> .
-
 bs:Mode_Command_version_1 a rdf:Seq ;
+    rdfs:member <http://openmetrics.eu/openmetrics#RC04N0042_Mode_Command>,
+        <http://openmetrics.eu/openmetrics#RC04N0043_Mode_Command>,
+        <http://openmetrics.eu/openmetrics#RC04N0044_Mode_Command>,
+        <http://openmetrics.eu/openmetrics#RC04N0045_Mode_Command>,
+        <http://openmetrics.eu/openmetrics#RC04N0046_Mode_Command> .
+
+bs:Mode_Command_version_2 a rdf:Seq ;
     rdfs:member <http://openmetrics.eu/openmetrics#RC04N0047_Mode_Command>,
         <http://openmetrics.eu/openmetrics#RC04N0053_Mode_Command> .
 
-bs:Mode_Command_version_2 a rdf:Seq ;
+bs:Mode_Command_version_3 a rdf:Seq ;
     rdfs:member <http://openmetrics.eu/openmetrics#RC04N0048_Mode_Command>,
         <http://openmetrics.eu/openmetrics#RC04N0049_Mode_Command>,
         <http://openmetrics.eu/openmetrics#RC04N0050_Mode_Command>,
@@ -166,24 +173,24 @@ bs:Mode_Command_version_2 a rdf:Seq ;
         <http://openmetrics.eu/openmetrics#RC04N0057_Mode_Command>,
         <http://openmetrics.eu/openmetrics#RC04N0058_Mode_Command> .
 
-bs:Mode_Command_version_3 a rdf:Seq ;
+bs:Mode_Command_version_4 a rdf:Seq ;
     rdfs:member <http://openmetrics.eu/openmetrics#RC04N00_Mode_Command> .
 
-bs:Mode_Command_version_4 a rdf:Seq ;
-    rdfs:member <http://openmetrics.eu/openmetrics#RC04N0042_Mode_Command>,
-        <http://openmetrics.eu/openmetrics#RC04N0043_Mode_Command>,
-        <http://openmetrics.eu/openmetrics#RC04N0044_Mode_Command>,
-        <http://openmetrics.eu/openmetrics#RC04N0045_Mode_Command>,
-        <http://openmetrics.eu/openmetrics#RC04N0046_Mode_Command> .
-
 bs:Occupancy_Sensor_version_1 a rdf:Seq ;
+    rdfs:member <http://openmetrics.eu/openmetrics#RC04N0041_OccSensingPoint> .
+
+bs:Occupancy_Sensor_version_2 a rdf:Seq ;
     rdfs:member <http://openmetrics.eu/openmetrics#RC04N0042_OccSensingPoint>,
         <http://openmetrics.eu/openmetrics#RC04N0043_OccSensingPoint>,
         <http://openmetrics.eu/openmetrics#RC04N0044_OccSensingPoint>,
         <http://openmetrics.eu/openmetrics#RC04N0045_OccSensingPoint>,
         <http://openmetrics.eu/openmetrics#RC04N0046_OccSensingPoint> .
 
-bs:Occupancy_Sensor_version_2 a rdf:Seq ;
+bs:Occupancy_Sensor_version_3 a rdf:Seq ;
+    rdfs:member <http://openmetrics.eu/openmetrics#RC04N0047_OccSensingPoint>,
+        <http://openmetrics.eu/openmetrics#RC04N0053_OccSensingPoint> .
+
+bs:Occupancy_Sensor_version_4 a rdf:Seq ;
     rdfs:member <http://openmetrics.eu/openmetrics#RC04N0048_OccSensingPoint>,
         <http://openmetrics.eu/openmetrics#RC04N0049_OccSensingPoint>,
         <http://openmetrics.eu/openmetrics#RC04N0050_OccSensingPoint>,
@@ -195,24 +202,24 @@ bs:Occupancy_Sensor_version_2 a rdf:Seq ;
         <http://openmetrics.eu/openmetrics#RC04N0057_OccSensingPoint>,
         <http://openmetrics.eu/openmetrics#RC04N0058_OccSensingPoint> .
 
-bs:Occupancy_Sensor_version_3 a rdf:Seq ;
-    rdfs:member <http://openmetrics.eu/openmetrics#RC04N0047_OccSensingPoint>,
-        <http://openmetrics.eu/openmetrics#RC04N0053_OccSensingPoint> .
-
-bs:Occupancy_Sensor_version_4 a rdf:Seq ;
-    rdfs:member <http://openmetrics.eu/openmetrics#RC04N0041_OccSensingPoint> .
-
 bs:Occupancy_version_1 a rdf:Seq ;
     rdfs:member <http://openmetrics.eu/openmetrics#OccProperty> .
 
 bs:On_Off_Command_version_1 a rdf:Seq ;
+    rdfs:member <http://openmetrics.eu/openmetrics#RC04N0041_OnOffCommand> .
+
+bs:On_Off_Command_version_2 a rdf:Seq ;
     rdfs:member <http://openmetrics.eu/openmetrics#RC04N0042_OnOffCommand>,
         <http://openmetrics.eu/openmetrics#RC04N0043_OnOffCommand>,
         <http://openmetrics.eu/openmetrics#RC04N0044_OnOffCommand>,
         <http://openmetrics.eu/openmetrics#RC04N0045_OnOffCommand>,
         <http://openmetrics.eu/openmetrics#RC04N0046_OnOffCommand> .
 
-bs:On_Off_Command_version_2 a rdf:Seq ;
+bs:On_Off_Command_version_3 a rdf:Seq ;
+    rdfs:member <http://openmetrics.eu/openmetrics#RC04N0047_OnOffCommand>,
+        <http://openmetrics.eu/openmetrics#RC04N0053_OnOffCommand> .
+
+bs:On_Off_Command_version_4 a rdf:Seq ;
     rdfs:member <http://openmetrics.eu/openmetrics#RC04N0048_OnOffCommand>,
         <http://openmetrics.eu/openmetrics#RC04N0049_OnOffCommand>,
         <http://openmetrics.eu/openmetrics#RC04N0050_OnOffCommand>,
@@ -224,13 +231,6 @@ bs:On_Off_Command_version_2 a rdf:Seq ;
         <http://openmetrics.eu/openmetrics#RC04N0057_OnOffCommand>,
         <http://openmetrics.eu/openmetrics#RC04N0058_OnOffCommand> .
 
-bs:On_Off_Command_version_3 a rdf:Seq ;
-    rdfs:member <http://openmetrics.eu/openmetrics#RC04N0047_OnOffCommand>,
-        <http://openmetrics.eu/openmetrics#RC04N0053_OnOffCommand> .
-
-bs:On_Off_Command_version_4 a rdf:Seq ;
-    rdfs:member <http://openmetrics.eu/openmetrics#RC04N0041_OnOffCommand> .
-
 bs:Power_version_1 a rdf:Seq ;
     rdfs:member <http://openmetrics.eu/openmetrics#PowerProperty> .
 
@@ -238,381 +238,395 @@ bs:Pressure_version_1 a rdf:Seq ;
     rdfs:member <http://openmetrics.eu/openmetrics#PresProperty> .
 
 bs:Resource_version_1 a rdf:Seq ;
-    rdfs:member <urn:bschema-rs:skolem:a4f171604e4b5e4f59dbeeb314d56de4>,
-        <urn:bschema-rs:skolem:a804083d1a225f3c57e0eae693e21cb3>,
-        <urn:bschema-rs:skolem:c08d6e76987273143823334ec72b1283>,
-        <urn:bschema-rs:skolem:c3ad68adeec53a474ad1df958a34b147>,
-        <urn:bschema-rs:skolem:c8f89e5e4a5771060d6491b602403965>,
-        <urn:bschema-rs:skolem:cf6c0079d0f324a1ba8cef14cf69e845>,
-        <urn:bschema-rs:skolem:da59c7a658cdc371ebc173403263e1f6>,
-        <urn:bschema-rs:skolem:f5305fe943d602438b9be10283753474>,
-        <urn:bschema-rs:skolem:f63c06e462fea9464d2ffb3b0b2f1de5>,
-        <urn:bschema-rs:skolem:faf27a0c6756548921c124f7c882d5b6> .
+    rdfs:member <urn:bschema-rs:skolem:a1762e020ee891b524ee52c3482a03ac>,
+        <urn:bschema-rs:skolem:c40d6c34e5e6c51881cc2e4cc075f7d1> .
 
 bs:Resource_version_10 a rdf:Seq ;
-    rdfs:member <urn:bschema-rs:skolem:aa48965df8a29327903488680cec3e9f>,
-        <urn:bschema-rs:skolem:b19160708b30e314fcc33022de789d27>,
-        <urn:bschema-rs:skolem:b8efc69011ee627cacb50c10d9b6d7ae>,
-        <urn:bschema-rs:skolem:baf16340afb1881db31aab2fe64542ee>,
-        <urn:bschema-rs:skolem:bf4c5e9d070f6981d3080bd8d0ee0202>,
-        <urn:bschema-rs:skolem:c5dd3bca3807ff6d43b2dc2fd4eadde4>,
-        <urn:bschema-rs:skolem:ca9f47b5b8f969b4516599cfcd437dea>,
-        <urn:bschema-rs:skolem:cce406848596101f55d98f793aaeb087>,
-        <urn:bschema-rs:skolem:d89c3fc195f3142c547d23f2b757cc6e>,
-        <urn:bschema-rs:skolem:e25cabbd14fb32e7c7952ddc21cbab98>,
-        <urn:bschema-rs:skolem:e2c8bf8e9f94da488e3619b1d46e3b6a>,
-        <urn:bschema-rs:skolem:e57bdb37b07c7e4eabda1793ebc642d3>,
-        <urn:bschema-rs:skolem:e890bc9ded36fccbf8fd83815d574a26>,
-        <urn:bschema-rs:skolem:e94bfdaf9be160cd461071760446b35a>,
-        <urn:bschema-rs:skolem:ebd3769e38c0f7b0c2ea67713402f85b>,
-        <urn:bschema-rs:skolem:edfa5e774133aadee0ee3133b12dc2da>,
-        <urn:bschema-rs:skolem:f211654926859b537d9ec23a43da3ffc>,
-        <urn:bschema-rs:skolem:f55571ece89744e4987e4ed49c8d419d> .
+    rdfs:member <urn:bschema-rs:skolem:a466111b2b8be3b4ff5310d659f2c033>,
+        <urn:bschema-rs:skolem:bb0a5d73d8784f818be49e8b030575c6>,
+        <urn:bschema-rs:skolem:bd3f84e73d210715c121c26d9d54873f>,
+        <urn:bschema-rs:skolem:bed926471d4c616702af9b8572fadf92>,
+        <urn:bschema-rs:skolem:c38e32f57b970a71366874461bdf6a45>,
+        <urn:bschema-rs:skolem:d83b82a5e9ddba2736e576178de723d0>,
+        <urn:bschema-rs:skolem:f44a0bc9877a8227b5e66c8398dbe31d>,
+        <urn:bschema-rs:skolem:faef848873de348814966af986db7c74>,
+        <urn:bschema-rs:skolem:fe4075a7797c5980a03ed794195b6768>,
+        <urn:bschema-rs:skolem:ff64b9300d9630a691c2fb8f508cef73> .
 
 bs:Resource_version_11 a rdf:Seq ;
-    rdfs:member <urn:bschema-rs:skolem:ae034a6ae1df14a923f9d58c39454511>,
-        <urn:bschema-rs:skolem:afe218d107a2e8254679aac41c9c9a3a>,
-        <urn:bschema-rs:skolem:b9ea6d415fa5a858e44d2d5beccc1a2c>,
-        <urn:bschema-rs:skolem:c8ca2c7e8a736603038c82fc19ba542f>,
-        <urn:bschema-rs:skolem:d2240419140c23d34e075ab41469eaaf>,
-        <urn:bschema-rs:skolem:d85b36d5301024a269012875131dec2>,
-        <urn:bschema-rs:skolem:e0b5d0c0a8574182a256f10b0dde5059>,
-        <urn:bschema-rs:skolem:e361fe4a2d424333789a83b80b60a832>,
-        <urn:bschema-rs:skolem:f0e2d0995c761c94f4b6a7a94229c5fe>,
-        <urn:bschema-rs:skolem:f4ac7ba373761766d1b19796d26e440d> .
+    rdfs:member <urn:bschema-rs:skolem:a4687b83cdddbe95d1dc92d4eac9ebfb>,
+        <urn:bschema-rs:skolem:aa64d7d96ba5219d3d46bcb2ce26b605>,
+        <urn:bschema-rs:skolem:b733f960b0e855d9100d06044030689c>,
+        <urn:bschema-rs:skolem:d7f81d5fb4e9ef2946e911167b15473>,
+        <urn:bschema-rs:skolem:eb92dcc28cf5183349b77a881f986dd3> .
 
 bs:Resource_version_12 a rdf:Seq ;
-    rdfs:member <urn:bschema-rs:skolem:a921d179fe81db5bf6b820a3f88c74ef>,
-        <urn:bschema-rs:skolem:bca15816904caa78bb38db228a027767>,
-        <urn:bschema-rs:skolem:cbf3ca90f66546a8ac80dbe9e55fbb40>,
-        <urn:bschema-rs:skolem:d6084d1415d35c13e7239c92692fb9a8>,
-        <urn:bschema-rs:skolem:ec7602e593f2903eba8c79f2088b2ae2> .
+    rdfs:member <urn:bschema-rs:skolem:a4b04f8a8f9ff646d9daa6a33a8a4cce>,
+        <urn:bschema-rs:skolem:c57fa7f919a072595a8cd86cf94997dd>,
+        <urn:bschema-rs:skolem:cee672b823338d102486c96a6c2cfa19>,
+        <urn:bschema-rs:skolem:e42f8e14eeff48d2c11ebb692cc6ac4>,
+        <urn:bschema-rs:skolem:eb68a8f2b97f5cbee99c59dac8ba6f10> .
 
 bs:Resource_version_13 a rdf:Seq ;
-    rdfs:member <urn:bschema-rs:skolem:a56c1bb85ff12237f9a612f1cdfad606>,
-        <urn:bschema-rs:skolem:c93d33f9fc9a52369b87a8e190c499ff>,
-        <urn:bschema-rs:skolem:e5ed19da0375e2631e7d82fc75b2aaba>,
-        <urn:bschema-rs:skolem:ef59fcd1d85cd29ff55083b788d30079>,
-        <urn:bschema-rs:skolem:f196a14c140e530cbd1bca18cebfd039> .
+    rdfs:member <urn:bschema-rs:skolem:a4d790c563fd69b3badefec05d215842>,
+        <urn:bschema-rs:skolem:ac69a00eb247bd67ed9f7aeca0bbea6d>,
+        <urn:bschema-rs:skolem:adca18fcd272a09b0ce7ea1250cc0d92>,
+        <urn:bschema-rs:skolem:b6b5715e2b5a382c6a306aee78357f97>,
+        <urn:bschema-rs:skolem:bfc91630143e72b7651665ca02036e6c>,
+        <urn:bschema-rs:skolem:c603593da5f263437b228cfcd4c0e417>,
+        <urn:bschema-rs:skolem:c8e977317fbf486b7c3a288735c743d9>,
+        <urn:bschema-rs:skolem:e57cb08237a99d9bce49289e9e4f0d50>,
+        <urn:bschema-rs:skolem:ec22f12178236a17351fec540336a685>,
+        <urn:bschema-rs:skolem:fcb5161270bb5f502eb888d159f51e78> .
 
 bs:Resource_version_14 a rdf:Seq ;
-    rdfs:member <urn:bschema-rs:skolem:af859ccbb0ec60cd2b8519d7f34c6a1b>,
-        <urn:bschema-rs:skolem:bc8a2251b8fbef13500ef197670bd5b6>,
-        <urn:bschema-rs:skolem:c3768e254675ae665d362bd7bddc95d7>,
-        <urn:bschema-rs:skolem:d2ee66e79ef8288186f7d4f6bb5025cc>,
-        <urn:bschema-rs:skolem:d74f6716b0bbff2965cb28b0b5405b20>,
-        <urn:bschema-rs:skolem:ea301b0fa104efc00cd2b5039f23a515>,
-        <urn:bschema-rs:skolem:f17c15bccd110725470a5c7786656879>,
-        <urn:bschema-rs:skolem:f8d7612132e77dd2ed015bc95a046a2c>,
-        <urn:bschema-rs:skolem:fba32d4d5ae2c17117bc09b38ddfe5b9>,
-        <urn:bschema-rs:skolem:ff0ac2c8b2d87c56719e8c328b4b821e> .
+    rdfs:member <urn:bschema-rs:skolem:a602cd93840db51754c3cae6cac77876>,
+        <urn:bschema-rs:skolem:c03647f9e83d996ce2b37ea7b79c3c62>,
+        <urn:bschema-rs:skolem:c9f69290889bc5c94e430c7c0473b5f5>,
+        <urn:bschema-rs:skolem:d3e8b407d3431e0cec6ce3653f653596>,
+        <urn:bschema-rs:skolem:e0bca862955666ad69d9ca69b7ebeb43>,
+        <urn:bschema-rs:skolem:e966ca24fc28f2116985c34121047d8d>,
+        <urn:bschema-rs:skolem:f1a382ca31da8a37132edb3ea01ee0ae>,
+        <urn:bschema-rs:skolem:f7b98b0514ceacd04c4cfa14da7088af>,
+        <urn:bschema-rs:skolem:fa89bb51774e84140e975a4260461ec2>,
+        <urn:bschema-rs:skolem:fdba3d20c7f73635246d2b0121a29212> .
 
 bs:Resource_version_15 a rdf:Seq ;
-    rdfs:member <urn:bschema-rs:skolem:a062b9adaedf32a5a2904604f77865c6>,
-        <urn:bschema-rs:skolem:a31b0c01de1dae2ce29f24eb8de35ca1>,
-        <urn:bschema-rs:skolem:b6247dcef9c8f1709f99c31b9d9cf370>,
-        <urn:bschema-rs:skolem:baf36450143ec24fba531f55646b0a6a>,
-        <urn:bschema-rs:skolem:c28534da934f84b392e6781fc98cdc11>,
-        <urn:bschema-rs:skolem:c6baad325c6edb18eb001858da93b9c6>,
-        <urn:bschema-rs:skolem:d50ae2954e0f30dd8f48bef9e7a0bcec>,
-        <urn:bschema-rs:skolem:e7ba72893246918eeb2d5bb954db9bd5>,
-        <urn:bschema-rs:skolem:f24a946f08cac2476424d1de656d3f51>,
-        <urn:bschema-rs:skolem:f721f3d769ace5a81e3842a209ed1824> .
+    rdfs:member <urn:bschema-rs:skolem:a61c684b25e7ab0045d24a2f1e72f674>,
+        <urn:bschema-rs:skolem:a786920813a7ff9a4d7712d8aef4683f>,
+        <urn:bschema-rs:skolem:aac195a9a6d0d98eb4f5dca5c937c8cb>,
+        <urn:bschema-rs:skolem:ab9a8ed7351ba6b37e1d188560e4ca8c>,
+        <urn:bschema-rs:skolem:b9c3c09a691457cc7ab47470bbe8353c>,
+        <urn:bschema-rs:skolem:b9c9371489d08fa702dc259ecf0b29db>,
+        <urn:bschema-rs:skolem:c6f10f405737d2ce907f01da5f7a4721>,
+        <urn:bschema-rs:skolem:d30789ddaf081267c52da6f3c2ba17e3>,
+        <urn:bschema-rs:skolem:eb1e0a4f5cef032110ea2b9af91ed9c4>,
+        <urn:bschema-rs:skolem:fa0b4ebd6959a66efa1daa8dedd1275b> .
 
 bs:Resource_version_16 a rdf:Seq ;
-    rdfs:member <urn:bschema-rs:skolem:e41eedfad96cb3d353eac3cce8b96a06>,
-        <urn:bschema-rs:skolem:ea74499ef04001fb0b6479fea51f02d8> .
+    rdfs:member <urn:bschema-rs:skolem:a677f259549d781ed0d69e28a84f5644>,
+        <urn:bschema-rs:skolem:b4a92777bab9412d641635cc8dee1998>,
+        <urn:bschema-rs:skolem:b4d909c9b609e90e090393c08d5f68c>,
+        <urn:bschema-rs:skolem:b9c7dc9863162bdba84f61f3f297845b>,
+        <urn:bschema-rs:skolem:c26f2643406b6a2348b9e34818d8a18d>,
+        <urn:bschema-rs:skolem:c802ee7461a19682c7a623f6bc6eb2b>,
+        <urn:bschema-rs:skolem:d40d158ab2806163ecf99761c218a020>,
+        <urn:bschema-rs:skolem:e38398cc291f8bc5f2e0b0c27bf58637>,
+        <urn:bschema-rs:skolem:f79f9ac4dfe830a5eca970a66f2b7c7a>,
+        <urn:bschema-rs:skolem:fb5171048c37f7fb5919ac89655e7383> .
 
 bs:Resource_version_17 a rdf:Seq ;
-    rdfs:member <urn:bschema-rs:skolem:af9af005cc4bd84dfa48a81238b15cdf>,
-        <urn:bschema-rs:skolem:c3c19f441a97a2de6cffdd9a0ba63863>,
-        <urn:bschema-rs:skolem:e1a377c8ffdc51c02d072f11444c264d>,
-        <urn:bschema-rs:skolem:e2b59ae66f50322890f6678e9b97b287>,
-        <urn:bschema-rs:skolem:f066a3c4c31760a2016ddc22a29dc866> .
+    rdfs:member <urn:bschema-rs:skolem:a68364d1d6121b7e421dc3e396d7244a>,
+        <urn:bschema-rs:skolem:a9bc0e4423876fee1cef4f3655bac730>,
+        <urn:bschema-rs:skolem:abdd1d45925f0486ca04e49c2785e43>,
+        <urn:bschema-rs:skolem:b9e7cf00fd999dd7fc227ab63c31d86b>,
+        <urn:bschema-rs:skolem:bb6c2007d994258a807c4cb76d11905> .
 
 bs:Resource_version_18 a rdf:Seq ;
-    rdfs:member <urn:bschema-rs:skolem:a26f025fc46953e2668a3c39a7f61cd7>,
-        <urn:bschema-rs:skolem:ae58794416078ea1cd3a25531b3aaaa2>,
-        <urn:bschema-rs:skolem:b0610893ad5975393258942f6f5adaf7>,
-        <urn:bschema-rs:skolem:c06764f0650c9555198ee8c6c5a26f70>,
-        <urn:bschema-rs:skolem:ce286356d607b3b43fe9fc509baf12bd>,
-        <urn:bschema-rs:skolem:fe885a5af4b97f2daedcdd3c6a28c0da> .
+    rdfs:member <urn:bschema-rs:skolem:a6a8838c0ea1dfbfb68d2c36dd27e67>,
+        <urn:bschema-rs:skolem:a97003c8bc99cb612fa1b740b9897948>,
+        <urn:bschema-rs:skolem:cda17f99877552ccbd1a4b3e16432125> .
 
 bs:Resource_version_19 a rdf:Seq ;
-    rdfs:member <urn:bschema-rs:skolem:a75e85e96190083195524c8a235cea61>,
-        <urn:bschema-rs:skolem:a968535d60f40770e52e38e6717974b6>,
-        <urn:bschema-rs:skolem:b46afe4f28fd1648cf8bf237937dbe3b>,
-        <urn:bschema-rs:skolem:bd64255fa2d485ec648b6b9a316c15bf>,
-        <urn:bschema-rs:skolem:c2e2a7f80667c91c57aa71f4d586d2e>,
-        <urn:bschema-rs:skolem:c94558f2a0153ae1c46a630c1c8a0547>,
-        <urn:bschema-rs:skolem:dc1768a759458f0af3202be9611700c4>,
-        <urn:bschema-rs:skolem:e061d342cd948352dcaa9f7cdfd16391>,
-        <urn:bschema-rs:skolem:f2945c0cf7567d485236e250f272241d>,
-        <urn:bschema-rs:skolem:ff966e43c4f1a4b21888ad23af8475b5> .
+    rdfs:member <urn:bschema-rs:skolem:a83c707dc922efa3d7475ca036a8ba57>,
+        <urn:bschema-rs:skolem:aa89a0e98aaa133c7d0bd380380db94d>,
+        <urn:bschema-rs:skolem:b47255b97a8cb71701afe64d38bfdd21>,
+        <urn:bschema-rs:skolem:cb09663d5b1e0ea03c8d1ba3ec239a0f>,
+        <urn:bschema-rs:skolem:d6b9e0c1d92756261d4f630d4c85bf0>,
+        <urn:bschema-rs:skolem:d9f1bed53b4d0c785e9f21e9ac0739d8> .
 
 bs:Resource_version_2 a rdf:Seq ;
-    rdfs:member <urn:bschema-rs:skolem:a02c0499f7d25d5b62da6f0084813f57>,
-        <urn:bschema-rs:skolem:a68e3c4c8001a85ea3bad2094125891b>,
-        <urn:bschema-rs:skolem:ba7c46411b1df7514604dc66ebb22ab1>,
-        <urn:bschema-rs:skolem:bcf43097fe8388bffb793a47d02fe630>,
-        <urn:bschema-rs:skolem:d69d65b4e10eac8efa9baa65094019c6>,
-        <urn:bschema-rs:skolem:d753ad66cd0f6dbfd5c1da80793e70d6>,
-        <urn:bschema-rs:skolem:e2ebc9189cebf8f8ef692566cf4ee25>,
-        <urn:bschema-rs:skolem:e58ce980b9120ef8b04e7ed31a63664a>,
-        <urn:bschema-rs:skolem:e8b6689945b98d5fd28a311cfdf786cd>,
-        <urn:bschema-rs:skolem:fe3256f3903dee07eb7bc72e614cf4f5> .
+    rdfs:member <urn:bschema-rs:skolem:a25a541195e56c8a2dd7a674953633f9>,
+        <urn:bschema-rs:skolem:b5080196d88b452d7be9cde7b56188cc>,
+        <urn:bschema-rs:skolem:c5cb156495cb155231ee10cc506d0bee>,
+        <urn:bschema-rs:skolem:ca395961f43069d79a10a261a355b515>,
+        <urn:bschema-rs:skolem:d253b9442ba14b562bd8c26af7b3ee8c>,
+        <urn:bschema-rs:skolem:d52b42016b9aaad0c22c16286bd874f1>,
+        <urn:bschema-rs:skolem:e279c060b5671fd77b9689ac9d13a6af>,
+        <urn:bschema-rs:skolem:e90e3791c743c93a80338670e439ace>,
+        <urn:bschema-rs:skolem:ecaaf9a78aef3849ad2efa543af08d1a>,
+        <urn:bschema-rs:skolem:ed1855b8e27c3ca076bcbe0dd1509862> .
 
 bs:Resource_version_20 a rdf:Seq ;
-    rdfs:member <urn:bschema-rs:skolem:ba6ffffdde5323f31bb36ad5699dd2de>,
-        <urn:bschema-rs:skolem:c47ff959c3f40f06e76e7ca9d18ffcac>,
-        <urn:bschema-rs:skolem:d9d04b18370bbeec0ba0e087984a378f>,
-        <urn:bschema-rs:skolem:de24a43fdc22cb18ef5b44bea92d8c02>,
-        <urn:bschema-rs:skolem:f1c44a55b3bc6936618496f7eca3bc97> .
+    rdfs:member <urn:bschema-rs:skolem:a8c6c2e102d93e36ae908d407c000ada>,
+        <urn:bschema-rs:skolem:bb143d735713fa88f8b3d7365af267ab>,
+        <urn:bschema-rs:skolem:c3e69236ba0f4f47bc82c1e14a29ccd0>,
+        <urn:bschema-rs:skolem:cd54723186d4e82a34e8bf63bd46066e>,
+        <urn:bschema-rs:skolem:e2a04be80578d055bd01d114811d791a> .
 
 bs:Resource_version_21 a rdf:Seq ;
-    rdfs:member <urn:bschema-rs:skolem:a1e57a09c054447b8de859161109e7d9>,
-        <urn:bschema-rs:skolem:c76b22b07ba04392156fad016a266497>,
-        <urn:bschema-rs:skolem:ddd24065781cc0622f443c339ccd9523>,
-        <urn:bschema-rs:skolem:e3024a08f8e58d41cd5690da8005e88c>,
-        <urn:bschema-rs:skolem:ff23a84cb6854148d1578c70999449bf> .
+    rdfs:member <urn:bschema-rs:skolem:a9099d904ad6c7215dffd563c4d196bd>,
+        <urn:bschema-rs:skolem:b14c65a44849a263ac49e2d2347f4734>,
+        <urn:bschema-rs:skolem:bf3df0fd68c841529700f09ced2e6f58>,
+        <urn:bschema-rs:skolem:e36d5ca66e63e6b2f974a3bb91a0cc4b>,
+        <urn:bschema-rs:skolem:e877020c7236188aea5dfd4d3aa64227> .
 
 bs:Resource_version_22 a rdf:Seq ;
-    rdfs:member <urn:bschema-rs:skolem:a17bc629de7f06926498bf87ddc65ae5>,
-        <urn:bschema-rs:skolem:e7e588ab0b720756cce0645441e772c0> .
+    rdfs:member <urn:bschema-rs:skolem:a9847faf228ce33382601085b5f21087>,
+        <urn:bschema-rs:skolem:bc57af8c7d8806969538841c41e4896f>,
+        <urn:bschema-rs:skolem:c23d078d3d4f54a9e6e78b75e17f9dd4>,
+        <urn:bschema-rs:skolem:eefa666f59d774001dc21d7533fb19af>,
+        <urn:bschema-rs:skolem:ef97abb8cba1e0a50055efcf052916af> .
 
 bs:Resource_version_23 a rdf:Seq ;
-    rdfs:member <urn:bschema-rs:skolem:a0d826b7c518b8a9823b293a5203b951>,
-        <urn:bschema-rs:skolem:a268da2020a9f5ac604b7c12943873f9>,
-        <urn:bschema-rs:skolem:a673ccfe67c8326933958fa759510e36>,
-        <urn:bschema-rs:skolem:af160ea1e62c098709bc37f329d0562b>,
-        <urn:bschema-rs:skolem:af6b4844e121a89144985bbf3a29548b>,
-        <urn:bschema-rs:skolem:b0f123d06f82c30a1b63e32e29fe71b1>,
-        <urn:bschema-rs:skolem:b3b702fe752655ea6e0a86d50a852d60>,
-        <urn:bschema-rs:skolem:b3c5a7213962d5059fdd2bf62eb68c35>,
-        <urn:bschema-rs:skolem:c16720541a751008c092cdd634c95251>,
-        <urn:bschema-rs:skolem:eed98a3bbbc4cc89f04e0cb3221f891a> .
+    rdfs:member <urn:bschema-rs:skolem:ac1cfcc3bd0992c6e46d676e73fb534e>,
+        <urn:bschema-rs:skolem:d930dc82c56d0ddce750d72ee703c96f>,
+        <urn:bschema-rs:skolem:e365e7391498cefa95d74a118d5e1587>,
+        <urn:bschema-rs:skolem:e91fcf3861bf38725290e465cdd46b2>,
+        <urn:bschema-rs:skolem:faca49231e4d8a41027e95a201edc034> .
 
 bs:Resource_version_24 a rdf:Seq ;
-    rdfs:member <urn:bschema-rs:skolem:c0b3c9b8a28c87c561318e425132e286>,
-        <urn:bschema-rs:skolem:d06f95f4291b1364775154c5c205b323>,
-        <urn:bschema-rs:skolem:e7c7d84082c55bdddc211aa0caaed233>,
-        <urn:bschema-rs:skolem:eaea8c465cf05e2e704844d08254db06>,
-        <urn:bschema-rs:skolem:f16d1e5f5031a3cbe59d7cd66164b1ec> .
+    rdfs:member <urn:bschema-rs:skolem:ad00866325e0c3601c1e3983edf5c1a3>,
+        <urn:bschema-rs:skolem:dd8e3c9f5371824eb2ea49abf832e56f> .
 
 bs:Resource_version_25 a rdf:Seq ;
-    rdfs:member <urn:bschema-rs:skolem:a0454b6a55471e7e4a6ddc268272fdbe>,
-        <urn:bschema-rs:skolem:b73cc83a8eb2f9e4d5ca22f7de982573>,
-        <urn:bschema-rs:skolem:cdbaec7675d538bad008ae98b64aee3>,
-        <urn:bschema-rs:skolem:d1fda224cc590edb16eaa7000e61255a>,
-        <urn:bschema-rs:skolem:d90919022f277c17b05c537fd966d5a1>,
-        <urn:bschema-rs:skolem:e080c5a555cf3e64a5895beb0b97d9d2>,
-        <urn:bschema-rs:skolem:e0812e4ee6ff80f5be47d0020eda4b32>,
-        <urn:bschema-rs:skolem:e288c3a257742db2f067b81e28bc33e4>,
-        <urn:bschema-rs:skolem:e5d4ae39033d41744071a4b006b2deba>,
-        <urn:bschema-rs:skolem:f9dffe2c31507a222efb3b0161ef34bc> .
+    rdfs:member <urn:bschema-rs:skolem:ad30cbd2a1202f11b8c6d36979308d5e>,
+        <urn:bschema-rs:skolem:b32969534f759d18893f7c2e76ff62d1>,
+        <urn:bschema-rs:skolem:c4924a160254c731cfd4b19f75c62416>,
+        <urn:bschema-rs:skolem:d12a38ee89b87a1bd6ba6934909db6fb>,
+        <urn:bschema-rs:skolem:d3877cdda2a6a5f63abf230baa11356f>,
+        <urn:bschema-rs:skolem:d930ef239a18d5a61e5362cd8a1fce0d>,
+        <urn:bschema-rs:skolem:e4b0c554954e98c909265958ee42b8e6>,
+        <urn:bschema-rs:skolem:f511ada183200ef1c8fc62ffd6f2c5f8>,
+        <urn:bschema-rs:skolem:f9117c738549802f4d9d5f8b4313c145>,
+        <urn:bschema-rs:skolem:ff1da848b64867776c23782c3d0633ae> .
 
 bs:Resource_version_26 a rdf:Seq ;
-    rdfs:member <urn:bschema-rs:skolem:b671527cce3f8022c1337340d946148e>,
-        <urn:bschema-rs:skolem:c577131692e1ee760dadeca6718f196d>,
-        <urn:bschema-rs:skolem:c6440732f5fe6664820f21e8f2e685eb>,
-        <urn:bschema-rs:skolem:d45855934f84698c8de460a88f1b03b7>,
-        <urn:bschema-rs:skolem:f9a41bc47d4dc013350d71103446bbf1> .
+    rdfs:member <urn:bschema-rs:skolem:aebca6539a61e850114615af0fecd1fa> .
 
 bs:Resource_version_27 a rdf:Seq ;
-    rdfs:member <urn:bschema-rs:skolem:b9680766cf51801606a409b9c8137cbf>,
-        <urn:bschema-rs:skolem:c28b1a03fab8a663e36bc6ddc1cfd51f>,
-        <urn:bschema-rs:skolem:ce52842819e4a87ac6c16265195825c2>,
-        <urn:bschema-rs:skolem:d790a41d7d8ec66edc833728276e1dda>,
-        <urn:bschema-rs:skolem:f42db8884fc8fab430e263f140b30204> .
+    rdfs:member <urn:bschema-rs:skolem:b082c9914e3efa290aa8fa5c891c8bc7> .
 
 bs:Resource_version_28 a rdf:Seq ;
-    rdfs:member <urn:bschema-rs:skolem:a6aa2df4aee00a8ead91d5b66a27c370>,
-        <urn:bschema-rs:skolem:a86378c362d0a9b8850495c6621da6d9>,
-        <urn:bschema-rs:skolem:ba61f0e96e31b40f060bcd22cff4bd93>,
-        <urn:bschema-rs:skolem:d6e2e7c3d31852307ec66378637c3d6f>,
-        <urn:bschema-rs:skolem:df54bdcac21bf42d3e2c2b189abb4687> .
+    rdfs:member <urn:bschema-rs:skolem:b099dba11f4c6b5ff6d3ca912bfba90e>,
+        <urn:bschema-rs:skolem:d25f1504b1e836b42a6cf562553c3605> .
 
 bs:Resource_version_29 a rdf:Seq ;
-    rdfs:member <urn:bschema-rs:skolem:b7a4df1c60df11f21c08c147ea422a4f> .
+    rdfs:member <urn:bschema-rs:skolem:b12132aceddd7f914b7b5667b1770b9b>,
+        <urn:bschema-rs:skolem:f58aa40d4864615f5c43f52a54eebb5b> .
 
 bs:Resource_version_3 a rdf:Seq ;
-    rdfs:member <urn:bschema-rs:skolem:be339a93b9e58043a8ea5d50abd0f96b>,
-        <urn:bschema-rs:skolem:c02b0681111659e49694f4118e37a55f>,
-        <urn:bschema-rs:skolem:ca147c74d358a85806b85f416ac6592e>,
-        <urn:bschema-rs:skolem:d319ef6db1c9954f129c3ddfbc91c937>,
-        <urn:bschema-rs:skolem:d7f15a0cff6827d8544ff27ca9270fc8>,
-        <urn:bschema-rs:skolem:dda52c7137532272f1787a76a3e2387e>,
-        <urn:bschema-rs:skolem:e41ea14fcdb432cc7782a8aa7fa02ca0>,
-        <urn:bschema-rs:skolem:ea73e32bc2900b1d5e97234406036ed5>,
-        <urn:bschema-rs:skolem:f38ffd6bacfbf2e4b384275501b05146>,
-        <urn:bschema-rs:skolem:fefcc6681bf2caa1f2ed486c3fc10ae8> .
+    rdfs:member <urn:bschema-rs:skolem:a2e570008259a85ad45f63693fee8a83>,
+        <urn:bschema-rs:skolem:a8e65dc4463af2838e7758565bda1248>,
+        <urn:bschema-rs:skolem:aaceda1515e1f0730c88dddc0f742e4e>,
+        <urn:bschema-rs:skolem:af6f112b659a9737ce70b10c7efd8520>,
+        <urn:bschema-rs:skolem:ba36f911960424d40d4029b091d550b7>,
+        <urn:bschema-rs:skolem:cb41902f694ff8b90e1791fe21a6814c>,
+        <urn:bschema-rs:skolem:cc365aabad7820173f52b6cef01a97c>,
+        <urn:bschema-rs:skolem:d38a3ebbc978b704078a40bfb2f7b989>,
+        <urn:bschema-rs:skolem:d5b4bc382b9349a4fc3ebed34b52dc00>,
+        <urn:bschema-rs:skolem:d87a6b4c12191a2ba5d676df70234daa>,
+        <urn:bschema-rs:skolem:da20fa1971aa933f331e75f09c74e455>,
+        <urn:bschema-rs:skolem:da2a8a512383932e6558c33920ba00a8>,
+        <urn:bschema-rs:skolem:daa22191b8b1c6bbf679961fdcfc882f>,
+        <urn:bschema-rs:skolem:e1ec120f2025fa52452554fd70818dee>,
+        <urn:bschema-rs:skolem:eb526765d181e0d6aea5c09932dd1a34>,
+        <urn:bschema-rs:skolem:f3cafc3a556e6b69cdac79dc752f9bca>,
+        <urn:bschema-rs:skolem:fc4a775688a84c48aa2d35ee4ee7bc62>,
+        <urn:bschema-rs:skolem:fe26128c139f59f2350eb472cf42edc1> .
 
 bs:Resource_version_30 a rdf:Seq ;
-    rdfs:member <urn:bschema-rs:skolem:a3a3a39eb494680c7586326d28978d6a> .
+    rdfs:member <urn:bschema-rs:skolem:b2682c1bae5b28c8aab1006e842a1294>,
+        <urn:bschema-rs:skolem:f0db1f29449ee23a053d4c0fe72ce90f> .
 
 bs:Resource_version_31 a rdf:Seq ;
-    rdfs:member <urn:bschema-rs:skolem:e281dcc660e2e5fa76ea6bfff25d0c03>,
-        <urn:bschema-rs:skolem:ebcf9d435a89f0e6141b37c377a638b0> .
+    rdfs:member <urn:bschema-rs:skolem:b64763e6a8770503064f8629ed607fff>,
+        <urn:bschema-rs:skolem:b67c215035bb77251b9f7a82b3d52397> .
 
 bs:Resource_version_32 a rdf:Seq ;
-    rdfs:member <urn:bschema-rs:skolem:efed050a3970c944b7a511f830683d08>,
-        <urn:bschema-rs:skolem:f98f63702558e4c94c0312613e3a6ff8> .
+    rdfs:member <urn:bschema-rs:skolem:b7bb463f0542879b1d5b60f54cd9755b>,
+        <urn:bschema-rs:skolem:dab22a0533a01e41276d677e557790f0> .
 
 bs:Resource_version_33 a rdf:Seq ;
-    rdfs:member <urn:bschema-rs:skolem:fe767e20d1289025166913b1e067b86c> .
+    rdfs:member <urn:bschema-rs:skolem:b85ee3f0c634b0d9be5ba552b40b242c>,
+        <urn:bschema-rs:skolem:b8bbfa24b8079c5c7aa5a36c966f5164> .
 
 bs:Resource_version_34 a rdf:Seq ;
-    rdfs:member <urn:bschema-rs:skolem:b017dc35f00805214b2d58de3ba4cc3f>,
-        <urn:bschema-rs:skolem:d9560768ea6da32feb3b7107cac77715> .
+    rdfs:member <urn:bschema-rs:skolem:b897662d229c53668e02e61ad894fbcc> .
 
 bs:Resource_version_35 a rdf:Seq ;
-    rdfs:member <urn:bschema-rs:skolem:a2380f56c0972c915901cf0e825b45c4> .
+    rdfs:member <urn:bschema-rs:skolem:b9fdb0c2a7bdb27f34f657d39af6e2c6>,
+        <urn:bschema-rs:skolem:e47539e05704d64dfc878f715d2e6988>,
+        <urn:bschema-rs:skolem:e9d912ddfd39c52b1b56eaf87a320383>,
+        <urn:bschema-rs:skolem:ede57f6e2ea91f79c5ce3f05fe62ea42>,
+        <urn:bschema-rs:skolem:f100257a83e4c09651bba4c36feb9a5b> .
 
 bs:Resource_version_36 a rdf:Seq ;
-    rdfs:member <urn:bschema-rs:skolem:c2cdf085bfd361541fdea4c335621baa>,
-        <urn:bschema-rs:skolem:c7f569fcf20b4747384c6d4383cb4d9d> .
+    rdfs:member <urn:bschema-rs:skolem:ba1c78d5306354ba279d17f26e7a8e45>,
+        <urn:bschema-rs:skolem:bed8996edd33499ed986a36ac8aebd9d>,
+        <urn:bschema-rs:skolem:f1714a8e229d71f179848622c2026625>,
+        <urn:bschema-rs:skolem:f72d1237311261d47a4f6f2e64bbbb13>,
+        <urn:bschema-rs:skolem:ffd34b8bd341ba54f7d8fd2fa811e939> .
 
 bs:Resource_version_37 a rdf:Seq ;
-    rdfs:member <urn:bschema-rs:skolem:efca18103eb759687fc70e223c52c180>,
-        <urn:bschema-rs:skolem:f35a499f4df668180aa86cfa0b6a91fa> .
+    rdfs:member <urn:bschema-rs:skolem:bb4d34f612a32bfaa5169dbbed168f83>,
+        <urn:bschema-rs:skolem:e9ec9195d07c8e08869653b96cfd33e0>,
+        <urn:bschema-rs:skolem:f1ed541774ada44d3b020a8c04a0045f>,
+        <urn:bschema-rs:skolem:f5d52fc9acd714d9d398e2143c84922d>,
+        <urn:bschema-rs:skolem:f944ece26439cbb66a701117fd4c41a6> .
 
 bs:Resource_version_38 a rdf:Seq ;
-    rdfs:member <urn:bschema-rs:skolem:b9cf8a22a68a2ada4b40b73229dc5e2a>,
-        <urn:bschema-rs:skolem:e64a06255f27fdfceaef80ba23cec60f> .
+    rdfs:member <urn:bschema-rs:skolem:bc147dc0defdcb81e1aa55d6e1b86d3>,
+        <urn:bschema-rs:skolem:c00a667a2f6325570c1bda93c207aa23>,
+        <urn:bschema-rs:skolem:c7b70f085958bbb04b56749453b29e14>,
+        <urn:bschema-rs:skolem:d367c9251d5f3999ecaa8c1fadd4d90c>,
+        <urn:bschema-rs:skolem:d6cc53d763406bca8f60a8bf439f5ff9>,
+        <urn:bschema-rs:skolem:d89b017bf19a459623b0447e2445db2b>,
+        <urn:bschema-rs:skolem:ebe65fd981f524f8bab7a6a604025ed9>,
+        <urn:bschema-rs:skolem:eec3b51a963bc94578866602b739adf7>,
+        <urn:bschema-rs:skolem:fae1c44cf74d820017a3943b2da2e51c>,
+        <urn:bschema-rs:skolem:fc55da28db8a58a6bbed068f3786af34> .
 
 bs:Resource_version_39 a rdf:Seq ;
-    rdfs:member <urn:bschema-rs:skolem:d4b6639dc85b4a52fd99138f22a7579a>,
-        <urn:bschema-rs:skolem:db3474d70f0c14b455a9da9742633c8> .
+    rdfs:member <urn:bschema-rs:skolem:bc6a7f0496b49f2f5121954ddccaa9e3>,
+        <urn:bschema-rs:skolem:c20c246292a56c729f9fc66bdc7fdba6>,
+        <urn:bschema-rs:skolem:ea15a83e60b52c740d300d64c222abd9>,
+        <urn:bschema-rs:skolem:f150e6e83daaa1fa5290c5588826f6f4>,
+        <urn:bschema-rs:skolem:fbb4cda54ad61fd2ba5531562d1984f2> .
 
 bs:Resource_version_4 a rdf:Seq ;
-    rdfs:member <urn:bschema-rs:skolem:e9e3cc5277df349c6894b179bfae3847>,
-        <urn:bschema-rs:skolem:ff8fd2a1feb06af6ad4da1b0ad484ab0> .
+    rdfs:member <urn:bschema-rs:skolem:a2fd45a11212ee6650c786f5068015fa>,
+        <urn:bschema-rs:skolem:a517ac2cbe2c7b0300871ff2b552b8e2>,
+        <urn:bschema-rs:skolem:bd95587553918fb15639b41ae681632a>,
+        <urn:bschema-rs:skolem:c35e6fb6756d36ad038542a23f4d2dca>,
+        <urn:bschema-rs:skolem:c4affce4b756e6675840df6cdac52fe7>,
+        <urn:bschema-rs:skolem:c7e0d16f8288a65850f8841db81cdaa9>,
+        <urn:bschema-rs:skolem:d9f1c1312863bf9e9c347b9a43bc036>,
+        <urn:bschema-rs:skolem:f5e61b72c0c26a925ee0bfdab684309>,
+        <urn:bschema-rs:skolem:fa9120f27312dd40202be8eb993a8dc>,
+        <urn:bschema-rs:skolem:fb9ae9bff7df59d895406e768663a2ea> .
 
 bs:Resource_version_40 a rdf:Seq ;
-    rdfs:member <urn:bschema-rs:skolem:d16fae6c9a32a7fd396a9f732fcd29e> .
+    rdfs:member <urn:bschema-rs:skolem:bcb03e4bbaff2d80c1e82ac496b2ba0c> .
 
 bs:Resource_version_41 a rdf:Seq ;
-    rdfs:member <urn:bschema-rs:skolem:b3a09ecd5063de7718797cca4d4d3f15>,
-        <urn:bschema-rs:skolem:bf8aa41e18c9b8a3adcf9d3025a3c1ab>,
-        <urn:bschema-rs:skolem:c6762fba7cb0a8ccd4e09c81c5d534d5>,
-        <urn:bschema-rs:skolem:f0d37299588c62fb99229016f96c0dff>,
-        <urn:bschema-rs:skolem:f22966346be6696da16763d69d81ef3c> .
+    rdfs:member <urn:bschema-rs:skolem:c035cf54d30ef75c9a6d3f4009dffb48>,
+        <urn:bschema-rs:skolem:cbe67e9aa0af8ee13bef03b755ebf89f>,
+        <urn:bschema-rs:skolem:e53007dcacfeed7265717c528d64f199>,
+        <urn:bschema-rs:skolem:e688da76e9191be6d53c132c03cba5da>,
+        <urn:bschema-rs:skolem:eaf484ed1160daf49d0f5babd210e9cd> .
 
 bs:Resource_version_42 a rdf:Seq ;
-    rdfs:member <urn:bschema-rs:skolem:aa8c6628ed12ed239f7072fa611e0ad7>,
-        <urn:bschema-rs:skolem:ac2fdf4402af3f02edd9d7ab017b72f1>,
-        <urn:bschema-rs:skolem:ae6a830a28f2d9caf789e3650ff63384>,
-        <urn:bschema-rs:skolem:c6a9c3fdbee88af066bfc488e194f08a>,
-        <urn:bschema-rs:skolem:cf7f9ddf39e19f080be2b6e626952a3e> .
+    rdfs:member <urn:bschema-rs:skolem:c1f8cde7218df32153d0851b36adb5c1>,
+        <urn:bschema-rs:skolem:e683a71512d657d98646251a5909f5bf> .
 
 bs:Resource_version_43 a rdf:Seq ;
-    rdfs:member <urn:bschema-rs:skolem:bde470a4246bd345298265abafa49630>,
-        <urn:bschema-rs:skolem:c1d95fe52ccabb32f4af13bfc7d86012>,
-        <urn:bschema-rs:skolem:c25dd8357c3e2a25befec61c9730e08f>,
-        <urn:bschema-rs:skolem:c3a605fb7c6734b2fa4d7fd1ea2af897>,
-        <urn:bschema-rs:skolem:efbf006ff426c0a41a7720cbe244c3fa> .
+    rdfs:member <urn:bschema-rs:skolem:c492c363dd12cab3aa535defe323bf67> .
 
 bs:Resource_version_44 a rdf:Seq ;
-    rdfs:member <urn:bschema-rs:skolem:e3ac1093e0c50bdd52c360c5f68b76a5>,
-        <urn:bschema-rs:skolem:ed8501ef4daf940a378bb30da9cdd02c> .
+    rdfs:member <urn:bschema-rs:skolem:c6874fa0eb68bcf3d0f4677e160ecc26> .
 
 bs:Resource_version_45 a rdf:Seq ;
-    rdfs:member <urn:bschema-rs:skolem:b1bfed51f5664c69fb5bb24e13d0cb8f>,
-        <urn:bschema-rs:skolem:e5662c52099705df66904fcc2338ac97>,
-        <urn:bschema-rs:skolem:e610e8a18f549a750206e4f9f8c2aac3> .
+    rdfs:member <urn:bschema-rs:skolem:ccf7b68c60ec13a24ff4dbb03807331a>,
+        <urn:bschema-rs:skolem:f5e46b4a482d9a249bcdeb217398c28b> .
 
 bs:Resource_version_46 a rdf:Seq ;
-    rdfs:member <urn:bschema-rs:skolem:a86324782d4e15554d6c59b195fe12c0> .
+    rdfs:member <urn:bschema-rs:skolem:d298d6a887b96a5a43fde93529f55956>,
+        <urn:bschema-rs:skolem:f0b7d012996191dafc3c41383d0247ec> .
 
 bs:Resource_version_47 a rdf:Seq ;
-    rdfs:member <urn:bschema-rs:skolem:d5d3e9bc6d150e5c55c131d1c7e77749>,
-        <urn:bschema-rs:skolem:d7bec37d1fc5049c3a38fd70342eed6e>,
-        <urn:bschema-rs:skolem:e45c770456d2757a023811b8b3e3e2b0>,
-        <urn:bschema-rs:skolem:ebd2210bfd45118e07cbb3a71f157e3f>,
-        <urn:bschema-rs:skolem:fafd7589c77c2c86c91269066471272c> .
+    rdfs:member <urn:bschema-rs:skolem:d83a43c947306b6d40507f751a1b55a4>,
+        <urn:bschema-rs:skolem:d87b2ba3186edfec0751602e4dec6875> .
 
 bs:Resource_version_48 a rdf:Seq ;
-    rdfs:member <urn:bschema-rs:skolem:ece8deb9bb36bfa90b5020d4313f1254> .
+    rdfs:member <urn:bschema-rs:skolem:d946d42b02f71f2fb48f2869093f9906>,
+        <urn:bschema-rs:skolem:edc606afd903827424f939c5a25be5bb> .
 
 bs:Resource_version_49 a rdf:Seq ;
-    rdfs:member <urn:bschema-rs:skolem:b235d2f022c5be2d312b600c8025dae0>,
-        <urn:bschema-rs:skolem:c2018527f80997b23f14ccd8958f3ae7> .
+    rdfs:member <urn:bschema-rs:skolem:e1056af84049e67f9a3198320fec581> .
 
 bs:Resource_version_5 a rdf:Seq ;
-    rdfs:member <urn:bschema-rs:skolem:add5707afcfa1c74fbfdb48697c18dcb>,
-        <urn:bschema-rs:skolem:b6c627dc9ab11445f0210f9f96bda9a4>,
-        <urn:bschema-rs:skolem:b9e5961261d213ef2c90a962aa1c5876>,
-        <urn:bschema-rs:skolem:bee9c63e32b8a550db718fe6a90eda98>,
-        <urn:bschema-rs:skolem:c9773b5214aee763fee7b4027a2df94>,
-        <urn:bschema-rs:skolem:d3ae088afb29565d045b289c2ebaf268>,
-        <urn:bschema-rs:skolem:d4216f8b0c7d4d98e89d4a06dc0e4d56>,
-        <urn:bschema-rs:skolem:db20062164a9b4b1f1d2bcbd4e65365d>,
-        <urn:bschema-rs:skolem:db2af8e3fb159e213a3798c3a0aee324>,
-        <urn:bschema-rs:skolem:ffe917e40985530e8cc2eb48347bdcee> .
+    rdfs:member <urn:bschema-rs:skolem:a324f395eaf500a8e9c301cf922000d0>,
+        <urn:bschema-rs:skolem:a3e675f06c21fbf00e3891a32d7b5662>,
+        <urn:bschema-rs:skolem:b2c5ceca349546c10adbfb4ed5857be1>,
+        <urn:bschema-rs:skolem:b7ca270504f0223bc5da9cb7a47efe71>,
+        <urn:bschema-rs:skolem:bb0428a389bd19f0facc760c866c9c8>,
+        <urn:bschema-rs:skolem:c73ec3420b3ec095c7d07a9f72718773>,
+        <urn:bschema-rs:skolem:d3ea12799e2d335b86a2c583d094d8cf>,
+        <urn:bschema-rs:skolem:d9706e6f0a1b3f3da2751400122a4ea4>,
+        <urn:bschema-rs:skolem:ecc2ffe94ff29f0614a88f337549bc31>,
+        <urn:bschema-rs:skolem:fd0f9008410089858b95ac6b91b1ab8a> .
 
 bs:Resource_version_50 a rdf:Seq ;
-    rdfs:member <urn:bschema-rs:skolem:d6e2498ea3e30b6d8fcf34c230afd41d> .
+    rdfs:member <urn:bschema-rs:skolem:e6449e73d3394aa4257a425f86f44b8a> .
 
 bs:Resource_version_51 a rdf:Seq ;
-    rdfs:member <urn:bschema-rs:skolem:b509eefa276d3f61d7046269dec751ea> .
+    rdfs:member <urn:bschema-rs:skolem:e6f82600414b62e7ab94d0c69ac0c05d> .
 
 bs:Resource_version_52 a rdf:Seq ;
-    rdfs:member <urn:bschema-rs:skolem:c20d56c0172ccc09f14e7953129879b2>,
-        <urn:bschema-rs:skolem:db01b03314649f441ce81cf94da35fa2> .
+    rdfs:member <urn:bschema-rs:skolem:e7cd0015352b596ba25b44a0a9d94844>,
+        <urn:bschema-rs:skolem:f5a5716c018da6ee24fd8bd8c83462f0> .
 
 bs:Resource_version_53 a rdf:Seq ;
-    rdfs:member <urn:bschema-rs:skolem:d891f6b1063bcd119f3857487b0fb82f> .
+    rdfs:member <urn:bschema-rs:skolem:f0b265c62e4afca7064f7aea62313d19> .
 
 bs:Resource_version_54 a rdf:Seq ;
-    rdfs:member <urn:bschema-rs:skolem:fa16b403da09e8065640c97f546a3540> .
+    rdfs:member <urn:bschema-rs:skolem:f3e7e61d9b5831d41ec66b0265ca4976> .
 
 bs:Resource_version_55 a rdf:Seq ;
-    rdfs:member <urn:bschema-rs:skolem:bf7646c6b557699037d5c9f4db7c9cc0> .
+    rdfs:member <urn:bschema-rs:skolem:fbc8ca06de56e1931fa7caa817a3af5> .
 
 bs:Resource_version_56 a rdf:Seq ;
-    rdfs:member <urn:bschema-rs:skolem:f0bb68d19c017f716a3cf91ff512bef3> .
+    rdfs:member <urn:bschema-rs:skolem:ff7af199d7801c13c2ecb7af601b1697> .
 
 bs:Resource_version_6 a rdf:Seq ;
-    rdfs:member <urn:bschema-rs:skolem:aa4df79aa756380874a960ad2179be8b>,
-        <urn:bschema-rs:skolem:b1eec36cee8a373c57aa8e4fb7fceb02>,
-        <urn:bschema-rs:skolem:d0b22f0a7fee4ed37deafacee628a1d9>,
-        <urn:bschema-rs:skolem:e00765b7dfe7a307de166dca83cd1c89>,
-        <urn:bschema-rs:skolem:e3f2aef765b3d2c46963b9b010f558b5>,
-        <urn:bschema-rs:skolem:ebb8d2e190b02bd2de241fe3fa14340e>,
-        <urn:bschema-rs:skolem:ed3d273a35d294c7fc844e172f826a41>,
-        <urn:bschema-rs:skolem:fc4afe56e2c598c2b84fb9a8efe7d306>,
-        <urn:bschema-rs:skolem:fc61b5529a8307ee5a13ba8e31468afe>,
-        <urn:bschema-rs:skolem:ff237b90c28c19083751994e9382e4cc> .
+    rdfs:member <urn:bschema-rs:skolem:a3a4d7aacdd75969ea9f91e4d7e3e74b>,
+        <urn:bschema-rs:skolem:aee7214f22f99428d55d454cbdbfa541>,
+        <urn:bschema-rs:skolem:b27440030a3f0aba5b7f8dfe453c18b6>,
+        <urn:bschema-rs:skolem:b6010902a8630010c66284b8613c521f>,
+        <urn:bschema-rs:skolem:b64fa56bb7d14aad2c2f26e7d3453f86>,
+        <urn:bschema-rs:skolem:d7953b278225f6d3e7d05c39594eb2d6>,
+        <urn:bschema-rs:skolem:d98bb0b6e95df0a06eb750c1ec4e86ab>,
+        <urn:bschema-rs:skolem:d995eecf76b3466980cddb47fea17ad5>,
+        <urn:bschema-rs:skolem:eb49503da7d64e7de7db07e21a0a614e>,
+        <urn:bschema-rs:skolem:f74b3eeabedbe90a73b7e474837b72f7> .
 
 bs:Resource_version_7 a rdf:Seq ;
-    rdfs:member <urn:bschema-rs:skolem:a0f922fad42350f5513f10ea2b3be74>,
-        <urn:bschema-rs:skolem:a49a65875334195fb21fc6480d188263>,
-        <urn:bschema-rs:skolem:af7058250ef54008fe42bf63091852b2>,
-        <urn:bschema-rs:skolem:b30707f19c1d5abe77c6a721cca9ab49>,
-        <urn:bschema-rs:skolem:b4567552386750e8ee3c7475ea792b8c>,
-        <urn:bschema-rs:skolem:c06bd5ab592f4e3aa92ed275c30f61f4>,
-        <urn:bschema-rs:skolem:c11d5dc1d6eb1df99ec4376acf8b8963>,
-        <urn:bschema-rs:skolem:da1b996694ba8663a8591b74f961e6c8>,
-        <urn:bschema-rs:skolem:f25f8a2309d0f9c2c18a4a46533581da>,
-        <urn:bschema-rs:skolem:f5ef15c07b6e911a3c17dc95d096b1ac> .
+    rdfs:member <urn:bschema-rs:skolem:a3e4145a1aeb6ae52637d3952c2a6669>,
+        <urn:bschema-rs:skolem:a5ea9f3fe3164e9143724ba77500433a>,
+        <urn:bschema-rs:skolem:b487849dcbb0d11ab042c0b5e774b896>,
+        <urn:bschema-rs:skolem:bc8e821518b73f61727d03daccda9aaf>,
+        <urn:bschema-rs:skolem:c890730e664bde0fe9e34afeb2db4fe3>,
+        <urn:bschema-rs:skolem:d1112edc89663bce320c62c6ff54f48e>,
+        <urn:bschema-rs:skolem:dcb187bb6442bb1ca5cd928966eaa12e>,
+        <urn:bschema-rs:skolem:f4712a363ad754aa22f92aa0e8f5066>,
+        <urn:bschema-rs:skolem:f9b879ba00e39e925f9e7e6c48ed7949>,
+        <urn:bschema-rs:skolem:fce21c69acb7f9b816d2ad5888ec6c0c> .
 
 bs:Resource_version_8 a rdf:Seq ;
-    rdfs:member <urn:bschema-rs:skolem:cbee7cc4812dde7229b699495c3ba9d6>,
-        <urn:bschema-rs:skolem:d451ea9de818f2681877441114f34006> .
+    rdfs:member <urn:bschema-rs:skolem:a3ed8396e59e14c013c8572614a35150>,
+        <urn:bschema-rs:skolem:a8aa128a51ab0891de6401bdffe7d087>,
+        <urn:bschema-rs:skolem:bf9bbf6db381751acc3e92aab66aeee>,
+        <urn:bschema-rs:skolem:cc1132b5a07f6c7c69134f3005c84d57>,
+        <urn:bschema-rs:skolem:ccd877c4e213050bb5805be635660a49>,
+        <urn:bschema-rs:skolem:dd759d0c5ee541de9b3387ed8f6fba02>,
+        <urn:bschema-rs:skolem:e711522789c1be944164c737461aeece>,
+        <urn:bschema-rs:skolem:e9ff1b25cde7b5ecb02f862f396c30d7>,
+        <urn:bschema-rs:skolem:f117d6baeb4f4fe1c04762ce87cb071f>,
+        <urn:bschema-rs:skolem:f6942131262bbad0debdc11a23005307> .
 
 bs:Resource_version_9 a rdf:Seq ;
-    rdfs:member <urn:bschema-rs:skolem:af7dbc50b7f9a3e347ad135841ef1694>,
-        <urn:bschema-rs:skolem:b0f261a8ec6df4825e08cff5cb1c4e72>,
-        <urn:bschema-rs:skolem:bafb3b3d0ad338352fc074b484f92830>,
-        <urn:bschema-rs:skolem:c26bcd25bd373a69cb046a8ad9f99a01>,
-        <urn:bschema-rs:skolem:ca31ae2230474efa57959bbb3ea7e903>,
-        <urn:bschema-rs:skolem:cdfbb4964a0cdb775c682c6e5212a356>,
-        <urn:bschema-rs:skolem:e4faf68d4201f2135e89a54fb9ed4696>,
-        <urn:bschema-rs:skolem:f3469a441adb994d316a0a43af28c064>,
-        <urn:bschema-rs:skolem:f8bc7732f67e59310266fe3fcbfbe52a>,
-        <urn:bschema-rs:skolem:fbd4d82561529ebd42241612af4cbda3> .
+    rdfs:member <urn:bschema-rs:skolem:a4092078abc6da63575fd69330aaefc4>,
+        <urn:bschema-rs:skolem:d8600107c6b21e86c6ae751b9ee7ebab>,
+        <urn:bschema-rs:skolem:e6e882f7fead435f79f5e5fdf788ca0a>,
+        <urn:bschema-rs:skolem:f012831805d55242e302f362ee3d1514>,
+        <urn:bschema-rs:skolem:f0d3e23e82534b779171acf34a4dde80> .
 
 bs:Run_Request_Command_version_1 a rdf:Seq ;
+    rdfs:member <http://openmetrics.eu/openmetrics#RC04N0041_Run_Request_Command> .
+
+bs:Run_Request_Command_version_2 a rdf:Seq ;
+    rdfs:member <http://openmetrics.eu/openmetrics#RC04N0042_Run_Request_Command>,
+        <http://openmetrics.eu/openmetrics#RC04N0043_Run_Request_Command>,
+        <http://openmetrics.eu/openmetrics#RC04N0044_Run_Request_Command>,
+        <http://openmetrics.eu/openmetrics#RC04N0045_Run_Request_Command>,
+        <http://openmetrics.eu/openmetrics#RC04N0046_Run_Request_Command> .
+
+bs:Run_Request_Command_version_3 a rdf:Seq ;
+    rdfs:member <http://openmetrics.eu/openmetrics#RC04N0047_Run_Request_Command>,
+        <http://openmetrics.eu/openmetrics#RC04N0053_Run_Request_Command> .
+
+bs:Run_Request_Command_version_4 a rdf:Seq ;
     rdfs:member <http://openmetrics.eu/openmetrics#RC04N0048_Run_Request_Command>,
         <http://openmetrics.eu/openmetrics#RC04N0049_Run_Request_Command>,
         <http://openmetrics.eu/openmetrics#RC04N0050_Run_Request_Command>,
@@ -623,20 +637,6 @@ bs:Run_Request_Command_version_1 a rdf:Seq ;
         <http://openmetrics.eu/openmetrics#RC04N0056_Run_Request_Command>,
         <http://openmetrics.eu/openmetrics#RC04N0057_Run_Request_Command>,
         <http://openmetrics.eu/openmetrics#RC04N0058_Run_Request_Command> .
-
-bs:Run_Request_Command_version_2 a rdf:Seq ;
-    rdfs:member <http://openmetrics.eu/openmetrics#RC04N0042_Run_Request_Command>,
-        <http://openmetrics.eu/openmetrics#RC04N0043_Run_Request_Command>,
-        <http://openmetrics.eu/openmetrics#RC04N0044_Run_Request_Command>,
-        <http://openmetrics.eu/openmetrics#RC04N0045_Run_Request_Command>,
-        <http://openmetrics.eu/openmetrics#RC04N0046_Run_Request_Command> .
-
-bs:Run_Request_Command_version_3 a rdf:Seq ;
-    rdfs:member <http://openmetrics.eu/openmetrics#RC04N0041_Run_Request_Command> .
-
-bs:Run_Request_Command_version_4 a rdf:Seq ;
-    rdfs:member <http://openmetrics.eu/openmetrics#RC04N0047_Run_Request_Command>,
-        <http://openmetrics.eu/openmetrics#RC04N0053_Run_Request_Command> .
 
 bs:Site_version_1 a rdf:Seq ;
     rdfs:member <http://openmetrics.eu/openmetrics#Site_243> .
@@ -649,18 +649,18 @@ bs:Space_version_1 a rdf:Seq ;
         <http://openmetrics.eu/openmetrics#Space_960> .
 
 bs:Space_version_2 a rdf:Seq ;
-    rdfs:member <http://openmetrics.eu/openmetrics#Space_3154>,
-        <http://openmetrics.eu/openmetrics#Space_3511>,
-        <http://openmetrics.eu/openmetrics#Space_3692>,
-        <http://openmetrics.eu/openmetrics#Space_4573>,
-        <http://openmetrics.eu/openmetrics#Space_4953>,
-        <http://openmetrics.eu/openmetrics#Space_5676>,
-        <http://openmetrics.eu/openmetrics#Space_6037>,
-        <http://openmetrics.eu/openmetrics#Space_6220>,
-        <http://openmetrics.eu/openmetrics#Space_7094>,
-        <http://openmetrics.eu/openmetrics#Space_7468> .
+    rdfs:member <http://openmetrics.eu/openmetrics#Space_1307>,
+        <http://openmetrics.eu/openmetrics#Space_4201>,
+        <http://openmetrics.eu/openmetrics#Space_4382> .
 
 bs:Space_version_3 a rdf:Seq ;
+    rdfs:member <http://openmetrics.eu/openmetrics#Space_1498>,
+        <http://openmetrics.eu/openmetrics#Space_1857>,
+        <http://openmetrics.eu/openmetrics#Space_2040>,
+        <http://openmetrics.eu/openmetrics#Space_347>,
+        <http://openmetrics.eu/openmetrics#Space_783> .
+
+bs:Space_version_4 a rdf:Seq ;
     rdfs:member <http://openmetrics.eu/openmetrics#Space_2618>,
         <http://openmetrics.eu/openmetrics#Space_2786>,
         <http://openmetrics.eu/openmetrics#Space_3320>,
@@ -672,19 +672,7 @@ bs:Space_version_3 a rdf:Seq ;
         <http://openmetrics.eu/openmetrics#Space_6399>,
         <http://openmetrics.eu/openmetrics#Space_6567> .
 
-bs:Space_version_4 a rdf:Seq ;
-    rdfs:member <http://openmetrics.eu/openmetrics#Space_1498>,
-        <http://openmetrics.eu/openmetrics#Space_1857>,
-        <http://openmetrics.eu/openmetrics#Space_2040>,
-        <http://openmetrics.eu/openmetrics#Space_347>,
-        <http://openmetrics.eu/openmetrics#Space_783> .
-
 bs:Space_version_5 a rdf:Seq ;
-    rdfs:member <http://openmetrics.eu/openmetrics#Space_1307>,
-        <http://openmetrics.eu/openmetrics#Space_4201>,
-        <http://openmetrics.eu/openmetrics#Space_4382> .
-
-bs:Space_version_6 a rdf:Seq ;
     rdfs:member <http://openmetrics.eu/openmetrics#Space_2967>,
         <http://openmetrics.eu/openmetrics#Space_5483>,
         <http://openmetrics.eu/openmetrics#Space_6735>,
@@ -692,35 +680,51 @@ bs:Space_version_6 a rdf:Seq ;
         <http://openmetrics.eu/openmetrics#Space_7652>,
         <http://openmetrics.eu/openmetrics#Space_7818> .
 
-bs:Space_version_7 a rdf:Seq ;
-    rdfs:member <http://openmetrics.eu/openmetrics#Space_598> .
+bs:Space_version_6 a rdf:Seq ;
+    rdfs:member <http://openmetrics.eu/openmetrics#Space_3154>,
+        <http://openmetrics.eu/openmetrics#Space_3511>,
+        <http://openmetrics.eu/openmetrics#Space_3692>,
+        <http://openmetrics.eu/openmetrics#Space_4573>,
+        <http://openmetrics.eu/openmetrics#Space_4953>,
+        <http://openmetrics.eu/openmetrics#Space_5676>,
+        <http://openmetrics.eu/openmetrics#Space_6037>,
+        <http://openmetrics.eu/openmetrics#Space_6220>,
+        <http://openmetrics.eu/openmetrics#Space_7094>,
+        <http://openmetrics.eu/openmetrics#Space_7468> .
 
-bs:Space_version_8 a rdf:Seq ;
+bs:Space_version_7 a rdf:Seq ;
     rdfs:member <http://openmetrics.eu/openmetrics#Space_4766>,
         <http://openmetrics.eu/openmetrics#Space_7283> .
 
+bs:Space_version_8 a rdf:Seq ;
+    rdfs:member <http://openmetrics.eu/openmetrics#Space_598> .
+
 bs:Storey_version_1 a rdf:Seq ;
-    rdfs:member <http://openmetrics.eu/openmetrics#BuildingStorey_167>,
-        <http://openmetrics.eu/openmetrics#BuildingStorey_173> .
+    rdfs:member <http://openmetrics.eu/openmetrics#BuildingStorey_157>,
+        <http://openmetrics.eu/openmetrics#BuildingStorey_179> .
 
 bs:Storey_version_2 a rdf:Seq ;
     rdfs:member <http://openmetrics.eu/openmetrics#BuildingStorey_161> .
 
 bs:Storey_version_3 a rdf:Seq ;
-    rdfs:member <http://openmetrics.eu/openmetrics#BuildingStorey_157>,
-        <http://openmetrics.eu/openmetrics#BuildingStorey_179> .
+    rdfs:member <http://openmetrics.eu/openmetrics#BuildingStorey_167>,
+        <http://openmetrics.eu/openmetrics#BuildingStorey_173> .
 
 bs:Temperature_Sensor_version_1 a rdf:Seq ;
+    rdfs:member <http://openmetrics.eu/openmetrics#RC04N0041_TempSensingPoint> .
+
+bs:Temperature_Sensor_version_2 a rdf:Seq ;
     rdfs:member <http://openmetrics.eu/openmetrics#RC04N0042_TempSensingPoint>,
         <http://openmetrics.eu/openmetrics#RC04N0043_TempSensingPoint>,
         <http://openmetrics.eu/openmetrics#RC04N0044_TempSensingPoint>,
         <http://openmetrics.eu/openmetrics#RC04N0045_TempSensingPoint>,
         <http://openmetrics.eu/openmetrics#RC04N0046_TempSensingPoint> .
 
-bs:Temperature_Sensor_version_2 a rdf:Seq ;
-    rdfs:member <http://openmetrics.eu/openmetrics#RC04N0041_TempSensingPoint> .
-
 bs:Temperature_Sensor_version_3 a rdf:Seq ;
+    rdfs:member <http://openmetrics.eu/openmetrics#RC04N0047_TempSensingPoint>,
+        <http://openmetrics.eu/openmetrics#RC04N0053_TempSensingPoint> .
+
+bs:Temperature_Sensor_version_4 a rdf:Seq ;
     rdfs:member <http://openmetrics.eu/openmetrics#RC04N0048_TempSensingPoint>,
         <http://openmetrics.eu/openmetrics#RC04N0049_TempSensingPoint>,
         <http://openmetrics.eu/openmetrics#RC04N0050_TempSensingPoint>,
@@ -732,18 +736,21 @@ bs:Temperature_Sensor_version_3 a rdf:Seq ;
         <http://openmetrics.eu/openmetrics#RC04N0057_TempSensingPoint>,
         <http://openmetrics.eu/openmetrics#RC04N0058_TempSensingPoint> .
 
-bs:Temperature_Sensor_version_4 a rdf:Seq ;
-    rdfs:member <http://openmetrics.eu/openmetrics#RC04N0047_TempSensingPoint>,
-        <http://openmetrics.eu/openmetrics#RC04N0053_TempSensingPoint> .
-
 bs:Temperature_Setpoint_version_1 a rdf:Seq ;
+    rdfs:member <http://openmetrics.eu/openmetrics#RC04N0041_TempSetpoint> .
+
+bs:Temperature_Setpoint_version_2 a rdf:Seq ;
     rdfs:member <http://openmetrics.eu/openmetrics#RC04N0042_TempSetpoint>,
         <http://openmetrics.eu/openmetrics#RC04N0043_TempSetpoint>,
         <http://openmetrics.eu/openmetrics#RC04N0044_TempSetpoint>,
         <http://openmetrics.eu/openmetrics#RC04N0045_TempSetpoint>,
         <http://openmetrics.eu/openmetrics#RC04N0046_TempSetpoint> .
 
-bs:Temperature_Setpoint_version_2 a rdf:Seq ;
+bs:Temperature_Setpoint_version_3 a rdf:Seq ;
+    rdfs:member <http://openmetrics.eu/openmetrics#RC04N0047_TempSetpoint>,
+        <http://openmetrics.eu/openmetrics#RC04N0053_TempSetpoint> .
+
+bs:Temperature_Setpoint_version_4 a rdf:Seq ;
     rdfs:member <http://openmetrics.eu/openmetrics#RC04N0048_TempSetpoint>,
         <http://openmetrics.eu/openmetrics#RC04N0049_TempSetpoint>,
         <http://openmetrics.eu/openmetrics#RC04N0050_TempSetpoint>,
@@ -755,13 +762,6 @@ bs:Temperature_Setpoint_version_2 a rdf:Seq ;
         <http://openmetrics.eu/openmetrics#RC04N0057_TempSetpoint>,
         <http://openmetrics.eu/openmetrics#RC04N0058_TempSetpoint> .
 
-bs:Temperature_Setpoint_version_3 a rdf:Seq ;
-    rdfs:member <http://openmetrics.eu/openmetrics#RC04N0041_TempSetpoint> .
-
-bs:Temperature_Setpoint_version_4 a rdf:Seq ;
-    rdfs:member <http://openmetrics.eu/openmetrics#RC04N0047_TempSetpoint>,
-        <http://openmetrics.eu/openmetrics#RC04N0053_TempSetpoint> .
-
 bs:Temperature_version_1 a rdf:Seq ;
     rdfs:member <http://openmetrics.eu/openmetrics#TempProperty> .
 
@@ -769,13 +769,20 @@ bs:Terminal_Unit_version_1 a rdf:Seq ;
     rdfs:member <http://openmetrics.eu/openmetrics#null_Equipment> .
 
 bs:Thermostat_version_1 a rdf:Seq ;
+    rdfs:member <http://openmetrics.eu/openmetrics#RC04N0041_Equipment> .
+
+bs:Thermostat_version_2 a rdf:Seq ;
     rdfs:member <http://openmetrics.eu/openmetrics#RC04N0042_Equipment>,
         <http://openmetrics.eu/openmetrics#RC04N0043_Equipment>,
         <http://openmetrics.eu/openmetrics#RC04N0044_Equipment>,
         <http://openmetrics.eu/openmetrics#RC04N0045_Equipment>,
         <http://openmetrics.eu/openmetrics#RC04N0046_Equipment> .
 
-bs:Thermostat_version_2 a rdf:Seq ;
+bs:Thermostat_version_3 a rdf:Seq ;
+    rdfs:member <http://openmetrics.eu/openmetrics#RC04N0047_Equipment>,
+        <http://openmetrics.eu/openmetrics#RC04N0053_Equipment> .
+
+bs:Thermostat_version_4 a rdf:Seq ;
     rdfs:member <http://openmetrics.eu/openmetrics#RC04N0048_Equipment>,
         <http://openmetrics.eu/openmetrics#RC04N0049_Equipment>,
         <http://openmetrics.eu/openmetrics#RC04N0050_Equipment>,
@@ -787,27 +794,13 @@ bs:Thermostat_version_2 a rdf:Seq ;
         <http://openmetrics.eu/openmetrics#RC04N0057_Equipment>,
         <http://openmetrics.eu/openmetrics#RC04N0058_Equipment> .
 
-bs:Thermostat_version_3 a rdf:Seq ;
-    rdfs:member <http://openmetrics.eu/openmetrics#RC04N0041_Equipment> .
-
-bs:Thermostat_version_4 a rdf:Seq ;
-    rdfs:member <http://openmetrics.eu/openmetrics#RC04N00_Equipment> .
-
 bs:Thermostat_version_5 a rdf:Seq ;
-    rdfs:member <http://openmetrics.eu/openmetrics#RC04N0047_Equipment>,
-        <http://openmetrics.eu/openmetrics#RC04N0053_Equipment> .
+    rdfs:member <http://openmetrics.eu/openmetrics#RC04N00_Equipment> .
 
 bs:Zone_version_1 a rdf:Seq ;
     rdfs:member <http://openmetrics.eu/openmetrics#Zone_62124> .
 
 bs:Zone_version_2 a rdf:Seq ;
-    rdfs:member <http://openmetrics.eu/openmetrics#Zone_63211>,
-        <http://openmetrics.eu/openmetrics#Zone_63286>,
-        <http://openmetrics.eu/openmetrics#Zone_63361>,
-        <http://openmetrics.eu/openmetrics#Zone_63436>,
-        <http://openmetrics.eu/openmetrics#Zone_63511> .
-
-bs:Zone_version_3 a rdf:Seq ;
     rdfs:member <http://openmetrics.eu/openmetrics#Zone_62229>,
         <http://openmetrics.eu/openmetrics#Zone_62384>,
         <http://openmetrics.eu/openmetrics#Zone_62459>,
@@ -819,10 +812,17 @@ bs:Zone_version_3 a rdf:Seq ;
         <http://openmetrics.eu/openmetrics#Zone_62985>,
         <http://openmetrics.eu/openmetrics#Zone_63060> .
 
-bs:Zone_version_4 a rdf:Seq ;
+bs:Zone_version_3 a rdf:Seq ;
     rdfs:member <http://openmetrics.eu/openmetrics#Zone_62310>,
         <http://openmetrics.eu/openmetrics#Zone_62761> .
 
-bs:Zone_version_5 a rdf:Seq ;
+bs:Zone_version_4 a rdf:Seq ;
     rdfs:member <http://openmetrics.eu/openmetrics#Zone_63135> .
+
+bs:Zone_version_5 a rdf:Seq ;
+    rdfs:member <http://openmetrics.eu/openmetrics#Zone_63211>,
+        <http://openmetrics.eu/openmetrics#Zone_63286>,
+        <http://openmetrics.eu/openmetrics#Zone_63361>,
+        <http://openmetrics.eu/openmetrics#Zone_63436>,
+        <http://openmetrics.eu/openmetrics#Zone_63511> .
 

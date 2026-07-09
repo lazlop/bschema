@@ -5,7 +5,7 @@
 
 bs:Air_Handling_Unit_version_1 a brick:Air_Handling_Unit ;
     brick:feeds bs:VAV_version_1 ;
-    brick:hasPoint bs:Command_version_2,
+    brick:hasPoint bs:Command_version_1,
         bs:Cooling_Command_version_1,
         bs:Mixed_Air_Temperature_Sensor_version_1,
         bs:Mode_version_1,
@@ -65,12 +65,12 @@ bs:Chilled_Water_Supply_Temperature_Setpoint_version_1 a brick:Chilled_Water_Sup
     rdfs:label rdfs:Literal ;
     ref:hasExternalReference bs:Resource_version_1 .
 
-bs:Command_version_1 a brick:Command ;
+bs:Command_version_1 a brick:Command,
+        brick:Heating_Command ;
     rdfs:label rdfs:Literal ;
     ref:hasExternalReference bs:Resource_version_1 .
 
-bs:Command_version_2 a brick:Command,
-        brick:Heating_Command ;
+bs:Command_version_2 a brick:Command ;
     rdfs:label rdfs:Literal ;
     ref:hasExternalReference bs:Resource_version_1 .
 
@@ -165,7 +165,7 @@ bs:Supply_Air_Temperature_Sensor_version_1 a brick:Supply_Air_Temperature_Sensor
 bs:VAV_version_1 a brick:VAV ;
     brick:feeds bs:HVAC_Zone_version_1 ;
     brick:hasPoint bs:Air_Flow_Sensor_version_1,
-        bs:Command_version_1,
+        bs:Command_version_2,
         bs:Supply_Air_Flow_Sensor_version_1,
         bs:Supply_Air_Temperature_Sensor_version_1,
         bs:Valve_Command_version_1,

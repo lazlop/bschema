@@ -159,7 +159,9 @@ pub fn class_isomorphisms(
     data_graph: &RdfGraph,
     similarity_threshold: Option<f64>,
 ) -> Result<ClassIsomorphisms> {
-    let subjects: HashSet<NamedOrBlankNode> = data_graph.triples().into_iter().map(|t| t.subject.clone()).collect();
+    let subjects_set: HashSet<NamedOrBlankNode> = data_graph.triples().into_iter().map(|t| t.subject.clone()).collect();
+    let mut subjects: Vec<NamedOrBlankNode> = subjects_set.into_iter().collect();
+    subjects.sort_by(|a, b| node_key(a).cmp(&node_key(b)));
 
     let results: Vec<Result<(NamedOrBlankNode, NamedNode, HashSet<CanonTriple>)>> = subjects
         .par_iter()
@@ -205,11 +207,6 @@ pub fn class_isomorphisms(
             };
 
             if matched {
-                if similarity_threshold.is_some() {
-                    let mut merged = existing.clone();
-                    merged.extend(canon_pattern.clone());
-                    distinct_class_subgraphs[i] = merged;
-                }
                 equivalent_subjects[i].push(s.clone());
                 found = true;
                 break;

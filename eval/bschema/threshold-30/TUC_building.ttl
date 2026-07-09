@@ -34,8 +34,6 @@ bs:Building_version_1 a brick:Building ;
 bs:Occupancy_version_1 a quantitykind:Occupancy,
         saref:Property .
 
-bs:Resource_version_3 ref:hasTimeseriesId rdfs:Literal .
-
 bs:Delay_Parameter_version_1 a brick:Delay_Parameter ;
     brick:isPointOf bs:Thermostat_version_1 ;
     ref:hasExternalReference bs:Resource_version_1 .
@@ -85,7 +83,7 @@ bs:Temperature_Sensor_version_1 a brick:Temperature_Sensor,
 bs:Temperature_Setpoint_version_1 a brick:Temperature_Setpoint,
         saref:Actuator ;
     brick:isPointOf bs:Thermostat_version_1 ;
-    ref:hasExternalReference bs:Resource_version_3 ;
+    ref:hasExternalReference bs:Resource_version_1 ;
     saref:controls bs:Temperature_version_1 .
 
 bs:Temperature_version_1 a quantitykind:Temperature,

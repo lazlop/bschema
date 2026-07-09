@@ -21,36 +21,36 @@ bs:Pressure_version_1 a quantitykind:Pressure,
 
 bs:Site_version_1 a brick:Site ;
     brick:hasPart bs:Building_version_1 ;
-    ref:hasExternalReference bs:IFCReference_version_6 .
-
-bs:Zone_version_1 a brick:Zone ;
-    brick:hasPart bs:Space_version_5,
-        bs:Space_version_6 ;
     ref:hasExternalReference bs:IFCReference_version_7 .
 
+bs:Zone_version_1 a brick:Zone ;
+    brick:hasPart bs:Space_version_2,
+        bs:Space_version_5 ;
+    ref:hasExternalReference bs:IFCReference_version_1 .
+
 bs:Zone_version_2 a brick:Zone ;
-    brick:hasPart bs:Space_version_1,
-        bs:Space_version_4 ;
-    ref:hasExternalReference bs:IFCReference_version_3 .
+    brick:hasPart bs:Space_version_4,
+        bs:Space_version_6 ;
+    ref:hasExternalReference bs:IFCReference_version_2 .
 
 bs:Zone_version_3 a brick:Zone ;
-    brick:hasPart bs:Space_version_2,
-        bs:Space_version_3 ;
-    ref:hasExternalReference bs:IFCReference_version_1 .
+    brick:hasPart bs:Space_version_7 ;
+    ref:hasExternalReference bs:IFCReference_version_3 .
 
 bs:Zone_version_4 a brick:Zone ;
     brick:hasPart bs:Space_version_8 ;
     ref:hasExternalReference bs:IFCReference_version_4 .
 
 bs:Zone_version_5 a brick:Zone ;
-    brick:hasPart bs:Space_version_7 ;
+    brick:hasPart bs:Space_version_1,
+        bs:Space_version_3 ;
     ref:hasExternalReference bs:IFCReference_version_5 .
 
 bs:Building_version_1 a brick:Building ;
     brick:hasPart bs:Storey_version_1,
         bs:Storey_version_2,
         bs:Storey_version_3 ;
-    ref:hasExternalReference bs:IFCReference_version_2 .
+    ref:hasExternalReference bs:IFCReference_version_6 .
 
 bs:IFCReference_version_1 a ref:IFCReference ;
     ref:ifcGlobalID rdfs:Literal ;
@@ -82,8 +82,7 @@ bs:IFCReference_version_7 a ref:IFCReference ;
 
 bs:Resource_version_1 ref:hasTimeseriesId rdfs:Literal .
 
-bs:Resource_version_10 ref:ifcGlobalID rdfs:Literal ;
-    ref:ifcName rdfs:Literal .
+bs:Resource_version_10 ref:hasTimeseriesId rdfs:Literal .
 
 bs:Resource_version_11 ref:ifcGlobalID rdfs:Literal ;
     ref:ifcName rdfs:Literal .
@@ -92,29 +91,28 @@ bs:Resource_version_12 ref:hasTimeseriesId rdfs:Literal .
 
 bs:Resource_version_13 ref:hasTimeseriesId rdfs:Literal .
 
-bs:Resource_version_14 ref:ifcGlobalID rdfs:Literal ;
-    ref:ifcName rdfs:Literal .
+bs:Resource_version_14 ref:hasTimeseriesId rdfs:Literal .
 
 bs:Resource_version_15 ref:hasTimeseriesId rdfs:Literal .
 
-bs:Resource_version_16 ref:ifcGlobalID rdfs:Literal ;
-    ref:ifcName rdfs:Literal .
+bs:Resource_version_16 ref:hasTimeseriesId rdfs:Literal .
 
 bs:Resource_version_17 ref:hasTimeseriesId rdfs:Literal .
 
 bs:Resource_version_18 ref:ifcGlobalID rdfs:Literal ;
     ref:ifcName rdfs:Literal .
 
-bs:Resource_version_19 ref:hasTimeseriesId rdfs:Literal .
+bs:Resource_version_19 ref:ifcGlobalID rdfs:Literal ;
+    ref:ifcName rdfs:Literal .
 
 bs:Resource_version_2 ref:hasTimeseriesId rdfs:Literal .
 
-bs:Resource_version_20 ref:ifcGlobalID rdfs:Literal ;
-    ref:ifcName rdfs:Literal .
+bs:Resource_version_20 ref:hasTimeseriesId rdfs:Literal .
 
 bs:Resource_version_21 ref:hasTimeseriesId rdfs:Literal .
 
-bs:Resource_version_22 ref:hasTimeseriesId rdfs:Literal .
+bs:Resource_version_22 ref:ifcGlobalID rdfs:Literal ;
+    ref:ifcName rdfs:Literal .
 
 bs:Resource_version_23 ref:hasTimeseriesId rdfs:Literal .
 
@@ -122,30 +120,29 @@ bs:Resource_version_24 ref:hasTimeseriesId rdfs:Literal .
 
 bs:Resource_version_25 ref:hasTimeseriesId rdfs:Literal .
 
-bs:Resource_version_26 ref:ifcGlobalID rdfs:Literal ;
-    ref:ifcName rdfs:Literal .
+bs:Resource_version_26 ref:hasTimeseriesId rdfs:Literal .
 
 bs:Resource_version_27 ref:hasTimeseriesId rdfs:Literal .
 
-bs:Resource_version_28 ref:ifcGlobalID rdfs:Literal ;
-    ref:ifcName rdfs:Literal .
+bs:Resource_version_28 ref:hasTimeseriesId rdfs:Literal .
 
-bs:Resource_version_29 ref:ifcGlobalID rdfs:Literal ;
-    ref:ifcName rdfs:Literal .
+bs:Resource_version_29 ref:hasTimeseriesId rdfs:Literal .
 
 bs:Resource_version_3 ref:ifcGlobalID rdfs:Literal ;
     ref:ifcName rdfs:Literal .
 
-bs:Resource_version_30 ref:hasTimeseriesId rdfs:Literal .
+bs:Resource_version_30 ref:ifcGlobalID rdfs:Literal ;
+    ref:ifcName rdfs:Literal .
 
 bs:Resource_version_31 ref:hasTimeseriesId rdfs:Literal .
 
-bs:Resource_version_32 ref:hasTimeseriesId rdfs:Literal .
-
-bs:Resource_version_33 ref:hasTimeseriesId rdfs:Literal .
-
-bs:Resource_version_34 ref:ifcGlobalID rdfs:Literal ;
+bs:Resource_version_32 ref:ifcGlobalID rdfs:Literal ;
     ref:ifcName rdfs:Literal .
+
+bs:Resource_version_33 ref:ifcGlobalID rdfs:Literal ;
+    ref:ifcName rdfs:Literal .
+
+bs:Resource_version_34 ref:hasTimeseriesId rdfs:Literal .
 
 bs:Resource_version_35 ref:hasTimeseriesId rdfs:Literal .
 
@@ -153,21 +150,23 @@ bs:Resource_version_36 ref:hasTimeseriesId rdfs:Literal .
 
 bs:Resource_version_37 ref:hasTimeseriesId rdfs:Literal .
 
-bs:Resource_version_38 ref:hasTimeseriesId rdfs:Literal .
+bs:Resource_version_38 ref:ifcGlobalID rdfs:Literal ;
+    ref:ifcName rdfs:Literal .
 
 bs:Resource_version_39 ref:hasTimeseriesId rdfs:Literal .
 
 bs:Resource_version_4 ref:ifcGlobalID rdfs:Literal ;
     ref:ifcName rdfs:Literal .
 
-bs:Resource_version_40 ref:ifcGlobalID rdfs:Literal ;
-    ref:ifcName rdfs:Literal .
+bs:Resource_version_40 ref:hasTimeseriesId rdfs:Literal .
 
-bs:Resource_version_41 ref:hasTimeseriesId rdfs:Literal .
+bs:Resource_version_41 ref:ifcGlobalID rdfs:Literal ;
+    ref:ifcName rdfs:Literal .
 
 bs:Resource_version_42 ref:hasTimeseriesId rdfs:Literal .
 
-bs:Resource_version_43 ref:hasTimeseriesId rdfs:Literal .
+bs:Resource_version_43 ref:ifcGlobalID rdfs:Literal ;
+    ref:ifcName rdfs:Literal .
 
 bs:Resource_version_44 ref:hasTimeseriesId rdfs:Literal .
 
@@ -190,12 +189,13 @@ bs:Resource_version_51 ref:hasTimeseriesId rdfs:Literal .
 
 bs:Resource_version_52 ref:hasTimeseriesId rdfs:Literal .
 
-bs:Resource_version_53 ref:ifcGlobalID rdfs:Literal ;
+bs:Resource_version_53 ref:hasTimeseriesId rdfs:Literal .
+
+bs:Resource_version_54 ref:ifcGlobalID rdfs:Literal ;
     ref:ifcName rdfs:Literal .
 
-bs:Resource_version_54 ref:hasTimeseriesId rdfs:Literal .
-
-bs:Resource_version_55 ref:hasTimeseriesId rdfs:Literal .
+bs:Resource_version_55 ref:ifcGlobalID rdfs:Literal ;
+    ref:ifcName rdfs:Literal .
 
 bs:Resource_version_56 ref:hasTimeseriesId rdfs:Literal .
 
@@ -208,366 +208,366 @@ bs:Resource_version_8 ref:ifcGlobalID rdfs:Literal ;
 
 bs:Resource_version_9 ref:hasTimeseriesId rdfs:Literal .
 
-bs:Storey_version_3 a brick:Storey ;
-    ref:hasExternalReference bs:Resource_version_34 .
+bs:Storey_version_1 a brick:Storey ;
+    ref:hasExternalReference bs:Resource_version_45 .
 
-bs:Thermostat_version_4 a brick:Thermostat,
+bs:Thermostat_version_5 a brick:Thermostat,
         s4bldg:UnitaryControlElement ;
-    brick:hasPoint bs:Mode_Command_version_3 ;
-    saref:consistOf bs:Mode_Command_version_3 ;
+    brick:hasPoint bs:Mode_Command_version_4 ;
+    saref:consistOf bs:Mode_Command_version_4 ;
     s4ener:serialNumber rdfs:Literal .
 
 bs:Delay_Parameter_version_1 a brick:Delay_Parameter ;
-    brick:isPointOf bs:Thermostat_version_2 ;
-    ref:hasExternalReference bs:Resource_version_25 .
+    brick:isPointOf bs:Thermostat_version_1 ;
+    ref:hasExternalReference bs:Resource_version_44 .
 
 bs:Delay_Parameter_version_2 a brick:Delay_Parameter ;
+    brick:isPointOf bs:Thermostat_version_2 ;
+    ref:hasExternalReference bs:Resource_version_21 .
+
+bs:Delay_Parameter_version_3 a brick:Delay_Parameter ;
+    brick:isPointOf bs:Thermostat_version_3 ;
+    ref:hasExternalReference bs:Resource_version_1 .
+
+bs:Delay_Parameter_version_4 a brick:Delay_Parameter ;
+    brick:isPointOf bs:Thermostat_version_4 ;
+    ref:hasExternalReference bs:Resource_version_10 .
+
+bs:Lockout_Command_version_1 a brick:Lockout_Command ;
+    brick:isPointOf bs:Thermostat_version_1 ;
+    ref:hasExternalReference bs:Resource_version_40 .
+
+bs:Lockout_Command_version_2 a brick:Lockout_Command ;
+    brick:isPointOf bs:Thermostat_version_2 ;
+    ref:hasExternalReference bs:Resource_version_39 .
+
+bs:Lockout_Command_version_3 a brick:Lockout_Command ;
+    brick:isPointOf bs:Thermostat_version_3 ;
+    ref:hasExternalReference bs:Resource_version_48 .
+
+bs:Lockout_Command_version_4 a brick:Lockout_Command ;
+    brick:isPointOf bs:Thermostat_version_4 ;
+    ref:hasExternalReference bs:Resource_version_25 .
+
+bs:Max_Air_Temperature_Setpoint_version_1 a brick:Max_Air_Temperature_Setpoint ;
     brick:isPointOf bs:Thermostat_version_1 ;
     ref:hasExternalReference bs:Resource_version_27 .
 
-bs:Delay_Parameter_version_3 a brick:Delay_Parameter ;
-    brick:isPointOf bs:Thermostat_version_5 ;
-    ref:hasExternalReference bs:Resource_version_37 .
-
-bs:Delay_Parameter_version_4 a brick:Delay_Parameter ;
-    brick:isPointOf bs:Thermostat_version_3 ;
-    ref:hasExternalReference bs:Resource_version_46 .
-
-bs:Lockout_Command_version_1 a brick:Lockout_Command ;
-    brick:isPointOf bs:Thermostat_version_2 ;
-    ref:hasExternalReference bs:Resource_version_19 .
-
-bs:Lockout_Command_version_2 a brick:Lockout_Command ;
-    brick:isPointOf bs:Thermostat_version_1 ;
-    ref:hasExternalReference bs:Resource_version_24 .
-
-bs:Lockout_Command_version_3 a brick:Lockout_Command ;
-    brick:isPointOf bs:Thermostat_version_5 ;
-    ref:hasExternalReference bs:Resource_version_52 .
-
-bs:Lockout_Command_version_4 a brick:Lockout_Command ;
-    brick:isPointOf bs:Thermostat_version_3 ;
-    ref:hasExternalReference bs:Resource_version_33 .
-
-bs:Max_Air_Temperature_Setpoint_version_1 a brick:Max_Air_Temperature_Setpoint ;
-    brick:isPointOf bs:Thermostat_version_2 ;
-    ref:hasExternalReference bs:Resource_version_6 .
-
 bs:Max_Air_Temperature_Setpoint_version_2 a brick:Max_Air_Temperature_Setpoint ;
-    brick:isPointOf bs:Thermostat_version_5 ;
-    ref:hasExternalReference bs:Resource_version_32 .
-
-bs:Max_Air_Temperature_Setpoint_version_3 a brick:Max_Air_Temperature_Setpoint ;
-    brick:isPointOf bs:Thermostat_version_1 ;
-    ref:hasExternalReference bs:Resource_version_42 .
-
-bs:Max_Air_Temperature_Setpoint_version_4 a brick:Max_Air_Temperature_Setpoint ;
-    brick:isPointOf bs:Thermostat_version_3 ;
-    ref:hasExternalReference bs:Resource_version_55 .
-
-bs:Min_Air_Temperature_Setpoint_version_1 a brick:Min_Air_Temperature_Setpoint ;
-    brick:isPointOf bs:Thermostat_version_1 ;
-    ref:hasExternalReference bs:Resource_version_21 .
-
-bs:Min_Air_Temperature_Setpoint_version_2 a brick:Min_Air_Temperature_Setpoint ;
     brick:isPointOf bs:Thermostat_version_2 ;
     ref:hasExternalReference bs:Resource_version_9 .
 
+bs:Max_Air_Temperature_Setpoint_version_3 a brick:Max_Air_Temperature_Setpoint ;
+    brick:isPointOf bs:Thermostat_version_3 ;
+    ref:hasExternalReference bs:Resource_version_28 .
+
+bs:Max_Air_Temperature_Setpoint_version_4 a brick:Max_Air_Temperature_Setpoint ;
+    brick:isPointOf bs:Thermostat_version_4 ;
+    ref:hasExternalReference bs:Resource_version_5 .
+
+bs:Min_Air_Temperature_Setpoint_version_1 a brick:Min_Air_Temperature_Setpoint ;
+    brick:isPointOf bs:Thermostat_version_1 ;
+    ref:hasExternalReference bs:Resource_version_51 .
+
+bs:Min_Air_Temperature_Setpoint_version_2 a brick:Min_Air_Temperature_Setpoint ;
+    brick:isPointOf bs:Thermostat_version_2 ;
+    ref:hasExternalReference bs:Resource_version_35 .
+
 bs:Min_Air_Temperature_Setpoint_version_3 a brick:Min_Air_Temperature_Setpoint ;
-    brick:isPointOf bs:Thermostat_version_5 ;
-    ref:hasExternalReference bs:Resource_version_38 .
+    brick:isPointOf bs:Thermostat_version_3 ;
+    ref:hasExternalReference bs:Resource_version_29 .
 
 bs:Min_Air_Temperature_Setpoint_version_4 a brick:Min_Air_Temperature_Setpoint ;
-    brick:isPointOf bs:Thermostat_version_3 ;
-    ref:hasExternalReference bs:Resource_version_56 .
+    brick:isPointOf bs:Thermostat_version_4 ;
+    ref:hasExternalReference bs:Resource_version_2 .
 
 bs:Mode_Command_version_1 a brick:Mode_Command ;
-    brick:isPointOf bs:Thermostat_version_5 ;
-    ref:hasExternalReference bs:Resource_version_49 .
+    brick:isPointOf bs:Thermostat_version_2 ;
+    ref:hasExternalReference bs:Resource_version_12 .
 
 bs:Mode_Command_version_2 a brick:Mode_Command ;
-    brick:isPointOf bs:Thermostat_version_2 ;
-    ref:hasExternalReference bs:Resource_version_2 .
+    brick:isPointOf bs:Thermostat_version_3 ;
+    ref:hasExternalReference bs:Resource_version_52 .
 
 bs:Mode_Command_version_3 a brick:Mode_Command ;
     brick:isPointOf bs:Thermostat_version_4 ;
-    ref:hasExternalReference bs:Resource_version_50 .
+    ref:hasExternalReference bs:Resource_version_13 .
 
 bs:Mode_Command_version_4 a brick:Mode_Command ;
-    brick:isPointOf bs:Thermostat_version_1 ;
-    ref:hasExternalReference bs:Resource_version_47 .
+    brick:isPointOf bs:Thermostat_version_5 ;
+    ref:hasExternalReference bs:Resource_version_50 .
 
 bs:Occupancy_Sensor_version_1 a brick:Occupancy_Sensor,
         saref:Sensor ;
     brick:isPointOf bs:Thermostat_version_1 ;
-    ref:hasExternalReference bs:Resource_version_12 ;
+    ref:hasExternalReference bs:Resource_version_49 ;
     saref:observes bs:Occupancy_version_1 .
 
 bs:Occupancy_Sensor_version_2 a brick:Occupancy_Sensor,
         saref:Sensor ;
     brick:isPointOf bs:Thermostat_version_2 ;
-    ref:hasExternalReference bs:Resource_version_5 ;
+    ref:hasExternalReference bs:Resource_version_20 ;
     saref:observes bs:Occupancy_version_1 .
 
 bs:Occupancy_Sensor_version_3 a brick:Occupancy_Sensor,
         saref:Sensor ;
-    brick:isPointOf bs:Thermostat_version_5 ;
-    ref:hasExternalReference bs:Resource_version_31 ;
+    brick:isPointOf bs:Thermostat_version_3 ;
+    ref:hasExternalReference bs:Resource_version_24 ;
     saref:observes bs:Occupancy_version_1 .
 
 bs:Occupancy_Sensor_version_4 a brick:Occupancy_Sensor,
         saref:Sensor ;
-    brick:isPointOf bs:Thermostat_version_3 ;
-    ref:hasExternalReference bs:Resource_version_35 ;
+    brick:isPointOf bs:Thermostat_version_4 ;
+    ref:hasExternalReference bs:Resource_version_6 ;
     saref:observes bs:Occupancy_version_1 .
 
 bs:On_Off_Command_version_1 a brick:On_Off_Command ;
     brick:isPointOf bs:Thermostat_version_1 ;
-    ref:hasExternalReference bs:Resource_version_41 .
+    ref:hasExternalReference bs:Resource_version_26 .
 
 bs:On_Off_Command_version_2 a brick:On_Off_Command ;
     brick:isPointOf bs:Thermostat_version_2 ;
-    ref:hasExternalReference bs:Resource_version_7 .
+    ref:hasExternalReference bs:Resource_version_17 .
 
 bs:On_Off_Command_version_3 a brick:On_Off_Command ;
-    brick:isPointOf bs:Thermostat_version_5 ;
-    ref:hasExternalReference bs:Resource_version_22 .
+    brick:isPointOf bs:Thermostat_version_3 ;
+    ref:hasExternalReference bs:Resource_version_47 .
 
 bs:On_Off_Command_version_4 a brick:On_Off_Command ;
-    brick:isPointOf bs:Thermostat_version_3 ;
-    ref:hasExternalReference bs:Resource_version_48 .
+    brick:isPointOf bs:Thermostat_version_4 ;
+    ref:hasExternalReference bs:Resource_version_15 .
 
 bs:Run_Request_Command_version_1 a brick:Run_Request_Command ;
-    brick:isPointOf bs:Thermostat_version_2 ;
-    ref:hasExternalReference bs:Resource_version_23 .
+    brick:isPointOf bs:Thermostat_version_1 ;
+    ref:hasExternalReference bs:Resource_version_53 .
 
 bs:Run_Request_Command_version_2 a brick:Run_Request_Command ;
-    brick:isPointOf bs:Thermostat_version_1 ;
-    ref:hasExternalReference bs:Resource_version_43 .
+    brick:isPointOf bs:Thermostat_version_2 ;
+    ref:hasExternalReference bs:Resource_version_36 .
 
 bs:Run_Request_Command_version_3 a brick:Run_Request_Command ;
     brick:isPointOf bs:Thermostat_version_3 ;
-    ref:hasExternalReference bs:Resource_version_51 .
+    ref:hasExternalReference bs:Resource_version_42 .
 
 bs:Run_Request_Command_version_4 a brick:Run_Request_Command ;
-    brick:isPointOf bs:Thermostat_version_5 ;
-    ref:hasExternalReference bs:Resource_version_39 .
+    brick:isPointOf bs:Thermostat_version_4 ;
+    ref:hasExternalReference bs:Resource_version_7 .
 
 bs:Space_version_1 a brick:Space,
         s4bldg:BuildingSpace ;
-    ref:hasExternalReference bs:Resource_version_28 .
+    ref:hasExternalReference bs:Resource_version_22 .
 
-bs:Space_version_3 a brick:Space,
-        s4bldg:BuildingSpace ;
-    ref:hasExternalReference bs:Resource_version_14 .
-
-bs:Space_version_5 a brick:Space,
-        s4bldg:BuildingSpace ;
-    ref:hasExternalReference bs:Resource_version_45 .
-
-bs:Space_version_6 a brick:Space,
+bs:Space_version_2 a brick:Space,
         s4bldg:BuildingSpace ;
     ref:hasExternalReference bs:Resource_version_18 .
 
-bs:Storey_version_1 a brick:Storey ;
-    brick:hasPart bs:Space_version_2,
-        bs:Space_version_3,
-        bs:Space_version_6,
-        bs:Space_version_8 ;
-    brick:isLocationOf bs:Terminal_Unit_version_1 ;
-    ref:hasExternalReference bs:Resource_version_8 ;
-    s4bldg:contains bs:Terminal_Unit_version_1 .
+bs:Space_version_4 a brick:Space,
+        s4bldg:BuildingSpace ;
+    ref:hasExternalReference bs:Resource_version_8 .
+
+bs:Space_version_5 a brick:Space,
+        s4bldg:BuildingSpace ;
+    ref:hasExternalReference bs:Resource_version_19 .
 
 bs:Storey_version_2 a brick:Storey ;
     brick:hasPart bs:Space_version_1,
-        bs:Space_version_4,
+        bs:Space_version_2,
+        bs:Space_version_3,
+        bs:Space_version_8 ;
+    brick:isLocationOf bs:Terminal_Unit_version_1 ;
+    ref:hasExternalReference bs:Resource_version_55 ;
+    s4bldg:contains bs:Terminal_Unit_version_1 .
+
+bs:Storey_version_3 a brick:Storey ;
+    brick:hasPart bs:Space_version_4,
         bs:Space_version_5,
+        bs:Space_version_6,
         bs:Space_version_7 ;
     brick:isLocationOf bs:Terminal_Unit_version_1 ;
-    ref:hasExternalReference bs:Resource_version_29 ;
+    ref:hasExternalReference bs:Resource_version_32 ;
     s4bldg:contains bs:Terminal_Unit_version_1 .
 
 bs:Temperature_Sensor_version_1 a brick:Temperature_Sensor,
         saref:Sensor ;
     brick:isPointOf bs:Thermostat_version_1 ;
-    ref:hasExternalReference bs:Resource_version_17 ;
+    ref:hasExternalReference bs:Resource_version_34 ;
     saref:observes bs:Temperature_version_1 .
 
 bs:Temperature_Sensor_version_2 a brick:Temperature_Sensor,
         saref:Sensor ;
-    brick:isPointOf bs:Thermostat_version_3 ;
-    ref:hasExternalReference bs:Resource_version_30 ;
+    brick:isPointOf bs:Thermostat_version_2 ;
+    ref:hasExternalReference bs:Resource_version_23 ;
     saref:observes bs:Temperature_version_1 .
 
 bs:Temperature_Sensor_version_3 a brick:Temperature_Sensor,
         saref:Sensor ;
-    brick:isPointOf bs:Thermostat_version_2 ;
-    ref:hasExternalReference bs:Resource_version_15 ;
+    brick:isPointOf bs:Thermostat_version_3 ;
+    ref:hasExternalReference bs:Resource_version_31 ;
     saref:observes bs:Temperature_version_1 .
 
 bs:Temperature_Sensor_version_4 a brick:Temperature_Sensor,
         saref:Sensor ;
-    brick:isPointOf bs:Thermostat_version_5 ;
-    ref:hasExternalReference bs:Resource_version_44 ;
+    brick:isPointOf bs:Thermostat_version_4 ;
+    ref:hasExternalReference bs:Resource_version_14 ;
     saref:observes bs:Temperature_version_1 .
 
 bs:Temperature_Setpoint_version_1 a brick:Temperature_Setpoint,
         saref:Actuator ;
     brick:isPointOf bs:Thermostat_version_1 ;
-    ref:hasExternalReference bs:Resource_version_13 ;
+    ref:hasExternalReference bs:Resource_version_56 ;
     saref:controls bs:Temperature_version_1 .
 
 bs:Temperature_Setpoint_version_2 a brick:Temperature_Setpoint,
         saref:Actuator ;
     brick:isPointOf bs:Thermostat_version_2 ;
-    ref:hasExternalReference bs:Resource_version_1 ;
+    ref:hasExternalReference bs:Resource_version_37 ;
     saref:controls bs:Temperature_version_1 .
 
 bs:Temperature_Setpoint_version_3 a brick:Temperature_Setpoint,
         saref:Actuator ;
     brick:isPointOf bs:Thermostat_version_3 ;
-    ref:hasExternalReference bs:Resource_version_54 ;
+    ref:hasExternalReference bs:Resource_version_46 ;
     saref:controls bs:Temperature_version_1 .
 
 bs:Temperature_Setpoint_version_4 a brick:Temperature_Setpoint,
         saref:Actuator ;
-    brick:isPointOf bs:Thermostat_version_5 ;
-    ref:hasExternalReference bs:Resource_version_36 ;
+    brick:isPointOf bs:Thermostat_version_4 ;
+    ref:hasExternalReference bs:Resource_version_16 ;
     saref:controls bs:Temperature_version_1 .
 
-bs:Space_version_2 a brick:Space,
+bs:Space_version_3 a brick:Space,
         s4bldg:BuildingSpace ;
     brick:isLocationOf bs:Thermostat_version_2 ;
-    ref:hasExternalReference bs:Resource_version_3 ;
+    ref:hasExternalReference bs:Resource_version_11 ;
     s4bldg:contains bs:Thermostat_version_2 .
 
-bs:Space_version_4 a brick:Space,
+bs:Space_version_6 a brick:Space,
         s4bldg:BuildingSpace ;
-    brick:isLocationOf bs:Thermostat_version_1 ;
-    ref:hasExternalReference bs:Resource_version_20 ;
-    s4bldg:contains bs:Thermostat_version_1 .
+    brick:isLocationOf bs:Thermostat_version_4 ;
+    ref:hasExternalReference bs:Resource_version_4 ;
+    s4bldg:contains bs:Thermostat_version_4 .
 
 bs:Space_version_7 a brick:Space,
         s4bldg:BuildingSpace ;
     brick:isLocationOf bs:Thermostat_version_3 ;
-    ref:hasExternalReference bs:Resource_version_40 ;
+    ref:hasExternalReference bs:Resource_version_33 ;
     s4bldg:contains bs:Thermostat_version_3 .
 
 bs:Space_version_8 a brick:Space,
         s4bldg:BuildingSpace ;
-    brick:isLocationOf bs:Thermostat_version_5 ;
-    ref:hasExternalReference bs:Resource_version_16 ;
-    s4bldg:contains bs:Thermostat_version_5 .
+    brick:isLocationOf bs:Thermostat_version_1 ;
+    ref:hasExternalReference bs:Resource_version_43 ;
+    s4bldg:contains bs:Thermostat_version_1 .
 
 bs:Occupancy_version_1 a quantitykind:Occupancy,
         saref:Property .
 
 bs:Terminal_Unit_version_1 a brick:Terminal_Unit,
         s4bldg:FlowTerminal ;
-    brick:hasLocation bs:Storey_version_1,
-        bs:Storey_version_2 ;
-    ref:hasExternalReference bs:Resource_version_10 .
+    brick:hasLocation bs:Storey_version_2,
+        bs:Storey_version_3 ;
+    ref:hasExternalReference bs:Resource_version_3 .
 
 bs:Temperature_version_1 a quantitykind:Temperature,
         saref:Property .
 
-bs:Thermostat_version_3 a brick:Thermostat,
-        s4bldg:UnitaryControlElement ;
-    brick:hasLocation bs:Space_version_7 ;
-    brick:hasPoint bs:Delay_Parameter_version_4,
-        bs:Lockout_Command_version_4,
-        bs:Max_Air_Temperature_Setpoint_version_4,
-        bs:Min_Air_Temperature_Setpoint_version_4,
-        bs:Occupancy_Sensor_version_4,
-        bs:On_Off_Command_version_4,
-        bs:Run_Request_Command_version_3,
-        bs:Temperature_Sensor_version_2,
-        bs:Temperature_Setpoint_version_3 ;
-    ref:hasExternalReference bs:Resource_version_53 ;
-    saref:consistOf bs:Delay_Parameter_version_4,
-        bs:Lockout_Command_version_4,
-        bs:Max_Air_Temperature_Setpoint_version_4,
-        bs:Min_Air_Temperature_Setpoint_version_4,
-        bs:Occupancy_Sensor_version_4,
-        bs:On_Off_Command_version_4,
-        bs:Run_Request_Command_version_3,
-        bs:Temperature_Sensor_version_2,
-        bs:Temperature_Setpoint_version_3 ;
-    s4ener:serialNumber rdfs:Literal .
-
 bs:Thermostat_version_1 a brick:Thermostat,
         s4bldg:UnitaryControlElement ;
-    brick:hasLocation bs:Space_version_4 ;
-    brick:hasPoint bs:Delay_Parameter_version_2,
-        bs:Lockout_Command_version_2,
-        bs:Max_Air_Temperature_Setpoint_version_3,
+    brick:hasLocation bs:Space_version_8 ;
+    brick:hasPoint bs:Delay_Parameter_version_1,
+        bs:Lockout_Command_version_1,
+        bs:Max_Air_Temperature_Setpoint_version_1,
         bs:Min_Air_Temperature_Setpoint_version_1,
-        bs:Mode_Command_version_4,
         bs:Occupancy_Sensor_version_1,
         bs:On_Off_Command_version_1,
-        bs:Run_Request_Command_version_2,
+        bs:Run_Request_Command_version_1,
         bs:Temperature_Sensor_version_1,
         bs:Temperature_Setpoint_version_1 ;
-    ref:hasExternalReference bs:Resource_version_26 ;
-    saref:consistOf bs:Delay_Parameter_version_2,
-        bs:Lockout_Command_version_2,
-        bs:Max_Air_Temperature_Setpoint_version_3,
+    ref:hasExternalReference bs:Resource_version_54 ;
+    saref:consistOf bs:Delay_Parameter_version_1,
+        bs:Lockout_Command_version_1,
+        bs:Max_Air_Temperature_Setpoint_version_1,
         bs:Min_Air_Temperature_Setpoint_version_1,
-        bs:Mode_Command_version_4,
         bs:Occupancy_Sensor_version_1,
         bs:On_Off_Command_version_1,
-        bs:Run_Request_Command_version_2,
+        bs:Run_Request_Command_version_1,
         bs:Temperature_Sensor_version_1,
         bs:Temperature_Setpoint_version_1 ;
     s4ener:serialNumber rdfs:Literal .
 
 bs:Thermostat_version_2 a brick:Thermostat,
         s4bldg:UnitaryControlElement ;
-    brick:hasLocation bs:Space_version_2 ;
-    brick:hasPoint bs:Delay_Parameter_version_1,
-        bs:Lockout_Command_version_1,
-        bs:Max_Air_Temperature_Setpoint_version_1,
+    brick:hasLocation bs:Space_version_3 ;
+    brick:hasPoint bs:Delay_Parameter_version_2,
+        bs:Lockout_Command_version_2,
+        bs:Max_Air_Temperature_Setpoint_version_2,
         bs:Min_Air_Temperature_Setpoint_version_2,
-        bs:Mode_Command_version_2,
+        bs:Mode_Command_version_1,
         bs:Occupancy_Sensor_version_2,
         bs:On_Off_Command_version_2,
-        bs:Run_Request_Command_version_1,
-        bs:Temperature_Sensor_version_3,
+        bs:Run_Request_Command_version_2,
+        bs:Temperature_Sensor_version_2,
         bs:Temperature_Setpoint_version_2 ;
-    ref:hasExternalReference bs:Resource_version_11 ;
-    saref:consistOf bs:Delay_Parameter_version_1,
-        bs:Lockout_Command_version_1,
-        bs:Max_Air_Temperature_Setpoint_version_1,
+    ref:hasExternalReference bs:Resource_version_41 ;
+    saref:consistOf bs:Delay_Parameter_version_2,
+        bs:Lockout_Command_version_2,
+        bs:Max_Air_Temperature_Setpoint_version_2,
         bs:Min_Air_Temperature_Setpoint_version_2,
-        bs:Mode_Command_version_2,
+        bs:Mode_Command_version_1,
         bs:Occupancy_Sensor_version_2,
         bs:On_Off_Command_version_2,
-        bs:Run_Request_Command_version_1,
-        bs:Temperature_Sensor_version_3,
+        bs:Run_Request_Command_version_2,
+        bs:Temperature_Sensor_version_2,
         bs:Temperature_Setpoint_version_2 ;
     s4ener:serialNumber rdfs:Literal .
 
-bs:Thermostat_version_5 a brick:Thermostat,
+bs:Thermostat_version_3 a brick:Thermostat,
         s4bldg:UnitaryControlElement ;
-    brick:hasLocation bs:Space_version_8 ;
+    brick:hasLocation bs:Space_version_7 ;
     brick:hasPoint bs:Delay_Parameter_version_3,
         bs:Lockout_Command_version_3,
-        bs:Max_Air_Temperature_Setpoint_version_2,
+        bs:Max_Air_Temperature_Setpoint_version_3,
         bs:Min_Air_Temperature_Setpoint_version_3,
-        bs:Mode_Command_version_1,
+        bs:Mode_Command_version_2,
         bs:Occupancy_Sensor_version_3,
         bs:On_Off_Command_version_3,
+        bs:Run_Request_Command_version_3,
+        bs:Temperature_Sensor_version_3,
+        bs:Temperature_Setpoint_version_3 ;
+    ref:hasExternalReference bs:Resource_version_30 ;
+    saref:consistOf bs:Delay_Parameter_version_3,
+        bs:Lockout_Command_version_3,
+        bs:Max_Air_Temperature_Setpoint_version_3,
+        bs:Min_Air_Temperature_Setpoint_version_3,
+        bs:Mode_Command_version_2,
+        bs:Occupancy_Sensor_version_3,
+        bs:On_Off_Command_version_3,
+        bs:Run_Request_Command_version_3,
+        bs:Temperature_Sensor_version_3,
+        bs:Temperature_Setpoint_version_3 ;
+    s4ener:serialNumber rdfs:Literal .
+
+bs:Thermostat_version_4 a brick:Thermostat,
+        s4bldg:UnitaryControlElement ;
+    brick:hasLocation bs:Space_version_6 ;
+    brick:hasPoint bs:Delay_Parameter_version_4,
+        bs:Lockout_Command_version_4,
+        bs:Max_Air_Temperature_Setpoint_version_4,
+        bs:Min_Air_Temperature_Setpoint_version_4,
+        bs:Mode_Command_version_3,
+        bs:Occupancy_Sensor_version_4,
+        bs:On_Off_Command_version_4,
         bs:Run_Request_Command_version_4,
         bs:Temperature_Sensor_version_4,
         bs:Temperature_Setpoint_version_4 ;
-    ref:hasExternalReference bs:Resource_version_4 ;
-    saref:consistOf bs:Delay_Parameter_version_3,
-        bs:Lockout_Command_version_3,
-        bs:Max_Air_Temperature_Setpoint_version_2,
-        bs:Min_Air_Temperature_Setpoint_version_3,
-        bs:Mode_Command_version_1,
-        bs:Occupancy_Sensor_version_3,
-        bs:On_Off_Command_version_3,
+    ref:hasExternalReference bs:Resource_version_38 ;
+    saref:consistOf bs:Delay_Parameter_version_4,
+        bs:Lockout_Command_version_4,
+        bs:Max_Air_Temperature_Setpoint_version_4,
+        bs:Min_Air_Temperature_Setpoint_version_4,
+        bs:Mode_Command_version_3,
+        bs:Occupancy_Sensor_version_4,
+        bs:On_Off_Command_version_4,
         bs:Run_Request_Command_version_4,
         bs:Temperature_Sensor_version_4,
         bs:Temperature_Setpoint_version_4 ;
