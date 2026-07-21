@@ -60,6 +60,30 @@ your active virtualenv. Optionally install `rdflib` (used by the
 higher-level Python API) via `pip install "bschema-rs[rdflib]"` once
 published, or `pip install rdflib` directly during development.
 
+#### Install straight from GitHub (no clone)
+
+With [`uv`](https://docs.astral.sh/uv/) you can run the CLI without checking
+the repo out (requires a Rust toolchain the first time, to build the PyO3
+extension; the build is cached after that):
+
+```sh
+uvx --from "git+https://github.com/lazlop/bschema#subdirectory=bschema-py" create-bschema-rs --help
+```
+
+Or add it as a dependency in another project:
+
+```toml
+[tool.uv.sources]
+bschema-rs = { git = "https://github.com/lazlop/bschema", subdirectory = "bschema-py" }
+```
+```sh
+uv add bschema-rs
+```
+
+> We may publish `bschema-rs` to PyPI (or ship prebuilt wheels) in the future
+> so this doesn't require a local Rust toolchain. For now, installing from
+> GitHub is the supported path.
+
 ## Usage in Python
 
 ```python
