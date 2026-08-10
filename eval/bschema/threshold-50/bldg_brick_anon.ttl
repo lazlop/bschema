@@ -228,12 +228,10 @@ bs:Duration_Sensor_version_1 a brick:Duration_Sensor ;
     ref:hasExternalReference bs:BACnetReference_version_1 .
 
 bs:Electric_Energy_Sensor_version_1 a brick:Electric_Energy_Sensor ;
-    s223:hasExternalReference bs:BACnetReference_version_1,
-        bs:BACnetReference_version_12 ;
+    s223:hasExternalReference bs:BACnetReference_version_1 ;
     brick:hasUnit unit:MegaW-HR ;
     brick:isPointOf bs:Fan_VFD_version_1 ;
-    ref:hasExternalReference bs:BACnetReference_version_1,
-        bs:BACnetReference_version_12 .
+    ref:hasExternalReference bs:BACnetReference_version_1 .
 
 bs:Electric_Energy_Sensor_version_2 a brick:Electric_Energy_Sensor ;
     s223:hasExternalReference bs:BACnetReference_version_1 ;
@@ -251,16 +249,14 @@ bs:Electrical_Energy_Usage_Sensor_version_1 a brick:Electrical_Energy_Usage_Sens
 bs:Energy_Sensor_version_1 a brick:Energy_Sensor ;
     s223:hasExternalReference bs:BACnetReference_version_1 ;
     brick:hasUnit unit:MegaW-HR ;
-    brick:isPointOf bs:Fan_VFD_version_3 ;
+    brick:isPointOf bs:Fan_VFD_version_1 ;
     ref:hasExternalReference bs:BACnetReference_version_1 .
 
 bs:Energy_Usage_Sensor_version_1 a brick:Energy_Usage_Sensor ;
-    s223:hasExternalReference bs:BACnetReference_version_1,
-        bs:BACnetReference_version_8 ;
+    s223:hasExternalReference bs:BACnetReference_version_1 ;
     brick:hasUnit unit:TON_FG-HR ;
     brick:isPointOf bs:Thermal_Power_Meter_version_1 ;
-    ref:hasExternalReference bs:BACnetReference_version_1,
-        bs:BACnetReference_version_8 .
+    ref:hasExternalReference bs:BACnetReference_version_1 .
 
 bs:Entering_Hot_Water_Temperature_Sensor_version_1 a brick:Entering_Hot_Water_Temperature_Sensor ;
     s223:hasExternalReference bs:BACnetReference_version_1 ;
@@ -276,10 +272,10 @@ bs:Entering_Water_Temperature_Sensor_version_1 a brick:Entering_Water_Temperatur
 
 bs:Entering_Water_Temperature_Sensor_version_2 a brick:Entering_Water_Temperature_Sensor,
         brick:Return_Water_Temperature_Sensor ;
-    s223:hasExternalReference bs:BACnetReference_version_13 ;
+    s223:hasExternalReference bs:BACnetReference_version_2 ;
     brick:hasUnit unit:DEG_F ;
     brick:isPointOf bs:Thermal_Power_Meter_version_1 ;
-    ref:hasExternalReference bs:BACnetReference_version_13 .
+    ref:hasExternalReference bs:BACnetReference_version_2 .
 
 bs:Exhaust_Air_Flow_Sensor_version_1 a brick:Exhaust_Air_Flow_Sensor ;
     s223:hasExternalReference bs:BACnetReference_version_1 ;
@@ -420,10 +416,10 @@ bs:Leaving_Water_Temperature_Sensor_version_1 a brick:Leaving_Water_Temperature_
 
 bs:Leaving_Water_Temperature_Sensor_version_2 a brick:Leaving_Water_Temperature_Sensor,
         brick:Supply_Water_Temperature_Sensor ;
-    s223:hasExternalReference bs:BACnetReference_version_16 ;
+    s223:hasExternalReference bs:BACnetReference_version_4 ;
     brick:hasUnit unit:DEG_F ;
     brick:isPointOf bs:Thermal_Power_Meter_version_1 ;
-    ref:hasExternalReference bs:BACnetReference_version_16 .
+    ref:hasExternalReference bs:BACnetReference_version_4 .
 
 bs:Level_Status_version_1 a brick:Level_Status ;
     s223:hasExternalReference bs:BACnetReference_version_1 ;
@@ -436,6 +432,10 @@ bs:Limit_version_1 a brick:Limit ;
     brick:hasUnit unit:PERCENT ;
     brick:isPointOf bs:RVAV_version_1 ;
     ref:hasExternalReference bs:BACnetReference_version_1 .
+
+bs:Literal_version_2 a rdfs:Literal .
+
+bs:Literal_version_3 a rdfs:Literal .
 
 bs:Low_Air_Flow_Alarm_version_1 a brick:Low_Air_Flow_Alarm ;
     s223:hasExternalReference bs:BACnetReference_version_1 ;
@@ -542,6 +542,12 @@ bs:Motor_Speed_Sensor_version_1 a brick:Motor_Speed_Sensor,
     brick:isPointOf bs:Fan_VFD_version_1 ;
     ref:hasExternalReference bs:BACnetReference_version_1 .
 
+bs:Motor_Torque_Sensor_version_1 a brick:Motor_Torque_Sensor ;
+    s223:hasExternalReference bs:BACnetReference_version_1 ;
+    brick:hasUnit unit:PERCENT ;
+    brick:isPointOf bs:Fan_VFD_version_1 ;
+    ref:hasExternalReference bs:BACnetReference_version_1 .
+
 bs:No_Water_Alarm_version_1 a brick:No_Water_Alarm ;
     s223:hasExternalReference bs:BACnetReference_version_1 ;
     brick:hasUnit unit:UNITLESS ;
@@ -565,28 +571,6 @@ bs:Off_Status_version_1 a brick:Off_Status ;
     s223:hasExternalReference bs:BACnetReference_version_1 ;
     brick:hasUnit unit:UNITLESS ;
     brick:isPointOf bs:AHU_version_2 ;
-    ref:hasExternalReference bs:BACnetReference_version_1 .
-
-bs:Open_Close_Status_version_1 a brick:Open_Close_Status ;
-    s223:hasExternalReference bs:BACnetReference_version_1,
-        bs:BACnetReference_version_5 ;
-    brick:hasUnit unit:PERCENT,
-        unit:UNITLESS ;
-    brick:isPointOf bs:Isolation_Damper_version_1 ;
-    ref:hasExternalReference bs:BACnetReference_version_1,
-        bs:BACnetReference_version_5 .
-
-bs:Open_Close_Status_version_3 a brick:Open_Close_Status ;
-    s223:hasExternalReference bs:BACnetReference_version_1 ;
-    brick:hasUnit unit:UNITLESS ;
-    brick:isPointOf rdfs:Resource,
-        bs:Isolation_Damper_version_2 ;
-    ref:hasExternalReference bs:BACnetReference_version_1 .
-
-bs:Open_Close_Status_version_4 a brick:Open_Close_Status ;
-    s223:hasExternalReference bs:BACnetReference_version_1 ;
-    brick:hasUnit unit:UNITLESS ;
-    brick:isPointOf bs:Isolation_Damper_version_3 ;
     ref:hasExternalReference bs:BACnetReference_version_1 .
 
 bs:Output_Frequency_Sensor_version_1 a brick:Output_Frequency_Sensor ;
@@ -631,7 +615,13 @@ bs:Point_version_2 a brick:Point ;
     ref:hasExternalReference bs:BACnetReference_version_1 .
 
 bs:Port_version_1 a bacnet:Port ;
-    ref:storedAt rdfs:Literal .
+    ref:storedAt bs:Literal_version_3 .
+
+bs:Power_Sensor_version_2 a brick:Power_Sensor ;
+    s223:hasExternalReference bs:BACnetReference_version_1 ;
+    brick:hasUnit unit:PERCENT ;
+    brick:isPointOf bs:Fan_VFD_version_1 ;
+    ref:hasExternalReference bs:BACnetReference_version_1 .
 
 bs:Pump_Command_version_1 a brick:Pump_Command ;
     s223:hasExternalReference bs:BACnetReference_version_1 ;
@@ -660,27 +650,11 @@ bs:Return_Air_Humidity_Sensor_version_1 a brick:Return_Air_Humidity_Sensor ;
     brick:isPointOf bs:AHU_version_2 ;
     ref:hasExternalReference bs:BACnetReference_version_1 .
 
-bs:Run_Enable_Command_version_1 a brick:Run_Enable_Command ;
-    s223:hasExternalReference bs:BACnetReference_version_1,
-        bs:BACnetReference_version_15 ;
-    brick:hasUnit unit:UNITLESS ;
-    brick:isPointOf bs:Fan_VFD_version_1 ;
-    ref:hasExternalReference bs:BACnetReference_version_1,
-        bs:BACnetReference_version_15 .
-
 bs:Run_Request_Status_version_2 a brick:Run_Request_Status ;
     s223:hasExternalReference bs:BACnetReference_version_1 ;
     brick:hasUnit unit:HR ;
     brick:isPointOf bs:AHU_version_4 ;
     ref:hasExternalReference bs:BACnetReference_version_1 .
-
-bs:Run_Status_version_1 a brick:Run_Status ;
-    s223:hasExternalReference bs:BACnetReference_version_1,
-        bs:BACnetReference_version_9 ;
-    brick:hasUnit unit:UNITLESS ;
-    brick:isPointOf bs:Fan_VFD_version_1 ;
-    ref:hasExternalReference bs:BACnetReference_version_1,
-        bs:BACnetReference_version_9 .
 
 bs:Sensor_version_1 a brick:Sensor ;
     s223:hasExternalReference bs:BACnetReference_version_1 ;
@@ -800,22 +774,10 @@ bs:Water_Alarm_version_1 a brick:Water_Alarm ;
         bs:CRAC_version_1 ;
     ref:hasExternalReference bs:BACnetReference_version_1 .
 
-bs:Water_Flow_Sensor_version_1 a brick:Water_Flow_Sensor ;
-    s223:hasExternalReference bs:BACnetReference_version_14 ;
-    brick:hasUnit unit:GAL_US-PER-MIN ;
-    brick:isPointOf bs:Thermal_Power_Meter_version_1 ;
-    ref:hasExternalReference bs:BACnetReference_version_14 .
-
 bs:Water_Flow_Sensor_version_2 a brick:Water_Flow_Sensor ;
     s223:hasExternalReference bs:BACnetReference_version_1 ;
     brick:hasUnit unit:GAL_US,
         unit:GAL_US-PER-HR ;
-    brick:isPointOf bs:Max_Water_Temperature_Setpoint_version_1 ;
-    ref:hasExternalReference bs:BACnetReference_version_1 .
-
-bs:Water_Flow_Sensor_version_3 a brick:Water_Flow_Sensor ;
-    s223:hasExternalReference bs:BACnetReference_version_1 ;
-    brick:hasUnit unit:GAL_US-PER-MIN ;
     brick:isPointOf bs:Max_Water_Temperature_Setpoint_version_1 ;
     ref:hasExternalReference bs:BACnetReference_version_1 .
 
@@ -850,7 +812,7 @@ bs:Zone_Air_Temperature_Sensor_version_6 a brick:Zone_Air_Temperature_Sensor ;
     ref:hasExternalReference bs:BACnetReference_version_1 .
 
 bs:ukWxk1OT528_version_1 a bacnet:ukWxk1OT528 ;
-    bacnet:device-instance rdfs:Literal ;
+    bacnet:device-instance bs:Literal_version_2 ;
     bacnet:hasPort bs:Port_version_1 .
 
 bs:Active_Power_Sensor_version_1 a brick:Active_Power_Sensor ;
@@ -878,65 +840,17 @@ bs:Air_Differential_Pressure_Sensor_version_1 a brick:Air_Differential_Pressure_
         bs:Exhaust_Fan_version_2 ;
     ref:hasExternalReference bs:BACnetReference_version_1 .
 
-bs:BACnetReference_version_10 a ref:BACnetReference ;
-    bacnet:ReadableProperty rdfs:Literal ;
-    bacnet:object-name rdfs:Literal .
-
-bs:BACnetReference_version_11 a ref:BACnetReference ;
-    bacnet:ReadableProperty rdfs:Literal ;
-    bacnet:object-name rdfs:Literal .
-
-bs:BACnetReference_version_12 a ref:BACnetReference ;
-    bacnet:ReadableProperty rdfs:Literal ;
-    bacnet:object-name rdfs:Literal .
-
-bs:BACnetReference_version_13 a ref:BACnetReference ;
-    bacnet:ReadableProperty rdfs:Literal ;
-    bacnet:object-name rdfs:Literal .
-
-bs:BACnetReference_version_14 a ref:BACnetReference ;
-    bacnet:ReadableProperty rdfs:Literal ;
-    bacnet:object-name rdfs:Literal .
-
-bs:BACnetReference_version_15 a ref:BACnetReference ;
-    bacnet:ReadableProperty rdfs:Literal ;
-    bacnet:object-name rdfs:Literal .
-
-bs:BACnetReference_version_16 a ref:BACnetReference ;
-    bacnet:ReadableProperty rdfs:Literal ;
-    bacnet:object-name rdfs:Literal .
-
 bs:BACnetReference_version_2 a ref:BACnetReference ;
-    bacnet:ReadableProperty rdfs:Literal ;
-    bacnet:object-name rdfs:Literal .
+    bacnet:ReadableProperty bs:Literal_version_5 ;
+    bacnet:object-name bs:Literal_version_5 .
 
 bs:BACnetReference_version_3 a ref:BACnetReference ;
-    bacnet:ReadableProperty rdfs:Literal ;
-    bacnet:object-name rdfs:Literal .
+    bacnet:ReadableProperty bs:Literal_version_6 ;
+    bacnet:object-name bs:Literal_version_6 .
 
 bs:BACnetReference_version_4 a ref:BACnetReference ;
-    bacnet:ReadableProperty rdfs:Literal ;
-    bacnet:object-name rdfs:Literal .
-
-bs:BACnetReference_version_5 a ref:BACnetReference ;
-    bacnet:ReadableProperty rdfs:Literal ;
-    bacnet:object-name rdfs:Literal .
-
-bs:BACnetReference_version_6 a ref:BACnetReference ;
-    bacnet:ReadableProperty rdfs:Literal ;
-    bacnet:object-name rdfs:Literal .
-
-bs:BACnetReference_version_7 a ref:BACnetReference ;
-    bacnet:ReadableProperty rdfs:Literal ;
-    bacnet:object-name rdfs:Literal .
-
-bs:BACnetReference_version_8 a ref:BACnetReference ;
-    bacnet:ReadableProperty rdfs:Literal ;
-    bacnet:object-name rdfs:Literal .
-
-bs:BACnetReference_version_9 a ref:BACnetReference ;
-    bacnet:ReadableProperty rdfs:Literal ;
-    bacnet:object-name rdfs:Literal .
+    bacnet:ReadableProperty bs:Literal_version_4 ;
+    bacnet:object-name bs:Literal_version_4 .
 
 bs:Building_version_1 a brick:Building,
         rec:Building ;
@@ -1117,6 +1031,12 @@ bs:Leaving_Condenser_Water_Temperature_Setpoint_version_1 a brick:Leaving_Conden
         bs:Water_Loop_version_2 ;
     ref:hasExternalReference bs:BACnetReference_version_1 .
 
+bs:Literal_version_4 a rdfs:Literal .
+
+bs:Literal_version_5 a rdfs:Literal .
+
+bs:Literal_version_6 a rdfs:Literal .
+
 bs:Max_Air_Flow_Setpoint_Limit_version_1 a brick:Max_Air_Flow_Setpoint_Limit ;
     s223:hasExternalReference bs:BACnetReference_version_1 ;
     brick:hasUnit unit:FT3-PER-MIN ;
@@ -1173,13 +1093,6 @@ bs:Motor_Speed_Sensor_version_2 a brick:Motor_Speed_Sensor ;
     brick:hasUnit unit:REV-PER-MIN ;
     brick:isPointOf rdfs:Resource,
         bs:Fan_VFD_version_1,
-        bs:Fan_VFD_version_4 ;
-    ref:hasExternalReference bs:BACnetReference_version_1 .
-
-bs:Motor_Torque_Sensor_version_1 a brick:Motor_Torque_Sensor ;
-    s223:hasExternalReference bs:BACnetReference_version_1 ;
-    brick:hasUnit unit:PERCENT ;
-    brick:isPointOf bs:Fan_VFD_version_1,
         bs:Fan_VFD_version_3 ;
     ref:hasExternalReference bs:BACnetReference_version_1 .
 
@@ -1238,13 +1151,6 @@ bs:Power_Factor_Sensor_version_1 a brick:Power_Factor_Sensor ;
         bs:Meter_version_1 ;
     ref:hasExternalReference bs:BACnetReference_version_1 .
 
-bs:Power_Sensor_version_2 a brick:Power_Sensor ;
-    s223:hasExternalReference bs:BACnetReference_version_1 ;
-    brick:hasUnit unit:PERCENT ;
-    brick:isPointOf bs:Fan_VFD_version_1,
-        bs:Fan_VFD_version_3 ;
-    ref:hasExternalReference bs:BACnetReference_version_1 .
-
 bs:Proportional_Gain_Parameter_version_2 a brick:Proportional_Gain_Parameter ;
     s223:hasExternalReference bs:BACnetReference_version_1 ;
     brick:hasUnit unit:UNITLESS ;
@@ -1275,24 +1181,17 @@ bs:Return_Air_Flow_Sensor_version_2 a brick:Return_Air_Flow_Sensor ;
         bs:Fan_VFD_version_2 ;
     ref:hasExternalReference bs:BACnetReference_version_1 .
 
-bs:Run_Status_version_2 a brick:Run_Status ;
-    s223:hasExternalReference bs:BACnetReference_version_1 ;
-    brick:hasUnit unit:UNITLESS ;
-    brick:isPointOf bs:AHU_version_2,
-        bs:Chilled_Water_Loop_version_1 ;
-    ref:hasExternalReference bs:BACnetReference_version_1 .
-
 bs:Service_Room_version_1 a brick:Service_Room,
         rec:UtilitiesRoom ;
     brick:hasPoint bs:Alarm_version_1 ;
     brick:isPartOf bs:Building_version_2 .
 
-bs:Status_version_2 a brick:Status ;
-    s223:hasExternalReference bs:BACnetReference_version_3 ;
-    brick:hasUnit unit:UNITLESS ;
-    brick:isPointOf bs:Fan_VFD_version_1,
-        bs:Thermal_Power_Meter_version_1 ;
-    ref:hasExternalReference bs:BACnetReference_version_3 .
+bs:Speed_Command_version_1 a brick:Speed_Command ;
+    s223:hasExternalReference bs:BACnetReference_version_1 ;
+    brick:hasUnit unit:PERCENT ;
+    brick:isPointOf bs:Exhaust_Fan_version_2,
+        bs:Fan_VFD_version_1 ;
+    ref:hasExternalReference bs:BACnetReference_version_1 .
 
 bs:System_Enable_Command_version_1 a brick:System_Enable_Command ;
     s223:hasExternalReference bs:BACnetReference_version_1 ;
@@ -1317,13 +1216,11 @@ bs:Temperature_Setpoint_version_1 a brick:Temperature_Setpoint ;
     ref:hasExternalReference bs:BACnetReference_version_1 .
 
 bs:Thermal_Power_Sensor_version_1 a brick:Thermal_Power_Sensor ;
-    s223:hasExternalReference bs:BACnetReference_version_1,
-        bs:BACnetReference_version_6 ;
+    s223:hasExternalReference bs:BACnetReference_version_1 ;
     brick:hasUnit unit:TON_FG ;
     brick:isPointOf bs:Thermal_Power_Meter_version_1,
         bs:Thermal_Power_Meter_version_2 ;
-    ref:hasExternalReference bs:BACnetReference_version_1,
-        bs:BACnetReference_version_6 .
+    ref:hasExternalReference bs:BACnetReference_version_1 .
 
 bs:Unit_Failure_Alarm_version_1 a brick:Unit_Failure_Alarm ;
     s223:hasExternalReference bs:BACnetReference_version_1 ;
@@ -1337,7 +1234,7 @@ bs:VFD_Enable_Command_version_1 a brick:VFD_Enable_Command ;
     brick:hasUnit unit:UNITLESS ;
     brick:isPointOf rdfs:Resource,
         bs:Fan_VFD_version_1,
-        bs:Fan_VFD_version_4 ;
+        bs:Fan_VFD_version_3 ;
     ref:hasExternalReference bs:BACnetReference_version_1 .
 
 bs:Voltage_Sensor_version_1 a brick:Voltage_Sensor ;
@@ -1346,6 +1243,13 @@ bs:Voltage_Sensor_version_1 a brick:Voltage_Sensor ;
     brick:isPointOf rdfs:Resource,
         bs:Breaker_Panel_version_1,
         bs:Meter_version_1 ;
+    ref:hasExternalReference bs:BACnetReference_version_1 .
+
+bs:Water_Flow_Sensor_version_1 a brick:Water_Flow_Sensor ;
+    s223:hasExternalReference bs:BACnetReference_version_1 ;
+    brick:hasUnit unit:GAL_US-PER-MIN ;
+    brick:isPointOf bs:Max_Water_Temperature_Setpoint_version_1,
+        bs:Thermal_Power_Meter_version_1 ;
     ref:hasExternalReference bs:BACnetReference_version_1 .
 
 bs:Zone_Air_Temperature_Sensor_version_3 a brick:Zone_Air_Temperature_Sensor ;
@@ -1541,6 +1445,16 @@ bs:Motor_Current_Sensor_version_1 a brick:Motor_Current_Sensor ;
         bs:Condenser_Water_Pump_version_1 ;
     ref:hasExternalReference bs:BACnetReference_version_1 .
 
+bs:Open_Close_Status_version_1 a brick:Open_Close_Status ;
+    s223:hasExternalReference bs:BACnetReference_version_1 ;
+    brick:hasUnit unit:PERCENT,
+        unit:UNITLESS ;
+    brick:isPointOf rdfs:Resource,
+        bs:Isolation_Damper_version_1,
+        bs:Isolation_Damper_version_2,
+        bs:Isolation_Damper_version_3 ;
+    ref:hasExternalReference bs:BACnetReference_version_1 .
+
 bs:Open_Close_Status_version_2 a brick:Open_Close_Status ;
     s223:hasExternalReference bs:BACnetReference_version_1 ;
     brick:hasUnit unit:UNITLESS ;
@@ -1572,14 +1486,6 @@ bs:Return_Damper_version_1 a brick:Return_Damper ;
     brick:hasPoint bs:Damper_Position_Command_version_2 ;
     brick:isPartOf bs:AHU_version_2 .
 
-bs:Run_Enable_Command_version_2 a brick:Run_Enable_Command ;
-    s223:hasExternalReference bs:BACnetReference_version_1 ;
-    brick:hasUnit unit:UNITLESS ;
-    brick:isPointOf bs:AHU_version_1,
-        bs:AHU_version_2,
-        bs:AHU_version_3 ;
-    ref:hasExternalReference bs:BACnetReference_version_1 .
-
 bs:Run_Request_Status_version_3 a brick:Run_Request_Status ;
     s223:hasExternalReference bs:BACnetReference_version_1 ;
     brick:hasUnit unit:HR ;
@@ -1588,12 +1494,22 @@ bs:Run_Request_Status_version_3 a brick:Run_Request_Status ;
         bs:CRAC_version_3 ;
     ref:hasExternalReference bs:BACnetReference_version_1 .
 
-bs:Speed_Command_version_1 a brick:Speed_Command ;
+bs:Run_Status_version_1 a brick:Run_Status ;
     s223:hasExternalReference bs:BACnetReference_version_1 ;
-    brick:hasUnit unit:PERCENT ;
-    brick:isPointOf bs:Exhaust_Fan_version_2,
+    brick:hasUnit unit:UNITLESS ;
+    brick:isPointOf bs:AHU_version_2,
+        bs:Chilled_Water_Loop_version_1,
+        bs:Fan_VFD_version_1 ;
+    ref:hasExternalReference bs:BACnetReference_version_1 .
+
+bs:Speed_Sensor_version_1 a brick:Speed_Sensor ;
+    s223:hasExternalReference bs:BACnetReference_version_1 ;
+    brick:hasUnit unit:PERCENT,
+        unit:REV-PER-MIN ;
+    brick:isPointOf rdfs:Resource,
         bs:Fan_VFD_version_1,
-        bs:Fan_VFD_version_3 ;
+        bs:Fan_VFD_version_3,
+        bs:Pump_VFD_version_1 ;
     ref:hasExternalReference bs:BACnetReference_version_1 .
 
 bs:Storage_Room_version_1 a brick:Storage_Room,
@@ -1688,6 +1604,15 @@ bs:Fan_version_1 a brick:Fan ;
         bs:Fan_Status_version_1 ;
     brick:isPartOf bs:FCU_version_1 .
 
+bs:Frequency_Sensor_version_2 a brick:Frequency_Sensor ;
+    s223:hasExternalReference bs:BACnetReference_version_1 ;
+    brick:hasUnit unit:HZ ;
+    brick:isPointOf bs:Fan_VFD_version_1,
+        bs:Fan_VFD_version_3,
+        bs:Meter_version_1,
+        bs:Pump_VFD_version_1 ;
+    ref:hasExternalReference bs:BACnetReference_version_1 .
+
 bs:HX_version_2 a brick:HX,
         brick:Heat_Exchanger ;
     brick:hasPart bs:Chilled_Water_Valve_version_6 ;
@@ -1736,7 +1661,7 @@ bs:Power_Sensor_version_1 a brick:Power_Sensor ;
     brick:isPointOf rdfs:Resource,
         bs:AHU_version_2,
         bs:Fan_VFD_version_1,
-        bs:Fan_VFD_version_4,
+        bs:Fan_VFD_version_3,
         bs:Pump_VFD_version_1 ;
     ref:hasExternalReference bs:BACnetReference_version_1 .
 
@@ -1750,14 +1675,22 @@ bs:Return_Air_Temperature_Sensor_version_1 a brick:Return_Air_Temperature_Sensor
         bs:CRAC_version_3 ;
     ref:hasExternalReference bs:BACnetReference_version_1 .
 
-bs:Speed_Sensor_version_1 a brick:Speed_Sensor ;
+bs:Run_Enable_Command_version_1 a brick:Run_Enable_Command ;
     s223:hasExternalReference bs:BACnetReference_version_1 ;
-    brick:hasUnit unit:PERCENT,
-        unit:REV-PER-MIN ;
+    brick:hasUnit unit:UNITLESS ;
+    brick:isPointOf bs:AHU_version_1,
+        bs:AHU_version_2,
+        bs:AHU_version_3,
+        bs:Fan_VFD_version_1 ;
+    ref:hasExternalReference bs:BACnetReference_version_1 .
+
+bs:Speed_Setpoint_version_1 a brick:Speed_Setpoint ;
+    s223:hasExternalReference bs:BACnetReference_version_1 ;
+    brick:hasUnit unit:PERCENT ;
     brick:isPointOf rdfs:Resource,
+        bs:Chilled_Water_Pump_version_1,
         bs:Fan_VFD_version_1,
         bs:Fan_VFD_version_3,
-        bs:Fan_VFD_version_4,
         bs:Pump_VFD_version_1 ;
     ref:hasExternalReference bs:BACnetReference_version_1 .
 
@@ -1768,7 +1701,7 @@ bs:Start_Stop_Status_version_1 a brick:Start_Stop_Status ;
         bs:Absorption_Chiller_version_1,
         bs:Centrifugal_Chiller_version_1,
         bs:Fan_VFD_version_1,
-        bs:Fan_VFD_version_4 ;
+        bs:Fan_VFD_version_3 ;
     ref:hasExternalReference bs:BACnetReference_version_1 .
 
 bs:Switch_Status_version_1 a brick:Switch_Status ;
@@ -1847,16 +1780,6 @@ bs:Electric_Power_Sensor_version_1 a brick:Electric_Power_Sensor ;
         bs:Meter_version_1 ;
     ref:hasExternalReference bs:BACnetReference_version_1 .
 
-bs:Frequency_Sensor_version_2 a brick:Frequency_Sensor ;
-    s223:hasExternalReference bs:BACnetReference_version_1 ;
-    brick:hasUnit unit:HZ ;
-    brick:isPointOf bs:Fan_VFD_version_1,
-        bs:Fan_VFD_version_3,
-        bs:Fan_VFD_version_4,
-        bs:Meter_version_1,
-        bs:Pump_VFD_version_1 ;
-    ref:hasExternalReference bs:BACnetReference_version_1 .
-
 bs:Hot_Water_Pump_version_1 a brick:Hot_Water_Pump ;
     brick:feeds bs:Hot_Water_Loop_version_1 ;
     brick:hasPart bs:Pump_VFD_version_1 ;
@@ -1873,14 +1796,16 @@ bs:Isolation_Damper_version_1 a brick:Isolation_Damper ;
 bs:Isolation_Damper_version_2 a brick:Isolation_Damper ;
     brick:hasPoint bs:Damper_Command_version_1,
         bs:Damper_Position_Command_version_1,
-        bs:Open_Close_Status_version_3 ;
+        bs:Open_Close_Status_version_1 ;
     brick:isPartOf bs:Exhaust_Fan_version_2 .
 
 bs:Isolation_Damper_version_3 a brick:Isolation_Damper ;
     brick:hasPoint bs:Damper_Command_version_1,
         bs:Failure_Alarm_version_1,
-        bs:Open_Close_Status_version_4 ;
+        bs:Open_Close_Status_version_1 ;
     brick:isPartOf bs:AHU_version_4 .
+
+bs:Literal_version_1 a rdfs:Literal .
 
 bs:Low_Temperature_Alarm_version_1 a brick:Low_Temperature_Alarm ;
     s223:hasExternalReference bs:BACnetReference_version_1 ;
@@ -1914,16 +1839,16 @@ bs:Max_Water_Temperature_Setpoint_version_1 a brick:Max_Water_Temperature_Setpoi
         <urn:bldg#bldg.CW.MAKE.UP_FLOW.V>,
         <urn:bldg#bldg_Water_Meter> ;
     s223:hasExternalReference bs:BACnetReference_version_1,
-        bs:BACnetReference_version_11 ;
-    brick:hasPoint bs:Water_Flow_Sensor_version_2,
-        bs:Water_Flow_Sensor_version_3 ;
+        bs:BACnetReference_version_3 ;
+    brick:hasPoint bs:Water_Flow_Sensor_version_1,
+        bs:Water_Flow_Sensor_version_2 ;
     brick:hasSubstance rdfs:Resource ;
     brick:hasUnit unit:GAL_US ;
     brick:isPointOf bs:Thermal_Power_Meter_version_1,
         bs:Water_Loop_version_2 ;
     brick:meters bs:Water_Loop_version_2 ;
     ref:hasExternalReference bs:BACnetReference_version_1,
-        bs:BACnetReference_version_11 .
+        bs:BACnetReference_version_3 .
 
 bs:Mechanical_Room_version_2 a brick:Mechanical_Room,
         rec:UtilitiesRoom ;
@@ -1937,7 +1862,7 @@ bs:On_Off_Status_version_1 a brick:On_Off_Status ;
     s223:hasExternalReference bs:BACnetReference_version_1 ;
     brick:hasUnit unit:UNITLESS ;
     brick:isPointOf bs:Exhaust_Fan_version_2,
-        bs:Fan_VFD_version_3,
+        bs:Fan_VFD_version_1,
         bs:Media_Room_version_1,
         bs:Room_version_2,
         bs:Server_Room_version_1 ;
@@ -1961,7 +1886,7 @@ bs:Pump_On_Off_Status_version_1 a brick:Pump_On_Off_Status ;
     brick:isPointOf bs:Chilled_Water_Pump_version_1,
         bs:Chilled_Water_Pump_version_2,
         bs:Condenser_Water_Pump_version_1,
-        bs:Fan_VFD_version_4,
+        bs:Fan_VFD_version_3,
         bs:Pump_VFD_version_1 ;
     ref:hasExternalReference bs:BACnetReference_version_1 .
 
@@ -1975,17 +1900,6 @@ bs:Run_Request_Status_version_1 a brick:Run_Request_Status ;
         bs:CRAC_version_1,
         bs:CRAC_version_2,
         bs:CRAC_version_3 ;
-    ref:hasExternalReference bs:BACnetReference_version_1 .
-
-bs:Speed_Setpoint_version_1 a brick:Speed_Setpoint ;
-    s223:hasExternalReference bs:BACnetReference_version_1 ;
-    brick:hasUnit unit:PERCENT ;
-    brick:isPointOf rdfs:Resource,
-        bs:Chilled_Water_Pump_version_1,
-        bs:Fan_VFD_version_1,
-        bs:Fan_VFD_version_3,
-        bs:Fan_VFD_version_4,
-        bs:Pump_VFD_version_1 ;
     ref:hasExternalReference bs:BACnetReference_version_1 .
 
 bs:System_Status_version_1 a brick:System_Status ;
@@ -2019,6 +1933,18 @@ bs:Cooling_Tower_version_1 a brick:Cooling_Tower ;
         bs:Sensor_version_1 ;
     rec:feeds bs:Water_Loop_version_3 ;
     rec:includes bs:Cooling_Tower_Fan_version_1 .
+
+bs:Current_Sensor_version_1 a brick:Current_Sensor ;
+    s223:hasExternalReference bs:BACnetReference_version_1 ;
+    brick:hasUnit unit:A ;
+    brick:isPointOf rdfs:Resource,
+        bs:Breaker_Panel_version_1,
+        bs:Compressor_version_1,
+        bs:Fan_VFD_version_1,
+        bs:Fan_VFD_version_3,
+        bs:Meter_version_1,
+        bs:Pump_VFD_version_1 ;
+    ref:hasExternalReference bs:BACnetReference_version_1 .
 
 bs:Discharge_Air_Temperature_Sensor_version_1 a brick:Discharge_Air_Temperature_Sensor,
         brick:Supply_Air_Temperature_Sensor ;
@@ -2067,22 +1993,21 @@ bs:Point_version_1 a brick:Point ;
         bs:CRAC_version_1,
         bs:Chilled_Water_Loop_version_2,
         bs:Fan_VFD_version_1,
-        bs:Fan_VFD_version_4,
+        bs:Fan_VFD_version_3,
         bs:Pump_VFD_version_1,
         bs:RVAV_version_1 ;
     ref:hasExternalReference bs:BACnetReference_version_1 .
 
-bs:Current_Sensor_version_1 a brick:Current_Sensor ;
+bs:Temperature_Sensor_version_1 a brick:Temperature_Sensor ;
     s223:hasExternalReference bs:BACnetReference_version_1 ;
-    brick:hasUnit unit:A ;
+    brick:hasUnit unit:DEG_F ;
     brick:isPointOf rdfs:Resource,
-        bs:Breaker_Panel_version_1,
-        bs:Compressor_version_1,
+        bs:AHU_version_2,
+        bs:Absorption_Chiller_version_1,
         bs:Fan_VFD_version_1,
         bs:Fan_VFD_version_3,
-        bs:Fan_VFD_version_4,
-        bs:Meter_version_1,
-        bs:Pump_VFD_version_1 ;
+        bs:Pump_VFD_version_1,
+        bs:RVAV_version_1 ;
     ref:hasExternalReference bs:BACnetReference_version_1 .
 
 bs:Discharge_Fan_version_2 a brick:Discharge_Fan,
@@ -2140,8 +2065,7 @@ bs:Leaving_Chilled_Water_Temperature_Sensor_version_1 a brick:Leaving_Chilled_Wa
     ref:hasExternalReference bs:BACnetReference_version_1 .
 
 bs:Mode_Status_version_1 a brick:Mode_Status ;
-    s223:hasExternalReference bs:BACnetReference_version_1,
-        bs:BACnetReference_version_2 ;
+    s223:hasExternalReference bs:BACnetReference_version_1 ;
     brick:hasUnit unit:UNITLESS ;
     brick:isPointOf rdfs:Resource,
         bs:Breaker_Panel_version_1,
@@ -2151,8 +2075,7 @@ bs:Mode_Status_version_1 a brick:Mode_Status ;
         bs:Condenser_Water_Pump_version_1,
         bs:Exhaust_Fan_version_2,
         bs:Thermal_Power_Meter_version_1 ;
-    ref:hasExternalReference bs:BACnetReference_version_1,
-        bs:BACnetReference_version_2 .
+    ref:hasExternalReference bs:BACnetReference_version_1 .
 
 bs:Office_version_3 a brick:Office,
         brick:Private_Office,
@@ -2165,9 +2088,20 @@ bs:Office_version_3 a brick:Office,
     rec:locatedIn bs:Floor_version_1,
         bs:Floor_version_3 .
 
+bs:On_Off_Command_version_1 a brick:On_Off_Command ;
+    s223:hasExternalReference bs:BACnetReference_version_1 ;
+    brick:hasUnit unit:UNITLESS ;
+    brick:isPointOf bs:AHU_version_1,
+        bs:AHU_version_2,
+        bs:CRAC_version_2,
+        bs:CRAC_version_3,
+        bs:Chilled_Water_Loop_version_2,
+        bs:Exhaust_Fan_version_2,
+        bs:Fan_VFD_version_1 ;
+    ref:hasExternalReference bs:BACnetReference_version_1 .
+
 bs:Operating_Mode_Status_version_1 a brick:Operating_Mode_Status ;
-    s223:hasExternalReference bs:BACnetReference_version_1,
-        bs:BACnetReference_version_10 ;
+    s223:hasExternalReference bs:BACnetReference_version_1 ;
     brick:hasUnit unit:UNITLESS ;
     brick:isPointOf rdfs:Resource,
         bs:CRAC_version_1,
@@ -2177,8 +2111,7 @@ bs:Operating_Mode_Status_version_1 a brick:Operating_Mode_Status ;
         bs:Hot_Water_Coil_version_2,
         bs:RVAV_version_1,
         bs:Thermal_Power_Meter_version_1 ;
-    ref:hasExternalReference bs:BACnetReference_version_1,
-        bs:BACnetReference_version_10 .
+    ref:hasExternalReference bs:BACnetReference_version_1 .
 
 bs:Riser_version_1 a brick:Riser,
         rec:Room ;
@@ -2201,19 +2134,6 @@ bs:Smoke_Detection_Alarm_version_1 a brick:Smoke_Detection_Alarm ;
         bs:CRAC_version_2,
         bs:CRAC_version_3,
         bs:Mechanical_Room_version_1 ;
-    ref:hasExternalReference bs:BACnetReference_version_1 .
-
-bs:Temperature_Sensor_version_1 a brick:Temperature_Sensor ;
-    s223:hasExternalReference bs:BACnetReference_version_1 ;
-    brick:hasUnit unit:DEG_F ;
-    brick:isPointOf rdfs:Resource,
-        bs:AHU_version_2,
-        bs:Absorption_Chiller_version_1,
-        bs:Fan_VFD_version_1,
-        bs:Fan_VFD_version_3,
-        bs:Fan_VFD_version_4,
-        bs:Pump_VFD_version_1,
-        bs:RVAV_version_1 ;
     ref:hasExternalReference bs:BACnetReference_version_1 .
 
 bs:Water_Loop_version_3 a brick:Water_Loop ;
@@ -2316,6 +2236,20 @@ bs:Fan_VFD_version_2 a brick:Fan_VFD,
     brick:isPartOf bs:AHU_version_2,
         bs:Discharge_Fan_version_1 .
 
+bs:Fault_Status_version_1 a brick:Fault_Status ;
+    s223:hasExternalReference bs:BACnetReference_version_1 ;
+    brick:hasUnit unit:UNITLESS ;
+    brick:isPointOf rdfs:Resource,
+        bs:AHU_version_1,
+        bs:AHU_version_2,
+        bs:AHU_version_3,
+        bs:Discharge_Fan_version_1,
+        bs:Discharge_Fan_version_2,
+        bs:Fan_VFD_version_1,
+        bs:Fan_VFD_version_3,
+        bs:Pump_VFD_version_1 ;
+    ref:hasExternalReference bs:BACnetReference_version_1 .
+
 bs:Food_Service_Room_version_1 a brick:Food_Service_Room,
         rec:FoodHandlingRoom ;
     brick:hasLocation bs:Floor_version_3 ;
@@ -2393,19 +2327,6 @@ bs:Office_Kitchen_version_1 a brick:Office_Kitchen,
     rec:isLocationOf bs:RVAV_version_1 ;
     rec:locatedIn bs:Floor_version_1 .
 
-bs:On_Off_Command_version_1 a brick:On_Off_Command ;
-    s223:hasExternalReference bs:BACnetReference_version_1 ;
-    brick:hasUnit unit:UNITLESS ;
-    brick:isPointOf bs:AHU_version_1,
-        bs:AHU_version_2,
-        bs:CRAC_version_2,
-        bs:CRAC_version_3,
-        bs:Chilled_Water_Loop_version_2,
-        bs:Exhaust_Fan_version_2,
-        bs:Fan_VFD_version_1,
-        bs:Fan_VFD_version_3 ;
-    ref:hasExternalReference bs:BACnetReference_version_1 .
-
 bs:Plumbing_Room_version_1 a brick:Plumbing_Room,
         rec:UtilitiesRoom ;
     brick:hasLocation bs:Floor_version_1 ;
@@ -2472,7 +2393,7 @@ bs:Water_Loop_version_1 a brick:Water_Loop ;
 
 bs:Chilled_Water_Pump_version_3 a brick:Chilled_Water_Pump ;
     brick:feeds bs:Chilled_Water_Loop_version_3 ;
-    brick:hasPart bs:Fan_VFD_version_4 ;
+    brick:hasPart bs:Fan_VFD_version_3 ;
     brick:hasPoint bs:Alarm_version_1,
         bs:Lead_Lag_Command_version_1,
         bs:Mode_Status_version_1,
@@ -2480,7 +2401,7 @@ bs:Chilled_Water_Pump_version_3 a brick:Chilled_Water_Pump ;
         bs:Pump_Status_version_1,
         bs:Start_Stop_Command_version_1 ;
     rec:feeds bs:Chilled_Water_Loop_version_3 ;
-    rec:includes bs:Fan_VFD_version_4 .
+    rec:includes bs:Fan_VFD_version_3 .
 
 bs:Discharge_Air_Plenum_version_1 a brick:Discharge_Air_Plenum,
         brick:Supply_Air_Plenum ;
@@ -2494,19 +2415,19 @@ bs:Discharge_Air_Plenum_version_1 a brick:Discharge_Air_Plenum,
         bs:AHU_version_4 ;
     rec:locatedIn bs:Environment_Box_version_1 .
 
-bs:Fault_Status_version_1 a brick:Fault_Status ;
+bs:Enable_Status_version_1 a brick:Enable_Status ;
     s223:hasExternalReference bs:BACnetReference_version_1 ;
     brick:hasUnit unit:UNITLESS ;
     brick:isPointOf rdfs:Resource,
-        bs:AHU_version_1,
-        bs:AHU_version_2,
-        bs:AHU_version_3,
-        bs:Discharge_Fan_version_1,
-        bs:Discharge_Fan_version_2,
+        bs:Absorption_Chiller_version_1,
+        bs:CRAC_version_1,
+        bs:Centrifugal_Chiller_version_1,
+        bs:Chilled_Water_Loop_version_1,
+        bs:Chilled_Water_Loop_version_2,
+        bs:Exhaust_Fan_version_2,
         bs:Fan_VFD_version_1,
         bs:Fan_VFD_version_3,
-        bs:Fan_VFD_version_4,
-        bs:Pump_VFD_version_1 ;
+        bs:Water_Loop_version_1 ;
     ref:hasExternalReference bs:BACnetReference_version_1 .
 
 bs:IDF_version_1 a brick:IDF,
@@ -2536,8 +2457,7 @@ bs:Integral_Gain_Parameter_version_1 a brick:Integral_Gain_Parameter ;
     ref:hasExternalReference bs:BACnetReference_version_1 .
 
 bs:Parameter_version_1 a brick:Parameter ;
-    s223:hasExternalReference bs:BACnetReference_version_1,
-        bs:BACnetReference_version_4 ;
+    s223:hasExternalReference bs:BACnetReference_version_1 ;
     brick:hasUnit unit:PERCENT,
         unit:UNITLESS ;
     brick:isPointOf rdfs:Resource,
@@ -2550,8 +2470,7 @@ bs:Parameter_version_1 a brick:Parameter ;
         bs:Chilled_Water_Loop_version_2,
         bs:RVAV_version_1,
         bs:Thermal_Power_Meter_version_1 ;
-    ref:hasExternalReference bs:BACnetReference_version_1,
-        bs:BACnetReference_version_4 .
+    ref:hasExternalReference bs:BACnetReference_version_1 .
 
 bs:Proportional_Gain_Parameter_version_1 a brick:Proportional_Gain_Parameter ;
     s223:hasExternalReference bs:BACnetReference_version_1 ;
@@ -2606,22 +2525,6 @@ bs:Classroom_version_1 a brick:Classroom,
     rec:locatedIn bs:Floor_version_1,
         bs:Floor_version_2 .
 
-bs:Enable_Status_version_1 a brick:Enable_Status ;
-    s223:hasExternalReference bs:BACnetReference_version_1 ;
-    brick:hasUnit unit:UNITLESS ;
-    brick:isPointOf rdfs:Resource,
-        bs:Absorption_Chiller_version_1,
-        bs:CRAC_version_1,
-        bs:Centrifugal_Chiller_version_1,
-        bs:Chilled_Water_Loop_version_1,
-        bs:Chilled_Water_Loop_version_2,
-        bs:Exhaust_Fan_version_2,
-        bs:Fan_VFD_version_1,
-        bs:Fan_VFD_version_3,
-        bs:Fan_VFD_version_4,
-        bs:Water_Loop_version_1 ;
-    ref:hasExternalReference bs:BACnetReference_version_1 .
-
 bs:Mechanical_Room_version_1 a brick:Mechanical_Room,
         rec:UtilitiesRoom ;
     brick:hasLocation bs:Floor_version_1 ;
@@ -2646,6 +2549,22 @@ bs:Meter_version_1 a brick:Meter ;
         bs:Power_Factor_Sensor_version_1,
         bs:Reactive_Power_Sensor_version_1,
         bs:Voltage_Sensor_version_1 .
+
+bs:Status_version_1 a brick:Status ;
+    s223:hasExternalReference bs:BACnetReference_version_1 ;
+    brick:hasUnit unit:UNITLESS ;
+    brick:isPointOf rdfs:Resource,
+        bs:Absorption_Chiller_version_1,
+        bs:Centrifugal_Chiller_version_1,
+        bs:Chilled_Water_Loop_version_1,
+        bs:Fan_VFD_version_1,
+        bs:Fan_VFD_version_3,
+        bs:Hot_Water_Coil_version_2,
+        bs:Hot_Water_Loop_version_1,
+        bs:Pump_VFD_version_1,
+        bs:RVAV_version_1,
+        bs:Thermal_Power_Meter_version_1 ;
+    ref:hasExternalReference bs:BACnetReference_version_1 .
 
 bs:Breaker_Panel_version_1 a brick:Breaker_Panel ;
     brick:hasPoint bs:Active_Power_Sensor_version_1,
@@ -2738,21 +2657,20 @@ bs:Environment_Box_version_1 a brick:Environment_Box,
         bs:Discharge_Air_Plenum_version_1 ;
     rec:locatedIn bs:Floor_version_2 .
 
-bs:Status_version_1 a brick:Status ;
+bs:Occupied_Mode_Status_version_2 a brick:Occupied_Mode_Status ;
     s223:hasExternalReference bs:BACnetReference_version_1 ;
     brick:hasUnit unit:UNITLESS ;
-    brick:isPointOf rdfs:Resource,
-        bs:Absorption_Chiller_version_1,
-        bs:Centrifugal_Chiller_version_1,
-        bs:Chilled_Water_Loop_version_1,
+    brick:isPointOf bs:AHU_version_2,
+        bs:AHU_version_3,
+        bs:AHU_version_4,
+        bs:CRAC_version_1,
+        bs:FCU_version_1,
         bs:Fan_VFD_version_1,
         bs:Fan_VFD_version_3,
-        bs:Fan_VFD_version_4,
         bs:Hot_Water_Coil_version_2,
-        bs:Hot_Water_Loop_version_1,
         bs:Pump_VFD_version_1,
         bs:RVAV_version_1,
-        bs:Thermal_Power_Meter_version_1 ;
+        bs:VAV_version_1 ;
     ref:hasExternalReference bs:BACnetReference_version_1 .
 
 bs:Valve_Position_Command_version_1 a brick:Valve_Position_Command ;
@@ -2815,23 +2733,6 @@ bs:Lobby_version_1 a brick:Lobby,
     rec:locatedIn bs:Floor_version_1,
         bs:Floor_version_2,
         bs:Floor_version_3 .
-
-bs:Occupied_Mode_Status_version_2 a brick:Occupied_Mode_Status ;
-    s223:hasExternalReference bs:BACnetReference_version_1 ;
-    brick:hasUnit unit:UNITLESS ;
-    brick:isPointOf bs:AHU_version_2,
-        bs:AHU_version_3,
-        bs:AHU_version_4,
-        bs:CRAC_version_1,
-        bs:FCU_version_1,
-        bs:Fan_VFD_version_1,
-        bs:Fan_VFD_version_3,
-        bs:Fan_VFD_version_4,
-        bs:Hot_Water_Coil_version_2,
-        bs:Pump_VFD_version_1,
-        bs:RVAV_version_1,
-        bs:VAV_version_1 ;
-    ref:hasExternalReference bs:BACnetReference_version_1 .
 
 bs:Office_version_1 a brick:Office,
         rec:Office ;
@@ -2912,6 +2813,24 @@ bs:Server_Room_version_1 a brick:Server_Room,
         bs:VAV_version_1 ;
     rec:locatedIn bs:Floor_version_1 .
 
+bs:Start_Stop_Command_version_1 a brick:Start_Stop_Command ;
+    s223:hasExternalReference bs:BACnetReference_version_1 ;
+    brick:hasUnit unit:UNITLESS ;
+    brick:isPointOf rdfs:Resource,
+        bs:CRAC_version_2,
+        bs:CRAC_version_3,
+        bs:Chilled_Water_Pump_version_1,
+        bs:Chilled_Water_Pump_version_2,
+        bs:Chilled_Water_Pump_version_3,
+        bs:Condenser_Water_Pump_version_1,
+        bs:Discharge_Fan_version_1,
+        bs:Discharge_Fan_version_2,
+        bs:Exhaust_Fan_version_2,
+        bs:Fan_VFD_version_1,
+        bs:Fan_VFD_version_2,
+        bs:Fan_VFD_version_3 ;
+    ref:hasExternalReference bs:BACnetReference_version_1 .
+
 bs:Alarm_version_1 a brick:Alarm ;
     s223:hasExternalReference bs:BACnetReference_version_1 ;
     brick:hasUnit unit:UNITLESS ;
@@ -2968,27 +2887,6 @@ bs:Failure_Alarm_version_1 a brick:Failure_Alarm ;
         bs:Water_Loop_version_2 ;
     ref:hasExternalReference bs:BACnetReference_version_1 .
 
-bs:Start_Stop_Command_version_1 a brick:Start_Stop_Command ;
-    s223:hasExternalReference bs:BACnetReference_version_1,
-        bs:BACnetReference_version_7 ;
-    brick:hasUnit unit:UNITLESS ;
-    brick:isPointOf rdfs:Resource,
-        bs:CRAC_version_2,
-        bs:CRAC_version_3,
-        bs:Chilled_Water_Pump_version_1,
-        bs:Chilled_Water_Pump_version_2,
-        bs:Chilled_Water_Pump_version_3,
-        bs:Condenser_Water_Pump_version_1,
-        bs:Discharge_Fan_version_1,
-        bs:Discharge_Fan_version_2,
-        bs:Exhaust_Fan_version_2,
-        bs:Fan_VFD_version_1,
-        bs:Fan_VFD_version_2,
-        bs:Fan_VFD_version_3,
-        bs:Fan_VFD_version_4 ;
-    ref:hasExternalReference bs:BACnetReference_version_1,
-        bs:BACnetReference_version_7 .
-
 bs:Pump_VFD_version_1 a brick:Pump_VFD ;
     brick:hasPoint bs:Current_Sensor_version_1,
         bs:Fault_Status_version_1,
@@ -3004,6 +2902,22 @@ bs:Pump_VFD_version_1 a brick:Pump_VFD ;
         bs:Temperature_Sensor_version_1 ;
     brick:isPartOf bs:Hot_Water_Pump_version_1 .
 
+bs:Thermal_Power_Meter_version_1 a brick:Thermal_Power_Meter ;
+    brick:hasPoint bs:Energy_Usage_Sensor_version_1,
+        bs:Entering_Water_Temperature_Sensor_version_1,
+        bs:Entering_Water_Temperature_Sensor_version_2,
+        bs:Leaving_Chilled_Water_Flow_Sensor_version_1,
+        bs:Leaving_Water_Temperature_Sensor_version_1,
+        bs:Leaving_Water_Temperature_Sensor_version_2,
+        bs:Max_Water_Temperature_Setpoint_version_1,
+        bs:Mode_Status_version_1,
+        bs:Operating_Mode_Status_version_1,
+        bs:Parameter_version_1,
+        bs:Status_version_1,
+        bs:Thermal_Power_Sensor_version_1,
+        bs:Water_Flow_Sensor_version_1 ;
+    brick:meters bs:Chilled_Water_Loop_version_1 .
+
 bs:AHU_version_3 a brick:AHU,
         brick:Air_Handler_Unit,
         brick:Air_Handling_Unit ;
@@ -3017,7 +2931,7 @@ bs:AHU_version_3 a brick:AHU,
         bs:Occupied_Mode_Status_version_2,
         bs:Proportional_Gain_Parameter_version_1,
         bs:Return_Air_Flow_Sensor_version_1,
-        bs:Run_Enable_Command_version_2 ;
+        bs:Run_Enable_Command_version_1 ;
     brick:isFedBy bs:AHU_version_2 ;
     rec:feeds bs:RVAV_version_1,
         bs:VAV_version_1 ;
@@ -3040,23 +2954,6 @@ bs:Hot_Water_Coil_version_2 a brick:Hot_Water_Coil ;
         bs:Storage_Room_version_1 ;
     rec:includes bs:Hot_Water_Valve_version_2 ;
     rec:isFedBy bs:Hot_Water_Loop_version_1 .
-
-bs:Thermal_Power_Meter_version_1 a brick:Thermal_Power_Meter ;
-    brick:hasPoint bs:Energy_Usage_Sensor_version_1,
-        bs:Entering_Water_Temperature_Sensor_version_1,
-        bs:Entering_Water_Temperature_Sensor_version_2,
-        bs:Leaving_Chilled_Water_Flow_Sensor_version_1,
-        bs:Leaving_Water_Temperature_Sensor_version_1,
-        bs:Leaving_Water_Temperature_Sensor_version_2,
-        bs:Max_Water_Temperature_Setpoint_version_1,
-        bs:Mode_Status_version_1,
-        bs:Operating_Mode_Status_version_1,
-        bs:Parameter_version_1,
-        bs:Status_version_1,
-        bs:Status_version_2,
-        bs:Thermal_Power_Sensor_version_1,
-        bs:Water_Flow_Sensor_version_1 ;
-    brick:meters bs:Chilled_Water_Loop_version_1 .
 
 bs:Water_Loop_version_2 a brick:Water_Loop ;
     brick:hasPart bs:Bypass_Valve_version_2,
@@ -3095,26 +2992,7 @@ bs:Condenser_Water_Pump_version_1 a brick:Condenser_Water_Pump ;
     rec:feeds bs:Centrifugal_Chiller_version_1,
         bs:Water_Cooled_Chiller_version_1 .
 
-bs:Fan_VFD_version_3 a brick:Fan_VFD ;
-    brick:hasPoint bs:Current_Sensor_version_1,
-        bs:Enable_Status_version_1,
-        bs:Energy_Sensor_version_1,
-        bs:Fault_Status_version_1,
-        bs:Frequency_Sensor_version_2,
-        bs:Motor_Torque_Sensor_version_1,
-        bs:Occupied_Mode_Status_version_2,
-        bs:On_Off_Command_version_1,
-        bs:On_Off_Status_version_1,
-        bs:Power_Sensor_version_2,
-        bs:Speed_Command_version_1,
-        bs:Speed_Sensor_version_1,
-        bs:Speed_Setpoint_version_1,
-        bs:Start_Stop_Command_version_1,
-        bs:Status_version_1,
-        bs:Temperature_Sensor_version_1 ;
-    brick:isPartOf bs:Exhaust_Fan_version_2 .
-
-bs:Fan_VFD_version_4 a brick:Fan_VFD,
+bs:Fan_VFD_version_3 a brick:Fan_VFD,
         brick:Pump_VFD ;
     brick:hasPoint bs:Current_Sensor_version_1,
         bs:Enable_Status_version_1,
@@ -3379,7 +3257,7 @@ bs:AHU_version_1 a brick:AHU,
         bs:On_Off_Command_version_1,
         bs:On_Timer_Sensor_version_1,
         bs:Proportional_Gain_Parameter_version_1,
-        bs:Run_Enable_Command_version_2,
+        bs:Run_Enable_Command_version_1,
         bs:Smoke_Detection_Alarm_version_1 ;
     brick:isFedBy bs:AHU_version_1,
         bs:AHU_version_2,
@@ -3430,7 +3308,6 @@ bs:Centrifugal_Chiller_version_1 a brick:Centrifugal_Chiller,
 
 bs:Exhaust_Fan_version_2 a brick:Exhaust_Fan ;
     brick:hasPart bs:Fan_VFD_version_1,
-        bs:Fan_VFD_version_3,
         bs:Isolation_Damper_version_2,
         bs:Outside_Damper_version_2 ;
     brick:hasPoint bs:Air_Differential_Pressure_Sensor_version_1,
@@ -3460,7 +3337,6 @@ bs:Exhaust_Fan_version_2 a brick:Exhaust_Fan ;
         bs:Start_Stop_Command_version_1,
         bs:Switch_Status_version_1 ;
     rec:includes bs:Fan_VFD_version_1,
-        bs:Fan_VFD_version_3,
         bs:Isolation_Damper_version_2,
         bs:Outside_Damper_version_2 .
 
@@ -3578,6 +3454,7 @@ bs:Fan_VFD_version_1 a brick:Fan_VFD ;
         bs:Demand_Sensor_version_2,
         bs:Electric_Energy_Sensor_version_1,
         bs:Enable_Status_version_1,
+        bs:Energy_Sensor_version_1,
         bs:Failure_Alarm_version_1,
         bs:Fault_Status_version_1,
         bs:Frequency_Sensor_version_1,
@@ -3588,6 +3465,7 @@ bs:Fan_VFD_version_1 a brick:Fan_VFD ;
         bs:Occupied_Mode_Status_version_1,
         bs:Occupied_Mode_Status_version_2,
         bs:On_Off_Command_version_1,
+        bs:On_Off_Status_version_1,
         bs:Operating_Mode_Status_version_1,
         bs:Output_Frequency_Sensor_version_1,
         bs:Point_version_1,
@@ -3603,7 +3481,6 @@ bs:Fan_VFD_version_1 a brick:Fan_VFD ;
         bs:Start_Stop_Command_version_1,
         bs:Start_Stop_Status_version_1,
         bs:Status_version_1,
-        bs:Status_version_2,
         bs:Temperature_Sensor_version_1,
         bs:VFD_Enable_Command_version_1 ;
     brick:isPartOf bs:Cooling_Tower_Fan_version_1,
@@ -3640,7 +3517,7 @@ bs:Chilled_Water_Loop_version_1 a brick:Chilled_Water_Loop ;
         bs:Mode_Status_version_1,
         bs:Parameter_version_1,
         bs:Parameter_version_2,
-        bs:Run_Status_version_2,
+        bs:Run_Status_version_1,
         bs:Status_version_1,
         bs:Time_Parameter_version_1,
         bs:Water_Differential_Pressure_Setpoint_version_1 ;
@@ -3874,9 +3751,9 @@ bs:AHU_version_2 a brick:AHU,
         bs:Reset_Command_version_1,
         bs:Return_Air_Humidity_Sensor_version_1,
         bs:Return_Air_Temperature_Sensor_version_1,
-        bs:Run_Enable_Command_version_2,
+        bs:Run_Enable_Command_version_1,
         bs:Run_Request_Status_version_1,
-        bs:Run_Status_version_2,
+        bs:Run_Status_version_1,
         bs:Smoke_Detection_Alarm_version_1,
         bs:Static_Pressure_Sensor_version_1,
         bs:System_Enable_Command_version_1,
@@ -4040,10 +3917,10 @@ bs:RVAV_version_1 a brick:RVAV,
         bs:Team_Room_version_1 .
 
 bs:BACnetReference_version_1 a ref:BACnetReference ;
-    bacnet:ReadableProperty rdfs:Literal ;
-    bacnet:description rdfs:Literal ;
-    bacnet:object-identifier rdfs:Literal ;
-    bacnet:object-name rdfs:Literal ;
-    bacnet:object-type rdfs:Literal ;
+    bacnet:ReadableProperty bs:Literal_version_1 ;
+    bacnet:description bs:Literal_version_1 ;
+    bacnet:object-identifier bs:Literal_version_1 ;
+    bacnet:object-name bs:Literal_version_1 ;
+    bacnet:object-type bs:Literal_version_1 ;
     bacnet:objectOf bs:ukWxk1OT528_version_1 .
 
