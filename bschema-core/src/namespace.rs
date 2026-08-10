@@ -44,6 +44,12 @@ ns_base!(CONSTRAINT_BASE, "https://nrel.gov/BuildingMOTIF/constraints#");
 /// check in [`crate::util::common_pattern`]-derived naming applies here too.
 pub const BNODE_BASE: &str = "urn:bschema-rs:skolem:";
 
+/// Base IRI used to skolemize literals, so they can be grouped by 1-hop
+/// topology (incoming edges + datatype) the same way named/blank node
+/// subjects are. Distinct from [`BNODE_BASE`] so the two kinds of synthetic
+/// identity never collide and can be told apart when naming groups.
+pub const LITERAL_SKOLEM_BASE: &str = "urn:bschema-rs:skolem-literal:";
+
 /// Build a `NamedNode` in a given namespace without IRI validation, mirroring
 /// rdflib's lenient `Namespace.__getitem__` / `URIRef` construction.
 pub fn ns(base: &str, local: &str) -> NamedNode {

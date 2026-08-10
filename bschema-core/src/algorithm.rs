@@ -293,7 +293,9 @@ pub fn assign_new_classes(
         let new_cls_name = if use_original_names {
             let iris: Vec<String> = subj_list.iter().map(node_key).collect();
             let mut name = common_pattern(&iris);
-            if name.contains(namespace::BNODE_BASE) {
+            if name.contains(namespace::LITERAL_SKOLEM_BASE) {
+                name = "literal".to_string();
+            } else if name.contains(namespace::BNODE_BASE) {
                 name = "bnode".to_string();
             }
             let count = counter.entry(name.clone()).and_modify(|c| *c += 1).or_insert(1);
@@ -339,7 +341,7 @@ pub fn create_bschema(
         A.clone(),
         OWL_ONTOLOGY.clone(),
     ));
-    let data_graph = original_data_graph.skolemize()?;
+    let (data_graph, literal_reverse) = original_data_graph.skolemize()?;
 
     let mut equivalent_subjects: Vec<Vec<NamedOrBlankNode>> = Vec::new();
     let mut subject_classes: Vec<NamedNode> = Vec::new();
@@ -406,10 +408,18 @@ pub fn create_bschema(
             RDF_SEQ.clone(),
         ));
         for s in &equivalent_subjects[i] {
+            // Report the original literal value, not its skolem stand-in,
+            // for members that were skolemized from a literal.
+            let member_term = match s {
+                NamedOrBlankNode::NamedNode(n) => {
+                    literal_reverse.get(n).cloned().unwrap_or_else(|| Term::from(s.clone()))
+                }
+                NamedOrBlankNode::BlankNode(_) => Term::from(s.clone()),
+            };
             member_graph.insert(&Triple::new(
                 subject_class.clone(),
                 RDFS_MEMBER.clone(),
-                Term::from(s.clone()),
+                member_term,
             ));
         }
     }

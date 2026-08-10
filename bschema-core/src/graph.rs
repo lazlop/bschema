@@ -7,9 +7,10 @@
 
 use crate::error::Result;
 use oxigraph::io::{RdfFormat, RdfParser, RdfSerializer};
-use oxigraph::model::{BlankNode, GraphNameRef, NamedNode, NamedOrBlankNode, Term, Triple};
+use oxigraph::model::{BlankNode, GraphNameRef, Literal, NamedNode, NamedOrBlankNode, Term, Triple};
 use oxigraph::store::Store;
 use std::collections::HashMap;
+use std::hash::{Hash, Hasher};
 use std::path::Path;
 
 pub struct RdfGraph {
@@ -106,14 +107,25 @@ impl RdfGraph {
     }
 
     /// Returns a copy of this graph with every blank node replaced by a
-    /// deterministic named node, mirroring rdflib's `Graph.skolemize()`.
+    /// deterministic named node, mirroring rdflib's `Graph.skolemize()`, and
+    /// every literal *object* likewise replaced by a deterministic named
+    /// node carrying a synthetic `<node> rdf:type <datatype>` triple.
     /// bschema relies on this to make "which node is this" stable identity
     /// (a `NamedOrBlankNode` set/hashmap key) across the iterative
-    /// class-reassignment loop in `create_bschema`.
-    pub fn skolemize(&self) -> Result<Self> {
+    /// class-reassignment loop in `create_bschema`; skolemizing literals the
+    /// same way lets them be grouped by 1-hop topology (incoming edges +
+    /// datatype) exactly like any other subject, instead of collapsing into
+    /// one generic `rdfs:Literal` bucket. Returns the skolemized graph
+    /// alongside a reverse map from each literal's skolem node back to the
+    /// original literal, so callers can undo the substitution when
+    /// reporting results (e.g. the member graph).
+    pub fn skolemize(&self) -> Result<(Self, HashMap<NamedNode, Term>)> {
         let out = Self::new()?;
-        let mut mapping: HashMap<BlankNode, NamedNode> = HashMap::new();
-        let skolem = |b: &BlankNode, mapping: &mut HashMap<BlankNode, NamedNode>| {
+        let mut blank_mapping: HashMap<BlankNode, NamedNode> = HashMap::new();
+        let mut literal_mapping: HashMap<Literal, NamedNode> = HashMap::new();
+        let mut literal_reverse: HashMap<NamedNode, Term> = HashMap::new();
+
+        let skolem_blank = |b: &BlankNode, mapping: &mut HashMap<BlankNode, NamedNode>| {
             mapping
                 .entry(b.clone())
                 .or_insert_with(|| {
@@ -125,18 +137,56 @@ impl RdfGraph {
                 })
                 .clone()
         };
+
+        // Literal identity is by value (like a `NamedNode`'s identity is its
+        // IRI), so the same literal used in multiple places in the graph
+        // maps to a single skolem node with multiple incoming edges - the
+        // literal equivalent of a shared resource URI.
+        let skolem_literal = |l: &Literal,
+                                   mapping: &mut HashMap<Literal, NamedNode>,
+                                   reverse: &mut HashMap<NamedNode, Term>| {
+            mapping
+                .entry(l.clone())
+                .or_insert_with(|| {
+                    let mut hasher = std::collections::hash_map::DefaultHasher::new();
+                    l.hash(&mut hasher);
+                    let node = NamedNode::new_unchecked(format!(
+                        "{}{:016x}",
+                        crate::namespace::LITERAL_SKOLEM_BASE,
+                        hasher.finish()
+                    ));
+                    reverse.insert(node.clone(), Term::Literal(l.clone()));
+                    node
+                })
+                .clone()
+        };
+
         for t in self.triples() {
             let subject = match &t.subject {
-                NamedOrBlankNode::BlankNode(b) => NamedOrBlankNode::NamedNode(skolem(b, &mut mapping)),
+                NamedOrBlankNode::BlankNode(b) => NamedOrBlankNode::NamedNode(skolem_blank(b, &mut blank_mapping)),
                 other => other.clone(),
             };
             let object = match &t.object {
-                Term::BlankNode(b) => Term::NamedNode(skolem(b, &mut mapping)),
+                Term::BlankNode(b) => Term::NamedNode(skolem_blank(b, &mut blank_mapping)),
+                Term::Literal(l) => {
+                    Term::NamedNode(skolem_literal(l, &mut literal_mapping, &mut literal_reverse))
+                }
                 other => other.clone(),
             };
             out.insert(&Triple::new(subject, t.predicate, object));
         }
-        Ok(out)
+
+        for (node, term) in &literal_reverse {
+            if let Term::Literal(l) = term {
+                out.insert(&Triple::new(
+                    node.clone(),
+                    crate::namespace::A.clone(),
+                    l.datatype().into_owned(),
+                ));
+            }
+        }
+
+        Ok((out, literal_reverse))
     }
 
     pub fn serialize_turtle(&self) -> Result<String> {
