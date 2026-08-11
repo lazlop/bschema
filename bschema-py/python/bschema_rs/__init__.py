@@ -86,6 +86,18 @@ def create_bschema(
     return _parse_turtle(class_ttl), _parse_turtle(member_ttl), iterations_run
 
 
+def _serialize_turtle_safe(graph) -> str:
+    """Serializes `graph` as Turtle, falling back to N-Triples (still valid
+    Turtle syntax, just unprettified) if rdflib's Turtle serializer crashes -
+    e.g. on "NaN"^^xsd:double placeholder values, where rdflib's property-list
+    sort compares Literal values and Python's Decimal("NaN") comparison
+    raises InvalidOperation instead of just sorting arbitrarily."""
+    try:
+        return graph.serialize(format="turtle")
+    except Exception:
+        return graph.serialize(format="nt")
+
+
 def example_turtle(class_graph, member_graph, example_count: int = 2) -> str:
     """Renders `(class_graph, member_graph)` (as returned by `create_bschema`)
     as "example" Turtle text: each `bs:` class node is replaced by a
@@ -99,8 +111,8 @@ def example_turtle(class_graph, member_graph, example_count: int = 2) -> str:
     list is used as an object), so re-parsing would only get you back an
     uglier equivalent, not this compact form.
     """
-    class_ttl = class_graph.serialize(format="turtle")
-    member_ttl = member_graph.serialize(format="turtle")
+    class_ttl = _serialize_turtle_safe(class_graph)
+    member_ttl = _serialize_turtle_safe(member_graph)
     return _example_turtle(class_ttl, member_ttl, example_count)
 
 

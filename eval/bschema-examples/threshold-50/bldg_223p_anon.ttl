@@ -1,0 +1,666 @@
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix quantitykind: <http://qudt.org/vocab/quantitykind/> .
+@prefix qudt: <http://qudt.org/schema/qudt/> .
+@prefix unit: <http://qudt.org/vocab/unit/> .
+@prefix ref: <https://brickschema.org/schema/Brick/ref#> .
+@prefix rec: <https://w3id.org/rec#> .
+@prefix brick: <https://brickschema.org/schema/Brick#> .
+@prefix tag: <https://brickschema.org/schema/BrickTag#> .
+@prefix bsh: <https://brickschema.org/schema/BrickShape#> .
+@prefix P: <urn:___param___#> .
+@prefix constraint: <https://nrel.gov/BuildingMOTIF/constraints#> .
+@prefix bmotif: <https://nrel.gov/BuildingMOTIF#> .
+@prefix hpflex: <urn:hpflex#> .
+@prefix hpfs: <urn:hpflex/shapes#> .
+@prefix s223: <http://data.ashrae.org/standard223#> .
+@prefix ex: <urn:example#> .
+@prefix bs: <urn:bschema#> .
+@prefix bob: <http://data.ashrae.org/standard223/si-builder#> .
+@prefix bacnet: <http://data.ashrae.org/bacnet/2020#> .
+@prefix s4bldg: <https://saref.etsi.org/saref4bldg#> .
+@prefix s4ener: <https://saref.etsi.org/saref4ener#> .
+@prefix saref: <https://saref.etsi.org/core#> .
+
+(<urn:bldg#Energy_Rate> <urn:bldg#Energy_Rate_Device_57018>) qudt:hasUnit unit:W-HR .
+(<urn:bldg#Energy_Rate> <urn:bldg#Energy_Rate_Device_57018>) qudt:hasUnit unit:W .
+(<urn:bldg#Energy_Rate> <urn:bldg#Energy_Rate_Device_57018>) qudt:hasUnit unit:V-A_Reactive .
+(<urn:bldg#Energy_Rate> <urn:bldg#Energy_Rate_Device_57018>) qudt:hasUnit unit:V-A .
+(<urn:bldg#Energy_Rate> <urn:bldg#Energy_Rate_Device_57018>) qudt:hasUnit unit:V .
+(<urn:bldg#Energy_Rate> <urn:bldg#Energy_Rate_Device_57018>) qudt:hasUnit unit:UNITLESS .
+(<urn:bldg#Energy_Rate> <urn:bldg#Energy_Rate_Device_57018>) qudt:hasUnit unit:TON_FG-HR .
+(<urn:bldg#Energy_Rate> <urn:bldg#Energy_Rate_Device_57018>) qudt:hasUnit unit:TON_FG .
+(<urn:bldg#Energy_Rate> <urn:bldg#Energy_Rate_Device_57018>) qudt:hasUnit unit:SEC .
+(<urn:bldg#Energy_Rate> <urn:bldg#Energy_Rate_Device_57018>) qudt:hasUnit unit:REV-PER-MIN .
+(<urn:bldg#Energy_Rate> <urn:bldg#Energy_Rate_Device_57018>) qudt:hasUnit unit:PPM .
+(<urn:bldg#Energy_Rate> <urn:bldg#Energy_Rate_Device_57018>) qudt:hasUnit unit:PERCENT_RH .
+(<urn:bldg#Energy_Rate> <urn:bldg#Energy_Rate_Device_57018>) qudt:hasUnit unit:PERCENT .
+(<urn:bldg#Energy_Rate> <urn:bldg#Energy_Rate_Device_57018>) qudt:hasUnit unit:Overridden_Status .
+(<urn:bldg#Energy_Rate> <urn:bldg#Energy_Rate_Device_57018>) qudt:hasUnit unit:MicroS .
+(<urn:bldg#Energy_Rate> <urn:bldg#Energy_Rate_Device_57018>) qudt:hasUnit unit:MegaW-HR .
+(<urn:bldg#Energy_Rate> <urn:bldg#Energy_Rate_Device_57018>) qudt:hasUnit unit:LB_F-PER-IN2 .
+(<urn:bldg#Energy_Rate> <urn:bldg#Energy_Rate_Device_57018>) qudt:hasUnit unit:LB-PER-HR .
+(<urn:bldg#Energy_Rate> <urn:bldg#Energy_Rate_Device_57018>) qudt:hasUnit unit:LB .
+(<urn:bldg#Energy_Rate> <urn:bldg#Energy_Rate_Device_57018>) qudt:hasUnit unit:KiloW-HR .
+(<urn:bldg#Energy_Rate> <urn:bldg#Energy_Rate_Device_57018>) qudt:hasUnit unit:KiloW .
+(<urn:bldg#Energy_Rate> <urn:bldg#Energy_Rate_Device_57018>) qudt:hasUnit unit:KiloV-A_Reactive .
+(<urn:bldg#Energy_Rate> <urn:bldg#Energy_Rate_Device_57018>) qudt:hasUnit unit:KiloV-A-HR .
+(<urn:bldg#Energy_Rate> <urn:bldg#Energy_Rate_Device_57018>) qudt:hasUnit unit:KiloV-A .
+(<urn:bldg#Energy_Rate> <urn:bldg#Energy_Rate_Device_57018>) qudt:hasUnit unit:IN_H2O .
+(<urn:bldg#Energy_Rate> <urn:bldg#Energy_Rate_Device_57018>) qudt:hasUnit unit:HZ .
+(<urn:bldg#Energy_Rate> <urn:bldg#Energy_Rate_Device_57018>) qudt:hasUnit unit:HR .
+(<urn:bldg#Energy_Rate> <urn:bldg#Energy_Rate_Device_57018>) qudt:hasUnit unit:HP .
+(<urn:bldg#Energy_Rate> <urn:bldg#Energy_Rate_Device_57018>) qudt:hasUnit unit:GAL_US-PER-MIN .
+(<urn:bldg#Energy_Rate> <urn:bldg#Energy_Rate_Device_57018>) qudt:hasUnit unit:GAL_US-PER-HR .
+(<urn:bldg#Energy_Rate> <urn:bldg#Energy_Rate_Device_57018>) qudt:hasUnit unit:GAL_US .
+(<urn:bldg#Energy_Rate> <urn:bldg#Energy_Rate_Device_57018>) qudt:hasUnit unit:FT3-PER-SEC .
+(<urn:bldg#Energy_Rate> <urn:bldg#Energy_Rate_Device_57018>) qudt:hasUnit unit:FT3-PER-MIN .
+(<urn:bldg#Energy_Rate> <urn:bldg#Energy_Rate_Device_57018>) qudt:hasUnit unit:DEG_F .
+(<urn:bldg#Energy_Rate> <urn:bldg#Energy_Rate_Device_57018>) qudt:hasUnit unit:DEG_C .
+(<urn:bldg#Energy_Rate> <urn:bldg#Energy_Rate_Device_57018>) qudt:hasUnit unit:A .
+(<urn:bldg#Energy_Rate> <urn:bldg#Energy_Rate_Device_57018>) qudt:hasQuantityKind quantitykind:VolumeFlowRate .
+(<urn:bldg#Energy_Rate> <urn:bldg#Energy_Rate_Device_57018>) qudt:hasQuantityKind quantitykind:Volume .
+(<urn:bldg#Energy_Rate> <urn:bldg#Energy_Rate_Device_57018>) qudt:hasQuantityKind quantitykind:Voltage .
+(<urn:bldg#Energy_Rate> <urn:bldg#Energy_Rate_Device_57018>) qudt:hasQuantityKind quantitykind:Torque .
+(<urn:bldg#Energy_Rate> <urn:bldg#Energy_Rate_Device_57018>) qudt:hasQuantityKind quantitykind:Time .
+(<urn:bldg#Energy_Rate> <urn:bldg#Energy_Rate_Device_57018>) qudt:hasQuantityKind quantitykind:Temperature .
+(<urn:bldg#Energy_Rate> <urn:bldg#Energy_Rate_Device_57018>) qudt:hasQuantityKind quantitykind:RelativeHumidity .
+(<urn:bldg#Energy_Rate> <urn:bldg#Energy_Rate_Device_57018>) qudt:hasQuantityKind quantitykind:ReactivePower .
+(<urn:bldg#Energy_Rate> <urn:bldg#Energy_Rate_Device_57018>) qudt:hasQuantityKind quantitykind:PressureRatio .
+(<urn:bldg#Energy_Rate> <urn:bldg#Energy_Rate_Device_57018>) qudt:hasQuantityKind quantitykind:Power .
+(<urn:bldg#Energy_Rate> <urn:bldg#Energy_Rate_Device_57018>) qudt:hasQuantityKind quantitykind:ElectricPower .
+(<urn:bldg#Energy_Rate> <urn:bldg#Energy_Rate_Device_57018>) qudt:hasQuantityKind quantitykind:ElectricCurrent .
+(<urn:bldg#Energy_Rate> <urn:bldg#Energy_Rate_Device_57018>) qudt:hasQuantityKind quantitykind:DewPointTemperature .
+(<urn:bldg#Energy_Rate> <urn:bldg#Energy_Rate_Device_57018>) qudt:hasQuantityKind quantitykind:Conductivity .
+(<urn:bldg#Energy_Rate> <urn:bldg#Energy_Rate_Device_57018>) qudt:hasQuantityKind quantitykind:ActivePower .
+(<urn:bldg#Energy_Rate> <urn:bldg#Energy_Rate_Device_57018>) s223:hasRole <urn:bldg#OnOff-Unknown> .
+(<urn:bldg#Energy_Rate> <urn:bldg#Energy_Rate_Device_57018>) s223:hasRole s223:RunStatus-Unknown .
+(<urn:bldg#Energy_Rate> <urn:bldg#Energy_Rate_Device_57018>) s223:hasRole s223:Role-Supply .
+(<urn:bldg#Energy_Rate> <urn:bldg#Energy_Rate_Device_57018>) s223:hasRole s223:Role-Return .
+(<urn:bldg#Energy_Rate> <urn:bldg#Energy_Rate_Device_57018>) s223:hasRole s223:Role-Condenser .
+(<urn:bldg#Energy_Rate> <urn:bldg#Energy_Rate_Device_57018>) s223:hasRole s223:Position-Unknown .
+(<urn:bldg#Energy_Rate> <urn:bldg#Energy_Rate_Device_57018>) s223:hasRole s223:OnOff-Unknown .
+(<urn:bldg#Energy_Rate> <urn:bldg#Energy_Rate_Device_57018>) s223:hasRole s223:EnumerationKind-Speed .
+(<urn:bldg#Energy_Rate> <urn:bldg#Energy_Rate_Device_57018>) s223:hasExternalReference (<urn:bschema-rs:skolem:a006d2c845dea1a509407c2743ca319> <urn:bschema-rs:skolem:a0135ff6f7aca4ebb85925b2a116c85d>) .
+(<urn:bldg#Energy_Rate> <urn:bldg#Energy_Rate_Device_57018>) s223:hasAspect s223:Role-Discharge .
+(<urn:bldg#Energy_Rate> <urn:bldg#Energy_Rate_Device_57018>) a s223:QuantifiableObservableProperty .
+(<urn:bldg#TEST.ACTCHWDPSP> <urn:bldg#TEST.ACTCWDPSP>) qudt:hasUnit unit:UNITLESS .
+(<urn:bldg#TEST.ACTCHWDPSP> <urn:bldg#TEST.ACTCWDPSP>) qudt:hasUnit unit:PERCENT .
+(<urn:bldg#TEST.ACTCHWDPSP> <urn:bldg#TEST.ACTCWDPSP>) qudt:hasUnit unit:LB_F-PER-IN2 .
+(<urn:bldg#TEST.ACTCHWDPSP> <urn:bldg#TEST.ACTCWDPSP>) qudt:hasUnit unit:IN_H2O .
+(<urn:bldg#TEST.ACTCHWDPSP> <urn:bldg#TEST.ACTCWDPSP>) qudt:hasUnit unit:GAL_US-PER-MIN .
+(<urn:bldg#TEST.ACTCHWDPSP> <urn:bldg#TEST.ACTCWDPSP>) qudt:hasUnit unit:FT3-PER-SEC .
+(<urn:bldg#TEST.ACTCHWDPSP> <urn:bldg#TEST.ACTCWDPSP>) qudt:hasUnit unit:FT3-PER-MIN .
+(<urn:bldg#TEST.ACTCHWDPSP> <urn:bldg#TEST.ACTCWDPSP>) qudt:hasUnit unit:DEG_F .
+(<urn:bldg#TEST.ACTCHWDPSP> <urn:bldg#TEST.ACTCWDPSP>) qudt:hasUnit unit:DEG_C .
+(<urn:bldg#TEST.ACTCHWDPSP> <urn:bldg#TEST.ACTCWDPSP>) qudt:hasUnit unit:A .
+(<urn:bldg#TEST.ACTCHWDPSP> <urn:bldg#TEST.ACTCWDPSP>) qudt:hasQuantityKind quantitykind:VolumeFlowRate .
+(<urn:bldg#TEST.ACTCHWDPSP> <urn:bldg#TEST.ACTCWDPSP>) qudt:hasQuantityKind quantitykind:Temperature .
+(<urn:bldg#TEST.ACTCHWDPSP> <urn:bldg#TEST.ACTCWDPSP>) qudt:hasQuantityKind quantitykind:RelativeHumidity .
+(<urn:bldg#TEST.ACTCHWDPSP> <urn:bldg#TEST.ACTCWDPSP>) qudt:hasQuantityKind quantitykind:Power .
+(<urn:bldg#TEST.ACTCHWDPSP> <urn:bldg#TEST.ACTCWDPSP>) qudt:hasQuantityKind quantitykind:DewPointTemperature .
+(<urn:bldg#TEST.ACTCHWDPSP> <urn:bldg#TEST.ACTCWDPSP>) s223:hasRole <urn:bldg#OnOff-Unknown> .
+(<urn:bldg#TEST.ACTCHWDPSP> <urn:bldg#TEST.ACTCWDPSP>) s223:hasRole s223:RunStatus-Unknown .
+(<urn:bldg#TEST.ACTCHWDPSP> <urn:bldg#TEST.ACTCWDPSP>) s223:hasRole s223:Role-Supply .
+(<urn:bldg#TEST.ACTCHWDPSP> <urn:bldg#TEST.ACTCWDPSP>) s223:hasRole s223:Role-Return .
+(<urn:bldg#TEST.ACTCHWDPSP> <urn:bldg#TEST.ACTCWDPSP>) s223:hasRole s223:Role-Condenser .
+(<urn:bldg#TEST.ACTCHWDPSP> <urn:bldg#TEST.ACTCWDPSP>) s223:hasRole s223:Position-Unknown .
+(<urn:bldg#TEST.ACTCHWDPSP> <urn:bldg#TEST.ACTCWDPSP>) s223:hasRole s223:OnOff-Unknown .
+(<urn:bldg#TEST.ACTCHWDPSP> <urn:bldg#TEST.ACTCWDPSP>) s223:hasRole s223:EnumerationKind-Speed .
+(<urn:bldg#TEST.ACTCHWDPSP> <urn:bldg#TEST.ACTCWDPSP>) s223:hasRole s223:Aspect-Command .
+(<urn:bldg#TEST.ACTCHWDPSP> <urn:bldg#TEST.ACTCWDPSP>) s223:hasExternalReference (<urn:bschema-rs:skolem:a006d2c845dea1a509407c2743ca319> <urn:bschema-rs:skolem:a0135ff6f7aca4ebb85925b2a116c85d>) .
+(<urn:bldg#TEST.ACTCHWDPSP> <urn:bldg#TEST.ACTCWDPSP>) a s223:QuantifiableActuatableProperty .
+(<urn:bldg#AH1A_Final_Filter-in> <urn:bldg#AH1A_Heating_Coil-air-in>) s223:mapsTo (<urn:bldg#AH2A-ea-out> <urn:bldg#AH2A-ra-in>) .
+(<urn:bldg#AH1A_Final_Filter-in> <urn:bldg#AH1A_Heating_Coil-air-in>) s223:mapsTo (<urn:bldg#AH1A_Final_Filter-in> <urn:bldg#AH1A_Heating_Coil-air-in>) .
+(<urn:bldg#AH1A_Final_Filter-in> <urn:bldg#AH1A_Heating_Coil-air-in>) s223:mapsTo (<urn:bldg#131_Tele-Health_hvac_domain_in> <urn:bldg#132_MECH_STEAM_hvac_domain_in>) .
+(<urn:bldg#AH1A_Final_Filter-in> <urn:bldg#AH1A_Heating_Coil-air-in>) s223:hasMedium s223:Fluid-Air .
+(<urn:bldg#AH1A_Final_Filter-in> <urn:bldg#AH1A_Heating_Coil-air-in>) s223:cnx (<urn:bldg#AH1A_Heating_Coil> <urn:bldg#AH1B_Heating_Coil>) .
+(<urn:bldg#AH1A_Final_Filter-in> <urn:bldg#AH1A_Heating_Coil-air-in>) s223:cnx (<urn:bldg#AH1A_Cooling_Coil> <urn:bldg#AH1B_Cooling_Coil>) .
+(<urn:bldg#AH1A_Final_Filter-in> <urn:bldg#AH1A_Heating_Coil-air-in>) s223:cnx (<urn:bldg#AH1A_Cooling_Coil-air-out-duct> <urn:bldg#AH1A_Final_Filter-out-duct>) .
+(<urn:bldg#AH1A_Final_Filter-in> <urn:bldg#AH1A_Heating_Coil-air-in>) a s223:InletConnectionPoint .
+(<urn:bldg#AH1A_Cooling_Coil-air-out> <urn:bldg#AH1A_Final_Filter-out>) s223:mapsTo (<urn:bldg#S1-01_VAV_air-out> <urn:bldg#S1-02_VAV_air-out>) .
+(<urn:bldg#AH1A_Cooling_Coil-air-out> <urn:bldg#AH1A_Final_Filter-out>) s223:mapsTo (<urn:bldg#131_Tele-Health_hvac_domain_out> <urn:bldg#132_MECH_STEAM_hvac_domain_out>) .
+(<urn:bldg#AH1A_Cooling_Coil-air-out> <urn:bldg#AH1A_Final_Filter-out>) s223:hasMedium s223:Fluid-Water .
+(<urn:bldg#AH1A_Cooling_Coil-air-out> <urn:bldg#AH1A_Final_Filter-out>) s223:hasMedium s223:Fluid-Air .
+(<urn:bldg#AH1A_Cooling_Coil-air-out> <urn:bldg#AH1A_Final_Filter-out>) s223:cnx (<urn:bldg#AH1A_Heating_Coil> <urn:bldg#AH1B_Heating_Coil>) .
+(<urn:bldg#AH1A_Cooling_Coil-air-out> <urn:bldg#AH1A_Final_Filter-out>) s223:cnx (<urn:bldg#AH1A_Cooling_Coil> <urn:bldg#AH1B_Cooling_Coil>) .
+(<urn:bldg#AH1A_Cooling_Coil-air-out> <urn:bldg#AH1A_Final_Filter-out>) s223:cnx (<urn:bldg#CAC-1_Cooling_Coil-water-out-pipe> <urn:bldg#CAC-2_Cooling_Coil-water-out-pipe>) .
+(<urn:bldg#AH1A_Cooling_Coil-air-out> <urn:bldg#AH1A_Final_Filter-out>) s223:cnx (<urn:bldg#AH1A_Cooling_Coil-air-out-duct> <urn:bldg#AH1A_Final_Filter-out-duct>) .
+(<urn:bldg#AH1A_Cooling_Coil-air-out> <urn:bldg#AH1A_Final_Filter-out>) a s223:OutletConnectionPoint .
+(<urn:bschema-rs:skolem:a006d2c845dea1a509407c2743ca319> <urn:bschema-rs:skolem:a0135ff6f7aca4ebb85925b2a116c85d>) bacnet:object-type ("002QgMwn12248" "003jdRyq12263") .
+(<urn:bschema-rs:skolem:a006d2c845dea1a509407c2743ca319> <urn:bschema-rs:skolem:a0135ff6f7aca4ebb85925b2a116c85d>) bacnet:object-name ("002QgMwn12248" "003jdRyq12263") .
+(<urn:bschema-rs:skolem:a006d2c845dea1a509407c2743ca319> <urn:bschema-rs:skolem:a0135ff6f7aca4ebb85925b2a116c85d>) bacnet:object-identifier ("002QgMwn12248" "003jdRyq12263") .
+(<urn:bschema-rs:skolem:a006d2c845dea1a509407c2743ca319> <urn:bschema-rs:skolem:a0135ff6f7aca4ebb85925b2a116c85d>) bacnet:device-identifier (<urn:bldg#4FsOfbEa2841> <urn:bldg#5wSA7AlJ2418>) .
+(<urn:bschema-rs:skolem:a006d2c845dea1a509407c2743ca319> <urn:bschema-rs:skolem:a0135ff6f7aca4ebb85925b2a116c85d>) bacnet:description ("002QgMwn12248" "003jdRyq12263") .
+(<urn:bschema-rs:skolem:a006d2c845dea1a509407c2743ca319> <urn:bschema-rs:skolem:a0135ff6f7aca4ebb85925b2a116c85d>) a s223:BACnetExternalReference .
+(<urn:bldg#Aux_Input_Total> <urn:bldg#Aux_Input_Total_Device_57018>) qudt:hasUnit unit:UNITLESS .
+(<urn:bldg#Aux_Input_Total> <urn:bldg#Aux_Input_Total_Device_57018>) qudt:hasUnit unit:PERCENT .
+(<urn:bldg#Aux_Input_Total> <urn:bldg#Aux_Input_Total_Device_57018>) qudt:hasUnit unit:DEG_F .
+(<urn:bldg#Aux_Input_Total> <urn:bldg#Aux_Input_Total_Device_57018>) s223:hasRole s223:Role-Supply .
+(<urn:bldg#Aux_Input_Total> <urn:bldg#Aux_Input_Total_Device_57018>) s223:hasRole s223:OnOff-Unknown .
+(<urn:bldg#Aux_Input_Total> <urn:bldg#Aux_Input_Total_Device_57018>) s223:hasExternalReference (<urn:bschema-rs:skolem:a006d2c845dea1a509407c2743ca319> <urn:bschema-rs:skolem:a0135ff6f7aca4ebb85925b2a116c85d>) .
+(<urn:bldg#Aux_Input_Total> <urn:bldg#Aux_Input_Total_Device_57018>) a s223:QuantifiableProperty .
+(<urn:bldg#131_Tele-Health_hvac_domain_in> <urn:bldg#132_MECH_STEAM_hvac_domain_in>) s223:mapsTo (<urn:bldg#131_Tele-Health_hvac_domain_in> <urn:bldg#132_MECH_STEAM_hvac_domain_in>) .
+(<urn:bldg#131_Tele-Health_hvac_domain_in> <urn:bldg#132_MECH_STEAM_hvac_domain_in>) s223:hasRole s223:Role-Return .
+(<urn:bldg#131_Tele-Health_hvac_domain_in> <urn:bldg#132_MECH_STEAM_hvac_domain_in>) s223:hasRole s223:Role-OutdoorAirIntake .
+(<urn:bldg#131_Tele-Health_hvac_domain_in> <urn:bldg#132_MECH_STEAM_hvac_domain_in>) s223:hasProperty rdfs:Resource .
+(<urn:bldg#131_Tele-Health_hvac_domain_in> <urn:bldg#132_MECH_STEAM_hvac_domain_in>) s223:hasMedium s223:Fluid-Air .
+(<urn:bldg#131_Tele-Health_hvac_domain_in> <urn:bldg#132_MECH_STEAM_hvac_domain_in>) s223:cnx (<urn:bldg#AH1A_Heating_Coil> <urn:bldg#AH1B_Heating_Coil>) .
+(<urn:bldg#131_Tele-Health_hvac_domain_in> <urn:bldg#132_MECH_STEAM_hvac_domain_in>) s223:cnx (<urn:bldg#AH1A_Cooling_Coil> <urn:bldg#AH1B_Cooling_Coil>) .
+(<urn:bldg#131_Tele-Health_hvac_domain_in> <urn:bldg#132_MECH_STEAM_hvac_domain_in>) s223:cnx (<urn:bldg#AH1A_Cooling_Coil-air-out-duct> <urn:bldg#AH1A_Final_Filter-out-duct>) .
+(<urn:bldg#131_Tele-Health_hvac_domain_in> <urn:bldg#132_MECH_STEAM_hvac_domain_in>) s223:cnx (<urn:bldg#131_Tele-Health_hvac_domain_in_connection> <urn:bldg#132_MECH_STEAM_hvac_domain_in_connection>) .
+(<urn:bldg#131_Tele-Health_hvac_domain_in> <urn:bldg#132_MECH_STEAM_hvac_domain_in>) a s223:InletConnectionPoint .
+(<urn:bldg#AH1A_Cooling_Coil> <urn:bldg#AH1B_Cooling_Coil>) s223:hasRole s223:Role-Cooling .
+(<urn:bldg#AH1A_Cooling_Coil> <urn:bldg#AH1B_Cooling_Coil>) s223:contains (<urn:bldg#AH1A_Cooling_Coil_Valve> <urn:bldg#AH1A_Heating_Coil_Valve>) .
+(<urn:bldg#AH1A_Cooling_Coil> <urn:bldg#AH1B_Cooling_Coil>) s223:cnx (<urn:bldg#AH1A_Cooling_Coil-water-out> <urn:bldg#AH1A_Heating_Coil-water-out>) .
+(<urn:bldg#AH1A_Cooling_Coil> <urn:bldg#AH1B_Cooling_Coil>) s223:cnx (<urn:bldg#AH1A_Cooling_Coil-air-out> <urn:bldg#AH1A_Final_Filter-out>) .
+(<urn:bldg#AH1A_Cooling_Coil> <urn:bldg#AH1B_Cooling_Coil>) s223:cnx (<urn:bldg#131_Tele-Health_hvac_domain_out> <urn:bldg#132_MECH_STEAM_hvac_domain_out>) .
+(<urn:bldg#AH1A_Cooling_Coil> <urn:bldg#AH1B_Cooling_Coil>) s223:cnx (<urn:bldg#AH1A_Final_Filter-in> <urn:bldg#AH1A_Heating_Coil-air-in>) .
+(<urn:bldg#AH1A_Cooling_Coil> <urn:bldg#AH1B_Cooling_Coil>) s223:cnx (<urn:bldg#AH1A_Cooling_Coil-water-in> <urn:bldg#AH1A_Heating_Coil-water-in>) .
+(<urn:bldg#AH1A_Cooling_Coil> <urn:bldg#AH1B_Cooling_Coil>) s223:cnx (<urn:bldg#131_Tele-Health_hvac_domain_in> <urn:bldg#132_MECH_STEAM_hvac_domain_in>) .
+(<urn:bldg#AH1A_Cooling_Coil> <urn:bldg#AH1B_Cooling_Coil>) a <http://data.ashrae.org/standard223/1.0/extensions/g36#ChilledWaterCoil> .
+(<urn:bldg#AH1A_Cooling_Coil> <urn:bldg#AH1B_Cooling_Coil>) a s223:CoolingCoil .
+(<urn:bldg#AH1A_Cooling_Coil-water-out> <urn:bldg#AH1A_Heating_Coil-water-out>) s223:mapsTo (<urn:bldg#S1-01_VAV_reheat-coil-water-out> <urn:bldg#S1-02_VAV_reheat-coil-water-out>) .
+(<urn:bldg#AH1A_Cooling_Coil-water-out> <urn:bldg#AH1A_Heating_Coil-water-out>) s223:mapsTo (<urn:bldg#AH1A_Cooling_Coil-water-out> <urn:bldg#AH1A_Heating_Coil-water-out>) .
+(<urn:bldg#AH1A_Cooling_Coil-water-out> <urn:bldg#AH1A_Heating_Coil-water-out>) s223:hasMedium s223:Fluid-Water .
+(<urn:bldg#AH1A_Cooling_Coil-water-out> <urn:bldg#AH1A_Heating_Coil-water-out>) s223:cnx (<urn:bldg#Chilled_Water_Plant-junction> <urn:bldg#Chilled_Water_System-junction>) .
+(<urn:bldg#AH1A_Cooling_Coil-water-out> <urn:bldg#AH1A_Heating_Coil-water-out>) s223:cnx (<urn:bldg#AH1A_Heating_Coil> <urn:bldg#AH1B_Heating_Coil>) .
+(<urn:bldg#AH1A_Cooling_Coil-water-out> <urn:bldg#AH1A_Heating_Coil-water-out>) s223:cnx (<urn:bldg#AH1A_Cooling_Coil> <urn:bldg#AH1B_Cooling_Coil>) .
+(<urn:bldg#AH1A_Cooling_Coil-water-out> <urn:bldg#AH1A_Heating_Coil-water-out>) s223:cnx (<urn:bldg#AH1A_Cooling_Coil-water-in-pipe> <urn:bldg#AH1A_Cooling_Coil-water-out-pipe>) .
+(<urn:bldg#AH1A_Cooling_Coil-water-out> <urn:bldg#AH1A_Heating_Coil-water-out>) a s223:OutletConnectionPoint .
+(<urn:bldg#AH1A_Cooling_Coil-water-in> <urn:bldg#AH1A_Heating_Coil-water-in>) s223:mapsTo (<urn:bldg#S1-01_VAV_reheat-coil-water-in> <urn:bldg#S1-02_VAV_reheat-coil-water-in>) .
+(<urn:bldg#AH1A_Cooling_Coil-water-in> <urn:bldg#AH1A_Heating_Coil-water-in>) s223:hasMedium s223:Fluid-Water .
+(<urn:bldg#AH1A_Cooling_Coil-water-in> <urn:bldg#AH1A_Heating_Coil-water-in>) s223:cnx (<urn:bldg#AH1A_Heating_Coil> <urn:bldg#AH1B_Heating_Coil>) .
+(<urn:bldg#AH1A_Cooling_Coil-water-in> <urn:bldg#AH1A_Heating_Coil-water-in>) s223:cnx (<urn:bldg#AH1A_Cooling_Coil> <urn:bldg#AH1B_Cooling_Coil>) .
+(<urn:bldg#AH1A_Cooling_Coil-water-in> <urn:bldg#AH1A_Heating_Coil-water-in>) s223:cnx (<urn:bldg#CAC-1_Cooling_Coil-water-in-pipe> <urn:bldg#CAC-2_Cooling_Coil-water-in-pipe>) .
+(<urn:bldg#AH1A_Cooling_Coil-water-in> <urn:bldg#AH1A_Heating_Coil-water-in>) s223:cnx (<urn:bldg#AH1A_Cooling_Coil-water-in-pipe> <urn:bldg#AH1A_Cooling_Coil-water-out-pipe>) .
+(<urn:bldg#AH1A_Cooling_Coil-water-in> <urn:bldg#AH1A_Heating_Coil-water-in>) a s223:InletConnectionPoint .
+(<urn:bldg#AH1A_Cooling_Coil_Valve> <urn:bldg#AH1A_Heating_Coil_Valve>) s223:hasRole s223:Role-Supply .
+(<urn:bldg#AH1A_Cooling_Coil_Valve> <urn:bldg#AH1A_Heating_Coil_Valve>) s223:hasRole s223:Role-Recirculating .
+(<urn:bldg#AH1A_Cooling_Coil_Valve> <urn:bldg#AH1A_Heating_Coil_Valve>) s223:hasRole s223:Role-Heating .
+(<urn:bldg#AH1A_Cooling_Coil_Valve> <urn:bldg#AH1A_Heating_Coil_Valve>) s223:hasRole s223:Role-Cooling .
+(<urn:bldg#AH1A_Cooling_Coil_Valve> <urn:bldg#AH1A_Heating_Coil_Valve>) s223:hasProperty (<urn:bldg#bldg.AH1A_TD1> <urn:bldg#bldg.AH1B_TD1>) .
+(<urn:bldg#AH1A_Cooling_Coil_Valve> <urn:bldg#AH1A_Heating_Coil_Valve>) s223:hasProperty (<urn:bldg#Energy_Rate> <urn:bldg#Energy_Rate_Device_57018>) .
+(<urn:bldg#AH1A_Cooling_Coil_Valve> <urn:bldg#AH1A_Heating_Coil_Valve>) s223:hasProperty (<urn:bldg#TEST.ACTCHWDPSP> <urn:bldg#TEST.ACTCWDPSP>) .
+(<urn:bldg#AH1A_Cooling_Coil_Valve> <urn:bldg#AH1A_Heating_Coil_Valve>) s223:cnx (<urn:bldg#CH1_Condenser_Water_Loop-water-out> <urn:bldg#CH2_Condenser_Water_Loop-water-out>) .
+(<urn:bldg#AH1A_Cooling_Coil_Valve> <urn:bldg#AH1A_Heating_Coil_Valve>) s223:cnx (<urn:bldg#CH1-water-in> <urn:bldg#CH1_Condenser_Water_Loop-water-in>) .
+(<urn:bldg#AH1A_Cooling_Coil_Valve> <urn:bldg#AH1A_Heating_Coil_Valve>) a s223:Valve .
+(<urn:bldg#131_Tele-Health_hvac_domain_out> <urn:bldg#132_MECH_STEAM_hvac_domain_out>) s223:hasRole s223:Role-Supply .
+(<urn:bldg#131_Tele-Health_hvac_domain_out> <urn:bldg#132_MECH_STEAM_hvac_domain_out>) s223:hasProperty rdfs:Resource .
+(<urn:bldg#131_Tele-Health_hvac_domain_out> <urn:bldg#132_MECH_STEAM_hvac_domain_out>) s223:hasMedium s223:Fluid-Air .
+(<urn:bldg#131_Tele-Health_hvac_domain_out> <urn:bldg#132_MECH_STEAM_hvac_domain_out>) s223:cnx (<urn:bldg#AH1A_Cooling_Coil> <urn:bldg#AH1B_Cooling_Coil>) .
+(<urn:bldg#131_Tele-Health_hvac_domain_out> <urn:bldg#132_MECH_STEAM_hvac_domain_out>) s223:cnx (<urn:bldg#131_Tele-Health_hvac_domain_out_connection> <urn:bldg#132_MECH_STEAM_hvac_domain_out_connection>) .
+(<urn:bldg#131_Tele-Health_hvac_domain_out> <urn:bldg#132_MECH_STEAM_hvac_domain_out>) a s223:OutletConnectionPoint .
+(<urn:bldg#AH1A_Heating_Coil> <urn:bldg#AH1B_Heating_Coil>) s223:hasRole s223:Role-Heating .
+(<urn:bldg#AH1A_Heating_Coil> <urn:bldg#AH1B_Heating_Coil>) s223:contains (<urn:bldg#AH1A_Cooling_Coil_Valve> <urn:bldg#AH1A_Heating_Coil_Valve>) .
+(<urn:bldg#AH1A_Heating_Coil> <urn:bldg#AH1B_Heating_Coil>) s223:cnx (<urn:bldg#AH1A_Cooling_Coil-water-out> <urn:bldg#AH1A_Heating_Coil-water-out>) .
+(<urn:bldg#AH1A_Heating_Coil> <urn:bldg#AH1B_Heating_Coil>) s223:cnx (<urn:bldg#AH1A_Cooling_Coil-air-out> <urn:bldg#AH1A_Final_Filter-out>) .
+(<urn:bldg#AH1A_Heating_Coil> <urn:bldg#AH1B_Heating_Coil>) s223:cnx (<urn:bldg#AH1A_Final_Filter-in> <urn:bldg#AH1A_Heating_Coil-air-in>) .
+(<urn:bldg#AH1A_Heating_Coil> <urn:bldg#AH1B_Heating_Coil>) s223:cnx (<urn:bldg#AH1A_Cooling_Coil-water-in> <urn:bldg#AH1A_Heating_Coil-water-in>) .
+(<urn:bldg#AH1A_Heating_Coil> <urn:bldg#AH1B_Heating_Coil>) s223:cnx (<urn:bldg#131_Tele-Health_hvac_domain_in> <urn:bldg#132_MECH_STEAM_hvac_domain_in>) .
+(<urn:bldg#AH1A_Heating_Coil> <urn:bldg#AH1B_Heating_Coil>) a <http://data.ashrae.org/standard223/1.0/extensions/g36#HotWaterCoil> .
+(<urn:bldg#AH1A_Heating_Coil> <urn:bldg#AH1B_Heating_Coil>) a s223:HeatingCoil .
+(<urn:bldg#AH1A_SF_VFD> <urn:bldg#AH1B_SF_VFD>) s223:hasProperty (<urn:bldg#Aux_Input_Total> <urn:bldg#Aux_Input_Total_Device_57018>) .
+(<urn:bldg#AH1A_SF_VFD> <urn:bldg#AH1B_SF_VFD>) s223:hasProperty (<urn:bldg#bldg.AH1A.SF_VFD_DRV_ACT_DI_1> <urn:bldg#bldg.AH1A.SF_VFD_DRV_ACT_DI_2>) .
+(<urn:bldg#AH1A_SF_VFD> <urn:bldg#AH1B_SF_VFD>) s223:hasProperty (<urn:bldg#Energy_Rate> <urn:bldg#Energy_Rate_Device_57018>) .
+(<urn:bldg#AH1A_SF_VFD> <urn:bldg#AH1B_SF_VFD>) s223:hasProperty (<urn:bldg#bldg.AH1A.SF_VFD_CMD_STP.STRT> <urn:bldg#bldg.AH1A.SF_VFD_RUN_ENABLE>) .
+(<urn:bldg#AH1A_SF_VFD> <urn:bldg#AH1B_SF_VFD>) s223:hasProperty (<urn:bldg#TEST.ACTCHWDPSP> <urn:bldg#TEST.ACTCWDPSP>) .
+(<urn:bldg#AH1A_SF_VFD> <urn:bldg#AH1B_SF_VFD>) s223:hasProperty (<urn:bldg#bldg.AH1A.SF_VFD_DI_5_ACTUAL> <urn:bldg#bldg.AH1A.SF_VFD_DI_6_ACTUAL>) .
+(<urn:bldg#AH1A_SF_VFD> <urn:bldg#AH1B_SF_VFD>) a <http://data.ashrae.org/standard223/1.0/extensions/g36#FanWithVFD> .
+(<urn:bldg#AH1A_SF_VFD> <urn:bldg#AH1B_SF_VFD>) a s223:VariableFrequencyDrive .
+(<urn:bldg#S1-01_Heating_Coil_Valve> <urn:bldg#S1-02_Heating_Coil_Valve>) s223:hasRole s223:Role-Heating .
+(<urn:bldg#S1-01_Heating_Coil_Valve> <urn:bldg#S1-02_Heating_Coil_Valve>) s223:hasProperty (<urn:bldg#reheat-coil-valve-position_0c51efe3> <urn:bldg#reheat-coil-valve-position_1500e243>) .
+(<urn:bldg#S1-01_Heating_Coil_Valve> <urn:bldg#S1-02_Heating_Coil_Valve>) s223:hasProperty (<urn:bldg#Energy_Rate> <urn:bldg#Energy_Rate_Device_57018>) .
+(<urn:bldg#S1-01_Heating_Coil_Valve> <urn:bldg#S1-02_Heating_Coil_Valve>) s223:hasProperty (<urn:bldg#damper-command_0154248d> <urn:bldg#damper-command_019a4adc>) .
+(<urn:bldg#S1-01_Heating_Coil_Valve> <urn:bldg#S1-02_Heating_Coil_Valve>) s223:hasProperty (<urn:bldg#bldg.S1-01_AI_3> <urn:bldg#bldg.S1-02_AI_3>) .
+(<urn:bldg#S1-01_Heating_Coil_Valve> <urn:bldg#S1-02_Heating_Coil_Valve>) s223:hasProperty (<urn:bldg#TEST.ACTCHWDPSP> <urn:bldg#TEST.ACTCWDPSP>) .
+(<urn:bldg#S1-01_Heating_Coil_Valve> <urn:bldg#S1-02_Heating_Coil_Valve>) s223:cnx (<urn:bldg#AH1A_Cooling_Coil-water-out> <urn:bldg#AH1A_Heating_Coil-water-out>) .
+(<urn:bldg#S1-01_Heating_Coil_Valve> <urn:bldg#S1-02_Heating_Coil_Valve>) s223:cnx (<urn:bldg#AH1A_Cooling_Coil-water-in> <urn:bldg#AH1A_Heating_Coil-water-in>) .
+(<urn:bldg#S1-01_Heating_Coil_Valve> <urn:bldg#S1-02_Heating_Coil_Valve>) a <http://data.ashrae.org/standard223/1.0/extensions/g36#HotWaterValve> .
+(<urn:bldg#S1-01_Heating_Coil_Valve> <urn:bldg#S1-02_Heating_Coil_Valve>) a s223:Valve .
+(<urn:bldg#bldg.S1-01_AI_3> <urn:bldg#bldg.S1-02_AI_3>) qudt:hasUnit unit:UNITLESS .
+(<urn:bldg#bldg.S1-01_AI_3> <urn:bldg#bldg.S1-02_AI_3>) qudt:hasUnit unit:PERCENT .
+(<urn:bldg#bldg.S1-01_AI_3> <urn:bldg#bldg.S1-02_AI_3>) qudt:hasUnit unit:DEG_F .
+(<urn:bldg#bldg.S1-01_AI_3> <urn:bldg#bldg.S1-02_AI_3>) qudt:hasUnit unit:DEG_C .
+(<urn:bldg#bldg.S1-01_AI_3> <urn:bldg#bldg.S1-02_AI_3>) qudt:hasQuantityKind quantitykind:Temperature .
+(<urn:bldg#bldg.S1-01_AI_3> <urn:bldg#bldg.S1-02_AI_3>) qudt:hasQuantityKind quantitykind:DimensionlessRatio .
+(<urn:bldg#bldg.S1-01_AI_3> <urn:bldg#bldg.S1-02_AI_3>) s223:hasRole s223:RunStatus-Unknown .
+(<urn:bldg#bldg.S1-01_AI_3> <urn:bldg#bldg.S1-02_AI_3>) s223:hasRole s223:Role-Supply .
+(<urn:bldg#bldg.S1-01_AI_3> <urn:bldg#bldg.S1-02_AI_3>) s223:hasRole s223:OnOff-Unknown .
+(<urn:bldg#bldg.S1-01_AI_3> <urn:bldg#bldg.S1-02_AI_3>) s223:hasExternalReference (<urn:bschema-rs:skolem:a006d2c845dea1a509407c2743ca319> <urn:bschema-rs:skolem:a0135ff6f7aca4ebb85925b2a116c85d>) .
+(<urn:bldg#bldg.S1-01_AI_3> <urn:bldg#bldg.S1-02_AI_3>) s223:hasAspect s223:Role-Discharge .
+(<urn:bldg#bldg.S1-01_AI_3> <urn:bldg#bldg.S1-02_AI_3>) s223:hasAspect s223:EnumerationKind-Position .
+(<urn:bldg#bldg.S1-01_AI_3> <urn:bldg#bldg.S1-02_AI_3>) a s223:QuantifiableObservableProperty .
+(<urn:bldg#bldg.S1-01_AI_3> <urn:bldg#bldg.S1-02_AI_3>) a s223:QuantifiableActuatableProperty .
+(<urn:bldg#CH1_Condenser_Water_Loop-water-out> <urn:bldg#CH2_Condenser_Water_Loop-water-out>) s223:hasMedium s223:Fluid-Water .
+(<urn:bldg#CH1_Condenser_Water_Loop-water-out> <urn:bldg#CH2_Condenser_Water_Loop-water-out>) s223:cnx (<urn:bldg#CH1_Condenser_Water_Loop-water-out-pipe> <urn:bldg#CH2_Condenser_Water_Loop-water-out-pipe>) .
+(<urn:bldg#CH1_Condenser_Water_Loop-water-out> <urn:bldg#CH2_Condenser_Water_Loop-water-out>) a s223:OutletConnectionPoint .
+(<urn:bldg#CH1-water-in> <urn:bldg#CH1_Condenser_Water_Loop-water-in>) s223:hasMedium s223:Fluid-Water .
+(<urn:bldg#CH1-water-in> <urn:bldg#CH1_Condenser_Water_Loop-water-in>) s223:cnx (<urn:bldg#CH1-water-in-pipe> <urn:bldg#CH1_Condenser_Water_Loop-water-in-pipe>) .
+(<urn:bldg#CH1-water-in> <urn:bldg#CH1_Condenser_Water_Loop-water-in>) a s223:InletConnectionPoint .
+(<urn:bldg#bldg.AH1A_TD1> <urn:bldg#bldg.AH1B_TD1>) qudt:hasUnit unit:SEC .
+(<urn:bldg#bldg.AH1A_TD1> <urn:bldg#bldg.AH1B_TD1>) s223:hasExternalReference (<urn:bschema-rs:skolem:a006d2c845dea1a509407c2743ca319> <urn:bschema-rs:skolem:a0135ff6f7aca4ebb85925b2a116c85d>) .
+(<urn:bldg#bldg.AH1A_TD1> <urn:bldg#bldg.AH1B_TD1>) a s223:QuantifiableProperty .
+(<urn:bldg#bldg.SW.MSA.MAIN.PWR_REAL_3_P> <urn:bldg#bldg.SW.MSA_B.MAIN.PWR_REAL_3_P>) qudt:hasUnit unit:W .
+(<urn:bldg#bldg.SW.MSA.MAIN.PWR_REAL_3_P> <urn:bldg#bldg.SW.MSA_B.MAIN.PWR_REAL_3_P>) qudt:hasUnit unit:KiloW .
+(<urn:bldg#bldg.SW.MSA.MAIN.PWR_REAL_3_P> <urn:bldg#bldg.SW.MSA_B.MAIN.PWR_REAL_3_P>) qudt:hasQuantityKind quantitykind:ActivePower .
+(<urn:bldg#bldg.SW.MSA.MAIN.PWR_REAL_3_P> <urn:bldg#bldg.SW.MSA_B.MAIN.PWR_REAL_3_P>) s223:hasProperty (<urn:bldg#bldg.SW.MSA.MAIN.PWR_REAL_3_P> <urn:bldg#bldg.SW.MSA_B.MAIN.PWR_REAL_3_P>) .
+(<urn:bldg#bldg.SW.MSA.MAIN.PWR_REAL_3_P> <urn:bldg#bldg.SW.MSA_B.MAIN.PWR_REAL_3_P>) s223:hasExternalReference (<urn:bschema-rs:skolem:a006d2c845dea1a509407c2743ca319> <urn:bschema-rs:skolem:a0135ff6f7aca4ebb85925b2a116c85d>) .
+(<urn:bldg#bldg.SW.MSA.MAIN.PWR_REAL_3_P> <urn:bldg#bldg.SW.MSA_B.MAIN.PWR_REAL_3_P>) a s223:QuantifiableObservableProperty .
+(<urn:bldg#bldg.SW.MSA.MAIN.PWR_REAL_3_P> <urn:bldg#bldg.SW.MSA_B.MAIN.PWR_REAL_3_P>) a s223:Property .
+(<urn:bldg#bldg.AH1A.SF_VFD_DI_5_ACTUAL> <urn:bldg#bldg.AH1A.SF_VFD_DI_6_ACTUAL>) qudt:hasUnit unit:UNITLESS .
+(<urn:bldg#bldg.AH1A.SF_VFD_DI_5_ACTUAL> <urn:bldg#bldg.AH1A.SF_VFD_DI_6_ACTUAL>) s223:hasExternalReference (<urn:bschema-rs:skolem:a006d2c845dea1a509407c2743ca319> <urn:bschema-rs:skolem:a0135ff6f7aca4ebb85925b2a116c85d>) .
+(<urn:bldg#bldg.AH1A.SF_VFD_DI_5_ACTUAL> <urn:bldg#bldg.AH1A.SF_VFD_DI_6_ACTUAL>) a s223:Property .
+(<urn:bldg#131_Tele-Health> <urn:bldg#132_MECH_STEAM>) s223:hasProperty (<urn:bldg#Energy_Rate> <urn:bldg#Energy_Rate_Device_57018>) .
+(<urn:bldg#131_Tele-Health> <urn:bldg#132_MECH_STEAM>) s223:hasProperty (<urn:bldg#TEST.ACTCHWDPSP> <urn:bldg#TEST.ACTCWDPSP>) .
+(<urn:bldg#131_Tele-Health> <urn:bldg#132_MECH_STEAM>) s223:hasProperty (<urn:bldg#bldg.SW.MSA.MAIN.PWR_REAL_3_P> <urn:bldg#bldg.SW.MSA_B.MAIN.PWR_REAL_3_P>) .
+(<urn:bldg#131_Tele-Health> <urn:bldg#132_MECH_STEAM>) s223:encloses (<urn:bldg#131_Tele-Health_hvac_domain> <urn:bldg#132_MECH_STEAM_hvac_domain>) .
+(<urn:bldg#131_Tele-Health> <urn:bldg#132_MECH_STEAM>) s223:contains (<urn:bldg#131_Tele-Health> <urn:bldg#132_MECH_STEAM>) .
+(<urn:bldg#131_Tele-Health> <urn:bldg#132_MECH_STEAM>) a s223:PhysicalSpace .
+(<urn:bldg#S1-01_VAV_air-out> <urn:bldg#S1-02_VAV_air-out>) s223:mapsTo (<urn:bldg#AH1A_Cooling_Coil-air-out> <urn:bldg#AH1A_Final_Filter-out>) .
+(<urn:bldg#S1-01_VAV_air-out> <urn:bldg#S1-02_VAV_air-out>) s223:hasProperty (<urn:bldg#discharge-air-flow_50184025> <urn:bldg#discharge-air-flow_84aa4072>) .
+(<urn:bldg#S1-01_VAV_air-out> <urn:bldg#S1-02_VAV_air-out>) s223:hasProperty (<urn:bldg#Energy_Rate> <urn:bldg#Energy_Rate_Device_57018>) .
+(<urn:bldg#S1-01_VAV_air-out> <urn:bldg#S1-02_VAV_air-out>) s223:hasProperty (<urn:bldg#bldg.S1-01_AI_3> <urn:bldg#bldg.S1-02_AI_3>) .
+(<urn:bldg#S1-01_VAV_air-out> <urn:bldg#S1-02_VAV_air-out>) s223:hasProperty (<urn:bldg#TEST.ACTCHWDPSP> <urn:bldg#TEST.ACTCWDPSP>) .
+(<urn:bldg#S1-01_VAV_air-out> <urn:bldg#S1-02_VAV_air-out>) s223:hasMedium s223:Fluid-Air .
+(<urn:bldg#S1-01_VAV_air-out> <urn:bldg#S1-02_VAV_air-out>) s223:cnx (<urn:bldg#AH1A_Cooling_Coil-air-out-duct> <urn:bldg#AH1A_Final_Filter-out-duct>) .
+(<urn:bldg#S1-01_VAV_air-out> <urn:bldg#S1-02_VAV_air-out>) a s223:OutletConnectionPoint .
+("002QgMwn12248" "003jdRyq12263") a rdfs:Literal .
+(<urn:bldg#AH1A_Supply_Fan> <urn:bldg#AH1B_Supply_Fan>) s223:hasRole s223:Role-Supply .
+(<urn:bldg#AH1A_Supply_Fan> <urn:bldg#AH1B_Supply_Fan>) s223:hasProperty (<urn:bldg#Aux_Input_Total> <urn:bldg#Aux_Input_Total_Device_57018>) .
+(<urn:bldg#AH1A_Supply_Fan> <urn:bldg#AH1B_Supply_Fan>) s223:hasProperty (<urn:bldg#Energy_Rate> <urn:bldg#Energy_Rate_Device_57018>) .
+(<urn:bldg#AH1A_Supply_Fan> <urn:bldg#AH1B_Supply_Fan>) s223:hasProperty (<urn:bldg#TEST.ACTCHWDPSP> <urn:bldg#TEST.ACTCWDPSP>) .
+(<urn:bldg#AH1A_Supply_Fan> <urn:bldg#AH1B_Supply_Fan>) s223:contains (<urn:bldg#AH1A_SF_VFD> <urn:bldg#AH1B_SF_VFD>) .
+(<urn:bldg#AH1A_Supply_Fan> <urn:bldg#AH1B_Supply_Fan>) s223:contains (<urn:bldg#AH1A_Supply_Fan> <urn:bldg#AH1B_Supply_Fan>) .
+(<urn:bldg#AH1A_Supply_Fan> <urn:bldg#AH1B_Supply_Fan>) s223:cnx (<urn:bldg#AH1A_Cooling_Coil-air-out> <urn:bldg#AH1A_Final_Filter-out>) .
+(<urn:bldg#AH1A_Supply_Fan> <urn:bldg#AH1B_Supply_Fan>) s223:cnx (<urn:bldg#AH1A_Final_Filter-in> <urn:bldg#AH1A_Heating_Coil-air-in>) .
+(<urn:bldg#AH1A_Supply_Fan> <urn:bldg#AH1B_Supply_Fan>) a <http://data.ashrae.org/standard223/1.0/extensions/g36#FanWithVFD> .
+(<urn:bldg#AH1A_Supply_Fan> <urn:bldg#AH1B_Supply_Fan>) a s223:VariableFrequencyDrive .
+(<urn:bldg#AH1A_Supply_Fan> <urn:bldg#AH1B_Supply_Fan>) a s223:Fan .
+(<urn:bldg#EF1_Isolation_Damper> <urn:bldg#EF1_Outside_Damper>) s223:hasProperty (<urn:bldg#Energy_Rate> <urn:bldg#Energy_Rate_Device_57018>) .
+(<urn:bldg#EF1_Isolation_Damper> <urn:bldg#EF1_Outside_Damper>) s223:hasProperty (<urn:bldg#TEST.ACTCHWDPSP> <urn:bldg#TEST.ACTCWDPSP>) .
+(<urn:bldg#EF1_Isolation_Damper> <urn:bldg#EF1_Outside_Damper>) a s223:Damper .
+(<urn:bldg#AH1A_Cooling_Coil-water-in-pipe> <urn:bldg#AH1A_Cooling_Coil-water-out-pipe>) s223:hasMedium s223:Fluid-Water .
+(<urn:bldg#AH1A_Cooling_Coil-water-in-pipe> <urn:bldg#AH1A_Cooling_Coil-water-out-pipe>) s223:cnx (<urn:bldg#AH1A_Cooling_Coil-water-out> <urn:bldg#AH1A_Heating_Coil-water-out>) .
+(<urn:bldg#AH1A_Cooling_Coil-water-in-pipe> <urn:bldg#AH1A_Cooling_Coil-water-out-pipe>) s223:cnx (<urn:bldg#AH1A_Cooling_Coil-water-in> <urn:bldg#AH1A_Heating_Coil-water-in>) .
+(<urn:bldg#AH1A_Cooling_Coil-water-in-pipe> <urn:bldg#AH1A_Cooling_Coil-water-out-pipe>) a s223:Pipe .
+(<urn:bldg#AH1A_Cooling_Coil-water-in-pipe> <urn:bldg#AH1A_Cooling_Coil-water-out-pipe>) a s223:Connection .
+(<urn:bldg#AH1A_Cooling_Coil-air-out-duct> <urn:bldg#AH1A_Final_Filter-out-duct>) s223:hasRole s223:Role-Exhaust .
+(<urn:bldg#AH1A_Cooling_Coil-air-out-duct> <urn:bldg#AH1A_Final_Filter-out-duct>) s223:hasMedium s223:Fluid-Air .
+(<urn:bldg#AH1A_Cooling_Coil-air-out-duct> <urn:bldg#AH1A_Final_Filter-out-duct>) s223:cnx (<urn:bldg#AH1A_Cooling_Coil-air-out> <urn:bldg#AH1A_Final_Filter-out>) .
+(<urn:bldg#AH1A_Cooling_Coil-air-out-duct> <urn:bldg#AH1A_Final_Filter-out-duct>) s223:cnx (<urn:bldg#AH1A_Final_Filter-in> <urn:bldg#AH1A_Heating_Coil-air-in>) .
+(<urn:bldg#AH1A_Cooling_Coil-air-out-duct> <urn:bldg#AH1A_Final_Filter-out-duct>) s223:cnx (<urn:bldg#131_Tele-Health_hvac_domain_in> <urn:bldg#132_MECH_STEAM_hvac_domain_in>) .
+(<urn:bldg#AH1A_Cooling_Coil-air-out-duct> <urn:bldg#AH1A_Final_Filter-out-duct>) a s223:Duct .
+(<urn:bldg#AH1A_Cooling_Coil-air-out-duct> <urn:bldg#AH1A_Final_Filter-out-duct>) a s223:Connection .
+(<urn:bldg#discharge-air-flow_50184025> <urn:bldg#discharge-air-flow_84aa4072>) qudt:hasUnit unit:FT3-PER-MIN .
+(<urn:bldg#discharge-air-flow_50184025> <urn:bldg#discharge-air-flow_84aa4072>) qudt:hasUnit unit:DEG_C .
+(<urn:bldg#discharge-air-flow_50184025> <urn:bldg#discharge-air-flow_84aa4072>) qudt:hasQuantityKind quantitykind:VolumeFlowRate .
+(<urn:bldg#discharge-air-flow_50184025> <urn:bldg#discharge-air-flow_84aa4072>) qudt:hasQuantityKind quantitykind:Temperature .
+(<urn:bldg#discharge-air-flow_50184025> <urn:bldg#discharge-air-flow_84aa4072>) s223:hasAspect s223:Role-Discharge .
+(<urn:bldg#discharge-air-flow_50184025> <urn:bldg#discharge-air-flow_84aa4072>) a s223:QuantifiableObservableProperty .
+(<urn:bldg#damper-command_0154248d> <urn:bldg#damper-command_019a4adc>) qudt:hasUnit unit:PERCENT .
+(<urn:bldg#damper-command_0154248d> <urn:bldg#damper-command_019a4adc>) qudt:hasQuantityKind quantitykind:DimensionlessRatio .
+(<urn:bldg#damper-command_0154248d> <urn:bldg#damper-command_019a4adc>) s223:hasAspect s223:EnumerationKind-Position .
+(<urn:bldg#damper-command_0154248d> <urn:bldg#damper-command_019a4adc>) a s223:QuantifiableActuatableProperty .
+(<urn:bldg#Mode_1_Volume_Total> <urn:bldg#Mode_1_Volume_Total_Device_57018>) qudt:hasUnit unit:UNITLESS .
+(<urn:bldg#Mode_1_Volume_Total> <urn:bldg#Mode_1_Volume_Total_Device_57018>) qudt:hasUnit unit:GAL_US .
+(<urn:bldg#Mode_1_Volume_Total> <urn:bldg#Mode_1_Volume_Total_Device_57018>) s223:hasExternalReference (<urn:bschema-rs:skolem:a006d2c845dea1a509407c2743ca319> <urn:bschema-rs:skolem:a0135ff6f7aca4ebb85925b2a116c85d>) .
+(<urn:bldg#Mode_1_Volume_Total> <urn:bldg#Mode_1_Volume_Total_Device_57018>) a s223:Property .
+(<urn:bldg#S1-01_VAV_reheat-coil-water-out> <urn:bldg#S1-02_VAV_reheat-coil-water-out>) s223:hasMedium s223:Fluid-Water .
+(<urn:bldg#S1-01_VAV_reheat-coil-water-out> <urn:bldg#S1-02_VAV_reheat-coil-water-out>) s223:cnx (<urn:bldg#AH1A_Cooling_Coil-water-in-pipe> <urn:bldg#AH1A_Cooling_Coil-water-out-pipe>) .
+(<urn:bldg#S1-01_VAV_reheat-coil-water-out> <urn:bldg#S1-02_VAV_reheat-coil-water-out>) a s223:OutletConnectionPoint .
+(<urn:bldg#CH1-water-out> <urn:bldg#CH2-water-out>) s223:hasMedium s223:Fluid-Water .
+(<urn:bldg#CH1-water-out> <urn:bldg#CH2-water-out>) s223:cnx (<urn:bldg#CH1-water-out-pipe> <urn:bldg#CH2-water-out-pipe>) .
+(<urn:bldg#CH1-water-out> <urn:bldg#CH2-water-out>) s223:cnx (<urn:bldg#CHM-1-water-out-pipe> <urn:bldg#CHM-2-water-out-pipe>) .
+(<urn:bldg#CH1-water-out> <urn:bldg#CH2-water-out>) a s223:OutletConnectionPoint .
+(<urn:bldg#Chilled_Water_Plant-junction> <urn:bldg#Chilled_Water_System-junction>) s223:cnx (<urn:bldg#Chilled_Water_Plant-junction-out-cp> <urn:bldg#Chilled_Water_System-junction-out-cp-1>) .
+(<urn:bldg#Chilled_Water_Plant-junction> <urn:bldg#Chilled_Water_System-junction>) s223:cnx (<urn:bldg#AH1A_Cooling_Coil-water-out> <urn:bldg#AH1A_Heating_Coil-water-out>) .
+(<urn:bldg#Chilled_Water_Plant-junction> <urn:bldg#Chilled_Water_System-junction>) s223:cnx (<urn:bldg#Chilled_Water_Plant-junction-in-cp-1> <urn:bldg#Chilled_Water_Plant-junction-in-cp-2>) .
+(<urn:bldg#Chilled_Water_Plant-junction> <urn:bldg#Chilled_Water_System-junction>) a s223:Junction .
+(<urn:bldg#S1-01_VAV_reheat-coil-water-in> <urn:bldg#S1-02_VAV_reheat-coil-water-in>) s223:mapsTo (<urn:bldg#AH1A_Cooling_Coil-water-in> <urn:bldg#AH1A_Heating_Coil-water-in>) .
+(<urn:bldg#S1-01_VAV_reheat-coil-water-in> <urn:bldg#S1-02_VAV_reheat-coil-water-in>) s223:hasMedium s223:Fluid-Water .
+(<urn:bldg#S1-01_VAV_reheat-coil-water-in> <urn:bldg#S1-02_VAV_reheat-coil-water-in>) s223:cnx (<urn:bldg#AH1A_Cooling_Coil-water-in-pipe> <urn:bldg#AH1A_Cooling_Coil-water-out-pipe>) .
+(<urn:bldg#S1-01_VAV_reheat-coil-water-in> <urn:bldg#S1-02_VAV_reheat-coil-water-in>) a s223:InletConnectionPoint .
+(<urn:bldg#Chilled_Water_System-water-in> <urn:bldg#MDF_Chilled_Water_Loop-water-in>) s223:hasMedium s223:Fluid-Water .
+(<urn:bldg#Chilled_Water_System-water-in> <urn:bldg#MDF_Chilled_Water_Loop-water-in>) s223:cnx (<urn:bldg#CAC-1_Cooling_Coil-water-in-pipe> <urn:bldg#CAC-2_Cooling_Coil-water-in-pipe>) .
+(<urn:bldg#Chilled_Water_System-water-in> <urn:bldg#MDF_Chilled_Water_Loop-water-in>) a s223:InletConnectionPoint .
+(<urn:bldg#Chilled_Water_Plant-junction-in-cp-1> <urn:bldg#Chilled_Water_Plant-junction-in-cp-2>) s223:cnx (<urn:bldg#HX-1_water-out-pipe> <urn:bldg#HX-2_water-out-pipe>) .
+(<urn:bldg#Chilled_Water_Plant-junction-in-cp-1> <urn:bldg#Chilled_Water_Plant-junction-in-cp-2>) s223:cnx (<urn:bldg#Chilled_Water_Plant-junction> <urn:bldg#Chilled_Water_System-junction>) .
+(<urn:bldg#Chilled_Water_Plant-junction-in-cp-1> <urn:bldg#Chilled_Water_Plant-junction-in-cp-2>) s223:cnx (<urn:bldg#CH1-water-out-pipe> <urn:bldg#CH2-water-out-pipe>) .
+(<urn:bldg#Chilled_Water_Plant-junction-in-cp-1> <urn:bldg#Chilled_Water_Plant-junction-in-cp-2>) a s223:InletConnectionPoint .
+(<urn:bldg#AH1A_Isolation_Damper> <urn:bldg#AH1B_Isolation_Damper>) s223:hasRole s223:Role-Outside .
+(<urn:bldg#AH1A_Isolation_Damper> <urn:bldg#AH1B_Isolation_Damper>) s223:hasRole s223:Role-OutdoorAirIntake .
+(<urn:bldg#AH1A_Isolation_Damper> <urn:bldg#AH1B_Isolation_Damper>) s223:hasRole s223:Role-Economizer .
+(<urn:bldg#AH1A_Isolation_Damper> <urn:bldg#AH1B_Isolation_Damper>) s223:hasProperty (<urn:bldg#bldg.AH1A.SF_VFD_DRV_ACT_DI_5>) .
+(<urn:bldg#AH1A_Isolation_Damper> <urn:bldg#AH1B_Isolation_Damper>) s223:hasProperty (<urn:bldg#Energy_Rate> <urn:bldg#Energy_Rate_Device_57018>) .
+(<urn:bldg#AH1A_Isolation_Damper> <urn:bldg#AH1B_Isolation_Damper>) s223:hasProperty (<urn:bldg#TEST.ACTCHWDPSP> <urn:bldg#TEST.ACTCWDPSP>) .
+(<urn:bldg#AH1A_Isolation_Damper> <urn:bldg#AH1B_Isolation_Damper>) s223:cnx (<urn:bldg#AH1A_Cooling_Coil-air-out> <urn:bldg#AH1A_Final_Filter-out>) .
+(<urn:bldg#AH1A_Isolation_Damper> <urn:bldg#AH1B_Isolation_Damper>) s223:cnx (<urn:bldg#AH1A_Final_Filter-in> <urn:bldg#AH1A_Heating_Coil-air-in>) .
+(<urn:bldg#AH1A_Isolation_Damper> <urn:bldg#AH1B_Isolation_Damper>) a <http://data.ashrae.org/standard223/1.0/extensions/g36#Damper> .
+(<urn:bldg#AH1A_Isolation_Damper> <urn:bldg#AH1B_Isolation_Damper>) a s223:Damper .
+(<urn:bldg#CAC-1_Cooling_Coil-water-in-pipe> <urn:bldg#CAC-2_Cooling_Coil-water-in-pipe>) s223:hasMedium s223:Fluid-Water .
+(<urn:bldg#CAC-1_Cooling_Coil-water-in-pipe> <urn:bldg#CAC-2_Cooling_Coil-water-in-pipe>) s223:cnx (<urn:bldg#Chilled_Water_Plant-junction-out-cp> <urn:bldg#Chilled_Water_System-junction-out-cp-1>) .
+(<urn:bldg#CAC-1_Cooling_Coil-water-in-pipe> <urn:bldg#CAC-2_Cooling_Coil-water-in-pipe>) s223:cnx (<urn:bldg#AH1A_Cooling_Coil-water-in> <urn:bldg#AH1A_Heating_Coil-water-in>) .
+(<urn:bldg#CAC-1_Cooling_Coil-water-in-pipe> <urn:bldg#CAC-2_Cooling_Coil-water-in-pipe>) a s223:Connection .
+(<urn:bldg#HWP1_VFD> <urn:bldg#HWP2_VFD>) s223:hasProperty (<urn:bldg#Energy_Rate> <urn:bldg#Energy_Rate_Device_57018>) .
+(<urn:bldg#HWP1_VFD> <urn:bldg#HWP2_VFD>) s223:hasProperty (<urn:bldg#TEST.ACTCHWDPSP> <urn:bldg#TEST.ACTCWDPSP>) .
+(<urn:bldg#HWP1_VFD> <urn:bldg#HWP2_VFD>) s223:hasProperty (<urn:bldg#bldg.AH1A.SF_VFD_DI_5_ACTUAL> <urn:bldg#bldg.AH1A.SF_VFD_DI_6_ACTUAL>) .
+(<urn:bldg#HWP1_VFD> <urn:bldg#HWP2_VFD>) a s223:VariableFrequencyDrive .
+(<urn:bldg#S1-01_VAV> <urn:bldg#S1-02_VAV>) s223:hasRole s223:Role-Heating .
+(<urn:bldg#S1-01_VAV> <urn:bldg#S1-02_VAV>) s223:hasProperty (<urn:bldg#bldg.S3-01_DMPR_ROT_ANG> <urn:bldg#bldg.S3-01_DUCT_AREA>) .
+(<urn:bldg#S1-01_VAV> <urn:bldg#S1-02_VAV>) s223:hasProperty (<urn:bldg#bldg.AH1A_TD1> <urn:bldg#bldg.AH1B_TD1>) .
+(<urn:bldg#S1-01_VAV> <urn:bldg#S1-02_VAV>) s223:hasProperty (<urn:bldg#Aux_Input_Total> <urn:bldg#Aux_Input_Total_Device_57018>) .
+(<urn:bldg#S1-01_VAV> <urn:bldg#S1-02_VAV>) s223:hasProperty (<urn:bldg#Energy_Rate> <urn:bldg#Energy_Rate_Device_57018>) .
+(<urn:bldg#S1-01_VAV> <urn:bldg#S1-02_VAV>) s223:hasProperty (<urn:bldg#bldg.S1-01_AI_3> <urn:bldg#bldg.S1-02_AI_3>) .
+(<urn:bldg#S1-01_VAV> <urn:bldg#S1-02_VAV>) s223:hasProperty (<urn:bldg#TEST.ACTCHWDPSP> <urn:bldg#TEST.ACTCWDPSP>) .
+(<urn:bldg#S1-01_VAV> <urn:bldg#S1-02_VAV>) s223:hasProperty (<urn:bldg#bldg.AH1A.SF_VFD_DI_5_ACTUAL> <urn:bldg#bldg.AH1A.SF_VFD_DI_6_ACTUAL>) .
+(<urn:bldg#S1-01_VAV> <urn:bldg#S1-02_VAV>) s223:contains (<urn:bldg#S1-01_Heating_Coil_Valve> <urn:bldg#S1-02_Heating_Coil_Valve>) .
+(<urn:bldg#S1-01_VAV> <urn:bldg#S1-02_VAV>) s223:contains (<urn:bldg#S1-01_Heating_Coil> <urn:bldg#S1-02_Heating_Coil>) .
+(<urn:bldg#S1-01_VAV> <urn:bldg#S1-02_VAV>) s223:contains (<urn:bldg#damper_0320bde8> <urn:bldg#damper_03599e20>) .
+(<urn:bldg#S1-01_VAV> <urn:bldg#S1-02_VAV>) s223:contains (<urn:bldg#EF1_Isolation_Damper> <urn:bldg#EF1_Outside_Damper>) .
+(<urn:bldg#S1-01_VAV> <urn:bldg#S1-02_VAV>) s223:cnx (<urn:bldg#S1-01_VAV_air-out> <urn:bldg#S1-02_VAV_air-out>) .
+(<urn:bldg#S1-01_VAV> <urn:bldg#S1-02_VAV>) s223:cnx (<urn:bldg#AH1A_Cooling_Coil-water-out> <urn:bldg#AH1A_Heating_Coil-water-out>) .
+(<urn:bldg#S1-01_VAV> <urn:bldg#S1-02_VAV>) s223:cnx (<urn:bldg#AH1A_Final_Filter-in> <urn:bldg#AH1A_Heating_Coil-air-in>) .
+(<urn:bldg#S1-01_VAV> <urn:bldg#S1-02_VAV>) s223:cnx (<urn:bldg#AH1A_Cooling_Coil-water-in> <urn:bldg#AH1A_Heating_Coil-water-in>) .
+(<urn:bldg#S1-01_VAV> <urn:bldg#S1-02_VAV>) a <http://data.ashrae.org/standard223/1.0/extensions/g36#VAVWithReheat> .
+(<urn:bldg#S1-01_VAV> <urn:bldg#S1-02_VAV>) a s223:SingleDuctTerminal .
+(<urn:bldg#AH2A-ea-out> <urn:bldg#AH2A-ra-in>) s223:hasRole s223:Role-Return .
+(<urn:bldg#AH2A-ea-out> <urn:bldg#AH2A-ra-in>) s223:hasRole s223:Role-Exhaust .
+(<urn:bldg#AH2A-ea-out> <urn:bldg#AH2A-ra-in>) s223:hasProperty rdfs:Resource .
+(<urn:bldg#reheat-coil-return-water-temp_01eceea5> <urn:bldg#reheat-coil-return-water-temp_0281d2af>) qudt:hasUnit unit:DEG_C .
+(<urn:bldg#reheat-coil-return-water-temp_01eceea5> <urn:bldg#reheat-coil-return-water-temp_0281d2af>) qudt:hasQuantityKind quantitykind:Temperature .
+(<urn:bldg#reheat-coil-return-water-temp_01eceea5> <urn:bldg#reheat-coil-return-water-temp_0281d2af>) a s223:QuantifiableObservableProperty .
+(<urn:bldg#bldg.AH1A.SF_VFD_DRV_ACT_DI_5>) qudt:hasUnit unit:PERCENT .
+(<urn:bldg#bldg.AH1A.SF_VFD_DRV_ACT_DI_5>) s223:hasRole s223:RunStatus-Unknown .
+(<urn:bldg#bldg.AH1A.SF_VFD_DRV_ACT_DI_5>) a s223:QuantifiableObservableProperty .
+(<urn:bldg#bldg.AH1A.SF_VFD_DRV_ACT_DI_1> <urn:bldg#bldg.AH1A.SF_VFD_DRV_ACT_DI_2>) qudt:hasUnit unit:UNITLESS .
+(<urn:bldg#bldg.AH1A.SF_VFD_DRV_ACT_DI_1> <urn:bldg#bldg.AH1A.SF_VFD_DRV_ACT_DI_2>) qudt:hasUnit unit:MegaW-HR .
+(<urn:bldg#bldg.AH1A.SF_VFD_DRV_ACT_DI_1> <urn:bldg#bldg.AH1A.SF_VFD_DRV_ACT_DI_2>) s223:hasRole s223:RunStatus-Unknown .
+(<urn:bldg#bldg.AH1A.SF_VFD_DRV_ACT_DI_1> <urn:bldg#bldg.AH1A.SF_VFD_DRV_ACT_DI_2>) a s223:QuantifiableObservableProperty .
+(<urn:bldg#bldg.AH1A.SF_VFD_CMD_STP.STRT> <urn:bldg#bldg.AH1A.SF_VFD_RUN_ENABLE>) qudt:hasUnit unit:UNITLESS .
+(<urn:bldg#bldg.AH1A.SF_VFD_CMD_STP.STRT> <urn:bldg#bldg.AH1A.SF_VFD_RUN_ENABLE>) s223:hasRole s223:Aspect-Command .
+(<urn:bldg#bldg.AH1A.SF_VFD_CMD_STP.STRT> <urn:bldg#bldg.AH1A.SF_VFD_RUN_ENABLE>) a s223:QuantifiableActuatableProperty .
+(<urn:bldg#CHP1> <urn:bldg#CHP2>) s223:hasRole s223:Role-Cooling .
+(<urn:bldg#CHP1> <urn:bldg#CHP2>) s223:hasProperty (<urn:bldg#Energy_Rate> <urn:bldg#Energy_Rate_Device_57018>) .
+(<urn:bldg#CHP1> <urn:bldg#CHP2>) s223:hasProperty (<urn:bldg#TEST.ACTCHWDPSP> <urn:bldg#TEST.ACTCWDPSP>) .
+(<urn:bldg#CHP1> <urn:bldg#CHP2>) s223:contains (<urn:bldg#AH1A_SF_VFD> <urn:bldg#AH1B_SF_VFD>) .
+(<urn:bldg#CHP1> <urn:bldg#CHP2>) a s223:Pump .
+(<urn:bldg#Chilled_Water_Plant-junction-out-cp> <urn:bldg#Chilled_Water_System-junction-out-cp-1>) s223:cnx (<urn:bldg#Chilled_Water_Plant-junction> <urn:bldg#Chilled_Water_System-junction>) .
+(<urn:bldg#Chilled_Water_Plant-junction-out-cp> <urn:bldg#Chilled_Water_System-junction-out-cp-1>) s223:cnx (<urn:bldg#CAC-1_Cooling_Coil-water-in-pipe> <urn:bldg#CAC-2_Cooling_Coil-water-in-pipe>) .
+(<urn:bldg#Chilled_Water_Plant-junction-out-cp> <urn:bldg#Chilled_Water_System-junction-out-cp-1>) a s223:OutletConnectionPoint .
+(<urn:bldg#266_RECEIVING>) s223:hasProperty (<urn:bldg#Energy_Rate> <urn:bldg#Energy_Rate_Device_57018>) .
+(<urn:bldg#266_RECEIVING>) s223:hasProperty (<urn:bldg#TEST.ACTCHWDPSP> <urn:bldg#TEST.ACTCWDPSP>) .
+(<urn:bldg#266_RECEIVING>) s223:encloses (<urn:bldg#131_Tele-Health_hvac_domain> <urn:bldg#132_MECH_STEAM_hvac_domain>) .
+(<urn:bldg#266_RECEIVING>) a s223:PhysicalSpace .
+(<urn:bldg#266_RECEIVING>) a s223:OutdoorPhysicalSpace .
+(<urn:bldg#S1-01_Heating_Coil> <urn:bldg#S1-02_Heating_Coil>) s223:hasRole s223:Role-Heating .
+(<urn:bldg#S1-01_Heating_Coil> <urn:bldg#S1-02_Heating_Coil>) s223:hasProperty (<urn:bldg#reheat-coil-return-water-temp_01eceea5> <urn:bldg#reheat-coil-return-water-temp_0281d2af>) .
+(<urn:bldg#S1-01_Heating_Coil> <urn:bldg#S1-02_Heating_Coil>) s223:hasProperty (<urn:bldg#TEST.ACTCHWDPSP> <urn:bldg#TEST.ACTCWDPSP>) .
+(<urn:bldg#S1-01_Heating_Coil> <urn:bldg#S1-02_Heating_Coil>) s223:contains (<urn:bldg#S1-01_Heating_Coil_Valve> <urn:bldg#S1-02_Heating_Coil_Valve>) .
+(<urn:bldg#S1-01_Heating_Coil> <urn:bldg#S1-02_Heating_Coil>) s223:cnx (<urn:bldg#S1-01_VAV_reheat-coil-water-out> <urn:bldg#S1-02_VAV_reheat-coil-water-out>) .
+(<urn:bldg#S1-01_Heating_Coil> <urn:bldg#S1-02_Heating_Coil>) s223:cnx (<urn:bldg#AH1A_Cooling_Coil-air-out> <urn:bldg#AH1A_Final_Filter-out>) .
+(<urn:bldg#S1-01_Heating_Coil> <urn:bldg#S1-02_Heating_Coil>) s223:cnx (<urn:bldg#S1-01_VAV_reheat-coil-water-in> <urn:bldg#S1-02_VAV_reheat-coil-water-in>) .
+(<urn:bldg#S1-01_Heating_Coil> <urn:bldg#S1-02_Heating_Coil>) s223:cnx (<urn:bldg#AH1A_Final_Filter-in> <urn:bldg#AH1A_Heating_Coil-air-in>) .
+(<urn:bldg#S1-01_Heating_Coil> <urn:bldg#S1-02_Heating_Coil>) a <http://data.ashrae.org/standard223/1.0/extensions/g36#HotWaterCoil> .
+(<urn:bldg#S1-01_Heating_Coil> <urn:bldg#S1-02_Heating_Coil>) a s223:HeatingCoil .
+(<urn:bldg#AH1A_Final_Filter> <urn:bldg#AH1A_Pre_Filter>) s223:hasProperty (<urn:bldg#Energy_Rate> <urn:bldg#Energy_Rate_Device_57018>) .
+(<urn:bldg#AH1A_Final_Filter> <urn:bldg#AH1A_Pre_Filter>) s223:cnx (<urn:bldg#AH1A_Cooling_Coil-air-out> <urn:bldg#AH1A_Final_Filter-out>) .
+(<urn:bldg#AH1A_Final_Filter> <urn:bldg#AH1A_Pre_Filter>) s223:cnx (<urn:bldg#AH1A_Final_Filter-in> <urn:bldg#AH1A_Heating_Coil-air-in>) .
+(<urn:bldg#AH1A_Final_Filter> <urn:bldg#AH1A_Pre_Filter>) s223:cnx (<urn:bldg#131_Tele-Health_hvac_domain_in> <urn:bldg#132_MECH_STEAM_hvac_domain_in>) .
+(<urn:bldg#AH1A_Final_Filter> <urn:bldg#AH1A_Pre_Filter>) a <http://data.ashrae.org/standard223/1.0/extensions/g36#Filter> .
+(<urn:bldg#AH1A_Final_Filter> <urn:bldg#AH1A_Pre_Filter>) a s223:Filter .
+(<urn:bldg#EF5> <urn:bldg#EF7>) s223:hasProperty (<urn:bldg#Energy_Rate> <urn:bldg#Energy_Rate_Device_57018>) .
+(<urn:bldg#EF5> <urn:bldg#EF7>) s223:hasProperty (<urn:bldg#TEST.ACTCHWDPSP> <urn:bldg#TEST.ACTCWDPSP>) .
+(<urn:bldg#EF5> <urn:bldg#EF7>) s223:contains (<urn:bldg#EF1_Isolation_Damper> <urn:bldg#EF1_Outside_Damper>) .
+(<urn:bldg#EF5> <urn:bldg#EF7>) a s223:Fan .
+(<urn:bldg#CT1_Fan> <urn:bldg#CT2_Fan>) s223:hasRole s223:Role-Cooling .
+(<urn:bldg#CT1_Fan> <urn:bldg#CT2_Fan>) s223:hasProperty (<urn:bldg#Aux_Input_Total> <urn:bldg#Aux_Input_Total_Device_57018>) .
+(<urn:bldg#CT1_Fan> <urn:bldg#CT2_Fan>) s223:hasProperty (<urn:bldg#Energy_Rate> <urn:bldg#Energy_Rate_Device_57018>) .
+(<urn:bldg#CT1_Fan> <urn:bldg#CT2_Fan>) s223:hasProperty (<urn:bldg#TEST.ACTCHWDPSP> <urn:bldg#TEST.ACTCWDPSP>) .
+(<urn:bldg#CT1_Fan> <urn:bldg#CT2_Fan>) s223:contains (<urn:bldg#AH1A_SF_VFD> <urn:bldg#AH1B_SF_VFD>) .
+(<urn:bldg#CT1_Fan> <urn:bldg#CT2_Fan>) s223:contains (<urn:bldg#EF1_Isolation_Damper> <urn:bldg#EF1_Outside_Damper>) .
+(<urn:bldg#CT1_Fan> <urn:bldg#CT2_Fan>) a s223:Fan .
+(<urn:bldg#131_Tele-Health_hvac_domain> <urn:bldg#132_MECH_STEAM_hvac_domain>) s223:hasDomain s223:Domain-HVAC .
+(<urn:bldg#131_Tele-Health_hvac_domain> <urn:bldg#132_MECH_STEAM_hvac_domain>) s223:cnx (<urn:bldg#131_Tele-Health_hvac_domain_out> <urn:bldg#132_MECH_STEAM_hvac_domain_out>) .
+(<urn:bldg#131_Tele-Health_hvac_domain> <urn:bldg#132_MECH_STEAM_hvac_domain>) s223:cnx (<urn:bldg#131_Tele-Health_hvac_domain_in> <urn:bldg#132_MECH_STEAM_hvac_domain_in>) .
+(<urn:bldg#131_Tele-Health_hvac_domain> <urn:bldg#132_MECH_STEAM_hvac_domain>) a s223:DomainSpace .
+(<urn:bldg#damper_0320bde8> <urn:bldg#damper_03599e20>) s223:hasProperty (<urn:bldg#damper-position_0187d5ef> <urn:bldg#damper-position_024a48c2>) .
+(<urn:bldg#damper_0320bde8> <urn:bldg#damper_03599e20>) s223:hasProperty (<urn:bldg#damper-command_0154248d> <urn:bldg#damper-command_019a4adc>) .
+(<urn:bldg#damper_0320bde8> <urn:bldg#damper_03599e20>) s223:cnx (<urn:bldg#AH1A_Cooling_Coil-air-out> <urn:bldg#AH1A_Final_Filter-out>) .
+(<urn:bldg#damper_0320bde8> <urn:bldg#damper_03599e20>) s223:cnx (<urn:bldg#AH1A_Final_Filter-in> <urn:bldg#AH1A_Heating_Coil-air-in>) .
+(<urn:bldg#damper_0320bde8> <urn:bldg#damper_03599e20>) a <http://data.ashrae.org/standard223/1.0/extensions/g36#Damper> .
+(<urn:bldg#damper_0320bde8> <urn:bldg#damper_03599e20>) a s223:Damper .
+(<urn:bldg#CH1-water-out-pipe> <urn:bldg#CH2-water-out-pipe>) s223:hasMedium s223:Fluid-Water .
+(<urn:bldg#CH1-water-out-pipe> <urn:bldg#CH2-water-out-pipe>) s223:cnx (<urn:bldg#Chilled_Water_Plant-junction-in-cp-1> <urn:bldg#Chilled_Water_Plant-junction-in-cp-2>) .
+(<urn:bldg#CH1-water-out-pipe> <urn:bldg#CH2-water-out-pipe>) a s223:Connection .
+(<urn:bldg#AH2A> <urn:bldg#AH2B>) s223:hasProperty (<urn:bldg#Aux_Input_Total> <urn:bldg#Aux_Input_Total_Device_57018>) .
+(<urn:bldg#AH2A> <urn:bldg#AH2B>) s223:hasProperty (<urn:bldg#Energy_Rate> <urn:bldg#Energy_Rate_Device_57018>) .
+(<urn:bldg#AH2A> <urn:bldg#AH2B>) s223:hasProperty (<urn:bldg#TEST.ACTCHWDPSP> <urn:bldg#TEST.ACTCWDPSP>) .
+(<urn:bldg#AH2A> <urn:bldg#AH2B>) s223:contains (<urn:bldg#AH1A_Final_Filter> <urn:bldg#AH1A_Pre_Filter>) .
+(<urn:bldg#AH2A> <urn:bldg#AH2B>) s223:contains (<urn:bldg#AH1A_Supply_Fan> <urn:bldg#AH1B_Supply_Fan>) .
+(<urn:bldg#AH2A> <urn:bldg#AH2B>) s223:contains (<urn:bldg#AH1A_Isolation_Damper> <urn:bldg#AH1B_Isolation_Damper>) .
+(<urn:bldg#AH2A> <urn:bldg#AH2B>) s223:contains (<urn:bldg#AH1A_Cooling_Coil> <urn:bldg#AH1B_Cooling_Coil>) .
+(<urn:bldg#AH2A> <urn:bldg#AH2B>) s223:cnx (<urn:bldg#AH2A-ea-out> <urn:bldg#AH2A-ra-in>) .
+(<urn:bldg#AH2A> <urn:bldg#AH2B>) s223:cnx (<urn:bldg#131_Tele-Health_hvac_domain_out> <urn:bldg#132_MECH_STEAM_hvac_domain_out>) .
+(<urn:bldg#AH2A> <urn:bldg#AH2B>) s223:cnx (<urn:bldg#131_Tele-Health_hvac_domain_in> <urn:bldg#132_MECH_STEAM_hvac_domain_in>) .
+(<urn:bldg#AH2A> <urn:bldg#AH2B>) a <http://data.ashrae.org/standard223/1.0/extensions/g36#MultipleZoneVAVAirHandlingUnit> .
+(<urn:bldg#AH2A> <urn:bldg#AH2B>) a s223:AirHandlingUnit .
+(<urn:bldg#AH1> <urn:bldg#AH1A>) s223:hasProperty (<urn:bldg#bldg.AH1A_TD1> <urn:bldg#bldg.AH1B_TD1>) .
+(<urn:bldg#AH1> <urn:bldg#AH1A>) s223:hasProperty (<urn:bldg#Aux_Input_Total> <urn:bldg#Aux_Input_Total_Device_57018>) .
+(<urn:bldg#AH1> <urn:bldg#AH1A>) s223:hasProperty (<urn:bldg#Energy_Rate> <urn:bldg#Energy_Rate_Device_57018>) .
+(<urn:bldg#AH1> <urn:bldg#AH1A>) s223:hasProperty (<urn:bldg#TEST.ACTCHWDPSP> <urn:bldg#TEST.ACTCWDPSP>) .
+(<urn:bldg#AH1> <urn:bldg#AH1A>) s223:contains (<urn:bldg#AH1A_Heating_Coil> <urn:bldg#AH1B_Heating_Coil>) .
+(<urn:bldg#AH1> <urn:bldg#AH1A>) s223:contains (<urn:bldg#AH1A_Final_Filter> <urn:bldg#AH1A_Pre_Filter>) .
+(<urn:bldg#AH1> <urn:bldg#AH1A>) s223:contains (<urn:bldg#AH1A_Supply_Fan> <urn:bldg#AH1B_Supply_Fan>) .
+(<urn:bldg#AH1> <urn:bldg#AH1A>) s223:contains (<urn:bldg#AH1A_Isolation_Damper> <urn:bldg#AH1B_Isolation_Damper>) .
+(<urn:bldg#AH1> <urn:bldg#AH1A>) s223:contains (<urn:bldg#AH1A_Cooling_Coil> <urn:bldg#AH1B_Cooling_Coil>) .
+(<urn:bldg#AH1> <urn:bldg#AH1A>) s223:contains (<urn:bldg#AH2A> <urn:bldg#AH2B>) .
+(<urn:bldg#AH1> <urn:bldg#AH1A>) s223:contains (<urn:bldg#AH1> <urn:bldg#AH1A>) .
+(<urn:bldg#AH1> <urn:bldg#AH1A>) s223:cnx (<urn:bldg#131_Tele-Health_hvac_domain_out> <urn:bldg#132_MECH_STEAM_hvac_domain_out>) .
+(<urn:bldg#AH1> <urn:bldg#AH1A>) s223:cnx (<urn:bldg#131_Tele-Health_hvac_domain_in> <urn:bldg#132_MECH_STEAM_hvac_domain_in>) .
+(<urn:bldg#AH1> <urn:bldg#AH1A>) a s223:AirHandlingUnit .
+(<urn:bldg#CAC-4_Cooling_Coil_Valve> <urn:bldg#CAC-5_Cooling_Coil_Valve>) s223:hasRole s223:Role-Supply .
+(<urn:bldg#CAC-4_Cooling_Coil_Valve> <urn:bldg#CAC-5_Cooling_Coil_Valve>) s223:hasRole s223:Role-Recirculating .
+(<urn:bldg#CAC-4_Cooling_Coil_Valve> <urn:bldg#CAC-5_Cooling_Coil_Valve>) s223:hasRole s223:Role-Cooling .
+(<urn:bldg#CAC-4_Cooling_Coil_Valve> <urn:bldg#CAC-5_Cooling_Coil_Valve>) s223:hasProperty (<urn:bldg#bldg.AH1A_TD1> <urn:bldg#bldg.AH1B_TD1>) .
+(<urn:bldg#CAC-4_Cooling_Coil_Valve> <urn:bldg#CAC-5_Cooling_Coil_Valve>) s223:hasProperty (<urn:bldg#Energy_Rate> <urn:bldg#Energy_Rate_Device_57018>) .
+(<urn:bldg#CAC-4_Cooling_Coil_Valve> <urn:bldg#CAC-5_Cooling_Coil_Valve>) s223:cnx (<urn:bldg#CH1_Condenser_Water_Loop-water-out> <urn:bldg#CH2_Condenser_Water_Loop-water-out>) .
+(<urn:bldg#CAC-4_Cooling_Coil_Valve> <urn:bldg#CAC-5_Cooling_Coil_Valve>) s223:cnx (<urn:bldg#CH1-water-in> <urn:bldg#CH1_Condenser_Water_Loop-water-in>) .
+(<urn:bldg#CAC-4_Cooling_Coil_Valve> <urn:bldg#CAC-5_Cooling_Coil_Valve>) a s223:Valve .
+(<urn:bldg#HX-1_water-out-pipe> <urn:bldg#HX-2_water-out-pipe>) s223:cnx (<urn:bldg#Chilled_Water_Plant-junction-in-cp-1> <urn:bldg#Chilled_Water_Plant-junction-in-cp-2>) .
+(<urn:bldg#ATS-E1> <urn:bldg#ATS-E2>) s223:hasProperty (<urn:bldg#Aux_Input_Total> <urn:bldg#Aux_Input_Total_Device_57018>) .
+(<urn:bldg#ATS-E1> <urn:bldg#ATS-E2>) s223:hasProperty (<urn:bldg#Energy_Rate> <urn:bldg#Energy_Rate_Device_57018>) .
+(<urn:bldg#ATS-E1> <urn:bldg#ATS-E2>) s223:hasProperty (<urn:bldg#TEST.ACTCHWDPSP> <urn:bldg#TEST.ACTCWDPSP>) .
+(<urn:bldg#ATS-E1> <urn:bldg#ATS-E2>) s223:hasProperty (<urn:bldg#Mode_1_Volume_Total> <urn:bldg#Mode_1_Volume_Total_Device_57018>) .
+(<urn:bldg#bldg.S3-01_DMPR_ROT_ANG> <urn:bldg#bldg.S3-01_DUCT_AREA>) qudt:hasUnit unit:PERCENT .
+(<urn:bldg#bldg.S3-01_DMPR_ROT_ANG> <urn:bldg#bldg.S3-01_DUCT_AREA>) qudt:hasUnit unit:MIN .
+(<urn:bldg#bldg.S3-01_DMPR_ROT_ANG> <urn:bldg#bldg.S3-01_DUCT_AREA>) qudt:hasUnit unit:HR .
+(<urn:bldg#bldg.S3-01_DMPR_ROT_ANG> <urn:bldg#bldg.S3-01_DUCT_AREA>) qudt:hasUnit unit:FT2 .
+(<urn:bldg#bldg.S3-01_DMPR_ROT_ANG> <urn:bldg#bldg.S3-01_DUCT_AREA>) qudt:hasUnit unit:DEG .
+(<urn:bldg#bldg.S3-01_DMPR_ROT_ANG> <urn:bldg#bldg.S3-01_DUCT_AREA>) s223:hasExternalReference (<urn:bschema-rs:skolem:a006d2c845dea1a509407c2743ca319> <urn:bschema-rs:skolem:a0135ff6f7aca4ebb85925b2a116c85d>) .
+(<urn:bldg#bldg.S3-01_DMPR_ROT_ANG> <urn:bldg#bldg.S3-01_DUCT_AREA>) a s223:QuantifiableProperty .
+(<urn:bldg#TEST.CHWDP1ERR> <urn:bldg#TEST.CHWDP2ERR>) qudt:hasUnit unit:SEC .
+(<urn:bldg#TEST.CHWDP1ERR> <urn:bldg#TEST.CHWDP2ERR>) qudt:hasUnit unit:PERCENT .
+(<urn:bldg#TEST.CHWDP1ERR> <urn:bldg#TEST.CHWDP2ERR>) qudt:hasUnit unit:LB_F-PER-IN2 .
+(<urn:bldg#TEST.CHWDP1ERR> <urn:bldg#TEST.CHWDP2ERR>) qudt:hasUnit unit:HR .
+(<urn:bldg#TEST.CHWDP1ERR> <urn:bldg#TEST.CHWDP2ERR>) qudt:hasUnit unit:DEG_F .
+(<urn:bldg#TEST.CHWDP1ERR> <urn:bldg#TEST.CHWDP2ERR>) s223:hasExternalReference (<urn:bschema-rs:skolem:a006d2c845dea1a509407c2743ca319> <urn:bschema-rs:skolem:a0135ff6f7aca4ebb85925b2a116c85d>) .
+(<urn:bldg#TEST.CHWDP1ERR> <urn:bldg#TEST.CHWDP2ERR>) a s223:QuantifiableProperty .
+(<urn:bldg#reheat-coil-valve-position_0c51efe3> <urn:bldg#reheat-coil-valve-position_1500e243>) qudt:hasUnit unit:PERCENT .
+(<urn:bldg#reheat-coil-valve-position_0c51efe3> <urn:bldg#reheat-coil-valve-position_1500e243>) qudt:hasQuantityKind quantitykind:DimensionlessRatio .
+(<urn:bldg#reheat-coil-valve-position_0c51efe3> <urn:bldg#reheat-coil-valve-position_1500e243>) a s223:QuantifiableObservableProperty .
+(<urn:bldg#damper-position_0187d5ef> <urn:bldg#damper-position_024a48c2>) qudt:hasUnit unit:PERCENT .
+(<urn:bldg#damper-position_0187d5ef> <urn:bldg#damper-position_024a48c2>) qudt:hasQuantityKind quantitykind:DimensionlessRatio .
+(<urn:bldg#damper-position_0187d5ef> <urn:bldg#damper-position_024a48c2>) a s223:QuantifiableObservableProperty .
+(<urn:bldg#HWP1> <urn:bldg#HWP2>) s223:hasRole s223:Role-Heating .
+(<urn:bldg#HWP1> <urn:bldg#HWP2>) s223:contains (<urn:bldg#HWP1_VFD> <urn:bldg#HWP2_VFD>) .
+(<urn:bldg#HWP1> <urn:bldg#HWP2>) a s223:Pump .
+(<urn:bldg#bldg.MDC.CAC01_HUM_DB_CMD> <urn:bldg#bldg.MDC.CAC01_LO_DITPLM_CD>) qudt:hasUnit unit:SEC .
+(<urn:bldg#bldg.MDC.CAC01_HUM_DB_CMD> <urn:bldg#bldg.MDC.CAC01_LO_DITPLM_CD>) qudt:hasUnit unit:PERCENT .
+(<urn:bldg#bldg.MDC.CAC01_HUM_DB_CMD> <urn:bldg#bldg.MDC.CAC01_LO_DITPLM_CD>) qudt:hasUnit unit:DEG_F .
+(<urn:bldg#bldg.MDC.CAC01_HUM_DB_CMD> <urn:bldg#bldg.MDC.CAC01_LO_DITPLM_CD>) s223:hasExternalReference (<urn:bschema-rs:skolem:a006d2c845dea1a509407c2743ca319> <urn:bschema-rs:skolem:a0135ff6f7aca4ebb85925b2a116c85d>) .
+(<urn:bldg#bldg.MDC.CAC01_HUM_DB_CMD> <urn:bldg#bldg.MDC.CAC01_LO_DITPLM_CD>) a s223:Property .
+(<urn:bschema-rs:skolem:a006d6b7041de52f6d6b8b4ffe1f1277> <urn:bschema-rs:skolem:a0de92e808b90c368a0f9d988b79e744>) bacnet:storedAt ("2cH8UkCT5723" "3VVRBXJH12758") .
+(<urn:bschema-rs:skolem:a006d6b7041de52f6d6b8b4ffe1f1277> <urn:bschema-rs:skolem:a0de92e808b90c368a0f9d988b79e744>) a bacnet:Port .
+(<urn:bldg#3M_Fab_Chemical/Gas_Vault> <urn:bldg#5M_Fab_Chemical/Gas_Vault>) s223:contains (<urn:bldg#3M_Fab_Chemical/Gas_Vault> <urn:bldg#5M_Fab_Chemical/Gas_Vault>) .
+(<urn:bldg#3M_Fab_Chemical/Gas_Vault> <urn:bldg#5M_Fab_Chemical/Gas_Vault>) s223:contains (<urn:bldg#131_Tele-Health> <urn:bldg#132_MECH_STEAM>) .
+(<urn:bldg#3M_Fab_Chemical/Gas_Vault> <urn:bldg#5M_Fab_Chemical/Gas_Vault>) a s223:PhysicalSpace .
+("2cH8UkCT5723" "3VVRBXJH12758") a rdfs:Literal .
+(<urn:bldg#HX-1_steam-in> <urn:bldg#HX-2_steam-in>) s223:hasMedium s223:Water-Steam .
+(<urn:bldg#HX-1_steam-in> <urn:bldg#HX-2_steam-in>) s223:cnx (<urn:bldg#HX-1_steam-in-pipe> <urn:bldg#HX-2_steam-in-pipe>) .
+(<urn:bldg#HX-1_steam-in> <urn:bldg#HX-2_steam-in>) a s223:InletConnectionPoint .
+(<urn:bldg#FCU-1>) s223:hasProperty (<urn:bldg#Energy_Rate> <urn:bldg#Energy_Rate_Device_57018>) .
+(<urn:bldg#FCU-1>) s223:hasProperty (<urn:bldg#TEST.ACTCHWDPSP> <urn:bldg#TEST.ACTCWDPSP>) .
+(<urn:bldg#FCU-1>) s223:contains (<urn:bldg#EF5> <urn:bldg#EF7>) .
+(<urn:bldg#FCU-1>) s223:contains (<urn:bldg#AH1A_Cooling_Coil> <urn:bldg#AH1B_Cooling_Coil>) .
+(<urn:bldg#FCU-1>) a s223:FanCoilUnit .
+(<urn:bldg#AH1_Generator> <urn:bldg#CAC-1>) s223:hasRole s223:Role-Supply .
+(<urn:bldg#AH1_Generator> <urn:bldg#CAC-1>) s223:hasRole s223:Role-Recirculating .
+(<urn:bldg#AH1_Generator> <urn:bldg#CAC-1>) s223:hasRole s223:Role-Heating .
+(<urn:bldg#AH1_Generator> <urn:bldg#CAC-1>) s223:hasRole s223:Role-Cooling .
+(<urn:bldg#AH1_Generator> <urn:bldg#CAC-1>) s223:hasProperty (<urn:bldg#TEST.CHWDP1ERR> <urn:bldg#TEST.CHWDP2ERR>) .
+(<urn:bldg#AH1_Generator> <urn:bldg#CAC-1>) s223:hasProperty (<urn:bldg#Aux_Input_Total> <urn:bldg#Aux_Input_Total_Device_57018>) .
+(<urn:bldg#AH1_Generator> <urn:bldg#CAC-1>) s223:hasProperty (<urn:bldg#Energy_Rate> <urn:bldg#Energy_Rate_Device_57018>) .
+(<urn:bldg#AH1_Generator> <urn:bldg#CAC-1>) s223:hasProperty (<urn:bldg#TEST.ACTCHWDPSP> <urn:bldg#TEST.ACTCWDPSP>) .
+(<urn:bldg#AH1_Generator> <urn:bldg#CAC-1>) s223:hasProperty (<urn:bldg#bldg.MDC.CAC01_HUM_DB_CMD> <urn:bldg#bldg.MDC.CAC01_LO_DITPLM_CD>) .
+(<urn:bldg#AH1_Generator> <urn:bldg#CAC-1>) s223:hasProperty (<urn:bldg#bldg.AH1A.SF_VFD_DI_5_ACTUAL> <urn:bldg#bldg.AH1A.SF_VFD_DI_6_ACTUAL>) .
+(<urn:bldg#AH1_Generator> <urn:bldg#CAC-1>) s223:hasProperty (<urn:bldg#Mode_1_Volume_Total> <urn:bldg#Mode_1_Volume_Total_Device_57018>) .
+(<urn:bldg#AH1_Generator> <urn:bldg#CAC-1>) s223:contains (<urn:bldg#CAC-4_Cooling_Coil_Valve> <urn:bldg#CAC-5_Cooling_Coil_Valve>) .
+(<urn:bldg#AH1_Generator> <urn:bldg#CAC-1>) s223:contains (<urn:bldg#AH1A_Cooling_Coil_Valve> <urn:bldg#AH1A_Heating_Coil_Valve>) .
+(<urn:bldg#AH1_Generator> <urn:bldg#CAC-1>) s223:contains (<urn:bldg#HWP1> <urn:bldg#HWP2>) .
+(<urn:bldg#AH1_Generator> <urn:bldg#CAC-1>) s223:contains (<urn:bldg#CHP1> <urn:bldg#CHP2>) .
+(<urn:bldg#AH1_Generator> <urn:bldg#CAC-1>) s223:contains (<urn:bldg#AH1A_Cooling_Coil> <urn:bldg#AH1B_Cooling_Coil>) .
+(<urn:bldg#AH1_Generator> <urn:bldg#CAC-1>) s223:cnx (<urn:bldg#CH1_Condenser_Water_Loop-water-out> <urn:bldg#CH2_Condenser_Water_Loop-water-out>) .
+(<urn:bldg#AH1_Generator> <urn:bldg#CAC-1>) s223:cnx (<urn:bldg#CH1-water-out> <urn:bldg#CH2-water-out>) .
+(<urn:bldg#AH1_Generator> <urn:bldg#CAC-1>) s223:cnx (<urn:bldg#Chilled_Water_System-water-in> <urn:bldg#MDF_Chilled_Water_Loop-water-in>) .
+(<urn:bldg#AH1_Generator> <urn:bldg#CAC-1>) s223:cnx (<urn:bldg#CH1-water-in> <urn:bldg#CH1_Condenser_Water_Loop-water-in>) .
+(<urn:bldg#AH1_Generator> <urn:bldg#CAC-1>) a s223:Equipment .
+(<urn:bldg#CH1_Condenser_Water_Loop-water-out-pipe> <urn:bldg#CH2_Condenser_Water_Loop-water-out-pipe>) s223:hasMedium s223:Fluid-Water .
+(<urn:bldg#CH1_Condenser_Water_Loop-water-out-pipe> <urn:bldg#CH2_Condenser_Water_Loop-water-out-pipe>) a s223:Connection .
+(<urn:bldg#CH1-water-in-pipe> <urn:bldg#CH1_Condenser_Water_Loop-water-in-pipe>) s223:hasMedium s223:Fluid-Water .
+(<urn:bldg#CH1-water-in-pipe> <urn:bldg#CH1_Condenser_Water_Loop-water-in-pipe>) a s223:Connection .
+(<urn:bldg#CAC-1_Cooling_Coil-water-out-pipe> <urn:bldg#CAC-2_Cooling_Coil-water-out-pipe>) s223:hasMedium s223:Fluid-Water .
+(<urn:bldg#CAC-1_Cooling_Coil-water-out-pipe> <urn:bldg#CAC-2_Cooling_Coil-water-out-pipe>) s223:cnx (<urn:bldg#AH1A_Cooling_Coil-air-out> <urn:bldg#AH1A_Final_Filter-out>) .
+(<urn:bldg#CAC-1_Cooling_Coil-water-out-pipe> <urn:bldg#CAC-2_Cooling_Coil-water-out-pipe>) a s223:Connection .
+(<urn:bldg#131_Tele-Health_hvac_domain_out_connection> <urn:bldg#132_MECH_STEAM_hvac_domain_out_connection>) s223:hasMedium s223:Fluid-Air .
+(<urn:bldg#131_Tele-Health_hvac_domain_out_connection> <urn:bldg#132_MECH_STEAM_hvac_domain_out_connection>) s223:cnx (<urn:bldg#131_Tele-Health_hvac_domain_out> <urn:bldg#132_MECH_STEAM_hvac_domain_out>) .
+(<urn:bldg#131_Tele-Health_hvac_domain_out_connection> <urn:bldg#132_MECH_STEAM_hvac_domain_out_connection>) a s223:Connection .
+(<urn:bldg#HX-1_steam-in-pipe> <urn:bldg#HX-2_steam-in-pipe>) s223:hasMedium s223:Water-Steam .
+(<urn:bldg#HX-1_steam-in-pipe> <urn:bldg#HX-2_steam-in-pipe>) a s223:Connection .
+(<urn:bldg#CHM-1-water-out-pipe> <urn:bldg#CHM-2-water-out-pipe>) s223:hasMedium s223:Fluid-Water .
+(<urn:bldg#CHM-1-water-out-pipe> <urn:bldg#CHM-2-water-out-pipe>) a s223:Connection .
+(<urn:bldg#131_Tele-Health_hvac_domain_in_connection> <urn:bldg#132_MECH_STEAM_hvac_domain_in_connection>) s223:hasMedium s223:Fluid-Air .
+(<urn:bldg#131_Tele-Health_hvac_domain_in_connection> <urn:bldg#132_MECH_STEAM_hvac_domain_in_connection>) s223:cnx (<urn:bldg#131_Tele-Health_hvac_domain_in> <urn:bldg#132_MECH_STEAM_hvac_domain_in>) .
+(<urn:bldg#131_Tele-Health_hvac_domain_in_connection> <urn:bldg#132_MECH_STEAM_hvac_domain_in_connection>) a s223:Connection .
+(<urn:bldg#CH2_Compressor>) s223:hasProperty (<urn:bldg#Energy_Rate> <urn:bldg#Energy_Rate_Device_57018>) .
+(<urn:bldg#CH2_Compressor>) a s223:Compressor .
+(<urn:bldg#CH1> <urn:bldg#CH2>) s223:hasRole s223:Role-Supply .
+(<urn:bldg#CH1> <urn:bldg#CH2>) s223:hasRole s223:Role-Recirculating .
+(<urn:bldg#CH1> <urn:bldg#CH2>) s223:hasRole s223:Role-Cooling .
+(<urn:bldg#CH1> <urn:bldg#CH2>) s223:hasProperty (<urn:bldg#Aux_Input_Total> <urn:bldg#Aux_Input_Total_Device_57018>) .
+(<urn:bldg#CH1> <urn:bldg#CH2>) s223:hasProperty (<urn:bldg#Energy_Rate> <urn:bldg#Energy_Rate_Device_57018>) .
+(<urn:bldg#CH1> <urn:bldg#CH2>) s223:hasProperty (<urn:bldg#TEST.ACTCHWDPSP> <urn:bldg#TEST.ACTCWDPSP>) .
+(<urn:bldg#CH1> <urn:bldg#CH2>) s223:contains (<urn:bldg#CH2_Compressor>) .
+(<urn:bldg#CH1> <urn:bldg#CH2>) s223:cnx (<urn:bldg#CH1-water-out> <urn:bldg#CH2-water-out>) .
+(<urn:bldg#CH1> <urn:bldg#CH2>) s223:cnx (<urn:bldg#CH1-water-in> <urn:bldg#CH1_Condenser_Water_Loop-water-in>) .
+(<urn:bldg#CH1> <urn:bldg#CH2>) a s223:Chiller .
+(<urn:bldg#4FsOfbEa2841> <urn:bldg#5wSA7AlJ2418>) bacnet:hasPort (<urn:bschema-rs:skolem:a006d6b7041de52f6d6b8b4ffe1f1277> <urn:bschema-rs:skolem:a0de92e808b90c368a0f9d988b79e744>) .
+(<urn:bldg#4FsOfbEa2841> <urn:bldg#5wSA7AlJ2418>) bacnet:device-instance rdfs:Resource .
+(<urn:bldg#4FsOfbEa2841> <urn:bldg#5wSA7AlJ2418>) a bacnet:BACnetDevice .
+(<urn:bldg#reheat-coil-return-water-temp-sensor_02087ad4> <urn:bldg#reheat-coil-return-water-temp-sensor_0323c146>) s223:observes (<urn:bldg#reheat-coil-return-water-temp_01eceea5> <urn:bldg#reheat-coil-return-water-temp_0281d2af>) .
+(<urn:bldg#reheat-coil-return-water-temp-sensor_02087ad4> <urn:bldg#reheat-coil-return-water-temp-sensor_0323c146>) s223:hasObservationLocation (<urn:bldg#S1-01_VAV_reheat-coil-water-out> <urn:bldg#S1-02_VAV_reheat-coil-water-out>) .
+(<urn:bldg#reheat-coil-return-water-temp-sensor_02087ad4> <urn:bldg#reheat-coil-return-water-temp-sensor_0323c146>) s223:hasObservationLocation (<urn:bldg#S1-01_VAV_reheat-coil-water-in> <urn:bldg#S1-02_VAV_reheat-coil-water-in>) .
+(<urn:bldg#reheat-coil-return-water-temp-sensor_02087ad4> <urn:bldg#reheat-coil-return-water-temp-sensor_0323c146>) a s223:Sensor .
+(<urn:bldg#discharge-air-flow-sensor_2b0900ab> <urn:bldg#discharge-air-flow-sensor_d7ad10f6>) s223:observes (<urn:bldg#discharge-air-flow_50184025> <urn:bldg#discharge-air-flow_84aa4072>) .
+(<urn:bldg#discharge-air-flow-sensor_2b0900ab> <urn:bldg#discharge-air-flow-sensor_d7ad10f6>) s223:hasObservationLocation (<urn:bldg#AH1A_Final_Filter-in> <urn:bldg#AH1A_Heating_Coil-air-in>) .
+(<urn:bldg#discharge-air-flow-sensor_2b0900ab> <urn:bldg#discharge-air-flow-sensor_d7ad10f6>) a s223:Sensor .
+(<urn:bldg#bldg.SW.MSA.MAIN.PWR_REAL_3_P_Sensor> <urn:bldg#bldg.SW.MSB.MAIN.PWR_REAL_3_P_Sensor>) s223:observes (<urn:bldg#bldg.SW.MSA.MAIN.PWR_REAL_3_P> <urn:bldg#bldg.SW.MSA_B.MAIN.PWR_REAL_3_P>) .
+(<urn:bldg#bldg.SW.MSA.MAIN.PWR_REAL_3_P_Sensor> <urn:bldg#bldg.SW.MSB.MAIN.PWR_REAL_3_P_Sensor>) a s223:Sensor .
+(<urn:bldg#bldg.S1-01_AI_3_Sensor> <urn:bldg#bldg.S1-02_AI_3_Sensor>) s223:observes (<urn:bldg#discharge-air-flow_50184025> <urn:bldg#discharge-air-flow_84aa4072>) .
+(<urn:bldg#bldg.S1-01_AI_3_Sensor> <urn:bldg#bldg.S1-02_AI_3_Sensor>) s223:observes (<urn:bldg#bldg.S1-01_AI_3> <urn:bldg#bldg.S1-02_AI_3>) .
+(<urn:bldg#bldg.S1-01_AI_3_Sensor> <urn:bldg#bldg.S1-02_AI_3_Sensor>) s223:hasObservationLocation (<urn:bldg#S1-01_VAV_air-out> <urn:bldg#S1-02_VAV_air-out>) .
+(<urn:bldg#bldg.S1-01_AI_3_Sensor> <urn:bldg#bldg.S1-02_AI_3_Sensor>) a s223:Sensor .
+(<urn:bldg#bldg.AH1A.SF_VFD_DRV_ACT_DI_5_Sensor>) s223:observes (<urn:bldg#bldg.AH1A.SF_VFD_DRV_ACT_DI_5>) .
+(<urn:bldg#bldg.AH1A.SF_VFD_DRV_ACT_DI_5_Sensor>) a s223:Sensor .
+(<urn:bldg#bldg.AH1A.SF_VFD_DRV_ACT_DI_1_Sensor> <urn:bldg#bldg.AH1A.SF_VFD_DRV_ACT_DI_2_Sensor>) s223:observes (<urn:bldg#bldg.AH1A.SF_VFD_DRV_ACT_DI_1> <urn:bldg#bldg.AH1A.SF_VFD_DRV_ACT_DI_2>) .
+(<urn:bldg#bldg.AH1A.SF_VFD_DRV_ACT_DI_1_Sensor> <urn:bldg#bldg.AH1A.SF_VFD_DRV_ACT_DI_2_Sensor>) a s223:Sensor .
+(<urn:bldg#Condenser_Blowdown_Meter> <urn:bldg#Condenser_Make_Up_Meter>) s223:observes (<urn:bldg#Energy_Rate> <urn:bldg#Energy_Rate_Device_57018>) .
+(<urn:bldg#Condenser_Blowdown_Meter> <urn:bldg#Condenser_Make_Up_Meter>) s223:hasRole s223:Role-Cooling .
+(<urn:bldg#Condenser_Blowdown_Meter> <urn:bldg#Condenser_Make_Up_Meter>) s223:hasProperty (<urn:bldg#Aux_Input_Total> <urn:bldg#Aux_Input_Total_Device_57018>) .
+(<urn:bldg#Condenser_Blowdown_Meter> <urn:bldg#Condenser_Make_Up_Meter>) s223:hasProperty (<urn:bldg#Energy_Rate> <urn:bldg#Energy_Rate_Device_57018>) .
+(<urn:bldg#Condenser_Blowdown_Meter> <urn:bldg#Condenser_Make_Up_Meter>) s223:hasProperty (<urn:bldg#Mode_1_Volume_Total> <urn:bldg#Mode_1_Volume_Total_Device_57018>) .
+(<urn:bldg#Condenser_Blowdown_Meter> <urn:bldg#Condenser_Make_Up_Meter>) s223:hasObservationLocation (<urn:bldg#131_Tele-Health> <urn:bldg#132_MECH_STEAM>) .
+(<urn:bldg#Condenser_Blowdown_Meter> <urn:bldg#Condenser_Make_Up_Meter>) s223:hasObservationLocation (<urn:bldg#S1-01_VAV_air-out> <urn:bldg#S1-02_VAV_air-out>) .
+(<urn:bldg#Condenser_Blowdown_Meter> <urn:bldg#Condenser_Make_Up_Meter>) s223:hasObservationLocation (<urn:bldg#266_RECEIVING>) .
+(<urn:bldg#Condenser_Blowdown_Meter> <urn:bldg#Condenser_Make_Up_Meter>) s223:hasObservationLocation (<urn:bldg#AH1A_Final_Filter-in> <urn:bldg#AH1A_Heating_Coil-air-in>) .
+(<urn:bldg#Condenser_Blowdown_Meter> <urn:bldg#Condenser_Make_Up_Meter>) a s223:Sensor .
+(<urn:bldg#rs-junction_78ca82f5> <urn:bldg#rs-junction_b4e9971d>) s223:cnx (<urn:bldg#AH1A_Cooling_Coil-air-out> <urn:bldg#AH1A_Final_Filter-out>) .
+(<urn:bldg#rs-junction_78ca82f5> <urn:bldg#rs-junction_b4e9971d>) s223:cnx (<urn:bldg#AH1A_Final_Filter-in> <urn:bldg#AH1A_Heating_Coil-air-in>) .
+(<urn:bldg#rs-junction_78ca82f5> <urn:bldg#rs-junction_b4e9971d>) a s223:Junction .
+(<urn:bldg#CAC-1_Heating_Coil> <urn:bldg#CAC-2_Heating_Coil>) s223:hasRole s223:Role-Heating .
+(<urn:bldg#CAC-1_Heating_Coil> <urn:bldg#CAC-2_Heating_Coil>) s223:contains (<urn:bldg#AH1A_Cooling_Coil_Valve> <urn:bldg#AH1A_Heating_Coil_Valve>) .
+(<urn:bldg#CAC-1_Heating_Coil> <urn:bldg#CAC-2_Heating_Coil>) a s223:HeatingCoil .
+(<urn:bldg#HX-1> <urn:bldg#HX-2>) s223:hasRole s223:Role-Supply .
+(<urn:bldg#HX-1> <urn:bldg#HX-2>) s223:hasRole s223:Role-Recirculating .
+(<urn:bldg#HX-1> <urn:bldg#HX-2>) s223:hasRole s223:Role-Heating .
+(<urn:bldg#HX-1> <urn:bldg#HX-2>) s223:hasProperty (<urn:bldg#Energy_Rate> <urn:bldg#Energy_Rate_Device_57018>) .
+(<urn:bldg#HX-1> <urn:bldg#HX-2>) s223:contains (<urn:bldg#AH1A_Cooling_Coil_Valve> <urn:bldg#AH1A_Heating_Coil_Valve>) .
+(<urn:bldg#HX-1> <urn:bldg#HX-2>) s223:cnx (<urn:bldg#CH1_Condenser_Water_Loop-water-out> <urn:bldg#CH2_Condenser_Water_Loop-water-out>) .
+(<urn:bldg#HX-1> <urn:bldg#HX-2>) s223:cnx (<urn:bldg#HX-1_steam-in> <urn:bldg#HX-2_steam-in>) .
+(<urn:bldg#HX-1> <urn:bldg#HX-2>) s223:cnx (<urn:bldg#Chilled_Water_System-water-in> <urn:bldg#MDF_Chilled_Water_Loop-water-in>) .
+(<urn:bldg#HX-1> <urn:bldg#HX-2>) s223:cnx (<urn:bldg#CH1-water-in> <urn:bldg#CH1_Condenser_Water_Loop-water-in>) .
+(<urn:bldg#HX-1> <urn:bldg#HX-2>) a s223:HeatExchanger .
+(<urn:bldg#Naval_Building_Water_Loop> <urn:bldg#Office_HVAC_Equip_Water_Loop>) s223:hasRole s223:Role-Supply .
+(<urn:bldg#Naval_Building_Water_Loop> <urn:bldg#Office_HVAC_Equip_Water_Loop>) s223:hasRole s223:Role-Recirculating .
+(<urn:bldg#Naval_Building_Water_Loop> <urn:bldg#Office_HVAC_Equip_Water_Loop>) s223:hasRole s223:Role-Cooling .
+(<urn:bldg#Naval_Building_Water_Loop> <urn:bldg#Office_HVAC_Equip_Water_Loop>) s223:cnx (<urn:bldg#CH1_Condenser_Water_Loop-water-out> <urn:bldg#CH2_Condenser_Water_Loop-water-out>) .
+(<urn:bldg#Naval_Building_Water_Loop> <urn:bldg#Office_HVAC_Equip_Water_Loop>) s223:cnx (<urn:bldg#CH1-water-out> <urn:bldg#CH2-water-out>) .
+(<urn:bldg#Naval_Building_Water_Loop> <urn:bldg#Office_HVAC_Equip_Water_Loop>) s223:cnx (<urn:bldg#Chilled_Water_System-water-in> <urn:bldg#MDF_Chilled_Water_Loop-water-in>) .
+(<urn:bldg#Naval_Building_Water_Loop> <urn:bldg#Office_HVAC_Equip_Water_Loop>) a s223:Equipment .
+(<urn:bldg#MSA_ATS-E1> <urn:bldg#MSA_ATS-ES>) s223:hasProperty (<urn:bldg#Energy_Rate> <urn:bldg#Energy_Rate_Device_57018>) .
+(<urn:bldg#MSA_ATS-E1> <urn:bldg#MSA_ATS-ES>) s223:hasProperty (<urn:bldg#bldg.SW.MSA.MAIN.PWR_REAL_3_P> <urn:bldg#bldg.SW.MSA_B.MAIN.PWR_REAL_3_P>) .
+(<urn:bldg#MSA_ATS-E1> <urn:bldg#MSA_ATS-ES>) a s223:ElectricMeter .
+(<urn:bldg#ATS-ES_ESCD4RA> <urn:bldg#CB4A_CR26A>) s223:hasProperty (<urn:bldg#Energy_Rate> <urn:bldg#Energy_Rate_Device_57018>) .
+(<urn:bldg#ATS-ES_ESCD4RA> <urn:bldg#CB4A_CR26A>) a s223:ElectricBreaker .
+(<urn:bldg#AH2A_Return_Fan-in-duct> <urn:bldg#AH2B_Return_Fan-in-duct>) a s223:Duct .
+(<urn:bldg#CT1> <urn:bldg#CT2>) s223:hasRole s223:Role-Cooling .
+(<urn:bldg#CT1> <urn:bldg#CT2>) s223:hasProperty (<urn:bldg#Energy_Rate> <urn:bldg#Energy_Rate_Device_57018>) .
+(<urn:bldg#CT1> <urn:bldg#CT2>) s223:contains (<urn:bldg#CT1_Fan> <urn:bldg#CT2_Fan>) .
+(<urn:bldg#CT1> <urn:bldg#CT2>) a s223:CoolingTower .
+(<urn:bldg#damper-actuator_00253312> <urn:bldg#damper-actuator_02a6d8bf>) s223:actuates (<urn:bldg#S1-01_Heating_Coil_Valve> <urn:bldg#S1-02_Heating_Coil_Valve>) .
+(<urn:bldg#damper-actuator_00253312> <urn:bldg#damper-actuator_02a6d8bf>) s223:actuates (<urn:bldg#damper_0320bde8> <urn:bldg#damper_03599e20>) .
+(<urn:bldg#damper-actuator_00253312> <urn:bldg#damper-actuator_02a6d8bf>) s223:actuatedByProperty (<urn:bldg#damper-command_0154248d> <urn:bldg#damper-command_019a4adc>) .
+(<urn:bldg#damper-actuator_00253312> <urn:bldg#damper-actuator_02a6d8bf>) a s223:Actuator .
+(<urn:bldg#bldg.S7-01_CTL_TEMP_Actuator> <urn:bldg#bldg.S7-02_CTL_TEMP_Actuator>) s223:actuates (<urn:bldg#S1-01_Heating_Coil_Valve> <urn:bldg#S1-02_Heating_Coil_Valve>) .
+(<urn:bldg#bldg.S7-01_CTL_TEMP_Actuator> <urn:bldg#bldg.S7-02_CTL_TEMP_Actuator>) s223:actuates (<urn:bldg#S1-01_VAV> <urn:bldg#S1-02_VAV>) .
+(<urn:bldg#bldg.S7-01_CTL_TEMP_Actuator> <urn:bldg#bldg.S7-02_CTL_TEMP_Actuator>) s223:actuatedByProperty (<urn:bldg#bldg.S1-01_AI_3> <urn:bldg#bldg.S1-02_AI_3>) .
+(<urn:bldg#bldg.S7-01_CTL_TEMP_Actuator> <urn:bldg#bldg.S7-02_CTL_TEMP_Actuator>) a s223:Actuator .
+(<urn:bldg#bldg.AH1A.SF_VFD_CMD_STP.STRT_Actuator> <urn:bldg#bldg.AH1A.SF_VFD_RUN_ENABLE_Actuator>) s223:actuates (<urn:bldg#AH1A_SF_VFD> <urn:bldg#AH1B_SF_VFD>) .
+(<urn:bldg#bldg.AH1A.SF_VFD_CMD_STP.STRT_Actuator> <urn:bldg#bldg.AH1A.SF_VFD_RUN_ENABLE_Actuator>) s223:actuatedByProperty (<urn:bldg#bldg.AH1A.SF_VFD_CMD_STP.STRT> <urn:bldg#bldg.AH1A.SF_VFD_RUN_ENABLE>) .
+(<urn:bldg#bldg.AH1A.SF_VFD_CMD_STP.STRT_Actuator> <urn:bldg#bldg.AH1A.SF_VFD_RUN_ENABLE_Actuator>) a s223:Actuator .
+(<urn:bldg#TEST.ACTCHWDPSP_Actuator> <urn:bldg#TEST.ACTCWDPSP_Actuator>) s223:actuates (<urn:bldg#HWP1_VFD> <urn:bldg#HWP2_VFD>) .
+(<urn:bldg#TEST.ACTCHWDPSP_Actuator> <urn:bldg#TEST.ACTCWDPSP_Actuator>) s223:actuates (<urn:bldg#AH1A_SF_VFD> <urn:bldg#AH1B_SF_VFD>) .
+(<urn:bldg#TEST.ACTCHWDPSP_Actuator> <urn:bldg#TEST.ACTCWDPSP_Actuator>) s223:actuates (<urn:bldg#S1-01_Heating_Coil_Valve> <urn:bldg#S1-02_Heating_Coil_Valve>) .
+(<urn:bldg#TEST.ACTCHWDPSP_Actuator> <urn:bldg#TEST.ACTCWDPSP_Actuator>) s223:actuates (<urn:bldg#AH1A_Cooling_Coil_Valve> <urn:bldg#AH1A_Heating_Coil_Valve>) .
+(<urn:bldg#TEST.ACTCHWDPSP_Actuator> <urn:bldg#TEST.ACTCWDPSP_Actuator>) s223:actuates (<urn:bldg#S1-01_VAV> <urn:bldg#S1-02_VAV>) .
+(<urn:bldg#TEST.ACTCHWDPSP_Actuator> <urn:bldg#TEST.ACTCWDPSP_Actuator>) s223:actuates (<urn:bldg#ATS-E1> <urn:bldg#ATS-E2>) .
+(<urn:bldg#TEST.ACTCHWDPSP_Actuator> <urn:bldg#TEST.ACTCWDPSP_Actuator>) s223:actuates (<urn:bldg#CHP1> <urn:bldg#CHP2>) .
+(<urn:bldg#TEST.ACTCHWDPSP_Actuator> <urn:bldg#TEST.ACTCWDPSP_Actuator>) s223:actuates (<urn:bldg#131_Tele-Health> <urn:bldg#132_MECH_STEAM>) .
+(<urn:bldg#TEST.ACTCHWDPSP_Actuator> <urn:bldg#TEST.ACTCWDPSP_Actuator>) s223:actuates (<urn:bldg#266_RECEIVING>) .
+(<urn:bldg#TEST.ACTCHWDPSP_Actuator> <urn:bldg#TEST.ACTCWDPSP_Actuator>) s223:actuates (<urn:bldg#S1-01_Heating_Coil> <urn:bldg#S1-02_Heating_Coil>) .
+(<urn:bldg#TEST.ACTCHWDPSP_Actuator> <urn:bldg#TEST.ACTCWDPSP_Actuator>) s223:actuates (<urn:bldg#EF5> <urn:bldg#EF7>) .
+(<urn:bldg#TEST.ACTCHWDPSP_Actuator> <urn:bldg#TEST.ACTCWDPSP_Actuator>) s223:actuates (<urn:bldg#CT1_Fan> <urn:bldg#CT2_Fan>) .
+(<urn:bldg#TEST.ACTCHWDPSP_Actuator> <urn:bldg#TEST.ACTCWDPSP_Actuator>) s223:actuates (<urn:bldg#AH1A_Supply_Fan> <urn:bldg#AH1B_Supply_Fan>) .
+(<urn:bldg#TEST.ACTCHWDPSP_Actuator> <urn:bldg#TEST.ACTCWDPSP_Actuator>) s223:actuates (<urn:bldg#FCU-1>) .
+(<urn:bldg#TEST.ACTCHWDPSP_Actuator> <urn:bldg#TEST.ACTCWDPSP_Actuator>) s223:actuates (<urn:bldg#AH1_Generator> <urn:bldg#CAC-1>) .
+(<urn:bldg#TEST.ACTCHWDPSP_Actuator> <urn:bldg#TEST.ACTCWDPSP_Actuator>) s223:actuates (<urn:bldg#EF1_Isolation_Damper> <urn:bldg#EF1_Outside_Damper>) .
+(<urn:bldg#TEST.ACTCHWDPSP_Actuator> <urn:bldg#TEST.ACTCWDPSP_Actuator>) s223:actuates (<urn:bldg#AH1A_Isolation_Damper> <urn:bldg#AH1B_Isolation_Damper>) .
+(<urn:bldg#TEST.ACTCHWDPSP_Actuator> <urn:bldg#TEST.ACTCWDPSP_Actuator>) s223:actuates (<urn:bldg#CH1> <urn:bldg#CH2>) .
+(<urn:bldg#TEST.ACTCHWDPSP_Actuator> <urn:bldg#TEST.ACTCWDPSP_Actuator>) s223:actuates (<urn:bldg#AH2A> <urn:bldg#AH2B>) .
+(<urn:bldg#TEST.ACTCHWDPSP_Actuator> <urn:bldg#TEST.ACTCWDPSP_Actuator>) s223:actuates (<urn:bldg#AH1> <urn:bldg#AH1A>) .
+(<urn:bldg#TEST.ACTCHWDPSP_Actuator> <urn:bldg#TEST.ACTCWDPSP_Actuator>) s223:actuatedByProperty (<urn:bldg#TEST.ACTCHWDPSP> <urn:bldg#TEST.ACTCWDPSP>) .
+(<urn:bldg#TEST.ACTCHWDPSP_Actuator> <urn:bldg#TEST.ACTCWDPSP_Actuator>) a s223:Actuator .

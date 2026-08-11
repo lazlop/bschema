@@ -1,0 +1,162 @@
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix quantitykind: <http://qudt.org/vocab/quantitykind/> .
+@prefix qudt: <http://qudt.org/schema/qudt/> .
+@prefix unit: <http://qudt.org/vocab/unit/> .
+@prefix ref: <https://brickschema.org/schema/Brick/ref#> .
+@prefix rec: <https://w3id.org/rec#> .
+@prefix brick: <https://brickschema.org/schema/Brick#> .
+@prefix tag: <https://brickschema.org/schema/BrickTag#> .
+@prefix bsh: <https://brickschema.org/schema/BrickShape#> .
+@prefix P: <urn:___param___#> .
+@prefix constraint: <https://nrel.gov/BuildingMOTIF/constraints#> .
+@prefix bmotif: <https://nrel.gov/BuildingMOTIF#> .
+@prefix hpflex: <urn:hpflex#> .
+@prefix hpfs: <urn:hpflex/shapes#> .
+@prefix s223: <http://data.ashrae.org/standard223#> .
+@prefix ex: <urn:example#> .
+@prefix bs: <urn:bschema#> .
+@prefix bob: <http://data.ashrae.org/standard223/si-builder#> .
+@prefix bacnet: <http://data.ashrae.org/bacnet/2020#> .
+@prefix s4bldg: <https://saref.etsi.org/saref4bldg#> .
+@prefix s4ener: <https://saref.etsi.org/saref4ener#> .
+@prefix saref: <https://saref.etsi.org/core#> .
+
+bs:Literal_version_1 a ("00d0c066-d247-417c-a07b-09ef71c14114" "010b4082-dbba-46b5-ae09-782274ab695b") .
+bs:Resource_version_1 ref:hasTimeseriesId bs:Literal_version_1 .
+bs:Resource_version_1 brick:value bs:Literal_version_1 .
+bs:Resource_version_1 brick:hasUnits (<urn:bschema-rs:skolem:a0590ad959795ad0069306692e4cece9> <urn:bschema-rs:skolem:a0645ace9c56d902e7cf930c3e1ce92c>) .
+bs:Zone_Air_Temperature_Sensor_version_1 ref:hasExternalReference bs:Resource_version_1 .
+bs:Zone_Air_Temperature_Sensor_version_1 rdfs:label bs:Literal_version_1 .
+bs:Zone_Air_Temperature_Sensor_version_1 a (<http://buildsys.org/ontologies/bldg11#bldg11.AHU.AHU01.Zone_Air_Temp> <http://buildsys.org/ontologies/bldg11#bldg11.AHU.AHU02.Zone_Air_Temp>) .
+bs:VAV_version_1 brick:hasPoint bs:Zone_Air_Temperature_Setpoint_version_1 .
+bs:VAV_version_1 brick:hasPoint bs:Zone_Air_Temperature_Sensor_version_1 .
+bs:VAV_version_1 brick:hasPoint bs:Valve_Command_version_1 .
+bs:VAV_version_1 brick:hasPoint bs:Supply_Air_Temperature_Sensor_version_1 .
+bs:VAV_version_1 brick:hasPoint bs:Supply_Air_Flow_Sensor_version_1 .
+bs:VAV_version_1 brick:hasPoint bs:Command_version_1 .
+bs:VAV_version_1 brick:hasPoint bs:Air_Flow_Sensor_version_1 .
+bs:VAV_version_1 brick:feeds bs:HVAC_Zone_version_1 .
+bs:VAV_version_1 a (<http://buildsys.org/ontologies/bldg11#VAVRM0101> <http://buildsys.org/ontologies/bldg11#VAVRM0111>) .
+bs:Supply_Air_Temperature_Sensor_version_1 ref:hasExternalReference bs:Resource_version_1 .
+bs:Supply_Air_Temperature_Sensor_version_1 rdfs:label bs:Literal_version_1 .
+bs:Supply_Air_Temperature_Sensor_version_1 a (<http://buildsys.org/ontologies/bldg11#bldg11.AHU.AHU01.Supply_Air_Temp> <http://buildsys.org/ontologies/bldg11#bldg11.AHU.AHU02.Supply_Air_Temp>) .
+bs:Room_version_1 a (<http://buildsys.org/ontologies/bldg11#RM0101_room> <http://buildsys.org/ontologies/bldg11#RM0111_room>) .
+bs:Outside_Air_Temperature_Sensor_version_1 ref:hasExternalReference bs:Resource_version_1 .
+bs:Outside_Air_Temperature_Sensor_version_1 rdfs:label bs:Literal_version_1 .
+bs:Outside_Air_Temperature_Sensor_version_1 a (<http://buildsys.org/ontologies/bldg11#bldg11.AHU.AHU01.Outside_Air_Temp> <http://buildsys.org/ontologies/bldg11#bldg11.AHU.AHU03.Outside_Air_Temp>) .
+bs:Command_version_1 ref:hasExternalReference bs:Resource_version_1 .
+bs:Command_version_1 rdfs:label bs:Literal_version_1 .
+bs:Command_version_1 a brick:Heating_Command .
+bs:Command_version_1 a (<http://buildsys.org/ontologies/bldg11#bldg11.AHU.AHU01.Heating_Valve_Output> <http://buildsys.org/ontologies/bldg11#bldg11.AHU.AHU02.Heating_Valve_Output>) .
+bs:Chiller_version_1 brick:hasPoint bs:Start_Stop_Command_version_1 .
+bs:Chiller_version_1 brick:hasPoint bs:Speed_Status_version_1 .
+bs:Chiller_version_1 brick:hasPoint bs:Outside_Air_Temperature_Sensor_version_1 .
+bs:Chiller_version_1 brick:hasPoint bs:Enable_Command_version_1 .
+bs:Chiller_version_1 brick:hasPoint bs:Damper_Position_Command_version_1 .
+bs:Chiller_version_1 brick:hasPoint bs:Chilled_Water_Supply_Temperature_Setpoint_version_1 .
+bs:Chiller_version_1 brick:hasPoint bs:Chilled_Water_Supply_Temperature_Sensor_version_1 .
+bs:Chiller_version_1 brick:hasPoint bs:Chilled_Water_Return_Temperature_Setpoint_version_1 .
+bs:Chiller_version_1 brick:hasPoint bs:Chilled_Water_Return_Temperature_Sensor_version_1 .
+bs:Chiller_version_1 brick:hasPoint bs:Chilled_Water_Flow_Sensor_version_1 .
+bs:Chiller_version_1 brick:hasPoint bs:Chilled_Water_Differential_Temperature_Sensor_version_1 .
+bs:Chiller_version_1 a (<http://buildsys.org/ontologies/bldg11#chiller>) .
+bs:Zone_Air_Temperature_Setpoint_version_1 ref:hasExternalReference bs:Resource_version_1 .
+bs:Zone_Air_Temperature_Setpoint_version_1 rdfs:label bs:Literal_version_1 .
+bs:Zone_Air_Temperature_Setpoint_version_1 a (<http://buildsys.org/ontologies/bldg11#bldg11.ZONE.AHU01.RM1018.Zone_Air_Temp_Setpoint> <http://buildsys.org/ontologies/bldg11#bldg11.ZONE.AHU01.RM1111.Zone_Air_Temp_Setpoint>) .
+bs:Valve_Command_version_1 rdfs:label bs:Literal_version_1 .
+bs:Valve_Command_version_1 a (<http://buildsys.org/ontologies/bldg11#bldg11.ZONE.AHU01.RM1018.VLV_2_COMD> <http://buildsys.org/ontologies/bldg11#bldg11.ZONE.AHU01.RM1111.VLV_2_COMD>) .
+bs:Supply_Air_flow_version_1 ref:hasExternalReference bs:Resource_version_1 .
+bs:Supply_Air_flow_version_1 rdfs:label bs:Literal_version_1 .
+bs:Supply_Air_flow_version_1 a (<http://buildsys.org/ontologies/bldg11#bldg11.AHU.AHU05.SUPFLOW> <http://buildsys.org/ontologies/bldg11#bldg11.AHU.AHU06.SUPFLOW>) .
+bs:Supply_Air_Temperature_Setpoint_version_1 ref:hasExternalReference bs:Resource_version_1 .
+bs:Supply_Air_Temperature_Setpoint_version_1 rdfs:label bs:Literal_version_1 .
+bs:Supply_Air_Temperature_Setpoint_version_1 a (<http://buildsys.org/ontologies/bldg11#bldg11.AHU.AHU01.Supply_Air_Temp_Setpoint> <http://buildsys.org/ontologies/bldg11#bldg11.AHU.AHU02.Supply_Air_Temp_Setpoint>) .
+bs:Supply_Air_Static_Pressure_Sensor_version_1 ref:hasExternalReference bs:Resource_version_1 .
+bs:Supply_Air_Static_Pressure_Sensor_version_1 rdfs:label bs:Literal_version_1 .
+bs:Supply_Air_Static_Pressure_Sensor_version_1 a (<http://buildsys.org/ontologies/bldg11#bldg11.AHU.AHU01.Supply_Air_Pressure> <http://buildsys.org/ontologies/bldg11#bldg11.AHU.AHU02.Supply_Air_Pressure>) .
+bs:Supply_Air_Flow_Sensor_version_1 ref:hasExternalReference bs:Resource_version_1 .
+bs:Supply_Air_Flow_Sensor_version_1 rdfs:label bs:Literal_version_1 .
+bs:Supply_Air_Flow_Sensor_version_1 a (<http://buildsys.org/ontologies/bldg11#bldg11.ZONE.AHU05.RM2502.Zone_Supply_Air_Flow> <http://buildsys.org/ontologies/bldg11#bldg11.ZONE.AHU05.RM2505.Zone_Supply_Air_Flow>) .
+bs:Start_Stop_Command_version_1 ref:hasExternalReference bs:Resource_version_1 .
+bs:Start_Stop_Command_version_1 rdfs:label bs:Literal_version_1 .
+bs:Start_Stop_Command_version_1 a (<http://buildsys.org/ontologies/bldg11#bldg11.CHW.Pump1_Start/Stop> <http://buildsys.org/ontologies/bldg11#bldg11.CHW.Pump2_Start/Stop>) .
+bs:Speed_Status_version_1 ref:hasExternalReference bs:Resource_version_1 .
+bs:Speed_Status_version_1 rdfs:label bs:Literal_version_1 .
+bs:Speed_Status_version_1 a (<http://buildsys.org/ontologies/bldg11#bldg11.CHW.Pump1_SPEED> <http://buildsys.org/ontologies/bldg11#bldg11.CHW.Pump2_SPEED>) .
+bs:Return_Air_Temperature_Sensor_version_1 ref:hasExternalReference bs:Resource_version_1 .
+bs:Return_Air_Temperature_Sensor_version_1 rdfs:label bs:Literal_version_1 .
+bs:Return_Air_Temperature_Sensor_version_1 a (<http://buildsys.org/ontologies/bldg11#bldg11.AHU.AHU05.Return_Air_Temp> <http://buildsys.org/ontologies/bldg11#bldg11.AHU.AHU06.Return_Air_Temp>) .
+bs:Mode_version_1 ref:hasExternalReference bs:Resource_version_1 .
+bs:Mode_version_1 rdfs:label bs:Literal_version_1 .
+bs:Mode_version_1 a (<http://buildsys.org/ontologies/bldg11#bldg11.AHU.AHU05.Mode>) .
+bs:Mixed_Air_Temperature_Sensor_version_1 rdfs:label bs:Literal_version_1 .
+bs:Mixed_Air_Temperature_Sensor_version_1 a (<http://buildsys.org/ontologies/bldg11#bldg11.AHU.AHU05.Mixed_Air_Temp> <http://buildsys.org/ontologies/bldg11#bldg11.AHU.AHU06.Mixed_Air_Temp>) .
+bs:HVAC_Zone_version_1 brick:hasPart bs:Room_version_1 .
+bs:HVAC_Zone_version_1 a (<http://buildsys.org/ontologies/bldg11#RM0101> <http://buildsys.org/ontologies/bldg11#RM0111>) .
+bs:Enable_Command_version_1 ref:hasExternalReference bs:Resource_version_1 .
+bs:Enable_Command_version_1 rdfs:label bs:Literal_version_1 .
+bs:Enable_Command_version_1 a (<http://buildsys.org/ontologies/bldg11#bldg11.CHW.Enable>) .
+bs:Damper_Position_Setpoint_version_1 ref:hasExternalReference bs:Resource_version_1 .
+bs:Damper_Position_Setpoint_version_1 rdfs:label bs:Literal_version_1 .
+bs:Damper_Position_Setpoint_version_1 a (<http://buildsys.org/ontologies/bldg11#bldg11.ZONE.AHU05.RM2502.Zone_Air_Damper_Command> <http://buildsys.org/ontologies/bldg11#bldg11.ZONE.AHU05.RM2505.Zone_Air_Damper_Command>) .
+bs:Damper_Position_Command_version_1 ref:hasExternalReference bs:Resource_version_1 .
+bs:Damper_Position_Command_version_1 rdfs:label bs:Literal_version_1 .
+bs:Damper_Position_Command_version_1 a (<http://buildsys.org/ontologies/bldg11#bldg11.CHW.ECONOMIZER>) .
+bs:Cooling_Command_version_1 ref:hasExternalReference bs:Resource_version_1 .
+bs:Cooling_Command_version_1 rdfs:label bs:Literal_version_1 .
+bs:Cooling_Command_version_1 a (<http://buildsys.org/ontologies/bldg11#bldg11.ZONE.AHU01.RM1018.VLV_2_COMD> <http://buildsys.org/ontologies/bldg11#bldg11.ZONE.AHU01.RM1111.VLV_2_COMD>) .
+bs:Cooling_Command_version_1 a (<http://buildsys.org/ontologies/bldg11#bldg11.AHU.AHU01.CCV> <http://buildsys.org/ontologies/bldg11#bldg11.AHU.AHU01.Cooling_Valve_Output>) .
+bs:Chilled_Water_Supply_Temperature_Setpoint_version_1 ref:hasExternalReference bs:Resource_version_1 .
+bs:Chilled_Water_Supply_Temperature_Setpoint_version_1 rdfs:label bs:Literal_version_1 .
+bs:Chilled_Water_Supply_Temperature_Setpoint_version_1 a (<http://buildsys.org/ontologies/bldg11#bldg11.CHW.Building_Chilled_Water_Supply_Temp_Setpoint> <http://buildsys.org/ontologies/bldg11#bldg11.CHW.Building_Chilled_Water_Supply_Temp_Sp_2>) .
+bs:Chilled_Water_Supply_Temperature_Sensor_version_1 ref:hasExternalReference bs:Resource_version_1 .
+bs:Chilled_Water_Supply_Temperature_Sensor_version_1 rdfs:label bs:Literal_version_1 .
+bs:Chilled_Water_Supply_Temperature_Sensor_version_1 a (<http://buildsys.org/ontologies/bldg11#bldg11.CHW.Building_Chilled_Water_Supply_Temp> <http://buildsys.org/ontologies/bldg11#bldg11.CHW.Loop_Chilled_Water_Supply_Temp>) .
+bs:Chilled_Water_Return_Temperature_Setpoint_version_1 ref:hasExternalReference bs:Resource_version_1 .
+bs:Chilled_Water_Return_Temperature_Setpoint_version_1 rdfs:label bs:Literal_version_1 .
+bs:Chilled_Water_Return_Temperature_Setpoint_version_1 a (<http://buildsys.org/ontologies/bldg11#bldg11.CHW.Building_Chilled_Water_Return_Temp_Setpoint> <http://buildsys.org/ontologies/bldg11#bldg11.CHW.Loop_Chilled_Water_Return_Temp_Setpoint>) .
+bs:Chilled_Water_Return_Temperature_Sensor_version_1 ref:hasExternalReference bs:Resource_version_1 .
+bs:Chilled_Water_Return_Temperature_Sensor_version_1 rdfs:label bs:Literal_version_1 .
+bs:Chilled_Water_Return_Temperature_Sensor_version_1 a (<http://buildsys.org/ontologies/bldg11#bldg11.CHW.Building_Chilled_Water_Return_Temp> <http://buildsys.org/ontologies/bldg11#bldg11.CHW.Loop_Chilled_Water_Return_Temp>) .
+bs:Chilled_Water_Flow_Sensor_version_1 ref:hasExternalReference bs:Resource_version_1 .
+bs:Chilled_Water_Flow_Sensor_version_1 rdfs:label bs:Literal_version_1 .
+bs:Chilled_Water_Flow_Sensor_version_1 a (<http://buildsys.org/ontologies/bldg11#bldg11.CHW.Building_Chilled_Water_Flow> <http://buildsys.org/ontologies/bldg11#bldg11.CHW.Loop_Chilled_Water_Flow>) .
+bs:Chilled_Water_Differential_Temperature_Sensor_version_1 ref:hasExternalReference bs:Resource_version_1 .
+bs:Chilled_Water_Differential_Temperature_Sensor_version_1 rdfs:label bs:Literal_version_1 .
+bs:Chilled_Water_Differential_Temperature_Sensor_version_1 a (<http://buildsys.org/ontologies/bldg11#bldg11.CHW.Building_Chilled_Water_Delta_Temp>) .
+bs:Air_Flow_Sensor_version_1 ref:hasExternalReference bs:Resource_version_1 .
+bs:Air_Flow_Sensor_version_1 rdfs:label bs:Literal_version_1 .
+bs:Air_Flow_Sensor_version_1 a (<http://buildsys.org/ontologies/bldg11#bldg11.ZONE.AHU05.RM2502.Zone_Percent_Air_Flow> <http://buildsys.org/ontologies/bldg11#bldg11.ZONE.AHU05.RM2505.Zone_Percent_Air_Flow>) .
+bs:Floor_version_1 brick:hasPart bs:Room_version_1 .
+bs:Floor_version_1 a (<http://buildsys.org/ontologies/bldg11#floor0> <http://buildsys.org/ontologies/bldg11#floor1>) .
+bs:Electric_Meter_version_1 ref:hasExternalReference bs:Resource_version_1 .
+bs:Electric_Meter_version_1 brick:isPointOf bs:Chiller_version_1 .
+bs:Electric_Meter_version_1 rdfs:label bs:Literal_version_1 .
+bs:Electric_Meter_version_1 a (<http://buildsys.org/ontologies/bldg11#bldg11_ChilledWater_Demand_kBtu>) .
+bs:Damper_version_1 brick:isPartOf bs:VAV_version_1 .
+bs:Damper_version_1 brick:hasPoint bs:Damper_Position_Setpoint_version_1 .
+bs:Damper_version_1 a (<http://buildsys.org/ontologies/bldg11#damperVAVRM1002> <http://buildsys.org/ontologies/bldg11#damperVAVRM1005-1>) .
+bs:Building_version_1 brick:area bs:Resource_version_1 .
+bs:Building_version_1 a (<http://buildsys.org/ontologies/bldg11#bldg11>) .
+bs:Building_Electrical_Meter_version_1 ref:hasExternalReference bs:Resource_version_1 .
+bs:Building_Electrical_Meter_version_1 rdfs:label bs:Literal_version_1 .
+bs:Building_Electrical_Meter_version_1 a (<http://buildsys.org/ontologies/bldg11#bldg11_Electricity_Demand_kBtu>) .
+bs:Air_Handling_Unit_version_1 brick:isFedBy bs:Chiller_version_1 .
+bs:Air_Handling_Unit_version_1 brick:hasPoint bs:Zone_Air_Temperature_Sensor_version_1 .
+bs:Air_Handling_Unit_version_1 brick:hasPoint bs:Supply_Air_flow_version_1 .
+bs:Air_Handling_Unit_version_1 brick:hasPoint bs:Supply_Air_Temperature_Setpoint_version_1 .
+bs:Air_Handling_Unit_version_1 brick:hasPoint bs:Supply_Air_Temperature_Sensor_version_1 .
+bs:Air_Handling_Unit_version_1 brick:hasPoint bs:Supply_Air_Static_Pressure_Sensor_version_1 .
+bs:Air_Handling_Unit_version_1 brick:hasPoint bs:Return_Air_Temperature_Sensor_version_1 .
+bs:Air_Handling_Unit_version_1 brick:hasPoint bs:Outside_Air_Temperature_Sensor_version_1 .
+bs:Air_Handling_Unit_version_1 brick:hasPoint bs:Mode_version_1 .
+bs:Air_Handling_Unit_version_1 brick:hasPoint bs:Mixed_Air_Temperature_Sensor_version_1 .
+bs:Air_Handling_Unit_version_1 brick:hasPoint bs:Cooling_Command_version_1 .
+bs:Air_Handling_Unit_version_1 brick:hasPoint bs:Command_version_1 .
+bs:Air_Handling_Unit_version_1 brick:feeds bs:VAV_version_1 .
+bs:Air_Handling_Unit_version_1 a (<http://buildsys.org/ontologies/bldg11#AHU01> <http://buildsys.org/ontologies/bldg11#AHU02>) .
