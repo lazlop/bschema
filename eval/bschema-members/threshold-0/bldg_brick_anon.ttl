@@ -33603,22 +33603,6 @@ bs:Literal_version_1 a rdf:Seq ;
         "zzB8u9nX9659"^^xsd:string .
 
 bs:Literal_version_2 a rdf:Seq ;
-    rdfs:member "8gOpOoQd16753"^^xsd:string,
-        "IYVVFXuw15884"^^xsd:string,
-        "KOx0RoKW4946"^^xsd:string,
-        "UnYWLzE614330"^^xsd:string,
-        "X5h6ZSN317146"^^xsd:string,
-        "ZYURkOvc17741"^^xsd:string,
-        "cLFR29XP930"^^xsd:string,
-        "dsxcQcna9526"^^xsd:string,
-        "hG5BHEpe15314"^^xsd:string,
-        "jOT5pmBC17722"^^xsd:string,
-        "ksHFSdiZ17688"^^xsd:string,
-        "piWazfPe12815"^^xsd:string,
-        "t98jwxaz14385"^^xsd:string,
-        "uOJNMO6U12525"^^xsd:string .
-
-bs:Literal_version_3 a rdf:Seq ;
     rdfs:member "40gRYu3R14157"^^xsd:string,
         "4C3ojkiG5063"^^xsd:string,
         "A1aOUwT47204"^^xsd:string,
@@ -33633,6 +33617,22 @@ bs:Literal_version_3 a rdf:Seq ;
         "v7dmsvO9297"^^xsd:string,
         "z70tkcnN564"^^xsd:string,
         "z93ySK2i15569"^^xsd:string .
+
+bs:Literal_version_3 a rdf:Seq ;
+    rdfs:member "8gOpOoQd16753"^^xsd:string,
+        "IYVVFXuw15884"^^xsd:string,
+        "KOx0RoKW4946"^^xsd:string,
+        "UnYWLzE614330"^^xsd:string,
+        "X5h6ZSN317146"^^xsd:string,
+        "ZYURkOvc17741"^^xsd:string,
+        "cLFR29XP930"^^xsd:string,
+        "dsxcQcna9526"^^xsd:string,
+        "hG5BHEpe15314"^^xsd:string,
+        "jOT5pmBC17722"^^xsd:string,
+        "ksHFSdiZ17688"^^xsd:string,
+        "piWazfPe12815"^^xsd:string,
+        "t98jwxaz14385"^^xsd:string,
+        "uOJNMO6U12525"^^xsd:string .
 
 bs:Loading_Dock_version_1 a rdf:Seq ;
     rdfs:member <urn:bldg#266_RECEIVING> .

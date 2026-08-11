@@ -1,7 +1,6 @@
 @prefix brick: <https://brickschema.org/schema/Brick#> .
 @prefix bs: <urn:bschema#> .
 @prefix quantitykind: <http://qudt.org/vocab/quantitykind/> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix ref: <https://brickschema.org/schema/Brick/ref#> .
 @prefix s4bldg: <https://saref.etsi.org/saref4bldg#> .
 @prefix s4ener: <https://saref.etsi.org/saref4ener#> .
@@ -31,22 +30,12 @@ bs:Building_version_1 a brick:Building ;
     brick:hasPart bs:Storey_version_1 ;
     ref:hasExternalReference bs:IFCReference_version_1 .
 
-bs:Literal_version_1 a rdfs:Literal .
-
-bs:Literal_version_2 a rdfs:Literal .
-
-bs:Literal_version_3 a rdfs:Literal .
-
-bs:Literal_version_4 a rdfs:Literal .
-
 bs:Occupancy_version_1 a quantitykind:Occupancy,
         saref:Property .
 
 bs:Delay_Parameter_version_1 a brick:Delay_Parameter ;
     brick:isPointOf bs:Thermostat_version_1 ;
     ref:hasExternalReference bs:Resource_version_1 .
-
-bs:Literal_version_5 a rdfs:Literal .
 
 bs:Lockout_Command_version_1 a brick:Lockout_Command ;
     brick:isPointOf bs:Thermostat_version_1 ;
@@ -105,8 +94,8 @@ bs:Terminal_Unit_version_1 a brick:Terminal_Unit,
     ref:hasExternalReference bs:Resource_version_2 .
 
 bs:IFCReference_version_1 a ref:IFCReference ;
-    ref:ifcGlobalID bs:Literal_version_5 ;
-    ref:ifcName bs:Literal_version_5 .
+    ref:ifcGlobalID bs:Literal_version_4 ;
+    ref:ifcName bs:Literal_version_4 .
 
 bs:Space_version_1 a brick:Space,
         s4bldg:BuildingSpace ;
@@ -114,10 +103,10 @@ bs:Space_version_1 a brick:Space,
     ref:hasExternalReference bs:Resource_version_2 ;
     s4bldg:contains bs:Thermostat_version_1 .
 
-bs:Resource_version_2 ref:ifcGlobalID bs:Literal_version_4 ;
-    ref:ifcName bs:Literal_version_2 .
+bs:Resource_version_2 ref:ifcGlobalID bs:Literal_version_1 ;
+    ref:ifcName bs:Literal_version_5 .
 
-bs:Resource_version_1 ref:hasTimeseriesId bs:Literal_version_1 .
+bs:Resource_version_1 ref:hasTimeseriesId bs:Literal_version_2 .
 
 bs:Thermostat_version_1 a brick:Thermostat,
         s4bldg:UnitaryControlElement ;

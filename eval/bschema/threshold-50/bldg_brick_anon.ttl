@@ -229,11 +229,11 @@ bs:Duration_Sensor_version_1 a brick:Duration_Sensor ;
 
 bs:Electric_Energy_Sensor_version_1 a brick:Electric_Energy_Sensor ;
     s223:hasExternalReference bs:BACnetReference_version_1,
-        bs:BACnetReference_version_9 ;
+        bs:BACnetReference_version_11 ;
     brick:hasUnit unit:MegaW-HR ;
     brick:isPointOf bs:Fan_VFD_version_1 ;
     ref:hasExternalReference bs:BACnetReference_version_1,
-        bs:BACnetReference_version_9 .
+        bs:BACnetReference_version_11 .
 
 bs:Electric_Energy_Sensor_version_2 a brick:Electric_Energy_Sensor ;
     s223:hasExternalReference bs:BACnetReference_version_1 ;
@@ -256,11 +256,11 @@ bs:Energy_Sensor_version_1 a brick:Energy_Sensor ;
 
 bs:Energy_Usage_Sensor_version_1 a brick:Energy_Usage_Sensor ;
     s223:hasExternalReference bs:BACnetReference_version_1,
-        bs:BACnetReference_version_7 ;
+        bs:BACnetReference_version_6 ;
     brick:hasUnit unit:TON_FG-HR ;
     brick:isPointOf bs:Thermal_Power_Meter_version_1 ;
     ref:hasExternalReference bs:BACnetReference_version_1,
-        bs:BACnetReference_version_7 .
+        bs:BACnetReference_version_6 .
 
 bs:Entering_Hot_Water_Temperature_Sensor_version_1 a brick:Entering_Hot_Water_Temperature_Sensor ;
     s223:hasExternalReference bs:BACnetReference_version_1 ;
@@ -276,10 +276,10 @@ bs:Entering_Water_Temperature_Sensor_version_1 a brick:Entering_Water_Temperatur
 
 bs:Entering_Water_Temperature_Sensor_version_2 a brick:Entering_Water_Temperature_Sensor,
         brick:Return_Water_Temperature_Sensor ;
-    s223:hasExternalReference bs:BACnetReference_version_5 ;
+    s223:hasExternalReference bs:BACnetReference_version_13 ;
     brick:hasUnit unit:DEG_F ;
     brick:isPointOf bs:Thermal_Power_Meter_version_1 ;
-    ref:hasExternalReference bs:BACnetReference_version_5 .
+    ref:hasExternalReference bs:BACnetReference_version_13 .
 
 bs:Exhaust_Air_Flow_Sensor_version_1 a brick:Exhaust_Air_Flow_Sensor ;
     s223:hasExternalReference bs:BACnetReference_version_1 ;
@@ -420,10 +420,10 @@ bs:Leaving_Water_Temperature_Sensor_version_1 a brick:Leaving_Water_Temperature_
 
 bs:Leaving_Water_Temperature_Sensor_version_2 a brick:Leaving_Water_Temperature_Sensor,
         brick:Supply_Water_Temperature_Sensor ;
-    s223:hasExternalReference bs:BACnetReference_version_15 ;
+    s223:hasExternalReference bs:BACnetReference_version_12 ;
     brick:hasUnit unit:DEG_F ;
     brick:isPointOf bs:Thermal_Power_Meter_version_1 ;
-    ref:hasExternalReference bs:BACnetReference_version_15 .
+    ref:hasExternalReference bs:BACnetReference_version_12 .
 
 bs:Level_Status_version_1 a brick:Level_Status ;
     s223:hasExternalReference bs:BACnetReference_version_1 ;
@@ -436,80 +436,6 @@ bs:Limit_version_1 a brick:Limit ;
     brick:hasUnit unit:PERCENT ;
     brick:isPointOf bs:RVAV_version_1 ;
     ref:hasExternalReference bs:BACnetReference_version_1 .
-
-bs:Literal_version_1 a rdfs:Literal .
-
-bs:Literal_version_10 a rdfs:Literal .
-
-bs:Literal_version_11 a rdfs:Literal .
-
-bs:Literal_version_12 a rdfs:Literal .
-
-bs:Literal_version_13 a rdfs:Literal .
-
-bs:Literal_version_14 a rdfs:Literal .
-
-bs:Literal_version_15 a rdfs:Literal .
-
-bs:Literal_version_16 a rdfs:Literal .
-
-bs:Literal_version_17 a rdfs:Literal .
-
-bs:Literal_version_18 a rdfs:Literal .
-
-bs:Literal_version_19 a rdfs:Literal .
-
-bs:Literal_version_2 a rdfs:Literal .
-
-bs:Literal_version_20 a rdfs:Literal .
-
-bs:Literal_version_21 a rdfs:Literal .
-
-bs:Literal_version_22 a rdfs:Literal .
-
-bs:Literal_version_23 a rdfs:Literal .
-
-bs:Literal_version_24 a rdfs:Literal .
-
-bs:Literal_version_25 a rdfs:Literal .
-
-bs:Literal_version_26 a rdfs:Literal .
-
-bs:Literal_version_27 a rdfs:Literal .
-
-bs:Literal_version_28 a rdfs:Literal .
-
-bs:Literal_version_29 a rdfs:Literal .
-
-bs:Literal_version_3 a rdfs:Literal .
-
-bs:Literal_version_30 a rdfs:Literal .
-
-bs:Literal_version_31 a rdfs:Literal .
-
-bs:Literal_version_32 a rdfs:Literal .
-
-bs:Literal_version_33 a rdfs:Literal .
-
-bs:Literal_version_34 a rdfs:Literal .
-
-bs:Literal_version_35 a rdfs:Literal .
-
-bs:Literal_version_36 a rdfs:Literal .
-
-bs:Literal_version_37 a rdfs:Literal .
-
-bs:Literal_version_4 a rdfs:Literal .
-
-bs:Literal_version_5 a rdfs:Literal .
-
-bs:Literal_version_6 a rdfs:Literal .
-
-bs:Literal_version_7 a rdfs:Literal .
-
-bs:Literal_version_8 a rdfs:Literal .
-
-bs:Literal_version_9 a rdfs:Literal .
 
 bs:Low_Air_Flow_Alarm_version_1 a brick:Low_Air_Flow_Alarm ;
     s223:hasExternalReference bs:BACnetReference_version_1 ;
@@ -643,12 +569,12 @@ bs:Off_Status_version_1 a brick:Off_Status ;
 
 bs:Open_Close_Status_version_1 a brick:Open_Close_Status ;
     s223:hasExternalReference bs:BACnetReference_version_1,
-        bs:BACnetReference_version_13 ;
+        bs:BACnetReference_version_7 ;
     brick:hasUnit unit:PERCENT,
         unit:UNITLESS ;
     brick:isPointOf bs:Isolation_Damper_version_1 ;
     ref:hasExternalReference bs:BACnetReference_version_1,
-        bs:BACnetReference_version_13 .
+        bs:BACnetReference_version_7 .
 
 bs:Open_Close_Status_version_3 a brick:Open_Close_Status ;
     s223:hasExternalReference bs:BACnetReference_version_1 ;
@@ -705,7 +631,7 @@ bs:Point_version_2 a brick:Point ;
     ref:hasExternalReference bs:BACnetReference_version_1 .
 
 bs:Port_version_1 a bacnet:Port ;
-    ref:storedAt bs:Literal_version_14 .
+    ref:storedAt bs:Literal_version_10 .
 
 bs:Pump_Command_version_1 a brick:Pump_Command ;
     s223:hasExternalReference bs:BACnetReference_version_1 ;
@@ -736,11 +662,11 @@ bs:Return_Air_Humidity_Sensor_version_1 a brick:Return_Air_Humidity_Sensor ;
 
 bs:Run_Enable_Command_version_1 a brick:Run_Enable_Command ;
     s223:hasExternalReference bs:BACnetReference_version_1,
-        bs:BACnetReference_version_4 ;
+        bs:BACnetReference_version_15 ;
     brick:hasUnit unit:UNITLESS ;
     brick:isPointOf bs:Fan_VFD_version_1 ;
     ref:hasExternalReference bs:BACnetReference_version_1,
-        bs:BACnetReference_version_4 .
+        bs:BACnetReference_version_15 .
 
 bs:Run_Request_Status_version_2 a brick:Run_Request_Status ;
     s223:hasExternalReference bs:BACnetReference_version_1 ;
@@ -750,11 +676,11 @@ bs:Run_Request_Status_version_2 a brick:Run_Request_Status ;
 
 bs:Run_Status_version_1 a brick:Run_Status ;
     s223:hasExternalReference bs:BACnetReference_version_1,
-        bs:BACnetReference_version_8 ;
+        bs:BACnetReference_version_14 ;
     brick:hasUnit unit:UNITLESS ;
     brick:isPointOf bs:Fan_VFD_version_1 ;
     ref:hasExternalReference bs:BACnetReference_version_1,
-        bs:BACnetReference_version_8 .
+        bs:BACnetReference_version_14 .
 
 bs:Sensor_version_1 a brick:Sensor ;
     s223:hasExternalReference bs:BACnetReference_version_1 ;
@@ -875,10 +801,10 @@ bs:Water_Alarm_version_1 a brick:Water_Alarm ;
     ref:hasExternalReference bs:BACnetReference_version_1 .
 
 bs:Water_Flow_Sensor_version_1 a brick:Water_Flow_Sensor ;
-    s223:hasExternalReference bs:BACnetReference_version_14 ;
+    s223:hasExternalReference bs:BACnetReference_version_5 ;
     brick:hasUnit unit:GAL_US-PER-MIN ;
     brick:isPointOf bs:Thermal_Power_Meter_version_1 ;
-    ref:hasExternalReference bs:BACnetReference_version_14 .
+    ref:hasExternalReference bs:BACnetReference_version_5 .
 
 bs:Water_Flow_Sensor_version_2 a brick:Water_Flow_Sensor ;
     s223:hasExternalReference bs:BACnetReference_version_1 ;
@@ -924,7 +850,7 @@ bs:Zone_Air_Temperature_Sensor_version_6 a brick:Zone_Air_Temperature_Sensor ;
     ref:hasExternalReference bs:BACnetReference_version_1 .
 
 bs:ukWxk1OT528_version_1 a bacnet:ukWxk1OT528 ;
-    bacnet:device-instance bs:Literal_version_7 ;
+    bacnet:device-instance bs:Literal_version_8 ;
     bacnet:hasPort bs:Port_version_1 .
 
 bs:Active_Power_Sensor_version_1 a brick:Active_Power_Sensor ;
@@ -953,64 +879,64 @@ bs:Air_Differential_Pressure_Sensor_version_1 a brick:Air_Differential_Pressure_
     ref:hasExternalReference bs:BACnetReference_version_1 .
 
 bs:BACnetReference_version_10 a ref:BACnetReference ;
-    bacnet:ReadableProperty bs:Literal_version_10 ;
-    bacnet:object-name bs:Literal_version_25 .
+    bacnet:ReadableProperty bs:Literal_version_15 ;
+    bacnet:object-name bs:Literal_version_33 .
 
 bs:BACnetReference_version_11 a ref:BACnetReference ;
-    bacnet:ReadableProperty bs:Literal_version_16 ;
-    bacnet:object-name bs:Literal_version_22 .
+    bacnet:ReadableProperty bs:Literal_version_22 ;
+    bacnet:object-name bs:Literal_version_34 .
 
 bs:BACnetReference_version_12 a ref:BACnetReference ;
-    bacnet:ReadableProperty bs:Literal_version_28 ;
-    bacnet:object-name bs:Literal_version_36 .
-
-bs:BACnetReference_version_13 a ref:BACnetReference ;
-    bacnet:ReadableProperty bs:Literal_version_33 ;
-    bacnet:object-name bs:Literal_version_27 .
-
-bs:BACnetReference_version_14 a ref:BACnetReference ;
-    bacnet:ReadableProperty bs:Literal_version_20 ;
-    bacnet:object-name bs:Literal_version_6 .
-
-bs:BACnetReference_version_15 a ref:BACnetReference ;
-    bacnet:ReadableProperty bs:Literal_version_18 ;
-    bacnet:object-name bs:Literal_version_32 .
-
-bs:BACnetReference_version_16 a ref:BACnetReference ;
-    bacnet:ReadableProperty bs:Literal_version_34 ;
-    bacnet:object-name bs:Literal_version_37 .
-
-bs:BACnetReference_version_2 a ref:BACnetReference ;
-    bacnet:ReadableProperty bs:Literal_version_21 ;
-    bacnet:object-name bs:Literal_version_13 .
-
-bs:BACnetReference_version_3 a ref:BACnetReference ;
-    bacnet:ReadableProperty bs:Literal_version_23 ;
-    bacnet:object-name bs:Literal_version_15 .
-
-bs:BACnetReference_version_4 a ref:BACnetReference ;
-    bacnet:ReadableProperty bs:Literal_version_29 ;
+    bacnet:ReadableProperty bs:Literal_version_17 ;
     bacnet:object-name bs:Literal_version_24 .
 
+bs:BACnetReference_version_13 a ref:BACnetReference ;
+    bacnet:ReadableProperty bs:Literal_version_20 ;
+    bacnet:object-name bs:Literal_version_32 .
+
+bs:BACnetReference_version_14 a ref:BACnetReference ;
+    bacnet:ReadableProperty bs:Literal_version_18 ;
+    bacnet:object-name bs:Literal_version_25 .
+
+bs:BACnetReference_version_15 a ref:BACnetReference ;
+    bacnet:ReadableProperty bs:Literal_version_13 ;
+    bacnet:object-name bs:Literal_version_35 .
+
+bs:BACnetReference_version_16 a ref:BACnetReference ;
+    bacnet:ReadableProperty bs:Literal_version_19 ;
+    bacnet:object-name bs:Literal_version_36 .
+
+bs:BACnetReference_version_2 a ref:BACnetReference ;
+    bacnet:ReadableProperty bs:Literal_version_16 ;
+    bacnet:object-name bs:Literal_version_12 .
+
+bs:BACnetReference_version_3 a ref:BACnetReference ;
+    bacnet:ReadableProperty bs:Literal_version_14 ;
+    bacnet:object-name bs:Literal_version_11 .
+
+bs:BACnetReference_version_4 a ref:BACnetReference ;
+    bacnet:ReadableProperty bs:Literal_version_6 ;
+    bacnet:object-name bs:Literal_version_7 .
+
 bs:BACnetReference_version_5 a ref:BACnetReference ;
+    bacnet:ReadableProperty bs:Literal_version_26 ;
+    bacnet:object-name bs:Literal_version_29 .
+
+bs:BACnetReference_version_6 a ref:BACnetReference ;
     bacnet:ReadableProperty bs:Literal_version_31 ;
     bacnet:object-name bs:Literal_version_30 .
 
-bs:BACnetReference_version_6 a ref:BACnetReference ;
-    bacnet:ReadableProperty bs:Literal_version_8 ;
-    bacnet:object-name bs:Literal_version_11 .
-
 bs:BACnetReference_version_7 a ref:BACnetReference ;
-    bacnet:ReadableProperty bs:Literal_version_12 ;
-    bacnet:object-name bs:Literal_version_19 .
+    bacnet:ReadableProperty bs:Literal_version_23 ;
+    bacnet:object-name bs:Literal_version_37 .
 
 bs:BACnetReference_version_8 a ref:BACnetReference ;
-    bacnet:ReadableProperty bs:Literal_version_9 ;
-    bacnet:object-name bs:Literal_version_35 .
+    bacnet:ReadableProperty bs:Literal_version_28 ;
+    bacnet:object-name bs:Literal_version_27 .
 
 bs:BACnetReference_version_9 a ref:BACnetReference ;
-    bacnet:ReadableProperty bs:Literal_version_17 ;
-    bacnet:object-name bs:Literal_version_26 .
+    bacnet:ReadableProperty bs:Literal_version_21 ;
+    bacnet:object-name bs:Literal_version_9 .
 
 bs:Building_version_1 a brick:Building,
         rec:Building ;
@@ -1362,11 +1288,11 @@ bs:Service_Room_version_1 a brick:Service_Room,
     brick:isPartOf bs:Building_version_2 .
 
 bs:Status_version_2 a brick:Status ;
-    s223:hasExternalReference bs:BACnetReference_version_2 ;
+    s223:hasExternalReference bs:BACnetReference_version_4 ;
     brick:hasUnit unit:UNITLESS ;
     brick:isPointOf bs:Fan_VFD_version_1,
         bs:Thermal_Power_Meter_version_1 ;
-    ref:hasExternalReference bs:BACnetReference_version_2 .
+    ref:hasExternalReference bs:BACnetReference_version_4 .
 
 bs:System_Enable_Command_version_1 a brick:System_Enable_Command ;
     s223:hasExternalReference bs:BACnetReference_version_1 ;
@@ -1392,12 +1318,12 @@ bs:Temperature_Setpoint_version_1 a brick:Temperature_Setpoint ;
 
 bs:Thermal_Power_Sensor_version_1 a brick:Thermal_Power_Sensor ;
     s223:hasExternalReference bs:BACnetReference_version_1,
-        bs:BACnetReference_version_11 ;
+        bs:BACnetReference_version_8 ;
     brick:hasUnit unit:TON_FG ;
     brick:isPointOf bs:Thermal_Power_Meter_version_1,
         bs:Thermal_Power_Meter_version_2 ;
     ref:hasExternalReference bs:BACnetReference_version_1,
-        bs:BACnetReference_version_11 .
+        bs:BACnetReference_version_8 .
 
 bs:Unit_Failure_Alarm_version_1 a brick:Unit_Failure_Alarm ;
     s223:hasExternalReference bs:BACnetReference_version_1 ;
@@ -1988,7 +1914,7 @@ bs:Max_Water_Temperature_Setpoint_version_1 a brick:Max_Water_Temperature_Setpoi
         <urn:bldg#bldg.CW.MAKE.UP_FLOW.V>,
         <urn:bldg#bldg_Water_Meter> ;
     s223:hasExternalReference bs:BACnetReference_version_1,
-        bs:BACnetReference_version_10 ;
+        bs:BACnetReference_version_9 ;
     brick:hasPoint bs:Water_Flow_Sensor_version_2,
         bs:Water_Flow_Sensor_version_3 ;
     brick:hasSubstance rdfs:Resource ;
@@ -1997,7 +1923,7 @@ bs:Max_Water_Temperature_Setpoint_version_1 a brick:Max_Water_Temperature_Setpoi
         bs:Water_Loop_version_2 ;
     brick:meters bs:Water_Loop_version_2 ;
     ref:hasExternalReference bs:BACnetReference_version_1,
-        bs:BACnetReference_version_10 .
+        bs:BACnetReference_version_9 .
 
 bs:Mechanical_Room_version_2 a brick:Mechanical_Room,
         rec:UtilitiesRoom ;
@@ -2215,7 +2141,7 @@ bs:Leaving_Chilled_Water_Temperature_Sensor_version_1 a brick:Leaving_Chilled_Wa
 
 bs:Mode_Status_version_1 a brick:Mode_Status ;
     s223:hasExternalReference bs:BACnetReference_version_1,
-        bs:BACnetReference_version_6 ;
+        bs:BACnetReference_version_2 ;
     brick:hasUnit unit:UNITLESS ;
     brick:isPointOf rdfs:Resource,
         bs:Breaker_Panel_version_1,
@@ -2226,7 +2152,7 @@ bs:Mode_Status_version_1 a brick:Mode_Status ;
         bs:Exhaust_Fan_version_2,
         bs:Thermal_Power_Meter_version_1 ;
     ref:hasExternalReference bs:BACnetReference_version_1,
-        bs:BACnetReference_version_6 .
+        bs:BACnetReference_version_2 .
 
 bs:Office_version_3 a brick:Office,
         brick:Private_Office,
@@ -2241,7 +2167,7 @@ bs:Office_version_3 a brick:Office,
 
 bs:Operating_Mode_Status_version_1 a brick:Operating_Mode_Status ;
     s223:hasExternalReference bs:BACnetReference_version_1,
-        bs:BACnetReference_version_12 ;
+        bs:BACnetReference_version_10 ;
     brick:hasUnit unit:UNITLESS ;
     brick:isPointOf rdfs:Resource,
         bs:CRAC_version_1,
@@ -2252,7 +2178,7 @@ bs:Operating_Mode_Status_version_1 a brick:Operating_Mode_Status ;
         bs:RVAV_version_1,
         bs:Thermal_Power_Meter_version_1 ;
     ref:hasExternalReference bs:BACnetReference_version_1,
-        bs:BACnetReference_version_12 .
+        bs:BACnetReference_version_10 .
 
 bs:Riser_version_1 a brick:Riser,
         rec:Room ;
@@ -4114,10 +4040,10 @@ bs:RVAV_version_1 a brick:RVAV,
         bs:Team_Room_version_1 .
 
 bs:BACnetReference_version_1 a ref:BACnetReference ;
-    bacnet:ReadableProperty bs:Literal_version_3 ;
-    bacnet:description bs:Literal_version_4 ;
-    bacnet:object-identifier bs:Literal_version_2 ;
-    bacnet:object-name bs:Literal_version_5 ;
-    bacnet:object-type bs:Literal_version_1 ;
+    bacnet:ReadableProperty bs:Literal_version_1 ;
+    bacnet:description bs:Literal_version_2 ;
+    bacnet:object-identifier bs:Literal_version_4 ;
+    bacnet:object-name bs:Literal_version_3 ;
+    bacnet:object-type bs:Literal_version_5 ;
     bacnet:objectOf bs:ukWxk1OT528_version_1 .
 

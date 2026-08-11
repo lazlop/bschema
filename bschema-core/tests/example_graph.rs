@@ -227,20 +227,37 @@ fn auto_numbers_a_prefix_for_an_unknown_namespace() {
 
 #[test]
 fn strips_the_synthetic_rdfs_literal_bookkeeping_triples() {
+    // create_bschema already strips the synthetic rdfs:Literal marker out
+    // of class_graph itself (see create_bschema.rs's dedicated test); this
+    // is an end-to-end check that example_turtle's output stays clean too.
     let data_graph = RdfGraph::parse_str(TTL_WITH_LITERALS, RdfFormat::Turtle).unwrap();
     let result = create_bschema(&data_graph, 10, None, true, true).unwrap();
-
-    // The underlying class_graph does carry these (see
-    // create_bschema.rs's literal test); example_turtle should filter them
-    // out as an implementation artifact of RdfGraph::skolemize, not model
-    // content worth showing a reader.
-    assert!(
-        result.class_graph.triples().iter().any(|t| t.object.to_string().contains("rdf-schema#Literal")),
-        "test setup: expected class_graph to contain a `a rdfs:Literal` bookkeeping triple"
-    );
-
     let turtle = result.example_turtle(2).unwrap();
     assert!(!turtle.contains("Literal"), "should not surface rdfs:Literal bookkeeping, got:\n{turtle}");
+}
+
+#[test]
+fn falls_back_to_filtering_the_literal_marker_from_an_already_stale_class_graph() {
+    // Simulates a class_graph produced by an older version of
+    // create_bschema (before it stripped the synthetic rdfs:Literal marker
+    // out of class_graph itself) and only reloaded here - example_turtle
+    // should still filter it defensively.
+    let class_graph = RdfGraph::parse_str(
+        "@prefix bs: <urn:bschema#> . @prefix ex: <urn:example#> . @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> . \
+         bs:Sensor_1 ex:hasValue bs:Literal_1 . bs:Literal_1 a rdfs:Literal .",
+        RdfFormat::Turtle,
+    )
+    .unwrap();
+    let member_graph = RdfGraph::parse_str(
+        "@prefix bs: <urn:bschema#> . @prefix xsd: <http://www.w3.org/2001/XMLSchema#> . \
+         bs:Literal_1 <http://www.w3.org/2000/01/rdf-schema#member> \"22.5\"^^xsd:double .",
+        RdfFormat::Turtle,
+    )
+    .unwrap();
+
+    let turtle = bschema_core::examples::example_turtle(&class_graph, &member_graph, 2).unwrap();
+    assert!(!turtle.contains("Literal"), "should filter the stale marker defensively, got:\n{turtle}");
+    assert!(turtle.contains("22.5"), "should still render the real hasValue triple, got:\n{turtle}");
 }
 
 const TTL_WITH_LITERALS: &str = r#"

@@ -58,12 +58,6 @@ bs:Heating_Coil_version_1 a brick:Heating_Coil ;
 bs:Hot_Water_Pump_version_1 a brick:Hot_Water_Pump ;
     brick:hasPoint bs:Electric_Power_Sensor_version_1 .
 
-bs:Literal_version_1 a rdfs:Literal .
-
-bs:Literal_version_3 a rdfs:Literal .
-
-bs:Literal_version_4 a rdfs:Literal .
-
 bs:Max_Air_Temperature_Setpoint_version_1 a brick:Max_Air_Temperature_Setpoint ;
     ref:hasExternalReference bs:Resource_version_1,
         bs:TimeseriesReference_version_1 .
@@ -135,8 +129,6 @@ bs:HVAC_Zone_version_1 a brick:HVAC_Zone ;
 bs:Pump_version_1 a brick:Pump ;
     brick:feeds bs:Hot_Water_Pump_version_1 ;
     brick:hasPoint bs:Electric_Power_Sensor_version_1 .
-
-bs:Literal_version_2 a rdfs:Literal .
 
 bs:Electric_Power_Sensor_version_1 a brick:Electric_Power_Sensor ;
     ref:hasExternalReference bs:Resource_version_1,

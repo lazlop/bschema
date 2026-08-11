@@ -114,8 +114,6 @@ bs:Filter_version_1 a s223:Filter,
         bs:OutletConnectionPoint_version_1 ;
     s223:hasProperty bs:QuantifiableObservableProperty_version_1 .
 
-bs:Literal_version_2 a rdfs:Literal .
-
 bs:Port_version_1 a bacnet:Port ;
     bacnet:storedAt bs:Literal_version_2 .
 
@@ -219,8 +217,6 @@ bs:Damper_version_1 a s223:Damper,
     s223:hasRole s223:Role-Economizer,
         s223:Role-OutdoorAirIntake,
         s223:Role-Outside .
-
-bs:Literal_version_1 a rdfs:Literal .
 
 bs:CoolingCoil_version_1 a s223:CoolingCoil,
         <http://data.ashrae.org/standard223/1.0/extensions/g36#ChilledWaterCoil> ;

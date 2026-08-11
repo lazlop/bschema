@@ -406,10 +406,6 @@ bs:Limit_version_1 a brick:Limit ;
     brick:isPointOf bs:RVAV_version_1 ;
     ref:hasExternalReference bs:BACnetReference_version_1 .
 
-bs:Literal_version_2 a rdfs:Literal .
-
-bs:Literal_version_3 a rdfs:Literal .
-
 bs:Low_Air_Flow_Alarm_version_1 a brick:Low_Air_Flow_Alarm ;
     s223:hasExternalReference bs:BACnetReference_version_1 ;
     brick:hasUnit unit:UNITLESS ;
@@ -578,7 +574,7 @@ bs:Override_Command_version_1 a brick:Override_Command ;
     ref:hasExternalReference bs:BACnetReference_version_1 .
 
 bs:Port_version_1 a bacnet:Port ;
-    ref:storedAt bs:Literal_version_2 .
+    ref:storedAt bs:Literal_version_3 .
 
 bs:Pump_Command_version_1 a brick:Pump_Command ;
     s223:hasExternalReference bs:BACnetReference_version_1 ;
@@ -728,7 +724,7 @@ bs:Zone_Air_Humidity_Setpoint_version_1 a brick:Zone_Air_Humidity_Setpoint ;
     ref:hasExternalReference bs:BACnetReference_version_1 .
 
 bs:ukWxk1OT528_version_1 a bacnet:ukWxk1OT528 ;
-    bacnet:device-instance bs:Literal_version_3 ;
+    bacnet:device-instance bs:Literal_version_2 ;
     bacnet:hasPort bs:Port_version_1 .
 
 bs:Active_Power_Sensor_version_1 a brick:Active_Power_Sensor ;
@@ -1812,8 +1808,6 @@ bs:IDF_version_1 a brick:IDF,
     rec:isFedBy bs:VAV_version_1 ;
     rec:isLocationOf bs:VAV_version_1 ;
     rec:locatedIn bs:Floor_version_1 .
-
-bs:Literal_version_1 a rdfs:Literal .
 
 bs:Operating_Mode_Status_version_1 a brick:Operating_Mode_Status ;
     s223:hasExternalReference bs:BACnetReference_version_1 ;

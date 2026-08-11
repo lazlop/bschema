@@ -14,10 +14,10 @@ bs:Communication_Loss_Alarm_version_4 a brick:Communication_Loss_Alarm ;
     ref:hasExternalReference bs:BACnetReference_version_1 .
 
 bs:Current_Sensor_version_4 a brick:Current_Sensor ;
-    s223:hasExternalReference bs:BACnetReference_version_3 ;
+    s223:hasExternalReference bs:BACnetReference_version_77 ;
     brick:hasUnit unit:A ;
     brick:isPointOf rdfs:Resource ;
-    ref:hasExternalReference bs:BACnetReference_version_3 .
+    ref:hasExternalReference bs:BACnetReference_version_77 .
 
 bs:Dewpoint_Sensor_version_2 a brick:Dewpoint_Sensor ;
     s223:hasExternalReference bs:BACnetReference_version_1 ;
@@ -32,16 +32,16 @@ bs:Emergency_Generator_Status_version_1 a brick:Emergency_Generator_Status ;
     ref:hasExternalReference bs:BACnetReference_version_1 .
 
 bs:Enable_Status_version_7 a brick:Enable_Status ;
-    s223:hasExternalReference bs:BACnetReference_version_46 ;
+    s223:hasExternalReference bs:BACnetReference_version_29 ;
     brick:hasUnit unit:UNITLESS ;
     brick:isPointOf rdfs:Resource ;
-    ref:hasExternalReference bs:BACnetReference_version_46 .
+    ref:hasExternalReference bs:BACnetReference_version_29 .
 
 bs:Fault_Status_version_5 a brick:Fault_Status ;
-    s223:hasExternalReference bs:BACnetReference_version_5 ;
+    s223:hasExternalReference bs:BACnetReference_version_11 ;
     brick:hasUnit unit:UNITLESS ;
     brick:isPointOf rdfs:Resource ;
-    ref:hasExternalReference bs:BACnetReference_version_5 .
+    ref:hasExternalReference bs:BACnetReference_version_11 .
 
 bs:High_Humidity_Alarm_Parameter_version_2 a brick:High_Humidity_Alarm_Parameter ;
     s223:hasExternalReference bs:BACnetReference_version_1 ;
@@ -99,10 +99,10 @@ bs:Mode_Status_version_6 a brick:Mode_Status ;
     ref:hasExternalReference bs:BACnetReference_version_1 .
 
 bs:Motor_Speed_Sensor_version_2 a brick:Motor_Speed_Sensor ;
-    s223:hasExternalReference bs:BACnetReference_version_78 ;
+    s223:hasExternalReference bs:BACnetReference_version_27 ;
     brick:hasUnit unit:REV-PER-MIN ;
     brick:isPointOf rdfs:Resource ;
-    ref:hasExternalReference bs:BACnetReference_version_78 .
+    ref:hasExternalReference bs:BACnetReference_version_27 .
 
 bs:No_Water_Alarm_version_2 a brick:No_Water_Alarm ;
     s223:hasExternalReference bs:BACnetReference_version_1 ;
@@ -111,16 +111,16 @@ bs:No_Water_Alarm_version_2 a brick:No_Water_Alarm ;
     ref:hasExternalReference bs:BACnetReference_version_1 .
 
 bs:Operating_Mode_Status_version_4 a brick:Operating_Mode_Status ;
-    s223:hasExternalReference bs:BACnetReference_version_44 ;
+    s223:hasExternalReference bs:BACnetReference_version_8 ;
     brick:hasUnit unit:UNITLESS ;
     brick:isPointOf rdfs:Resource ;
-    ref:hasExternalReference bs:BACnetReference_version_44 .
+    ref:hasExternalReference bs:BACnetReference_version_8 .
 
 bs:Output_Frequency_Sensor_version_1 a brick:Output_Frequency_Sensor ;
-    s223:hasExternalReference bs:BACnetReference_version_47 ;
+    s223:hasExternalReference bs:BACnetReference_version_43 ;
     brick:hasUnit unit:HZ ;
     brick:isPointOf rdfs:Resource ;
-    ref:hasExternalReference bs:BACnetReference_version_47 .
+    ref:hasExternalReference bs:BACnetReference_version_43 .
 
 bs:Parameter_version_6 a brick:Parameter ;
     s223:hasExternalReference bs:BACnetReference_version_1 ;
@@ -129,10 +129,10 @@ bs:Parameter_version_6 a brick:Parameter ;
     ref:hasExternalReference bs:BACnetReference_version_1 .
 
 bs:Point_version_2 a brick:Point ;
-    s223:hasExternalReference bs:BACnetReference_version_60 ;
+    s223:hasExternalReference bs:BACnetReference_version_53 ;
     brick:hasUnit unit:UNITLESS ;
     brick:isPointOf rdfs:Resource ;
-    ref:hasExternalReference bs:BACnetReference_version_60 .
+    ref:hasExternalReference bs:BACnetReference_version_53 .
 
 bs:Power_Loss_Alarm_version_1 a brick:Power_Loss_Alarm ;
     s223:hasExternalReference bs:BACnetReference_version_1 ;
@@ -141,10 +141,10 @@ bs:Power_Loss_Alarm_version_1 a brick:Power_Loss_Alarm ;
     ref:hasExternalReference bs:BACnetReference_version_1 .
 
 bs:Power_Sensor_version_2 a brick:Power_Sensor ;
-    s223:hasExternalReference bs:BACnetReference_version_62 ;
+    s223:hasExternalReference bs:BACnetReference_version_22 ;
     brick:hasUnit unit:HP ;
     brick:isPointOf rdfs:Resource ;
-    ref:hasExternalReference bs:BACnetReference_version_62 .
+    ref:hasExternalReference bs:BACnetReference_version_22 .
 
 bs:Resource_version_1 s223:hasExternalReference bs:BACnetReference_version_1 ;
     ref:hasExternalReference bs:BACnetReference_version_1 .
@@ -156,22 +156,22 @@ bs:Setpoint_version_2 a brick:Setpoint ;
     ref:hasExternalReference bs:BACnetReference_version_1 .
 
 bs:Speed_Setpoint_version_3 a brick:Speed_Setpoint ;
-    s223:hasExternalReference bs:BACnetReference_version_77 ;
+    s223:hasExternalReference bs:BACnetReference_version_59 ;
     brick:hasUnit unit:PERCENT ;
     brick:isPointOf rdfs:Resource ;
-    ref:hasExternalReference bs:BACnetReference_version_77 .
+    ref:hasExternalReference bs:BACnetReference_version_59 .
 
 bs:Start_Stop_Status_version_4 a brick:Start_Stop_Status ;
-    s223:hasExternalReference bs:BACnetReference_version_67 ;
+    s223:hasExternalReference bs:BACnetReference_version_75 ;
     brick:hasUnit unit:UNITLESS ;
     brick:isPointOf rdfs:Resource ;
-    ref:hasExternalReference bs:BACnetReference_version_67 .
+    ref:hasExternalReference bs:BACnetReference_version_75 .
 
 bs:Temperature_Sensor_version_5 a brick:Temperature_Sensor ;
-    s223:hasExternalReference bs:BACnetReference_version_21 ;
+    s223:hasExternalReference bs:BACnetReference_version_19 ;
     brick:hasUnit unit:DEG_F ;
     brick:isPointOf rdfs:Resource ;
-    ref:hasExternalReference bs:BACnetReference_version_21 .
+    ref:hasExternalReference bs:BACnetReference_version_19 .
 
 bs:Water_Alarm_version_2 a brick:Water_Alarm ;
     s223:hasExternalReference bs:BACnetReference_version_1 ;
@@ -194,10 +194,10 @@ bs:Active_Power_Sensor_version_2 a brick:Active_Power_Sensor ;
     ref:hasExternalReference bs:BACnetReference_version_1 .
 
 bs:Active_Power_Sensor_version_3 a brick:Active_Power_Sensor ;
-    s223:hasExternalReference bs:BACnetReference_version_83 ;
+    s223:hasExternalReference bs:BACnetReference_version_96 ;
     brick:hasUnit unit:KiloW ;
     brick:isPointOf bs:Breaker_Panel_version_1 ;
-    ref:hasExternalReference bs:BACnetReference_version_83 .
+    ref:hasExternalReference bs:BACnetReference_version_96 .
 
 bs:Active_Power_Sensor_version_4 a brick:Active_Power_Sensor ;
     s223:hasExternalReference bs:BACnetReference_version_1 ;
@@ -443,16 +443,16 @@ bs:Command_version_2 a brick:Command ;
     ref:hasExternalReference bs:BACnetReference_version_1 .
 
 bs:Communication_Loss_Alarm_version_1 a brick:Communication_Loss_Alarm ;
-    s223:hasExternalReference bs:BACnetReference_version_55 ;
+    s223:hasExternalReference bs:BACnetReference_version_84 ;
     brick:hasUnit unit:UNITLESS ;
     brick:isPointOf bs:Chilled_Water_Loop_version_2 ;
-    ref:hasExternalReference bs:BACnetReference_version_55 .
+    ref:hasExternalReference bs:BACnetReference_version_84 .
 
 bs:Communication_Loss_Alarm_version_2 a brick:Communication_Loss_Alarm ;
-    s223:hasExternalReference bs:BACnetReference_version_85 ;
+    s223:hasExternalReference bs:BACnetReference_version_25 ;
     brick:hasUnit unit:UNITLESS ;
     brick:isPointOf bs:CRAC_version_1 ;
-    ref:hasExternalReference bs:BACnetReference_version_85 .
+    ref:hasExternalReference bs:BACnetReference_version_25 .
 
 bs:Communication_Loss_Alarm_version_3 a brick:Communication_Loss_Alarm ;
     s223:hasExternalReference bs:BACnetReference_version_1 ;
@@ -467,10 +467,10 @@ bs:Conductivity_Sensor_version_1 a brick:Conductivity_Sensor ;
     ref:hasExternalReference bs:BACnetReference_version_1 .
 
 bs:Cooling_Command_version_1 a brick:Cooling_Command ;
-    s223:hasExternalReference bs:BACnetReference_version_57 ;
+    s223:hasExternalReference bs:BACnetReference_version_68 ;
     brick:hasUnit unit:PERCENT ;
     brick:isPointOf bs:Chilled_Water_Valve_version_1 ;
-    ref:hasExternalReference bs:BACnetReference_version_57 .
+    ref:hasExternalReference bs:BACnetReference_version_68 .
 
 bs:Cooling_Command_version_2 a brick:Cooling_Command ;
     s223:hasExternalReference bs:BACnetReference_version_1 ;
@@ -479,10 +479,10 @@ bs:Cooling_Command_version_2 a brick:Cooling_Command ;
     ref:hasExternalReference bs:BACnetReference_version_1 .
 
 bs:Cooling_Command_version_3 a brick:Cooling_Command ;
-    s223:hasExternalReference bs:BACnetReference_version_81 ;
+    s223:hasExternalReference bs:BACnetReference_version_98 ;
     brick:hasUnit unit:PERCENT ;
     brick:isPointOf bs:Chilled_Water_Loop_version_2 ;
-    ref:hasExternalReference bs:BACnetReference_version_81 .
+    ref:hasExternalReference bs:BACnetReference_version_98 .
 
 bs:Cooling_Demand_Sensor_version_1 a brick:Cooling_Demand_Sensor ;
     s223:hasExternalReference bs:BACnetReference_version_1 ;
@@ -510,10 +510,10 @@ bs:Cooling_Demand_Setpoint_version_1 a brick:Cooling_Demand_Setpoint ;
     ref:hasExternalReference bs:BACnetReference_version_1 .
 
 bs:Cooling_Enable_Command_version_1 a brick:Cooling_Enable_Command ;
-    s223:hasExternalReference bs:BACnetReference_version_20 ;
+    s223:hasExternalReference bs:BACnetReference_version_13 ;
     brick:hasUnit unit:UNITLESS ;
     brick:isPointOf bs:CRAC_version_1 ;
-    ref:hasExternalReference bs:BACnetReference_version_20 .
+    ref:hasExternalReference bs:BACnetReference_version_13 .
 
 bs:Cooling_Mode_Status_version_1 a brick:Cooling_Mode_Status ;
     s223:hasExternalReference bs:BACnetReference_version_1 ;
@@ -523,10 +523,10 @@ bs:Cooling_Mode_Status_version_1 a brick:Cooling_Mode_Status ;
     ref:hasExternalReference bs:BACnetReference_version_1 .
 
 bs:Cooling_Mode_Status_version_2 a brick:Cooling_Mode_Status ;
-    s223:hasExternalReference bs:BACnetReference_version_45 ;
+    s223:hasExternalReference bs:BACnetReference_version_21 ;
     brick:hasUnit unit:UNITLESS ;
     brick:isPointOf bs:CRAC_version_1 ;
-    ref:hasExternalReference bs:BACnetReference_version_45 .
+    ref:hasExternalReference bs:BACnetReference_version_21 .
 
 bs:Current_Limit_version_1 a brick:Current_Limit ;
     s223:hasExternalReference bs:BACnetReference_version_1 ;
@@ -584,10 +584,10 @@ bs:Current_Sensor_version_6 a brick:Current_Sensor ;
     ref:hasExternalReference bs:BACnetReference_version_1 .
 
 bs:Current_Sensor_version_7 a brick:Current_Sensor ;
-    s223:hasExternalReference bs:BACnetReference_version_41 ;
+    s223:hasExternalReference bs:BACnetReference_version_58 ;
     brick:hasUnit unit:A ;
     brick:isPointOf bs:Breaker_Panel_version_1 ;
-    ref:hasExternalReference bs:BACnetReference_version_41 .
+    ref:hasExternalReference bs:BACnetReference_version_58 .
 
 bs:Current_Sensor_version_8 a brick:Current_Sensor ;
     s223:hasExternalReference bs:BACnetReference_version_1 ;
@@ -711,16 +711,16 @@ bs:Damper_Position_Sensor_version_2 a brick:Damper_Position_Sensor ;
     ref:hasExternalReference bs:BACnetReference_version_1 .
 
 bs:Dehumidification_Start_Stop_Status_version_1 a brick:Dehumidification_Start_Stop_Status ;
-    s223:hasExternalReference bs:BACnetReference_version_54 ;
+    s223:hasExternalReference bs:BACnetReference_version_40 ;
     brick:hasUnit unit:UNITLESS ;
     brick:isPointOf bs:CRAC_version_1 ;
-    ref:hasExternalReference bs:BACnetReference_version_54 .
+    ref:hasExternalReference bs:BACnetReference_version_40 .
 
 bs:Dehumidify_Command_version_1 a brick:Dehumidify_Command ;
-    s223:hasExternalReference bs:BACnetReference_version_36 ;
+    s223:hasExternalReference bs:BACnetReference_version_73 ;
     brick:hasUnit unit:UNITLESS ;
     brick:isPointOf bs:CRAC_version_1 ;
-    ref:hasExternalReference bs:BACnetReference_version_36 .
+    ref:hasExternalReference bs:BACnetReference_version_73 .
 
 bs:Delay_Parameter_version_1 a brick:Delay_Parameter ;
     s223:hasExternalReference bs:BACnetReference_version_1 ;
@@ -786,10 +786,10 @@ bs:Demand_Sensor_version_4 a brick:Demand_Sensor ;
     ref:hasExternalReference bs:BACnetReference_version_1 .
 
 bs:Demand_Sensor_version_5 a brick:Demand_Sensor ;
-    s223:hasExternalReference bs:BACnetReference_version_69 ;
+    s223:hasExternalReference bs:BACnetReference_version_83 ;
     brick:hasUnit unit:W-HR ;
     brick:isPointOf bs:Breaker_Panel_version_1 ;
-    ref:hasExternalReference bs:BACnetReference_version_69 .
+    ref:hasExternalReference bs:BACnetReference_version_83 .
 
 bs:Demand_Sensor_version_6 a brick:Demand_Sensor ;
     s223:hasExternalReference bs:BACnetReference_version_1 ;
@@ -952,10 +952,10 @@ bs:Discharge_Air_Temperature_Sensor_version_1 a brick:Discharge_Air_Temperature_
 
 bs:Discharge_Air_Temperature_Sensor_version_2 a brick:Discharge_Air_Temperature_Sensor,
         brick:Supply_Air_Temperature_Sensor ;
-    s223:hasExternalReference bs:BACnetReference_version_32 ;
+    s223:hasExternalReference bs:BACnetReference_version_3 ;
     brick:hasUnit unit:DEG_F ;
     brick:isPointOf bs:Hot_Water_Coil_version_2 ;
-    ref:hasExternalReference bs:BACnetReference_version_32 .
+    ref:hasExternalReference bs:BACnetReference_version_3 .
 
 bs:Discharge_Air_Temperature_Sensor_version_3 a brick:Discharge_Air_Temperature_Sensor,
         brick:Supply_Air_Temperature_Sensor ;
@@ -966,10 +966,10 @@ bs:Discharge_Air_Temperature_Sensor_version_3 a brick:Discharge_Air_Temperature_
 
 bs:Discharge_Air_Temperature_Sensor_version_4 a brick:Discharge_Air_Temperature_Sensor,
         brick:Supply_Air_Temperature_Sensor ;
-    s223:hasExternalReference bs:BACnetReference_version_15 ;
+    s223:hasExternalReference bs:BACnetReference_version_56 ;
     brick:hasUnit unit:DEG_F ;
     brick:isPointOf bs:CRAC_version_1 ;
-    ref:hasExternalReference bs:BACnetReference_version_15 .
+    ref:hasExternalReference bs:BACnetReference_version_56 .
 
 bs:Discharge_Air_Temperature_Sensor_version_5 a brick:Discharge_Air_Temperature_Sensor,
         brick:Supply_Air_Temperature_Sensor ;
@@ -1003,10 +1003,10 @@ bs:Discharge_Air_Temperature_Setpoint_version_1 a brick:Discharge_Air_Temperatur
 
 bs:Discharge_Air_Temperature_Setpoint_version_2 a brick:Discharge_Air_Temperature_Setpoint,
         brick:Supply_Air_Temperature_Setpoint ;
-    s223:hasExternalReference bs:BACnetReference_version_6 ;
+    s223:hasExternalReference bs:BACnetReference_version_9 ;
     brick:hasUnit unit:DEG_F ;
     brick:isPointOf bs:Hot_Water_Coil_version_2 ;
-    ref:hasExternalReference bs:BACnetReference_version_6 .
+    ref:hasExternalReference bs:BACnetReference_version_9 .
 
 bs:Discharge_Air_Temperature_Setpoint_version_3 a brick:Discharge_Air_Temperature_Setpoint,
         brick:Supply_Air_Temperature_Setpoint ;
@@ -1024,10 +1024,10 @@ bs:Discharge_Air_Temperature_Setpoint_version_4 a brick:Discharge_Air_Temperatur
 
 bs:Discharge_Air_Temperature_Setpoint_version_5 a brick:Discharge_Air_Temperature_Setpoint,
         brick:Supply_Air_Temperature_Setpoint ;
-    s223:hasExternalReference bs:BACnetReference_version_71 ;
+    s223:hasExternalReference bs:BACnetReference_version_26 ;
     brick:hasUnit unit:DEG_F ;
     brick:isPointOf bs:CRAC_version_1 ;
-    ref:hasExternalReference bs:BACnetReference_version_71 .
+    ref:hasExternalReference bs:BACnetReference_version_26 .
 
 bs:Discharge_Air_Temperature_Setpoint_version_6 a brick:Discharge_Air_Temperature_Setpoint,
         brick:Supply_Air_Temperature_Setpoint ;
@@ -1078,10 +1078,10 @@ bs:Duration_Sensor_version_1 a brick:Duration_Sensor ;
     ref:hasExternalReference bs:BACnetReference_version_1 .
 
 bs:Electric_Energy_Sensor_version_1 a brick:Electric_Energy_Sensor ;
-    s223:hasExternalReference bs:BACnetReference_version_31 ;
+    s223:hasExternalReference bs:BACnetReference_version_97 ;
     brick:hasUnit unit:MegaW-HR ;
     brick:isPointOf bs:Fan_VFD_version_1 ;
-    ref:hasExternalReference bs:BACnetReference_version_31 .
+    ref:hasExternalReference bs:BACnetReference_version_97 .
 
 bs:Electric_Energy_Sensor_version_2 a brick:Electric_Energy_Sensor ;
     s223:hasExternalReference bs:BACnetReference_version_1 ;
@@ -1104,10 +1104,10 @@ bs:Electric_Power_Sensor_version_1 a brick:Electric_Power_Sensor ;
     ref:hasExternalReference bs:BACnetReference_version_1 .
 
 bs:Electric_Power_Sensor_version_2 a brick:Electric_Power_Sensor ;
-    s223:hasExternalReference bs:BACnetReference_version_98 ;
+    s223:hasExternalReference bs:BACnetReference_version_65 ;
     brick:hasUnit unit:KiloV-A ;
     brick:isPointOf bs:Breaker_Panel_version_1 ;
-    ref:hasExternalReference bs:BACnetReference_version_98 .
+    ref:hasExternalReference bs:BACnetReference_version_65 .
 
 bs:Electric_Power_Sensor_version_3 a brick:Electric_Power_Sensor ;
     s223:hasExternalReference bs:BACnetReference_version_1 ;
@@ -1170,10 +1170,10 @@ bs:Enable_Command_version_6 a brick:Enable_Command ;
     ref:hasExternalReference bs:BACnetReference_version_1 .
 
 bs:Enable_Command_version_7 a brick:Enable_Command ;
-    s223:hasExternalReference bs:BACnetReference_version_39 ;
+    s223:hasExternalReference bs:BACnetReference_version_54 ;
     brick:hasUnit unit:UNITLESS ;
     brick:isPointOf bs:CRAC_version_1 ;
-    ref:hasExternalReference bs:BACnetReference_version_39 .
+    ref:hasExternalReference bs:BACnetReference_version_54 .
 
 bs:Enable_Status_version_1 a brick:Enable_Status ;
     s223:hasExternalReference bs:BACnetReference_version_1 ;
@@ -1212,10 +1212,10 @@ bs:Enable_Status_version_14 a brick:Enable_Status ;
     ref:hasExternalReference bs:BACnetReference_version_1 .
 
 bs:Enable_Status_version_15 a brick:Enable_Status ;
-    s223:hasExternalReference bs:BACnetReference_version_35 ;
+    s223:hasExternalReference bs:BACnetReference_version_30 ;
     brick:hasUnit unit:UNITLESS ;
     brick:isPointOf bs:CRAC_version_1 ;
-    ref:hasExternalReference bs:BACnetReference_version_35 .
+    ref:hasExternalReference bs:BACnetReference_version_30 .
 
 bs:Enable_Status_version_16 a brick:Enable_Status ;
     s223:hasExternalReference bs:BACnetReference_version_1 ;
@@ -1356,17 +1356,17 @@ bs:Entering_Hot_Water_Temperature_Sensor_version_1 a brick:Entering_Hot_Water_Te
     ref:hasExternalReference bs:BACnetReference_version_1 .
 
 bs:Entering_Water_Temperature_Sensor_version_1 a brick:Entering_Water_Temperature_Sensor ;
-    s223:hasExternalReference bs:BACnetReference_version_102 ;
+    s223:hasExternalReference bs:BACnetReference_version_72 ;
     brick:hasUnit unit:DEG_F ;
     brick:isPointOf bs:Thermal_Power_Meter_version_1 ;
-    ref:hasExternalReference bs:BACnetReference_version_102 .
+    ref:hasExternalReference bs:BACnetReference_version_72 .
 
 bs:Entering_Water_Temperature_Sensor_version_2 a brick:Entering_Water_Temperature_Sensor,
         brick:Return_Water_Temperature_Sensor ;
-    s223:hasExternalReference bs:BACnetReference_version_13 ;
+    s223:hasExternalReference bs:BACnetReference_version_10 ;
     brick:hasUnit unit:DEG_F ;
     brick:isPointOf bs:Thermal_Power_Meter_version_1 ;
-    ref:hasExternalReference bs:BACnetReference_version_13 .
+    ref:hasExternalReference bs:BACnetReference_version_10 .
 
 bs:Exhaust_Air_Flow_Sensor_version_1 a brick:Exhaust_Air_Flow_Sensor ;
     s223:hasExternalReference bs:BACnetReference_version_1 ;
@@ -1479,10 +1479,10 @@ bs:Failure_Alarm_version_6 a brick:Failure_Alarm ;
     ref:hasExternalReference bs:BACnetReference_version_1 .
 
 bs:Failure_Alarm_version_7 a brick:Failure_Alarm ;
-    s223:hasExternalReference bs:BACnetReference_version_72 ;
+    s223:hasExternalReference bs:BACnetReference_version_50 ;
     brick:hasUnit unit:UNITLESS ;
     brick:isPointOf bs:Exhaust_Fan_version_2 ;
-    ref:hasExternalReference bs:BACnetReference_version_72 .
+    ref:hasExternalReference bs:BACnetReference_version_50 .
 
 bs:Failure_Alarm_version_8 a brick:Failure_Alarm ;
     s223:hasExternalReference bs:BACnetReference_version_1 ;
@@ -1491,10 +1491,10 @@ bs:Failure_Alarm_version_8 a brick:Failure_Alarm ;
     ref:hasExternalReference bs:BACnetReference_version_1 .
 
 bs:Fan_Command_version_1 a brick:Fan_Command ;
-    s223:hasExternalReference bs:BACnetReference_version_24 ;
+    s223:hasExternalReference bs:BACnetReference_version_86 ;
     brick:hasUnit unit:PERCENT ;
     brick:isPointOf bs:AHU_version_1 ;
-    ref:hasExternalReference bs:BACnetReference_version_24 .
+    ref:hasExternalReference bs:BACnetReference_version_86 .
 
 bs:Fan_Command_version_2 a brick:Fan_Command ;
     s223:hasExternalReference bs:BACnetReference_version_1 ;
@@ -1503,10 +1503,10 @@ bs:Fan_Command_version_2 a brick:Fan_Command ;
     ref:hasExternalReference bs:BACnetReference_version_1 .
 
 bs:Fan_Command_version_3 a brick:Fan_Command ;
-    s223:hasExternalReference bs:BACnetReference_version_24 ;
+    s223:hasExternalReference bs:BACnetReference_version_86 ;
     brick:hasUnit unit:PERCENT ;
     brick:isPointOf bs:Exhaust_Fan_version_2 ;
-    ref:hasExternalReference bs:BACnetReference_version_24 .
+    ref:hasExternalReference bs:BACnetReference_version_86 .
 
 bs:Fan_Command_version_5 a brick:Fan_Command ;
     s223:hasExternalReference bs:BACnetReference_version_1 ;
@@ -1521,10 +1521,10 @@ bs:Fan_Command_version_6 a brick:Fan_Command ;
     ref:hasExternalReference bs:BACnetReference_version_1 .
 
 bs:Fan_Command_version_7 a brick:Fan_Command ;
-    s223:hasExternalReference bs:BACnetReference_version_79 ;
+    s223:hasExternalReference bs:BACnetReference_version_60 ;
     brick:hasUnit unit:UNITLESS ;
     brick:isPointOf bs:CRAC_version_1 ;
-    ref:hasExternalReference bs:BACnetReference_version_79 .
+    ref:hasExternalReference bs:BACnetReference_version_60 .
 
 bs:Fan_On_Off_Status_version_1 a brick:Fan_On_Off_Status ;
     s223:hasExternalReference bs:BACnetReference_version_1 ;
@@ -1540,10 +1540,10 @@ bs:Fan_On_Off_Status_version_10 a brick:Fan_On_Off_Status ;
     ref:hasExternalReference bs:BACnetReference_version_1 .
 
 bs:Fan_On_Off_Status_version_11 a brick:Fan_On_Off_Status ;
-    s223:hasExternalReference bs:BACnetReference_version_7 ;
+    s223:hasExternalReference bs:BACnetReference_version_20 ;
     brick:hasUnit unit:UNITLESS ;
     brick:isPointOf bs:Discharge_Fan_version_5 ;
-    ref:hasExternalReference bs:BACnetReference_version_7 .
+    ref:hasExternalReference bs:BACnetReference_version_20 .
 
 bs:Fan_On_Off_Status_version_12 a brick:Fan_On_Off_Status ;
     s223:hasExternalReference bs:BACnetReference_version_1 ;
@@ -1552,10 +1552,10 @@ bs:Fan_On_Off_Status_version_12 a brick:Fan_On_Off_Status ;
     ref:hasExternalReference bs:BACnetReference_version_1 .
 
 bs:Fan_On_Off_Status_version_2 a brick:Fan_On_Off_Status ;
-    s223:hasExternalReference bs:BACnetReference_version_7 ;
+    s223:hasExternalReference bs:BACnetReference_version_20 ;
     brick:hasUnit unit:UNITLESS ;
     brick:isPointOf bs:Hot_Water_Coil_version_2 ;
-    ref:hasExternalReference bs:BACnetReference_version_7 .
+    ref:hasExternalReference bs:BACnetReference_version_20 .
 
 bs:Fan_On_Off_Status_version_3 a brick:Fan_On_Off_Status ;
     s223:hasExternalReference bs:BACnetReference_version_1 ;
@@ -1715,10 +1715,10 @@ bs:Filter_Differential_Pressure_Sensor_version_3 a brick:Filter_Differential_Pre
     ref:hasExternalReference bs:BACnetReference_version_1 .
 
 bs:Filter_Status_version_1 a brick:Filter_Status ;
-    s223:hasExternalReference bs:BACnetReference_version_90 ;
+    s223:hasExternalReference bs:BACnetReference_version_69 ;
     brick:hasUnit unit:UNITLESS ;
     brick:isPointOf bs:CRAC_version_1 ;
-    ref:hasExternalReference bs:BACnetReference_version_90 .
+    ref:hasExternalReference bs:BACnetReference_version_69 .
 
 bs:Filter_Status_version_2 a brick:Filter_Status ;
     s223:hasExternalReference bs:BACnetReference_version_1 ;
@@ -1771,10 +1771,10 @@ bs:Frequency_Sensor_version_7 a brick:Frequency_Sensor ;
     ref:hasExternalReference bs:BACnetReference_version_1 .
 
 bs:Heating_Command_version_1 a brick:Heating_Command ;
-    s223:hasExternalReference bs:BACnetReference_version_33 ;
+    s223:hasExternalReference bs:BACnetReference_version_99 ;
     brick:hasUnit unit:PERCENT ;
     brick:isPointOf bs:Hot_Water_Valve_version_1 ;
-    ref:hasExternalReference bs:BACnetReference_version_33 .
+    ref:hasExternalReference bs:BACnetReference_version_99 .
 
 bs:Heating_Command_version_2 a brick:Heating_Command ;
     s223:hasExternalReference bs:BACnetReference_version_1 ;
@@ -1783,16 +1783,16 @@ bs:Heating_Command_version_2 a brick:Heating_Command ;
     ref:hasExternalReference bs:BACnetReference_version_1 .
 
 bs:Heating_Mode_Status_version_1 a brick:Heating_Mode_Status ;
-    s223:hasExternalReference bs:BACnetReference_version_40 ;
+    s223:hasExternalReference bs:BACnetReference_version_74 ;
     brick:hasUnit unit:UNITLESS ;
     brick:isPointOf bs:CRAC_version_1 ;
-    ref:hasExternalReference bs:BACnetReference_version_40 .
+    ref:hasExternalReference bs:BACnetReference_version_74 .
 
 bs:High_Humidity_Alarm_Parameter_version_1 a brick:High_Humidity_Alarm_Parameter ;
-    s223:hasExternalReference bs:BACnetReference_version_86 ;
+    s223:hasExternalReference bs:BACnetReference_version_4 ;
     brick:hasUnit unit:PERCENT ;
     brick:isPointOf bs:CRAC_version_1 ;
-    ref:hasExternalReference bs:BACnetReference_version_86 .
+    ref:hasExternalReference bs:BACnetReference_version_4 .
 
 bs:High_Static_Pressure_Cutout_Setpoint_Limit_version_1 a brick:High_Static_Pressure_Cutout_Setpoint_Limit ;
     s223:hasExternalReference bs:BACnetReference_version_1 ;
@@ -1807,17 +1807,17 @@ bs:High_Static_Pressure_Cutout_Setpoint_Limit_version_2 a brick:High_Static_Pres
     ref:hasExternalReference bs:BACnetReference_version_1 .
 
 bs:High_Temperature_Alarm_Parameter_version_1 a brick:High_Temperature_Alarm_Parameter ;
-    s223:hasExternalReference bs:BACnetReference_version_52 ;
+    s223:hasExternalReference bs:BACnetReference_version_45 ;
     brick:hasUnit unit:DEG_F,
         unit:PERCENT ;
     brick:isPointOf bs:CRAC_version_1 ;
-    ref:hasExternalReference bs:BACnetReference_version_52 .
+    ref:hasExternalReference bs:BACnetReference_version_45 .
 
 bs:High_Temperature_Alarm_version_1 a brick:High_Temperature_Alarm ;
-    s223:hasExternalReference bs:BACnetReference_version_8 ;
+    s223:hasExternalReference bs:BACnetReference_version_14 ;
     brick:hasUnit unit:UNITLESS ;
     brick:isPointOf bs:CRAC_version_1 ;
-    ref:hasExternalReference bs:BACnetReference_version_8 .
+    ref:hasExternalReference bs:BACnetReference_version_14 .
 
 bs:High_Temperature_Alarm_version_2 a brick:High_Temperature_Alarm ;
     s223:hasExternalReference bs:BACnetReference_version_1 ;
@@ -1839,23 +1839,23 @@ bs:Hot_Water_Differential_Pressure_Setpoint_version_1 a brick:Hot_Water_Differen
     ref:hasExternalReference bs:BACnetReference_version_1 .
 
 bs:Humidification_Start_Stop_Status_version_1 a brick:Humidification_Start_Stop_Status ;
-    s223:hasExternalReference bs:BACnetReference_version_25 ;
+    s223:hasExternalReference bs:BACnetReference_version_12 ;
     brick:hasUnit unit:UNITLESS ;
     brick:isPointOf rdfs:Resource,
         bs:CRAC_version_1 ;
-    ref:hasExternalReference bs:BACnetReference_version_25 .
+    ref:hasExternalReference bs:BACnetReference_version_12 .
 
 bs:Humidify_Command_version_1 a brick:Humidify_Command ;
-    s223:hasExternalReference bs:BACnetReference_version_63 ;
+    s223:hasExternalReference bs:BACnetReference_version_24 ;
     brick:hasUnit unit:UNITLESS ;
     brick:isPointOf bs:CRAC_version_1 ;
-    ref:hasExternalReference bs:BACnetReference_version_63 .
+    ref:hasExternalReference bs:BACnetReference_version_24 .
 
 bs:Humidity_Alarm_version_1 a brick:Humidity_Alarm ;
-    s223:hasExternalReference bs:BACnetReference_version_9 ;
+    s223:hasExternalReference bs:BACnetReference_version_51 ;
     brick:hasUnit unit:UNITLESS ;
     brick:isPointOf bs:CRAC_version_1 ;
-    ref:hasExternalReference bs:BACnetReference_version_9 .
+    ref:hasExternalReference bs:BACnetReference_version_51 .
 
 bs:Humidity_Sensor_version_1 a brick:Humidity_Sensor ;
     s223:hasExternalReference bs:BACnetReference_version_1 ;
@@ -1972,10 +1972,10 @@ bs:Leaving_Chilled_Water_Flow_Sensor_version_1 a brick:Leaving_Chilled_Water_Flo
     ref:hasExternalReference bs:BACnetReference_version_1 .
 
 bs:Leaving_Chilled_Water_Flow_Sensor_version_2 a brick:Leaving_Chilled_Water_Flow_Sensor ;
-    s223:hasExternalReference bs:BACnetReference_version_26 ;
+    s223:hasExternalReference bs:BACnetReference_version_64 ;
     brick:hasUnit unit:GAL_US-PER-MIN ;
     brick:isPointOf bs:Thermal_Power_Meter_version_1 ;
-    ref:hasExternalReference bs:BACnetReference_version_26 .
+    ref:hasExternalReference bs:BACnetReference_version_64 .
 
 bs:Leaving_Chilled_Water_Temperature_Sensor_version_1 a brick:Leaving_Chilled_Water_Temperature_Sensor ;
     s223:hasExternalReference bs:BACnetReference_version_1 ;
@@ -2074,17 +2074,17 @@ bs:Leaving_Hot_Water_Temperature_Setpoint_version_1 a brick:Leaving_Hot_Water_Te
     ref:hasExternalReference bs:BACnetReference_version_1 .
 
 bs:Leaving_Water_Temperature_Sensor_version_1 a brick:Leaving_Water_Temperature_Sensor ;
-    s223:hasExternalReference bs:BACnetReference_version_88 ;
+    s223:hasExternalReference bs:BACnetReference_version_102 ;
     brick:hasUnit unit:DEG_F ;
     brick:isPointOf bs:Thermal_Power_Meter_version_1 ;
-    ref:hasExternalReference bs:BACnetReference_version_88 .
+    ref:hasExternalReference bs:BACnetReference_version_102 .
 
 bs:Leaving_Water_Temperature_Sensor_version_2 a brick:Leaving_Water_Temperature_Sensor,
         brick:Supply_Water_Temperature_Sensor ;
-    s223:hasExternalReference bs:BACnetReference_version_68 ;
+    s223:hasExternalReference bs:BACnetReference_version_47 ;
     brick:hasUnit unit:DEG_F ;
     brick:isPointOf bs:Thermal_Power_Meter_version_1 ;
-    ref:hasExternalReference bs:BACnetReference_version_68 .
+    ref:hasExternalReference bs:BACnetReference_version_47 .
 
 bs:Level_Status_version_1 a brick:Level_Status ;
     s223:hasExternalReference bs:BACnetReference_version_1 ;
@@ -2098,813 +2098,11 @@ bs:Limit_version_1 a brick:Limit ;
     brick:isPointOf bs:RVAV_version_1 ;
     ref:hasExternalReference bs:BACnetReference_version_1 .
 
-bs:Literal_version_1 a rdfs:Literal .
-
-bs:Literal_version_10 a rdfs:Literal .
-
-bs:Literal_version_100 a rdfs:Literal .
-
-bs:Literal_version_101 a rdfs:Literal .
-
-bs:Literal_version_102 a rdfs:Literal .
-
-bs:Literal_version_103 a rdfs:Literal .
-
-bs:Literal_version_104 a rdfs:Literal .
-
-bs:Literal_version_105 a rdfs:Literal .
-
-bs:Literal_version_106 a rdfs:Literal .
-
-bs:Literal_version_107 a rdfs:Literal .
-
-bs:Literal_version_108 a rdfs:Literal .
-
-bs:Literal_version_109 a rdfs:Literal .
-
-bs:Literal_version_11 a rdfs:Literal .
-
-bs:Literal_version_110 a rdfs:Literal .
-
-bs:Literal_version_111 a rdfs:Literal .
-
-bs:Literal_version_112 a rdfs:Literal .
-
-bs:Literal_version_113 a rdfs:Literal .
-
-bs:Literal_version_114 a rdfs:Literal .
-
-bs:Literal_version_115 a rdfs:Literal .
-
-bs:Literal_version_116 a rdfs:Literal .
-
-bs:Literal_version_117 a rdfs:Literal .
-
-bs:Literal_version_118 a rdfs:Literal .
-
-bs:Literal_version_119 a rdfs:Literal .
-
-bs:Literal_version_12 a rdfs:Literal .
-
-bs:Literal_version_120 a rdfs:Literal .
-
-bs:Literal_version_121 a rdfs:Literal .
-
-bs:Literal_version_122 a rdfs:Literal .
-
-bs:Literal_version_123 a rdfs:Literal .
-
-bs:Literal_version_124 a rdfs:Literal .
-
-bs:Literal_version_125 a rdfs:Literal .
-
-bs:Literal_version_126 a rdfs:Literal .
-
-bs:Literal_version_127 a rdfs:Literal .
-
-bs:Literal_version_128 a rdfs:Literal .
-
-bs:Literal_version_129 a rdfs:Literal .
-
-bs:Literal_version_13 a rdfs:Literal .
-
-bs:Literal_version_130 a rdfs:Literal .
-
-bs:Literal_version_131 a rdfs:Literal .
-
-bs:Literal_version_132 a rdfs:Literal .
-
-bs:Literal_version_133 a rdfs:Literal .
-
-bs:Literal_version_134 a rdfs:Literal .
-
-bs:Literal_version_135 a rdfs:Literal .
-
-bs:Literal_version_136 a rdfs:Literal .
-
-bs:Literal_version_137 a rdfs:Literal .
-
-bs:Literal_version_138 a rdfs:Literal .
-
-bs:Literal_version_139 a rdfs:Literal .
-
-bs:Literal_version_14 a rdfs:Literal .
-
-bs:Literal_version_140 a rdfs:Literal .
-
-bs:Literal_version_141 a rdfs:Literal .
-
-bs:Literal_version_142 a rdfs:Literal .
-
-bs:Literal_version_143 a rdfs:Literal .
-
-bs:Literal_version_144 a rdfs:Literal .
-
-bs:Literal_version_145 a rdfs:Literal .
-
-bs:Literal_version_146 a rdfs:Literal .
-
-bs:Literal_version_147 a rdfs:Literal .
-
-bs:Literal_version_148 a rdfs:Literal .
-
-bs:Literal_version_149 a rdfs:Literal .
-
-bs:Literal_version_15 a rdfs:Literal .
-
-bs:Literal_version_150 a rdfs:Literal .
-
-bs:Literal_version_151 a rdfs:Literal .
-
-bs:Literal_version_152 a rdfs:Literal .
-
-bs:Literal_version_153 a rdfs:Literal .
-
-bs:Literal_version_154 a rdfs:Literal .
-
-bs:Literal_version_155 a rdfs:Literal .
-
-bs:Literal_version_156 a rdfs:Literal .
-
-bs:Literal_version_157 a rdfs:Literal .
-
-bs:Literal_version_158 a rdfs:Literal .
-
-bs:Literal_version_159 a rdfs:Literal .
-
-bs:Literal_version_16 a rdfs:Literal .
-
-bs:Literal_version_160 a rdfs:Literal .
-
-bs:Literal_version_161 a rdfs:Literal .
-
-bs:Literal_version_162 a rdfs:Literal .
-
-bs:Literal_version_163 a rdfs:Literal .
-
-bs:Literal_version_164 a rdfs:Literal .
-
-bs:Literal_version_165 a rdfs:Literal .
-
-bs:Literal_version_166 a rdfs:Literal .
-
-bs:Literal_version_167 a rdfs:Literal .
-
-bs:Literal_version_168 a rdfs:Literal .
-
-bs:Literal_version_169 a rdfs:Literal .
-
-bs:Literal_version_17 a rdfs:Literal .
-
-bs:Literal_version_170 a rdfs:Literal .
-
-bs:Literal_version_171 a rdfs:Literal .
-
-bs:Literal_version_172 a rdfs:Literal .
-
-bs:Literal_version_173 a rdfs:Literal .
-
-bs:Literal_version_174 a rdfs:Literal .
-
-bs:Literal_version_175 a rdfs:Literal .
-
-bs:Literal_version_176 a rdfs:Literal .
-
-bs:Literal_version_177 a rdfs:Literal .
-
-bs:Literal_version_178 a rdfs:Literal .
-
-bs:Literal_version_179 a rdfs:Literal .
-
-bs:Literal_version_18 a rdfs:Literal .
-
-bs:Literal_version_180 a rdfs:Literal .
-
-bs:Literal_version_181 a rdfs:Literal .
-
-bs:Literal_version_182 a rdfs:Literal .
-
-bs:Literal_version_183 a rdfs:Literal .
-
-bs:Literal_version_184 a rdfs:Literal .
-
-bs:Literal_version_185 a rdfs:Literal .
-
-bs:Literal_version_186 a rdfs:Literal .
-
-bs:Literal_version_187 a rdfs:Literal .
-
-bs:Literal_version_188 a rdfs:Literal .
-
-bs:Literal_version_189 a rdfs:Literal .
-
-bs:Literal_version_19 a rdfs:Literal .
-
-bs:Literal_version_190 a rdfs:Literal .
-
-bs:Literal_version_191 a rdfs:Literal .
-
-bs:Literal_version_192 a rdfs:Literal .
-
-bs:Literal_version_193 a rdfs:Literal .
-
-bs:Literal_version_194 a rdfs:Literal .
-
-bs:Literal_version_195 a rdfs:Literal .
-
-bs:Literal_version_196 a rdfs:Literal .
-
-bs:Literal_version_197 a rdfs:Literal .
-
-bs:Literal_version_198 a rdfs:Literal .
-
-bs:Literal_version_199 a rdfs:Literal .
-
-bs:Literal_version_2 a rdfs:Literal .
-
-bs:Literal_version_20 a rdfs:Literal .
-
-bs:Literal_version_200 a rdfs:Literal .
-
-bs:Literal_version_201 a rdfs:Literal .
-
-bs:Literal_version_202 a rdfs:Literal .
-
-bs:Literal_version_203 a rdfs:Literal .
-
-bs:Literal_version_204 a rdfs:Literal .
-
-bs:Literal_version_205 a rdfs:Literal .
-
-bs:Literal_version_206 a rdfs:Literal .
-
-bs:Literal_version_207 a rdfs:Literal .
-
-bs:Literal_version_208 a rdfs:Literal .
-
-bs:Literal_version_209 a rdfs:Literal .
-
-bs:Literal_version_21 a rdfs:Literal .
-
-bs:Literal_version_210 a rdfs:Literal .
-
-bs:Literal_version_211 a rdfs:Literal .
-
-bs:Literal_version_212 a rdfs:Literal .
-
-bs:Literal_version_213 a rdfs:Literal .
-
-bs:Literal_version_214 a rdfs:Literal .
-
-bs:Literal_version_215 a rdfs:Literal .
-
-bs:Literal_version_216 a rdfs:Literal .
-
-bs:Literal_version_217 a rdfs:Literal .
-
-bs:Literal_version_218 a rdfs:Literal .
-
-bs:Literal_version_219 a rdfs:Literal .
-
-bs:Literal_version_22 a rdfs:Literal .
-
-bs:Literal_version_220 a rdfs:Literal .
-
-bs:Literal_version_221 a rdfs:Literal .
-
-bs:Literal_version_222 a rdfs:Literal .
-
-bs:Literal_version_223 a rdfs:Literal .
-
-bs:Literal_version_224 a rdfs:Literal .
-
-bs:Literal_version_225 a rdfs:Literal .
-
-bs:Literal_version_226 a rdfs:Literal .
-
-bs:Literal_version_227 a rdfs:Literal .
-
-bs:Literal_version_228 a rdfs:Literal .
-
-bs:Literal_version_229 a rdfs:Literal .
-
-bs:Literal_version_23 a rdfs:Literal .
-
-bs:Literal_version_230 a rdfs:Literal .
-
-bs:Literal_version_231 a rdfs:Literal .
-
-bs:Literal_version_232 a rdfs:Literal .
-
-bs:Literal_version_233 a rdfs:Literal .
-
-bs:Literal_version_234 a rdfs:Literal .
-
-bs:Literal_version_235 a rdfs:Literal .
-
-bs:Literal_version_236 a rdfs:Literal .
-
-bs:Literal_version_237 a rdfs:Literal .
-
-bs:Literal_version_238 a rdfs:Literal .
-
-bs:Literal_version_239 a rdfs:Literal .
-
-bs:Literal_version_24 a rdfs:Literal .
-
-bs:Literal_version_240 a rdfs:Literal .
-
-bs:Literal_version_241 a rdfs:Literal .
-
-bs:Literal_version_242 a rdfs:Literal .
-
-bs:Literal_version_243 a rdfs:Literal .
-
-bs:Literal_version_244 a rdfs:Literal .
-
-bs:Literal_version_245 a rdfs:Literal .
-
-bs:Literal_version_246 a rdfs:Literal .
-
-bs:Literal_version_247 a rdfs:Literal .
-
-bs:Literal_version_248 a rdfs:Literal .
-
-bs:Literal_version_249 a rdfs:Literal .
-
-bs:Literal_version_25 a rdfs:Literal .
-
-bs:Literal_version_250 a rdfs:Literal .
-
-bs:Literal_version_251 a rdfs:Literal .
-
-bs:Literal_version_252 a rdfs:Literal .
-
-bs:Literal_version_253 a rdfs:Literal .
-
-bs:Literal_version_254 a rdfs:Literal .
-
-bs:Literal_version_255 a rdfs:Literal .
-
-bs:Literal_version_256 a rdfs:Literal .
-
-bs:Literal_version_257 a rdfs:Literal .
-
-bs:Literal_version_258 a rdfs:Literal .
-
-bs:Literal_version_259 a rdfs:Literal .
-
-bs:Literal_version_26 a rdfs:Literal .
-
-bs:Literal_version_260 a rdfs:Literal .
-
-bs:Literal_version_261 a rdfs:Literal .
-
-bs:Literal_version_262 a rdfs:Literal .
-
-bs:Literal_version_263 a rdfs:Literal .
-
-bs:Literal_version_264 a rdfs:Literal .
-
-bs:Literal_version_265 a rdfs:Literal .
-
-bs:Literal_version_266 a rdfs:Literal .
-
-bs:Literal_version_267 a rdfs:Literal .
-
-bs:Literal_version_268 a rdfs:Literal .
-
-bs:Literal_version_269 a rdfs:Literal .
-
-bs:Literal_version_27 a rdfs:Literal .
-
-bs:Literal_version_270 a rdfs:Literal .
-
-bs:Literal_version_271 a rdfs:Literal .
-
-bs:Literal_version_272 a rdfs:Literal .
-
-bs:Literal_version_273 a rdfs:Literal .
-
-bs:Literal_version_274 a rdfs:Literal .
-
-bs:Literal_version_275 a rdfs:Literal .
-
-bs:Literal_version_276 a rdfs:Literal .
-
-bs:Literal_version_277 a rdfs:Literal .
-
-bs:Literal_version_278 a rdfs:Literal .
-
-bs:Literal_version_279 a rdfs:Literal .
-
-bs:Literal_version_28 a rdfs:Literal .
-
-bs:Literal_version_280 a rdfs:Literal .
-
-bs:Literal_version_281 a rdfs:Literal .
-
-bs:Literal_version_282 a rdfs:Literal .
-
-bs:Literal_version_283 a rdfs:Literal .
-
-bs:Literal_version_284 a rdfs:Literal .
-
-bs:Literal_version_285 a rdfs:Literal .
-
-bs:Literal_version_286 a rdfs:Literal .
-
-bs:Literal_version_287 a rdfs:Literal .
-
-bs:Literal_version_288 a rdfs:Literal .
-
-bs:Literal_version_289 a rdfs:Literal .
-
-bs:Literal_version_29 a rdfs:Literal .
-
-bs:Literal_version_290 a rdfs:Literal .
-
-bs:Literal_version_291 a rdfs:Literal .
-
-bs:Literal_version_292 a rdfs:Literal .
-
-bs:Literal_version_293 a rdfs:Literal .
-
-bs:Literal_version_294 a rdfs:Literal .
-
-bs:Literal_version_295 a rdfs:Literal .
-
-bs:Literal_version_296 a rdfs:Literal .
-
-bs:Literal_version_297 a rdfs:Literal .
-
-bs:Literal_version_298 a rdfs:Literal .
-
-bs:Literal_version_299 a rdfs:Literal .
-
-bs:Literal_version_3 a rdfs:Literal .
-
-bs:Literal_version_30 a rdfs:Literal .
-
-bs:Literal_version_300 a rdfs:Literal .
-
-bs:Literal_version_301 a rdfs:Literal .
-
-bs:Literal_version_302 a rdfs:Literal .
-
-bs:Literal_version_303 a rdfs:Literal .
-
-bs:Literal_version_304 a rdfs:Literal .
-
-bs:Literal_version_305 a rdfs:Literal .
-
-bs:Literal_version_306 a rdfs:Literal .
-
-bs:Literal_version_307 a rdfs:Literal .
-
-bs:Literal_version_308 a rdfs:Literal .
-
-bs:Literal_version_309 a rdfs:Literal .
-
-bs:Literal_version_31 a rdfs:Literal .
-
-bs:Literal_version_310 a rdfs:Literal .
-
-bs:Literal_version_311 a rdfs:Literal .
-
-bs:Literal_version_312 a rdfs:Literal .
-
-bs:Literal_version_313 a rdfs:Literal .
-
-bs:Literal_version_314 a rdfs:Literal .
-
-bs:Literal_version_315 a rdfs:Literal .
-
-bs:Literal_version_316 a rdfs:Literal .
-
-bs:Literal_version_317 a rdfs:Literal .
-
-bs:Literal_version_318 a rdfs:Literal .
-
-bs:Literal_version_319 a rdfs:Literal .
-
-bs:Literal_version_32 a rdfs:Literal .
-
-bs:Literal_version_320 a rdfs:Literal .
-
-bs:Literal_version_321 a rdfs:Literal .
-
-bs:Literal_version_322 a rdfs:Literal .
-
-bs:Literal_version_323 a rdfs:Literal .
-
-bs:Literal_version_324 a rdfs:Literal .
-
-bs:Literal_version_325 a rdfs:Literal .
-
-bs:Literal_version_326 a rdfs:Literal .
-
-bs:Literal_version_327 a rdfs:Literal .
-
-bs:Literal_version_328 a rdfs:Literal .
-
-bs:Literal_version_329 a rdfs:Literal .
-
-bs:Literal_version_33 a rdfs:Literal .
-
-bs:Literal_version_330 a rdfs:Literal .
-
-bs:Literal_version_331 a rdfs:Literal .
-
-bs:Literal_version_332 a rdfs:Literal .
-
-bs:Literal_version_333 a rdfs:Literal .
-
-bs:Literal_version_334 a rdfs:Literal .
-
-bs:Literal_version_335 a rdfs:Literal .
-
-bs:Literal_version_336 a rdfs:Literal .
-
-bs:Literal_version_337 a rdfs:Literal .
-
-bs:Literal_version_338 a rdfs:Literal .
-
-bs:Literal_version_339 a rdfs:Literal .
-
-bs:Literal_version_34 a rdfs:Literal .
-
-bs:Literal_version_340 a rdfs:Literal .
-
-bs:Literal_version_341 a rdfs:Literal .
-
-bs:Literal_version_342 a rdfs:Literal .
-
-bs:Literal_version_343 a rdfs:Literal .
-
-bs:Literal_version_344 a rdfs:Literal .
-
-bs:Literal_version_345 a rdfs:Literal .
-
-bs:Literal_version_346 a rdfs:Literal .
-
-bs:Literal_version_347 a rdfs:Literal .
-
-bs:Literal_version_348 a rdfs:Literal .
-
-bs:Literal_version_349 a rdfs:Literal .
-
-bs:Literal_version_35 a rdfs:Literal .
-
-bs:Literal_version_350 a rdfs:Literal .
-
-bs:Literal_version_351 a rdfs:Literal .
-
-bs:Literal_version_352 a rdfs:Literal .
-
-bs:Literal_version_353 a rdfs:Literal .
-
-bs:Literal_version_354 a rdfs:Literal .
-
-bs:Literal_version_355 a rdfs:Literal .
-
-bs:Literal_version_356 a rdfs:Literal .
-
-bs:Literal_version_357 a rdfs:Literal .
-
-bs:Literal_version_358 a rdfs:Literal .
-
-bs:Literal_version_359 a rdfs:Literal .
-
-bs:Literal_version_36 a rdfs:Literal .
-
-bs:Literal_version_360 a rdfs:Literal .
-
-bs:Literal_version_361 a rdfs:Literal .
-
-bs:Literal_version_362 a rdfs:Literal .
-
-bs:Literal_version_363 a rdfs:Literal .
-
-bs:Literal_version_364 a rdfs:Literal .
-
-bs:Literal_version_365 a rdfs:Literal .
-
-bs:Literal_version_366 a rdfs:Literal .
-
-bs:Literal_version_367 a rdfs:Literal .
-
-bs:Literal_version_368 a rdfs:Literal .
-
-bs:Literal_version_369 a rdfs:Literal .
-
-bs:Literal_version_37 a rdfs:Literal .
-
-bs:Literal_version_370 a rdfs:Literal .
-
-bs:Literal_version_371 a rdfs:Literal .
-
-bs:Literal_version_372 a rdfs:Literal .
-
-bs:Literal_version_373 a rdfs:Literal .
-
-bs:Literal_version_374 a rdfs:Literal .
-
-bs:Literal_version_375 a rdfs:Literal .
-
-bs:Literal_version_376 a rdfs:Literal .
-
-bs:Literal_version_377 a rdfs:Literal .
-
-bs:Literal_version_378 a rdfs:Literal .
-
-bs:Literal_version_379 a rdfs:Literal .
-
-bs:Literal_version_38 a rdfs:Literal .
-
-bs:Literal_version_380 a rdfs:Literal .
-
-bs:Literal_version_381 a rdfs:Literal .
-
-bs:Literal_version_382 a rdfs:Literal .
-
-bs:Literal_version_383 a rdfs:Literal .
-
-bs:Literal_version_384 a rdfs:Literal .
-
-bs:Literal_version_385 a rdfs:Literal .
-
-bs:Literal_version_386 a rdfs:Literal .
-
-bs:Literal_version_387 a rdfs:Literal .
-
-bs:Literal_version_388 a rdfs:Literal .
-
-bs:Literal_version_389 a rdfs:Literal .
-
-bs:Literal_version_39 a rdfs:Literal .
-
-bs:Literal_version_390 a rdfs:Literal .
-
-bs:Literal_version_391 a rdfs:Literal .
-
-bs:Literal_version_392 a rdfs:Literal .
-
-bs:Literal_version_393 a rdfs:Literal .
-
-bs:Literal_version_394 a rdfs:Literal .
-
-bs:Literal_version_395 a rdfs:Literal .
-
-bs:Literal_version_396 a rdfs:Literal .
-
-bs:Literal_version_397 a rdfs:Literal .
-
-bs:Literal_version_398 a rdfs:Literal .
-
-bs:Literal_version_399 a rdfs:Literal .
-
-bs:Literal_version_4 a rdfs:Literal .
-
-bs:Literal_version_40 a rdfs:Literal .
-
-bs:Literal_version_400 a rdfs:Literal .
-
-bs:Literal_version_401 a rdfs:Literal .
-
-bs:Literal_version_41 a rdfs:Literal .
-
-bs:Literal_version_42 a rdfs:Literal .
-
-bs:Literal_version_43 a rdfs:Literal .
-
-bs:Literal_version_44 a rdfs:Literal .
-
-bs:Literal_version_45 a rdfs:Literal .
-
-bs:Literal_version_46 a rdfs:Literal .
-
-bs:Literal_version_47 a rdfs:Literal .
-
-bs:Literal_version_48 a rdfs:Literal .
-
-bs:Literal_version_49 a rdfs:Literal .
-
-bs:Literal_version_5 a rdfs:Literal .
-
-bs:Literal_version_50 a rdfs:Literal .
-
-bs:Literal_version_51 a rdfs:Literal .
-
-bs:Literal_version_52 a rdfs:Literal .
-
-bs:Literal_version_53 a rdfs:Literal .
-
-bs:Literal_version_54 a rdfs:Literal .
-
-bs:Literal_version_55 a rdfs:Literal .
-
-bs:Literal_version_56 a rdfs:Literal .
-
-bs:Literal_version_57 a rdfs:Literal .
-
-bs:Literal_version_58 a rdfs:Literal .
-
-bs:Literal_version_59 a rdfs:Literal .
-
-bs:Literal_version_6 a rdfs:Literal .
-
-bs:Literal_version_60 a rdfs:Literal .
-
-bs:Literal_version_61 a rdfs:Literal .
-
-bs:Literal_version_62 a rdfs:Literal .
-
-bs:Literal_version_63 a rdfs:Literal .
-
-bs:Literal_version_64 a rdfs:Literal .
-
-bs:Literal_version_65 a rdfs:Literal .
-
-bs:Literal_version_66 a rdfs:Literal .
-
-bs:Literal_version_67 a rdfs:Literal .
-
-bs:Literal_version_68 a rdfs:Literal .
-
-bs:Literal_version_69 a rdfs:Literal .
-
-bs:Literal_version_7 a rdfs:Literal .
-
-bs:Literal_version_70 a rdfs:Literal .
-
-bs:Literal_version_71 a rdfs:Literal .
-
-bs:Literal_version_72 a rdfs:Literal .
-
-bs:Literal_version_73 a rdfs:Literal .
-
-bs:Literal_version_74 a rdfs:Literal .
-
-bs:Literal_version_75 a rdfs:Literal .
-
-bs:Literal_version_76 a rdfs:Literal .
-
-bs:Literal_version_77 a rdfs:Literal .
-
-bs:Literal_version_78 a rdfs:Literal .
-
-bs:Literal_version_79 a rdfs:Literal .
-
-bs:Literal_version_8 a rdfs:Literal .
-
-bs:Literal_version_80 a rdfs:Literal .
-
-bs:Literal_version_81 a rdfs:Literal .
-
-bs:Literal_version_82 a rdfs:Literal .
-
-bs:Literal_version_83 a rdfs:Literal .
-
-bs:Literal_version_84 a rdfs:Literal .
-
-bs:Literal_version_85 a rdfs:Literal .
-
-bs:Literal_version_86 a rdfs:Literal .
-
-bs:Literal_version_87 a rdfs:Literal .
-
-bs:Literal_version_88 a rdfs:Literal .
-
-bs:Literal_version_89 a rdfs:Literal .
-
-bs:Literal_version_9 a rdfs:Literal .
-
-bs:Literal_version_90 a rdfs:Literal .
-
-bs:Literal_version_91 a rdfs:Literal .
-
-bs:Literal_version_92 a rdfs:Literal .
-
-bs:Literal_version_93 a rdfs:Literal .
-
-bs:Literal_version_94 a rdfs:Literal .
-
-bs:Literal_version_95 a rdfs:Literal .
-
-bs:Literal_version_96 a rdfs:Literal .
-
-bs:Literal_version_97 a rdfs:Literal .
-
-bs:Literal_version_98 a rdfs:Literal .
-
-bs:Literal_version_99 a rdfs:Literal .
-
 bs:Low_Air_Flow_Alarm_version_1 a brick:Low_Air_Flow_Alarm ;
-    s223:hasExternalReference bs:BACnetReference_version_66 ;
+    s223:hasExternalReference bs:BACnetReference_version_61 ;
     brick:hasUnit unit:UNITLESS ;
     brick:isPointOf bs:CRAC_version_1 ;
-    ref:hasExternalReference bs:BACnetReference_version_66 .
+    ref:hasExternalReference bs:BACnetReference_version_61 .
 
 bs:Low_Discharge_Air_Flow_Alarm_version_1 a brick:Low_Discharge_Air_Flow_Alarm,
         brick:Low_Supply_Air_Flow_Alarm ;
@@ -2914,16 +2112,16 @@ bs:Low_Discharge_Air_Flow_Alarm_version_1 a brick:Low_Discharge_Air_Flow_Alarm,
     ref:hasExternalReference bs:BACnetReference_version_1 .
 
 bs:Low_Humidity_Alarm_Parameter_version_1 a brick:Low_Humidity_Alarm_Parameter ;
-    s223:hasExternalReference bs:BACnetReference_version_10 ;
+    s223:hasExternalReference bs:BACnetReference_version_34 ;
     brick:hasUnit unit:PERCENT ;
     brick:isPointOf bs:CRAC_version_1 ;
-    ref:hasExternalReference bs:BACnetReference_version_10 .
+    ref:hasExternalReference bs:BACnetReference_version_34 .
 
 bs:Low_Temperature_Alarm_Parameter_version_1 a brick:Low_Temperature_Alarm_Parameter ;
-    s223:hasExternalReference bs:BACnetReference_version_61 ;
+    s223:hasExternalReference bs:BACnetReference_version_35 ;
     brick:hasUnit unit:DEG_F ;
     brick:isPointOf bs:CRAC_version_1 ;
-    ref:hasExternalReference bs:BACnetReference_version_61 .
+    ref:hasExternalReference bs:BACnetReference_version_35 .
 
 bs:Low_Temperature_Alarm_version_1 a brick:Low_Temperature_Alarm ;
     s223:hasExternalReference bs:BACnetReference_version_1 ;
@@ -2933,16 +2131,16 @@ bs:Low_Temperature_Alarm_version_1 a brick:Low_Temperature_Alarm ;
     ref:hasExternalReference bs:BACnetReference_version_1 .
 
 bs:Low_Temperature_Alarm_version_2 a brick:Low_Temperature_Alarm ;
-    s223:hasExternalReference bs:BACnetReference_version_38 ;
+    s223:hasExternalReference bs:BACnetReference_version_2 ;
     brick:hasUnit unit:UNITLESS ;
     brick:isPointOf bs:Chilled_Water_Loop_version_2 ;
-    ref:hasExternalReference bs:BACnetReference_version_38 .
+    ref:hasExternalReference bs:BACnetReference_version_2 .
 
 bs:Low_Temperature_Alarm_version_3 a brick:Low_Temperature_Alarm ;
-    s223:hasExternalReference bs:BACnetReference_version_51 ;
+    s223:hasExternalReference bs:BACnetReference_version_5 ;
     brick:hasUnit unit:UNITLESS ;
     brick:isPointOf bs:CRAC_version_1 ;
-    ref:hasExternalReference bs:BACnetReference_version_51 .
+    ref:hasExternalReference bs:BACnetReference_version_5 .
 
 bs:Low_Temperature_Alarm_version_4 a brick:Low_Temperature_Alarm ;
     s223:hasExternalReference bs:BACnetReference_version_1 ;
@@ -3002,11 +2200,11 @@ bs:Max_Heating_Discharge_Air_Flow_Setpoint_Limit_version_1 a brick:Max_Heating_D
     ref:hasExternalReference bs:BACnetReference_version_1 .
 
 bs:Max_Limit_version_1 a brick:Max_Limit ;
-    s223:hasExternalReference bs:BACnetReference_version_4 ;
+    s223:hasExternalReference bs:BACnetReference_version_67 ;
     brick:hasUnit unit:DEG_F,
         unit:PERCENT ;
     brick:isPointOf bs:Chilled_Water_Loop_version_2 ;
-    ref:hasExternalReference bs:BACnetReference_version_4 .
+    ref:hasExternalReference bs:BACnetReference_version_67 .
 
 bs:Max_Limit_version_2 a brick:Max_Limit ;
     s223:hasExternalReference bs:BACnetReference_version_1 ;
@@ -3094,10 +2292,10 @@ bs:Min_Heating_Discharge_Air_Flow_Setpoint_Limit_version_1 a brick:Min_Heating_D
     ref:hasExternalReference bs:BACnetReference_version_1 .
 
 bs:Min_Limit_version_1 a brick:Min_Limit ;
-    s223:hasExternalReference bs:BACnetReference_version_95 ;
+    s223:hasExternalReference bs:BACnetReference_version_100 ;
     brick:hasUnit unit:DEG_F ;
     brick:isPointOf bs:Chilled_Water_Loop_version_2 ;
-    ref:hasExternalReference bs:BACnetReference_version_95 .
+    ref:hasExternalReference bs:BACnetReference_version_100 .
 
 bs:Min_Limit_version_2 a brick:Min_Limit ;
     s223:hasExternalReference bs:BACnetReference_version_1 ;
@@ -3142,10 +2340,10 @@ bs:Mode_Command_version_1 a brick:Mode_Command ;
     ref:hasExternalReference bs:BACnetReference_version_1 .
 
 bs:Mode_Status_version_1 a brick:Mode_Status ;
-    s223:hasExternalReference bs:BACnetReference_version_56 ;
+    s223:hasExternalReference bs:BACnetReference_version_33 ;
     brick:hasUnit unit:UNITLESS ;
     brick:isPointOf bs:Thermal_Power_Meter_version_1 ;
-    ref:hasExternalReference bs:BACnetReference_version_56 .
+    ref:hasExternalReference bs:BACnetReference_version_33 .
 
 bs:Mode_Status_version_10 a brick:Mode_Status ;
     s223:hasExternalReference bs:BACnetReference_version_1 ;
@@ -3184,10 +2382,10 @@ bs:Mode_Status_version_7 a brick:Mode_Status ;
     ref:hasExternalReference bs:BACnetReference_version_1 .
 
 bs:Mode_Status_version_8 a brick:Mode_Status ;
-    s223:hasExternalReference bs:BACnetReference_version_97 ;
+    s223:hasExternalReference bs:BACnetReference_version_90 ;
     brick:hasUnit unit:UNITLESS ;
     brick:isPointOf bs:Breaker_Panel_version_1 ;
-    ref:hasExternalReference bs:BACnetReference_version_97 .
+    ref:hasExternalReference bs:BACnetReference_version_90 .
 
 bs:Mode_Status_version_9 a brick:Mode_Status ;
     s223:hasExternalReference bs:BACnetReference_version_1 ;
@@ -3263,10 +2461,10 @@ bs:Motor_Torque_Sensor_version_2 a brick:Motor_Torque_Sensor ;
     ref:hasExternalReference bs:BACnetReference_version_1 .
 
 bs:No_Water_Alarm_version_1 a brick:No_Water_Alarm ;
-    s223:hasExternalReference bs:BACnetReference_version_74 ;
+    s223:hasExternalReference bs:BACnetReference_version_48 ;
     brick:hasUnit unit:UNITLESS ;
     brick:isPointOf bs:CRAC_version_1 ;
-    ref:hasExternalReference bs:BACnetReference_version_74 .
+    ref:hasExternalReference bs:BACnetReference_version_48 .
 
 bs:Occupied_Cooling_Temperature_Setpoint_version_1 a brick:Occupied_Cooling_Temperature_Setpoint ;
     s223:hasExternalReference bs:BACnetReference_version_1 ;
@@ -3317,10 +2515,10 @@ bs:Occupied_Mode_Status_version_2 a brick:Occupied_Mode_Status ;
     ref:hasExternalReference bs:BACnetReference_version_1 .
 
 bs:Occupied_Mode_Status_version_3 a brick:Occupied_Mode_Status ;
-    s223:hasExternalReference bs:BACnetReference_version_14 ;
+    s223:hasExternalReference bs:BACnetReference_version_39 ;
     brick:hasUnit unit:UNITLESS ;
     brick:isPointOf bs:Hot_Water_Coil_version_2 ;
-    ref:hasExternalReference bs:BACnetReference_version_14 .
+    ref:hasExternalReference bs:BACnetReference_version_39 .
 
 bs:Occupied_Mode_Status_version_4 a brick:Occupied_Mode_Status ;
     s223:hasExternalReference bs:BACnetReference_version_1 ;
@@ -3359,10 +2557,10 @@ bs:Occupied_Mode_Status_version_9 a brick:Occupied_Mode_Status ;
     ref:hasExternalReference bs:BACnetReference_version_1 .
 
 bs:Off_Status_version_1 a brick:Off_Status ;
-    s223:hasExternalReference bs:BACnetReference_version_11 ;
+    s223:hasExternalReference bs:BACnetReference_version_87 ;
     brick:hasUnit unit:UNITLESS ;
     brick:isPointOf bs:AHU_version_2 ;
-    ref:hasExternalReference bs:BACnetReference_version_11 .
+    ref:hasExternalReference bs:BACnetReference_version_87 .
 
 bs:On_Off_Command_version_1 a brick:On_Off_Command ;
     s223:hasExternalReference bs:BACnetReference_version_1 ;
@@ -3383,10 +2581,10 @@ bs:On_Off_Command_version_11 a brick:On_Off_Command ;
     ref:hasExternalReference bs:BACnetReference_version_1 .
 
 bs:On_Off_Command_version_2 a brick:On_Off_Command ;
-    s223:hasExternalReference bs:BACnetReference_version_100 ;
+    s223:hasExternalReference bs:BACnetReference_version_52 ;
     brick:hasUnit unit:UNITLESS ;
     brick:isPointOf bs:Chilled_Water_Loop_version_2 ;
-    ref:hasExternalReference bs:BACnetReference_version_100 .
+    ref:hasExternalReference bs:BACnetReference_version_52 .
 
 bs:On_Off_Command_version_3 a brick:On_Off_Command ;
     s223:hasExternalReference bs:BACnetReference_version_1 ;
@@ -3462,10 +2660,10 @@ bs:On_Off_Status_version_5 a brick:On_Off_Status ;
 
 bs:On_Timer_Sensor_version_1 a brick:On_Timer_Sensor,
         brick:Run_Time_Sensor ;
-    s223:hasExternalReference bs:BACnetReference_version_49 ;
+    s223:hasExternalReference bs:BACnetReference_version_91 ;
     brick:hasUnit unit:SEC ;
     brick:isPointOf bs:AHU_version_1 ;
-    ref:hasExternalReference bs:BACnetReference_version_49 .
+    ref:hasExternalReference bs:BACnetReference_version_91 .
 
 bs:On_Timer_Sensor_version_2 a brick:On_Timer_Sensor,
         brick:Run_Time_Sensor ;
@@ -3517,10 +2715,10 @@ bs:On_Timer_Sensor_version_8 a brick:On_Timer_Sensor,
     ref:hasExternalReference bs:BACnetReference_version_1 .
 
 bs:Open_Close_Status_version_1 a brick:Open_Close_Status ;
-    s223:hasExternalReference bs:BACnetReference_version_82 ;
+    s223:hasExternalReference bs:BACnetReference_version_95 ;
     brick:hasUnit unit:PERCENT ;
     brick:isPointOf bs:Isolation_Damper_version_2 ;
-    ref:hasExternalReference bs:BACnetReference_version_82 .
+    ref:hasExternalReference bs:BACnetReference_version_95 .
 
 bs:Open_Close_Status_version_10 a brick:Open_Close_Status ;
     s223:hasExternalReference bs:BACnetReference_version_1 ;
@@ -3585,28 +2783,28 @@ bs:Open_Close_Status_version_9 a brick:Open_Close_Status ;
     ref:hasExternalReference bs:BACnetReference_version_1 .
 
 bs:Operating_Mode_Status_version_1 a brick:Operating_Mode_Status ;
-    s223:hasExternalReference bs:BACnetReference_version_91 ;
+    s223:hasExternalReference bs:BACnetReference_version_62 ;
     brick:hasUnit unit:UNITLESS ;
     brick:isPointOf bs:Thermal_Power_Meter_version_1 ;
-    ref:hasExternalReference bs:BACnetReference_version_91 .
+    ref:hasExternalReference bs:BACnetReference_version_62 .
 
 bs:Operating_Mode_Status_version_2 a brick:Operating_Mode_Status ;
-    s223:hasExternalReference bs:BACnetReference_version_96 ;
+    s223:hasExternalReference bs:BACnetReference_version_88 ;
     brick:hasUnit unit:UNITLESS ;
     brick:isPointOf bs:Thermal_Power_Meter_version_1 ;
-    ref:hasExternalReference bs:BACnetReference_version_96 .
+    ref:hasExternalReference bs:BACnetReference_version_88 .
 
 bs:Operating_Mode_Status_version_3 a brick:Operating_Mode_Status ;
-    s223:hasExternalReference bs:BACnetReference_version_44 ;
+    s223:hasExternalReference bs:BACnetReference_version_8 ;
     brick:hasUnit unit:UNITLESS ;
     brick:isPointOf bs:Hot_Water_Coil_version_2 ;
-    ref:hasExternalReference bs:BACnetReference_version_44 .
+    ref:hasExternalReference bs:BACnetReference_version_8 .
 
 bs:Operating_Mode_Status_version_5 a brick:Operating_Mode_Status ;
-    s223:hasExternalReference bs:BACnetReference_version_34 ;
+    s223:hasExternalReference bs:BACnetReference_version_80 ;
     brick:hasUnit unit:UNITLESS ;
     brick:isPointOf bs:Chilled_Water_Loop_version_2 ;
-    ref:hasExternalReference bs:BACnetReference_version_34 .
+    ref:hasExternalReference bs:BACnetReference_version_80 .
 
 bs:Operating_Mode_Status_version_6 a brick:Operating_Mode_Status ;
     s223:hasExternalReference bs:BACnetReference_version_1 ;
@@ -3621,10 +2819,10 @@ bs:Operating_Mode_Status_version_7 a brick:Operating_Mode_Status ;
     ref:hasExternalReference bs:BACnetReference_version_1 .
 
 bs:Operating_Mode_Status_version_8 a brick:Operating_Mode_Status ;
-    s223:hasExternalReference bs:BACnetReference_version_94 ;
+    s223:hasExternalReference bs:BACnetReference_version_42 ;
     brick:hasUnit unit:UNITLESS ;
     brick:isPointOf bs:CRAC_version_1 ;
-    ref:hasExternalReference bs:BACnetReference_version_94 .
+    ref:hasExternalReference bs:BACnetReference_version_42 .
 
 bs:Operating_Mode_Status_version_9 a brick:Operating_Mode_Status ;
     s223:hasExternalReference bs:BACnetReference_version_1 ;
@@ -3659,10 +2857,10 @@ bs:Overridden_Status_version_1 a brick:Overridden_Status ;
     ref:hasExternalReference bs:BACnetReference_version_1 .
 
 bs:Overridden_Status_version_2 a brick:Overridden_Status ;
-    s223:hasExternalReference bs:BACnetReference_version_64 ;
+    s223:hasExternalReference bs:BACnetReference_version_89 ;
     brick:hasUnit unit:Overridden_Status ;
     brick:isPointOf bs:Breaker_Panel_version_1 ;
-    ref:hasExternalReference bs:BACnetReference_version_64 .
+    ref:hasExternalReference bs:BACnetReference_version_89 .
 
 bs:Overridden_Status_version_3 a brick:Overridden_Status ;
     s223:hasExternalReference bs:BACnetReference_version_1 ;
@@ -3671,16 +2869,16 @@ bs:Overridden_Status_version_3 a brick:Overridden_Status ;
     ref:hasExternalReference bs:BACnetReference_version_1 .
 
 bs:Override_Command_version_1 a brick:Override_Command ;
-    s223:hasExternalReference bs:BACnetReference_version_73 ;
+    s223:hasExternalReference bs:BACnetReference_version_81 ;
     brick:hasUnit unit:UNITLESS ;
     brick:isPointOf bs:CRAC_version_1 ;
-    ref:hasExternalReference bs:BACnetReference_version_73 .
+    ref:hasExternalReference bs:BACnetReference_version_81 .
 
 bs:Parameter_version_1 a brick:Parameter ;
-    s223:hasExternalReference bs:BACnetReference_version_16 ;
+    s223:hasExternalReference bs:BACnetReference_version_18 ;
     brick:hasUnit unit:UNITLESS ;
     brick:isPointOf bs:Thermal_Power_Meter_version_1 ;
-    ref:hasExternalReference bs:BACnetReference_version_16 .
+    ref:hasExternalReference bs:BACnetReference_version_18 .
 
 bs:Parameter_version_10 a brick:Parameter ;
     s223:hasExternalReference bs:BACnetReference_version_1 ;
@@ -3757,10 +2955,10 @@ bs:Peak_Demand_Sensor_version_1 a brick:Peak_Demand_Sensor ;
     ref:hasExternalReference bs:BACnetReference_version_1 .
 
 bs:Peak_Demand_Sensor_version_2 a brick:Peak_Demand_Sensor ;
-    s223:hasExternalReference bs:BACnetReference_version_93 ;
+    s223:hasExternalReference bs:BACnetReference_version_71 ;
     brick:hasUnit unit:W-HR ;
     brick:isPointOf bs:Breaker_Panel_version_1 ;
-    ref:hasExternalReference bs:BACnetReference_version_93 .
+    ref:hasExternalReference bs:BACnetReference_version_71 .
 
 bs:Peak_Demand_Sensor_version_3 a brick:Peak_Demand_Sensor ;
     s223:hasExternalReference bs:BACnetReference_version_1 ;
@@ -3782,10 +2980,10 @@ bs:Point_version_10 a brick:Point ;
     ref:hasExternalReference bs:BACnetReference_version_1 .
 
 bs:Point_version_3 a brick:Point ;
-    s223:hasExternalReference bs:BACnetReference_version_75 ;
+    s223:hasExternalReference bs:BACnetReference_version_7 ;
     brick:hasUnit unit:UNITLESS ;
     brick:isPointOf bs:Chilled_Water_Loop_version_2 ;
-    ref:hasExternalReference bs:BACnetReference_version_75 .
+    ref:hasExternalReference bs:BACnetReference_version_7 .
 
 bs:Point_version_4 a brick:Point ;
     s223:hasExternalReference bs:BACnetReference_version_1 ;
@@ -3812,13 +3010,13 @@ bs:Point_version_7 a brick:Point ;
     ref:hasExternalReference bs:BACnetReference_version_1 .
 
 bs:Point_version_8 a brick:Point ;
-    s223:hasExternalReference bs:BACnetReference_version_30 ;
+    s223:hasExternalReference bs:BACnetReference_version_38 ;
     brick:hasUnit unit:DEG_F,
         unit:PERCENT,
         unit:SEC,
         unit:UNITLESS ;
     brick:isPointOf bs:CRAC_version_1 ;
-    ref:hasExternalReference bs:BACnetReference_version_30 .
+    ref:hasExternalReference bs:BACnetReference_version_38 .
 
 bs:Point_version_9 a brick:Point ;
     s223:hasExternalReference bs:BACnetReference_version_1 ;
@@ -3827,25 +3025,25 @@ bs:Point_version_9 a brick:Point ;
     ref:hasExternalReference bs:BACnetReference_version_1 .
 
 bs:Port_version_1 a bacnet:Port ;
-    ref:storedAt bs:Literal_version_175 .
+    ref:storedAt bs:Literal_version_107 .
 
 bs:Port_version_2 a bacnet:Port ;
-    ref:storedAt bs:Literal_version_380 .
+    ref:storedAt bs:Literal_version_217 .
 
 bs:Port_version_3 a bacnet:Port ;
-    ref:storedAt bs:Literal_version_154 .
+    ref:storedAt bs:Literal_version_359 .
 
 bs:Port_version_4 a bacnet:Port ;
-    ref:storedAt bs:Literal_version_371 .
+    ref:storedAt bs:Literal_version_401 .
 
 bs:Port_version_5 a bacnet:Port ;
-    ref:storedAt bs:Literal_version_127 .
+    ref:storedAt bs:Literal_version_393 .
 
 bs:Power_Factor_Sensor_version_2 a brick:Power_Factor_Sensor ;
-    s223:hasExternalReference bs:BACnetReference_version_29 ;
+    s223:hasExternalReference bs:BACnetReference_version_57 ;
     brick:hasUnit unit:UNITLESS ;
     brick:isPointOf bs:Breaker_Panel_version_1 ;
-    ref:hasExternalReference bs:BACnetReference_version_29 .
+    ref:hasExternalReference bs:BACnetReference_version_57 .
 
 bs:Power_Sensor_version_1 a brick:Power_Sensor ;
     s223:hasExternalReference bs:BACnetReference_version_1 ;
@@ -4008,10 +3206,10 @@ bs:Reactive_Power_Sensor_version_1 a brick:Reactive_Power_Sensor ;
     ref:hasExternalReference bs:BACnetReference_version_1 .
 
 bs:Reactive_Power_Sensor_version_2 a brick:Reactive_Power_Sensor ;
-    s223:hasExternalReference bs:BACnetReference_version_19 ;
+    s223:hasExternalReference bs:BACnetReference_version_94 ;
     brick:hasUnit unit:KiloV-A_Reactive ;
     brick:isPointOf bs:Breaker_Panel_version_1 ;
-    ref:hasExternalReference bs:BACnetReference_version_19 .
+    ref:hasExternalReference bs:BACnetReference_version_94 .
 
 bs:Reactive_Power_Sensor_version_3 a brick:Reactive_Power_Sensor ;
     s223:hasExternalReference bs:BACnetReference_version_1 ;
@@ -4020,10 +3218,10 @@ bs:Reactive_Power_Sensor_version_3 a brick:Reactive_Power_Sensor ;
     ref:hasExternalReference bs:BACnetReference_version_1 .
 
 bs:Relative_Humidity_Sensor_version_1 a brick:Relative_Humidity_Sensor ;
-    s223:hasExternalReference bs:BACnetReference_version_42 ;
+    s223:hasExternalReference bs:BACnetReference_version_37 ;
     brick:hasUnit unit:PERCENT ;
     brick:isPointOf bs:CRAC_version_1 ;
-    ref:hasExternalReference bs:BACnetReference_version_42 .
+    ref:hasExternalReference bs:BACnetReference_version_37 .
 
 bs:Relative_Humidity_Sensor_version_2 a brick:Relative_Humidity_Sensor ;
     s223:hasExternalReference bs:BACnetReference_version_1 ;
@@ -4058,10 +3256,10 @@ bs:Return_Air_Temperature_Sensor_version_1 a brick:Return_Air_Temperature_Sensor
     ref:hasExternalReference bs:BACnetReference_version_1 .
 
 bs:Return_Air_Temperature_Sensor_version_2 a brick:Return_Air_Temperature_Sensor ;
-    s223:hasExternalReference bs:BACnetReference_version_59 ;
+    s223:hasExternalReference bs:BACnetReference_version_93 ;
     brick:hasUnit unit:DEG_F ;
     brick:isPointOf bs:CRAC_version_1 ;
-    ref:hasExternalReference bs:BACnetReference_version_59 .
+    ref:hasExternalReference bs:BACnetReference_version_93 .
 
 bs:Return_Air_Temperature_Sensor_version_3 a brick:Return_Air_Temperature_Sensor ;
     s223:hasExternalReference bs:BACnetReference_version_1 ;
@@ -4147,10 +3345,10 @@ bs:Run_Request_Status_version_7 a brick:Run_Request_Status ;
     ref:hasExternalReference bs:BACnetReference_version_1 .
 
 bs:Run_Status_version_1 a brick:Run_Status ;
-    s223:hasExternalReference bs:BACnetReference_version_92 ;
+    s223:hasExternalReference bs:BACnetReference_version_78 ;
     brick:hasUnit unit:UNITLESS ;
     brick:isPointOf bs:Fan_VFD_version_1 ;
-    ref:hasExternalReference bs:BACnetReference_version_92 .
+    ref:hasExternalReference bs:BACnetReference_version_78 .
 
 bs:Run_Status_version_2 a brick:Run_Status ;
     s223:hasExternalReference bs:BACnetReference_version_1 ;
@@ -4177,10 +3375,10 @@ bs:Sensor_version_1 a brick:Sensor ;
     ref:hasExternalReference bs:BACnetReference_version_1 .
 
 bs:Setpoint_version_1 a brick:Setpoint ;
-    s223:hasExternalReference bs:BACnetReference_version_27 ;
+    s223:hasExternalReference bs:BACnetReference_version_63 ;
     brick:hasUnit unit:DEG_F ;
     brick:isPointOf bs:Chilled_Water_Loop_version_2 ;
-    ref:hasExternalReference bs:BACnetReference_version_27 .
+    ref:hasExternalReference bs:BACnetReference_version_63 .
 
 bs:Smoke_Detection_Alarm_version_1 a brick:Smoke_Detection_Alarm ;
     s223:hasExternalReference bs:BACnetReference_version_1 ;
@@ -4196,10 +3394,10 @@ bs:Smoke_Detection_Alarm_version_2 a brick:Smoke_Detection_Alarm ;
     ref:hasExternalReference bs:BACnetReference_version_1 .
 
 bs:Smoke_Detection_Alarm_version_3 a brick:Smoke_Detection_Alarm ;
-    s223:hasExternalReference bs:BACnetReference_version_2 ;
+    s223:hasExternalReference bs:BACnetReference_version_76 ;
     brick:hasUnit unit:UNITLESS ;
     brick:isPointOf bs:CRAC_version_1 ;
-    ref:hasExternalReference bs:BACnetReference_version_2 .
+    ref:hasExternalReference bs:BACnetReference_version_76 .
 
 bs:Smoke_Detection_Alarm_version_4 a brick:Smoke_Detection_Alarm ;
     s223:hasExternalReference bs:BACnetReference_version_1 ;
@@ -4214,28 +3412,28 @@ bs:Smoke_Detection_Alarm_version_5 a brick:Smoke_Detection_Alarm ;
     ref:hasExternalReference bs:BACnetReference_version_1 .
 
 bs:Speed_Command_version_1 a brick:Speed_Command ;
-    s223:hasExternalReference bs:BACnetReference_version_37 ;
+    s223:hasExternalReference bs:BACnetReference_version_17 ;
     brick:hasUnit unit:PERCENT ;
     brick:isPointOf bs:Fan_VFD_version_1 ;
-    ref:hasExternalReference bs:BACnetReference_version_37 .
+    ref:hasExternalReference bs:BACnetReference_version_17 .
 
 bs:Speed_Command_version_2 a brick:Speed_Command ;
-    s223:hasExternalReference bs:BACnetReference_version_37 ;
+    s223:hasExternalReference bs:BACnetReference_version_17 ;
     brick:hasUnit unit:PERCENT ;
     brick:isPointOf bs:Fan_VFD_version_2 ;
-    ref:hasExternalReference bs:BACnetReference_version_37 .
+    ref:hasExternalReference bs:BACnetReference_version_17 .
 
 bs:Speed_Command_version_3 a brick:Speed_Command ;
-    s223:hasExternalReference bs:BACnetReference_version_37 ;
+    s223:hasExternalReference bs:BACnetReference_version_17 ;
     brick:hasUnit unit:PERCENT ;
     brick:isPointOf bs:Fan_VFD_version_7 ;
-    ref:hasExternalReference bs:BACnetReference_version_37 .
+    ref:hasExternalReference bs:BACnetReference_version_17 .
 
 bs:Speed_Command_version_4 a brick:Speed_Command ;
-    s223:hasExternalReference bs:BACnetReference_version_37 ;
+    s223:hasExternalReference bs:BACnetReference_version_17 ;
     brick:hasUnit unit:PERCENT ;
     brick:isPointOf bs:Exhaust_Fan_version_4 ;
-    ref:hasExternalReference bs:BACnetReference_version_37 .
+    ref:hasExternalReference bs:BACnetReference_version_17 .
 
 bs:Speed_Mode_Status_version_1 a brick:Speed_Mode_Status ;
     s223:hasExternalReference bs:BACnetReference_version_1 ;
@@ -4250,11 +3448,11 @@ bs:Speed_Sensor_version_1 a brick:Speed_Sensor ;
     ref:hasExternalReference bs:BACnetReference_version_1 .
 
 bs:Speed_Sensor_version_2 a brick:Speed_Sensor ;
-    s223:hasExternalReference bs:BACnetReference_version_50 ;
+    s223:hasExternalReference bs:BACnetReference_version_85 ;
     brick:hasUnit unit:PERCENT ;
     brick:isPointOf rdfs:Resource,
         bs:Fan_VFD_version_1 ;
-    ref:hasExternalReference bs:BACnetReference_version_50 .
+    ref:hasExternalReference bs:BACnetReference_version_85 .
 
 bs:Speed_Sensor_version_3 a brick:Speed_Sensor ;
     s223:hasExternalReference bs:BACnetReference_version_1 ;
@@ -4308,10 +3506,10 @@ bs:Speed_Setpoint_version_2 a brick:Speed_Setpoint ;
     ref:hasExternalReference bs:BACnetReference_version_1 .
 
 bs:Speed_Setpoint_version_4 a brick:Speed_Setpoint ;
-    s223:hasExternalReference bs:BACnetReference_version_77 ;
+    s223:hasExternalReference bs:BACnetReference_version_59 ;
     brick:hasUnit unit:PERCENT ;
     brick:isPointOf bs:Chilled_Water_Pump_version_1 ;
-    ref:hasExternalReference bs:BACnetReference_version_77 .
+    ref:hasExternalReference bs:BACnetReference_version_59 .
 
 bs:Speed_Setpoint_version_5 a brick:Speed_Setpoint ;
     s223:hasExternalReference bs:BACnetReference_version_1 ;
@@ -4417,11 +3615,11 @@ bs:Start_Stop_Command_version_18 a brick:Start_Stop_Command ;
     ref:hasExternalReference bs:BACnetReference_version_1 .
 
 bs:Start_Stop_Command_version_2 a brick:Start_Stop_Command ;
-    s223:hasExternalReference bs:BACnetReference_version_89 ;
+    s223:hasExternalReference bs:BACnetReference_version_79 ;
     brick:hasUnit unit:UNITLESS ;
     brick:isPointOf rdfs:Resource,
         bs:Fan_VFD_version_1 ;
-    ref:hasExternalReference bs:BACnetReference_version_89 .
+    ref:hasExternalReference bs:BACnetReference_version_79 .
 
 bs:Start_Stop_Command_version_3 a brick:Start_Stop_Command ;
     s223:hasExternalReference bs:BACnetReference_version_1 ;
@@ -4514,28 +3712,28 @@ bs:Static_Pressure_Sensor_version_1 a brick:Static_Pressure_Sensor ;
     ref:hasExternalReference bs:BACnetReference_version_1 .
 
 bs:Status_version_2 a brick:Status ;
-    s223:hasExternalReference bs:BACnetReference_version_53 ;
+    s223:hasExternalReference bs:BACnetReference_version_49 ;
     brick:hasUnit unit:UNITLESS ;
     brick:isPointOf bs:Thermal_Power_Meter_version_1 ;
-    ref:hasExternalReference bs:BACnetReference_version_53 .
+    ref:hasExternalReference bs:BACnetReference_version_49 .
 
 bs:Status_version_3 a brick:Status ;
-    s223:hasExternalReference bs:BACnetReference_version_58 ;
+    s223:hasExternalReference bs:BACnetReference_version_32 ;
     brick:hasUnit unit:UNITLESS ;
     brick:isPointOf bs:Fan_VFD_version_1 ;
-    ref:hasExternalReference bs:BACnetReference_version_58 .
+    ref:hasExternalReference bs:BACnetReference_version_32 .
 
 bs:Status_version_4 a brick:Status ;
-    s223:hasExternalReference bs:BACnetReference_version_18 ;
+    s223:hasExternalReference bs:BACnetReference_version_28 ;
     brick:hasUnit unit:UNITLESS ;
     brick:isPointOf bs:Hot_Water_Coil_version_2 ;
-    ref:hasExternalReference bs:BACnetReference_version_18 .
+    ref:hasExternalReference bs:BACnetReference_version_28 .
 
 bs:Status_version_5 a brick:Status ;
-    s223:hasExternalReference bs:BACnetReference_version_76 ;
+    s223:hasExternalReference bs:BACnetReference_version_82 ;
     brick:hasUnit unit:UNITLESS ;
     brick:isPointOf bs:Hot_Water_Loop_version_1 ;
-    ref:hasExternalReference bs:BACnetReference_version_76 .
+    ref:hasExternalReference bs:BACnetReference_version_82 .
 
 bs:Steam_Usage_Sensor_version_1 a brick:Steam_Usage_Sensor ;
     s223:hasExternalReference bs:BACnetReference_version_1 ;
@@ -4600,10 +3798,10 @@ bs:System_Status_version_4 a brick:System_Status ;
     ref:hasExternalReference bs:BACnetReference_version_1 .
 
 bs:System_Status_version_5 a brick:System_Status ;
-    s223:hasExternalReference bs:BACnetReference_version_87 ;
+    s223:hasExternalReference bs:BACnetReference_version_92 ;
     brick:hasUnit unit:UNITLESS ;
     brick:isPointOf bs:Breaker_Panel_version_1 ;
-    ref:hasExternalReference bs:BACnetReference_version_87 .
+    ref:hasExternalReference bs:BACnetReference_version_92 .
 
 bs:System_Status_version_6 a brick:System_Status ;
     s223:hasExternalReference bs:BACnetReference_version_1 ;
@@ -4862,10 +4060,10 @@ bs:Thermal_Power_Meter_version_3 a brick:Thermal_Power_Meter ;
     brick:hasPoint bs:Thermal_Power_Sensor_version_3 .
 
 bs:Thermal_Power_Sensor_version_1 a brick:Thermal_Power_Sensor ;
-    s223:hasExternalReference bs:BACnetReference_version_65 ;
+    s223:hasExternalReference bs:BACnetReference_version_66 ;
     brick:hasUnit unit:TON_FG ;
     brick:isPointOf bs:Thermal_Power_Meter_version_1 ;
-    ref:hasExternalReference bs:BACnetReference_version_65 .
+    ref:hasExternalReference bs:BACnetReference_version_66 .
 
 bs:Thermal_Power_Sensor_version_2 a brick:Thermal_Power_Sensor ;
     s223:hasExternalReference bs:BACnetReference_version_1 ;
@@ -4935,11 +4133,11 @@ bs:Unoccupied_Heating_Temperature_Setpoint_version_1 a brick:Unoccupied_Heating_
     ref:hasExternalReference bs:BACnetReference_version_1 .
 
 bs:VFD_Enable_Command_version_1 a brick:VFD_Enable_Command ;
-    s223:hasExternalReference bs:BACnetReference_version_80 ;
+    s223:hasExternalReference bs:BACnetReference_version_31 ;
     brick:hasUnit unit:UNITLESS ;
     brick:isPointOf rdfs:Resource,
         bs:Fan_VFD_version_1 ;
-    ref:hasExternalReference bs:BACnetReference_version_80 .
+    ref:hasExternalReference bs:BACnetReference_version_31 .
 
 bs:VFD_Enable_Command_version_2 a brick:VFD_Enable_Command ;
     s223:hasExternalReference bs:BACnetReference_version_1 ;
@@ -4985,10 +4183,10 @@ bs:Valve_Position_Command_version_11 a brick:Valve_Position_Command ;
     ref:hasExternalReference bs:BACnetReference_version_1 .
 
 bs:Valve_Position_Command_version_12 a brick:Valve_Position_Command ;
-    s223:hasExternalReference bs:BACnetReference_version_84 ;
+    s223:hasExternalReference bs:BACnetReference_version_15 ;
     brick:hasUnit unit:PERCENT ;
     brick:isPointOf bs:Chilled_Water_Valve_version_4 ;
-    ref:hasExternalReference bs:BACnetReference_version_84 .
+    ref:hasExternalReference bs:BACnetReference_version_15 .
 
 bs:Valve_Position_Command_version_13 a brick:Valve_Position_Command ;
     s223:hasExternalReference bs:BACnetReference_version_1 ;
@@ -5027,10 +4225,10 @@ bs:Valve_Position_Command_version_2 a brick:Valve_Position_Command ;
     ref:hasExternalReference bs:BACnetReference_version_1 .
 
 bs:Valve_Position_Command_version_3 a brick:Valve_Position_Command ;
-    s223:hasExternalReference bs:BACnetReference_version_17 ;
+    s223:hasExternalReference bs:BACnetReference_version_6 ;
     brick:hasUnit unit:PERCENT ;
     brick:isPointOf bs:Hot_Water_Valve_version_2 ;
-    ref:hasExternalReference bs:BACnetReference_version_17 .
+    ref:hasExternalReference bs:BACnetReference_version_6 .
 
 bs:Valve_Position_Command_version_4 a brick:Valve_Position_Command ;
     s223:hasExternalReference bs:BACnetReference_version_1 ;
@@ -5070,10 +4268,10 @@ bs:Valve_Position_Command_version_9 a brick:Valve_Position_Command ;
     ref:hasExternalReference bs:BACnetReference_version_1 .
 
 bs:Valve_Position_Sensor_version_1 a brick:Valve_Position_Sensor ;
-    s223:hasExternalReference bs:BACnetReference_version_22 ;
+    s223:hasExternalReference bs:BACnetReference_version_41 ;
     brick:hasUnit unit:PERCENT ;
     brick:isPointOf bs:Hot_Water_Valve_version_2 ;
-    ref:hasExternalReference bs:BACnetReference_version_22 .
+    ref:hasExternalReference bs:BACnetReference_version_41 .
 
 bs:Valve_Position_Sensor_version_2 a brick:Valve_Position_Sensor ;
     s223:hasExternalReference bs:BACnetReference_version_1 ;
@@ -5100,16 +4298,16 @@ bs:Velocity_Pressure_Setpoint_version_1 a brick:Velocity_Pressure_Setpoint ;
     ref:hasExternalReference bs:BACnetReference_version_1 .
 
 bs:Voltage_Sensor_version_2 a brick:Voltage_Sensor ;
-    s223:hasExternalReference bs:BACnetReference_version_12 ;
+    s223:hasExternalReference bs:BACnetReference_version_46 ;
     brick:hasUnit unit:V ;
     brick:isPointOf bs:Breaker_Panel_version_1 ;
-    ref:hasExternalReference bs:BACnetReference_version_12 .
+    ref:hasExternalReference bs:BACnetReference_version_46 .
 
 bs:Water_Alarm_version_1 a brick:Water_Alarm ;
-    s223:hasExternalReference bs:BACnetReference_version_28 ;
+    s223:hasExternalReference bs:BACnetReference_version_70 ;
     brick:hasUnit unit:UNITLESS ;
     brick:isPointOf bs:CRAC_version_1 ;
-    ref:hasExternalReference bs:BACnetReference_version_28 .
+    ref:hasExternalReference bs:BACnetReference_version_70 .
 
 bs:Water_Differential_Pressure_Setpoint_version_1 a brick:Water_Differential_Pressure_Setpoint ;
     s223:hasExternalReference bs:BACnetReference_version_1 ;
@@ -5142,10 +4340,10 @@ bs:Water_Differential_Pressure_Setpoint_version_5 a brick:Water_Differential_Pre
     ref:hasExternalReference bs:BACnetReference_version_1 .
 
 bs:Water_Flow_Sensor_version_1 a brick:Water_Flow_Sensor ;
-    s223:hasExternalReference bs:BACnetReference_version_99 ;
+    s223:hasExternalReference bs:BACnetReference_version_55 ;
     brick:hasUnit unit:GAL_US-PER-MIN ;
     brick:isPointOf bs:Thermal_Power_Meter_version_1 ;
-    ref:hasExternalReference bs:BACnetReference_version_99 .
+    ref:hasExternalReference bs:BACnetReference_version_55 .
 
 bs:Water_Flow_Sensor_version_2 a brick:Water_Flow_Sensor ;
     s223:hasExternalReference bs:BACnetReference_version_1 ;
@@ -5162,10 +4360,10 @@ bs:Water_Temperature_Setpoint_version_1 a brick:Water_Temperature_Setpoint ;
     ref:hasExternalReference bs:BACnetReference_version_1 .
 
 bs:Zone_Air_Humidity_Setpoint_version_1 a brick:Zone_Air_Humidity_Setpoint ;
-    s223:hasExternalReference bs:BACnetReference_version_48 ;
+    s223:hasExternalReference bs:BACnetReference_version_44 ;
     brick:hasUnit unit:PERCENT ;
     brick:isPointOf bs:CRAC_version_1 ;
-    ref:hasExternalReference bs:BACnetReference_version_48 .
+    ref:hasExternalReference bs:BACnetReference_version_44 .
 
 bs:Zone_Air_Humidity_Setpoint_version_2 a brick:Zone_Air_Humidity_Setpoint ;
     s223:hasExternalReference bs:BACnetReference_version_1 ;
@@ -5460,643 +4658,643 @@ bs:Air_Static_Pressure_Sensor_version_1 a brick:Air_Static_Pressure_Sensor ;
     ref:hasExternalReference bs:BACnetReference_version_1 .
 
 bs:BACnetReference_version_10 a ref:BACnetReference ;
-    bacnet:ReadableProperty bs:Literal_version_140 ;
-    bacnet:object-identifier bs:Literal_version_62 ;
-    bacnet:object-name bs:Literal_version_160 ;
-    bacnet:object-type bs:Literal_version_172 ;
-    bacnet:objectOf bs:ukWxk1OT528_version_5 .
+    bacnet:ReadableProperty bs:Literal_version_294 ;
+    bacnet:object-name bs:Literal_version_372 .
 
 bs:BACnetReference_version_100 a ref:BACnetReference ;
-    bacnet:ReadableProperty bs:Literal_version_83 ;
-    bacnet:object-identifier bs:Literal_version_273 ;
-    bacnet:object-name bs:Literal_version_277 ;
-    bacnet:object-type bs:Literal_version_331 ;
+    bacnet:ReadableProperty bs:Literal_version_328 ;
+    bacnet:object-identifier bs:Literal_version_375 ;
+    bacnet:object-name bs:Literal_version_399 ;
+    bacnet:object-type bs:Literal_version_272 ;
     bacnet:objectOf bs:ukWxk1OT528_version_3 .
 
 bs:BACnetReference_version_101 a ref:BACnetReference ;
-    bacnet:ReadableProperty bs:Literal_version_303 ;
-    bacnet:object-name bs:Literal_version_100 .
+    bacnet:ReadableProperty bs:Literal_version_348 ;
+    bacnet:object-name bs:Literal_version_382 .
 
 bs:BACnetReference_version_102 a ref:BACnetReference ;
-    bacnet:ReadableProperty bs:Literal_version_162 ;
-    bacnet:object-identifier bs:Literal_version_321 ;
-    bacnet:object-name bs:Literal_version_285 ;
-    bacnet:object-type bs:Literal_version_378 ;
+    bacnet:ReadableProperty bs:Literal_version_64 ;
+    bacnet:object-identifier bs:Literal_version_136 ;
+    bacnet:object-name bs:Literal_version_344 ;
+    bacnet:object-type bs:Literal_version_383 ;
     bacnet:objectOf bs:ukWxk1OT528_version_2 .
 
 bs:BACnetReference_version_11 a ref:BACnetReference ;
-    bacnet:ReadableProperty bs:Literal_version_53 ;
-    bacnet:object-identifier bs:Literal_version_220 ;
-    bacnet:object-name bs:Literal_version_335 ;
-    bacnet:object-type bs:Literal_version_48 ;
+    bacnet:ReadableProperty bs:Literal_version_86 ;
+    bacnet:object-identifier bs:Literal_version_31 ;
+    bacnet:object-name bs:Literal_version_298 ;
+    bacnet:object-type bs:Literal_version_379 ;
     bacnet:objectOf bs:ukWxk1OT528_version_1 .
 
 bs:BACnetReference_version_12 a ref:BACnetReference ;
-    bacnet:ReadableProperty bs:Literal_version_18 ;
-    bacnet:object-identifier bs:Literal_version_98 ;
-    bacnet:object-name bs:Literal_version_247 ;
-    bacnet:object-type bs:Literal_version_22 ;
-    bacnet:objectOf bs:ukWxk1OT528_version_4 .
+    bacnet:ReadableProperty bs:Literal_version_132 ;
+    bacnet:object-identifier bs:Literal_version_12 ;
+    bacnet:object-name bs:Literal_version_97 ;
+    bacnet:object-type bs:Literal_version_256 ;
+    bacnet:objectOf bs:ukWxk1OT528_version_5 .
 
 bs:BACnetReference_version_13 a ref:BACnetReference ;
-    bacnet:ReadableProperty bs:Literal_version_355 ;
-    bacnet:object-name bs:Literal_version_352 .
+    bacnet:ReadableProperty bs:Literal_version_163 ;
+    bacnet:object-identifier bs:Literal_version_150 ;
+    bacnet:object-name bs:Literal_version_273 ;
+    bacnet:object-type bs:Literal_version_319 ;
+    bacnet:objectOf bs:ukWxk1OT528_version_5 .
 
 bs:BACnetReference_version_14 a ref:BACnetReference ;
-    bacnet:ReadableProperty bs:Literal_version_14 ;
-    bacnet:object-identifier bs:Literal_version_231 ;
-    bacnet:object-name bs:Literal_version_215 ;
-    bacnet:object-type bs:Literal_version_69 ;
-    bacnet:objectOf bs:ukWxk1OT528_version_1 .
+    bacnet:ReadableProperty bs:Literal_version_229 ;
+    bacnet:object-identifier bs:Literal_version_55 ;
+    bacnet:object-name bs:Literal_version_198 ;
+    bacnet:object-type bs:Literal_version_260 ;
+    bacnet:objectOf bs:ukWxk1OT528_version_5 .
 
 bs:BACnetReference_version_15 a ref:BACnetReference ;
-    bacnet:ReadableProperty bs:Literal_version_192 ;
-    bacnet:object-identifier bs:Literal_version_60 ;
-    bacnet:object-name bs:Literal_version_319 ;
-    bacnet:object-type bs:Literal_version_221 ;
+    bacnet:ReadableProperty bs:Literal_version_90 ;
+    bacnet:object-identifier bs:Literal_version_274 ;
+    bacnet:object-name bs:Literal_version_255 ;
+    bacnet:object-type bs:Literal_version_224 ;
     bacnet:objectOf bs:ukWxk1OT528_version_5 .
 
 bs:BACnetReference_version_16 a ref:BACnetReference ;
-    bacnet:ReadableProperty bs:Literal_version_191 ;
-    bacnet:object-identifier bs:Literal_version_95 ;
-    bacnet:object-name bs:Literal_version_130 ;
-    bacnet:object-type bs:Literal_version_9 ;
+    bacnet:ReadableProperty bs:Literal_version_60 ;
+    bacnet:object-identifier bs:Literal_version_333 ;
+    bacnet:object-name bs:Literal_version_140 ;
+    bacnet:object-type bs:Literal_version_309 ;
     bacnet:objectOf bs:ukWxk1OT528_version_2 .
 
-bs:BACnetReference_version_17 a ref:BACnetReference ;
-    bacnet:ReadableProperty bs:Literal_version_4 ;
-    bacnet:object-identifier bs:Literal_version_72 ;
-    bacnet:object-name bs:Literal_version_96 ;
-    bacnet:object-type bs:Literal_version_206 ;
-    bacnet:objectOf bs:ukWxk1OT528_version_1,
-        bs:ukWxk1OT528_version_5 .
-
 bs:BACnetReference_version_18 a ref:BACnetReference ;
-    bacnet:ReadableProperty bs:Literal_version_13 ;
-    bacnet:object-identifier bs:Literal_version_207 ;
-    bacnet:object-name bs:Literal_version_181 ;
-    bacnet:object-type bs:Literal_version_170 ;
-    bacnet:objectOf bs:ukWxk1OT528_version_1 .
+    bacnet:ReadableProperty bs:Literal_version_6 ;
+    bacnet:object-identifier bs:Literal_version_121 ;
+    bacnet:object-name bs:Literal_version_110 ;
+    bacnet:object-type bs:Literal_version_130 ;
+    bacnet:objectOf bs:ukWxk1OT528_version_2 .
 
 bs:BACnetReference_version_19 a ref:BACnetReference ;
-    bacnet:ReadableProperty bs:Literal_version_152 ;
+    bacnet:ReadableProperty bs:Literal_version_104 ;
     bacnet:object-identifier bs:Literal_version_240 ;
-    bacnet:object-name bs:Literal_version_155 ;
-    bacnet:object-type bs:Literal_version_306 ;
-    bacnet:objectOf bs:ukWxk1OT528_version_4 .
-
-bs:BACnetReference_version_2 a ref:BACnetReference ;
-    bacnet:ReadableProperty bs:Literal_version_105 ;
-    bacnet:object-identifier bs:Literal_version_166 ;
-    bacnet:object-name bs:Literal_version_131 ;
-    bacnet:object-type bs:Literal_version_142 ;
-    bacnet:objectOf bs:ukWxk1OT528_version_5 .
-
-bs:BACnetReference_version_20 a ref:BACnetReference ;
-    bacnet:ReadableProperty bs:Literal_version_132 ;
-    bacnet:object-identifier bs:Literal_version_135 ;
-    bacnet:object-name bs:Literal_version_239 ;
-    bacnet:object-type bs:Literal_version_289 ;
-    bacnet:objectOf bs:ukWxk1OT528_version_5 .
-
-bs:BACnetReference_version_21 a ref:BACnetReference ;
-    bacnet:ReadableProperty bs:Literal_version_27 ;
-    bacnet:object-identifier bs:Literal_version_11 ;
-    bacnet:object-name bs:Literal_version_299 ;
-    bacnet:object-type bs:Literal_version_235 ;
+    bacnet:object-name bs:Literal_version_380 ;
+    bacnet:object-type bs:Literal_version_20 ;
     bacnet:objectOf bs:ukWxk1OT528_version_1 .
 
+bs:BACnetReference_version_2 a ref:BACnetReference ;
+    bacnet:ReadableProperty bs:Literal_version_247 ;
+    bacnet:object-identifier bs:Literal_version_391 ;
+    bacnet:object-name bs:Literal_version_301 ;
+    bacnet:object-type bs:Literal_version_222 ;
+    bacnet:objectOf bs:ukWxk1OT528_version_3 .
+
+bs:BACnetReference_version_21 a ref:BACnetReference ;
+    bacnet:ReadableProperty bs:Literal_version_13 ;
+    bacnet:object-identifier bs:Literal_version_10 ;
+    bacnet:object-name bs:Literal_version_133 ;
+    bacnet:object-type bs:Literal_version_334 ;
+    bacnet:objectOf bs:ukWxk1OT528_version_5 .
+
 bs:BACnetReference_version_22 a ref:BACnetReference ;
-    bacnet:ReadableProperty bs:Literal_version_32 ;
-    bacnet:object-identifier bs:Literal_version_34 ;
-    bacnet:object-name bs:Literal_version_68 ;
-    bacnet:object-type bs:Literal_version_176 ;
+    bacnet:ReadableProperty bs:Literal_version_278 ;
+    bacnet:object-identifier bs:Literal_version_317 ;
+    bacnet:object-name bs:Literal_version_305 ;
+    bacnet:object-type bs:Literal_version_302 ;
     bacnet:objectOf bs:ukWxk1OT528_version_1 .
 
 bs:BACnetReference_version_23 a ref:BACnetReference ;
-    bacnet:ReadableProperty bs:Literal_version_202 ;
-    bacnet:object-identifier bs:Literal_version_45 ;
-    bacnet:object-name bs:Literal_version_212 ;
-    bacnet:object-type bs:Literal_version_318 ;
+    bacnet:ReadableProperty bs:Literal_version_135 ;
+    bacnet:object-identifier bs:Literal_version_299 ;
+    bacnet:object-name bs:Literal_version_69 ;
+    bacnet:object-type bs:Literal_version_371 ;
     bacnet:objectOf bs:ukWxk1OT528_version_2 .
 
+bs:BACnetReference_version_24 a ref:BACnetReference ;
+    bacnet:ReadableProperty bs:Literal_version_76 ;
+    bacnet:object-identifier bs:Literal_version_141 ;
+    bacnet:object-name bs:Literal_version_287 ;
+    bacnet:object-type bs:Literal_version_128 ;
+    bacnet:objectOf bs:ukWxk1OT528_version_5 .
+
 bs:BACnetReference_version_25 a ref:BACnetReference ;
-    bacnet:ReadableProperty bs:Literal_version_38 ;
-    bacnet:object-identifier bs:Literal_version_156 ;
-    bacnet:object-name bs:Literal_version_332 ;
-    bacnet:object-type bs:Literal_version_8 ;
+    bacnet:ReadableProperty bs:Literal_version_96 ;
+    bacnet:object-identifier bs:Literal_version_95 ;
+    bacnet:object-name bs:Literal_version_118 ;
+    bacnet:object-type bs:Literal_version_72 ;
     bacnet:objectOf bs:ukWxk1OT528_version_5 .
 
 bs:BACnetReference_version_26 a ref:BACnetReference ;
-    bacnet:ReadableProperty bs:Literal_version_333 ;
-    bacnet:object-identifier bs:Literal_version_374 ;
-    bacnet:object-name bs:Literal_version_381 ;
-    bacnet:object-type bs:Literal_version_392 ;
-    bacnet:objectOf bs:ukWxk1OT528_version_2 .
-
-bs:BACnetReference_version_27 a ref:BACnetReference ;
-    bacnet:ReadableProperty bs:Literal_version_315 ;
-    bacnet:object-identifier bs:Literal_version_305 ;
-    bacnet:object-name bs:Literal_version_393 ;
-    bacnet:object-type bs:Literal_version_57 ;
-    bacnet:objectOf bs:ukWxk1OT528_version_3 .
-
-bs:BACnetReference_version_28 a ref:BACnetReference ;
-    bacnet:ReadableProperty bs:Literal_version_159 ;
-    bacnet:object-identifier bs:Literal_version_264 ;
-    bacnet:object-name bs:Literal_version_65 ;
-    bacnet:object-type bs:Literal_version_133 ;
+    bacnet:ReadableProperty bs:Literal_version_183 ;
+    bacnet:object-identifier bs:Literal_version_237 ;
+    bacnet:object-name bs:Literal_version_159 ;
+    bacnet:object-type bs:Literal_version_122 ;
     bacnet:objectOf bs:ukWxk1OT528_version_5 .
 
+bs:BACnetReference_version_27 a ref:BACnetReference ;
+    bacnet:ReadableProperty bs:Literal_version_180 ;
+    bacnet:object-identifier bs:Literal_version_148 ;
+    bacnet:object-name bs:Literal_version_349 ;
+    bacnet:object-type bs:Literal_version_388 ;
+    bacnet:objectOf bs:ukWxk1OT528_version_1 .
+
+bs:BACnetReference_version_28 a ref:BACnetReference ;
+    bacnet:ReadableProperty bs:Literal_version_34 ;
+    bacnet:object-identifier bs:Literal_version_16 ;
+    bacnet:object-name bs:Literal_version_143 ;
+    bacnet:object-type bs:Literal_version_33 ;
+    bacnet:objectOf bs:ukWxk1OT528_version_1 .
+
 bs:BACnetReference_version_29 a ref:BACnetReference ;
-    bacnet:ReadableProperty bs:Literal_version_269 ;
-    bacnet:object-identifier bs:Literal_version_388 ;
-    bacnet:object-name bs:Literal_version_255 ;
-    bacnet:object-type bs:Literal_version_311 ;
-    bacnet:objectOf bs:ukWxk1OT528_version_4 .
+    bacnet:ReadableProperty bs:Literal_version_62 ;
+    bacnet:object-identifier bs:Literal_version_351 ;
+    bacnet:object-name bs:Literal_version_337 ;
+    bacnet:object-type bs:Literal_version_176 ;
+    bacnet:objectOf bs:ukWxk1OT528_version_1 .
 
 bs:BACnetReference_version_3 a ref:BACnetReference ;
-    bacnet:ReadableProperty bs:Literal_version_158 ;
-    bacnet:object-identifier bs:Literal_version_284 ;
-    bacnet:object-name bs:Literal_version_117 ;
-    bacnet:object-type bs:Literal_version_134 ;
+    bacnet:ReadableProperty bs:Literal_version_111 ;
+    bacnet:object-identifier bs:Literal_version_201 ;
+    bacnet:object-name bs:Literal_version_171 ;
+    bacnet:object-type bs:Literal_version_147 ;
     bacnet:objectOf bs:ukWxk1OT528_version_1 .
 
 bs:BACnetReference_version_30 a ref:BACnetReference ;
-    bacnet:ReadableProperty bs:Literal_version_64 ;
-    bacnet:object-identifier bs:Literal_version_123 ;
-    bacnet:object-name bs:Literal_version_28 ;
-    bacnet:object-type bs:Literal_version_21 ;
+    bacnet:ReadableProperty bs:Literal_version_27 ;
+    bacnet:object-identifier bs:Literal_version_210 ;
+    bacnet:object-name bs:Literal_version_158 ;
+    bacnet:object-type bs:Literal_version_347 ;
     bacnet:objectOf bs:ukWxk1OT528_version_5 .
 
 bs:BACnetReference_version_31 a ref:BACnetReference ;
-    bacnet:ReadableProperty bs:Literal_version_358 ;
-    bacnet:object-name bs:Literal_version_362 .
+    bacnet:ReadableProperty bs:Literal_version_54 ;
+    bacnet:object-identifier bs:Literal_version_162 ;
+    bacnet:object-name bs:Literal_version_228 ;
+    bacnet:object-type bs:Literal_version_346 ;
+    bacnet:objectOf bs:ukWxk1OT528_version_1 .
 
 bs:BACnetReference_version_32 a ref:BACnetReference ;
-    bacnet:ReadableProperty bs:Literal_version_115 ;
-    bacnet:object-identifier bs:Literal_version_214 ;
-    bacnet:object-name bs:Literal_version_47 ;
-    bacnet:object-type bs:Literal_version_190 ;
-    bacnet:objectOf bs:ukWxk1OT528_version_1 .
+    bacnet:ReadableProperty bs:Literal_version_362 ;
+    bacnet:object-name bs:Literal_version_216 .
 
 bs:BACnetReference_version_33 a ref:BACnetReference ;
-    bacnet:ReadableProperty bs:Literal_version_97 ;
-    bacnet:object-identifier bs:Literal_version_173 ;
-    bacnet:object-name bs:Literal_version_286 ;
-    bacnet:object-type bs:Literal_version_294 ;
-    bacnet:objectOf bs:ukWxk1OT528_version_1 .
+    bacnet:ReadableProperty bs:Literal_version_56 ;
+    bacnet:object-identifier bs:Literal_version_149 ;
+    bacnet:object-name bs:Literal_version_221 ;
+    bacnet:object-type bs:Literal_version_327 ;
+    bacnet:objectOf bs:ukWxk1OT528_version_2 .
 
 bs:BACnetReference_version_34 a ref:BACnetReference ;
-    bacnet:ReadableProperty bs:Literal_version_139 ;
-    bacnet:object-identifier bs:Literal_version_227 ;
-    bacnet:object-name bs:Literal_version_351 ;
-    bacnet:object-type bs:Literal_version_345 ;
-    bacnet:objectOf bs:ukWxk1OT528_version_3 .
+    bacnet:ReadableProperty bs:Literal_version_227 ;
+    bacnet:object-identifier bs:Literal_version_218 ;
+    bacnet:object-name bs:Literal_version_92 ;
+    bacnet:object-type bs:Literal_version_139 ;
+    bacnet:objectOf bs:ukWxk1OT528_version_5 .
 
 bs:BACnetReference_version_35 a ref:BACnetReference ;
-    bacnet:ReadableProperty bs:Literal_version_89 ;
-    bacnet:object-identifier bs:Literal_version_218 ;
-    bacnet:object-name bs:Literal_version_56 ;
-    bacnet:object-type bs:Literal_version_58 ;
+    bacnet:ReadableProperty bs:Literal_version_106 ;
+    bacnet:object-identifier bs:Literal_version_357 ;
+    bacnet:object-name bs:Literal_version_83 ;
+    bacnet:object-type bs:Literal_version_225 ;
     bacnet:objectOf bs:ukWxk1OT528_version_5 .
 
 bs:BACnetReference_version_36 a ref:BACnetReference ;
-    bacnet:ReadableProperty bs:Literal_version_136 ;
-    bacnet:object-identifier bs:Literal_version_261 ;
-    bacnet:object-name bs:Literal_version_188 ;
-    bacnet:object-type bs:Literal_version_309 ;
+    bacnet:ReadableProperty bs:Literal_version_263 ;
+    bacnet:object-identifier bs:Literal_version_368 ;
+    bacnet:object-name bs:Literal_version_88 ;
+    bacnet:object-type bs:Literal_version_116 ;
+    bacnet:objectOf bs:ukWxk1OT528_version_1 .
+
+bs:BACnetReference_version_37 a ref:BACnetReference ;
+    bacnet:ReadableProperty bs:Literal_version_81 ;
+    bacnet:object-identifier bs:Literal_version_350 ;
+    bacnet:object-name bs:Literal_version_115 ;
+    bacnet:object-type bs:Literal_version_261 ;
     bacnet:objectOf bs:ukWxk1OT528_version_5 .
 
 bs:BACnetReference_version_38 a ref:BACnetReference ;
-    bacnet:ReadableProperty bs:Literal_version_93 ;
-    bacnet:object-identifier bs:Literal_version_338 ;
-    bacnet:object-name bs:Literal_version_364 ;
-    bacnet:object-type bs:Literal_version_263 ;
-    bacnet:objectOf bs:ukWxk1OT528_version_3 .
-
-bs:BACnetReference_version_39 a ref:BACnetReference ;
-    bacnet:ReadableProperty bs:Literal_version_228 ;
-    bacnet:object-identifier bs:Literal_version_86 ;
-    bacnet:object-name bs:Literal_version_203 ;
-    bacnet:object-type bs:Literal_version_163 ;
+    bacnet:ReadableProperty bs:Literal_version_30 ;
+    bacnet:object-identifier bs:Literal_version_245 ;
+    bacnet:object-name bs:Literal_version_73 ;
+    bacnet:object-type bs:Literal_version_14 ;
     bacnet:objectOf bs:ukWxk1OT528_version_5 .
 
+bs:BACnetReference_version_39 a ref:BACnetReference ;
+    bacnet:ReadableProperty bs:Literal_version_75 ;
+    bacnet:object-identifier bs:Literal_version_7 ;
+    bacnet:object-name bs:Literal_version_89 ;
+    bacnet:object-type bs:Literal_version_219 ;
+    bacnet:objectOf bs:ukWxk1OT528_version_1 .
+
 bs:BACnetReference_version_4 a ref:BACnetReference ;
-    bacnet:ReadableProperty bs:Literal_version_107 ;
-    bacnet:object-identifier bs:Literal_version_272 ;
-    bacnet:object-name bs:Literal_version_183 ;
-    bacnet:object-type bs:Literal_version_178 ;
-    bacnet:objectOf bs:ukWxk1OT528_version_3 .
+    bacnet:ReadableProperty bs:Literal_version_131 ;
+    bacnet:object-identifier bs:Literal_version_339 ;
+    bacnet:object-name bs:Literal_version_310 ;
+    bacnet:object-type bs:Literal_version_266 ;
+    bacnet:objectOf bs:ukWxk1OT528_version_5 .
 
 bs:BACnetReference_version_40 a ref:BACnetReference ;
-    bacnet:ReadableProperty bs:Literal_version_25 ;
-    bacnet:object-identifier bs:Literal_version_36 ;
-    bacnet:object-name bs:Literal_version_92 ;
-    bacnet:object-type bs:Literal_version_129 ;
+    bacnet:ReadableProperty bs:Literal_version_42 ;
+    bacnet:object-identifier bs:Literal_version_93 ;
+    bacnet:object-name bs:Literal_version_208 ;
+    bacnet:object-type bs:Literal_version_24 ;
     bacnet:objectOf bs:ukWxk1OT528_version_5 .
 
 bs:BACnetReference_version_41 a ref:BACnetReference ;
-    bacnet:ReadableProperty bs:Literal_version_108 ;
-    bacnet:object-identifier bs:Literal_version_74 ;
-    bacnet:object-name bs:Literal_version_209 ;
-    bacnet:object-type bs:Literal_version_300 ;
-    bacnet:objectOf bs:ukWxk1OT528_version_4 .
+    bacnet:ReadableProperty bs:Literal_version_15 ;
+    bacnet:object-identifier bs:Literal_version_232 ;
+    bacnet:object-name bs:Literal_version_120 ;
+    bacnet:object-type bs:Literal_version_160 ;
+    bacnet:objectOf bs:ukWxk1OT528_version_1 .
 
 bs:BACnetReference_version_42 a ref:BACnetReference ;
-    bacnet:ReadableProperty bs:Literal_version_104 ;
-    bacnet:object-identifier bs:Literal_version_216 ;
-    bacnet:object-name bs:Literal_version_238 ;
-    bacnet:object-type bs:Literal_version_208 ;
+    bacnet:ReadableProperty bs:Literal_version_235 ;
+    bacnet:object-identifier bs:Literal_version_161 ;
+    bacnet:object-name bs:Literal_version_323 ;
+    bacnet:object-type bs:Literal_version_253 ;
     bacnet:objectOf bs:ukWxk1OT528_version_5 .
 
 bs:BACnetReference_version_43 a ref:BACnetReference ;
-    bacnet:ReadableProperty bs:Literal_version_229 ;
-    bacnet:object-identifier bs:Literal_version_82 ;
-    bacnet:object-name bs:Literal_version_37 ;
-    bacnet:object-type bs:Literal_version_15 ;
-    bacnet:objectOf bs:ukWxk1OT528_version_2 .
-
-bs:BACnetReference_version_45 a ref:BACnetReference ;
-    bacnet:ReadableProperty bs:Literal_version_26 ;
-    bacnet:object-identifier bs:Literal_version_251 ;
-    bacnet:object-name bs:Literal_version_141 ;
-    bacnet:object-type bs:Literal_version_150 ;
-    bacnet:objectOf bs:ukWxk1OT528_version_5 .
-
-bs:BACnetReference_version_46 a ref:BACnetReference ;
-    bacnet:ReadableProperty bs:Literal_version_234 ;
-    bacnet:object-identifier bs:Literal_version_241 ;
-    bacnet:object-name bs:Literal_version_233 ;
-    bacnet:object-type bs:Literal_version_375 ;
-    bacnet:objectOf bs:ukWxk1OT528_version_1 .
-
-bs:BACnetReference_version_47 a ref:BACnetReference ;
-    bacnet:ReadableProperty bs:Literal_version_222 ;
-    bacnet:object-identifier bs:Literal_version_252 ;
-    bacnet:object-name bs:Literal_version_385 ;
-    bacnet:object-type bs:Literal_version_357 ;
-    bacnet:objectOf bs:ukWxk1OT528_version_1 .
-
-bs:BACnetReference_version_48 a ref:BACnetReference ;
-    bacnet:ReadableProperty bs:Literal_version_91 ;
-    bacnet:object-identifier bs:Literal_version_70 ;
-    bacnet:object-name bs:Literal_version_268 ;
-    bacnet:object-type bs:Literal_version_245 ;
-    bacnet:objectOf bs:ukWxk1OT528_version_5 .
-
-bs:BACnetReference_version_49 a ref:BACnetReference ;
-    bacnet:ReadableProperty bs:Literal_version_114 ;
-    bacnet:object-identifier bs:Literal_version_223 ;
-    bacnet:object-name bs:Literal_version_359 ;
-    bacnet:object-type bs:Literal_version_213 ;
-    bacnet:objectOf bs:ukWxk1OT528_version_1 .
-
-bs:BACnetReference_version_5 a ref:BACnetReference ;
-    bacnet:ReadableProperty bs:Literal_version_35 ;
-    bacnet:object-identifier bs:Literal_version_79 ;
+    bacnet:ReadableProperty bs:Literal_version_85 ;
+    bacnet:object-identifier bs:Literal_version_231 ;
     bacnet:object-name bs:Literal_version_312 ;
-    bacnet:object-type bs:Literal_version_288 ;
-    bacnet:objectOf bs:ukWxk1OT528_version_1 .
-
-bs:BACnetReference_version_50 a ref:BACnetReference ;
-    bacnet:ReadableProperty bs:Literal_version_90 ;
-    bacnet:object-identifier bs:Literal_version_291 ;
-    bacnet:object-name bs:Literal_version_180 ;
-    bacnet:object-type bs:Literal_version_198 ;
-    bacnet:objectOf bs:ukWxk1OT528_version_1 .
-
-bs:BACnetReference_version_51 a ref:BACnetReference ;
-    bacnet:ReadableProperty bs:Literal_version_31 ;
-    bacnet:object-identifier bs:Literal_version_217 ;
-    bacnet:object-name bs:Literal_version_145 ;
-    bacnet:object-type bs:Literal_version_101 ;
-    bacnet:objectOf bs:ukWxk1OT528_version_5 .
-
-bs:BACnetReference_version_52 a ref:BACnetReference ;
-    bacnet:ReadableProperty bs:Literal_version_87 ;
-    bacnet:object-identifier bs:Literal_version_281 ;
-    bacnet:object-name bs:Literal_version_94 ;
-    bacnet:object-type bs:Literal_version_41 ;
-    bacnet:objectOf bs:ukWxk1OT528_version_5 .
-
-bs:BACnetReference_version_53 a ref:BACnetReference ;
-    bacnet:ReadableProperty bs:Literal_version_296 ;
-    bacnet:object-identifier bs:Literal_version_243 ;
-    bacnet:object-name bs:Literal_version_379 ;
-    bacnet:object-type bs:Literal_version_394 ;
-    bacnet:objectOf bs:ukWxk1OT528_version_2 .
-
-bs:BACnetReference_version_54 a ref:BACnetReference ;
-    bacnet:ReadableProperty bs:Literal_version_200 ;
-    bacnet:object-identifier bs:Literal_version_197 ;
-    bacnet:object-name bs:Literal_version_30 ;
-    bacnet:object-type bs:Literal_version_84 ;
-    bacnet:objectOf bs:ukWxk1OT528_version_5 .
-
-bs:BACnetReference_version_55 a ref:BACnetReference ;
-    bacnet:ReadableProperty bs:Literal_version_232 ;
-    bacnet:object-identifier bs:Literal_version_365 ;
-    bacnet:object-name bs:Literal_version_389 ;
-    bacnet:object-type bs:Literal_version_50 ;
-    bacnet:objectOf bs:ukWxk1OT528_version_3 .
-
-bs:BACnetReference_version_56 a ref:BACnetReference ;
-    bacnet:ReadableProperty bs:Literal_version_17 ;
-    bacnet:object-identifier bs:Literal_version_66 ;
-    bacnet:object-name bs:Literal_version_242 ;
-    bacnet:object-type bs:Literal_version_165 ;
-    bacnet:objectOf bs:ukWxk1OT528_version_2 .
-
-bs:BACnetReference_version_57 a ref:BACnetReference ;
-    bacnet:ReadableProperty bs:Literal_version_146 ;
-    bacnet:object-identifier bs:Literal_version_348 ;
-    bacnet:object-name bs:Literal_version_301 ;
     bacnet:object-type bs:Literal_version_157 ;
     bacnet:objectOf bs:ukWxk1OT528_version_1 .
 
-bs:BACnetReference_version_58 a ref:BACnetReference ;
-    bacnet:ReadableProperty bs:Literal_version_344 ;
-    bacnet:object-name bs:Literal_version_383 .
-
-bs:BACnetReference_version_59 a ref:BACnetReference ;
-    bacnet:ReadableProperty bs:Literal_version_169 ;
-    bacnet:object-identifier bs:Literal_version_128 ;
-    bacnet:object-name bs:Literal_version_118 ;
-    bacnet:object-type bs:Literal_version_63 ;
+bs:BACnetReference_version_44 a ref:BACnetReference ;
+    bacnet:ReadableProperty bs:Literal_version_28 ;
+    bacnet:object-identifier bs:Literal_version_220 ;
+    bacnet:object-name bs:Literal_version_206 ;
+    bacnet:object-type bs:Literal_version_276 ;
     bacnet:objectOf bs:ukWxk1OT528_version_5 .
 
-bs:BACnetReference_version_6 a ref:BACnetReference ;
-    bacnet:ReadableProperty bs:Literal_version_19 ;
-    bacnet:object-identifier bs:Literal_version_149 ;
-    bacnet:object-name bs:Literal_version_44 ;
-    bacnet:object-type bs:Literal_version_144 ;
-    bacnet:objectOf bs:ukWxk1OT528_version_1 .
-
-bs:BACnetReference_version_60 a ref:BACnetReference ;
-    bacnet:ReadableProperty bs:Literal_version_201 ;
-    bacnet:object-identifier bs:Literal_version_262 ;
-    bacnet:object-name bs:Literal_version_274 ;
-    bacnet:object-type bs:Literal_version_329 ;
-    bacnet:objectOf bs:ukWxk1OT528_version_1 .
-
-bs:BACnetReference_version_61 a ref:BACnetReference ;
-    bacnet:ReadableProperty bs:Literal_version_143 ;
-    bacnet:object-identifier bs:Literal_version_336 ;
-    bacnet:object-name bs:Literal_version_179 ;
-    bacnet:object-type bs:Literal_version_237 ;
-    bacnet:objectOf bs:ukWxk1OT528_version_5 .
-
-bs:BACnetReference_version_62 a ref:BACnetReference ;
-    bacnet:ReadableProperty bs:Literal_version_147 ;
-    bacnet:object-identifier bs:Literal_version_249 ;
-    bacnet:object-name bs:Literal_version_361 ;
-    bacnet:object-type bs:Literal_version_259 ;
-    bacnet:objectOf bs:ukWxk1OT528_version_1 .
-
-bs:BACnetReference_version_63 a ref:BACnetReference ;
-    bacnet:ReadableProperty bs:Literal_version_33 ;
-    bacnet:object-identifier bs:Literal_version_313 ;
-    bacnet:object-name bs:Literal_version_153 ;
-    bacnet:object-type bs:Literal_version_342 ;
-    bacnet:objectOf bs:ukWxk1OT528_version_5 .
-
-bs:BACnetReference_version_64 a ref:BACnetReference ;
-    bacnet:ReadableProperty bs:Literal_version_167 ;
-    bacnet:object-identifier bs:Literal_version_322 ;
-    bacnet:object-name bs:Literal_version_387 ;
-    bacnet:object-type bs:Literal_version_270 ;
-    bacnet:objectOf bs:ukWxk1OT528_version_4 .
-
-bs:BACnetReference_version_65 a ref:BACnetReference ;
-    bacnet:ReadableProperty bs:Literal_version_61 ;
-    bacnet:object-identifier bs:Literal_version_343 ;
-    bacnet:object-name bs:Literal_version_314 ;
-    bacnet:object-type bs:Literal_version_395 ;
-    bacnet:objectOf bs:ukWxk1OT528_version_2 .
-
-bs:BACnetReference_version_66 a ref:BACnetReference ;
-    bacnet:ReadableProperty bs:Literal_version_185 ;
-    bacnet:object-identifier bs:Literal_version_77 ;
-    bacnet:object-name bs:Literal_version_73 ;
-    bacnet:object-type bs:Literal_version_219 ;
-    bacnet:objectOf bs:ukWxk1OT528_version_5 .
-
-bs:BACnetReference_version_67 a ref:BACnetReference ;
-    bacnet:ReadableProperty bs:Literal_version_293 ;
-    bacnet:object-identifier bs:Literal_version_367 ;
-    bacnet:object-name bs:Literal_version_126 ;
-    bacnet:object-type bs:Literal_version_195 ;
-    bacnet:objectOf bs:ukWxk1OT528_version_1 .
-
-bs:BACnetReference_version_68 a ref:BACnetReference ;
-    bacnet:ReadableProperty bs:Literal_version_280 ;
-    bacnet:object-name bs:Literal_version_211 .
-
-bs:BACnetReference_version_69 a ref:BACnetReference ;
-    bacnet:ReadableProperty bs:Literal_version_102 ;
-    bacnet:object-identifier bs:Literal_version_401 ;
-    bacnet:object-name bs:Literal_version_307 ;
-    bacnet:object-type bs:Literal_version_258 ;
-    bacnet:objectOf bs:ukWxk1OT528_version_4 .
-
-bs:BACnetReference_version_70 a ref:BACnetReference ;
-    bacnet:ReadableProperty bs:Literal_version_278 ;
-    bacnet:object-identifier bs:Literal_version_370 ;
-    bacnet:object-name bs:Literal_version_396 ;
-    bacnet:object-type bs:Literal_version_266 ;
-    bacnet:objectOf bs:ukWxk1OT528_version_1 .
-
-bs:BACnetReference_version_71 a ref:BACnetReference ;
-    bacnet:ReadableProperty bs:Literal_version_23 ;
-    bacnet:object-identifier bs:Literal_version_138 ;
-    bacnet:object-name bs:Literal_version_236 ;
-    bacnet:object-type bs:Literal_version_119 ;
-    bacnet:objectOf bs:ukWxk1OT528_version_5 .
-
-bs:BACnetReference_version_73 a ref:BACnetReference ;
-    bacnet:ReadableProperty bs:Literal_version_171 ;
-    bacnet:object-identifier bs:Literal_version_85 ;
-    bacnet:object-name bs:Literal_version_279 ;
-    bacnet:object-type bs:Literal_version_324 ;
-    bacnet:objectOf bs:ukWxk1OT528_version_5 .
-
-bs:BACnetReference_version_74 a ref:BACnetReference ;
-    bacnet:ReadableProperty bs:Literal_version_40 ;
-    bacnet:object-identifier bs:Literal_version_184 ;
-    bacnet:object-name bs:Literal_version_39 ;
-    bacnet:object-type bs:Literal_version_81 ;
-    bacnet:objectOf bs:ukWxk1OT528_version_5 .
-
-bs:BACnetReference_version_75 a ref:BACnetReference ;
-    bacnet:ReadableProperty bs:Literal_version_148 ;
-    bacnet:object-identifier bs:Literal_version_373 ;
-    bacnet:object-name bs:Literal_version_334 ;
-    bacnet:object-type bs:Literal_version_112 ;
-    bacnet:objectOf bs:ukWxk1OT528_version_3 .
-
-bs:BACnetReference_version_76 a ref:BACnetReference ;
-    bacnet:ReadableProperty bs:Literal_version_124 ;
-    bacnet:object-identifier bs:Literal_version_189 ;
-    bacnet:object-name bs:Literal_version_297 ;
-    bacnet:object-type bs:Literal_version_254 ;
-    bacnet:objectOf bs:ukWxk1OT528_version_4 .
-
-bs:BACnetReference_version_78 a ref:BACnetReference ;
-    bacnet:ReadableProperty bs:Literal_version_16 ;
-    bacnet:object-identifier bs:Literal_version_349 ;
-    bacnet:object-name bs:Literal_version_292 ;
-    bacnet:object-type bs:Literal_version_250 ;
-    bacnet:objectOf bs:ukWxk1OT528_version_1 .
-
-bs:BACnetReference_version_79 a ref:BACnetReference ;
-    bacnet:ReadableProperty bs:Literal_version_120 ;
-    bacnet:object-identifier bs:Literal_version_350 ;
-    bacnet:object-name bs:Literal_version_310 ;
-    bacnet:object-type bs:Literal_version_340 ;
-    bacnet:objectOf bs:ukWxk1OT528_version_5 .
-
-bs:BACnetReference_version_8 a ref:BACnetReference ;
-    bacnet:ReadableProperty bs:Literal_version_51 ;
-    bacnet:object-identifier bs:Literal_version_199 ;
-    bacnet:object-name bs:Literal_version_186 ;
-    bacnet:object-type bs:Literal_version_103 ;
-    bacnet:objectOf bs:ukWxk1OT528_version_5 .
-
-bs:BACnetReference_version_80 a ref:BACnetReference ;
-    bacnet:ReadableProperty bs:Literal_version_106 ;
-    bacnet:object-identifier bs:Literal_version_204 ;
-    bacnet:object-name bs:Literal_version_54 ;
-    bacnet:object-type bs:Literal_version_260 ;
-    bacnet:objectOf bs:ukWxk1OT528_version_1 .
-
-bs:BACnetReference_version_81 a ref:BACnetReference ;
-    bacnet:ReadableProperty bs:Literal_version_275 ;
-    bacnet:object-identifier bs:Literal_version_382 ;
-    bacnet:object-name bs:Literal_version_384 ;
-    bacnet:object-type bs:Literal_version_230 ;
-    bacnet:objectOf bs:ukWxk1OT528_version_3 .
-
-bs:BACnetReference_version_82 a ref:BACnetReference ;
-    bacnet:ReadableProperty bs:Literal_version_323 ;
-    bacnet:object-name bs:Literal_version_337 .
-
-bs:BACnetReference_version_83 a ref:BACnetReference ;
-    bacnet:ReadableProperty bs:Literal_version_327 ;
-    bacnet:object-identifier bs:Literal_version_257 ;
-    bacnet:object-name bs:Literal_version_341 ;
-    bacnet:object-type bs:Literal_version_360 ;
-    bacnet:objectOf bs:ukWxk1OT528_version_4 .
-
-bs:BACnetReference_version_84 a ref:BACnetReference ;
-    bacnet:ReadableProperty bs:Literal_version_116 ;
-    bacnet:object-identifier bs:Literal_version_59 ;
-    bacnet:object-name bs:Literal_version_369 ;
-    bacnet:object-type bs:Literal_version_295 ;
-    bacnet:objectOf bs:ukWxk1OT528_version_5 .
-
-bs:BACnetReference_version_85 a ref:BACnetReference ;
-    bacnet:ReadableProperty bs:Literal_version_276 ;
-    bacnet:object-identifier bs:Literal_version_244 ;
-    bacnet:object-name bs:Literal_version_248 ;
+bs:BACnetReference_version_45 a ref:BACnetReference ;
+    bacnet:ReadableProperty bs:Literal_version_36 ;
+    bacnet:object-identifier bs:Literal_version_46 ;
+    bacnet:object-name bs:Literal_version_233 ;
     bacnet:object-type bs:Literal_version_174 ;
     bacnet:objectOf bs:ukWxk1OT528_version_5 .
 
-bs:BACnetReference_version_86 a ref:BACnetReference ;
-    bacnet:ReadableProperty bs:Literal_version_187 ;
-    bacnet:object-identifier bs:Literal_version_339 ;
-    bacnet:object-name bs:Literal_version_109 ;
-    bacnet:object-type bs:Literal_version_80 ;
-    bacnet:objectOf bs:ukWxk1OT528_version_5 .
-
-bs:BACnetReference_version_87 a ref:BACnetReference ;
-    bacnet:ReadableProperty bs:Literal_version_346 ;
-    bacnet:object-identifier bs:Literal_version_399 ;
-    bacnet:object-name bs:Literal_version_363 ;
-    bacnet:object-type bs:Literal_version_20 ;
+bs:BACnetReference_version_46 a ref:BACnetReference ;
+    bacnet:ReadableProperty bs:Literal_version_32 ;
+    bacnet:object-identifier bs:Literal_version_152 ;
+    bacnet:object-name bs:Literal_version_45 ;
+    bacnet:object-type bs:Literal_version_271 ;
     bacnet:objectOf bs:ukWxk1OT528_version_4 .
 
-bs:BACnetReference_version_88 a ref:BACnetReference ;
-    bacnet:ReadableProperty bs:Literal_version_121 ;
-    bacnet:object-identifier bs:Literal_version_308 ;
-    bacnet:object-name bs:Literal_version_353 ;
-    bacnet:object-type bs:Literal_version_256 ;
+bs:BACnetReference_version_47 a ref:BACnetReference ;
+    bacnet:ReadableProperty bs:Literal_version_49 ;
+    bacnet:object-name bs:Literal_version_91 .
+
+bs:BACnetReference_version_48 a ref:BACnetReference ;
+    bacnet:ReadableProperty bs:Literal_version_80 ;
+    bacnet:object-identifier bs:Literal_version_25 ;
+    bacnet:object-name bs:Literal_version_269 ;
+    bacnet:object-type bs:Literal_version_286 ;
+    bacnet:objectOf bs:ukWxk1OT528_version_5 .
+
+bs:BACnetReference_version_49 a ref:BACnetReference ;
+    bacnet:ReadableProperty bs:Literal_version_192 ;
+    bacnet:object-identifier bs:Literal_version_296 ;
+    bacnet:object-name bs:Literal_version_43 ;
+    bacnet:object-type bs:Literal_version_270 ;
     bacnet:objectOf bs:ukWxk1OT528_version_2 .
 
-bs:BACnetReference_version_89 a ref:BACnetReference ;
-    bacnet:ReadableProperty bs:Literal_version_110 ;
-    bacnet:object-identifier bs:Literal_version_52 ;
-    bacnet:object-name bs:Literal_version_137 ;
-    bacnet:object-type bs:Literal_version_113 ;
-    bacnet:objectOf bs:ukWxk1OT528_version_1 .
+bs:BACnetReference_version_5 a ref:BACnetReference ;
+    bacnet:ReadableProperty bs:Literal_version_23 ;
+    bacnet:object-identifier bs:Literal_version_156 ;
+    bacnet:object-name bs:Literal_version_166 ;
+    bacnet:object-type bs:Literal_version_213 ;
+    bacnet:objectOf bs:ukWxk1OT528_version_5 .
 
-bs:BACnetReference_version_9 a ref:BACnetReference ;
-    bacnet:ReadableProperty bs:Literal_version_226 ;
+bs:BACnetReference_version_51 a ref:BACnetReference ;
+    bacnet:ReadableProperty bs:Literal_version_144 ;
+    bacnet:object-identifier bs:Literal_version_98 ;
+    bacnet:object-name bs:Literal_version_264 ;
+    bacnet:object-type bs:Literal_version_67 ;
+    bacnet:objectOf bs:ukWxk1OT528_version_5 .
+
+bs:BACnetReference_version_52 a ref:BACnetReference ;
+    bacnet:ReadableProperty bs:Literal_version_285 ;
     bacnet:object-identifier bs:Literal_version_205 ;
-    bacnet:object-name bs:Literal_version_55 ;
-    bacnet:object-type bs:Literal_version_210 ;
-    bacnet:objectOf bs:ukWxk1OT528_version_5 .
-
-bs:BACnetReference_version_90 a ref:BACnetReference ;
-    bacnet:ReadableProperty bs:Literal_version_12 ;
-    bacnet:object-identifier bs:Literal_version_194 ;
-    bacnet:object-name bs:Literal_version_326 ;
-    bacnet:object-type bs:Literal_version_182 ;
-    bacnet:objectOf bs:ukWxk1OT528_version_5 .
-
-bs:BACnetReference_version_91 a ref:BACnetReference ;
-    bacnet:ReadableProperty bs:Literal_version_298 ;
-    bacnet:object-identifier bs:Literal_version_398 ;
-    bacnet:object-name bs:Literal_version_400 ;
-    bacnet:object-type bs:Literal_version_304 ;
-    bacnet:objectOf bs:ukWxk1OT528_version_2 .
-
-bs:BACnetReference_version_92 a ref:BACnetReference ;
-    bacnet:ReadableProperty bs:Literal_version_287 ;
-    bacnet:object-name bs:Literal_version_328 .
-
-bs:BACnetReference_version_93 a ref:BACnetReference ;
-    bacnet:ReadableProperty bs:Literal_version_320 ;
-    bacnet:object-identifier bs:Literal_version_302 ;
-    bacnet:object-name bs:Literal_version_386 ;
-    bacnet:object-type bs:Literal_version_376 ;
-    bacnet:objectOf bs:ukWxk1OT528_version_4 .
-
-bs:BACnetReference_version_94 a ref:BACnetReference ;
-    bacnet:ReadableProperty bs:Literal_version_42 ;
-    bacnet:object-identifier bs:Literal_version_125 ;
-    bacnet:object-name bs:Literal_version_271 ;
-    bacnet:object-type bs:Literal_version_177 ;
-    bacnet:objectOf bs:ukWxk1OT528_version_5 .
-
-bs:BACnetReference_version_95 a ref:BACnetReference ;
-    bacnet:ReadableProperty bs:Literal_version_71 ;
-    bacnet:object-identifier bs:Literal_version_330 ;
-    bacnet:object-name bs:Literal_version_377 ;
-    bacnet:object-type bs:Literal_version_354 ;
+    bacnet:object-name bs:Literal_version_367 ;
+    bacnet:object-type bs:Literal_version_353 ;
     bacnet:objectOf bs:ukWxk1OT528_version_3 .
 
+bs:BACnetReference_version_53 a ref:BACnetReference ;
+    bacnet:ReadableProperty bs:Literal_version_177 ;
+    bacnet:object-identifier bs:Literal_version_82 ;
+    bacnet:object-name bs:Literal_version_63 ;
+    bacnet:object-type bs:Literal_version_53 ;
+    bacnet:objectOf bs:ukWxk1OT528_version_1 .
+
+bs:BACnetReference_version_54 a ref:BACnetReference ;
+    bacnet:ReadableProperty bs:Literal_version_243 ;
+    bacnet:object-identifier bs:Literal_version_311 ;
+    bacnet:object-name bs:Literal_version_197 ;
+    bacnet:object-type bs:Literal_version_9 ;
+    bacnet:objectOf bs:ukWxk1OT528_version_5 .
+
+bs:BACnetReference_version_55 a ref:BACnetReference ;
+    bacnet:ReadableProperty bs:Literal_version_322 ;
+    bacnet:object-name bs:Literal_version_366 .
+
+bs:BACnetReference_version_56 a ref:BACnetReference ;
+    bacnet:ReadableProperty bs:Literal_version_74 ;
+    bacnet:object-identifier bs:Literal_version_277 ;
+    bacnet:object-name bs:Literal_version_126 ;
+    bacnet:object-type bs:Literal_version_179 ;
+    bacnet:objectOf bs:ukWxk1OT528_version_5 .
+
+bs:BACnetReference_version_57 a ref:BACnetReference ;
+    bacnet:ReadableProperty bs:Literal_version_239 ;
+    bacnet:object-identifier bs:Literal_version_392 ;
+    bacnet:object-name bs:Literal_version_200 ;
+    bacnet:object-type bs:Literal_version_313 ;
+    bacnet:objectOf bs:ukWxk1OT528_version_4 .
+
+bs:BACnetReference_version_58 a ref:BACnetReference ;
+    bacnet:ReadableProperty bs:Literal_version_50 ;
+    bacnet:object-identifier bs:Literal_version_284 ;
+    bacnet:object-name bs:Literal_version_254 ;
+    bacnet:object-type bs:Literal_version_331 ;
+    bacnet:objectOf bs:ukWxk1OT528_version_4 .
+
+bs:BACnetReference_version_6 a ref:BACnetReference ;
+    bacnet:ReadableProperty bs:Literal_version_142 ;
+    bacnet:object-identifier bs:Literal_version_57 ;
+    bacnet:object-name bs:Literal_version_105 ;
+    bacnet:object-type bs:Literal_version_212 ;
+    bacnet:objectOf bs:ukWxk1OT528_version_1,
+        bs:ukWxk1OT528_version_5 .
+
+bs:BACnetReference_version_60 a ref:BACnetReference ;
+    bacnet:ReadableProperty bs:Literal_version_252 ;
+    bacnet:object-identifier bs:Literal_version_332 ;
+    bacnet:object-name bs:Literal_version_358 ;
+    bacnet:object-type bs:Literal_version_369 ;
+    bacnet:objectOf bs:ukWxk1OT528_version_5 .
+
+bs:BACnetReference_version_61 a ref:BACnetReference ;
+    bacnet:ReadableProperty bs:Literal_version_112 ;
+    bacnet:object-identifier bs:Literal_version_251 ;
+    bacnet:object-name bs:Literal_version_117 ;
+    bacnet:object-type bs:Literal_version_207 ;
+    bacnet:objectOf bs:ukWxk1OT528_version_5 .
+
+bs:BACnetReference_version_62 a ref:BACnetReference ;
+    bacnet:ReadableProperty bs:Literal_version_38 ;
+    bacnet:object-identifier bs:Literal_version_241 ;
+    bacnet:object-name bs:Literal_version_168 ;
+    bacnet:object-type bs:Literal_version_175 ;
+    bacnet:objectOf bs:ukWxk1OT528_version_2 .
+
+bs:BACnetReference_version_63 a ref:BACnetReference ;
+    bacnet:ReadableProperty bs:Literal_version_329 ;
+    bacnet:object-identifier bs:Literal_version_190 ;
+    bacnet:object-name bs:Literal_version_373 ;
+    bacnet:object-type bs:Literal_version_389 ;
+    bacnet:objectOf bs:ukWxk1OT528_version_3 .
+
+bs:BACnetReference_version_64 a ref:BACnetReference ;
+    bacnet:ReadableProperty bs:Literal_version_279 ;
+    bacnet:object-identifier bs:Literal_version_400 ;
+    bacnet:object-name bs:Literal_version_370 ;
+    bacnet:object-type bs:Literal_version_378 ;
+    bacnet:objectOf bs:ukWxk1OT528_version_2 .
+
+bs:BACnetReference_version_65 a ref:BACnetReference ;
+    bacnet:ReadableProperty bs:Literal_version_65 ;
+    bacnet:object-identifier bs:Literal_version_99 ;
+    bacnet:object-name bs:Literal_version_223 ;
+    bacnet:object-type bs:Literal_version_209 ;
+    bacnet:objectOf bs:ukWxk1OT528_version_4 .
+
+bs:BACnetReference_version_66 a ref:BACnetReference ;
+    bacnet:ReadableProperty bs:Literal_version_215 ;
+    bacnet:object-identifier bs:Literal_version_199 ;
+    bacnet:object-name bs:Literal_version_307 ;
+    bacnet:object-type bs:Literal_version_320 ;
+    bacnet:objectOf bs:ukWxk1OT528_version_2 .
+
+bs:BACnetReference_version_67 a ref:BACnetReference ;
+    bacnet:ReadableProperty bs:Literal_version_295 ;
+    bacnet:object-identifier bs:Literal_version_304 ;
+    bacnet:object-name bs:Literal_version_194 ;
+    bacnet:object-type bs:Literal_version_146 ;
+    bacnet:objectOf bs:ukWxk1OT528_version_3 .
+
+bs:BACnetReference_version_68 a ref:BACnetReference ;
+    bacnet:ReadableProperty bs:Literal_version_172 ;
+    bacnet:object-identifier bs:Literal_version_335 ;
+    bacnet:object-name bs:Literal_version_151 ;
+    bacnet:object-type bs:Literal_version_386 ;
+    bacnet:objectOf bs:ukWxk1OT528_version_1 .
+
+bs:BACnetReference_version_69 a ref:BACnetReference ;
+    bacnet:ReadableProperty bs:Literal_version_119 ;
+    bacnet:object-identifier bs:Literal_version_281 ;
+    bacnet:object-name bs:Literal_version_170 ;
+    bacnet:object-type bs:Literal_version_288 ;
+    bacnet:objectOf bs:ukWxk1OT528_version_5 .
+
+bs:BACnetReference_version_7 a ref:BACnetReference ;
+    bacnet:ReadableProperty bs:Literal_version_114 ;
+    bacnet:object-identifier bs:Literal_version_250 ;
+    bacnet:object-name bs:Literal_version_19 ;
+    bacnet:object-type bs:Literal_version_188 ;
+    bacnet:objectOf bs:ukWxk1OT528_version_3 .
+
+bs:BACnetReference_version_70 a ref:BACnetReference ;
+    bacnet:ReadableProperty bs:Literal_version_70 ;
+    bacnet:object-identifier bs:Literal_version_178 ;
+    bacnet:object-name bs:Literal_version_280 ;
+    bacnet:object-type bs:Literal_version_79 ;
+    bacnet:objectOf bs:ukWxk1OT528_version_5 .
+
+bs:BACnetReference_version_71 a ref:BACnetReference ;
+    bacnet:ReadableProperty bs:Literal_version_244 ;
+    bacnet:object-identifier bs:Literal_version_390 ;
+    bacnet:object-name bs:Literal_version_169 ;
+    bacnet:object-type bs:Literal_version_181 ;
+    bacnet:objectOf bs:ukWxk1OT528_version_4 .
+
+bs:BACnetReference_version_72 a ref:BACnetReference ;
+    bacnet:ReadableProperty bs:Literal_version_291 ;
+    bacnet:object-identifier bs:Literal_version_249 ;
+    bacnet:object-name bs:Literal_version_374 ;
+    bacnet:object-type bs:Literal_version_338 ;
+    bacnet:objectOf bs:ukWxk1OT528_version_2 .
+
+bs:BACnetReference_version_73 a ref:BACnetReference ;
+    bacnet:ReadableProperty bs:Literal_version_103 ;
+    bacnet:object-identifier bs:Literal_version_236 ;
+    bacnet:object-name bs:Literal_version_108 ;
+    bacnet:object-type bs:Literal_version_138 ;
+    bacnet:objectOf bs:ukWxk1OT528_version_5 .
+
+bs:BACnetReference_version_74 a ref:BACnetReference ;
+    bacnet:ReadableProperty bs:Literal_version_21 ;
+    bacnet:object-identifier bs:Literal_version_123 ;
+    bacnet:object-name bs:Literal_version_282 ;
+    bacnet:object-type bs:Literal_version_22 ;
+    bacnet:objectOf bs:ukWxk1OT528_version_5 .
+
+bs:BACnetReference_version_75 a ref:BACnetReference ;
+    bacnet:ReadableProperty bs:Literal_version_8 ;
+    bacnet:object-identifier bs:Literal_version_189 ;
+    bacnet:object-name bs:Literal_version_293 ;
+    bacnet:object-type bs:Literal_version_87 ;
+    bacnet:objectOf bs:ukWxk1OT528_version_1 .
+
+bs:BACnetReference_version_76 a ref:BACnetReference ;
+    bacnet:ReadableProperty bs:Literal_version_125 ;
+    bacnet:object-identifier bs:Literal_version_283 ;
+    bacnet:object-name bs:Literal_version_124 ;
+    bacnet:object-type bs:Literal_version_165 ;
+    bacnet:objectOf bs:ukWxk1OT528_version_5 .
+
+bs:BACnetReference_version_77 a ref:BACnetReference ;
+    bacnet:ReadableProperty bs:Literal_version_259 ;
+    bacnet:object-identifier bs:Literal_version_29 ;
+    bacnet:object-name bs:Literal_version_292 ;
+    bacnet:object-type bs:Literal_version_336 ;
+    bacnet:objectOf bs:ukWxk1OT528_version_1 .
+
+bs:BACnetReference_version_78 a ref:BACnetReference ;
+    bacnet:ReadableProperty bs:Literal_version_341 ;
+    bacnet:object-name bs:Literal_version_321 .
+
+bs:BACnetReference_version_79 a ref:BACnetReference ;
+    bacnet:ReadableProperty bs:Literal_version_101 ;
+    bacnet:object-identifier bs:Literal_version_248 ;
+    bacnet:object-name bs:Literal_version_268 ;
+    bacnet:object-type bs:Literal_version_381 ;
+    bacnet:objectOf bs:ukWxk1OT528_version_1 .
+
+bs:BACnetReference_version_80 a ref:BACnetReference ;
+    bacnet:ReadableProperty bs:Literal_version_44 ;
+    bacnet:object-identifier bs:Literal_version_360 ;
+    bacnet:object-name bs:Literal_version_306 ;
+    bacnet:object-type bs:Literal_version_315 ;
+    bacnet:objectOf bs:ukWxk1OT528_version_3 .
+
+bs:BACnetReference_version_81 a ref:BACnetReference ;
+    bacnet:ReadableProperty bs:Literal_version_51 ;
+    bacnet:object-identifier bs:Literal_version_164 ;
+    bacnet:object-name bs:Literal_version_354 ;
+    bacnet:object-type bs:Literal_version_230 ;
+    bacnet:objectOf bs:ukWxk1OT528_version_5 .
+
+bs:BACnetReference_version_82 a ref:BACnetReference ;
+    bacnet:ReadableProperty bs:Literal_version_26 ;
+    bacnet:object-identifier bs:Literal_version_352 ;
+    bacnet:object-name bs:Literal_version_340 ;
+    bacnet:object-type bs:Literal_version_318 ;
+    bacnet:objectOf bs:ukWxk1OT528_version_4 .
+
+bs:BACnetReference_version_83 a ref:BACnetReference ;
+    bacnet:ReadableProperty bs:Literal_version_173 ;
+    bacnet:object-identifier bs:Literal_version_326 ;
+    bacnet:object-name bs:Literal_version_316 ;
+    bacnet:object-type bs:Literal_version_258 ;
+    bacnet:objectOf bs:ukWxk1OT528_version_4 .
+
+bs:BACnetReference_version_84 a ref:BACnetReference ;
+    bacnet:ReadableProperty bs:Literal_version_185 ;
+    bacnet:object-identifier bs:Literal_version_275 ;
+    bacnet:object-name bs:Literal_version_154 ;
+    bacnet:object-type bs:Literal_version_356 ;
+    bacnet:objectOf bs:ukWxk1OT528_version_3 .
+
+bs:BACnetReference_version_85 a ref:BACnetReference ;
+    bacnet:ReadableProperty bs:Literal_version_39 ;
+    bacnet:object-identifier bs:Literal_version_100 ;
+    bacnet:object-name bs:Literal_version_78 ;
+    bacnet:object-type bs:Literal_version_17 ;
+    bacnet:objectOf bs:ukWxk1OT528_version_1 .
+
+bs:BACnetReference_version_87 a ref:BACnetReference ;
+    bacnet:ReadableProperty bs:Literal_version_109 ;
+    bacnet:object-identifier bs:Literal_version_343 ;
+    bacnet:object-name bs:Literal_version_203 ;
+    bacnet:object-type bs:Literal_version_396 ;
+    bacnet:objectOf bs:ukWxk1OT528_version_1 .
+
+bs:BACnetReference_version_88 a ref:BACnetReference ;
+    bacnet:ReadableProperty bs:Literal_version_202 ;
+    bacnet:object-name bs:Literal_version_265 .
+
+bs:BACnetReference_version_89 a ref:BACnetReference ;
+    bacnet:ReadableProperty bs:Literal_version_267 ;
+    bacnet:object-identifier bs:Literal_version_363 ;
+    bacnet:object-name bs:Literal_version_395 ;
+    bacnet:object-type bs:Literal_version_186 ;
+    bacnet:objectOf bs:ukWxk1OT528_version_4 .
+
+bs:BACnetReference_version_9 a ref:BACnetReference ;
+    bacnet:ReadableProperty bs:Literal_version_41 ;
+    bacnet:object-identifier bs:Literal_version_59 ;
+    bacnet:object-name bs:Literal_version_153 ;
+    bacnet:object-type bs:Literal_version_47 ;
+    bacnet:objectOf bs:ukWxk1OT528_version_1 .
+
+bs:BACnetReference_version_90 a ref:BACnetReference ;
+    bacnet:ReadableProperty bs:Literal_version_113 ;
+    bacnet:object-identifier bs:Literal_version_377 ;
+    bacnet:object-name bs:Literal_version_364 ;
+    bacnet:object-type bs:Literal_version_193 ;
+    bacnet:objectOf bs:ukWxk1OT528_version_4 .
+
+bs:BACnetReference_version_91 a ref:BACnetReference ;
+    bacnet:ReadableProperty bs:Literal_version_211 ;
+    bacnet:object-identifier bs:Literal_version_398 ;
+    bacnet:object-name bs:Literal_version_308 ;
+    bacnet:object-type bs:Literal_version_345 ;
+    bacnet:objectOf bs:ukWxk1OT528_version_1 .
+
+bs:BACnetReference_version_92 a ref:BACnetReference ;
+    bacnet:ReadableProperty bs:Literal_version_145 ;
+    bacnet:object-identifier bs:Literal_version_196 ;
+    bacnet:object-name bs:Literal_version_289 ;
+    bacnet:object-type bs:Literal_version_300 ;
+    bacnet:objectOf bs:ukWxk1OT528_version_4 .
+
+bs:BACnetReference_version_93 a ref:BACnetReference ;
+    bacnet:ReadableProperty bs:Literal_version_102 ;
+    bacnet:object-identifier bs:Literal_version_129 ;
+    bacnet:object-name bs:Literal_version_71 ;
+    bacnet:object-type bs:Literal_version_226 ;
+    bacnet:objectOf bs:ukWxk1OT528_version_5 .
+
+bs:BACnetReference_version_94 a ref:BACnetReference ;
+    bacnet:ReadableProperty bs:Literal_version_127 ;
+    bacnet:object-identifier bs:Literal_version_325 ;
+    bacnet:object-name bs:Literal_version_376 ;
+    bacnet:object-type bs:Literal_version_330 ;
+    bacnet:objectOf bs:ukWxk1OT528_version_4 .
+
+bs:BACnetReference_version_95 a ref:BACnetReference ;
+    bacnet:ReadableProperty bs:Literal_version_191 ;
+    bacnet:object-name bs:Literal_version_355 .
+
 bs:BACnetReference_version_96 a ref:BACnetReference ;
-    bacnet:ReadableProperty bs:Literal_version_151 ;
-    bacnet:object-name bs:Literal_version_356 .
+    bacnet:ReadableProperty bs:Literal_version_134 ;
+    bacnet:object-identifier bs:Literal_version_361 ;
+    bacnet:object-name bs:Literal_version_242 ;
+    bacnet:object-type bs:Literal_version_246 ;
+    bacnet:objectOf bs:ukWxk1OT528_version_4 .
 
 bs:BACnetReference_version_97 a ref:BACnetReference ;
-    bacnet:ReadableProperty bs:Literal_version_46 ;
-    bacnet:object-identifier bs:Literal_version_290 ;
-    bacnet:object-name bs:Literal_version_347 ;
-    bacnet:object-type bs:Literal_version_224 ;
-    bacnet:objectOf bs:ukWxk1OT528_version_4 .
+    bacnet:ReadableProperty bs:Literal_version_365 ;
+    bacnet:object-name bs:Literal_version_342 .
 
 bs:BACnetReference_version_98 a ref:BACnetReference ;
-    bacnet:ReadableProperty bs:Literal_version_76 ;
-    bacnet:object-identifier bs:Literal_version_282 ;
-    bacnet:object-name bs:Literal_version_366 ;
-    bacnet:object-type bs:Literal_version_225 ;
-    bacnet:objectOf bs:ukWxk1OT528_version_4 .
+    bacnet:ReadableProperty bs:Literal_version_238 ;
+    bacnet:object-identifier bs:Literal_version_397 ;
+    bacnet:object-name bs:Literal_version_384 ;
+    bacnet:object-type bs:Literal_version_303 ;
+    bacnet:objectOf bs:ukWxk1OT528_version_3 .
 
 bs:BACnetReference_version_99 a ref:BACnetReference ;
-    bacnet:ReadableProperty bs:Literal_version_368 ;
-    bacnet:object-name bs:Literal_version_390 .
+    bacnet:ReadableProperty bs:Literal_version_61 ;
+    bacnet:object-identifier bs:Literal_version_68 ;
+    bacnet:object-name bs:Literal_version_262 ;
+    bacnet:object-type bs:Literal_version_195 ;
+    bacnet:objectOf bs:ukWxk1OT528_version_1 .
 
 bs:Building_version_1 a brick:Building,
         rec:Building ;
@@ -6128,11 +5326,11 @@ bs:Chilled_Water_Valve_version_7 a brick:Chilled_Water_Valve ;
     brick:isPartOf bs:CRAC_version_2 .
 
 bs:Differential_Pressure_Setpoint_Limit_version_4 a brick:Differential_Pressure_Setpoint_Limit ;
-    s223:hasExternalReference bs:BACnetReference_version_70 ;
+    s223:hasExternalReference bs:BACnetReference_version_36 ;
     brick:hasUnit unit:IN_H2O ;
     brick:isPointOf bs:Exhaust_Fan_version_3,
         bs:Exhaust_Fan_version_4 ;
-    ref:hasExternalReference bs:BACnetReference_version_70 .
+    ref:hasExternalReference bs:BACnetReference_version_36 .
 
 bs:Electrical_Meter_version_1 a brick:Electrical_Meter ;
     brick:hasPoint bs:Electric_Power_Sensor_version_5 ;
@@ -6159,18 +5357,18 @@ bs:Failure_Alarm_version_10 a brick:Failure_Alarm ;
     ref:hasExternalReference bs:BACnetReference_version_1 .
 
 bs:Failure_Alarm_version_9 a brick:Failure_Alarm ;
-    s223:hasExternalReference bs:BACnetReference_version_72 ;
+    s223:hasExternalReference bs:BACnetReference_version_50 ;
     brick:hasUnit unit:UNITLESS ;
     brick:isPointOf bs:Exhaust_Fan_version_3,
         bs:Exhaust_Fan_version_4 ;
-    ref:hasExternalReference bs:BACnetReference_version_72 .
+    ref:hasExternalReference bs:BACnetReference_version_50 .
 
 bs:Fan_Command_version_4 a brick:Fan_Command ;
-    s223:hasExternalReference bs:BACnetReference_version_24 ;
+    s223:hasExternalReference bs:BACnetReference_version_86 ;
     brick:hasUnit unit:PERCENT ;
     brick:isPointOf bs:Exhaust_Fan_version_3,
         bs:Exhaust_Fan_version_4 ;
-    ref:hasExternalReference bs:BACnetReference_version_24 .
+    ref:hasExternalReference bs:BACnetReference_version_86 .
 
 bs:Fault_Status_version_1 a brick:Fault_Status ;
     s223:hasExternalReference bs:BACnetReference_version_1 ;
@@ -6408,32 +5606,32 @@ bs:Storage_Room_version_1 a brick:Storage_Room,
     brick:isPartOf bs:Floor_version_4 ;
     rec:isFedBy bs:Hot_Water_Coil_version_2 .
 
-bs:BACnetReference_version_44 a ref:BACnetReference ;
-    bacnet:ReadableProperty bs:Literal_version_43 ;
-    bacnet:object-identifier bs:Literal_version_267 ;
-    bacnet:object-name bs:Literal_version_193 ;
-    bacnet:object-type bs:Literal_version_29 ;
+bs:BACnetReference_version_20 a ref:BACnetReference ;
+    bacnet:ReadableProperty bs:Literal_version_11 ;
+    bacnet:object-identifier bs:Literal_version_66 ;
+    bacnet:object-name bs:Literal_version_58 ;
+    bacnet:object-type bs:Literal_version_77 ;
     bacnet:objectOf bs:ukWxk1OT528_version_1 .
 
-bs:BACnetReference_version_7 a ref:BACnetReference ;
-    bacnet:ReadableProperty bs:Literal_version_67 ;
-    bacnet:object-identifier bs:Literal_version_7 ;
-    bacnet:object-name bs:Literal_version_78 ;
-    bacnet:object-type bs:Literal_version_24 ;
+bs:BACnetReference_version_50 a ref:BACnetReference ;
+    bacnet:ReadableProperty bs:Literal_version_155 ;
+    bacnet:object-identifier bs:Literal_version_314 ;
+    bacnet:object-name bs:Literal_version_204 ;
+    bacnet:object-type bs:Literal_version_387 ;
     bacnet:objectOf bs:ukWxk1OT528_version_1 .
 
-bs:BACnetReference_version_72 a ref:BACnetReference ;
-    bacnet:ReadableProperty bs:Literal_version_253 ;
-    bacnet:object-identifier bs:Literal_version_75 ;
-    bacnet:object-name bs:Literal_version_325 ;
-    bacnet:object-type bs:Literal_version_265 ;
+bs:BACnetReference_version_59 a ref:BACnetReference ;
+    bacnet:ReadableProperty bs:Literal_version_94 ;
+    bacnet:object-identifier bs:Literal_version_184 ;
+    bacnet:object-name bs:Literal_version_297 ;
+    bacnet:object-type bs:Literal_version_214 ;
     bacnet:objectOf bs:ukWxk1OT528_version_1 .
 
-bs:BACnetReference_version_77 a ref:BACnetReference ;
-    bacnet:ReadableProperty bs:Literal_version_317 ;
-    bacnet:object-identifier bs:Literal_version_372 ;
-    bacnet:object-name bs:Literal_version_196 ;
-    bacnet:object-type bs:Literal_version_316 ;
+bs:BACnetReference_version_8 a ref:BACnetReference ;
+    bacnet:ReadableProperty bs:Literal_version_52 ;
+    bacnet:object-identifier bs:Literal_version_234 ;
+    bacnet:object-name bs:Literal_version_167 ;
+    bacnet:object-type bs:Literal_version_137 ;
     bacnet:objectOf bs:ukWxk1OT528_version_1 .
 
 bs:Building_Electrical_Meter_version_2 a brick:Building_Electrical_Meter ;
@@ -6540,7 +5738,7 @@ bs:Max_Water_Temperature_Setpoint_version_1 a brick:Max_Water_Temperature_Setpoi
         <urn:bldg#bldg.CW.MAKE.UP_FLOW.V>,
         <urn:bldg#bldg_Water_Meter> ;
     s223:hasExternalReference bs:BACnetReference_version_1,
-        bs:BACnetReference_version_43 ;
+        bs:BACnetReference_version_16 ;
     brick:hasPoint bs:Water_Flow_Sensor_version_2 ;
     brick:hasSubstance rdfs:Resource ;
     brick:hasUnit unit:GAL_US ;
@@ -6548,7 +5746,7 @@ bs:Max_Water_Temperature_Setpoint_version_1 a brick:Max_Water_Temperature_Setpoi
         bs:Water_Loop_version_3 ;
     brick:meters bs:Water_Loop_version_3 ;
     ref:hasExternalReference bs:BACnetReference_version_1,
-        bs:BACnetReference_version_43 .
+        bs:BACnetReference_version_16 .
 
 bs:Mechanical_Room_version_3 a brick:Mechanical_Room,
         rec:UtilitiesRoom ;
@@ -6647,11 +5845,11 @@ bs:Thermal_Power_Meter_version_2 a brick:Thermal_Power_Meter ;
         bs:Thermal_Power_Sensor_version_2 ;
     brick:meters bs:Chilled_Water_Loop_version_1 .
 
-bs:BACnetReference_version_24 a ref:BACnetReference ;
-    bacnet:ReadableProperty bs:Literal_version_10 ;
-    bacnet:object-identifier bs:Literal_version_111 ;
-    bacnet:object-name bs:Literal_version_122 ;
-    bacnet:object-type bs:Literal_version_161 ;
+bs:BACnetReference_version_86 a ref:BACnetReference ;
+    bacnet:ReadableProperty bs:Literal_version_182 ;
+    bacnet:object-identifier bs:Literal_version_324 ;
+    bacnet:object-name bs:Literal_version_37 ;
+    bacnet:object-type bs:Literal_version_257 ;
     bacnet:objectOf bs:ukWxk1OT528_version_1 .
 
 bs:Chilled_Water_Coil_version_4 a brick:Chilled_Water_Coil ;
@@ -6920,11 +6118,11 @@ bs:Auditorium_version_1 a brick:Auditorium,
     rec:isLocationOf bs:RVAV_version_1 ;
     rec:locatedIn bs:Floor_version_3 .
 
-bs:BACnetReference_version_37 a ref:BACnetReference ;
-    bacnet:ReadableProperty bs:Literal_version_99 ;
-    bacnet:object-identifier bs:Literal_version_246 ;
-    bacnet:object-name bs:Literal_version_168 ;
-    bacnet:object-type bs:Literal_version_88 ;
+bs:BACnetReference_version_17 a ref:BACnetReference ;
+    bacnet:ReadableProperty bs:Literal_version_40 ;
+    bacnet:object-identifier bs:Literal_version_84 ;
+    bacnet:object-name bs:Literal_version_35 ;
+    bacnet:object-type bs:Literal_version_18 ;
     bacnet:objectOf bs:ukWxk1OT528_version_1 .
 
 bs:Cubicle_version_1 a brick:Cubicle,
@@ -7233,12 +6431,12 @@ bs:Team_Room_version_1 a brick:Team_Room,
         bs:Floor_version_2 .
 
 bs:ukWxk1OT528_version_2 a bacnet:ukWxk1OT528 ;
-    bacnet:device-instance bs:Literal_version_283 ;
-    bacnet:hasPort bs:Port_version_5 .
+    bacnet:device-instance bs:Literal_version_290 ;
+    bacnet:hasPort bs:Port_version_2 .
 
 bs:ukWxk1OT528_version_3 a bacnet:ukWxk1OT528 ;
-    bacnet:device-instance bs:Literal_version_164 ;
-    bacnet:hasPort bs:Port_version_4 .
+    bacnet:device-instance bs:Literal_version_187 ;
+    bacnet:hasPort bs:Port_version_3 .
 
 bs:Chilled_Water_Pump_version_1 a brick:Chilled_Water_Pump ;
     brick:feeds bs:Absorption_Chiller_version_1,
@@ -7335,8 +6533,8 @@ bs:Pump_VFD_version_1 a brick:Pump_VFD ;
     brick:isPartOf bs:Hot_Water_Pump_version_1 .
 
 bs:ukWxk1OT528_version_4 a bacnet:ukWxk1OT528 ;
-    bacnet:device-instance bs:Literal_version_391 ;
-    bacnet:hasPort bs:Port_version_1 .
+    bacnet:device-instance bs:Literal_version_385 ;
+    bacnet:hasPort bs:Port_version_4 .
 
 bs:Office_version_1 a brick:Office,
         rec:Office ;
@@ -8038,8 +7236,8 @@ bs:Floor_version_2 a brick:Floor,
         bs:Team_Room_version_1 .
 
 bs:ukWxk1OT528_version_1 a bacnet:ukWxk1OT528 ;
-    bacnet:device-instance bs:Literal_version_49 ;
-    bacnet:hasPort bs:Port_version_3 .
+    bacnet:device-instance bs:Literal_version_48 ;
+    bacnet:hasPort bs:Port_version_1 .
 
 bs:AHU_version_2 a brick:AHU,
         brick:Air_Handler_Unit,
@@ -8086,8 +7284,8 @@ bs:AHU_version_2 a brick:AHU,
         bs:Pre_Filter_version_1 .
 
 bs:ukWxk1OT528_version_5 a bacnet:ukWxk1OT528 ;
-    bacnet:device-instance bs:Literal_version_397 ;
-    bacnet:hasPort bs:Port_version_2 .
+    bacnet:device-instance bs:Literal_version_394 ;
+    bacnet:hasPort bs:Port_version_5 .
 
 bs:Floor_version_1 a brick:Floor,
         brick:Storey,
@@ -8539,11 +7737,11 @@ bs:RVAV_version_1 a brick:RVAV,
         bs:Team_Room_version_1 .
 
 bs:BACnetReference_version_1 a ref:BACnetReference ;
-    bacnet:ReadableProperty bs:Literal_version_2 ;
-    bacnet:description bs:Literal_version_6 ;
-    bacnet:object-identifier bs:Literal_version_5 ;
-    bacnet:object-name bs:Literal_version_3 ;
-    bacnet:object-type bs:Literal_version_1 ;
+    bacnet:ReadableProperty bs:Literal_version_1 ;
+    bacnet:description bs:Literal_version_5 ;
+    bacnet:object-identifier bs:Literal_version_3 ;
+    bacnet:object-name bs:Literal_version_2 ;
+    bacnet:object-type bs:Literal_version_4 ;
     bacnet:objectOf bs:ukWxk1OT528_version_1,
         bs:ukWxk1OT528_version_3,
         bs:ukWxk1OT528_version_4,

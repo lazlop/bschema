@@ -171,6 +171,16 @@ fn is_literal_marker_canon_triple(t: &CanonTriple) -> bool {
     t.0 == literal_key && t.1 == type_key && t.2 == literal_key
 }
 
+/// Is `t` the literal-form (as opposed to [`is_literal_marker_canon_triple`]'s
+/// canonicalized form) of `<literal-skolem> a rdfs:Literal`? Never present
+/// in the original data graph - purely bookkeeping `RdfGraph::skolemize`
+/// adds so the matching algorithm can treat literals uniformly - so it's
+/// stripped from `class_graph` in [`create_bschema`] regardless of
+/// `remove_added_labels` (which only concerns the `bs:` labels themselves).
+pub(crate) fn is_literal_marker(t: &Triple) -> bool {
+    t.predicate == *A && matches!(&t.object, Term::NamedNode(n) if n.as_str() == RDFS_LITERAL.as_str())
+}
+
 /// Groups subjects of `data_graph` by the isomorphism (or, if
 /// `similarity_threshold` is set, high overlap) of their 1-hop class
 /// pattern subgraph. Ports `get_class_isomorphisms`.
@@ -428,6 +438,15 @@ pub fn create_bschema(
                     }
                 }
             }
+        }
+    }
+
+    // Unlike the bs: labels above (kept or stripped per remove_added_labels),
+    // the synthetic literal-skolem marker never corresponds to anything in
+    // the original data graph, so it's always stripped from class_graph.
+    for t in class_graph_result.triples() {
+        if is_literal_marker(&t) {
+            class_graph_result.remove(&t);
         }
     }
 

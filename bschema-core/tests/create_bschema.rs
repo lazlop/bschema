@@ -121,6 +121,24 @@ fn groups_literals_by_topology_and_reports_original_values() {
     }
 }
 
+#[test]
+fn strips_the_synthetic_rdfs_literal_marker_from_class_graph() {
+    // <literal-skolem> a rdfs:Literal is bookkeeping RdfGraph::skolemize
+    // adds so the matching algorithm can treat literals uniformly - it's
+    // never present in the original data graph, so class_graph shouldn't
+    // carry it either, regardless of remove_added_labels (which only
+    // concerns the bs: labels themselves, a different kind of synthetic
+    // content).
+    let data_graph = RdfGraph::parse_str(TTL_WITH_LITERALS, RdfFormat::Turtle).unwrap();
+    let result = create_bschema(&data_graph, 10, None, true, true).unwrap();
+
+    assert!(
+        result.class_graph.triples().iter().all(|t| !t.object.to_string().contains("rdf-schema#Literal")),
+        "class_graph should not contain the synthetic rdfs:Literal marker, got: {:?}",
+        result.class_graph.triples()
+    );
+}
+
 const TTL_WITH_BLANK_NODES: &str = r#"
     @prefix ex: <urn:example#> .
 

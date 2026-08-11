@@ -39,8 +39,10 @@
 //! - **No synthetic bookkeeping.** `RdfGraph::skolemize` tags every
 //!   literal-derived skolem node with `<node> a rdfs:Literal .` purely so
 //!   the matching algorithm can treat literals uniformly; that's an
-//!   implementation artifact of this crate; it isn't part of the model
-//!   and does not belong in a representation meant to be read.
+//!   implementation artifact of this crate, never present in the original
+//!   data graph. `create_bschema` already strips it out of `class_graph`
+//!   itself, and this filters it defensively too, in case it's ever given
+//!   a `class_graph` produced by an older version.
 //!
 //! This renders straight to a Turtle-syntax string rather than building
 //! real `rdf:first`/`rdf:rest` triples in an [`RdfGraph`]: generic Turtle
@@ -51,7 +53,7 @@
 //! side of every relabeled triple. Writing the text directly sidesteps
 //! that limitation and guarantees the intended compact form regardless of
 //! how the result is consumed.
-use crate::algorithm::BschemaResult;
+use crate::algorithm::{is_literal_marker, BschemaResult};
 use crate::error::Result;
 use crate::graph::RdfGraph;
 use crate::namespace::{self, RDFS_MEMBER};
@@ -74,6 +76,11 @@ type ClassProperties = HashMap<NamedNode, Vec<(NamedNode, Term)>>;
 /// [`crate::create_bschema`]) as ready-to-write Turtle text.
 pub fn example_turtle(class_graph: &RdfGraph, member_graph: &RdfGraph, example_count: usize) -> Result<String> {
     let members_by_class = collect_members(member_graph, example_count);
+    // create_bschema already strips is_literal_marker triples out of
+    // class_graph itself (see module docs there); this filter is only a
+    // defensive no-op for a class_graph produced by an older version and
+    // only reloaded here, mirroring the fallback for stale member_graphs
+    // elsewhere in this file.
     let triples: Vec<Triple> = class_graph.triples().into_iter().filter(|t| !is_literal_marker(t)).collect();
 
     // Triples whose subject is an all-blank class are never shown as their
@@ -194,12 +201,6 @@ pub fn example_turtle(class_graph: &RdfGraph, member_graph: &RdfGraph, example_c
     }
 
     Ok(out)
-}
-
-/// `<node> a rdfs:Literal .` triples are synthetic bookkeeping added by
-/// `RdfGraph::skolemize` (see module docs), not part of the model.
-fn is_literal_marker(t: &Triple) -> bool {
-    t.predicate == *namespace::A && matches!(&t.object, Term::NamedNode(n) if n.as_str() == namespace::RDFS_LITERAL.as_str())
 }
 
 /// Groups `member_graph`'s `rdfs:member` triples by class, capped at

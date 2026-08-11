@@ -60,316 +60,6 @@ bs:IFCReference_version_3 a rdf:Seq ;
     rdfs:member [ ] .
 
 bs:Literal_version_1 a rdf:Seq ;
-    rdfs:member "TUC.245.76.R114"^^xsd:string,
-        "TUC.245.76.R14"^^xsd:string,
-        "TUC.245.76.R194"^^xsd:string,
-        "TUC.245.76.R214"^^xsd:string,
-        "TUC.245.76.R234"^^xsd:string,
-        "TUC.245.76.R254"^^xsd:string,
-        "TUC.245.76.R274"^^xsd:string,
-        "TUC.245.76.R294"^^xsd:string,
-        "TUC.245.76.R34"^^xsd:string,
-        "TUC.245.76.R374"^^xsd:string,
-        "TUC.245.76.R394"^^xsd:string,
-        "TUC.245.76.R414"^^xsd:string,
-        "TUC.245.76.R434"^^xsd:string,
-        "TUC.245.76.R454"^^xsd:string,
-        "TUC.245.76.R474"^^xsd:string,
-        "TUC.245.76.R54"^^xsd:string,
-        "TUC.245.76.R74"^^xsd:string,
-        "TUC.245.76.R94"^^xsd:string .
-
-bs:Literal_version_10 a rdf:Seq ;
-    rdfs:member "HC_Control Unit_F_MEPcontent_Mitsubishi Electric Corporation_PZ-DR_INT-EN:PZ-61DR:433961"^^xsd:string,
-        "HC_Control Unit_F_MEPcontent_Mitsubishi Electric Corporation_PZ-DR_INT-EN:PZ-61DR:434029"^^xsd:string,
-        "HC_Control Unit_F_MEPcontent_Mitsubishi Electric Corporation_PZ-DR_INT-EN:PZ-61DR:434184"^^xsd:string,
-        "HC_Control Unit_F_MEPcontent_Mitsubishi Electric Corporation_PZ-DR_INT-EN:PZ-61DR:434365"^^xsd:string,
-        "HC_Control Unit_F_MEPcontent_Mitsubishi Electric Corporation_PZ-DR_INT-EN:PZ-61DR:434633"^^xsd:string,
-        "HC_Control Unit_F_MEPcontent_Mitsubishi Electric Corporation_PZ-DR_INT-EN:PZ-61DR:434695"^^xsd:string,
-        "HC_Control Unit_F_MEPcontent_Mitsubishi Electric Corporation_PZ-DR_INT-EN:PZ-61DR:436294"^^xsd:string,
-        "HC_Control Unit_F_MEPcontent_Mitsubishi Electric Corporation_PZ-DR_INT-EN:PZ-61DR:436296"^^xsd:string,
-        "HC_Control Unit_F_MEPcontent_Mitsubishi Electric Corporation_PZ-DR_INT-EN:PZ-61DR:436298"^^xsd:string,
-        "HC_Control Unit_F_MEPcontent_Mitsubishi Electric Corporation_PZ-DR_INT-EN:PZ-61DR:436300"^^xsd:string,
-        "HC_Control Unit_F_MEPcontent_Mitsubishi Electric Corporation_PZ-DR_INT-EN:PZ-61DR:436302"^^xsd:string,
-        "HC_Control Unit_F_MEPcontent_Mitsubishi Electric Corporation_PZ-DR_INT-EN:PZ-61DR:436304"^^xsd:string,
-        "HC_Control Unit_F_MEPcontent_Mitsubishi Electric Corporation_PZ-DR_INT-EN:PZ-61DR:436541"^^xsd:string,
-        "HC_Control Unit_F_MEPcontent_Mitsubishi Electric Corporation_PZ-DR_INT-EN:PZ-61DR:436543"^^xsd:string,
-        "HC_Control Unit_F_MEPcontent_Mitsubishi Electric Corporation_PZ-DR_INT-EN:PZ-61DR:436545"^^xsd:string,
-        "HC_Control Unit_F_MEPcontent_Mitsubishi Electric Corporation_PZ-DR_INT-EN:PZ-61DR:436547"^^xsd:string,
-        "HC_Control Unit_F_MEPcontent_Mitsubishi Electric Corporation_PZ-DR_INT-EN:PZ-61DR:436549"^^xsd:string,
-        "HC_Control Unit_F_MEPcontent_Mitsubishi Electric Corporation_PZ-DR_INT-EN:PZ-61DR:436551"^^xsd:string .
-
-bs:Literal_version_11 a rdf:Seq ;
-    rdfs:member "TUC.245.76.R118"^^xsd:string,
-        "TUC.245.76.R18"^^xsd:string,
-        "TUC.245.76.R198"^^xsd:string,
-        "TUC.245.76.R218"^^xsd:string,
-        "TUC.245.76.R238"^^xsd:string,
-        "TUC.245.76.R258"^^xsd:string,
-        "TUC.245.76.R278"^^xsd:string,
-        "TUC.245.76.R298"^^xsd:string,
-        "TUC.245.76.R378"^^xsd:string,
-        "TUC.245.76.R38"^^xsd:string,
-        "TUC.245.76.R398"^^xsd:string,
-        "TUC.245.76.R418"^^xsd:string,
-        "TUC.245.76.R438"^^xsd:string,
-        "TUC.245.76.R458"^^xsd:string,
-        "TUC.245.76.R478"^^xsd:string,
-        "TUC.245.76.R58"^^xsd:string,
-        "TUC.245.76.R78"^^xsd:string,
-        "TUC.245.76.R98"^^xsd:string .
-
-bs:Literal_version_12 a rdf:Seq ;
-    rdfs:member "04fvfeI2P3MOmu2cRam2oG"^^xsd:string,
-        "04fvfeI2P3MOmu2cRam2oO"^^xsd:string,
-        "04fvfeI2P3MOmu2cRam2oP"^^xsd:string,
-        "04fvfeI2P3MOmu2cRam2oQ"^^xsd:string,
-        "04fvfeI2P3MOmu2cRam2oR"^^xsd:string,
-        "04fvfeI2P3MOmu2cRam2oS"^^xsd:string,
-        "04fvfeI2P3MOmu2cRam2oT"^^xsd:string,
-        "04fvfeI2P3MOmu2cRam2oU"^^xsd:string,
-        "04fvfeI2P3MOmu2cRam2oV"^^xsd:string,
-        "04fvfeI2P3MOmu2cRam2pW"^^xsd:string,
-        "04fvfeI2P3MOmu2cRam2pZ"^^xsd:string,
-        "04fvfeI2P3MOmu2cRam2pa"^^xsd:string,
-        "04fvfeI2P3MOmu2cRam2pb"^^xsd:string,
-        "04fvfeI2P3MOmu2cRam2pc"^^xsd:string,
-        "04fvfeI2P3MOmu2cRam2pd"^^xsd:string,
-        "04fvfeI2P3MOmu2cRam2pk"^^xsd:string,
-        "04fvfeI2P3MOmu2cRam2pl"^^xsd:string,
-        "04fvfeI2P3MOmu2cRam2pp"^^xsd:string,
-        "04fvfeI2P3MOmu2cRam2pq"^^xsd:string,
-        "04fvfeI2P3MOmu2cRam2qG"^^xsd:string,
-        "04fvfeI2P3MOmu2cRam2qH"^^xsd:string,
-        "04fvfeI2P3MOmu2cRam2qP"^^xsd:string,
-        "04fvfeI2P3MOmu2cRam2qQ"^^xsd:string,
-        "04fvfeI2P3MOmu2cRam2qR"^^xsd:string,
-        "04fvfeI2P3MOmu2cRam2qS"^^xsd:string,
-        "04fvfeI2P3MOmu2cRam2qT"^^xsd:string,
-        "04fvfeI2P3MOmu2cRam2qU"^^xsd:string,
-        "04fvfeI2P3MOmu2cRam2qV"^^xsd:string,
-        "04fvfeI2P3MOmu2cRam2ra"^^xsd:string,
-        "04fvfeI2P3MOmu2cRam2rc"^^xsd:string,
-        "1raecK5JTC_PHIQqeF3yM2"^^xsd:string,
-        "3kT8I8pp95QAZ7pLPg6v4G"^^xsd:string,
-        "3kT8I8pp95QAZ7pLPg6v4L"^^xsd:string,
-        "3kT8I8pp95QAZ7pLPg6v4O"^^xsd:string,
-        "3kT8I8pp95QAZ7pLPg6v4S"^^xsd:string,
-        "3kT8I8pp95QAZ7pLPg6v4X"^^xsd:string,
-        "3kT8I8pp95QAZ7pLPg6v4c"^^xsd:string,
-        "3kT8I8pp95QAZ7pLPg6v4f"^^xsd:string,
-        "3kT8I8pp95QAZ7pLPg6v4h"^^xsd:string,
-        "3kT8I8pp95QAZ7pLPg6v4j"^^xsd:string,
-        "3kT8I8pp95QAZ7pLPg6v4l"^^xsd:string,
-        "3kT8I8pp95QAZ7pLPg6v4t"^^xsd:string .
-
-bs:Literal_version_13 a rdf:Seq ;
-    rdfs:member "A1:453257"^^xsd:string,
-        "A2:453258"^^xsd:string,
-        "A3:453259"^^xsd:string,
-        "A4:453260"^^xsd:string,
-        "A5:453261"^^xsd:string,
-        "A6:453256"^^xsd:string,
-        "B1:453250"^^xsd:string,
-        "B2:453251"^^xsd:string,
-        "B3:453254"^^xsd:string,
-        "B4:453253"^^xsd:string,
-        "B5:453252"^^xsd:string,
-        "B6:453249"^^xsd:string,
-        "Default:134083"^^xsd:string,
-        "I1:453262"^^xsd:string,
-        "I2:453263"^^xsd:string,
-        "I3:453264"^^xsd:string,
-        "I4:453265"^^xsd:string,
-        "I5:453266"^^xsd:string,
-        "I6:453267"^^xsd:string .
-
-bs:Literal_version_14 a rdf:Seq ;
-    rdfs:member "0a0u_yaVr91RamT04O09sz"^^xsd:string .
-
-bs:Literal_version_15 a rdf:Seq ;
-    rdfs:member "06B2afrsv0uBHvTl5DaaCm"^^xsd:string,
-        "0J5GGcHXH0CP8hbTp3jIv0"^^xsd:string,
-        "0J5GGcHXH0CP8hbTp3jIv1"^^xsd:string,
-        "0J5GGcHXH0CP8hbTp3jIv2"^^xsd:string,
-        "0J5GGcHXH0CP8hbTp3jIv5"^^xsd:string,
-        "0J5GGcHXH0CP8hbTp3jIv6"^^xsd:string,
-        "0J5GGcHXH0CP8hbTp3jIv7"^^xsd:string,
-        "0_Cl1t7onEZwpCblUnHZTe"^^xsd:string,
-        "0_Cl1t7onEZwpCblUnHZTf"^^xsd:string,
-        "0_Cl1t7onEZwpCblUnHZTg"^^xsd:string,
-        "0_Cl1t7onEZwpCblUnHZTh"^^xsd:string,
-        "0_Cl1t7onEZwpCblUnHZTk"^^xsd:string,
-        "0_Cl1t7onEZwpCblUnHZTl"^^xsd:string,
-        "20ATIiG4rFzOwjysAbYjoC"^^xsd:string,
-        "20ATIiG4rFzOwjysAbYjoD"^^xsd:string,
-        "20ATIiG4rFzOwjysAbYjoE"^^xsd:string,
-        "20ATIiG4rFzOwjysAbYjoF"^^xsd:string,
-        "20ATIiG4rFzOwjysAbYjoI"^^xsd:string,
-        "20ATIiG4rFzOwjysAbYjoJ"^^xsd:string .
-
-bs:Literal_version_16 a rdf:Seq ;
-    rdfs:member "TUC.245.76.R108"^^xsd:string,
-        "TUC.245.76.R188"^^xsd:string,
-        "TUC.245.76.R208"^^xsd:string,
-        "TUC.245.76.R228"^^xsd:string,
-        "TUC.245.76.R248"^^xsd:string,
-        "TUC.245.76.R268"^^xsd:string,
-        "TUC.245.76.R28"^^xsd:string,
-        "TUC.245.76.R288"^^xsd:string,
-        "TUC.245.76.R368"^^xsd:string,
-        "TUC.245.76.R388"^^xsd:string,
-        "TUC.245.76.R408"^^xsd:string,
-        "TUC.245.76.R428"^^xsd:string,
-        "TUC.245.76.R448"^^xsd:string,
-        "TUC.245.76.R468"^^xsd:string,
-        "TUC.245.76.R48"^^xsd:string,
-        "TUC.245.76.R68"^^xsd:string,
-        "TUC.245.76.R8"^^xsd:string,
-        "TUC.245.76.R88"^^xsd:string .
-
-bs:Literal_version_17 a rdf:Seq ;
-    rdfs:member "TUC.245.76.R117"^^xsd:string,
-        "TUC.245.76.R17"^^xsd:string,
-        "TUC.245.76.R197"^^xsd:string,
-        "TUC.245.76.R217"^^xsd:string,
-        "TUC.245.76.R237"^^xsd:string,
-        "TUC.245.76.R257"^^xsd:string,
-        "TUC.245.76.R277"^^xsd:string,
-        "TUC.245.76.R297"^^xsd:string,
-        "TUC.245.76.R37"^^xsd:string,
-        "TUC.245.76.R377"^^xsd:string,
-        "TUC.245.76.R397"^^xsd:string,
-        "TUC.245.76.R417"^^xsd:string,
-        "TUC.245.76.R437"^^xsd:string,
-        "TUC.245.76.R457"^^xsd:string,
-        "TUC.245.76.R477"^^xsd:string,
-        "TUC.245.76.R57"^^xsd:string,
-        "TUC.245.76.R77"^^xsd:string,
-        "TUC.245.76.R97"^^xsd:string .
-
-bs:Literal_version_18 a rdf:Seq ;
-    rdfs:member "TUC.245.76.R115"^^xsd:string,
-        "TUC.245.76.R15"^^xsd:string,
-        "TUC.245.76.R195"^^xsd:string,
-        "TUC.245.76.R215"^^xsd:string,
-        "TUC.245.76.R235"^^xsd:string,
-        "TUC.245.76.R255"^^xsd:string,
-        "TUC.245.76.R275"^^xsd:string,
-        "TUC.245.76.R295"^^xsd:string,
-        "TUC.245.76.R35"^^xsd:string,
-        "TUC.245.76.R375"^^xsd:string,
-        "TUC.245.76.R395"^^xsd:string,
-        "TUC.245.76.R415"^^xsd:string,
-        "TUC.245.76.R435"^^xsd:string,
-        "TUC.245.76.R455"^^xsd:string,
-        "TUC.245.76.R475"^^xsd:string,
-        "TUC.245.76.R55"^^xsd:string,
-        "TUC.245.76.R75"^^xsd:string,
-        "TUC.245.76.R95"^^xsd:string .
-
-bs:Literal_version_19 a rdf:Seq ;
-    rdfs:member "TUC.245.76.R0"^^xsd:string,
-        "TUC.245.76.R100"^^xsd:string,
-        "TUC.245.76.R180"^^xsd:string,
-        "TUC.245.76.R20"^^xsd:string,
-        "TUC.245.76.R200"^^xsd:string,
-        "TUC.245.76.R220"^^xsd:string,
-        "TUC.245.76.R240"^^xsd:string,
-        "TUC.245.76.R260"^^xsd:string,
-        "TUC.245.76.R280"^^xsd:string,
-        "TUC.245.76.R360"^^xsd:string,
-        "TUC.245.76.R380"^^xsd:string,
-        "TUC.245.76.R40"^^xsd:string,
-        "TUC.245.76.R400"^^xsd:string,
-        "TUC.245.76.R420"^^xsd:string,
-        "TUC.245.76.R440"^^xsd:string,
-        "TUC.245.76.R460"^^xsd:string,
-        "TUC.245.76.R60"^^xsd:string,
-        "TUC.245.76.R80"^^xsd:string .
-
-bs:Literal_version_2 a rdf:Seq ;
-    rdfs:member "Fujitsu General-ASYG18-24KMTA-Back_Left:ASYG18-24KMTA:431955"^^xsd:string,
-        "Fujitsu General-ASYG18-24KMTA-Back_Left:ASYG18-24KMTA:433790"^^xsd:string,
-        "Fujitsu General-ASYG18-24KMTA-Back_Left:ASYG18-24KMTA:433836"^^xsd:string,
-        "Fujitsu General-ASYG18-24KMTA-Back_Left:ASYG18-24KMTA:433867"^^xsd:string,
-        "Fujitsu General-ASYG18-24KMTA-Back_Left:ASYG18-24KMTA:433903"^^xsd:string,
-        "Fujitsu General-ASYG18-24KMTA-Back_Left:ASYG18-24KMTA:436288"^^xsd:string,
-        "Fujitsu General-ASYG18-24KMTA-Back_Left:ASYG18-24KMTA:436290"^^xsd:string,
-        "Fujitsu General-ASYG18-24KMTA-Back_Left:ASYG18-24KMTA:436291"^^xsd:string,
-        "Fujitsu General-ASYG18-24KMTA-Back_Left:ASYG18-24KMTA:436292"^^xsd:string,
-        "Fujitsu General-ASYG18-24KMTA-Back_Left:ASYG18-24KMTA:436293"^^xsd:string,
-        "Fujitsu General-ASYG18-24KMTA-Back_Left:ASYG18-24KMTA:436535"^^xsd:string,
-        "Fujitsu General-ASYG18-24KMTA-Back_Left:ASYG18-24KMTA:436537"^^xsd:string,
-        "Fujitsu General-ASYG18-24KMTA-Back_Left:ASYG18-24KMTA:436538"^^xsd:string,
-        "Fujitsu General-ASYG18-24KMTA-Back_Left:ASYG18-24KMTA:436539"^^xsd:string,
-        "Fujitsu General-ASYG18-24KMTA-Back_Left:ASYG18-24KMTA:436540"^^xsd:string,
-        "Fujitsu General-ASYG18-24KMTA-Back_Left:ASYG18-24KMTA:448902"^^xsd:string,
-        "Fujitsu General-ASYG18-24KMTA-Back_Left:ASYG18-24KMTA:450625"^^xsd:string,
-        "Fujitsu General-ASYG18-24KMTA-Back_Left:ASYG18-24KMTA:450689"^^xsd:string .
-
-bs:Literal_version_20 a rdf:Seq ;
-    rdfs:member "04fvfeI2P3MOmu2cRam3GG"^^xsd:string,
-        "04fvfeI2P3MOmu2cRam3GR"^^xsd:string,
-        "04fvfeI2P3MOmu2cRam3GS"^^xsd:string,
-        "04fvfeI2P3MOmu2cRam3GT"^^xsd:string,
-        "04fvfeI2P3MOmu2cRam3GU"^^xsd:string,
-        "04fvfeI2P3MOmu2cRam3LY"^^xsd:string,
-        "04fvfeI2P3MOmu2cRam3LZ"^^xsd:string,
-        "04fvfeI2P3MOmu2cRam3La"^^xsd:string,
-        "04fvfeI2P3MOmu2cRam3Lb"^^xsd:string,
-        "04fvfeI2P3MOmu2cRam3Ld"^^xsd:string,
-        "0gNak8c7f0H8qYRww5gMXs"^^xsd:string,
-        "0gNak8c7f0H8qYRww5gMYs"^^xsd:string,
-        "2wUZvbW4v3wOwtjicQlQAx"^^xsd:string,
-        "3K6dsk8tfBjOr7FxM4prjU"^^xsd:string,
-        "3a1tR809rAReA0vyWW$Oeq"^^xsd:string,
-        "3a1tR809rAReA0vyWW$Og1"^^xsd:string,
-        "3a1tR809rAReA0vyWW$Ogb"^^xsd:string,
-        "3a1tR809rAReA0vyWW$Ohc"^^xsd:string .
-
-bs:Literal_version_21 a rdf:Seq ;
-    rdfs:member "RC04N00"^^xsd:string .
-
-bs:Literal_version_22 a rdf:Seq ;
-    rdfs:member "TUC.245.76.R106"^^xsd:string,
-        "TUC.245.76.R186"^^xsd:string,
-        "TUC.245.76.R206"^^xsd:string,
-        "TUC.245.76.R226"^^xsd:string,
-        "TUC.245.76.R246"^^xsd:string,
-        "TUC.245.76.R26"^^xsd:string,
-        "TUC.245.76.R266"^^xsd:string,
-        "TUC.245.76.R286"^^xsd:string,
-        "TUC.245.76.R366"^^xsd:string,
-        "TUC.245.76.R386"^^xsd:string,
-        "TUC.245.76.R406"^^xsd:string,
-        "TUC.245.76.R426"^^xsd:string,
-        "TUC.245.76.R446"^^xsd:string,
-        "TUC.245.76.R46"^^xsd:string,
-        "TUC.245.76.R466"^^xsd:string,
-        "TUC.245.76.R6"^^xsd:string,
-        "TUC.245.76.R66"^^xsd:string,
-        "TUC.245.76.R86"^^xsd:string .
-
-bs:Literal_version_23 a rdf:Seq ;
-    rdfs:member "0a0u_yaVr91RamT04O09s_"^^xsd:string .
-
-bs:Literal_version_24 a rdf:Seq ;
-    rdfs:member "0a0u_yaVr91RamT04O09sz"^^xsd:string .
-
-bs:Literal_version_25 a rdf:Seq ;
-    rdfs:member "TUC.245.76.R7"^^xsd:string .
-
-bs:Literal_version_26 a rdf:Seq ;
-    rdfs:member ""^^xsd:string .
-
-bs:Literal_version_27 a rdf:Seq ;
-    rdfs:member "Surface:440560"^^xsd:string .
-
-bs:Literal_version_3 a rdf:Seq ;
-    rdfs:member ""^^xsd:string .
-
-bs:Literal_version_4 a rdf:Seq ;
     rdfs:member "CORRIDOR_A"^^xsd:string,
         "CORRIDOR_B"^^xsd:string,
         "CORRIDOR_I"^^xsd:string,
@@ -413,7 +103,111 @@ bs:Literal_version_4 a rdf:Seq ;
         "WC_I5"^^xsd:string,
         "WC_I6"^^xsd:string .
 
-bs:Literal_version_5 a rdf:Seq ;
+bs:Literal_version_10 a rdf:Seq ;
+    rdfs:member "TUC.245.76.R118"^^xsd:string,
+        "TUC.245.76.R18"^^xsd:string,
+        "TUC.245.76.R198"^^xsd:string,
+        "TUC.245.76.R218"^^xsd:string,
+        "TUC.245.76.R238"^^xsd:string,
+        "TUC.245.76.R258"^^xsd:string,
+        "TUC.245.76.R278"^^xsd:string,
+        "TUC.245.76.R298"^^xsd:string,
+        "TUC.245.76.R378"^^xsd:string,
+        "TUC.245.76.R38"^^xsd:string,
+        "TUC.245.76.R398"^^xsd:string,
+        "TUC.245.76.R418"^^xsd:string,
+        "TUC.245.76.R438"^^xsd:string,
+        "TUC.245.76.R458"^^xsd:string,
+        "TUC.245.76.R478"^^xsd:string,
+        "TUC.245.76.R58"^^xsd:string,
+        "TUC.245.76.R78"^^xsd:string,
+        "TUC.245.76.R98"^^xsd:string .
+
+bs:Literal_version_11 a rdf:Seq ;
+    rdfs:member ""^^xsd:string .
+
+bs:Literal_version_12 a rdf:Seq ;
+    rdfs:member "A1:453257"^^xsd:string,
+        "A2:453258"^^xsd:string,
+        "A3:453259"^^xsd:string,
+        "A4:453260"^^xsd:string,
+        "A5:453261"^^xsd:string,
+        "A6:453256"^^xsd:string,
+        "B1:453250"^^xsd:string,
+        "B2:453251"^^xsd:string,
+        "B3:453254"^^xsd:string,
+        "B4:453253"^^xsd:string,
+        "B5:453252"^^xsd:string,
+        "B6:453249"^^xsd:string,
+        "Default:134083"^^xsd:string,
+        "I1:453262"^^xsd:string,
+        "I2:453263"^^xsd:string,
+        "I3:453264"^^xsd:string,
+        "I4:453265"^^xsd:string,
+        "I5:453266"^^xsd:string,
+        "I6:453267"^^xsd:string .
+
+bs:Literal_version_13 a rdf:Seq ;
+    rdfs:member "06B2afrsv0uBHvTl5DaaCm"^^xsd:string,
+        "0J5GGcHXH0CP8hbTp3jIv0"^^xsd:string,
+        "0J5GGcHXH0CP8hbTp3jIv1"^^xsd:string,
+        "0J5GGcHXH0CP8hbTp3jIv2"^^xsd:string,
+        "0J5GGcHXH0CP8hbTp3jIv5"^^xsd:string,
+        "0J5GGcHXH0CP8hbTp3jIv6"^^xsd:string,
+        "0J5GGcHXH0CP8hbTp3jIv7"^^xsd:string,
+        "0_Cl1t7onEZwpCblUnHZTe"^^xsd:string,
+        "0_Cl1t7onEZwpCblUnHZTf"^^xsd:string,
+        "0_Cl1t7onEZwpCblUnHZTg"^^xsd:string,
+        "0_Cl1t7onEZwpCblUnHZTh"^^xsd:string,
+        "0_Cl1t7onEZwpCblUnHZTk"^^xsd:string,
+        "0_Cl1t7onEZwpCblUnHZTl"^^xsd:string,
+        "20ATIiG4rFzOwjysAbYjoC"^^xsd:string,
+        "20ATIiG4rFzOwjysAbYjoD"^^xsd:string,
+        "20ATIiG4rFzOwjysAbYjoE"^^xsd:string,
+        "20ATIiG4rFzOwjysAbYjoF"^^xsd:string,
+        "20ATIiG4rFzOwjysAbYjoI"^^xsd:string,
+        "20ATIiG4rFzOwjysAbYjoJ"^^xsd:string .
+
+bs:Literal_version_14 a rdf:Seq ;
+    rdfs:member "TUC.245.76.R107"^^xsd:string,
+        "TUC.245.76.R187"^^xsd:string,
+        "TUC.245.76.R207"^^xsd:string,
+        "TUC.245.76.R227"^^xsd:string,
+        "TUC.245.76.R247"^^xsd:string,
+        "TUC.245.76.R267"^^xsd:string,
+        "TUC.245.76.R27"^^xsd:string,
+        "TUC.245.76.R287"^^xsd:string,
+        "TUC.245.76.R367"^^xsd:string,
+        "TUC.245.76.R387"^^xsd:string,
+        "TUC.245.76.R407"^^xsd:string,
+        "TUC.245.76.R427"^^xsd:string,
+        "TUC.245.76.R447"^^xsd:string,
+        "TUC.245.76.R467"^^xsd:string,
+        "TUC.245.76.R47"^^xsd:string,
+        "TUC.245.76.R67"^^xsd:string,
+        "TUC.245.76.R87"^^xsd:string .
+
+bs:Literal_version_15 a rdf:Seq ;
+    rdfs:member "TUC.245.76.R108"^^xsd:string,
+        "TUC.245.76.R188"^^xsd:string,
+        "TUC.245.76.R208"^^xsd:string,
+        "TUC.245.76.R228"^^xsd:string,
+        "TUC.245.76.R248"^^xsd:string,
+        "TUC.245.76.R268"^^xsd:string,
+        "TUC.245.76.R28"^^xsd:string,
+        "TUC.245.76.R288"^^xsd:string,
+        "TUC.245.76.R368"^^xsd:string,
+        "TUC.245.76.R388"^^xsd:string,
+        "TUC.245.76.R408"^^xsd:string,
+        "TUC.245.76.R428"^^xsd:string,
+        "TUC.245.76.R448"^^xsd:string,
+        "TUC.245.76.R468"^^xsd:string,
+        "TUC.245.76.R48"^^xsd:string,
+        "TUC.245.76.R68"^^xsd:string,
+        "TUC.245.76.R8"^^xsd:string,
+        "TUC.245.76.R88"^^xsd:string .
+
+bs:Literal_version_16 a rdf:Seq ;
     rdfs:member "04fvfeI2P3MOmu2cRam3GO"^^xsd:string,
         "04fvfeI2P3MOmu2cRam3GQ"^^xsd:string,
         "04fvfeI2P3MOmu2cRam3HW"^^xsd:string,
@@ -433,27 +227,27 @@ bs:Literal_version_5 a rdf:Seq ;
         "1$hwS2P_zBQfIJrrfYGZba"^^xsd:string,
         "1$hwS2P_zBQfIJrrfYGZgg"^^xsd:string .
 
-bs:Literal_version_6 a rdf:Seq ;
-    rdfs:member "TUC.245.76.R104"^^xsd:string,
-        "TUC.245.76.R184"^^xsd:string,
-        "TUC.245.76.R204"^^xsd:string,
-        "TUC.245.76.R224"^^xsd:string,
-        "TUC.245.76.R24"^^xsd:string,
-        "TUC.245.76.R244"^^xsd:string,
-        "TUC.245.76.R264"^^xsd:string,
-        "TUC.245.76.R284"^^xsd:string,
-        "TUC.245.76.R364"^^xsd:string,
-        "TUC.245.76.R384"^^xsd:string,
-        "TUC.245.76.R4"^^xsd:string,
-        "TUC.245.76.R404"^^xsd:string,
-        "TUC.245.76.R424"^^xsd:string,
-        "TUC.245.76.R44"^^xsd:string,
-        "TUC.245.76.R444"^^xsd:string,
-        "TUC.245.76.R464"^^xsd:string,
-        "TUC.245.76.R64"^^xsd:string,
-        "TUC.245.76.R84"^^xsd:string .
+bs:Literal_version_17 a rdf:Seq ;
+    rdfs:member "TUC.245.76.R114"^^xsd:string,
+        "TUC.245.76.R14"^^xsd:string,
+        "TUC.245.76.R194"^^xsd:string,
+        "TUC.245.76.R214"^^xsd:string,
+        "TUC.245.76.R234"^^xsd:string,
+        "TUC.245.76.R254"^^xsd:string,
+        "TUC.245.76.R274"^^xsd:string,
+        "TUC.245.76.R294"^^xsd:string,
+        "TUC.245.76.R34"^^xsd:string,
+        "TUC.245.76.R374"^^xsd:string,
+        "TUC.245.76.R394"^^xsd:string,
+        "TUC.245.76.R414"^^xsd:string,
+        "TUC.245.76.R434"^^xsd:string,
+        "TUC.245.76.R454"^^xsd:string,
+        "TUC.245.76.R474"^^xsd:string,
+        "TUC.245.76.R54"^^xsd:string,
+        "TUC.245.76.R74"^^xsd:string,
+        "TUC.245.76.R94"^^xsd:string .
 
-bs:Literal_version_7 a rdf:Seq ;
+bs:Literal_version_18 a rdf:Seq ;
     rdfs:member "TUC.245.76.R119"^^xsd:string,
         "TUC.245.76.R19"^^xsd:string,
         "TUC.245.76.R199"^^xsd:string,
@@ -473,7 +267,172 @@ bs:Literal_version_7 a rdf:Seq ;
         "TUC.245.76.R79"^^xsd:string,
         "TUC.245.76.R99"^^xsd:string .
 
-bs:Literal_version_8 a rdf:Seq ;
+bs:Literal_version_19 a rdf:Seq ;
+    rdfs:member "04fvfeI2P3MOmu2cRam3GG"^^xsd:string,
+        "04fvfeI2P3MOmu2cRam3GR"^^xsd:string,
+        "04fvfeI2P3MOmu2cRam3GS"^^xsd:string,
+        "04fvfeI2P3MOmu2cRam3GT"^^xsd:string,
+        "04fvfeI2P3MOmu2cRam3GU"^^xsd:string,
+        "04fvfeI2P3MOmu2cRam3LY"^^xsd:string,
+        "04fvfeI2P3MOmu2cRam3LZ"^^xsd:string,
+        "04fvfeI2P3MOmu2cRam3La"^^xsd:string,
+        "04fvfeI2P3MOmu2cRam3Lb"^^xsd:string,
+        "04fvfeI2P3MOmu2cRam3Ld"^^xsd:string,
+        "0gNak8c7f0H8qYRww5gMXs"^^xsd:string,
+        "0gNak8c7f0H8qYRww5gMYs"^^xsd:string,
+        "2wUZvbW4v3wOwtjicQlQAx"^^xsd:string,
+        "3K6dsk8tfBjOr7FxM4prjU"^^xsd:string,
+        "3a1tR809rAReA0vyWW$Oeq"^^xsd:string,
+        "3a1tR809rAReA0vyWW$Og1"^^xsd:string,
+        "3a1tR809rAReA0vyWW$Ogb"^^xsd:string,
+        "3a1tR809rAReA0vyWW$Ohc"^^xsd:string .
+
+bs:Literal_version_2 a rdf:Seq ;
+    rdfs:member "04fvfeI2P3MOmu2cRam2oG"^^xsd:string,
+        "04fvfeI2P3MOmu2cRam2oO"^^xsd:string,
+        "04fvfeI2P3MOmu2cRam2oP"^^xsd:string,
+        "04fvfeI2P3MOmu2cRam2oQ"^^xsd:string,
+        "04fvfeI2P3MOmu2cRam2oR"^^xsd:string,
+        "04fvfeI2P3MOmu2cRam2oS"^^xsd:string,
+        "04fvfeI2P3MOmu2cRam2oT"^^xsd:string,
+        "04fvfeI2P3MOmu2cRam2oU"^^xsd:string,
+        "04fvfeI2P3MOmu2cRam2oV"^^xsd:string,
+        "04fvfeI2P3MOmu2cRam2pW"^^xsd:string,
+        "04fvfeI2P3MOmu2cRam2pZ"^^xsd:string,
+        "04fvfeI2P3MOmu2cRam2pa"^^xsd:string,
+        "04fvfeI2P3MOmu2cRam2pb"^^xsd:string,
+        "04fvfeI2P3MOmu2cRam2pc"^^xsd:string,
+        "04fvfeI2P3MOmu2cRam2pd"^^xsd:string,
+        "04fvfeI2P3MOmu2cRam2pk"^^xsd:string,
+        "04fvfeI2P3MOmu2cRam2pl"^^xsd:string,
+        "04fvfeI2P3MOmu2cRam2pp"^^xsd:string,
+        "04fvfeI2P3MOmu2cRam2pq"^^xsd:string,
+        "04fvfeI2P3MOmu2cRam2qG"^^xsd:string,
+        "04fvfeI2P3MOmu2cRam2qH"^^xsd:string,
+        "04fvfeI2P3MOmu2cRam2qP"^^xsd:string,
+        "04fvfeI2P3MOmu2cRam2qQ"^^xsd:string,
+        "04fvfeI2P3MOmu2cRam2qR"^^xsd:string,
+        "04fvfeI2P3MOmu2cRam2qS"^^xsd:string,
+        "04fvfeI2P3MOmu2cRam2qT"^^xsd:string,
+        "04fvfeI2P3MOmu2cRam2qU"^^xsd:string,
+        "04fvfeI2P3MOmu2cRam2qV"^^xsd:string,
+        "04fvfeI2P3MOmu2cRam2ra"^^xsd:string,
+        "04fvfeI2P3MOmu2cRam2rc"^^xsd:string,
+        "1raecK5JTC_PHIQqeF3yM2"^^xsd:string,
+        "3kT8I8pp95QAZ7pLPg6v4G"^^xsd:string,
+        "3kT8I8pp95QAZ7pLPg6v4L"^^xsd:string,
+        "3kT8I8pp95QAZ7pLPg6v4O"^^xsd:string,
+        "3kT8I8pp95QAZ7pLPg6v4S"^^xsd:string,
+        "3kT8I8pp95QAZ7pLPg6v4X"^^xsd:string,
+        "3kT8I8pp95QAZ7pLPg6v4c"^^xsd:string,
+        "3kT8I8pp95QAZ7pLPg6v4f"^^xsd:string,
+        "3kT8I8pp95QAZ7pLPg6v4h"^^xsd:string,
+        "3kT8I8pp95QAZ7pLPg6v4j"^^xsd:string,
+        "3kT8I8pp95QAZ7pLPg6v4l"^^xsd:string,
+        "3kT8I8pp95QAZ7pLPg6v4t"^^xsd:string .
+
+bs:Literal_version_20 a rdf:Seq ;
+    rdfs:member "TUC.245.76.R115"^^xsd:string,
+        "TUC.245.76.R15"^^xsd:string,
+        "TUC.245.76.R195"^^xsd:string,
+        "TUC.245.76.R215"^^xsd:string,
+        "TUC.245.76.R235"^^xsd:string,
+        "TUC.245.76.R255"^^xsd:string,
+        "TUC.245.76.R275"^^xsd:string,
+        "TUC.245.76.R295"^^xsd:string,
+        "TUC.245.76.R35"^^xsd:string,
+        "TUC.245.76.R375"^^xsd:string,
+        "TUC.245.76.R395"^^xsd:string,
+        "TUC.245.76.R415"^^xsd:string,
+        "TUC.245.76.R435"^^xsd:string,
+        "TUC.245.76.R455"^^xsd:string,
+        "TUC.245.76.R475"^^xsd:string,
+        "TUC.245.76.R55"^^xsd:string,
+        "TUC.245.76.R75"^^xsd:string,
+        "TUC.245.76.R95"^^xsd:string .
+
+bs:Literal_version_21 a rdf:Seq ;
+    rdfs:member "RC04N00"^^xsd:string .
+
+bs:Literal_version_22 a rdf:Seq ;
+    rdfs:member "TUC.245.76.R0"^^xsd:string,
+        "TUC.245.76.R100"^^xsd:string,
+        "TUC.245.76.R180"^^xsd:string,
+        "TUC.245.76.R20"^^xsd:string,
+        "TUC.245.76.R200"^^xsd:string,
+        "TUC.245.76.R220"^^xsd:string,
+        "TUC.245.76.R240"^^xsd:string,
+        "TUC.245.76.R260"^^xsd:string,
+        "TUC.245.76.R280"^^xsd:string,
+        "TUC.245.76.R360"^^xsd:string,
+        "TUC.245.76.R380"^^xsd:string,
+        "TUC.245.76.R40"^^xsd:string,
+        "TUC.245.76.R400"^^xsd:string,
+        "TUC.245.76.R420"^^xsd:string,
+        "TUC.245.76.R440"^^xsd:string,
+        "TUC.245.76.R460"^^xsd:string,
+        "TUC.245.76.R60"^^xsd:string,
+        "TUC.245.76.R80"^^xsd:string .
+
+bs:Literal_version_23 a rdf:Seq ;
+    rdfs:member "0a0u_yaVr91RamT04O09s_"^^xsd:string .
+
+bs:Literal_version_24 a rdf:Seq ;
+    rdfs:member "0a0u_yaVr91RamT04O09sz"^^xsd:string .
+
+bs:Literal_version_25 a rdf:Seq ;
+    rdfs:member "Surface:440560"^^xsd:string .
+
+bs:Literal_version_26 a rdf:Seq ;
+    rdfs:member "TUC.245.76.R7"^^xsd:string .
+
+bs:Literal_version_27 a rdf:Seq ;
+    rdfs:member ""^^xsd:string .
+
+bs:Literal_version_3 a rdf:Seq ;
+    rdfs:member "0a0u_yaVr91RamT04O09sz"^^xsd:string .
+
+bs:Literal_version_4 a rdf:Seq ;
+    rdfs:member "TUC.245.76.R117"^^xsd:string,
+        "TUC.245.76.R17"^^xsd:string,
+        "TUC.245.76.R197"^^xsd:string,
+        "TUC.245.76.R217"^^xsd:string,
+        "TUC.245.76.R237"^^xsd:string,
+        "TUC.245.76.R257"^^xsd:string,
+        "TUC.245.76.R277"^^xsd:string,
+        "TUC.245.76.R297"^^xsd:string,
+        "TUC.245.76.R37"^^xsd:string,
+        "TUC.245.76.R377"^^xsd:string,
+        "TUC.245.76.R397"^^xsd:string,
+        "TUC.245.76.R417"^^xsd:string,
+        "TUC.245.76.R437"^^xsd:string,
+        "TUC.245.76.R457"^^xsd:string,
+        "TUC.245.76.R477"^^xsd:string,
+        "TUC.245.76.R57"^^xsd:string,
+        "TUC.245.76.R77"^^xsd:string,
+        "TUC.245.76.R97"^^xsd:string .
+
+bs:Literal_version_5 a rdf:Seq ;
+    rdfs:member "TUC.245.76.R106"^^xsd:string,
+        "TUC.245.76.R186"^^xsd:string,
+        "TUC.245.76.R206"^^xsd:string,
+        "TUC.245.76.R226"^^xsd:string,
+        "TUC.245.76.R246"^^xsd:string,
+        "TUC.245.76.R26"^^xsd:string,
+        "TUC.245.76.R266"^^xsd:string,
+        "TUC.245.76.R286"^^xsd:string,
+        "TUC.245.76.R366"^^xsd:string,
+        "TUC.245.76.R386"^^xsd:string,
+        "TUC.245.76.R406"^^xsd:string,
+        "TUC.245.76.R426"^^xsd:string,
+        "TUC.245.76.R446"^^xsd:string,
+        "TUC.245.76.R46"^^xsd:string,
+        "TUC.245.76.R466"^^xsd:string,
+        "TUC.245.76.R6"^^xsd:string,
+        "TUC.245.76.R66"^^xsd:string,
+        "TUC.245.76.R86"^^xsd:string .
+
+bs:Literal_version_6 a rdf:Seq ;
     rdfs:member "RC04N0041"^^xsd:string,
         "RC04N0042"^^xsd:string,
         "RC04N0043"^^xsd:string,
@@ -493,24 +452,65 @@ bs:Literal_version_8 a rdf:Seq ;
         "RC04N0057"^^xsd:string,
         "RC04N0058"^^xsd:string .
 
+bs:Literal_version_7 a rdf:Seq ;
+    rdfs:member "Fujitsu General-ASYG18-24KMTA-Back_Left:ASYG18-24KMTA:431955"^^xsd:string,
+        "Fujitsu General-ASYG18-24KMTA-Back_Left:ASYG18-24KMTA:433790"^^xsd:string,
+        "Fujitsu General-ASYG18-24KMTA-Back_Left:ASYG18-24KMTA:433836"^^xsd:string,
+        "Fujitsu General-ASYG18-24KMTA-Back_Left:ASYG18-24KMTA:433867"^^xsd:string,
+        "Fujitsu General-ASYG18-24KMTA-Back_Left:ASYG18-24KMTA:433903"^^xsd:string,
+        "Fujitsu General-ASYG18-24KMTA-Back_Left:ASYG18-24KMTA:436288"^^xsd:string,
+        "Fujitsu General-ASYG18-24KMTA-Back_Left:ASYG18-24KMTA:436290"^^xsd:string,
+        "Fujitsu General-ASYG18-24KMTA-Back_Left:ASYG18-24KMTA:436291"^^xsd:string,
+        "Fujitsu General-ASYG18-24KMTA-Back_Left:ASYG18-24KMTA:436292"^^xsd:string,
+        "Fujitsu General-ASYG18-24KMTA-Back_Left:ASYG18-24KMTA:436293"^^xsd:string,
+        "Fujitsu General-ASYG18-24KMTA-Back_Left:ASYG18-24KMTA:436535"^^xsd:string,
+        "Fujitsu General-ASYG18-24KMTA-Back_Left:ASYG18-24KMTA:436537"^^xsd:string,
+        "Fujitsu General-ASYG18-24KMTA-Back_Left:ASYG18-24KMTA:436538"^^xsd:string,
+        "Fujitsu General-ASYG18-24KMTA-Back_Left:ASYG18-24KMTA:436539"^^xsd:string,
+        "Fujitsu General-ASYG18-24KMTA-Back_Left:ASYG18-24KMTA:436540"^^xsd:string,
+        "Fujitsu General-ASYG18-24KMTA-Back_Left:ASYG18-24KMTA:448902"^^xsd:string,
+        "Fujitsu General-ASYG18-24KMTA-Back_Left:ASYG18-24KMTA:450625"^^xsd:string,
+        "Fujitsu General-ASYG18-24KMTA-Back_Left:ASYG18-24KMTA:450689"^^xsd:string .
+
+bs:Literal_version_8 a rdf:Seq ;
+    rdfs:member "TUC.245.76.R104"^^xsd:string,
+        "TUC.245.76.R184"^^xsd:string,
+        "TUC.245.76.R204"^^xsd:string,
+        "TUC.245.76.R224"^^xsd:string,
+        "TUC.245.76.R24"^^xsd:string,
+        "TUC.245.76.R244"^^xsd:string,
+        "TUC.245.76.R264"^^xsd:string,
+        "TUC.245.76.R284"^^xsd:string,
+        "TUC.245.76.R364"^^xsd:string,
+        "TUC.245.76.R384"^^xsd:string,
+        "TUC.245.76.R4"^^xsd:string,
+        "TUC.245.76.R404"^^xsd:string,
+        "TUC.245.76.R424"^^xsd:string,
+        "TUC.245.76.R44"^^xsd:string,
+        "TUC.245.76.R444"^^xsd:string,
+        "TUC.245.76.R464"^^xsd:string,
+        "TUC.245.76.R64"^^xsd:string,
+        "TUC.245.76.R84"^^xsd:string .
+
 bs:Literal_version_9 a rdf:Seq ;
-    rdfs:member "TUC.245.76.R107"^^xsd:string,
-        "TUC.245.76.R187"^^xsd:string,
-        "TUC.245.76.R207"^^xsd:string,
-        "TUC.245.76.R227"^^xsd:string,
-        "TUC.245.76.R247"^^xsd:string,
-        "TUC.245.76.R267"^^xsd:string,
-        "TUC.245.76.R27"^^xsd:string,
-        "TUC.245.76.R287"^^xsd:string,
-        "TUC.245.76.R367"^^xsd:string,
-        "TUC.245.76.R387"^^xsd:string,
-        "TUC.245.76.R407"^^xsd:string,
-        "TUC.245.76.R427"^^xsd:string,
-        "TUC.245.76.R447"^^xsd:string,
-        "TUC.245.76.R467"^^xsd:string,
-        "TUC.245.76.R47"^^xsd:string,
-        "TUC.245.76.R67"^^xsd:string,
-        "TUC.245.76.R87"^^xsd:string .
+    rdfs:member "HC_Control Unit_F_MEPcontent_Mitsubishi Electric Corporation_PZ-DR_INT-EN:PZ-61DR:433961"^^xsd:string,
+        "HC_Control Unit_F_MEPcontent_Mitsubishi Electric Corporation_PZ-DR_INT-EN:PZ-61DR:434029"^^xsd:string,
+        "HC_Control Unit_F_MEPcontent_Mitsubishi Electric Corporation_PZ-DR_INT-EN:PZ-61DR:434184"^^xsd:string,
+        "HC_Control Unit_F_MEPcontent_Mitsubishi Electric Corporation_PZ-DR_INT-EN:PZ-61DR:434365"^^xsd:string,
+        "HC_Control Unit_F_MEPcontent_Mitsubishi Electric Corporation_PZ-DR_INT-EN:PZ-61DR:434633"^^xsd:string,
+        "HC_Control Unit_F_MEPcontent_Mitsubishi Electric Corporation_PZ-DR_INT-EN:PZ-61DR:434695"^^xsd:string,
+        "HC_Control Unit_F_MEPcontent_Mitsubishi Electric Corporation_PZ-DR_INT-EN:PZ-61DR:436294"^^xsd:string,
+        "HC_Control Unit_F_MEPcontent_Mitsubishi Electric Corporation_PZ-DR_INT-EN:PZ-61DR:436296"^^xsd:string,
+        "HC_Control Unit_F_MEPcontent_Mitsubishi Electric Corporation_PZ-DR_INT-EN:PZ-61DR:436298"^^xsd:string,
+        "HC_Control Unit_F_MEPcontent_Mitsubishi Electric Corporation_PZ-DR_INT-EN:PZ-61DR:436300"^^xsd:string,
+        "HC_Control Unit_F_MEPcontent_Mitsubishi Electric Corporation_PZ-DR_INT-EN:PZ-61DR:436302"^^xsd:string,
+        "HC_Control Unit_F_MEPcontent_Mitsubishi Electric Corporation_PZ-DR_INT-EN:PZ-61DR:436304"^^xsd:string,
+        "HC_Control Unit_F_MEPcontent_Mitsubishi Electric Corporation_PZ-DR_INT-EN:PZ-61DR:436541"^^xsd:string,
+        "HC_Control Unit_F_MEPcontent_Mitsubishi Electric Corporation_PZ-DR_INT-EN:PZ-61DR:436543"^^xsd:string,
+        "HC_Control Unit_F_MEPcontent_Mitsubishi Electric Corporation_PZ-DR_INT-EN:PZ-61DR:436545"^^xsd:string,
+        "HC_Control Unit_F_MEPcontent_Mitsubishi Electric Corporation_PZ-DR_INT-EN:PZ-61DR:436547"^^xsd:string,
+        "HC_Control Unit_F_MEPcontent_Mitsubishi Electric Corporation_PZ-DR_INT-EN:PZ-61DR:436549"^^xsd:string,
+        "HC_Control Unit_F_MEPcontent_Mitsubishi Electric Corporation_PZ-DR_INT-EN:PZ-61DR:436551"^^xsd:string .
 
 bs:Lockout_Command_version_1 a rdf:Seq ;
     rdfs:member <http://openmetrics.eu/openmetrics#RC04N0041_Lockout_Command>,
@@ -700,7 +700,6 @@ bs:Resource_version_11 a rdf:Seq ;
         [ ],
         [ ],
         [ ],
-        [ ],
         [ ] .
 
 bs:Resource_version_12 a rdf:Seq ;
@@ -728,6 +727,19 @@ bs:Resource_version_13 a rdf:Seq ;
         [ ],
         [ ],
         [ ],
+        [ ],
+        [ ],
+        [ ],
+        [ ],
+        [ ],
+        [ ],
+        [ ],
+        [ ],
+        [ ],
+        [ ],
+        [ ],
+        [ ],
+        [ ],
         [ ] .
 
 bs:Resource_version_14 a rdf:Seq ;
@@ -751,51 +763,10 @@ bs:Resource_version_14 a rdf:Seq ;
         [ ] .
 
 bs:Resource_version_15 a rdf:Seq ;
-    rdfs:member [ ],
-        [ ],
-        [ ],
-        [ ],
-        [ ],
-        [ ],
-        [ ],
-        [ ],
-        [ ],
-        [ ],
-        [ ],
-        [ ],
-        [ ],
-        [ ],
-        [ ],
-        [ ],
-        [ ],
-        [ ] .
+    rdfs:member [ ] .
 
 bs:Resource_version_2 a rdf:Seq ;
     rdfs:member [ ],
-        [ ],
-        [ ],
-        [ ],
-        [ ],
-        [ ],
-        [ ],
-        [ ],
-        [ ],
-        [ ],
-        [ ],
-        [ ],
-        [ ],
-        [ ],
-        [ ],
-        [ ],
-        [ ],
-        [ ],
-        [ ],
-        [ ],
-        [ ],
-        [ ],
-        [ ],
-        [ ],
-        [ ],
         [ ],
         [ ],
         [ ],
@@ -832,13 +803,55 @@ bs:Resource_version_3 a rdf:Seq ;
         [ ],
         [ ],
         [ ],
+        [ ],
+        [ ],
+        [ ],
+        [ ],
+        [ ],
+        [ ],
+        [ ],
+        [ ],
+        [ ],
+        [ ],
+        [ ],
+        [ ],
+        [ ],
+        [ ],
+        [ ],
+        [ ],
+        [ ],
+        [ ],
+        [ ],
+        [ ],
+        [ ],
+        [ ],
+        [ ],
+        [ ],
         [ ] .
 
 bs:Resource_version_4 a rdf:Seq ;
-    rdfs:member [ ] .
+    rdfs:member [ ],
+        [ ],
+        [ ],
+        [ ],
+        [ ],
+        [ ],
+        [ ],
+        [ ],
+        [ ],
+        [ ],
+        [ ],
+        [ ],
+        [ ],
+        [ ],
+        [ ],
+        [ ],
+        [ ],
+        [ ] .
 
 bs:Resource_version_5 a rdf:Seq ;
     rdfs:member [ ],
+        [ ],
         [ ],
         [ ],
         [ ],
@@ -918,19 +931,6 @@ bs:Resource_version_8 a rdf:Seq ;
 
 bs:Resource_version_9 a rdf:Seq ;
     rdfs:member [ ],
-        [ ],
-        [ ],
-        [ ],
-        [ ],
-        [ ],
-        [ ],
-        [ ],
-        [ ],
-        [ ],
-        [ ],
-        [ ],
-        [ ],
-        [ ],
         [ ],
         [ ],
         [ ],

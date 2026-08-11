@@ -195,7 +195,11 @@ keeping the output actually readable:
   discussion on PR #1 and PR #2. Prefer a threshold of `0.5` or higher, or
   `None`, until this is addressed.
 - `remove_added_labels` (default `True`) — strip the `bs:` classes the
-  algorithm added from the output class graph.
+  algorithm added from the output class graph. This is unrelated to (and
+  doesn't control) the synthetic `<literal-skolem> a rdfs:Literal` marker
+  `RdfGraph::skolemize` adds internally for matching purposes: that marker
+  never corresponds to anything in the original data graph, so it's always
+  stripped from the class graph, regardless of this flag.
 - `use_original_names` (default `True`) — derive new class names from the
   common substring of grouped subjects' original IRIs, instead of
   versioning the existing class name.

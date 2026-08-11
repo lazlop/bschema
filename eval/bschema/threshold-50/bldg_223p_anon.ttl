@@ -192,16 +192,6 @@ bs:InletConnectionPoint_version_7 a s223:InletConnectionPoint ;
     s223:cnx bs:Connection_version_11 ;
     s223:hasMedium s223:Water-Steam .
 
-bs:Literal_version_1 a rdfs:Literal .
-
-bs:Literal_version_2 a rdfs:Literal .
-
-bs:Literal_version_3 a rdfs:Literal .
-
-bs:Literal_version_4 a rdfs:Literal .
-
-bs:Literal_version_5 a rdfs:Literal .
-
 bs:PhysicalSpace_version_2 a s223:PhysicalSpace ;
     s223:contains bs:PhysicalSpace_version_1,
         bs:PhysicalSpace_version_2 .
@@ -637,11 +627,11 @@ bs:QuantifiableProperty_version_1 a s223:QuantifiableProperty ;
         unit:UNITLESS .
 
 bs:BACnetExternalReference_version_1 a s223:BACnetExternalReference ;
-    bacnet:description bs:Literal_version_2 ;
+    bacnet:description bs:Literal_version_4 ;
     bacnet:device-identifier bs:BACnetDevice_version_1 ;
-    bacnet:object-identifier bs:Literal_version_4 ;
-    bacnet:object-name bs:Literal_version_3 ;
-    bacnet:object-type bs:Literal_version_1 .
+    bacnet:object-identifier bs:Literal_version_1 ;
+    bacnet:object-name bs:Literal_version_2 ;
+    bacnet:object-type bs:Literal_version_3 .
 
 bs:OutletConnectionPoint_version_2 a s223:OutletConnectionPoint ;
     s223:cnx bs:Connection_version_3,

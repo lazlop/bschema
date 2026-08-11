@@ -139,8 +139,6 @@ bs:Filter_version_1 a s223:Filter,
 bs:InletConnectionPoint_version_4 a s223:InletConnectionPoint ;
     s223:cnx bs:Connection_version_2 .
 
-bs:Literal_version_2 a rdfs:Literal .
-
 bs:OutletConnectionPoint_version_4 a s223:OutletConnectionPoint ;
     s223:cnx bs:Connection_version_2 .
 
@@ -284,8 +282,6 @@ bs:Junction_version_1 a s223:Junction ;
         bs:InletConnectionPoint_version_3,
         bs:OutletConnectionPoint_version_1,
         bs:OutletConnectionPoint_version_2 .
-
-bs:Literal_version_1 a rdfs:Literal .
 
 bs:Valve_version_3 a s223:Valve,
         <http://data.ashrae.org/standard223/1.0/extensions/g36#HotWaterValve> ;

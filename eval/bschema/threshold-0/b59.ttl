@@ -30,46 +30,6 @@ bs:DifferentialSensor_version_1 a s223:DifferentialSensor,
     ns2:hasReferenceLocation bs:InletConnectionPoint_version_1 ;
     rdfs:comment bs:Literal_version_37 .
 
-bs:Literal_version_12 a rdfs:Literal .
-
-bs:Literal_version_14 a rdfs:Literal .
-
-bs:Literal_version_20 a rdfs:Literal .
-
-bs:Literal_version_21 a rdfs:Literal .
-
-bs:Literal_version_22 a rdfs:Literal .
-
-bs:Literal_version_24 a rdfs:Literal .
-
-bs:Literal_version_26 a rdfs:Literal .
-
-bs:Literal_version_27 a rdfs:Literal .
-
-bs:Literal_version_28 a rdfs:Literal .
-
-bs:Literal_version_29 a rdfs:Literal .
-
-bs:Literal_version_3 a rdfs:Literal .
-
-bs:Literal_version_32 a rdfs:Literal .
-
-bs:Literal_version_33 a rdfs:Literal .
-
-bs:Literal_version_35 a rdfs:Literal .
-
-bs:Literal_version_43 a rdfs:Literal .
-
-bs:Literal_version_44 a rdfs:Literal .
-
-bs:Literal_version_45 a rdfs:Literal .
-
-bs:Literal_version_48 a rdfs:Literal .
-
-bs:Literal_version_51 a rdfs:Literal .
-
-bs:Literal_version_8 a rdfs:Literal .
-
 bs:Sensor_version_2 a s223:Sensor,
         ns2:HeatFlowSensor ;
     rdfs:label bs:Literal_version_49 ;
@@ -104,52 +64,6 @@ bs:InletZoneConnectionPoint_version_1 a bob:InletZoneConnectionPoint,
         bob:ZoneConnectionPoint ;
     rdfs:label bs:Literal_version_10 ;
     s223:hasMedium s223:Fluid-Air .
-
-bs:Literal_version_10 a rdfs:Literal .
-
-bs:Literal_version_16 a rdfs:Literal .
-
-bs:Literal_version_17 a rdfs:Literal .
-
-bs:Literal_version_18 a rdfs:Literal .
-
-bs:Literal_version_19 a rdfs:Literal .
-
-bs:Literal_version_2 a rdfs:Literal .
-
-bs:Literal_version_23 a rdfs:Literal .
-
-bs:Literal_version_25 a rdfs:Literal .
-
-bs:Literal_version_30 a rdfs:Literal .
-
-bs:Literal_version_31 a rdfs:Literal .
-
-bs:Literal_version_34 a rdfs:Literal .
-
-bs:Literal_version_36 a rdfs:Literal .
-
-bs:Literal_version_38 a rdfs:Literal .
-
-bs:Literal_version_39 a rdfs:Literal .
-
-bs:Literal_version_40 a rdfs:Literal .
-
-bs:Literal_version_41 a rdfs:Literal .
-
-bs:Literal_version_42 a rdfs:Literal .
-
-bs:Literal_version_46 a rdfs:Literal .
-
-bs:Literal_version_47 a rdfs:Literal .
-
-bs:Literal_version_49 a rdfs:Literal .
-
-bs:Literal_version_50 a rdfs:Literal .
-
-bs:Literal_version_7 a rdfs:Literal .
-
-bs:Literal_version_9 a rdfs:Literal .
 
 bs:OutletZoneConnectionPoint_version_1 a bob:OutletZoneConnectionPoint,
         bob:ZoneConnectionPoint ;
@@ -197,14 +111,6 @@ bs:InletConnectionPoint_version_4 a s223:InletConnectionPoint,
     s223:isConnectionPointOf bs:HeatingCoil_version_1 ;
     s223:mapsTo bs:InletConnectionPoint_version_1 .
 
-bs:Literal_version_13 a rdfs:Literal .
-
-bs:Literal_version_15 a rdfs:Literal .
-
-bs:Literal_version_4 a rdfs:Literal .
-
-bs:Literal_version_6 a rdfs:Literal .
-
 bs:OutletConnectionPoint_version_4 a s223:OutletConnectionPoint,
         bob:WaterConnectionPoint ;
     rdfs:label bs:Literal_version_13 ;
@@ -245,16 +151,12 @@ bs:QuantifiableObservableProperty_version_1 a s223:QuantifiableObservablePropert
     qudt:hasQuantityKind quantitykind:DimensionlessRatio ;
     qudt:hasUnit unit:PERCENT .
 
-bs:Literal_version_11 a rdfs:Literal .
-
 bs:QuantifiableActuatableProperty_version_1 a s223:QuantifiableActuatableProperty,
         bob:PercentCommand ;
     rdfs:label bs:Literal_version_26 ;
     s223:hasExternalReference bs:ExternalReference_version_1 ;
     qudt:hasQuantityKind quantitykind:DimensionlessRatio ;
     qudt:hasUnit unit:PERCENT .
-
-bs:Literal_version_1 a rdfs:Literal .
 
 bs:QuantifiableObservableProperty_version_4 a s223:QuantifiableObservableProperty,
         bob:DifferentialStaticPressure ;
@@ -310,10 +212,6 @@ bs:InletConnectionPoint_version_3 a s223:InletConnectionPoint,
         bs:Fan_version_1 ;
     s223:mapsTo bs:InletConnectionPoint_version_1,
         bs:InletConnectionPoint_version_2 .
-
-bs:Literal_version_37 a rdfs:Literal .
-
-bs:Literal_version_5 a rdfs:Literal .
 
 bs:OutletConnectionPoint_version_2 a s223:OutletConnectionPoint,
         ns2:RefrigerantConnectionPoint,
