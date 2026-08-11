@@ -200,7 +200,7 @@ impl RdfGraph {
     }
 }
 
-fn prefix_header() -> String {
+pub(crate) fn prefix_header() -> String {
     crate::namespace::prefix_table()
         .into_iter()
         .map(|(prefix, iri)| format!("@prefix {prefix}: <{iri}> .\n"))

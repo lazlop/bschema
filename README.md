@@ -106,6 +106,31 @@ from bschema_rs import create_bschema_from_file
 class_graph, member_graph, iterations = create_bschema_from_file("model.ttl")
 ```
 
+### Example graph
+
+`example_turtle(class_graph, member_graph, example_count=2)` renders the
+class graph with each `bs:` class node replaced by a Turtle-collection
+(`( ... )`) of up to `example_count` of its real members from the member
+graph — useful for a human or LLM skimming a summary who wants to see
+concrete instance names instead of abstract class IRIs:
+
+```python
+from bschema_rs import create_bschema, example_turtle
+
+class_graph, member_graph, iterations = create_bschema(data_graph)
+print(example_turtle(class_graph, member_graph, example_count=2))
+# (ex:AHU_1 ex:AHU_2) brick:hasPoint (ex:point_1 ex:point_2) .
+```
+
+The two lists are independently sampled per class (the same members
+wherever that class appears), not aligned real-world edges — list position
+`i` on one side isn't claimed to correspond to position `i` on the other.
+It returns a plain Turtle string rather than an rdflib `Graph`: a
+collection used as a triple's *subject* can't be losslessly round-tripped
+through a generic Turtle writer (rdflib only folds collections used as
+objects), so re-parsing it would only get back an uglier equivalent, not
+this compact form.
+
 `create_bschema` / `create_bschema_from_file` accept:
 
 - `iterations` (default `10`) — max number of relabeling passes.
@@ -136,6 +161,9 @@ create-bschema-rs -i model.ttl -o model_bschema.ttl -t 0.5 -r 10
 - `-t/--threshold` — similarity threshold (try `0.5`).
 - `-r/--iterations` — number of iterations (default `10`).
 - `-d/--delete_added_classes` — delete the classes added by the algorithm.
+- `-e/--examples [N]` — also write `<output>_examples.<ext>`, an example
+  Turtle file with each `bs:` class replaced by up to `N` (default `2`) of
+  its real members in Turtle list syntax; see "Example graph" above.
 
 ## Evaluation
 

@@ -11,8 +11,9 @@ from typing import Optional, Tuple
 
 from ._bschema_rs import create_bschema as _create_bschema_str
 from ._bschema_rs import create_bschema_from_file as _create_bschema_file
+from ._bschema_rs import example_turtle as _example_turtle
 
-__all__ = ["create_bschema", "create_bschema_from_file", "bind_prefixes"]
+__all__ = ["create_bschema", "create_bschema_from_file", "example_turtle", "bind_prefixes"]
 
 _PREFIXES = {
     "xsd": "http://www.w3.org/2001/XMLSchema#",
@@ -83,6 +84,24 @@ def create_bschema(
         use_original_names,
     )
     return _parse_turtle(class_ttl), _parse_turtle(member_ttl), iterations_run
+
+
+def example_turtle(class_graph, member_graph, example_count: int = 2) -> str:
+    """Renders `(class_graph, member_graph)` (as returned by `create_bschema`)
+    as "example" Turtle text: each `bs:` class node is replaced by a
+    parenthesized Turtle collection of up to `example_count` of its real
+    members, e.g. `bs:AHU_v1 brick:hasPoint bs:Point_v1` becomes
+    `(ex:AHU_1 ex:AHU_2) brick:hasPoint (ex:point_1 ex:point_2) .`.
+
+    Returned as a plain Turtle string, not an rdflib Graph: a collection
+    used as a triple's subject can't be losslessly round-tripped through a
+    generic Turtle writer (rdflib's collection-folding only applies when a
+    list is used as an object), so re-parsing would only get you back an
+    uglier equivalent, not this compact form.
+    """
+    class_ttl = class_graph.serialize(format="turtle")
+    member_ttl = member_graph.serialize(format="turtle")
+    return _example_turtle(class_ttl, member_ttl, example_count)
 
 
 def create_bschema_from_file(
