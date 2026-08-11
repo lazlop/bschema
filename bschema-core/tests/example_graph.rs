@@ -85,7 +85,7 @@ const TTL_WITH_BLANK_NODES: &str = r#"
 "#;
 
 #[test]
-fn collapses_an_all_blank_class_to_a_bare_anonymous_node() {
+fn nests_an_all_blank_class_as_an_indented_property_list() {
     let data_graph = RdfGraph::parse_str(TTL_WITH_BLANK_NODES, RdfFormat::Turtle).unwrap();
     let result = create_bschema(&data_graph, 10, None, true, true).unwrap();
     let turtle = result.example_turtle(2).unwrap();
@@ -94,16 +94,47 @@ fn collapses_an_all_blank_class_to_a_bare_anonymous_node() {
         !turtle.contains("skolem"),
         "example turtle should not leak skolem placeholder IRIs, got:\n{turtle}"
     );
+    assert!(!turtle.contains("_:"), "should not leak a raw blank node label, got:\n{turtle}");
 
-    let line = turtle
-        .lines()
-        .find(|l| l.contains("hasSpec"))
-        .unwrap_or_else(|| panic!("expected a hasSpec line in:\n{turtle}"));
-    // Two blank-node specs carry no more information than one, so the
-    // whole class collapses to a single bare `[]`, not a parenthesized
-    // list of hash-labelled blank nodes.
-    assert!(line.contains("hasSpec []"), "expected a bare anonymous node in: {line}");
-    assert!(!line.contains("_:"), "should not leak a raw blank node label in: {line}");
+    // Two blank-node specs carry no more information than one, so instead
+    // of listing members, the class shows what it itself asserts (`a
+    // ex:Spec`) as a nested, indented Turtle blank-node property list.
+    let expected = "(ex:sensor1 ex:sensor2) ex:hasSpec [\n    a ex:Spec\n] .";
+    assert!(turtle.contains(expected), "expected:\n{expected}\n\ngot:\n{turtle}");
+}
+
+const TTL_WITH_REPEATED_PREDICATE: &str = r#"
+    @prefix ex: <urn:example#> .
+    @prefix brick: <https://brickschema.org/schema/Brick#> .
+
+    ex:AHU_1 a brick:AHU ; brick:hasPoint ex:tempA_1, ex:tempB_1 .
+    ex:AHU_2 a brick:AHU ; brick:hasPoint ex:tempA_2, ex:tempB_2 .
+    ex:tempA_1 a brick:Temperature_Sensor .
+    ex:tempA_2 a brick:Temperature_Sensor .
+    ex:tempB_1 a brick:Setpoint .
+    ex:tempB_2 a brick:Setpoint .
+"#;
+
+#[test]
+fn groups_repeated_subject_predicate_pairs_with_an_object_list() {
+    // The two AHUs each relate to two different point classes through the
+    // same brick:hasPoint predicate - that's two class_graph rows sharing
+    // (subject, predicate), which should collapse into one Turtle
+    // statement using the standard object-list comma syntax, rather than
+    // repeating the same subject list on two near-duplicate lines.
+    let data_graph = RdfGraph::parse_str(TTL_WITH_REPEATED_PREDICATE, RdfFormat::Turtle).unwrap();
+    let result = create_bschema(&data_graph, 10, None, true, true).unwrap();
+    let turtle = result.example_turtle(2).unwrap();
+
+    let has_point_lines: Vec<&str> = turtle.lines().filter(|l| l.contains("brick:hasPoint")).collect();
+    assert_eq!(has_point_lines.len(), 1, "expected a single hasPoint statement, got:\n{turtle}");
+    assert!(has_point_lines[0].trim_end().ends_with("brick:hasPoint"), "got:\n{turtle}");
+
+    let comma_count = turtle.matches(" ,\n").count();
+    assert_eq!(comma_count, 1, "expected exactly one comma-joined continuation, got:\n{turtle}");
+
+    assert!(turtle.contains("(ex:tempA_1 ex:tempA_2)"), "got:\n{turtle}");
+    assert!(turtle.contains("(ex:tempB_1 ex:tempB_2)"), "got:\n{turtle}");
 }
 
 const TTL_WITH_UNKNOWN_NAMESPACE: &str = r#"

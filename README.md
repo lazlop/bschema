@@ -134,15 +134,31 @@ this compact form.
 A few things it does beyond a literal find-and-replace, all aimed at
 keeping the output actually readable:
 
+- **Repeated subject+predicate.** A subject class often relates to
+  several different object classes through the same predicate; rather than
+  repeat the subject on its own near-duplicate line each time, these share
+  one statement via Turtle's object-list comma syntax:
+  ```turtle
+  (ns1:hvac_cor_zone ns1:hvac_eas_zone) brick:hasPoint
+      (ns1:hvac_reaZonCor_TZon_y ns1:hvac_reaZonEas_TZon_y) ,
+      (ns1:hvac_oveZonSupCor_TZonHeaSet_u ns1:hvac_oveZonSupEas_TZonHeaSet_u) .
+  ```
 - **Prefixes.** Every namespace used in the output gets a `@prefix`
   binding — the crate's own known short names (`brick:`, `ex:`, ...) where
   they apply, else an auto-numbered `ns1:`, `ns2:`, ... Nothing is left as
   a long bracketed `<...>` IRI unless its local name genuinely isn't safe
   to abbreviate.
-- **Blank nodes.** A class whose sampled members are *all* blank nodes
-  collapses to a single bare `[]` instead of a parenthesized list of
-  hash-labelled placeholders, e.g. `[] brick:hasUnit brick:m .` — several
-  examples of "an anonymous node" carry no more information than one.
+- **Blank nodes.** A class whose sampled members are *all* blank nodes has
+  no meaningful name to substitute, so instead of listing members it shows
+  what the class itself asserts — its own class-pattern triples, nested
+  inline as a real Turtle blank-node property list:
+  ```turtle
+  (ns1:hvac_reaZonCor_CO2Zon_y ns1:hvac_reaZonEas_CO2Zon_y) ref:hasExternalReference [
+      ref:hasTimeseriesId ("1662.66"^^xsd:float "LowerSetp[cor]")
+  ] .
+  ```
+  A blank class never referenced this way (nothing points to it) still
+  gets shown, as its own top-level `[ ... ] .` statement.
 - **No synthetic bookkeeping.** The `<node> a rdfs:Literal .` triples
   `RdfGraph::skolemize` adds purely so the matching algorithm can treat
   literals uniformly are an implementation artifact, not model content, so

@@ -9,492 +9,586 @@
 @prefix ns2: <https://brickschema.org/schema/Brick/> .
 @prefix bs: <urn:bschema#> .
 
-bs:OutletConnectionPoint_version_1 s223:mapsTo bs:OutletConnectionPoint_version_1 .
-bs:OutletConnectionPoint_version_1 s223:isConnectionPointOf bs:TwoWayValve_version_1 .
-bs:OutletConnectionPoint_version_1 s223:isConnectionPointOf bs:Junction_version_1 .
-bs:OutletConnectionPoint_version_1 s223:isConnectionPointOf bs:HeatingCoil_version_1 .
-bs:OutletConnectionPoint_version_1 s223:isConnectionPointOf bs:Filter_version_1 .
-bs:OutletConnectionPoint_version_1 s223:isConnectionPointOf bs:Fan_version_1 .
-bs:OutletConnectionPoint_version_1 s223:isConnectionPointOf bs:FanPoweredTerminal_version_1 .
-bs:OutletConnectionPoint_version_1 s223:isConnectionPointOf bs:Equipment_version_1 .
-bs:OutletConnectionPoint_version_1 s223:isConnectionPointOf bs:DomainSpace_version_1 .
-bs:OutletConnectionPoint_version_1 s223:isConnectionPointOf bs:Damper_version_1 .
-bs:OutletConnectionPoint_version_1 s223:isConnectionPointOf bs:CoolingCoil_version_1 .
-bs:OutletConnectionPoint_version_1 s223:isConnectionPointOf bs:AirHandlingUnit_version_1 .
-bs:OutletConnectionPoint_version_1 s223:hasProperty bs:QuantifiableObservableProperty_version_1 .
-bs:OutletConnectionPoint_version_1 s223:hasMedium s223:Water-HotWater .
-bs:OutletConnectionPoint_version_1 s223:hasMedium s223:Water-ChilledWater .
-bs:OutletConnectionPoint_version_1 s223:hasMedium s223:Fluid-Water .
-bs:OutletConnectionPoint_version_1 s223:hasMedium s223:Fluid-Refrigerant .
-bs:OutletConnectionPoint_version_1 s223:hasMedium s223:Fluid-Air .
-bs:OutletConnectionPoint_version_1 s223:connectsThrough bs:Connection_version_1 .
-bs:OutletConnectionPoint_version_1 s223:cnx bs:Junction_version_1 .
-bs:OutletConnectionPoint_version_1 s223:cnx bs:HeatingCoil_version_1 .
-bs:OutletConnectionPoint_version_1 s223:cnx bs:Filter_version_1 .
-bs:OutletConnectionPoint_version_1 s223:cnx bs:Fan_version_1 .
-bs:OutletConnectionPoint_version_1 s223:cnx bs:FanPoweredTerminal_version_1 .
-bs:OutletConnectionPoint_version_1 s223:cnx bs:Equipment_version_1 .
-bs:OutletConnectionPoint_version_1 s223:cnx bs:DomainSpace_version_1 .
-bs:OutletConnectionPoint_version_1 s223:cnx bs:Damper_version_1 .
-bs:OutletConnectionPoint_version_1 s223:cnx bs:CoolingCoil_version_1 .
-bs:OutletConnectionPoint_version_1 s223:cnx bs:Connection_version_1 .
-bs:OutletConnectionPoint_version_1 s223:cnx bs:AirHandlingUnit_version_1 .
-bs:OutletConnectionPoint_version_1 rdfs:label bs:Literal_version_1 .
-bs:OutletConnectionPoint_version_1 a bob:WaterConnectionPoint .
-bs:OutletConnectionPoint_version_1 a bob:HotWaterConnectionPoint .
-bs:OutletConnectionPoint_version_1 a bob:ChilledWaterConnectionPoint .
-bs:OutletConnectionPoint_version_1 a bob:AirConnectionPoint .
-bs:OutletConnectionPoint_version_1 a ns1:RefrigerantConnectionPoint .
-bs:OutletConnectionPoint_version_1 a (ns1:0004900049 ns1:0078600786) .
-bs:InletConnectionPoint_version_1 s223:mapsTo bs:InletConnectionPoint_version_1 .
-bs:InletConnectionPoint_version_1 s223:isConnectionPointOf bs:TwoWayValve_version_1 .
-bs:InletConnectionPoint_version_1 s223:isConnectionPointOf bs:Junction_version_1 .
-bs:InletConnectionPoint_version_1 s223:isConnectionPointOf bs:HeatingCoil_version_1 .
-bs:InletConnectionPoint_version_1 s223:isConnectionPointOf bs:Filter_version_1 .
-bs:InletConnectionPoint_version_1 s223:isConnectionPointOf bs:Fan_version_1 .
-bs:InletConnectionPoint_version_1 s223:isConnectionPointOf bs:FanPoweredTerminal_version_1 .
-bs:InletConnectionPoint_version_1 s223:isConnectionPointOf bs:Equipment_version_1 .
-bs:InletConnectionPoint_version_1 s223:isConnectionPointOf bs:DomainSpace_version_1 .
-bs:InletConnectionPoint_version_1 s223:isConnectionPointOf bs:Damper_version_1 .
-bs:InletConnectionPoint_version_1 s223:isConnectionPointOf bs:CoolingCoil_version_1 .
-bs:InletConnectionPoint_version_1 s223:isConnectionPointOf bs:AirHandlingUnit_version_1 .
-bs:InletConnectionPoint_version_1 s223:hasProperty bs:QuantifiableObservableProperty_version_1 .
-bs:InletConnectionPoint_version_1 s223:hasMedium s223:Water-HotWater .
-bs:InletConnectionPoint_version_1 s223:hasMedium s223:Water-ChilledWater .
-bs:InletConnectionPoint_version_1 s223:hasMedium s223:Fluid-Water .
-bs:InletConnectionPoint_version_1 s223:hasMedium s223:Fluid-Refrigerant .
-bs:InletConnectionPoint_version_1 s223:hasMedium s223:Fluid-Air .
-bs:InletConnectionPoint_version_1 s223:connectsThrough bs:Connection_version_1 .
-bs:InletConnectionPoint_version_1 s223:cnx bs:TwoWayValve_version_1 .
-bs:InletConnectionPoint_version_1 s223:cnx bs:Junction_version_1 .
-bs:InletConnectionPoint_version_1 s223:cnx bs:HeatingCoil_version_1 .
-bs:InletConnectionPoint_version_1 s223:cnx bs:Filter_version_1 .
-bs:InletConnectionPoint_version_1 s223:cnx bs:Fan_version_1 .
-bs:InletConnectionPoint_version_1 s223:cnx bs:FanPoweredTerminal_version_1 .
-bs:InletConnectionPoint_version_1 s223:cnx bs:Equipment_version_1 .
-bs:InletConnectionPoint_version_1 s223:cnx bs:DomainSpace_version_1 .
-bs:InletConnectionPoint_version_1 s223:cnx bs:Damper_version_1 .
-bs:InletConnectionPoint_version_1 s223:cnx bs:CoolingCoil_version_1 .
-bs:InletConnectionPoint_version_1 s223:cnx bs:Connection_version_1 .
-bs:InletConnectionPoint_version_1 s223:cnx bs:AirHandlingUnit_version_1 .
-bs:InletConnectionPoint_version_1 rdfs:label bs:Literal_version_1 .
-bs:InletConnectionPoint_version_1 a bob:WaterConnectionPoint .
-bs:InletConnectionPoint_version_1 a bob:HotWaterConnectionPoint .
-bs:InletConnectionPoint_version_1 a bob:ChilledWaterConnectionPoint .
-bs:InletConnectionPoint_version_1 a bob:AirConnectionPoint .
-bs:InletConnectionPoint_version_1 a ns1:RefrigerantConnectionPoint .
-bs:InletConnectionPoint_version_1 a (ns1:0004700047 ns1:0078700787) .
-bs:Junction_version_1 ns1:supplyInlet bs:InletConnectionPoint_version_1 .
-bs:Junction_version_1 ns1:returnOutlet bs:OutletConnectionPoint_version_1 .
-bs:Junction_version_1 s223:hasProperty bs:QuantifiableObservableProperty_version_1 .
-bs:Junction_version_1 s223:hasMedium s223:Fluid-Water .
-bs:Junction_version_1 s223:hasMedium s223:Fluid-Air .
-bs:Junction_version_1 s223:hasConnectionPoint bs:OutletConnectionPoint_version_1 .
-bs:Junction_version_1 s223:hasConnectionPoint bs:InletConnectionPoint_version_1 .
-bs:Junction_version_1 s223:hasConnectionPoint bs:BidirectionalConnectionPoint_version_1 .
-bs:Junction_version_1 s223:connectedTo bs:Junction_version_1 .
-bs:Junction_version_1 s223:connectedTo bs:FanPoweredTerminal_version_1 .
-bs:Junction_version_1 s223:connectedTo bs:Equipment_version_1 .
-bs:Junction_version_1 s223:connectedTo bs:DomainSpace_version_1 .
-bs:Junction_version_1 s223:connectedTo bs:AirHandlingUnit_version_1 .
-bs:Junction_version_1 s223:connectedThrough bs:Connection_version_1 .
-bs:Junction_version_1 s223:connectedFrom bs:Junction_version_1 .
-bs:Junction_version_1 s223:connectedFrom bs:FanPoweredTerminal_version_1 .
-bs:Junction_version_1 s223:connectedFrom bs:Equipment_version_1 .
-bs:Junction_version_1 s223:connectedFrom bs:DomainSpace_version_1 .
-bs:Junction_version_1 s223:connectedFrom bs:AirHandlingUnit_version_1 .
-bs:Junction_version_1 s223:connected bs:Junction_version_1 .
-bs:Junction_version_1 s223:connected bs:FanPoweredTerminal_version_1 .
-bs:Junction_version_1 s223:connected bs:Equipment_version_1 .
-bs:Junction_version_1 s223:connected bs:DomainSpace_version_1 .
-bs:Junction_version_1 s223:connected bs:AirHandlingUnit_version_1 .
-bs:Junction_version_1 s223:cnx bs:OutletConnectionPoint_version_1 .
-bs:Junction_version_1 s223:cnx bs:InletConnectionPoint_version_1 .
-bs:Junction_version_1 s223:cnx bs:BidirectionalConnectionPoint_version_1 .
-bs:Junction_version_1 rdfs:label bs:Literal_version_1 .
-bs:Junction_version_1 a ns1:WaterJunction .
-bs:Junction_version_1 a ns1:Plenum .
-bs:Junction_version_1 a ns1:CeilingSpace .
-bs:Junction_version_1 a (ns1:B59_HeatPump_water_return_junction00046 ns1:B59_HeatPump_water_supply_junction00045) .
-bs:Connection_version_1 s223:hasProperty bs:QuantifiableObservableProperty_version_1 .
-bs:Connection_version_1 s223:hasMedium s223:Water-HotWater .
-bs:Connection_version_1 s223:hasMedium s223:Fluid-Water .
-bs:Connection_version_1 s223:hasMedium s223:Fluid-Air .
-bs:Connection_version_1 s223:connectsTo bs:TwoWayValve_version_1 .
-bs:Connection_version_1 s223:connectsTo bs:Junction_version_1 .
-bs:Connection_version_1 s223:connectsTo bs:HeatingCoil_version_1 .
-bs:Connection_version_1 s223:connectsTo bs:Filter_version_1 .
-bs:Connection_version_1 s223:connectsTo bs:Fan_version_1 .
-bs:Connection_version_1 s223:connectsTo bs:FanPoweredTerminal_version_1 .
-bs:Connection_version_1 s223:connectsTo bs:Equipment_version_1 .
-bs:Connection_version_1 s223:connectsTo bs:DomainSpace_version_1 .
-bs:Connection_version_1 s223:connectsTo bs:Damper_version_1 .
-bs:Connection_version_1 s223:connectsTo bs:CoolingCoil_version_1 .
-bs:Connection_version_1 s223:connectsTo bs:AirHandlingUnit_version_1 .
-bs:Connection_version_1 s223:connectsFrom bs:Junction_version_1 .
-bs:Connection_version_1 s223:connectsFrom bs:HeatingCoil_version_1 .
-bs:Connection_version_1 s223:connectsFrom bs:Filter_version_1 .
-bs:Connection_version_1 s223:connectsFrom bs:Fan_version_1 .
-bs:Connection_version_1 s223:connectsFrom bs:FanPoweredTerminal_version_1 .
-bs:Connection_version_1 s223:connectsFrom bs:Equipment_version_1 .
-bs:Connection_version_1 s223:connectsFrom bs:DomainSpace_version_1 .
-bs:Connection_version_1 s223:connectsFrom bs:Damper_version_1 .
-bs:Connection_version_1 s223:connectsFrom bs:CoolingCoil_version_1 .
-bs:Connection_version_1 s223:connectsFrom bs:AirHandlingUnit_version_1 .
-bs:Connection_version_1 s223:connectsAt bs:OutletConnectionPoint_version_1 .
-bs:Connection_version_1 s223:connectsAt bs:InletConnectionPoint_version_1 .
-bs:Connection_version_1 s223:connectsAt bs:BidirectionalConnectionPoint_version_1 .
-bs:Connection_version_1 s223:cnx bs:OutletConnectionPoint_version_1 .
-bs:Connection_version_1 s223:cnx bs:InletConnectionPoint_version_1 .
-bs:Connection_version_1 s223:cnx bs:BidirectionalConnectionPoint_version_1 .
-bs:Connection_version_1 rdfs:label bs:Literal_version_1 .
-bs:Connection_version_1 a (ns1:00048 ns1:00050) .
-bs:DomainSpace_version_1 ns1:supplyInlet bs:InletConnectionPoint_version_1 .
-bs:DomainSpace_version_1 ns1:returnOutlet bs:OutletConnectionPoint_version_1 .
-bs:DomainSpace_version_1 s223:hasProperty bs:QuantifiableObservableProperty_version_1 .
-bs:DomainSpace_version_1 s223:hasDomain s223:Domain-HVAC .
-bs:DomainSpace_version_1 s223:hasConnectionPoint bs:OutletConnectionPoint_version_1 .
-bs:DomainSpace_version_1 s223:hasConnectionPoint bs:InletConnectionPoint_version_1 .
-bs:DomainSpace_version_1 s223:hasConnectionPoint bs:BidirectionalConnectionPoint_version_1 .
-bs:DomainSpace_version_1 s223:connectedTo bs:Junction_version_1 .
-bs:DomainSpace_version_1 s223:connectedTo bs:DomainSpace_version_1 .
-bs:DomainSpace_version_1 s223:connectedThrough bs:Connection_version_1 .
-bs:DomainSpace_version_1 s223:connectedFrom bs:Junction_version_1 .
-bs:DomainSpace_version_1 s223:connectedFrom bs:DomainSpace_version_1 .
-bs:DomainSpace_version_1 s223:connected bs:Junction_version_1 .
-bs:DomainSpace_version_1 s223:connected bs:DomainSpace_version_1 .
-bs:DomainSpace_version_1 s223:cnx bs:OutletConnectionPoint_version_1 .
-bs:DomainSpace_version_1 s223:cnx bs:InletConnectionPoint_version_1 .
-bs:DomainSpace_version_1 s223:cnx bs:BidirectionalConnectionPoint_version_1 .
-bs:DomainSpace_version_1 rdfs:label bs:Literal_version_1 .
-bs:DomainSpace_version_1 a ns1:RoomDomainSpace .
-bs:DomainSpace_version_1 a ns1:CoreSpace .
-bs:DomainSpace_version_1 a (ns1:Floor_3.RTU_1.CoreZone00769 ns1:Floor_3.RTU_2.CoreZone00776) .
-bs:Fan_version_1 rdfs:comment bs:Literal_version_1 .
-bs:Fan_version_1 bob:airOutlet bs:OutletConnectionPoint_version_1 .
-bs:Fan_version_1 bob:airInlet bs:InletConnectionPoint_version_1 .
-bs:Fan_version_1 ns1:speedFeedback bs:QuantifiableObservableProperty_version_1 .
-bs:Fan_version_1 ns1:speedCommand bs:QuantifiableActuatableProperty_version_1 .
-bs:Fan_version_1 s223:hasRole s223:Role-Supply .
-bs:Fan_version_1 s223:hasRole s223:Role-Return .
-bs:Fan_version_1 s223:hasProperty bs:QuantifiableObservableProperty_version_1 .
-bs:Fan_version_1 s223:hasProperty bs:QuantifiableActuatableProperty_version_1 .
-bs:Fan_version_1 s223:hasConnectionPoint bs:OutletConnectionPoint_version_1 .
-bs:Fan_version_1 s223:hasConnectionPoint bs:InletConnectionPoint_version_1 .
-bs:Fan_version_1 s223:hasConnectionPoint bs:ElectricalConnectionPoint_version_1 .
-bs:Fan_version_1 s223:connectedTo bs:HeatingCoil_version_1 .
-bs:Fan_version_1 s223:connectedTo bs:Damper_version_1 .
-bs:Fan_version_1 s223:connectedThrough bs:Connection_version_1 .
-bs:Fan_version_1 s223:connectedFrom bs:Filter_version_1 .
-bs:Fan_version_1 s223:connected bs:HeatingCoil_version_1 .
-bs:Fan_version_1 s223:connected bs:Filter_version_1 .
-bs:Fan_version_1 s223:connected bs:Damper_version_1 .
-bs:Fan_version_1 s223:cnx bs:OutletConnectionPoint_version_1 .
-bs:Fan_version_1 s223:cnx bs:InletConnectionPoint_version_1 .
-bs:Fan_version_1 s223:cnx bs:ElectricalConnectionPoint_version_1 .
-bs:Fan_version_1 rdfs:label bs:Literal_version_1 .
-bs:Fan_version_1 a ns1:UFT_Fan .
-bs:Fan_version_1 a ns1:RTUFan .
-bs:Fan_version_1 a (ns1:fan00915 ns1:fan00983) .
-bs:QuantifiableObservableProperty_version_1 rdfs:comment bs:Literal_version_1 .
-bs:QuantifiableObservableProperty_version_1 qudt:hasUnit unit:UNITLESS .
-bs:QuantifiableObservableProperty_version_1 qudt:hasUnit unit:REV-PER-MIN .
-bs:QuantifiableObservableProperty_version_1 qudt:hasUnit unit:PSI .
-bs:QuantifiableObservableProperty_version_1 qudt:hasUnit unit:PPM .
-bs:QuantifiableObservableProperty_version_1 qudt:hasUnit unit:PERCENT .
-bs:QuantifiableObservableProperty_version_1 qudt:hasUnit unit:PA .
-bs:QuantifiableObservableProperty_version_1 qudt:hasUnit unit:KiloW .
-bs:QuantifiableObservableProperty_version_1 qudt:hasUnit unit:GAL_US_PER_MIN .
-bs:QuantifiableObservableProperty_version_1 qudt:hasUnit unit:FT3-PER-MIN .
-bs:QuantifiableObservableProperty_version_1 qudt:hasUnit unit:DEG_F .
-bs:QuantifiableObservableProperty_version_1 qudt:hasUnit unit:BTU_PER_HOUR .
-bs:QuantifiableObservableProperty_version_1 qudt:hasUnit unit:BTU_IT_PER_HR .
-bs:QuantifiableObservableProperty_version_1 qudt:hasQuantityKind quantitykind:VolumeFlowRate .
-bs:QuantifiableObservableProperty_version_1 qudt:hasQuantityKind quantitykind:Temperature .
-bs:QuantifiableObservableProperty_version_1 qudt:hasQuantityKind quantitykind:Pressure .
-bs:QuantifiableObservableProperty_version_1 qudt:hasQuantityKind quantitykind:MoleFraction .
-bs:QuantifiableObservableProperty_version_1 qudt:hasQuantityKind quantitykind:HeatFlowRate .
-bs:QuantifiableObservableProperty_version_1 qudt:hasQuantityKind quantitykind:ForcePerArea .
-bs:QuantifiableObservableProperty_version_1 qudt:hasQuantityKind quantitykind:ElectricPower .
-bs:QuantifiableObservableProperty_version_1 qudt:hasQuantityKind quantitykind:DimensionlessRatio .
-bs:QuantifiableObservableProperty_version_1 qudt:hasQuantityKind quantitykind:AngularVelocity .
-bs:QuantifiableObservableProperty_version_1 s223:ofMedium rdfs:Resource .
-bs:QuantifiableObservableProperty_version_1 s223:hasValue bs:Literal_version_1 .
-bs:QuantifiableObservableProperty_version_1 s223:hasExternalReference bs:ExternalReference_version_1 .
-bs:QuantifiableObservableProperty_version_1 s223:hasAspect s223:Aspect-Nominal .
-bs:QuantifiableObservableProperty_version_1 s223:hasAspect s223:Aspect-Minimum .
-bs:QuantifiableObservableProperty_version_1 rdfs:label bs:Literal_version_1 .
-bs:QuantifiableObservableProperty_version_1 a bob:Temperature .
-bs:QuantifiableObservableProperty_version_1 a bob:RPM .
-bs:QuantifiableObservableProperty_version_1 a bob:Percent .
-bs:QuantifiableObservableProperty_version_1 a bob:Flow .
-bs:QuantifiableObservableProperty_version_1 a bob:ElectricPowerkW .
-bs:QuantifiableObservableProperty_version_1 a bob:ElectricPower .
-bs:QuantifiableObservableProperty_version_1 a bob:DifferentialStaticPressure .
-bs:QuantifiableObservableProperty_version_1 a ns1:Pressure .
-bs:QuantifiableObservableProperty_version_1 a ns1:HeatFlowRate .
-bs:QuantifiableObservableProperty_version_1 a ns1:CO2Concentration .
-bs:QuantifiableObservableProperty_version_1 a (ns1:0092100921 ns1:0098900989) .
-bs:Filter_version_1 rdfs:comment bs:Literal_version_1 .
-bs:Filter_version_1 bob:airOutlet bs:OutletConnectionPoint_version_1 .
-bs:Filter_version_1 bob:airInlet bs:InletConnectionPoint_version_1 .
-bs:Filter_version_1 s223:hasConnectionPoint bs:OutletConnectionPoint_version_1 .
-bs:Filter_version_1 s223:hasConnectionPoint bs:InletConnectionPoint_version_1 .
-bs:Filter_version_1 s223:connectedTo bs:Fan_version_1 .
-bs:Filter_version_1 s223:connectedTo bs:Damper_version_1 .
-bs:Filter_version_1 s223:connectedTo bs:CoolingCoil_version_1 .
-bs:Filter_version_1 s223:connectedThrough bs:Connection_version_1 .
-bs:Filter_version_1 s223:connectedFrom bs:Damper_version_1 .
-bs:Filter_version_1 s223:connectedFrom bs:CoolingCoil_version_1 .
-bs:Filter_version_1 s223:connected bs:Fan_version_1 .
-bs:Filter_version_1 s223:connected bs:Damper_version_1 .
-bs:Filter_version_1 s223:connected bs:CoolingCoil_version_1 .
-bs:Filter_version_1 s223:cnx bs:OutletConnectionPoint_version_1 .
-bs:Filter_version_1 s223:cnx bs:InletConnectionPoint_version_1 .
-bs:Filter_version_1 rdfs:label bs:Literal_version_1 .
-bs:Filter_version_1 a (ns1:final_filter00210 ns1:final_filter00369) .
-bs:Damper_version_1 rdfs:comment bs:Literal_version_1 .
-bs:Damper_version_1 bob:airOutlet bs:OutletConnectionPoint_version_1 .
-bs:Damper_version_1 bob:airInlet bs:InletConnectionPoint_version_1 .
-bs:Damper_version_1 s223:hasRole s223:Role-Exhaust .
-bs:Damper_version_1 s223:hasProperty bs:QuantifiableActuatableProperty_version_1 .
-bs:Damper_version_1 s223:hasConnectionPoint bs:OutletConnectionPoint_version_1 .
-bs:Damper_version_1 s223:hasConnectionPoint bs:InletConnectionPoint_version_1 .
-bs:Damper_version_1 s223:connectedTo bs:Filter_version_1 .
-bs:Damper_version_1 s223:connectedThrough bs:Connection_version_1 .
-bs:Damper_version_1 s223:connectedFrom bs:Filter_version_1 .
-bs:Damper_version_1 s223:connectedFrom bs:Fan_version_1 .
-bs:Damper_version_1 s223:connected bs:Filter_version_1 .
-bs:Damper_version_1 s223:connected bs:Fan_version_1 .
-bs:Damper_version_1 s223:connected bs:Damper_version_1 .
-bs:Damper_version_1 s223:connected bs:CoolingCoil_version_1 .
-bs:Damper_version_1 s223:cnx bs:OutletConnectionPoint_version_1 .
-bs:Damper_version_1 s223:cnx bs:InletConnectionPoint_version_1 .
-bs:Damper_version_1 rdfs:label bs:Literal_version_1 .
-bs:Damper_version_1 a ns1:RTUDamper .
-bs:Damper_version_1 a (ns1:bp_damper00198 ns1:bp_damper00357) .
-bs:HeatingCoil_version_1 rdfs:comment bs:Literal_version_1 .
-bs:HeatingCoil_version_1 bob:hotWaterOutlet bs:OutletConnectionPoint_version_1 .
-bs:HeatingCoil_version_1 bob:hotWaterInlet bs:InletConnectionPoint_version_1 .
-bs:HeatingCoil_version_1 bob:airOutlet bs:OutletConnectionPoint_version_1 .
-bs:HeatingCoil_version_1 bob:airInlet bs:InletConnectionPoint_version_1 .
-bs:HeatingCoil_version_1 s223:hasRole s223:Role-Heating .
-bs:HeatingCoil_version_1 s223:hasRole s223:Role-HeatTransfer .
-bs:HeatingCoil_version_1 s223:hasConnectionPoint bs:OutletConnectionPoint_version_1 .
-bs:HeatingCoil_version_1 s223:hasConnectionPoint bs:InletConnectionPoint_version_1 .
-bs:HeatingCoil_version_1 s223:connectedTo bs:TwoWayValve_version_1 .
-bs:HeatingCoil_version_1 s223:connectedThrough bs:Connection_version_1 .
-bs:HeatingCoil_version_1 s223:connectedFrom bs:Fan_version_1 .
-bs:HeatingCoil_version_1 s223:connected bs:TwoWayValve_version_1 .
-bs:HeatingCoil_version_1 s223:connected bs:Fan_version_1 .
-bs:HeatingCoil_version_1 s223:cnx bs:OutletConnectionPoint_version_1 .
-bs:HeatingCoil_version_1 s223:cnx bs:InletConnectionPoint_version_1 .
-bs:HeatingCoil_version_1 rdfs:label bs:Literal_version_1 .
-bs:HeatingCoil_version_1 a (ns1:hw_coil00925 ns1:hw_coil00993) .
-bs:CoolingCoil_version_1 rdfs:comment bs:Literal_version_1 .
-bs:CoolingCoil_version_1 bob:airOutlet bs:OutletConnectionPoint_version_1 .
-bs:CoolingCoil_version_1 bob:airInlet bs:InletConnectionPoint_version_1 .
-bs:CoolingCoil_version_1 ns1:refrigerantOutlet bs:OutletConnectionPoint_version_1 .
-bs:CoolingCoil_version_1 ns1:refrigerantInlet bs:InletConnectionPoint_version_1 .
-bs:CoolingCoil_version_1 s223:hasRole s223:Role-HeatTransfer .
-bs:CoolingCoil_version_1 s223:hasRole s223:Role-Cooling .
-bs:CoolingCoil_version_1 s223:hasConnectionPoint bs:OutletConnectionPoint_version_1 .
-bs:CoolingCoil_version_1 s223:hasConnectionPoint bs:InletConnectionPoint_version_1 .
-bs:CoolingCoil_version_1 s223:connectedTo bs:Filter_version_1 .
-bs:CoolingCoil_version_1 s223:connectedThrough bs:Connection_version_1 .
-bs:CoolingCoil_version_1 s223:connectedFrom bs:Filter_version_1 .
-bs:CoolingCoil_version_1 s223:connected bs:Filter_version_1 .
-bs:CoolingCoil_version_1 s223:connected bs:Damper_version_1 .
-bs:CoolingCoil_version_1 s223:cnx bs:OutletConnectionPoint_version_1 .
-bs:CoolingCoil_version_1 s223:cnx bs:InletConnectionPoint_version_1 .
-bs:CoolingCoil_version_1 rdfs:label bs:Literal_version_1 .
-bs:CoolingCoil_version_1 a ns1:DXCoil .
-bs:CoolingCoil_version_1 a (ns1:cwc00201 ns1:cwc00360) .
-bs:FanPoweredTerminal_version_1 ns1:waterOutlet bs:OutletConnectionPoint_version_1 .
-bs:FanPoweredTerminal_version_1 ns1:waterInlet bs:InletConnectionPoint_version_1 .
-bs:FanPoweredTerminal_version_1 ns1:airOutlet bs:OutletConnectionPoint_version_1 .
-bs:FanPoweredTerminal_version_1 ns1:airInlet bs:InletConnectionPoint_version_1 .
-bs:FanPoweredTerminal_version_1 s223:hasProperty bs:QuantifiableObservableProperty_version_1 .
-bs:FanPoweredTerminal_version_1 s223:hasProperty bs:EnumeratedObservableProperty_version_1 .
-bs:FanPoweredTerminal_version_1 s223:hasConnectionPoint bs:OutletConnectionPoint_version_1 .
-bs:FanPoweredTerminal_version_1 s223:hasConnectionPoint bs:InletConnectionPoint_version_1 .
-bs:FanPoweredTerminal_version_1 s223:contains bs:TwoWayValve_version_1 .
-bs:FanPoweredTerminal_version_1 s223:contains bs:HeatingCoil_version_1 .
-bs:FanPoweredTerminal_version_1 s223:contains bs:Fan_version_1 .
-bs:FanPoweredTerminal_version_1 s223:connectedTo bs:Junction_version_1 .
-bs:FanPoweredTerminal_version_1 s223:connectedThrough bs:Connection_version_1 .
-bs:FanPoweredTerminal_version_1 s223:connectedFrom bs:Junction_version_1 .
-bs:FanPoweredTerminal_version_1 s223:connected bs:Junction_version_1 .
-bs:FanPoweredTerminal_version_1 s223:cnx bs:OutletConnectionPoint_version_1 .
-bs:FanPoweredTerminal_version_1 s223:cnx bs:InletConnectionPoint_version_1 .
-bs:FanPoweredTerminal_version_1 rdfs:label bs:Literal_version_1 .
-bs:FanPoweredTerminal_version_1 a ns1:UFT .
-bs:FanPoweredTerminal_version_1 a (ns1:G-1003379 ns1:G-102740) .
-bs:Equipment_version_1 ns1:hotWaterOut bs:OutletConnectionPoint_version_1 .
-bs:Equipment_version_1 ns1:hotWaterIn bs:InletConnectionPoint_version_1 .
-bs:Equipment_version_1 ns1:chilledWaterOut bs:OutletConnectionPoint_version_1 .
-bs:Equipment_version_1 ns1:chilledWaterIn bs:InletConnectionPoint_version_1 .
-bs:Equipment_version_1 s223:hasProperty bs:QuantifiableObservableProperty_version_1 .
-bs:Equipment_version_1 s223:hasProperty bs:EnumeratedObservableProperty_version_1 .
-bs:Equipment_version_1 s223:hasConnectionPoint bs:OutletConnectionPoint_version_1 .
-bs:Equipment_version_1 s223:hasConnectionPoint bs:InletConnectionPoint_version_1 .
-bs:Equipment_version_1 s223:contains bs:TemperatureSensor_version_1 .
-bs:Equipment_version_1 s223:contains bs:Sensor_version_1 .
-bs:Equipment_version_1 s223:connectedTo bs:Junction_version_1 .
-bs:Equipment_version_1 s223:connectedThrough bs:Connection_version_1 .
-bs:Equipment_version_1 s223:connectedFrom bs:Junction_version_1 .
-bs:Equipment_version_1 s223:connected bs:Junction_version_1 .
-bs:Equipment_version_1 s223:cnx bs:OutletConnectionPoint_version_1 .
-bs:Equipment_version_1 s223:cnx bs:InletConnectionPoint_version_1 .
-bs:Equipment_version_1 rdfs:label bs:Literal_version_1 .
-bs:Equipment_version_1 a s223:WatertoWaterHeatPump .
-bs:Equipment_version_1 a (ns1:B59_HeatPump00017) .
-bs:AirHandlingUnit_version_1 ns1:supplyAirOutlet bs:OutletConnectionPoint_version_1 .
-bs:AirHandlingUnit_version_1 ns1:returnAirInlet bs:InletConnectionPoint_version_1 .
-bs:AirHandlingUnit_version_1 ns1:outsideAirInlet bs:InletConnectionPoint_version_1 .
-bs:AirHandlingUnit_version_1 ns1:exhaustAirOutlet bs:OutletConnectionPoint_version_1 .
-bs:AirHandlingUnit_version_1 s223:hasProperty bs:QuantifiableObservableProperty_version_1 .
-bs:AirHandlingUnit_version_1 s223:hasProperty bs:QuantifiableActuatableProperty_version_1 .
-bs:AirHandlingUnit_version_1 s223:hasProperty bs:EnumeratedActuatableProperty_version_1 .
-bs:AirHandlingUnit_version_1 s223:hasConnectionPoint bs:OutletConnectionPoint_version_1 .
-bs:AirHandlingUnit_version_1 s223:hasConnectionPoint bs:InletConnectionPoint_version_1 .
-bs:AirHandlingUnit_version_1 s223:contains bs:TemperatureSensor_version_1 .
-bs:AirHandlingUnit_version_1 s223:contains bs:Sensor_version_1 .
-bs:AirHandlingUnit_version_1 s223:contains bs:Filter_version_1 .
-bs:AirHandlingUnit_version_1 s223:contains bs:Fan_version_1 .
-bs:AirHandlingUnit_version_1 s223:contains bs:DifferentialSensor_version_1 .
-bs:AirHandlingUnit_version_1 s223:contains bs:Damper_version_1 .
-bs:AirHandlingUnit_version_1 s223:contains bs:CoolingCoil_version_1 .
-bs:AirHandlingUnit_version_1 s223:connectedTo bs:Junction_version_1 .
-bs:AirHandlingUnit_version_1 s223:connectedThrough bs:Connection_version_1 .
-bs:AirHandlingUnit_version_1 s223:connectedFrom bs:Junction_version_1 .
+bs:AirHandlingUnit_version_1 s223:cnx
+    bs:OutletConnectionPoint_version_1 ,
+    bs:InletConnectionPoint_version_1 .
 bs:AirHandlingUnit_version_1 s223:connected bs:Junction_version_1 .
-bs:AirHandlingUnit_version_1 s223:cnx bs:OutletConnectionPoint_version_1 .
-bs:AirHandlingUnit_version_1 s223:cnx bs:InletConnectionPoint_version_1 .
-bs:AirHandlingUnit_version_1 rdfs:label bs:Literal_version_1 .
+bs:AirHandlingUnit_version_1 s223:connectedFrom bs:Junction_version_1 .
+bs:AirHandlingUnit_version_1 s223:connectedThrough bs:Connection_version_1 .
+bs:AirHandlingUnit_version_1 s223:connectedTo bs:Junction_version_1 .
+bs:AirHandlingUnit_version_1 s223:contains
+    bs:TemperatureSensor_version_1 ,
+    bs:Sensor_version_1 ,
+    bs:Filter_version_1 ,
+    bs:Fan_version_1 ,
+    bs:DifferentialSensor_version_1 ,
+    bs:Damper_version_1 ,
+    bs:CoolingCoil_version_1 .
+bs:AirHandlingUnit_version_1 s223:hasConnectionPoint
+    bs:OutletConnectionPoint_version_1 ,
+    bs:InletConnectionPoint_version_1 .
+bs:AirHandlingUnit_version_1 s223:hasProperty
+    bs:QuantifiableObservableProperty_version_1 ,
+    bs:QuantifiableActuatableProperty_version_1 ,
+    bs:EnumeratedActuatableProperty_version_1 .
+bs:AirHandlingUnit_version_1 ns1:exhaustAirOutlet bs:OutletConnectionPoint_version_1 .
+bs:AirHandlingUnit_version_1 ns1:outsideAirInlet bs:InletConnectionPoint_version_1 .
+bs:AirHandlingUnit_version_1 ns1:returnAirInlet bs:InletConnectionPoint_version_1 .
+bs:AirHandlingUnit_version_1 ns1:supplyAirOutlet bs:OutletConnectionPoint_version_1 .
 bs:AirHandlingUnit_version_1 a (ns1:RTU_100174 ns1:RTU_200333) .
-bs:TwoWayValve_version_1 rdfs:comment bs:Literal_version_1 .
-bs:TwoWayValve_version_1 bob:waterOutlet bs:OutletConnectionPoint_version_1 .
-bs:TwoWayValve_version_1 bob:waterInlet bs:InletConnectionPoint_version_1 .
-bs:TwoWayValve_version_1 s223:hasProperty bs:QuantifiableObservableProperty_version_1 .
-bs:TwoWayValve_version_1 s223:hasProperty bs:QuantifiableActuatableProperty_version_1 .
-bs:TwoWayValve_version_1 s223:hasConnectionPoint bs:OutletConnectionPoint_version_1 .
-bs:TwoWayValve_version_1 s223:hasConnectionPoint bs:InletConnectionPoint_version_1 .
-bs:TwoWayValve_version_1 s223:connectedThrough bs:Connection_version_1 .
-bs:TwoWayValve_version_1 s223:connectedFrom bs:HeatingCoil_version_1 .
-bs:TwoWayValve_version_1 s223:connected bs:HeatingCoil_version_1 .
-bs:TwoWayValve_version_1 s223:cnx bs:OutletConnectionPoint_version_1 .
-bs:TwoWayValve_version_1 s223:cnx bs:InletConnectionPoint_version_1 .
-bs:TwoWayValve_version_1 rdfs:label bs:Literal_version_1 .
-bs:TwoWayValve_version_1 a ns1:UFT_HWC_Valve .
-bs:TwoWayValve_version_1 a (ns1:hw_valve00930 ns1:hw_valve00998) .
-bs:QuantifiableActuatableProperty_version_1 rdfs:comment bs:Literal_version_1 .
-bs:QuantifiableActuatableProperty_version_1 qudt:hasUnit unit:UNITLESS .
-bs:QuantifiableActuatableProperty_version_1 qudt:hasUnit unit:PSI .
-bs:QuantifiableActuatableProperty_version_1 qudt:hasUnit unit:PERCENT .
-bs:QuantifiableActuatableProperty_version_1 qudt:hasUnit unit:HZ .
-bs:QuantifiableActuatableProperty_version_1 qudt:hasUnit unit:FT3-PER-MIN .
-bs:QuantifiableActuatableProperty_version_1 qudt:hasUnit unit:DEG_F .
-bs:QuantifiableActuatableProperty_version_1 qudt:hasQuantityKind quantitykind:VolumeFlowRate .
-bs:QuantifiableActuatableProperty_version_1 qudt:hasQuantityKind quantitykind:Temperature .
-bs:QuantifiableActuatableProperty_version_1 qudt:hasQuantityKind quantitykind:ForcePerArea .
-bs:QuantifiableActuatableProperty_version_1 qudt:hasQuantityKind quantitykind:DimensionlessRatio .
-bs:QuantifiableActuatableProperty_version_1 s223:hasExternalReference bs:ExternalReference_version_1 .
-bs:QuantifiableActuatableProperty_version_1 s223:hasAspect s223:Role-Supply .
-bs:QuantifiableActuatableProperty_version_1 s223:hasAspect s223:Role-Heating .
-bs:QuantifiableActuatableProperty_version_1 s223:hasAspect s223:Role-Cooling .
-bs:QuantifiableActuatableProperty_version_1 s223:hasAspect s223:Aspect-Setpoint .
-bs:QuantifiableActuatableProperty_version_1 rdfs:label bs:Literal_version_1 .
-bs:QuantifiableActuatableProperty_version_1 a bob:TemperatureSetpoint .
-bs:QuantifiableActuatableProperty_version_1 a bob:PercentCommand .
-bs:QuantifiableActuatableProperty_version_1 a ns1:FlowSetpoint .
-bs:QuantifiableActuatableProperty_version_1 a (ns1:Floor_3.RTU_1.Plenum.press_sens00765 ns1:Floor_3.RTU_2.Plenum.press_sens00772) .
-bs:QuantifiableActuatableProperty_version_1 a (ns1:0092000920 ns1:0098800988) .
-bs:BidirectionalConnectionPoint_version_1 s223:isConnectionPointOf bs:Junction_version_1 .
-bs:BidirectionalConnectionPoint_version_1 s223:isConnectionPointOf bs:DomainSpace_version_1 .
-bs:BidirectionalConnectionPoint_version_1 s223:hasMedium s223:Fluid-Air .
+bs:AirHandlingUnit_version_1 rdfs:label bs:Literal_version_1 .
+bs:BidirectionalConnectionPoint_version_1 s223:cnx
+    bs:Junction_version_1 ,
+    bs:DomainSpace_version_1 ,
+    bs:Connection_version_1 .
 bs:BidirectionalConnectionPoint_version_1 s223:connectsThrough bs:Connection_version_1 .
-bs:BidirectionalConnectionPoint_version_1 s223:cnx bs:Junction_version_1 .
-bs:BidirectionalConnectionPoint_version_1 s223:cnx bs:DomainSpace_version_1 .
-bs:BidirectionalConnectionPoint_version_1 s223:cnx bs:Connection_version_1 .
+bs:BidirectionalConnectionPoint_version_1 s223:hasMedium s223:Fluid-Air .
+bs:BidirectionalConnectionPoint_version_1 s223:isConnectionPointOf
+    bs:Junction_version_1 ,
+    bs:DomainSpace_version_1 .
+bs:BidirectionalConnectionPoint_version_1 a
+    bob:AirConnectionPoint ,
+    (ns1:0077700777 ns1:0077800778) .
 bs:BidirectionalConnectionPoint_version_1 rdfs:label bs:Literal_version_1 .
-bs:BidirectionalConnectionPoint_version_1 a bob:AirConnectionPoint .
-bs:BidirectionalConnectionPoint_version_1 a (ns1:0077700777 ns1:0077800778) .
-bs:ExternalReference_version_1 ns2:writable bs:Literal_version_1 .
-bs:ExternalReference_version_1 ns2:source bs:Literal_version_1 .
-bs:ExternalReference_version_1 ns2:mpc_db_name bs:Literal_version_1 .
-bs:ExternalReference_version_1 ns2:endpoint bs:Literal_version_1 .
-bs:ExternalReference_version_1 rdfs:label bs:Literal_version_1 .
-bs:ExternalReference_version_1 a ns2:APIReference .
-bs:ExternalReference_version_1 a (ns1:00001 ns1:00002) .
-bs:TemperatureSensor_version_1 rdfs:comment bs:Literal_version_1 .
-bs:TemperatureSensor_version_1 s223:observes bs:QuantifiableObservableProperty_version_1 .
-bs:TemperatureSensor_version_1 s223:hasPhysicalLocation bs:PhysicalSpace_version_1 .
-bs:TemperatureSensor_version_1 s223:hasObservationLocation bs:OutletConnectionPoint_version_1 .
-bs:TemperatureSensor_version_1 s223:hasObservationLocation bs:InletConnectionPoint_version_1 .
-bs:TemperatureSensor_version_1 s223:hasObservationLocation bs:DomainSpace_version_1 .
-bs:TemperatureSensor_version_1 s223:hasObservationLocation bs:Connection_version_1 .
-bs:TemperatureSensor_version_1 rdfs:label bs:Literal_version_1 .
-bs:TemperatureSensor_version_1 a bob:WaterTemperatureSensor .
-bs:TemperatureSensor_version_1 a bob:AirTemperatureSensor .
-bs:TemperatureSensor_version_1 a (ns1:59-BL-024c04602 ns1:59-BL-025c04599) .
-bs:Sensor_version_1 rdfs:comment bs:Literal_version_1 .
-bs:Sensor_version_1 s223:observes bs:QuantifiableObservableProperty_version_1 .
-bs:Sensor_version_1 s223:hasObservationLocation bs:OutletConnectionPoint_version_1 .
-bs:Sensor_version_1 s223:hasObservationLocation bs:Junction_version_1 .
-bs:Sensor_version_1 s223:hasObservationLocation bs:InletConnectionPoint_version_1 .
-bs:Sensor_version_1 s223:hasObservationLocation bs:Connection_version_1 .
-bs:Sensor_version_1 rdfs:label bs:Literal_version_1 .
-bs:Sensor_version_1 a ns1:HeatFlowSensor .
-bs:Sensor_version_1 a (ns1:Floor_3.RTU_1.Plenum.press_sens00765 ns1:Floor_3.RTU_2.Plenum.press_sens00772) .
-bs:PhysicalSpace_version_1 s223:encloses bs:DomainSpace_version_1 .
-bs:PhysicalSpace_version_1 s223:contains bs:PhysicalSpace_version_1 .
-bs:PhysicalSpace_version_1 rdfs:label bs:Literal_version_1 .
-bs:PhysicalSpace_version_1 a (ns1:300100089 ns1:300200090) .
-bs:OutletZoneConnectionPoint_version_1 s223:hasMedium s223:Fluid-Air .
-bs:OutletZoneConnectionPoint_version_1 rdfs:label bs:Literal_version_1 .
-bs:OutletZoneConnectionPoint_version_1 a bob:ZoneConnectionPoint .
-bs:OutletZoneConnectionPoint_version_1 a (ns1:zone_016.airOutlet00954 ns1:zone_017.airOutlet01022) .
-bs:InletZoneConnectionPoint_version_1 s223:hasMedium s223:Fluid-Air .
-bs:InletZoneConnectionPoint_version_1 rdfs:label bs:Literal_version_1 .
-bs:InletZoneConnectionPoint_version_1 a bob:ZoneConnectionPoint .
-bs:InletZoneConnectionPoint_version_1 a (ns1:zone_016.airInlet00953 ns1:zone_017.airInlet01021) .
-bs:EnumeratedObservableProperty_version_1 rdfs:comment bs:Literal_version_1 .
-bs:EnumeratedObservableProperty_version_1 s223:hasValue bs:Literal_version_1 .
-bs:EnumeratedObservableProperty_version_1 s223:hasExternalReference bs:ExternalReference_version_1 .
-bs:EnumeratedObservableProperty_version_1 s223:hasEnumerationKind s223:EnumerationKind-OnOff .
-bs:EnumeratedObservableProperty_version_1 s223:hasEnumerationKind s223:EnumerationKind-Binary .
-bs:EnumeratedObservableProperty_version_1 s223:hasEnumerationKind s223:Aspect-Manufacturer .
-bs:EnumeratedObservableProperty_version_1 s223:hasEnumerationKind s223:Aspect-CatalogNumber .
-bs:EnumeratedObservableProperty_version_1 rdfs:label bs:Literal_version_1 .
-bs:EnumeratedObservableProperty_version_1 a (ns1:ITEM00938 ns1:ITEM01006) .
-bs:EnumeratedActuatableProperty_version_1 rdfs:comment bs:Literal_version_1 .
-bs:EnumeratedActuatableProperty_version_1 s223:hasExternalReference bs:ExternalReference_version_1 .
-bs:EnumeratedActuatableProperty_version_1 s223:hasEnumerationKind s223:EnumerationKind-OnOff .
-bs:EnumeratedActuatableProperty_version_1 rdfs:label bs:Literal_version_1 .
-bs:EnumeratedActuatableProperty_version_1 a (ns1:boolean_trigger_to_activate_mpc00264 ns1:boolean_trigger_to_activate_mpc00423) .
-bs:ElectricalConnectionPoint_version_1 s223:isConnectionPointOf bs:Fan_version_1 .
-bs:ElectricalConnectionPoint_version_1 s223:hasMedium s223:Constituent-Electricity .
-bs:ElectricalConnectionPoint_version_1 s223:cnx bs:Fan_version_1 .
-bs:ElectricalConnectionPoint_version_1 rdfs:label bs:Literal_version_1 .
-bs:ElectricalConnectionPoint_version_1 a (ns1:0004700047 ns1:0078700787) .
-bs:ElectricalConnectionPoint_version_1 a (ns1:fan.electricalInlet00918 ns1:fan.electricalInlet00986) .
-bs:DifferentialSensor_version_1 rdfs:comment bs:Literal_version_1 .
-bs:DifferentialSensor_version_1 ns1:hasReferenceLocation bs:InletConnectionPoint_version_1 .
-bs:DifferentialSensor_version_1 s223:observes bs:QuantifiableObservableProperty_version_1 .
+bs:Connection_version_1 s223:cnx
+    bs:OutletConnectionPoint_version_1 ,
+    bs:InletConnectionPoint_version_1 ,
+    bs:BidirectionalConnectionPoint_version_1 .
+bs:Connection_version_1 s223:connectsAt
+    bs:OutletConnectionPoint_version_1 ,
+    bs:InletConnectionPoint_version_1 ,
+    bs:BidirectionalConnectionPoint_version_1 .
+bs:Connection_version_1 s223:connectsFrom
+    bs:Junction_version_1 ,
+    bs:HeatingCoil_version_1 ,
+    bs:Filter_version_1 ,
+    bs:Fan_version_1 ,
+    bs:FanPoweredTerminal_version_1 ,
+    bs:Equipment_version_1 ,
+    bs:DomainSpace_version_1 ,
+    bs:Damper_version_1 ,
+    bs:CoolingCoil_version_1 ,
+    bs:AirHandlingUnit_version_1 .
+bs:Connection_version_1 s223:connectsTo
+    bs:TwoWayValve_version_1 ,
+    bs:Junction_version_1 ,
+    bs:HeatingCoil_version_1 ,
+    bs:Filter_version_1 ,
+    bs:Fan_version_1 ,
+    bs:FanPoweredTerminal_version_1 ,
+    bs:Equipment_version_1 ,
+    bs:DomainSpace_version_1 ,
+    bs:Damper_version_1 ,
+    bs:CoolingCoil_version_1 ,
+    bs:AirHandlingUnit_version_1 .
+bs:Connection_version_1 s223:hasMedium
+    s223:Water-HotWater ,
+    s223:Fluid-Water ,
+    s223:Fluid-Air .
+bs:Connection_version_1 s223:hasProperty bs:QuantifiableObservableProperty_version_1 .
+bs:Connection_version_1 a (ns1:00048 ns1:00050) .
+bs:Connection_version_1 rdfs:label bs:Literal_version_1 .
+bs:CoolingCoil_version_1 s223:cnx
+    bs:OutletConnectionPoint_version_1 ,
+    bs:InletConnectionPoint_version_1 .
+bs:CoolingCoil_version_1 s223:connected
+    bs:Filter_version_1 ,
+    bs:Damper_version_1 .
+bs:CoolingCoil_version_1 s223:connectedFrom bs:Filter_version_1 .
+bs:CoolingCoil_version_1 s223:connectedThrough bs:Connection_version_1 .
+bs:CoolingCoil_version_1 s223:connectedTo bs:Filter_version_1 .
+bs:CoolingCoil_version_1 s223:hasConnectionPoint
+    bs:OutletConnectionPoint_version_1 ,
+    bs:InletConnectionPoint_version_1 .
+bs:CoolingCoil_version_1 s223:hasRole
+    s223:Role-HeatTransfer ,
+    s223:Role-Cooling .
+bs:CoolingCoil_version_1 ns1:refrigerantInlet bs:InletConnectionPoint_version_1 .
+bs:CoolingCoil_version_1 ns1:refrigerantOutlet bs:OutletConnectionPoint_version_1 .
+bs:CoolingCoil_version_1 bob:airInlet bs:InletConnectionPoint_version_1 .
+bs:CoolingCoil_version_1 bob:airOutlet bs:OutletConnectionPoint_version_1 .
+bs:CoolingCoil_version_1 a
+    ns1:DXCoil ,
+    (ns1:cwc00201 ns1:cwc00360) .
+bs:CoolingCoil_version_1 rdfs:comment bs:Literal_version_1 .
+bs:CoolingCoil_version_1 rdfs:label bs:Literal_version_1 .
+bs:Damper_version_1 s223:cnx
+    bs:OutletConnectionPoint_version_1 ,
+    bs:InletConnectionPoint_version_1 .
+bs:Damper_version_1 s223:connected
+    bs:Filter_version_1 ,
+    bs:Fan_version_1 ,
+    bs:Damper_version_1 ,
+    bs:CoolingCoil_version_1 .
+bs:Damper_version_1 s223:connectedFrom
+    bs:Filter_version_1 ,
+    bs:Fan_version_1 .
+bs:Damper_version_1 s223:connectedThrough bs:Connection_version_1 .
+bs:Damper_version_1 s223:connectedTo bs:Filter_version_1 .
+bs:Damper_version_1 s223:hasConnectionPoint
+    bs:OutletConnectionPoint_version_1 ,
+    bs:InletConnectionPoint_version_1 .
+bs:Damper_version_1 s223:hasProperty bs:QuantifiableActuatableProperty_version_1 .
+bs:Damper_version_1 s223:hasRole s223:Role-Exhaust .
+bs:Damper_version_1 bob:airInlet bs:InletConnectionPoint_version_1 .
+bs:Damper_version_1 bob:airOutlet bs:OutletConnectionPoint_version_1 .
+bs:Damper_version_1 a
+    ns1:RTUDamper ,
+    (ns1:bp_damper00198 ns1:bp_damper00357) .
+bs:Damper_version_1 rdfs:comment bs:Literal_version_1 .
+bs:Damper_version_1 rdfs:label bs:Literal_version_1 .
 bs:DifferentialSensor_version_1 s223:hasObservationLocation bs:OutletConnectionPoint_version_1 .
+bs:DifferentialSensor_version_1 s223:observes bs:QuantifiableObservableProperty_version_1 .
+bs:DifferentialSensor_version_1 ns1:hasReferenceLocation bs:InletConnectionPoint_version_1 .
+bs:DifferentialSensor_version_1 a
+    (ns1:Floor_3.RTU_1.Plenum.press_sens00765 ns1:Floor_3.RTU_2.Plenum.press_sens00772) ,
+    (ns1:ff_press00232 ns1:ff_press00391) .
+bs:DifferentialSensor_version_1 rdfs:comment bs:Literal_version_1 .
 bs:DifferentialSensor_version_1 rdfs:label bs:Literal_version_1 .
-bs:DifferentialSensor_version_1 a (ns1:Floor_3.RTU_1.Plenum.press_sens00765 ns1:Floor_3.RTU_2.Plenum.press_sens00772) .
-bs:DifferentialSensor_version_1 a (ns1:ff_press00232 ns1:ff_press00391) .
-bs:Zone_version_1 bob:hasZoneConnectionPoint bs:OutletZoneConnectionPoint_version_1 .
-bs:Zone_version_1 bob:hasZoneConnectionPoint bs:InletZoneConnectionPoint_version_1 .
-bs:Zone_version_1 bob:airOutlet bs:OutletZoneConnectionPoint_version_1 .
-bs:Zone_version_1 bob:airInlet bs:InletZoneConnectionPoint_version_1 .
-bs:Zone_version_1 s223:hasProperty bs:QuantifiableObservableProperty_version_1 .
-bs:Zone_version_1 s223:hasProperty bs:QuantifiableActuatableProperty_version_1 .
-bs:Zone_version_1 s223:hasProperty bs:EnumeratedActuatableProperty_version_1 .
-bs:Zone_version_1 s223:hasDomainSpace bs:DomainSpace_version_1 .
+bs:DomainSpace_version_1 s223:cnx
+    bs:OutletConnectionPoint_version_1 ,
+    bs:InletConnectionPoint_version_1 ,
+    bs:BidirectionalConnectionPoint_version_1 .
+bs:DomainSpace_version_1 s223:connected
+    bs:Junction_version_1 ,
+    bs:DomainSpace_version_1 .
+bs:DomainSpace_version_1 s223:connectedFrom
+    bs:Junction_version_1 ,
+    bs:DomainSpace_version_1 .
+bs:DomainSpace_version_1 s223:connectedThrough bs:Connection_version_1 .
+bs:DomainSpace_version_1 s223:connectedTo
+    bs:Junction_version_1 ,
+    bs:DomainSpace_version_1 .
+bs:DomainSpace_version_1 s223:hasConnectionPoint
+    bs:OutletConnectionPoint_version_1 ,
+    bs:InletConnectionPoint_version_1 ,
+    bs:BidirectionalConnectionPoint_version_1 .
+bs:DomainSpace_version_1 s223:hasDomain s223:Domain-HVAC .
+bs:DomainSpace_version_1 s223:hasProperty bs:QuantifiableObservableProperty_version_1 .
+bs:DomainSpace_version_1 ns1:returnOutlet bs:OutletConnectionPoint_version_1 .
+bs:DomainSpace_version_1 ns1:supplyInlet bs:InletConnectionPoint_version_1 .
+bs:DomainSpace_version_1 a
+    ns1:RoomDomainSpace ,
+    ns1:CoreSpace ,
+    (ns1:Floor_3.RTU_1.CoreZone00769 ns1:Floor_3.RTU_2.CoreZone00776) .
+bs:DomainSpace_version_1 rdfs:label bs:Literal_version_1 .
+bs:ElectricalConnectionPoint_version_1 s223:cnx bs:Fan_version_1 .
+bs:ElectricalConnectionPoint_version_1 s223:hasMedium s223:Constituent-Electricity .
+bs:ElectricalConnectionPoint_version_1 s223:isConnectionPointOf bs:Fan_version_1 .
+bs:ElectricalConnectionPoint_version_1 a
+    (ns1:0004700047 ns1:0078700787) ,
+    (ns1:fan.electricalInlet00918 ns1:fan.electricalInlet00986) .
+bs:ElectricalConnectionPoint_version_1 rdfs:label bs:Literal_version_1 .
+bs:EnumeratedActuatableProperty_version_1 s223:hasEnumerationKind s223:EnumerationKind-OnOff .
+bs:EnumeratedActuatableProperty_version_1 s223:hasExternalReference bs:ExternalReference_version_1 .
+bs:EnumeratedActuatableProperty_version_1 a (ns1:boolean_trigger_to_activate_mpc00264 ns1:boolean_trigger_to_activate_mpc00423) .
+bs:EnumeratedActuatableProperty_version_1 rdfs:comment bs:Literal_version_1 .
+bs:EnumeratedActuatableProperty_version_1 rdfs:label bs:Literal_version_1 .
+bs:EnumeratedObservableProperty_version_1 s223:hasEnumerationKind
+    s223:EnumerationKind-OnOff ,
+    s223:EnumerationKind-Binary ,
+    s223:Aspect-Manufacturer ,
+    s223:Aspect-CatalogNumber .
+bs:EnumeratedObservableProperty_version_1 s223:hasExternalReference bs:ExternalReference_version_1 .
+bs:EnumeratedObservableProperty_version_1 s223:hasValue bs:Literal_version_1 .
+bs:EnumeratedObservableProperty_version_1 a (ns1:ITEM00938 ns1:ITEM01006) .
+bs:EnumeratedObservableProperty_version_1 rdfs:comment bs:Literal_version_1 .
+bs:EnumeratedObservableProperty_version_1 rdfs:label bs:Literal_version_1 .
+bs:Equipment_version_1 s223:cnx
+    bs:OutletConnectionPoint_version_1 ,
+    bs:InletConnectionPoint_version_1 .
+bs:Equipment_version_1 s223:connected bs:Junction_version_1 .
+bs:Equipment_version_1 s223:connectedFrom bs:Junction_version_1 .
+bs:Equipment_version_1 s223:connectedThrough bs:Connection_version_1 .
+bs:Equipment_version_1 s223:connectedTo bs:Junction_version_1 .
+bs:Equipment_version_1 s223:contains
+    bs:TemperatureSensor_version_1 ,
+    bs:Sensor_version_1 .
+bs:Equipment_version_1 s223:hasConnectionPoint
+    bs:OutletConnectionPoint_version_1 ,
+    bs:InletConnectionPoint_version_1 .
+bs:Equipment_version_1 s223:hasProperty
+    bs:QuantifiableObservableProperty_version_1 ,
+    bs:EnumeratedObservableProperty_version_1 .
+bs:Equipment_version_1 ns1:chilledWaterIn bs:InletConnectionPoint_version_1 .
+bs:Equipment_version_1 ns1:chilledWaterOut bs:OutletConnectionPoint_version_1 .
+bs:Equipment_version_1 ns1:hotWaterIn bs:InletConnectionPoint_version_1 .
+bs:Equipment_version_1 ns1:hotWaterOut bs:OutletConnectionPoint_version_1 .
+bs:Equipment_version_1 a
+    s223:WatertoWaterHeatPump ,
+    (ns1:B59_HeatPump00017) .
+bs:Equipment_version_1 rdfs:label bs:Literal_version_1 .
+bs:ExternalReference_version_1 a
+    ns2:APIReference ,
+    (ns1:00001 ns1:00002) .
+bs:ExternalReference_version_1 rdfs:label bs:Literal_version_1 .
+bs:ExternalReference_version_1 ns2:endpoint bs:Literal_version_1 .
+bs:ExternalReference_version_1 ns2:mpc_db_name bs:Literal_version_1 .
+bs:ExternalReference_version_1 ns2:source bs:Literal_version_1 .
+bs:ExternalReference_version_1 ns2:writable bs:Literal_version_1 .
+bs:FanPoweredTerminal_version_1 s223:cnx
+    bs:OutletConnectionPoint_version_1 ,
+    bs:InletConnectionPoint_version_1 .
+bs:FanPoweredTerminal_version_1 s223:connected bs:Junction_version_1 .
+bs:FanPoweredTerminal_version_1 s223:connectedFrom bs:Junction_version_1 .
+bs:FanPoweredTerminal_version_1 s223:connectedThrough bs:Connection_version_1 .
+bs:FanPoweredTerminal_version_1 s223:connectedTo bs:Junction_version_1 .
+bs:FanPoweredTerminal_version_1 s223:contains
+    bs:TwoWayValve_version_1 ,
+    bs:HeatingCoil_version_1 ,
+    bs:Fan_version_1 .
+bs:FanPoweredTerminal_version_1 s223:hasConnectionPoint
+    bs:OutletConnectionPoint_version_1 ,
+    bs:InletConnectionPoint_version_1 .
+bs:FanPoweredTerminal_version_1 s223:hasProperty
+    bs:QuantifiableObservableProperty_version_1 ,
+    bs:EnumeratedObservableProperty_version_1 .
+bs:FanPoweredTerminal_version_1 ns1:airInlet bs:InletConnectionPoint_version_1 .
+bs:FanPoweredTerminal_version_1 ns1:airOutlet bs:OutletConnectionPoint_version_1 .
+bs:FanPoweredTerminal_version_1 ns1:waterInlet bs:InletConnectionPoint_version_1 .
+bs:FanPoweredTerminal_version_1 ns1:waterOutlet bs:OutletConnectionPoint_version_1 .
+bs:FanPoweredTerminal_version_1 a
+    ns1:UFT ,
+    (ns1:G-1003379 ns1:G-102740) .
+bs:FanPoweredTerminal_version_1 rdfs:label bs:Literal_version_1 .
+bs:Fan_version_1 s223:cnx
+    bs:OutletConnectionPoint_version_1 ,
+    bs:InletConnectionPoint_version_1 ,
+    bs:ElectricalConnectionPoint_version_1 .
+bs:Fan_version_1 s223:connected
+    bs:HeatingCoil_version_1 ,
+    bs:Filter_version_1 ,
+    bs:Damper_version_1 .
+bs:Fan_version_1 s223:connectedFrom bs:Filter_version_1 .
+bs:Fan_version_1 s223:connectedThrough bs:Connection_version_1 .
+bs:Fan_version_1 s223:connectedTo
+    bs:HeatingCoil_version_1 ,
+    bs:Damper_version_1 .
+bs:Fan_version_1 s223:hasConnectionPoint
+    bs:OutletConnectionPoint_version_1 ,
+    bs:InletConnectionPoint_version_1 ,
+    bs:ElectricalConnectionPoint_version_1 .
+bs:Fan_version_1 s223:hasProperty
+    bs:QuantifiableObservableProperty_version_1 ,
+    bs:QuantifiableActuatableProperty_version_1 .
+bs:Fan_version_1 s223:hasRole
+    s223:Role-Supply ,
+    s223:Role-Return .
+bs:Fan_version_1 ns1:speedCommand bs:QuantifiableActuatableProperty_version_1 .
+bs:Fan_version_1 ns1:speedFeedback bs:QuantifiableObservableProperty_version_1 .
+bs:Fan_version_1 bob:airInlet bs:InletConnectionPoint_version_1 .
+bs:Fan_version_1 bob:airOutlet bs:OutletConnectionPoint_version_1 .
+bs:Fan_version_1 a
+    ns1:UFT_Fan ,
+    ns1:RTUFan ,
+    (ns1:fan00915 ns1:fan00983) .
+bs:Fan_version_1 rdfs:comment bs:Literal_version_1 .
+bs:Fan_version_1 rdfs:label bs:Literal_version_1 .
+bs:Filter_version_1 s223:cnx
+    bs:OutletConnectionPoint_version_1 ,
+    bs:InletConnectionPoint_version_1 .
+bs:Filter_version_1 s223:connected
+    bs:Fan_version_1 ,
+    bs:Damper_version_1 ,
+    bs:CoolingCoil_version_1 .
+bs:Filter_version_1 s223:connectedFrom
+    bs:Damper_version_1 ,
+    bs:CoolingCoil_version_1 .
+bs:Filter_version_1 s223:connectedThrough bs:Connection_version_1 .
+bs:Filter_version_1 s223:connectedTo
+    bs:Fan_version_1 ,
+    bs:Damper_version_1 ,
+    bs:CoolingCoil_version_1 .
+bs:Filter_version_1 s223:hasConnectionPoint
+    bs:OutletConnectionPoint_version_1 ,
+    bs:InletConnectionPoint_version_1 .
+bs:Filter_version_1 bob:airInlet bs:InletConnectionPoint_version_1 .
+bs:Filter_version_1 bob:airOutlet bs:OutletConnectionPoint_version_1 .
+bs:Filter_version_1 a (ns1:final_filter00210 ns1:final_filter00369) .
+bs:Filter_version_1 rdfs:comment bs:Literal_version_1 .
+bs:Filter_version_1 rdfs:label bs:Literal_version_1 .
+bs:HeatingCoil_version_1 s223:cnx
+    bs:OutletConnectionPoint_version_1 ,
+    bs:InletConnectionPoint_version_1 .
+bs:HeatingCoil_version_1 s223:connected
+    bs:TwoWayValve_version_1 ,
+    bs:Fan_version_1 .
+bs:HeatingCoil_version_1 s223:connectedFrom bs:Fan_version_1 .
+bs:HeatingCoil_version_1 s223:connectedThrough bs:Connection_version_1 .
+bs:HeatingCoil_version_1 s223:connectedTo bs:TwoWayValve_version_1 .
+bs:HeatingCoil_version_1 s223:hasConnectionPoint
+    bs:OutletConnectionPoint_version_1 ,
+    bs:InletConnectionPoint_version_1 .
+bs:HeatingCoil_version_1 s223:hasRole
+    s223:Role-Heating ,
+    s223:Role-HeatTransfer .
+bs:HeatingCoil_version_1 bob:airInlet bs:InletConnectionPoint_version_1 .
+bs:HeatingCoil_version_1 bob:airOutlet bs:OutletConnectionPoint_version_1 .
+bs:HeatingCoil_version_1 bob:hotWaterInlet bs:InletConnectionPoint_version_1 .
+bs:HeatingCoil_version_1 bob:hotWaterOutlet bs:OutletConnectionPoint_version_1 .
+bs:HeatingCoil_version_1 a (ns1:hw_coil00925 ns1:hw_coil00993) .
+bs:HeatingCoil_version_1 rdfs:comment bs:Literal_version_1 .
+bs:HeatingCoil_version_1 rdfs:label bs:Literal_version_1 .
+bs:InletConnectionPoint_version_1 s223:cnx
+    bs:TwoWayValve_version_1 ,
+    bs:Junction_version_1 ,
+    bs:HeatingCoil_version_1 ,
+    bs:Filter_version_1 ,
+    bs:Fan_version_1 ,
+    bs:FanPoweredTerminal_version_1 ,
+    bs:Equipment_version_1 ,
+    bs:DomainSpace_version_1 ,
+    bs:Damper_version_1 ,
+    bs:CoolingCoil_version_1 ,
+    bs:Connection_version_1 ,
+    bs:AirHandlingUnit_version_1 .
+bs:InletConnectionPoint_version_1 s223:connectsThrough bs:Connection_version_1 .
+bs:InletConnectionPoint_version_1 s223:hasMedium
+    s223:Water-HotWater ,
+    s223:Water-ChilledWater ,
+    s223:Fluid-Water ,
+    s223:Fluid-Refrigerant ,
+    s223:Fluid-Air .
+bs:InletConnectionPoint_version_1 s223:hasProperty bs:QuantifiableObservableProperty_version_1 .
+bs:InletConnectionPoint_version_1 s223:isConnectionPointOf
+    bs:TwoWayValve_version_1 ,
+    bs:Junction_version_1 ,
+    bs:HeatingCoil_version_1 ,
+    bs:Filter_version_1 ,
+    bs:Fan_version_1 ,
+    bs:FanPoweredTerminal_version_1 ,
+    bs:Equipment_version_1 ,
+    bs:DomainSpace_version_1 ,
+    bs:Damper_version_1 ,
+    bs:CoolingCoil_version_1 ,
+    bs:AirHandlingUnit_version_1 .
+bs:InletConnectionPoint_version_1 s223:mapsTo bs:InletConnectionPoint_version_1 .
+bs:InletConnectionPoint_version_1 a
+    bob:WaterConnectionPoint ,
+    bob:HotWaterConnectionPoint ,
+    bob:ChilledWaterConnectionPoint ,
+    bob:AirConnectionPoint ,
+    ns1:RefrigerantConnectionPoint ,
+    (ns1:0004700047 ns1:0078700787) .
+bs:InletConnectionPoint_version_1 rdfs:label bs:Literal_version_1 .
+bs:InletZoneConnectionPoint_version_1 s223:hasMedium s223:Fluid-Air .
+bs:InletZoneConnectionPoint_version_1 a
+    bob:ZoneConnectionPoint ,
+    (ns1:zone_016.airInlet00953 ns1:zone_017.airInlet01021) .
+bs:InletZoneConnectionPoint_version_1 rdfs:label bs:Literal_version_1 .
+bs:Junction_version_1 s223:cnx
+    bs:OutletConnectionPoint_version_1 ,
+    bs:InletConnectionPoint_version_1 ,
+    bs:BidirectionalConnectionPoint_version_1 .
+bs:Junction_version_1 s223:connected
+    bs:Junction_version_1 ,
+    bs:FanPoweredTerminal_version_1 ,
+    bs:Equipment_version_1 ,
+    bs:DomainSpace_version_1 ,
+    bs:AirHandlingUnit_version_1 .
+bs:Junction_version_1 s223:connectedFrom
+    bs:Junction_version_1 ,
+    bs:FanPoweredTerminal_version_1 ,
+    bs:Equipment_version_1 ,
+    bs:DomainSpace_version_1 ,
+    bs:AirHandlingUnit_version_1 .
+bs:Junction_version_1 s223:connectedThrough bs:Connection_version_1 .
+bs:Junction_version_1 s223:connectedTo
+    bs:Junction_version_1 ,
+    bs:FanPoweredTerminal_version_1 ,
+    bs:Equipment_version_1 ,
+    bs:DomainSpace_version_1 ,
+    bs:AirHandlingUnit_version_1 .
+bs:Junction_version_1 s223:hasConnectionPoint
+    bs:OutletConnectionPoint_version_1 ,
+    bs:InletConnectionPoint_version_1 ,
+    bs:BidirectionalConnectionPoint_version_1 .
+bs:Junction_version_1 s223:hasMedium
+    s223:Fluid-Water ,
+    s223:Fluid-Air .
+bs:Junction_version_1 s223:hasProperty bs:QuantifiableObservableProperty_version_1 .
+bs:Junction_version_1 ns1:returnOutlet bs:OutletConnectionPoint_version_1 .
+bs:Junction_version_1 ns1:supplyInlet bs:InletConnectionPoint_version_1 .
+bs:Junction_version_1 a
+    ns1:WaterJunction ,
+    ns1:Plenum ,
+    ns1:CeilingSpace ,
+    (ns1:B59_HeatPump_water_return_junction00046 ns1:B59_HeatPump_water_supply_junction00045) .
+bs:Junction_version_1 rdfs:label bs:Literal_version_1 .
+bs:OutletConnectionPoint_version_1 s223:cnx
+    bs:Junction_version_1 ,
+    bs:HeatingCoil_version_1 ,
+    bs:Filter_version_1 ,
+    bs:Fan_version_1 ,
+    bs:FanPoweredTerminal_version_1 ,
+    bs:Equipment_version_1 ,
+    bs:DomainSpace_version_1 ,
+    bs:Damper_version_1 ,
+    bs:CoolingCoil_version_1 ,
+    bs:Connection_version_1 ,
+    bs:AirHandlingUnit_version_1 .
+bs:OutletConnectionPoint_version_1 s223:connectsThrough bs:Connection_version_1 .
+bs:OutletConnectionPoint_version_1 s223:hasMedium
+    s223:Water-HotWater ,
+    s223:Water-ChilledWater ,
+    s223:Fluid-Water ,
+    s223:Fluid-Refrigerant ,
+    s223:Fluid-Air .
+bs:OutletConnectionPoint_version_1 s223:hasProperty bs:QuantifiableObservableProperty_version_1 .
+bs:OutletConnectionPoint_version_1 s223:isConnectionPointOf
+    bs:TwoWayValve_version_1 ,
+    bs:Junction_version_1 ,
+    bs:HeatingCoil_version_1 ,
+    bs:Filter_version_1 ,
+    bs:Fan_version_1 ,
+    bs:FanPoweredTerminal_version_1 ,
+    bs:Equipment_version_1 ,
+    bs:DomainSpace_version_1 ,
+    bs:Damper_version_1 ,
+    bs:CoolingCoil_version_1 ,
+    bs:AirHandlingUnit_version_1 .
+bs:OutletConnectionPoint_version_1 s223:mapsTo bs:OutletConnectionPoint_version_1 .
+bs:OutletConnectionPoint_version_1 a
+    bob:WaterConnectionPoint ,
+    bob:HotWaterConnectionPoint ,
+    bob:ChilledWaterConnectionPoint ,
+    bob:AirConnectionPoint ,
+    ns1:RefrigerantConnectionPoint ,
+    (ns1:0004900049 ns1:0078600786) .
+bs:OutletConnectionPoint_version_1 rdfs:label bs:Literal_version_1 .
+bs:OutletZoneConnectionPoint_version_1 s223:hasMedium s223:Fluid-Air .
+bs:OutletZoneConnectionPoint_version_1 a
+    bob:ZoneConnectionPoint ,
+    (ns1:zone_016.airOutlet00954 ns1:zone_017.airOutlet01022) .
+bs:OutletZoneConnectionPoint_version_1 rdfs:label bs:Literal_version_1 .
+bs:PhysicalSpace_version_1 s223:contains bs:PhysicalSpace_version_1 .
+bs:PhysicalSpace_version_1 s223:encloses bs:DomainSpace_version_1 .
+bs:PhysicalSpace_version_1 a (ns1:300100089 ns1:300200090) .
+bs:PhysicalSpace_version_1 rdfs:label bs:Literal_version_1 .
+bs:QuantifiableActuatableProperty_version_1 s223:hasAspect
+    s223:Role-Supply ,
+    s223:Role-Heating ,
+    s223:Role-Cooling ,
+    s223:Aspect-Setpoint .
+bs:QuantifiableActuatableProperty_version_1 s223:hasExternalReference bs:ExternalReference_version_1 .
+bs:QuantifiableActuatableProperty_version_1 qudt:hasQuantityKind
+    quantitykind:VolumeFlowRate ,
+    quantitykind:Temperature ,
+    quantitykind:ForcePerArea ,
+    quantitykind:DimensionlessRatio .
+bs:QuantifiableActuatableProperty_version_1 qudt:hasUnit
+    unit:UNITLESS ,
+    unit:PSI ,
+    unit:PERCENT ,
+    unit:HZ ,
+    unit:FT3-PER-MIN ,
+    unit:DEG_F .
+bs:QuantifiableActuatableProperty_version_1 a
+    bob:TemperatureSetpoint ,
+    bob:PercentCommand ,
+    ns1:FlowSetpoint ,
+    (ns1:Floor_3.RTU_1.Plenum.press_sens00765 ns1:Floor_3.RTU_2.Plenum.press_sens00772) ,
+    (ns1:0092000920 ns1:0098800988) .
+bs:QuantifiableActuatableProperty_version_1 rdfs:comment bs:Literal_version_1 .
+bs:QuantifiableActuatableProperty_version_1 rdfs:label bs:Literal_version_1 .
+bs:QuantifiableObservableProperty_version_1 s223:hasAspect
+    s223:Aspect-Nominal ,
+    s223:Aspect-Minimum .
+bs:QuantifiableObservableProperty_version_1 s223:hasExternalReference bs:ExternalReference_version_1 .
+bs:QuantifiableObservableProperty_version_1 s223:hasValue bs:Literal_version_1 .
+bs:QuantifiableObservableProperty_version_1 s223:ofMedium rdfs:Resource .
+bs:QuantifiableObservableProperty_version_1 qudt:hasQuantityKind
+    quantitykind:VolumeFlowRate ,
+    quantitykind:Temperature ,
+    quantitykind:Pressure ,
+    quantitykind:MoleFraction ,
+    quantitykind:HeatFlowRate ,
+    quantitykind:ForcePerArea ,
+    quantitykind:ElectricPower ,
+    quantitykind:DimensionlessRatio ,
+    quantitykind:AngularVelocity .
+bs:QuantifiableObservableProperty_version_1 qudt:hasUnit
+    unit:UNITLESS ,
+    unit:REV-PER-MIN ,
+    unit:PSI ,
+    unit:PPM ,
+    unit:PERCENT ,
+    unit:PA ,
+    unit:KiloW ,
+    unit:GAL_US_PER_MIN ,
+    unit:FT3-PER-MIN ,
+    unit:DEG_F ,
+    unit:BTU_PER_HOUR ,
+    unit:BTU_IT_PER_HR .
+bs:QuantifiableObservableProperty_version_1 a
+    bob:Temperature ,
+    bob:RPM ,
+    bob:Percent ,
+    bob:Flow ,
+    bob:ElectricPowerkW ,
+    bob:ElectricPower ,
+    bob:DifferentialStaticPressure ,
+    ns1:Pressure ,
+    ns1:HeatFlowRate ,
+    ns1:CO2Concentration ,
+    (ns1:0092100921 ns1:0098900989) .
+bs:QuantifiableObservableProperty_version_1 rdfs:comment bs:Literal_version_1 .
+bs:QuantifiableObservableProperty_version_1 rdfs:label bs:Literal_version_1 .
+bs:Sensor_version_1 s223:hasObservationLocation
+    bs:OutletConnectionPoint_version_1 ,
+    bs:Junction_version_1 ,
+    bs:InletConnectionPoint_version_1 ,
+    bs:Connection_version_1 .
+bs:Sensor_version_1 s223:observes bs:QuantifiableObservableProperty_version_1 .
+bs:Sensor_version_1 a
+    ns1:HeatFlowSensor ,
+    (ns1:Floor_3.RTU_1.Plenum.press_sens00765 ns1:Floor_3.RTU_2.Plenum.press_sens00772) .
+bs:Sensor_version_1 rdfs:comment bs:Literal_version_1 .
+bs:Sensor_version_1 rdfs:label bs:Literal_version_1 .
+bs:TemperatureSensor_version_1 s223:hasObservationLocation
+    bs:OutletConnectionPoint_version_1 ,
+    bs:InletConnectionPoint_version_1 ,
+    bs:DomainSpace_version_1 ,
+    bs:Connection_version_1 .
+bs:TemperatureSensor_version_1 s223:hasPhysicalLocation bs:PhysicalSpace_version_1 .
+bs:TemperatureSensor_version_1 s223:observes bs:QuantifiableObservableProperty_version_1 .
+bs:TemperatureSensor_version_1 a
+    bob:WaterTemperatureSensor ,
+    bob:AirTemperatureSensor ,
+    (ns1:59-BL-024c04602 ns1:59-BL-025c04599) .
+bs:TemperatureSensor_version_1 rdfs:comment bs:Literal_version_1 .
+bs:TemperatureSensor_version_1 rdfs:label bs:Literal_version_1 .
+bs:TwoWayValve_version_1 s223:cnx
+    bs:OutletConnectionPoint_version_1 ,
+    bs:InletConnectionPoint_version_1 .
+bs:TwoWayValve_version_1 s223:connected bs:HeatingCoil_version_1 .
+bs:TwoWayValve_version_1 s223:connectedFrom bs:HeatingCoil_version_1 .
+bs:TwoWayValve_version_1 s223:connectedThrough bs:Connection_version_1 .
+bs:TwoWayValve_version_1 s223:hasConnectionPoint
+    bs:OutletConnectionPoint_version_1 ,
+    bs:InletConnectionPoint_version_1 .
+bs:TwoWayValve_version_1 s223:hasProperty
+    bs:QuantifiableObservableProperty_version_1 ,
+    bs:QuantifiableActuatableProperty_version_1 .
+bs:TwoWayValve_version_1 bob:waterInlet bs:InletConnectionPoint_version_1 .
+bs:TwoWayValve_version_1 bob:waterOutlet bs:OutletConnectionPoint_version_1 .
+bs:TwoWayValve_version_1 a
+    ns1:UFT_HWC_Valve ,
+    (ns1:hw_valve00930 ns1:hw_valve00998) .
+bs:TwoWayValve_version_1 rdfs:comment bs:Literal_version_1 .
+bs:TwoWayValve_version_1 rdfs:label bs:Literal_version_1 .
 bs:Zone_version_1 s223:hasDomain s223:Domain-HVAC .
+bs:Zone_version_1 s223:hasDomainSpace bs:DomainSpace_version_1 .
+bs:Zone_version_1 s223:hasProperty
+    bs:QuantifiableObservableProperty_version_1 ,
+    bs:QuantifiableActuatableProperty_version_1 ,
+    bs:EnumeratedActuatableProperty_version_1 .
+bs:Zone_version_1 bob:airInlet bs:InletZoneConnectionPoint_version_1 .
+bs:Zone_version_1 bob:airOutlet bs:OutletZoneConnectionPoint_version_1 .
+bs:Zone_version_1 bob:hasZoneConnectionPoint
+    bs:OutletZoneConnectionPoint_version_1 ,
+    bs:InletZoneConnectionPoint_version_1 .
+bs:Zone_version_1 a
+    bob:HVACZone ,
+    (ns1:zone_01600952 ns1:zone_01701020) .
 bs:Zone_version_1 rdfs:label bs:Literal_version_1 .
-bs:Zone_version_1 a bob:HVACZone .
-bs:Zone_version_1 a (ns1:zone_01600952 ns1:zone_01701020) .
