@@ -70,7 +70,9 @@ fn falls_back_to_blank_syntax_for_a_raw_skolem_iri_in_an_already_stale_member_gr
 
     let turtle = bschema_core::examples::example_turtle(&class_graph, &member_graph, 2).unwrap();
     assert!(!turtle.contains("skolem"), "should not leak the skolem IRI, got:\n{turtle}");
-    assert!(turtle.contains("(_:abc123)"), "should render it as a blank node, got:\n{turtle}");
+    // A single-member, all-blank group collapses to a bare `[]`, not a
+    // parenthesized list of one hash-labelled blank node.
+    assert!(turtle.contains("ex:hasSpec []"), "should render it as a bare blank node, got:\n{turtle}");
 }
 
 const TTL_WITH_BLANK_NODES: &str = r#"
@@ -83,7 +85,7 @@ const TTL_WITH_BLANK_NODES: &str = r#"
 "#;
 
 #[test]
-fn renders_blank_node_members_as_turtle_blank_nodes_not_skolem_iris() {
+fn collapses_an_all_blank_class_to_a_bare_anonymous_node() {
     let data_graph = RdfGraph::parse_str(TTL_WITH_BLANK_NODES, RdfFormat::Turtle).unwrap();
     let result = create_bschema(&data_graph, 10, None, true, true).unwrap();
     let turtle = result.example_turtle(2).unwrap();
@@ -97,10 +99,67 @@ fn renders_blank_node_members_as_turtle_blank_nodes_not_skolem_iris() {
         .lines()
         .find(|l| l.contains("hasSpec"))
         .unwrap_or_else(|| panic!("expected a hasSpec line in:\n{turtle}"));
-    // Both blank-node specs should show up as a collection of real Turtle
-    // blank nodes, e.g. "(_:b0 _:b1)", not resource IRIs.
-    assert!(line.contains("(_:"), "expected a blank-node collection in: {line}");
+    // Two blank-node specs carry no more information than one, so the
+    // whole class collapses to a single bare `[]`, not a parenthesized
+    // list of hash-labelled blank nodes.
+    assert!(line.contains("hasSpec []"), "expected a bare anonymous node in: {line}");
+    assert!(!line.contains("_:"), "should not leak a raw blank node label in: {line}");
 }
+
+const TTL_WITH_UNKNOWN_NAMESPACE: &str = r#"
+    @prefix bldg: <urn:bldg#> .
+
+    bldg:AHU_1 bldg:hasPoint bldg:Point_1 .
+    bldg:AHU_2 bldg:hasPoint bldg:Point_2 .
+"#;
+
+#[test]
+fn auto_numbers_a_prefix_for_an_unknown_namespace() {
+    // `urn:bldg#` isn't one of the crate's known namespaces (brick, s223,
+    // ex, bs, ...), so it should get an auto-numbered ns1: binding instead
+    // of showing up as a long bracketed <urn:bldg#...> IRI everywhere.
+    let data_graph = RdfGraph::parse_str(TTL_WITH_UNKNOWN_NAMESPACE, RdfFormat::Turtle).unwrap();
+    let result = create_bschema(&data_graph, 10, None, true, true).unwrap();
+    let turtle = result.example_turtle(2).unwrap();
+
+    assert!(turtle.contains("@prefix ns1: <urn:bldg#> ."), "expected an auto-numbered prefix header, got:\n{turtle}");
+    // The only occurrence of the raw IRI should be in the @prefix header
+    // itself; every use in the body should be abbreviated via ns1:.
+    assert_eq!(
+        turtle.matches("<urn:bldg#").count(),
+        1,
+        "should not fall back to full IRIs in the body once a prefix is bound, got:\n{turtle}"
+    );
+    assert!(turtle.contains("ns1:hasPoint"), "expected the predicate to use the auto-numbered prefix, got:\n{turtle}");
+}
+
+#[test]
+fn strips_the_synthetic_rdfs_literal_bookkeeping_triples() {
+    let data_graph = RdfGraph::parse_str(TTL_WITH_LITERALS, RdfFormat::Turtle).unwrap();
+    let result = create_bschema(&data_graph, 10, None, true, true).unwrap();
+
+    // The underlying class_graph does carry these (see
+    // create_bschema.rs's literal test); example_turtle should filter them
+    // out as an implementation artifact of RdfGraph::skolemize, not model
+    // content worth showing a reader.
+    assert!(
+        result.class_graph.triples().iter().any(|t| t.object.to_string().contains("rdf-schema#Literal")),
+        "test setup: expected class_graph to contain a `a rdfs:Literal` bookkeeping triple"
+    );
+
+    let turtle = result.example_turtle(2).unwrap();
+    assert!(!turtle.contains("Literal"), "should not surface rdfs:Literal bookkeeping, got:\n{turtle}");
+}
+
+const TTL_WITH_LITERALS: &str = r#"
+    @prefix ex: <urn:example#> .
+    @prefix s223: <http://data.ashrae.org/standard223#> .
+    @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+    ex:sensor1 a s223:Sensor ; s223:hasUnit s223:UnitA ; s223:hasValue "22.5"^^xsd:double .
+    ex:sensor2 a s223:Sensor ; s223:hasUnit s223:UnitA ; s223:hasValue "23.1"^^xsd:double .
+    ex:sensor3 a s223:Sensor ; s223:hasUnit s223:UnitA ; s223:hasValue "19.8"^^xsd:double .
+"#;
 
 #[test]
 fn is_deterministic_across_runs() {

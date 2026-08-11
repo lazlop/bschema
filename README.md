@@ -131,11 +131,22 @@ through a generic Turtle writer (rdflib only folds collections used as
 objects), so re-parsing it would only get back an uglier equivalent, not
 this compact form.
 
-Members that were originally blank nodes are rendered as real Turtle blank
-nodes (`_:...`), not the internal `urn:bschema-rs:skolem:...` IRI bschema
-uses to track their identity - e.g. `(_:a1 _:a2) brick:hasUnit brick:m` -
-so it's clear at a glance that they're anonymous nodes, not named
-resources.
+A few things it does beyond a literal find-and-replace, all aimed at
+keeping the output actually readable:
+
+- **Prefixes.** Every namespace used in the output gets a `@prefix`
+  binding — the crate's own known short names (`brick:`, `ex:`, ...) where
+  they apply, else an auto-numbered `ns1:`, `ns2:`, ... Nothing is left as
+  a long bracketed `<...>` IRI unless its local name genuinely isn't safe
+  to abbreviate.
+- **Blank nodes.** A class whose sampled members are *all* blank nodes
+  collapses to a single bare `[]` instead of a parenthesized list of
+  hash-labelled placeholders, e.g. `[] brick:hasUnit brick:m .` — several
+  examples of "an anonymous node" carry no more information than one.
+- **No synthetic bookkeeping.** The `<node> a rdfs:Literal .` triples
+  `RdfGraph::skolemize` adds purely so the matching algorithm can treat
+  literals uniformly are an implementation artifact, not model content, so
+  `example_turtle` filters them out.
 
 `create_bschema` / `create_bschema_from_file` accept:
 

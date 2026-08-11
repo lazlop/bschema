@@ -1,30 +1,11 @@
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix ns1: <http://openmetrics.eu/openmetrics#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix sh: <http://www.w3.org/ns/shacl#> .
-@prefix quantitykind: <http://qudt.org/vocab/quantitykind/> .
-@prefix qudt: <http://qudt.org/schema/qudt/> .
-@prefix unit: <http://qudt.org/vocab/unit/> .
-@prefix ref: <https://brickschema.org/schema/Brick/ref#> .
-@prefix rec: <https://w3id.org/rec#> .
 @prefix brick: <https://brickschema.org/schema/Brick#> .
-@prefix tag: <https://brickschema.org/schema/BrickTag#> .
-@prefix bsh: <https://brickschema.org/schema/BrickShape#> .
-@prefix P: <urn:___param___#> .
-@prefix constraint: <https://nrel.gov/BuildingMOTIF/constraints#> .
-@prefix bmotif: <https://nrel.gov/BuildingMOTIF#> .
-@prefix hpflex: <urn:hpflex#> .
-@prefix hpfs: <urn:hpflex/shapes#> .
-@prefix s223: <http://data.ashrae.org/standard223#> .
-@prefix ex: <urn:example#> .
-@prefix bs: <urn:bschema#> .
-@prefix bob: <http://data.ashrae.org/standard223/si-builder#> .
-@prefix bacnet: <http://data.ashrae.org/bacnet/2020#> .
+@prefix ref: <https://brickschema.org/schema/Brick/ref#> .
+@prefix saref: <https://saref.etsi.org/core#> .
 @prefix s4bldg: <https://saref.etsi.org/saref4bldg#> .
 @prefix s4ener: <https://saref.etsi.org/saref4ener#> .
-@prefix saref: <https://saref.etsi.org/core#> .
+@prefix bs: <urn:bschema#> .
 
 bs:Resource_version_1 ref:ifcName bs:Literal_version_1 .
 bs:Resource_version_1 ref:ifcGlobalID bs:Literal_version_1 .
@@ -53,79 +34,78 @@ bs:Thermostat_version_1 brick:hasPoint bs:Lockout_Command_version_1 .
 bs:Thermostat_version_1 brick:hasPoint bs:Delay_Parameter_version_1 .
 bs:Thermostat_version_1 brick:hasLocation bs:Space_version_1 .
 bs:Thermostat_version_1 a s4bldg:UnitaryControlElement .
-bs:Thermostat_version_1 a (<http://openmetrics.eu/openmetrics#RC04N0041_Equipment> <http://openmetrics.eu/openmetrics#RC04N0042_Equipment>) .
-bs:Literal_version_1 a ("" "04fvfeI2P3MOmu2cRam2oG") .
+bs:Thermostat_version_1 a (ns1:RC04N0041_Equipment ns1:RC04N0042_Equipment) .
 bs:Space_version_1 s4bldg:contains bs:Thermostat_version_1 .
 bs:Space_version_1 ref:hasExternalReference bs:Resource_version_1 .
 bs:Space_version_1 brick:isLocationOf bs:Thermostat_version_1 .
 bs:Space_version_1 a s4bldg:BuildingSpace .
-bs:Space_version_1 a (<http://openmetrics.eu/openmetrics#Space_1126> <http://openmetrics.eu/openmetrics#Space_1307>) .
+bs:Space_version_1 a (ns1:Space_1126 ns1:Space_1307) .
 bs:IFCReference_version_1 ref:ifcName bs:Literal_version_1 .
 bs:IFCReference_version_1 ref:ifcGlobalID bs:Literal_version_1 .
-bs:IFCReference_version_1 a (<http://openmetrics.eu/openmetrics#ZoneRef_62124> <http://openmetrics.eu/openmetrics#ZoneRef_62229>) .
+bs:IFCReference_version_1 a (ns1:ZoneRef_62124 ns1:ZoneRef_62229) .
 bs:Terminal_Unit_version_1 ref:hasExternalReference bs:Resource_version_1 .
 bs:Terminal_Unit_version_1 brick:hasLocation bs:Storey_version_1 .
 bs:Terminal_Unit_version_1 a s4bldg:FlowTerminal .
-bs:Terminal_Unit_version_1 a (<http://openmetrics.eu/openmetrics#null_Equipment>) .
+bs:Terminal_Unit_version_1 a (ns1:null_Equipment) .
 bs:Temperature_version_1 a saref:Property .
-bs:Temperature_version_1 a (<http://openmetrics.eu/openmetrics#TempProperty>) .
+bs:Temperature_version_1 a (ns1:TempProperty) .
 bs:Temperature_Setpoint_version_1 saref:controls bs:Temperature_version_1 .
 bs:Temperature_Setpoint_version_1 ref:hasExternalReference bs:Resource_version_1 .
 bs:Temperature_Setpoint_version_1 brick:isPointOf bs:Thermostat_version_1 .
 bs:Temperature_Setpoint_version_1 a saref:Actuator .
-bs:Temperature_Setpoint_version_1 a (<http://openmetrics.eu/openmetrics#RC04N0041_TempSetpoint> <http://openmetrics.eu/openmetrics#RC04N0042_TempSetpoint>) .
+bs:Temperature_Setpoint_version_1 a (ns1:RC04N0041_TempSetpoint ns1:RC04N0042_TempSetpoint) .
 bs:Temperature_Sensor_version_1 saref:observes bs:Temperature_version_1 .
 bs:Temperature_Sensor_version_1 ref:hasExternalReference bs:Resource_version_1 .
 bs:Temperature_Sensor_version_1 brick:isPointOf bs:Thermostat_version_1 .
 bs:Temperature_Sensor_version_1 a saref:Sensor .
-bs:Temperature_Sensor_version_1 a (<http://openmetrics.eu/openmetrics#RC04N0041_TempSensingPoint> <http://openmetrics.eu/openmetrics#RC04N0042_TempSensingPoint>) .
+bs:Temperature_Sensor_version_1 a (ns1:RC04N0041_TempSensingPoint ns1:RC04N0042_TempSensingPoint) .
 bs:Storey_version_1 s4bldg:contains bs:Terminal_Unit_version_1 .
 bs:Storey_version_1 ref:hasExternalReference bs:Resource_version_1 .
 bs:Storey_version_1 brick:isLocationOf bs:Terminal_Unit_version_1 .
 bs:Storey_version_1 brick:hasPart bs:Space_version_1 .
-bs:Storey_version_1 a (<http://openmetrics.eu/openmetrics#BuildingStorey_157> <http://openmetrics.eu/openmetrics#BuildingStorey_161>) .
+bs:Storey_version_1 a (ns1:BuildingStorey_157 ns1:BuildingStorey_161) .
 bs:Run_Request_Command_version_1 ref:hasExternalReference bs:Resource_version_1 .
 bs:Run_Request_Command_version_1 brick:isPointOf bs:Thermostat_version_1 .
-bs:Run_Request_Command_version_1 a (<http://openmetrics.eu/openmetrics#RC04N0041_Run_Request_Command> <http://openmetrics.eu/openmetrics#RC04N0042_Run_Request_Command>) .
+bs:Run_Request_Command_version_1 a (ns1:RC04N0041_Run_Request_Command ns1:RC04N0042_Run_Request_Command) .
 bs:On_Off_Command_version_1 ref:hasExternalReference bs:Resource_version_1 .
 bs:On_Off_Command_version_1 brick:isPointOf bs:Thermostat_version_1 .
-bs:On_Off_Command_version_1 a (<http://openmetrics.eu/openmetrics#RC04N0041_OnOffCommand> <http://openmetrics.eu/openmetrics#RC04N0042_OnOffCommand>) .
+bs:On_Off_Command_version_1 a (ns1:RC04N0041_OnOffCommand ns1:RC04N0042_OnOffCommand) .
 bs:Occupancy_Sensor_version_1 saref:observes bs:Occupancy_version_1 .
 bs:Occupancy_Sensor_version_1 ref:hasExternalReference bs:Resource_version_1 .
 bs:Occupancy_Sensor_version_1 brick:isPointOf bs:Thermostat_version_1 .
 bs:Occupancy_Sensor_version_1 a saref:Sensor .
-bs:Occupancy_Sensor_version_1 a (<http://openmetrics.eu/openmetrics#RC04N0041_OccSensingPoint> <http://openmetrics.eu/openmetrics#RC04N0042_OccSensingPoint>) .
+bs:Occupancy_Sensor_version_1 a (ns1:RC04N0041_OccSensingPoint ns1:RC04N0042_OccSensingPoint) .
 bs:Mode_Command_version_1 ref:hasExternalReference bs:Resource_version_1 .
 bs:Mode_Command_version_1 brick:isPointOf bs:Thermostat_version_1 .
-bs:Mode_Command_version_1 a (<http://openmetrics.eu/openmetrics#RC04N0042_Mode_Command> <http://openmetrics.eu/openmetrics#RC04N0043_Mode_Command>) .
+bs:Mode_Command_version_1 a (ns1:RC04N0042_Mode_Command ns1:RC04N0043_Mode_Command) .
 bs:Min_Air_Temperature_Setpoint_version_1 ref:hasExternalReference bs:Resource_version_1 .
 bs:Min_Air_Temperature_Setpoint_version_1 brick:isPointOf bs:Thermostat_version_1 .
-bs:Min_Air_Temperature_Setpoint_version_1 a (<http://openmetrics.eu/openmetrics#RC04N0041_TempSetpointMin> <http://openmetrics.eu/openmetrics#RC04N0042_TempSetpointMin>) .
+bs:Min_Air_Temperature_Setpoint_version_1 a (ns1:RC04N0041_TempSetpointMin ns1:RC04N0042_TempSetpointMin) .
 bs:Max_Air_Temperature_Setpoint_version_1 ref:hasExternalReference bs:Resource_version_1 .
 bs:Max_Air_Temperature_Setpoint_version_1 brick:isPointOf bs:Thermostat_version_1 .
-bs:Max_Air_Temperature_Setpoint_version_1 a (<http://openmetrics.eu/openmetrics#RC04N0041_TempSetpointMax> <http://openmetrics.eu/openmetrics#RC04N0042_TempSetpointMax>) .
+bs:Max_Air_Temperature_Setpoint_version_1 a (ns1:RC04N0041_TempSetpointMax ns1:RC04N0042_TempSetpointMax) .
 bs:Lockout_Command_version_1 ref:hasExternalReference bs:Resource_version_1 .
 bs:Lockout_Command_version_1 brick:isPointOf bs:Thermostat_version_1 .
-bs:Lockout_Command_version_1 a (<http://openmetrics.eu/openmetrics#RC04N0041_Lockout_Command> <http://openmetrics.eu/openmetrics#RC04N0042_Lockout_Command>) .
+bs:Lockout_Command_version_1 a (ns1:RC04N0041_Lockout_Command ns1:RC04N0042_Lockout_Command) .
 bs:Delay_Parameter_version_1 ref:hasExternalReference bs:Resource_version_1 .
 bs:Delay_Parameter_version_1 brick:isPointOf bs:Thermostat_version_1 .
-bs:Delay_Parameter_version_1 a (<http://openmetrics.eu/openmetrics#RC04N0041_Delay_Parameter> <http://openmetrics.eu/openmetrics#RC04N0042_Delay_Parameter>) .
+bs:Delay_Parameter_version_1 a (ns1:RC04N0041_Delay_Parameter ns1:RC04N0042_Delay_Parameter) .
 bs:Occupancy_version_1 a saref:Property .
-bs:Occupancy_version_1 a (<http://openmetrics.eu/openmetrics#OccProperty>) .
+bs:Occupancy_version_1 a (ns1:OccProperty) .
 bs:Building_version_1 ref:hasExternalReference bs:IFCReference_version_1 .
 bs:Building_version_1 brick:hasPart bs:Storey_version_1 .
-bs:Building_version_1 a (<http://openmetrics.eu/openmetrics#Building_142>) .
+bs:Building_version_1 a (ns1:Building_142) .
 bs:Zone_version_1 ref:hasExternalReference bs:IFCReference_version_1 .
 bs:Zone_version_1 brick:hasPart bs:Space_version_1 .
-bs:Zone_version_1 a (<http://openmetrics.eu/openmetrics#Zone_62124> <http://openmetrics.eu/openmetrics#Zone_62229>) .
+bs:Zone_version_1 a (ns1:Zone_62124 ns1:Zone_62229) .
 bs:Site_version_1 ref:hasExternalReference bs:IFCReference_version_1 .
 bs:Site_version_1 brick:hasPart bs:Building_version_1 .
-bs:Site_version_1 a (<http://openmetrics.eu/openmetrics#Site_243>) .
+bs:Site_version_1 a (ns1:Site_243) .
 bs:Pressure_version_1 a saref:Property .
-bs:Pressure_version_1 a (<http://openmetrics.eu/openmetrics#PresProperty>) .
+bs:Pressure_version_1 a (ns1:PresProperty) .
 bs:Power_version_1 a saref:Property .
-bs:Power_version_1 a (<http://openmetrics.eu/openmetrics#PowerProperty>) .
+bs:Power_version_1 a (ns1:PowerProperty) .
 bs:Humidity_version_1 a saref:Property .
-bs:Humidity_version_1 a (<http://openmetrics.eu/openmetrics#HumProperty>) .
+bs:Humidity_version_1 a (ns1:HumProperty) .
 bs:Energy_version_1 a saref:Property .
-bs:Energy_version_1 a (<http://openmetrics.eu/openmetrics#EnergyProperty>) .
+bs:Energy_version_1 a (ns1:EnergyProperty) .
