@@ -2729,9 +2729,9 @@ bs:QuantifiableObservableProperty_version_2 a s223:QuantifiableObservablePropert
         unit:UNITLESS .
 
 bs:BACnetExternalReference_version_1 a s223:BACnetExternalReference ;
-    bacnet:description bs:Literal_version_3 ;
+    bacnet:description bs:Literal_version_1 ;
     bacnet:device-identifier bs:BACnetDevice_version_1 ;
-    bacnet:object-identifier bs:Literal_version_1 ;
+    bacnet:object-identifier bs:Literal_version_3 ;
     bacnet:object-name bs:Literal_version_2 ;
     bacnet:object-type bs:Literal_version_4 .
 

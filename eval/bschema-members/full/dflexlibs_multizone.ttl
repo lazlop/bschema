@@ -87,92 +87,90 @@ bs:Hot_Water_Pump_version_1 a rdf:Seq ;
     rdfs:member <urn:bldg/hwd_pump> .
 
 bs:Literal_version_1 a rdf:Seq ;
-    rdfs:member "hvac_oveZonSupCor_TZonCooSet_u"^^xsd:string,
-        "hvac_oveZonSupEas_TZonCooSet_u"^^xsd:string,
-        "hvac_oveZonSupNor_TZonCooSet_u"^^xsd:string,
-        "hvac_oveZonSupSou_TZonCooSet_u"^^xsd:string,
-        "hvac_oveZonSupWes_TZonCooSet_u"^^xsd:string .
-
-bs:Literal_version_10 a rdf:Seq ;
-    rdfs:member "data.db"^^xsd:string .
-
-bs:Literal_version_11 a rdf:Seq ;
-    rdfs:member "baseline_tempData_dataset"^^xsd:string,
-        "flexible_tempData_dataset"^^xsd:string .
-
-bs:Literal_version_12 a rdf:Seq ;
-    rdfs:member "data.db"^^xsd:string .
-
-bs:Literal_version_13 a rdf:Seq ;
-    rdfs:member "data.db"^^xsd:string .
-
-bs:Literal_version_14 a rdf:Seq ;
-    rdfs:member "data.db"^^xsd:string .
-
-bs:Literal_version_15 a rdf:Seq ;
-    rdfs:member "hvac_oveZonActCor_yDam_u"^^xsd:string,
-        "hvac_oveZonActEas_yDam_u"^^xsd:string,
-        "hvac_oveZonActNor_yDam_u"^^xsd:string,
-        "hvac_oveZonActSou_yDam_u"^^xsd:string,
-        "hvac_oveZonActWes_yDam_u"^^xsd:string .
-
-bs:Literal_version_16 a rdf:Seq ;
     rdfs:member "heaPum_reaPPumDis_y"^^xsd:string .
 
-bs:Literal_version_17 a rdf:Seq ;
-    rdfs:member "scheduleData_dataset"^^xsd:string .
-
-bs:Literal_version_18 a rdf:Seq ;
-    rdfs:member "chi_reaPChi_y"^^xsd:string .
-
-bs:Literal_version_19 a rdf:Seq ;
-    rdfs:member "hvac_oveZonActCor_yReaHea_u"^^xsd:string,
-        "hvac_oveZonActEas_yReaHea_u"^^xsd:string,
-        "hvac_oveZonActNor_yReaHea_u"^^xsd:string,
-        "hvac_oveZonActSou_yReaHea_u"^^xsd:string,
-        "hvac_oveZonActWes_yReaHea_u"^^xsd:string .
-
-bs:Literal_version_2 a rdf:Seq ;
-    rdfs:member "data.db"^^xsd:string .
-
-bs:Literal_version_20 a rdf:Seq ;
-    rdfs:member "baseline_tempData_dataset"^^xsd:string,
-        "flexible_tempData_dataset"^^xsd:string .
-
-bs:Literal_version_21 a rdf:Seq ;
+bs:Literal_version_10 a rdf:Seq ;
     rdfs:member "hvac_reaZonCor_TZon_y"^^xsd:string,
         "hvac_reaZonEas_TZon_y"^^xsd:string,
         "hvac_reaZonNor_TZon_y"^^xsd:string,
         "hvac_reaZonSou_TZon_y"^^xsd:string,
         "hvac_reaZonWes_TZon_y"^^xsd:string .
 
-bs:Literal_version_22 a rdf:Seq ;
+bs:Literal_version_11 a rdf:Seq ;
+    rdfs:member "hvac_oveZonActCor_yDam_u"^^xsd:string,
+        "hvac_oveZonActEas_yDam_u"^^xsd:string,
+        "hvac_oveZonActNor_yDam_u"^^xsd:string,
+        "hvac_oveZonActSou_yDam_u"^^xsd:string,
+        "hvac_oveZonActWes_yDam_u"^^xsd:string .
+
+bs:Literal_version_12 a rdf:Seq ;
     rdfs:member "UpperSetp[cor]"^^xsd:string,
         "UpperSetp[eas]"^^xsd:string,
         "UpperSetp[nor]"^^xsd:string,
         "UpperSetp[sou]"^^xsd:string,
         "UpperSetp[wes]"^^xsd:string .
 
-bs:Literal_version_23 a rdf:Seq ;
+bs:Literal_version_13 a rdf:Seq ;
+    rdfs:member "scheduleData_dataset"^^xsd:string .
+
+bs:Literal_version_14 a rdf:Seq ;
+    rdfs:member "baseline_dataset"^^xsd:string,
+        "flexible_dataset"^^xsd:string .
+
+bs:Literal_version_15 a rdf:Seq ;
+    rdfs:member "hvac_reaAhu_V_flow_sup_y"^^xsd:string .
+
+bs:Literal_version_16 a rdf:Seq ;
+    rdfs:member "baseline_dataset"^^xsd:string,
+        "flexible_dataset"^^xsd:string .
+
+bs:Literal_version_17 a rdf:Seq ;
+    rdfs:member "data.db"^^xsd:string .
+
+bs:Literal_version_18 a rdf:Seq ;
     rdfs:member "baseline_tempData_dataset"^^xsd:string,
         "flexible_tempData_dataset"^^xsd:string .
 
-bs:Literal_version_24 a rdf:Seq ;
-    rdfs:member "hvac_oveZonSupCor_TZonCooSet_u"^^xsd:string,
-        "hvac_oveZonSupEas_TZonCooSet_u"^^xsd:string,
-        "hvac_oveZonSupNor_TZonCooSet_u"^^xsd:string,
-        "hvac_oveZonSupSou_TZonCooSet_u"^^xsd:string,
-        "hvac_oveZonSupWes_TZonCooSet_u"^^xsd:string .
+bs:Literal_version_19 a rdf:Seq ;
+    rdfs:member "baseline_tempData_dataset"^^xsd:string,
+        "flexible_tempData_dataset"^^xsd:string .
 
-bs:Literal_version_25 a rdf:Seq ;
-    rdfs:member "chi_reaTRet_y"^^xsd:string .
+bs:Literal_version_2 a rdf:Seq ;
+    rdfs:member "data.db"^^xsd:string .
 
-bs:Literal_version_26 a rdf:Seq ;
+bs:Literal_version_20 a rdf:Seq ;
     rdfs:member "LowerSetp[cor]"^^xsd:string,
         "LowerSetp[eas]"^^xsd:string,
         "LowerSetp[nor]"^^xsd:string,
         "LowerSetp[sou]"^^xsd:string,
         "LowerSetp[wes]"^^xsd:string .
+
+bs:Literal_version_21 a rdf:Seq ;
+    rdfs:member "chi_reaPPumDis_y"^^xsd:string .
+
+bs:Literal_version_22 a rdf:Seq ;
+    rdfs:member "baseline_dataset"^^xsd:string,
+        "flexible_dataset"^^xsd:string .
+
+bs:Literal_version_23 a rdf:Seq ;
+    rdfs:member "data.db"^^xsd:string .
+
+bs:Literal_version_24 a rdf:Seq ;
+    rdfs:member "hvac_reaAhu_dp_sup_y"^^xsd:string .
+
+bs:Literal_version_25 a rdf:Seq ;
+    rdfs:member "Occupancy[cor]"^^xsd:string,
+        "Occupancy[eas]"^^xsd:string,
+        "Occupancy[nor]"^^xsd:string,
+        "Occupancy[sou]"^^xsd:string,
+        "Occupancy[wes]"^^xsd:string .
+
+bs:Literal_version_26 a rdf:Seq ;
+    rdfs:member "hvac_oveZonSupCor_TZonHeaSet_u"^^xsd:string,
+        "hvac_oveZonSupEas_TZonHeaSet_u"^^xsd:string,
+        "hvac_oveZonSupNor_TZonHeaSet_u"^^xsd:string,
+        "hvac_oveZonSupSou_TZonHeaSet_u"^^xsd:string,
+        "hvac_oveZonSupWes_TZonHeaSet_u"^^xsd:string .
 
 bs:Literal_version_27 a rdf:Seq ;
     rdfs:member "hvac_reaZonCor_CO2Zon_y"^^xsd:string,
@@ -182,40 +180,46 @@ bs:Literal_version_27 a rdf:Seq ;
         "hvac_reaZonWes_CO2Zon_y"^^xsd:string .
 
 bs:Literal_version_28 a rdf:Seq ;
-    rdfs:member "hvac_reaAhu_PFanSup_y"^^xsd:string .
-
-bs:Literal_version_29 a rdf:Seq ;
     rdfs:member "hvac_cor_zone"^^xsd:string,
         "hvac_eas_zone"^^xsd:string,
         "hvac_nor_zone"^^xsd:string,
         "hvac_sou_zone"^^xsd:string,
         "hvac_wes_zone"^^xsd:string .
 
+bs:Literal_version_29 a rdf:Seq ;
+    rdfs:member "baseline_dataset"^^xsd:string,
+        "flexible_dataset"^^xsd:string .
+
 bs:Literal_version_3 a rdf:Seq ;
-    rdfs:member "UpperSetp[cor]"^^xsd:string,
-        "UpperSetp[eas]"^^xsd:string,
-        "UpperSetp[nor]"^^xsd:string,
-        "UpperSetp[sou]"^^xsd:string,
-        "UpperSetp[wes]"^^xsd:string .
+    rdfs:member "hvac_oveZonSupCor_TZonCooSet_u"^^xsd:string,
+        "hvac_oveZonSupEas_TZonCooSet_u"^^xsd:string,
+        "hvac_oveZonSupNor_TZonCooSet_u"^^xsd:string,
+        "hvac_oveZonSupSou_TZonCooSet_u"^^xsd:string,
+        "hvac_oveZonSupWes_TZonCooSet_u"^^xsd:string .
 
 bs:Literal_version_30 a rdf:Seq ;
-    rdfs:member "hvac_reaAhu_V_flow_ret_y"^^xsd:string .
-
-bs:Literal_version_31 a rdf:Seq ;
-    rdfs:member "scheduleData_dataset"^^xsd:string .
-
-bs:Literal_version_32 a rdf:Seq ;
-    rdfs:member "chi_reaPPumDis_y"^^xsd:string .
-
-bs:Literal_version_33 a rdf:Seq ;
     rdfs:member "Occupancy[cor]"^^xsd:string,
         "Occupancy[eas]"^^xsd:string,
         "Occupancy[nor]"^^xsd:string,
         "Occupancy[sou]"^^xsd:string,
         "Occupancy[wes]"^^xsd:string .
 
-bs:Literal_version_34 a rdf:Seq ;
+bs:Literal_version_31 a rdf:Seq ;
+    rdfs:member "scheduleData_dataset"^^xsd:string .
+
+bs:Literal_version_32 a rdf:Seq ;
     rdfs:member "data.db"^^xsd:string .
+
+bs:Literal_version_33 a rdf:Seq ;
+    rdfs:member "hvac_reaZonCor_V_flow_y"^^xsd:string,
+        "hvac_reaZonEas_V_flow_y"^^xsd:string,
+        "hvac_reaZonNor_V_flow_y"^^xsd:string,
+        "hvac_reaZonSou_V_flow_y"^^xsd:string,
+        "hvac_reaZonWes_V_flow_y"^^xsd:string .
+
+bs:Literal_version_34 a rdf:Seq ;
+    rdfs:member "baseline_tempData_dataset"^^xsd:string,
+        "flexible_tempData_dataset"^^xsd:string .
 
 bs:Literal_version_35 a rdf:Seq ;
     rdfs:member "hvac_reaZonCor_TSup_y"^^xsd:string,
@@ -225,152 +229,148 @@ bs:Literal_version_35 a rdf:Seq ;
         "hvac_reaZonWes_TSup_y"^^xsd:string .
 
 bs:Literal_version_36 a rdf:Seq ;
-    rdfs:member "data.db"^^xsd:string .
+    rdfs:member "hvac_oveZonActCor_yReaHea_u"^^xsd:string,
+        "hvac_oveZonActEas_yReaHea_u"^^xsd:string,
+        "hvac_oveZonActNor_yReaHea_u"^^xsd:string,
+        "hvac_oveZonActSou_yReaHea_u"^^xsd:string,
+        "hvac_oveZonActWes_yReaHea_u"^^xsd:string .
 
 bs:Literal_version_37 a rdf:Seq ;
-    rdfs:member "hvac_reaAhu_V_flow_sup_y"^^xsd:string .
-
-bs:Literal_version_38 a rdf:Seq ;
-    rdfs:member "hvac_reaAhu_dp_sup_y"^^xsd:string .
-
-bs:Literal_version_39 a rdf:Seq ;
-    rdfs:member "hvac_reaZonCor_V_flow_y"^^xsd:string,
-        "hvac_reaZonEas_V_flow_y"^^xsd:string,
-        "hvac_reaZonNor_V_flow_y"^^xsd:string,
-        "hvac_reaZonSou_V_flow_y"^^xsd:string,
-        "hvac_reaZonWes_V_flow_y"^^xsd:string .
-
-bs:Literal_version_4 a rdf:Seq ;
-    rdfs:member "data.db"^^xsd:string .
-
-bs:Literal_version_40 a rdf:Seq ;
-    rdfs:member "baseline_dataset"^^xsd:string,
-        "flexible_dataset"^^xsd:string .
-
-bs:Literal_version_41 a rdf:Seq ;
-    rdfs:member "baseline_dataset"^^xsd:string,
-        "flexible_dataset"^^xsd:string .
-
-bs:Literal_version_42 a rdf:Seq ;
-    rdfs:member "Occupancy[cor]"^^xsd:string,
-        "Occupancy[eas]"^^xsd:string,
-        "Occupancy[nor]"^^xsd:string,
-        "Occupancy[sou]"^^xsd:string,
-        "Occupancy[wes]"^^xsd:string .
-
-bs:Literal_version_43 a rdf:Seq ;
-    rdfs:member "hvac_reaZonCor_TZon_y"^^xsd:string,
-        "hvac_reaZonEas_TZon_y"^^xsd:string,
-        "hvac_reaZonNor_TZon_y"^^xsd:string,
-        "hvac_reaZonSou_TZon_y"^^xsd:string,
-        "hvac_reaZonWes_TZon_y"^^xsd:string .
-
-bs:Literal_version_44 a rdf:Seq ;
-    rdfs:member "hvac_oveZonSupCor_TZonHeaSet_u"^^xsd:string,
-        "hvac_oveZonSupEas_TZonHeaSet_u"^^xsd:string,
-        "hvac_oveZonSupNor_TZonHeaSet_u"^^xsd:string,
-        "hvac_oveZonSupSou_TZonHeaSet_u"^^xsd:string,
-        "hvac_oveZonSupWes_TZonHeaSet_u"^^xsd:string .
-
-bs:Literal_version_45 a rdf:Seq ;
-    rdfs:member "chi_reaPPumDis_y"^^xsd:string .
-
-bs:Literal_version_46 a rdf:Seq ;
-    rdfs:member "data.db"^^xsd:string .
-
-bs:Literal_version_47 a rdf:Seq ;
-    rdfs:member "baseline_dataset"^^xsd:string,
-        "flexible_dataset"^^xsd:string .
-
-bs:Literal_version_48 a rdf:Seq ;
-    rdfs:member "heaPum_reaPHeaPum_y"^^xsd:string .
-
-bs:Literal_version_49 a rdf:Seq ;
-    rdfs:member "hvac_reaAhu_TMix_y"^^xsd:string .
-
-bs:Literal_version_5 a rdf:Seq ;
-    rdfs:member "hvac_oveZonSupCor_TZonHeaSet_u"^^xsd:string,
-        "hvac_oveZonSupEas_TZonHeaSet_u"^^xsd:string,
-        "hvac_oveZonSupNor_TZonHeaSet_u"^^xsd:string,
-        "hvac_oveZonSupSou_TZonHeaSet_u"^^xsd:string,
-        "hvac_oveZonSupWes_TZonHeaSet_u"^^xsd:string .
-
-bs:Literal_version_50 a rdf:Seq ;
-    rdfs:member "baseline_dataset"^^xsd:string,
-        "flexible_dataset"^^xsd:string .
-
-bs:Literal_version_51 a rdf:Seq ;
-    rdfs:member "data.db"^^xsd:string .
-
-bs:Literal_version_52 a rdf:Seq ;
-    rdfs:member "baseline_dataset"^^xsd:string,
-        "flexible_dataset"^^xsd:string .
-
-bs:Literal_version_53 a rdf:Seq ;
-    rdfs:member "hvac_reaAhu_PFanSup_y"^^xsd:string .
-
-bs:Literal_version_54 a rdf:Seq ;
-    rdfs:member "hvac_oveAhu_TSupSet_u"^^xsd:string .
-
-bs:Literal_version_55 a rdf:Seq ;
-    rdfs:member "hvac_reaAhu_PPumHea_y"^^xsd:string .
-
-bs:Literal_version_56 a rdf:Seq ;
-    rdfs:member "heaPum_reaPPumDis_y"^^xsd:string .
-
-bs:Literal_version_57 a rdf:Seq ;
-    rdfs:member "hvac_reaAhu_PPumCoo_y"^^xsd:string .
-
-bs:Literal_version_58 a rdf:Seq ;
-    rdfs:member "chi_reaPChi_y"^^xsd:string .
-
-bs:Literal_version_59 a rdf:Seq ;
-    rdfs:member "scheduleData_dataset"^^xsd:string .
-
-bs:Literal_version_6 a rdf:Seq ;
-    rdfs:member "data.db"^^xsd:string .
-
-bs:Literal_version_60 a rdf:Seq ;
-    rdfs:member "baseline_dataset"^^xsd:string,
-        "flexible_dataset"^^xsd:string .
-
-bs:Literal_version_61 a rdf:Seq ;
-    rdfs:member "hvac_reaAhu_TSup_y"^^xsd:string .
-
-bs:Literal_version_62 a rdf:Seq ;
-    rdfs:member "data.db"^^xsd:string .
-
-bs:Literal_version_63 a rdf:Seq ;
-    rdfs:member "baseline_dataset"^^xsd:string,
-        "flexible_dataset"^^xsd:string .
-
-bs:Literal_version_64 a rdf:Seq ;
-    rdfs:member "hvac_reaAhu_PPumHea_y"^^xsd:string .
-
-bs:Literal_version_65 a rdf:Seq ;
-    rdfs:member "1662.66"^^xsd:float .
-
-bs:Literal_version_66 a rdf:Seq ;
-    rdfs:member "data.db"^^xsd:string .
-
-bs:Literal_version_67 a rdf:Seq ;
-    rdfs:member "heaPum_reaPHeaPum_y"^^xsd:string .
-
-bs:Literal_version_68 a rdf:Seq ;
-    rdfs:member "chi_reaTSup_y"^^xsd:string .
-
-bs:Literal_version_7 a rdf:Seq ;
-    rdfs:member "hvac_reaAhu_PPumCoo_y"^^xsd:string .
-
-bs:Literal_version_8 a rdf:Seq ;
     rdfs:member "LowerSetp[cor]"^^xsd:string,
         "LowerSetp[eas]"^^xsd:string,
         "LowerSetp[nor]"^^xsd:string,
         "LowerSetp[sou]"^^xsd:string,
         "LowerSetp[wes]"^^xsd:string .
 
-bs:Literal_version_9 a rdf:Seq ;
+bs:Literal_version_38 a rdf:Seq ;
+    rdfs:member "scheduleData_dataset"^^xsd:string .
+
+bs:Literal_version_39 a rdf:Seq ;
+    rdfs:member "heaPum_reaPPumDis_y"^^xsd:string .
+
+bs:Literal_version_4 a rdf:Seq ;
+    rdfs:member "data.db"^^xsd:string .
+
+bs:Literal_version_40 a rdf:Seq ;
+    rdfs:member "hvac_reaAhu_PPumHea_y"^^xsd:string .
+
+bs:Literal_version_41 a rdf:Seq ;
+    rdfs:member "chi_reaPChi_y"^^xsd:string .
+
+bs:Literal_version_42 a rdf:Seq ;
+    rdfs:member "data.db"^^xsd:string .
+
+bs:Literal_version_43 a rdf:Seq ;
+    rdfs:member "heaPum_reaPHeaPum_y"^^xsd:string .
+
+bs:Literal_version_44 a rdf:Seq ;
+    rdfs:member "hvac_reaAhu_PFanSup_y"^^xsd:string .
+
+bs:Literal_version_45 a rdf:Seq ;
+    rdfs:member "UpperSetp[cor]"^^xsd:string,
+        "UpperSetp[eas]"^^xsd:string,
+        "UpperSetp[nor]"^^xsd:string,
+        "UpperSetp[sou]"^^xsd:string,
+        "UpperSetp[wes]"^^xsd:string .
+
+bs:Literal_version_46 a rdf:Seq ;
+    rdfs:member "data.db"^^xsd:string .
+
+bs:Literal_version_47 a rdf:Seq ;
+    rdfs:member "hvac_reaAhu_PPumCoo_y"^^xsd:string .
+
+bs:Literal_version_48 a rdf:Seq ;
+    rdfs:member "hvac_oveZonSupCor_TZonHeaSet_u"^^xsd:string,
+        "hvac_oveZonSupEas_TZonHeaSet_u"^^xsd:string,
+        "hvac_oveZonSupNor_TZonHeaSet_u"^^xsd:string,
+        "hvac_oveZonSupSou_TZonHeaSet_u"^^xsd:string,
+        "hvac_oveZonSupWes_TZonHeaSet_u"^^xsd:string .
+
+bs:Literal_version_49 a rdf:Seq ;
+    rdfs:member "data.db"^^xsd:string .
+
+bs:Literal_version_5 a rdf:Seq ;
+    rdfs:member "data.db"^^xsd:string .
+
+bs:Literal_version_50 a rdf:Seq ;
+    rdfs:member "hvac_reaAhu_TSup_y"^^xsd:string .
+
+bs:Literal_version_51 a rdf:Seq ;
+    rdfs:member "hvac_reaAhu_PPumHea_y"^^xsd:string .
+
+bs:Literal_version_52 a rdf:Seq ;
+    rdfs:member "chi_reaTRet_y"^^xsd:string .
+
+bs:Literal_version_53 a rdf:Seq ;
+    rdfs:member "hvac_oveAhu_TSupSet_u"^^xsd:string .
+
+bs:Literal_version_54 a rdf:Seq ;
+    rdfs:member "hvac_reaAhu_PPumCoo_y"^^xsd:string .
+
+bs:Literal_version_55 a rdf:Seq ;
+    rdfs:member "data.db"^^xsd:string .
+
+bs:Literal_version_56 a rdf:Seq ;
+    rdfs:member "baseline_dataset"^^xsd:string,
+        "flexible_dataset"^^xsd:string .
+
+bs:Literal_version_57 a rdf:Seq ;
+    rdfs:member "heaPum_reaPHeaPum_y"^^xsd:string .
+
+bs:Literal_version_58 a rdf:Seq ;
+    rdfs:member "hvac_reaAhu_TMix_y"^^xsd:string .
+
+bs:Literal_version_59 a rdf:Seq ;
+    rdfs:member "data.db"^^xsd:string .
+
+bs:Literal_version_6 a rdf:Seq ;
+    rdfs:member "data.db"^^xsd:string .
+
+bs:Literal_version_60 a rdf:Seq ;
+    rdfs:member "chi_reaPChi_y"^^xsd:string .
+
+bs:Literal_version_61 a rdf:Seq ;
+    rdfs:member "baseline_dataset"^^xsd:string,
+        "flexible_dataset"^^xsd:string .
+
+bs:Literal_version_62 a rdf:Seq ;
     rdfs:member "hvac_reaAhu_TRet_y"^^xsd:string .
+
+bs:Literal_version_63 a rdf:Seq ;
+    rdfs:member "hvac_reaAhu_V_flow_ret_y"^^xsd:string .
+
+bs:Literal_version_64 a rdf:Seq ;
+    rdfs:member "baseline_dataset"^^xsd:string,
+        "flexible_dataset"^^xsd:string .
+
+bs:Literal_version_65 a rdf:Seq ;
+    rdfs:member "chi_reaTSup_y"^^xsd:string .
+
+bs:Literal_version_66 a rdf:Seq ;
+    rdfs:member "1662.66"^^xsd:float .
+
+bs:Literal_version_67 a rdf:Seq ;
+    rdfs:member "chi_reaPPumDis_y"^^xsd:string .
+
+bs:Literal_version_68 a rdf:Seq ;
+    rdfs:member "hvac_reaAhu_PFanSup_y"^^xsd:string .
+
+bs:Literal_version_7 a rdf:Seq ;
+    rdfs:member "hvac_oveZonSupCor_TZonCooSet_u"^^xsd:string,
+        "hvac_oveZonSupEas_TZonCooSet_u"^^xsd:string,
+        "hvac_oveZonSupNor_TZonCooSet_u"^^xsd:string,
+        "hvac_oveZonSupSou_TZonCooSet_u"^^xsd:string,
+        "hvac_oveZonSupWes_TZonCooSet_u"^^xsd:string .
+
+bs:Literal_version_8 a rdf:Seq ;
+    rdfs:member "hvac_reaZonCor_TZon_y"^^xsd:string,
+        "hvac_reaZonEas_TZon_y"^^xsd:string,
+        "hvac_reaZonNor_TZon_y"^^xsd:string,
+        "hvac_reaZonSou_TZon_y"^^xsd:string,
+        "hvac_reaZonWes_TZon_y"^^xsd:string .
+
+bs:Literal_version_9 a rdf:Seq ;
+    rdfs:member "data.db"^^xsd:string .
 
 bs:Max_Air_Temperature_Setpoint_version_1 a rdf:Seq ;
     rdfs:member <urn:bldg/UpperSetp_cor>,
@@ -403,132 +403,132 @@ bs:Pump_version_2 a rdf:Seq ;
     rdfs:member <urn:bldg/heat_pump> .
 
 bs:Resource_version_1 a rdf:Seq ;
-    rdfs:member <urn:bschema-rs:skolem:a1195248adb2cc00dbf30fa3af4036b3> .
+    rdfs:member [ ],
+        [ ],
+        [ ],
+        [ ],
+        [ ] .
 
 bs:Resource_version_10 a rdf:Seq ;
-    rdfs:member <urn:bschema-rs:skolem:b74fac298bcf435c3d0f395b4b916ff7> .
+    rdfs:member [ ],
+        [ ],
+        [ ],
+        [ ],
+        [ ] .
 
 bs:Resource_version_11 a rdf:Seq ;
-    rdfs:member <urn:bschema-rs:skolem:b7fead6013898a36f200cdc8cf92758e> .
+    rdfs:member [ ],
+        [ ],
+        [ ],
+        [ ],
+        [ ] .
 
 bs:Resource_version_12 a rdf:Seq ;
-    rdfs:member <urn:bschema-rs:skolem:b8413afce6fe03b3651974407bb082d3>,
-        <urn:bschema-rs:skolem:bd4f6414bdf9c0c6fac2d8e9e5683da>,
-        <urn:bschema-rs:skolem:be78daa247320d9bce42d58ac84b5240>,
-        <urn:bschema-rs:skolem:da897324ecca53c71268bf5d1a699b5e>,
-        <urn:bschema-rs:skolem:e6a52c9496c3012e76548bbe7b613249> .
+    rdfs:member [ ] .
 
 bs:Resource_version_13 a rdf:Seq ;
-    rdfs:member <urn:bschema-rs:skolem:b8f36e835f987b645d6ea199fe0b3a9d>,
-        <urn:bschema-rs:skolem:bf99d3f044295b3b68870f01797dc1db>,
-        <urn:bschema-rs:skolem:bfab091fccb36221e640598aa503bc41>,
-        <urn:bschema-rs:skolem:dd8f49b52b002514c417542266e55333>,
-        <urn:bschema-rs:skolem:ef71fb7a8290fe4d2e29d7a2951096b8> .
+    rdfs:member [ ] .
 
 bs:Resource_version_14 a rdf:Seq ;
-    rdfs:member <urn:bschema-rs:skolem:bf5886e4ce2250fde1709f7838089786> .
+    rdfs:member [ ],
+        [ ],
+        [ ],
+        [ ],
+        [ ] .
 
 bs:Resource_version_15 a rdf:Seq ;
-    rdfs:member <urn:bschema-rs:skolem:bf677c41874e97d3caffb78aa20a186>,
-        <urn:bschema-rs:skolem:cc9987b7a31e12554389c64667bf5220>,
-        <urn:bschema-rs:skolem:cd4bcce907c16efc303849f473943d12>,
-        <urn:bschema-rs:skolem:ce4dca77a0828927bdfd354ff437f294>,
-        <urn:bschema-rs:skolem:eccafaaf698afde5344ef4d9a9840939> .
+    rdfs:member [ ] .
 
 bs:Resource_version_16 a rdf:Seq ;
-    rdfs:member <urn:bschema-rs:skolem:c14b8d6e926f5695c4eeb6f8aeee165f> .
+    rdfs:member [ ],
+        [ ],
+        [ ],
+        [ ],
+        [ ] .
 
 bs:Resource_version_17 a rdf:Seq ;
-    rdfs:member <urn:bschema-rs:skolem:c5684919169c0d9765e4676ff201bda2> .
+    rdfs:member [ ],
+        [ ],
+        [ ],
+        [ ],
+        [ ] .
 
 bs:Resource_version_18 a rdf:Seq ;
-    rdfs:member <urn:bschema-rs:skolem:c6ddd3929b186d7a9a02e0fb3043e15e> .
+    rdfs:member [ ] .
 
 bs:Resource_version_19 a rdf:Seq ;
-    rdfs:member <urn:bschema-rs:skolem:cb5be56f61776a95015552fe45cb4202> .
+    rdfs:member [ ],
+        [ ],
+        [ ],
+        [ ],
+        [ ] .
 
 bs:Resource_version_2 a rdf:Seq ;
-    rdfs:member <urn:bschema-rs:skolem:a5dd5f1cf000437b648080458a522e7f>,
-        <urn:bschema-rs:skolem:ac5a2df3576d0eba0802dd62cc417329>,
-        <urn:bschema-rs:skolem:ca3e2935d0eb5c404150c690841f5d50>,
-        <urn:bschema-rs:skolem:e6f4e3f17822194ab4f6cce573981302>,
-        <urn:bschema-rs:skolem:e821f3668261dbd9ebea1ecfc7b05012> .
+    rdfs:member [ ],
+        [ ],
+        [ ],
+        [ ],
+        [ ] .
 
 bs:Resource_version_20 a rdf:Seq ;
-    rdfs:member <urn:bschema-rs:skolem:cf4a5f79a962a6f4b273fe7b201edcda> .
+    rdfs:member [ ] .
 
 bs:Resource_version_21 a rdf:Seq ;
-    rdfs:member <urn:bschema-rs:skolem:d337e6764da26623a981b87681149ea9>,
-        <urn:bschema-rs:skolem:d6a6559af4b9ef856d2d325e5ef0b072>,
-        <urn:bschema-rs:skolem:ee9c2c39e19b0f89dfed30abb9073b69>,
-        <urn:bschema-rs:skolem:f0068ed551419ca9b562467d190d671d>,
-        <urn:bschema-rs:skolem:f86c3b571f2ff21ff823163dae2b4fb0> .
+    rdfs:member [ ] .
 
 bs:Resource_version_22 a rdf:Seq ;
-    rdfs:member <urn:bschema-rs:skolem:d527cee777a89ccda7b09d81975fd7bd> .
+    rdfs:member [ ] .
 
 bs:Resource_version_23 a rdf:Seq ;
-    rdfs:member <urn:bschema-rs:skolem:db83afcb280e2d281029c7ad726ea75a> .
+    rdfs:member [ ],
+        [ ],
+        [ ],
+        [ ],
+        [ ] .
 
 bs:Resource_version_24 a rdf:Seq ;
-    rdfs:member <urn:bschema-rs:skolem:e20292aef62de945933cde9ed5373672> .
+    rdfs:member [ ] .
 
 bs:Resource_version_25 a rdf:Seq ;
-    rdfs:member <urn:bschema-rs:skolem:f2bb41ab0d132aaf924046111ad8a8fa> .
+    rdfs:member [ ] .
 
 bs:Resource_version_26 a rdf:Seq ;
-    rdfs:member <urn:bschema-rs:skolem:f6c957e02cfb81105fec585dc211d1f> .
+    rdfs:member [ ] .
 
 bs:Resource_version_27 a rdf:Seq ;
-    rdfs:member <urn:bschema-rs:skolem:ff8dc482d330d23b79ac887224ffea8e> .
+    rdfs:member [ ] .
 
 bs:Resource_version_28 a rdf:Seq ;
-    rdfs:member <urn:bschema-rs:skolem:ffec34c6e8eee1bb45439bad6633b8d1> .
+    rdfs:member [ ] .
 
 bs:Resource_version_3 a rdf:Seq ;
-    rdfs:member <urn:bschema-rs:skolem:a674094aaae373cb3640e583396c5119>,
-        <urn:bschema-rs:skolem:c1dd21ee364a7abc0a5fd16c8dd82e7e>,
-        <urn:bschema-rs:skolem:cb8791020493065f182eb9ab35cb4e6c>,
-        <urn:bschema-rs:skolem:ccb296d2dff79797ee698b9cc8745319>,
-        <urn:bschema-rs:skolem:dcdd37d879b32620283c56c607b0ded4> .
+    rdfs:member [ ] .
 
 bs:Resource_version_4 a rdf:Seq ;
-    rdfs:member <urn:bschema-rs:skolem:a7c2c6210cc71a4365f15262c771a468>,
-        <urn:bschema-rs:skolem:b25be9237eeeec3ce608daafc2a69b6b>,
-        <urn:bschema-rs:skolem:c678e3dfb459907eeae5e9d1a8a4f016>,
-        <urn:bschema-rs:skolem:d8121f927adca59e8e59d44d8267eb87>,
-        <urn:bschema-rs:skolem:ea2b7d3ef4cc9ef7f94b7659bfb910e8> .
+    rdfs:member [ ] .
 
 bs:Resource_version_5 a rdf:Seq ;
-    rdfs:member <urn:bschema-rs:skolem:afa4a278453015f11778357cb7945a3b> .
+    rdfs:member [ ],
+        [ ],
+        [ ],
+        [ ],
+        [ ] .
 
 bs:Resource_version_6 a rdf:Seq ;
-    rdfs:member <urn:bschema-rs:skolem:b03ff616d5a1b70cf0d0673cd25bcea8>,
-        <urn:bschema-rs:skolem:be007ced3a9afb9ab5d16d2a668389>,
-        <urn:bschema-rs:skolem:e9806bc7ad9e484fb286a6ee9fef6de7>,
-        <urn:bschema-rs:skolem:f4d296c6eeb583056403508d143695f2>,
-        <urn:bschema-rs:skolem:f922d1d155789a5bd57c4d05c76834c3> .
+    rdfs:member [ ],
+        [ ],
+        [ ],
+        [ ],
+        [ ] .
 
 bs:Resource_version_7 a rdf:Seq ;
-    rdfs:member <urn:bschema-rs:skolem:b1362646785072b51bba0953775e3cb9>,
-        <urn:bschema-rs:skolem:b71bd01ab9b9a2d7e27a1c45e6ba345c>,
-        <urn:bschema-rs:skolem:bae8fc33f7030b7d2300608e6876773f>,
-        <urn:bschema-rs:skolem:d8371aad8eea4707113b4164abfc99ea>,
-        <urn:bschema-rs:skolem:f4c9bedb46da1b559fe4782314bc04b3> .
+    rdfs:member [ ] .
 
 bs:Resource_version_8 a rdf:Seq ;
-    rdfs:member <urn:bschema-rs:skolem:b49043a44c93c749cfd0fbcb59761641>,
-        <urn:bschema-rs:skolem:bcdf5d3ae529e9d5b1f9bce6467935a9>,
-        <urn:bschema-rs:skolem:ec6d3863d796e2fbf11828875fb9076d>,
-        <urn:bschema-rs:skolem:ece2b4bae20c3857c8ad952523f72f2>,
-        <urn:bschema-rs:skolem:f3f4b69c86f013652705ad579c253312> .
+    rdfs:member [ ] .
 
 bs:Resource_version_9 a rdf:Seq ;
-    rdfs:member <urn:bschema-rs:skolem:b506d2c1f85ef4f8f450ff3b825cba11>,
-        <urn:bschema-rs:skolem:c5154b389f6511715c1edead3851bde8>,
-        <urn:bschema-rs:skolem:d582f25e01dd03375270d18c47da007b>,
-        <urn:bschema-rs:skolem:ea16fa91d9c677c8ea7fbf607a723f65>,
-        <urn:bschema-rs:skolem:fa3f99e7f60956d743e70968ff035ac7> .
+    rdfs:member [ ] .
 
 bs:Return_Air_Flow_Sensor_version_1 a rdf:Seq ;
     rdfs:member <urn:bldg/hvac_reaAhu_V_flow_ret_y> .
@@ -549,89 +549,89 @@ bs:Supply_Fan_version_1 a rdf:Seq ;
     rdfs:member <urn:bldg/hvac_fanSup> .
 
 bs:TimeseriesReference_version_1 a rdf:Seq ;
-    rdfs:member <urn:bschema-rs:skolem:a36712c493840b31d22c756c040f5fba>,
-        <urn:bschema-rs:skolem:b3016148045a1f754cfa4d7efe24de87> .
+    rdfs:member [ ],
+        [ ],
+        [ ],
+        [ ],
+        [ ],
+        [ ],
+        [ ],
+        [ ],
+        [ ],
+        [ ] .
 
 bs:TimeseriesReference_version_10 a rdf:Seq ;
-    rdfs:member <urn:bschema-rs:skolem:b35e7a6268ba472c5e910dc55ba06f68>,
-        <urn:bschema-rs:skolem:c24125e0e155fe0d414d8f1db10cb36f>,
-        <urn:bschema-rs:skolem:e86fd48888e1f90522a388a458a8505f>,
-        <urn:bschema-rs:skolem:f4ea18d4ea90aef62315df9cbd476380>,
-        <urn:bschema-rs:skolem:ff67513ac05de4dab60cd40430ff0dd8> .
+    rdfs:member [ ],
+        [ ],
+        [ ],
+        [ ],
+        [ ] .
 
 bs:TimeseriesReference_version_11 a rdf:Seq ;
-    rdfs:member <urn:bschema-rs:skolem:bd9fdfc4aa038b16631cb19fffe816d5>,
-        <urn:bschema-rs:skolem:fb7916a99ba8f3daeac963ad79333c5> .
+    rdfs:member [ ],
+        [ ] .
 
 bs:TimeseriesReference_version_12 a rdf:Seq ;
-    rdfs:member <urn:bschema-rs:skolem:d4f90da252862809c15f0a418983b606>,
-        <urn:bschema-rs:skolem:f2cfbc03c21fbdf11248b4e01368c55e> .
+    rdfs:member [ ],
+        [ ] .
 
 bs:TimeseriesReference_version_13 a rdf:Seq ;
-    rdfs:member <urn:bschema-rs:skolem:e9a8b20168fe0d821da4ce44e0265160>,
-        <urn:bschema-rs:skolem:f638d52e874579e6163d2a18a0af7beb> .
+    rdfs:member [ ],
+        [ ] .
 
 bs:TimeseriesReference_version_2 a rdf:Seq ;
-    rdfs:member <urn:bschema-rs:skolem:a4aa0039f939de7894b30983c20b818a>,
-        <urn:bschema-rs:skolem:b7166cdf9bc5a597ef4df3e215b5bc60>,
-        <urn:bschema-rs:skolem:bb829ba5dbf4ce4b4628424fe5304db4>,
-        <urn:bschema-rs:skolem:ea22e5dd03150ea1adb2f3e05d45a7c>,
-        <urn:bschema-rs:skolem:ea95b42bdd872cff7f1df14855fd5280> .
+    rdfs:member [ ],
+        [ ],
+        [ ],
+        [ ],
+        [ ],
+        [ ],
+        [ ],
+        [ ],
+        [ ],
+        [ ] .
 
 bs:TimeseriesReference_version_3 a rdf:Seq ;
-    rdfs:member <urn:bschema-rs:skolem:a55f443c795433a9e4a7fa2f61477562>,
-        <urn:bschema-rs:skolem:c4d0242163657ba1ec9c89c4f2d111c5> .
+    rdfs:member [ ],
+        [ ] .
 
 bs:TimeseriesReference_version_4 a rdf:Seq ;
-    rdfs:member <urn:bschema-rs:skolem:a7114528d362a68ee0f3ad59558d74dc>,
-        <urn:bschema-rs:skolem:ac0d9c48f00f8b24dfdb6d51ecdc96e8>,
-        <urn:bschema-rs:skolem:ad1733ead199eef65b6ef3a0e795d2ba>,
-        <urn:bschema-rs:skolem:bebe53ec7661474f3ce4caa3e17d3767>,
-        <urn:bschema-rs:skolem:c0a088cf39558134d28b131926c8ec63>,
-        <urn:bschema-rs:skolem:c0edfdc30b8018fc519637fccc2c5dd5>,
-        <urn:bschema-rs:skolem:c22499f19a223df63aea3f9e4dcc36a3>,
-        <urn:bschema-rs:skolem:ed77a6e79c4e5c23be04ee9ab8e77cdc>,
-        <urn:bschema-rs:skolem:f7662fc69326603f61c44c82664ce4fa>,
-        <urn:bschema-rs:skolem:fe815205a8280bedbd32c4b8225418cd> .
+    rdfs:member [ ],
+        [ ],
+        [ ],
+        [ ],
+        [ ],
+        [ ],
+        [ ],
+        [ ],
+        [ ],
+        [ ] .
 
 bs:TimeseriesReference_version_5 a rdf:Seq ;
-    rdfs:member <urn:bschema-rs:skolem:aa617ec82a4f85254896234a590eee5a>,
-        <urn:bschema-rs:skolem:b3c6261ce7fcdf1baf39c9a88ec9b391> .
+    rdfs:member [ ],
+        [ ],
+        [ ],
+        [ ],
+        [ ] .
 
 bs:TimeseriesReference_version_6 a rdf:Seq ;
-    rdfs:member <urn:bschema-rs:skolem:aaee349676ff690706879447fd480e8>,
-        <urn:bschema-rs:skolem:b7ca3463430ff8afa5cca405cd74421a>,
-        <urn:bschema-rs:skolem:ba2fa5da2749350d3c528529c2ffb0b0>,
-        <urn:bschema-rs:skolem:bfdeecaf3423b360a6a4e9c0af2f1e2a>,
-        <urn:bschema-rs:skolem:e02b5c8d5000ce328c49f80c92a57681>,
-        <urn:bschema-rs:skolem:e1487295e017a01ea8c4cf210bcdcc50>,
-        <urn:bschema-rs:skolem:e7528c5f16fb8ab98dde5933cb49810>,
-        <urn:bschema-rs:skolem:edc3862f79c829d58473b335a4f0503f>,
-        <urn:bschema-rs:skolem:f8ba87d811272bfc6ce470db17c90686>,
-        <urn:bschema-rs:skolem:fa5c3cc0ebe03e5c1dd248d3e6f5d277> .
+    rdfs:member [ ],
+        [ ],
+        [ ],
+        [ ],
+        [ ] .
 
 bs:TimeseriesReference_version_7 a rdf:Seq ;
-    rdfs:member <urn:bschema-rs:skolem:abba99f7cc1113428eb9f399c1065ac4>,
-        <urn:bschema-rs:skolem:f85c5c2e3b65bb841a4e9e447ed0c616> .
+    rdfs:member [ ],
+        [ ] .
 
 bs:TimeseriesReference_version_8 a rdf:Seq ;
-    rdfs:member <urn:bschema-rs:skolem:ac46963a5c994db3cf883be7599e0042>,
-        <urn:bschema-rs:skolem:c2d7046d7d9837118856e02ab8d77dae>,
-        <urn:bschema-rs:skolem:c5b26531f38c161aeb77a4ba9fef4686>,
-        <urn:bschema-rs:skolem:d49e4728ed8b4ba4abcfd7aa9a0785c4>,
-        <urn:bschema-rs:skolem:f58426d1b73dce173d459788afb036e0> .
+    rdfs:member [ ],
+        [ ] .
 
 bs:TimeseriesReference_version_9 a rdf:Seq ;
-    rdfs:member <urn:bschema-rs:skolem:ae10bc8311e7c9801e2fae187dd119ef>,
-        <urn:bschema-rs:skolem:aff3e59570bb7696e6eee200b1349b21>,
-        <urn:bschema-rs:skolem:b042805c1b3972ce26a1dd69dd61bacf>,
-        <urn:bschema-rs:skolem:b91a6f6308717e60980e8ed5148c45aa>,
-        <urn:bschema-rs:skolem:c4fca8703fc583962618519e4c8f53f9>,
-        <urn:bschema-rs:skolem:c8425794137b85ef12b01faa9f848bd>,
-        <urn:bschema-rs:skolem:d5e695bc606621b821a1dc9781082447>,
-        <urn:bschema-rs:skolem:ef19ec331402755e414ae9002e9d7136>,
-        <urn:bschema-rs:skolem:f2399f2c33d18fbaefa36815758de385>,
-        <urn:bschema-rs:skolem:fec00d5700ad214fda98b8f5a7721f49> .
+    rdfs:member [ ],
+        [ ] .
 
 bs:Valve_Command_version_1 a rdf:Seq ;
     rdfs:member <urn:bldg/hvac_oveZonActCor_yReaHea_u>,

@@ -272,10 +272,10 @@ bs:Entering_Water_Temperature_Sensor_version_1 a brick:Entering_Water_Temperatur
 
 bs:Entering_Water_Temperature_Sensor_version_2 a brick:Entering_Water_Temperature_Sensor,
         brick:Return_Water_Temperature_Sensor ;
-    s223:hasExternalReference bs:BACnetReference_version_2 ;
+    s223:hasExternalReference bs:BACnetReference_version_4 ;
     brick:hasUnit unit:DEG_F ;
     brick:isPointOf bs:Thermal_Power_Meter_version_1 ;
-    ref:hasExternalReference bs:BACnetReference_version_2 .
+    ref:hasExternalReference bs:BACnetReference_version_4 .
 
 bs:Exhaust_Air_Flow_Sensor_version_1 a brick:Exhaust_Air_Flow_Sensor ;
     s223:hasExternalReference bs:BACnetReference_version_1 ;
@@ -416,10 +416,10 @@ bs:Leaving_Water_Temperature_Sensor_version_1 a brick:Leaving_Water_Temperature_
 
 bs:Leaving_Water_Temperature_Sensor_version_2 a brick:Leaving_Water_Temperature_Sensor,
         brick:Supply_Water_Temperature_Sensor ;
-    s223:hasExternalReference bs:BACnetReference_version_4 ;
+    s223:hasExternalReference bs:BACnetReference_version_3 ;
     brick:hasUnit unit:DEG_F ;
     brick:isPointOf bs:Thermal_Power_Meter_version_1 ;
-    ref:hasExternalReference bs:BACnetReference_version_4 .
+    ref:hasExternalReference bs:BACnetReference_version_3 .
 
 bs:Level_Status_version_1 a brick:Level_Status ;
     s223:hasExternalReference bs:BACnetReference_version_1 ;
@@ -841,16 +841,16 @@ bs:Air_Differential_Pressure_Sensor_version_1 a brick:Air_Differential_Pressure_
     ref:hasExternalReference bs:BACnetReference_version_1 .
 
 bs:BACnetReference_version_2 a ref:BACnetReference ;
-    bacnet:ReadableProperty bs:Literal_version_5 ;
-    bacnet:object-name bs:Literal_version_5 .
+    bacnet:ReadableProperty bs:Literal_version_4 ;
+    bacnet:object-name bs:Literal_version_4 .
 
 bs:BACnetReference_version_3 a ref:BACnetReference ;
     bacnet:ReadableProperty bs:Literal_version_6 ;
     bacnet:object-name bs:Literal_version_6 .
 
 bs:BACnetReference_version_4 a ref:BACnetReference ;
-    bacnet:ReadableProperty bs:Literal_version_4 ;
-    bacnet:object-name bs:Literal_version_4 .
+    bacnet:ReadableProperty bs:Literal_version_5 ;
+    bacnet:object-name bs:Literal_version_5 .
 
 bs:Building_version_1 a brick:Building,
         rec:Building ;
@@ -1839,7 +1839,7 @@ bs:Max_Water_Temperature_Setpoint_version_1 a brick:Max_Water_Temperature_Setpoi
         <urn:bldg#bldg.CW.MAKE.UP_FLOW.V>,
         <urn:bldg#bldg_Water_Meter> ;
     s223:hasExternalReference bs:BACnetReference_version_1,
-        bs:BACnetReference_version_3 ;
+        bs:BACnetReference_version_2 ;
     brick:hasPoint bs:Water_Flow_Sensor_version_1,
         bs:Water_Flow_Sensor_version_2 ;
     brick:hasSubstance rdfs:Resource ;
@@ -1848,7 +1848,7 @@ bs:Max_Water_Temperature_Setpoint_version_1 a brick:Max_Water_Temperature_Setpoi
         bs:Water_Loop_version_2 ;
     brick:meters bs:Water_Loop_version_2 ;
     ref:hasExternalReference bs:BACnetReference_version_1,
-        bs:BACnetReference_version_3 .
+        bs:BACnetReference_version_2 .
 
 bs:Mechanical_Room_version_2 a brick:Mechanical_Room,
         rec:UtilitiesRoom ;

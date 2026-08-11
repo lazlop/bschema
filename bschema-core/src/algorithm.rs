@@ -354,7 +354,6 @@ pub fn create_bschema(
     let (data_graph, skolem_reverse) = original_data_graph.skolemize()?;
 
     let mut equivalent_subjects: Vec<Vec<NamedOrBlankNode>> = Vec::new();
-    let mut subject_classes: Vec<NamedNode> = Vec::new();
     let mut prev_equivalent_subjects: Option<Vec<Vec<NamedOrBlankNode>>> = None;
     let mut prev_subject_classes: Option<HashMap<NamedOrBlankNode, NamedNode>> = None;
     let mut final_iteration = 0;
@@ -365,7 +364,7 @@ pub fn create_bschema(
 
         let result = class_isomorphisms(&data_graph, similarity_threshold)?;
         equivalent_subjects = result.equivalent_subjects;
-        subject_classes = result.subject_classes;
+        let subject_classes = result.subject_classes;
 
         let new_subject_classes =
             assign_new_classes(&equivalent_subjects, &subject_classes, use_original_names, &mut counter);
@@ -410,14 +409,32 @@ pub fn create_bschema(
         }
     }
 
+    // Key the member graph by each group's *applied* class - the label
+    // actually inserted into `data_graph` (and thus what `class_graph`
+    // above was built from) - not `subject_classes`, which is each group's
+    // class as of the *start* of the final iteration (before that
+    // iteration's relabeling). Those normally coincide, because the
+    // convergence break fires before a would-be-redundant relabeling is
+    // applied, leaving `subject_classes` describing the same labels
+    // `data_graph` already carries from the previous round. But the
+    // `similarity_threshold == 0.0` path breaks immediately *after*
+    // applying iteration 0's relabeling, so `subject_classes` there still
+    // reflects the *pre*-relabeling classes (e.g. the original `rdf:type`)
+    // while `class_graph` reflects the newly applied `bs:` names - keying
+    // the member graph by `subject_classes` would silently mismatch the
+    // two graphs.
+    let applied_classes = prev_subject_classes.unwrap_or_default();
     let member_graph = RdfGraph::new()?;
-    for (i, subject_class) in subject_classes.iter().enumerate() {
+    for members in &equivalent_subjects {
+        let Some(subject_class) = members.first().and_then(|s| applied_classes.get(s)) else {
+            continue;
+        };
         member_graph.insert(&Triple::new(
             subject_class.clone(),
             A.clone(),
             RDF_SEQ.clone(),
         ));
-        for s in &equivalent_subjects[i] {
+        for s in members {
             // Report the original literal/blank node, not its skolem
             // stand-in, for members that were skolemized from one.
             let member_term = match s {

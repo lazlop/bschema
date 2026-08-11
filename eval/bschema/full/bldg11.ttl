@@ -254,11 +254,11 @@ bs:Air_Handling_Unit_version_9 a brick:Air_Handling_Unit ;
     brick:isFedBy bs:Chiller_version_1 .
 
 bs:Building_Electrical_Meter_version_1 a brick:Building_Electrical_Meter ;
-    rdfs:label bs:Literal_version_536 ;
-    ref:hasExternalReference bs:Resource_version_270 .
+    rdfs:label bs:Literal_version_545 ;
+    ref:hasExternalReference bs:Resource_version_204 .
 
 bs:Building_version_1 a brick:Building ;
-    brick:area bs:Resource_version_236 .
+    brick:area bs:Resource_version_254 .
 
 bs:Damper_version_1 a brick:Damper ;
     brick:hasPoint bs:Damper_Position_Setpoint_version_26 ;
@@ -365,9 +365,9 @@ bs:Damper_version_9 a brick:Damper ;
     brick:isPartOf bs:VAV_version_42 .
 
 bs:Electric_Meter_version_1 a brick:Electric_Meter ;
-    rdfs:label bs:Literal_version_404 ;
+    rdfs:label bs:Literal_version_427 ;
     brick:isPointOf bs:Chiller_version_1 ;
-    ref:hasExternalReference bs:Resource_version_208 .
+    ref:hasExternalReference bs:Resource_version_315 .
 
 bs:Floor_version_1 a brick:Floor ;
     brick:hasPart bs:Room_version_1,
@@ -520,495 +520,495 @@ bs:Floor_version_7 a brick:Floor ;
         bs:Room_version_136 .
 
 bs:Air_Flow_Sensor_version_1 a brick:Air_Flow_Sensor ;
-    rdfs:label bs:Literal_version_328 ;
-    ref:hasExternalReference bs:Resource_version_147 .
+    rdfs:label bs:Literal_version_351 ;
+    ref:hasExternalReference bs:Resource_version_24 .
 
 bs:Air_Flow_Sensor_version_10 a brick:Air_Flow_Sensor ;
-    rdfs:label bs:Literal_version_307 ;
-    ref:hasExternalReference bs:Resource_version_88 .
+    rdfs:label bs:Literal_version_324 ;
+    ref:hasExternalReference bs:Resource_version_1 .
 
 bs:Air_Flow_Sensor_version_11 a brick:Air_Flow_Sensor ;
-    rdfs:label bs:Literal_version_503 ;
-    ref:hasExternalReference bs:Resource_version_248 .
+    rdfs:label bs:Literal_version_515 ;
+    ref:hasExternalReference bs:Resource_version_37 .
 
 bs:Air_Flow_Sensor_version_12 a brick:Air_Flow_Sensor ;
-    rdfs:label bs:Literal_version_141 ;
-    ref:hasExternalReference bs:Resource_version_97 .
+    rdfs:label bs:Literal_version_146 ;
+    ref:hasExternalReference bs:Resource_version_14 .
 
 bs:Air_Flow_Sensor_version_13 a brick:Air_Flow_Sensor ;
-    rdfs:label bs:Literal_version_617 ;
-    ref:hasExternalReference bs:Resource_version_161 .
+    rdfs:label bs:Literal_version_639 ;
+    ref:hasExternalReference bs:Resource_version_274 .
 
 bs:Air_Flow_Sensor_version_14 a brick:Air_Flow_Sensor ;
-    rdfs:label bs:Literal_version_59 ;
-    ref:hasExternalReference bs:Resource_version_29 .
+    rdfs:label bs:Literal_version_56 ;
+    ref:hasExternalReference bs:Resource_version_30 .
 
 bs:Air_Flow_Sensor_version_15 a brick:Air_Flow_Sensor ;
-    rdfs:label bs:Literal_version_694 ;
-    ref:hasExternalReference bs:Resource_version_278 .
+    rdfs:label bs:Literal_version_712 ;
+    ref:hasExternalReference bs:Resource_version_50 .
 
 bs:Air_Flow_Sensor_version_16 a brick:Air_Flow_Sensor ;
-    rdfs:label bs:Literal_version_437 ;
-    ref:hasExternalReference bs:Resource_version_185 .
+    rdfs:label bs:Literal_version_456 ;
+    ref:hasExternalReference bs:Resource_version_59 .
 
 bs:Air_Flow_Sensor_version_17 a brick:Air_Flow_Sensor ;
     rdfs:label bs:Literal_version_72 ;
-    ref:hasExternalReference bs:Resource_version_11 .
+    ref:hasExternalReference bs:Resource_version_72 .
 
 bs:Air_Flow_Sensor_version_18 a brick:Air_Flow_Sensor ;
-    rdfs:label bs:Literal_version_68 ;
-    ref:hasExternalReference bs:Resource_version_69 .
+    rdfs:label bs:Literal_version_66 ;
+    ref:hasExternalReference bs:Resource_version_46 .
 
 bs:Air_Flow_Sensor_version_19 a brick:Air_Flow_Sensor ;
-    rdfs:label bs:Literal_version_723 ;
-    ref:hasExternalReference bs:Resource_version_71 .
+    rdfs:label bs:Literal_version_730 ;
+    ref:hasExternalReference bs:Resource_version_311 .
 
 bs:Air_Flow_Sensor_version_2 a brick:Air_Flow_Sensor ;
-    rdfs:label bs:Literal_version_107 ;
-    ref:hasExternalReference bs:Resource_version_80 .
+    rdfs:label bs:Literal_version_114 ;
+    ref:hasExternalReference bs:Resource_version_25 .
 
 bs:Air_Flow_Sensor_version_20 a brick:Air_Flow_Sensor ;
-    rdfs:label bs:Literal_version_284 ;
-    ref:hasExternalReference bs:Resource_version_297 .
+    rdfs:label bs:Literal_version_293 ;
+    ref:hasExternalReference bs:Resource_version_13 .
 
 bs:Air_Flow_Sensor_version_21 a brick:Air_Flow_Sensor ;
-    rdfs:label bs:Literal_version_475 ;
-    ref:hasExternalReference bs:Resource_version_148 .
+    rdfs:label bs:Literal_version_489 ;
+    ref:hasExternalReference bs:Resource_version_122 .
 
 bs:Air_Flow_Sensor_version_22 a brick:Air_Flow_Sensor ;
-    rdfs:label bs:Literal_version_334 ;
-    ref:hasExternalReference bs:Resource_version_73 .
+    rdfs:label bs:Literal_version_354 ;
+    ref:hasExternalReference bs:Resource_version_244 .
 
 bs:Air_Flow_Sensor_version_23 a brick:Air_Flow_Sensor ;
-    rdfs:label bs:Literal_version_394 ;
-    ref:hasExternalReference bs:Resource_version_298 .
+    rdfs:label bs:Literal_version_417 ;
+    ref:hasExternalReference bs:Resource_version_193 .
 
 bs:Air_Flow_Sensor_version_24 a brick:Air_Flow_Sensor ;
-    rdfs:label bs:Literal_version_315 ;
-    ref:hasExternalReference bs:Resource_version_240 .
+    rdfs:label bs:Literal_version_332 ;
+    ref:hasExternalReference bs:Resource_version_137 .
 
 bs:Air_Flow_Sensor_version_25 a brick:Air_Flow_Sensor ;
-    rdfs:label bs:Literal_version_443 ;
-    ref:hasExternalReference bs:Resource_version_48 .
+    rdfs:label bs:Literal_version_464 ;
+    ref:hasExternalReference bs:Resource_version_92 .
 
 bs:Air_Flow_Sensor_version_26 a brick:Air_Flow_Sensor ;
-    rdfs:label bs:Literal_version_132 ;
-    ref:hasExternalReference bs:Resource_version_16 .
+    rdfs:label bs:Literal_version_137 ;
+    ref:hasExternalReference bs:Resource_version_224 .
 
 bs:Air_Flow_Sensor_version_3 a brick:Air_Flow_Sensor ;
-    rdfs:label bs:Literal_version_676 ;
-    ref:hasExternalReference bs:Resource_version_1 .
+    rdfs:label bs:Literal_version_697 ;
+    ref:hasExternalReference bs:Resource_version_249 .
 
 bs:Air_Flow_Sensor_version_4 a brick:Air_Flow_Sensor ;
-    rdfs:label bs:Literal_version_441 ;
-    ref:hasExternalReference bs:Resource_version_107 .
-
-bs:Air_Flow_Sensor_version_5 a brick:Air_Flow_Sensor ;
-    rdfs:label bs:Literal_version_288 ;
-    ref:hasExternalReference bs:Resource_version_100 .
-
-bs:Air_Flow_Sensor_version_6 a brick:Air_Flow_Sensor ;
-    rdfs:label bs:Literal_version_672 ;
+    rdfs:label bs:Literal_version_461 ;
     ref:hasExternalReference bs:Resource_version_226 .
 
+bs:Air_Flow_Sensor_version_5 a brick:Air_Flow_Sensor ;
+    rdfs:label bs:Literal_version_301 ;
+    ref:hasExternalReference bs:Resource_version_20 .
+
+bs:Air_Flow_Sensor_version_6 a brick:Air_Flow_Sensor ;
+    rdfs:label bs:Literal_version_695 ;
+    ref:hasExternalReference bs:Resource_version_247 .
+
 bs:Air_Flow_Sensor_version_7 a brick:Air_Flow_Sensor ;
-    rdfs:label bs:Literal_version_320 ;
-    ref:hasExternalReference bs:Resource_version_83 .
+    rdfs:label bs:Literal_version_340 ;
+    ref:hasExternalReference bs:Resource_version_87 .
 
 bs:Air_Flow_Sensor_version_8 a brick:Air_Flow_Sensor ;
-    rdfs:label bs:Literal_version_66 ;
-    ref:hasExternalReference bs:Resource_version_114 .
+    rdfs:label bs:Literal_version_63 ;
+    ref:hasExternalReference bs:Resource_version_107 .
 
 bs:Air_Flow_Sensor_version_9 a brick:Air_Flow_Sensor ;
-    rdfs:label bs:Literal_version_428 ;
-    ref:hasExternalReference bs:Resource_version_171 .
+    rdfs:label bs:Literal_version_448 ;
+    ref:hasExternalReference bs:Resource_version_145 .
 
 bs:Chilled_Water_Differential_Temperature_Sensor_version_1 a brick:Chilled_Water_Differential_Temperature_Sensor ;
-    rdfs:label bs:Literal_version_710 ;
-    ref:hasExternalReference bs:Resource_version_230 .
+    rdfs:label bs:Literal_version_721 ;
+    ref:hasExternalReference bs:Resource_version_236 .
 
 bs:Chilled_Water_Flow_Sensor_version_1 a brick:Chilled_Water_Flow_Sensor ;
-    rdfs:label bs:Literal_version_594 ;
-    ref:hasExternalReference bs:Resource_version_60 .
+    rdfs:label bs:Literal_version_611 ;
+    ref:hasExternalReference bs:Resource_version_133 .
 
 bs:Chilled_Water_Return_Temperature_Sensor_version_1 a brick:Chilled_Water_Return_Temperature_Sensor ;
-    rdfs:label bs:Literal_version_16 ;
-    ref:hasExternalReference bs:Resource_version_84 .
+    rdfs:label bs:Literal_version_14 ;
+    ref:hasExternalReference bs:Resource_version_262 .
 
 bs:Chilled_Water_Return_Temperature_Setpoint_version_1 a brick:Chilled_Water_Return_Temperature_Setpoint ;
-    rdfs:label bs:Literal_version_460 ;
-    ref:hasExternalReference bs:Resource_version_186 .
+    rdfs:label bs:Literal_version_476 ;
+    ref:hasExternalReference bs:Resource_version_197 .
 
 bs:Chilled_Water_Supply_Temperature_Sensor_version_1 a brick:Chilled_Water_Supply_Temperature_Sensor ;
-    rdfs:label bs:Literal_version_337 ;
-    ref:hasExternalReference bs:Resource_version_209 .
+    rdfs:label bs:Literal_version_357 ;
+    ref:hasExternalReference bs:Resource_version_79 .
 
 bs:Chilled_Water_Supply_Temperature_Setpoint_version_1 a brick:Chilled_Water_Supply_Temperature_Setpoint ;
-    rdfs:label bs:Literal_version_306 ;
-    ref:hasExternalReference bs:Resource_version_32 .
+    rdfs:label bs:Literal_version_323 ;
+    ref:hasExternalReference bs:Resource_version_61 .
 
 bs:Command_version_1 a brick:Command,
         brick:Heating_Command ;
-    rdfs:label bs:Literal_version_492 ;
-    ref:hasExternalReference bs:Resource_version_120 .
+    rdfs:label bs:Literal_version_504 ;
+    ref:hasExternalReference bs:Resource_version_205 .
 
 bs:Command_version_10 a brick:Command,
         brick:Heating_Command ;
     rdfs:label bs:Literal_version_809 ;
-    ref:hasExternalReference bs:Resource_version_193 .
+    ref:hasExternalReference bs:Resource_version_304 .
 
 bs:Command_version_11 a brick:Command ;
-    rdfs:label bs:Literal_version_462 .
+    rdfs:label bs:Literal_version_477 .
 
 bs:Command_version_12 a brick:Command ;
-    rdfs:label bs:Literal_version_252 .
+    rdfs:label bs:Literal_version_259 .
 
 bs:Command_version_13 a brick:Command ;
-    rdfs:label bs:Literal_version_577 .
+    rdfs:label bs:Literal_version_589 .
 
 bs:Command_version_14 a brick:Command ;
-    rdfs:label bs:Literal_version_56 .
+    rdfs:label bs:Literal_version_52 .
 
 bs:Command_version_15 a brick:Command ;
-    rdfs:label bs:Literal_version_637 .
-
-bs:Command_version_16 a brick:Command ;
-    rdfs:label bs:Literal_version_552 .
-
-bs:Command_version_17 a brick:Command ;
     rdfs:label bs:Literal_version_657 .
 
+bs:Command_version_16 a brick:Command ;
+    rdfs:label bs:Literal_version_563 .
+
+bs:Command_version_17 a brick:Command ;
+    rdfs:label bs:Literal_version_678 .
+
 bs:Command_version_18 a brick:Command ;
-    rdfs:label bs:Literal_version_198 .
+    rdfs:label bs:Literal_version_203 .
 
 bs:Command_version_19 a brick:Command ;
-    rdfs:label bs:Literal_version_632 .
+    rdfs:label bs:Literal_version_652 .
 
 bs:Command_version_2 a brick:Command,
         brick:Heating_Command ;
-    rdfs:label bs:Literal_version_155 ;
-    ref:hasExternalReference bs:Resource_version_326 .
+    rdfs:label bs:Literal_version_163 ;
+    ref:hasExternalReference bs:Resource_version_98 .
 
 bs:Command_version_20 a brick:Command ;
-    rdfs:label bs:Literal_version_50 .
+    rdfs:label bs:Literal_version_45 .
 
 bs:Command_version_21 a brick:Command ;
-    rdfs:label bs:Literal_version_532 .
+    rdfs:label bs:Literal_version_542 .
 
 bs:Command_version_22 a brick:Command ;
-    rdfs:label bs:Literal_version_151 .
+    rdfs:label bs:Literal_version_159 .
 
 bs:Command_version_23 a brick:Command ;
-    rdfs:label bs:Literal_version_679 .
+    rdfs:label bs:Literal_version_700 .
 
 bs:Command_version_24 a brick:Command ;
-    rdfs:label bs:Literal_version_416 .
+    rdfs:label bs:Literal_version_440 .
 
 bs:Command_version_25 a brick:Command ;
-    rdfs:label bs:Literal_version_491 ;
-    ref:hasExternalReference bs:Resource_version_79 .
+    rdfs:label bs:Literal_version_503 ;
+    ref:hasExternalReference bs:Resource_version_28 .
 
 bs:Command_version_26 a brick:Command ;
-    rdfs:label bs:Literal_version_26 ;
-    ref:hasExternalReference bs:Resource_version_99 .
+    rdfs:label bs:Literal_version_21 ;
+    ref:hasExternalReference bs:Resource_version_48 .
 
 bs:Command_version_27 a brick:Command ;
-    rdfs:label bs:Literal_version_392 ;
-    ref:hasExternalReference bs:Resource_version_291 .
+    rdfs:label bs:Literal_version_414 ;
+    ref:hasExternalReference bs:Resource_version_319 .
 
 bs:Command_version_28 a brick:Command ;
-    rdfs:label bs:Literal_version_224 ;
-    ref:hasExternalReference bs:Resource_version_160 .
+    rdfs:label bs:Literal_version_232 ;
+    ref:hasExternalReference bs:Resource_version_148 .
 
 bs:Command_version_29 a brick:Command ;
-    rdfs:label bs:Literal_version_163 ;
-    ref:hasExternalReference bs:Resource_version_62 .
+    rdfs:label bs:Literal_version_172 ;
+    ref:hasExternalReference bs:Resource_version_29 .
 
 bs:Command_version_3 a brick:Command,
         brick:Heating_Command ;
-    rdfs:label bs:Literal_version_796 ;
-    ref:hasExternalReference bs:Resource_version_174 .
+    rdfs:label bs:Literal_version_801 ;
+    ref:hasExternalReference bs:Resource_version_317 .
 
 bs:Command_version_30 a brick:Command ;
-    rdfs:label bs:Literal_version_727 ;
-    ref:hasExternalReference bs:Resource_version_200 .
+    rdfs:label bs:Literal_version_734 ;
+    ref:hasExternalReference bs:Resource_version_166 .
 
 bs:Command_version_31 a brick:Command ;
-    rdfs:label bs:Literal_version_70 ;
-    ref:hasExternalReference bs:Resource_version_164 .
+    rdfs:label bs:Literal_version_69 ;
+    ref:hasExternalReference bs:Resource_version_211 .
 
 bs:Command_version_32 a brick:Command ;
-    rdfs:label bs:Literal_version_300 ;
-    ref:hasExternalReference bs:Resource_version_159 .
+    rdfs:label bs:Literal_version_313 ;
+    ref:hasExternalReference bs:Resource_version_225 .
 
 bs:Command_version_33 a brick:Command ;
-    rdfs:label bs:Literal_version_276 ;
-    ref:hasExternalReference bs:Resource_version_110 .
+    rdfs:label bs:Literal_version_283 ;
+    ref:hasExternalReference bs:Resource_version_42 .
 
 bs:Command_version_34 a brick:Command ;
-    rdfs:label bs:Literal_version_608 ;
-    ref:hasExternalReference bs:Resource_version_86 .
+    rdfs:label bs:Literal_version_628 ;
+    ref:hasExternalReference bs:Resource_version_189 .
 
 bs:Command_version_35 a brick:Command ;
-    rdfs:label bs:Literal_version_454 ;
-    ref:hasExternalReference bs:Resource_version_214 .
+    rdfs:label bs:Literal_version_472 ;
+    ref:hasExternalReference bs:Resource_version_318 .
 
 bs:Command_version_36 a brick:Command ;
-    rdfs:label bs:Literal_version_57 ;
-    ref:hasExternalReference bs:Resource_version_123 .
+    rdfs:label bs:Literal_version_53 ;
+    ref:hasExternalReference bs:Resource_version_173 .
 
 bs:Command_version_37 a brick:Command ;
-    rdfs:label bs:Literal_version_754 ;
-    ref:hasExternalReference bs:Resource_version_49 .
+    rdfs:label bs:Literal_version_761 ;
+    ref:hasExternalReference bs:Resource_version_105 .
 
 bs:Command_version_38 a brick:Command ;
-    rdfs:label bs:Literal_version_349 ;
-    ref:hasExternalReference bs:Resource_version_39 .
+    rdfs:label bs:Literal_version_374 ;
+    ref:hasExternalReference bs:Resource_version_43 .
 
 bs:Command_version_39 a brick:Command ;
-    rdfs:label bs:Literal_version_317 ;
-    ref:hasExternalReference bs:Resource_version_256 .
+    rdfs:label bs:Literal_version_335 ;
+    ref:hasExternalReference bs:Resource_version_326 .
 
 bs:Command_version_4 a brick:Command,
         brick:Heating_Command ;
-    rdfs:label bs:Literal_version_604 ;
-    ref:hasExternalReference bs:Resource_version_191 .
+    rdfs:label bs:Literal_version_623 ;
+    ref:hasExternalReference bs:Resource_version_309 .
 
 bs:Command_version_40 a brick:Command ;
-    rdfs:label bs:Literal_version_559 ;
-    ref:hasExternalReference bs:Resource_version_190 .
+    rdfs:label bs:Literal_version_572 ;
+    ref:hasExternalReference bs:Resource_version_150 .
 
 bs:Command_version_41 a brick:Command ;
-    rdfs:label bs:Literal_version_40 ;
-    ref:hasExternalReference bs:Resource_version_245 .
+    rdfs:label bs:Literal_version_34 ;
+    ref:hasExternalReference bs:Resource_version_171 .
 
 bs:Command_version_42 a brick:Command ;
-    rdfs:label bs:Literal_version_253 ;
-    ref:hasExternalReference bs:Resource_version_7 .
+    rdfs:label bs:Literal_version_260 ;
+    ref:hasExternalReference bs:Resource_version_104 .
 
 bs:Command_version_43 a brick:Command ;
-    rdfs:label bs:Literal_version_214 ;
-    ref:hasExternalReference bs:Resource_version_324 .
-
-bs:Command_version_44 a brick:Command ;
-    rdfs:label bs:Literal_version_67 ;
-    ref:hasExternalReference bs:Resource_version_262 .
-
-bs:Command_version_45 a brick:Command ;
-    rdfs:label bs:Literal_version_668 ;
-    ref:hasExternalReference bs:Resource_version_219 .
-
-bs:Command_version_46 a brick:Command ;
-    rdfs:label bs:Literal_version_8 ;
-    ref:hasExternalReference bs:Resource_version_122 .
-
-bs:Command_version_47 a brick:Command ;
-    rdfs:label bs:Literal_version_233 ;
+    rdfs:label bs:Literal_version_217 ;
     ref:hasExternalReference bs:Resource_version_175 .
 
+bs:Command_version_44 a brick:Command ;
+    rdfs:label bs:Literal_version_65 ;
+    ref:hasExternalReference bs:Resource_version_15 .
+
+bs:Command_version_45 a brick:Command ;
+    rdfs:label bs:Literal_version_691 ;
+    ref:hasExternalReference bs:Resource_version_77 .
+
+bs:Command_version_46 a brick:Command ;
+    rdfs:label bs:Literal_version_9 ;
+    ref:hasExternalReference bs:Resource_version_245 .
+
+bs:Command_version_47 a brick:Command ;
+    rdfs:label bs:Literal_version_241 ;
+    ref:hasExternalReference bs:Resource_version_235 .
+
 bs:Command_version_48 a brick:Command ;
-    rdfs:label bs:Literal_version_329 ;
-    ref:hasExternalReference bs:Resource_version_98 .
+    rdfs:label bs:Literal_version_352 ;
+    ref:hasExternalReference bs:Resource_version_139 .
 
 bs:Command_version_49 a brick:Command ;
-    rdfs:label bs:Literal_version_170 ;
-    ref:hasExternalReference bs:Resource_version_305 .
+    rdfs:label bs:Literal_version_178 ;
+    ref:hasExternalReference bs:Resource_version_253 .
 
 bs:Command_version_5 a brick:Command,
         brick:Heating_Command ;
-    rdfs:label bs:Literal_version_638 ;
-    ref:hasExternalReference bs:Resource_version_119 .
+    rdfs:label bs:Literal_version_658 ;
+    ref:hasExternalReference bs:Resource_version_221 .
 
 bs:Command_version_50 a brick:Command ;
-    rdfs:label bs:Literal_version_433 ;
-    ref:hasExternalReference bs:Resource_version_146 .
+    rdfs:label bs:Literal_version_454 ;
+    ref:hasExternalReference bs:Resource_version_140 .
 
 bs:Command_version_6 a brick:Command,
         brick:Heating_Command ;
-    rdfs:label bs:Literal_version_501 ;
-    ref:hasExternalReference bs:Resource_version_259 .
+    rdfs:label bs:Literal_version_513 ;
+    ref:hasExternalReference bs:Resource_version_202 .
 
 bs:Command_version_7 a brick:Command,
         brick:Heating_Command ;
-    rdfs:label bs:Literal_version_510 ;
-    ref:hasExternalReference bs:Resource_version_254 .
+    rdfs:label bs:Literal_version_524 ;
+    ref:hasExternalReference bs:Resource_version_179 .
 
 bs:Command_version_8 a brick:Command,
         brick:Heating_Command ;
-    rdfs:label bs:Literal_version_158 ;
-    ref:hasExternalReference bs:Resource_version_301 .
+    rdfs:label bs:Literal_version_166 ;
+    ref:hasExternalReference bs:Resource_version_316 .
 
 bs:Command_version_9 a brick:Command,
         brick:Heating_Command ;
-    rdfs:label bs:Literal_version_452 ;
-    ref:hasExternalReference bs:Resource_version_152 .
+    rdfs:label bs:Literal_version_471 ;
+    ref:hasExternalReference bs:Resource_version_255 .
 
 bs:Cooling_Command_version_1 a brick:Cooling_Command,
         brick:Valve_Command ;
-    rdfs:label bs:Literal_version_606 ;
-    ref:hasExternalReference bs:Resource_version_286 .
+    rdfs:label bs:Literal_version_625 ;
+    ref:hasExternalReference bs:Resource_version_231 .
 
 bs:Cooling_Command_version_10 a brick:Cooling_Command,
         brick:Valve_Command ;
-    rdfs:label bs:Literal_version_429 ;
-    ref:hasExternalReference bs:Resource_version_237 .
+    rdfs:label bs:Literal_version_449 ;
+    ref:hasExternalReference bs:Resource_version_296 .
 
 bs:Cooling_Command_version_11 a brick:Cooling_Command,
         brick:Valve_Command ;
-    rdfs:label bs:Literal_version_584 ;
-    ref:hasExternalReference bs:Resource_version_137 .
+    rdfs:label bs:Literal_version_598 ;
+    ref:hasExternalReference bs:Resource_version_261 .
 
 bs:Cooling_Command_version_2 a brick:Cooling_Command,
         brick:Valve_Command ;
-    rdfs:label bs:Literal_version_590 ;
-    ref:hasExternalReference bs:Resource_version_150 .
+    rdfs:label bs:Literal_version_606 ;
+    ref:hasExternalReference bs:Resource_version_168 .
 
 bs:Cooling_Command_version_3 a brick:Cooling_Command,
         brick:Valve_Command ;
-    rdfs:label bs:Literal_version_748 ;
-    ref:hasExternalReference bs:Resource_version_142 .
+    rdfs:label bs:Literal_version_757 ;
+    ref:hasExternalReference bs:Resource_version_216 .
 
 bs:Cooling_Command_version_4 a brick:Cooling_Command,
         brick:Valve_Command ;
-    rdfs:label bs:Literal_version_232 ;
-    ref:hasExternalReference bs:Resource_version_3 .
+    rdfs:label bs:Literal_version_240 ;
+    ref:hasExternalReference bs:Resource_version_178 .
 
 bs:Cooling_Command_version_5 a brick:Cooling_Command,
         brick:Valve_Command ;
-    rdfs:label bs:Literal_version_417 ;
-    ref:hasExternalReference bs:Resource_version_138 .
+    rdfs:label bs:Literal_version_441 ;
+    ref:hasExternalReference bs:Resource_version_237 .
 
 bs:Cooling_Command_version_6 a brick:Cooling_Command,
         brick:Valve_Command ;
-    rdfs:label bs:Literal_version_372 ;
-    ref:hasExternalReference bs:Resource_version_66 .
+    rdfs:label bs:Literal_version_397 ;
+    ref:hasExternalReference bs:Resource_version_170 .
 
 bs:Cooling_Command_version_7 a brick:Cooling_Command,
         brick:Valve_Command ;
-    rdfs:label bs:Literal_version_109 ;
-    ref:hasExternalReference bs:Resource_version_232 .
+    rdfs:label bs:Literal_version_118 ;
+    ref:hasExternalReference bs:Resource_version_73 .
 
 bs:Cooling_Command_version_8 a brick:Cooling_Command,
         brick:Valve_Command ;
-    rdfs:label bs:Literal_version_388 ;
-    ref:hasExternalReference bs:Resource_version_199 .
+    rdfs:label bs:Literal_version_413 ;
+    ref:hasExternalReference bs:Resource_version_213 .
 
 bs:Cooling_Command_version_9 a brick:Cooling_Command,
         brick:Valve_Command ;
-    rdfs:label bs:Literal_version_432 ;
-    ref:hasExternalReference bs:Resource_version_204 .
+    rdfs:label bs:Literal_version_453 ;
+    ref:hasExternalReference bs:Resource_version_35 .
 
 bs:Damper_Position_Command_version_1 a brick:Damper_Position_Command ;
-    rdfs:label bs:Literal_version_243 ;
-    ref:hasExternalReference bs:Resource_version_117 .
+    rdfs:label bs:Literal_version_250 ;
+    ref:hasExternalReference bs:Resource_version_134 .
 
 bs:Damper_Position_Setpoint_version_1 a brick:Damper_Position_Setpoint ;
-    rdfs:label bs:Literal_version_97 ;
-    ref:hasExternalReference bs:Resource_version_108 .
+    rdfs:label bs:Literal_version_106 ;
+    ref:hasExternalReference bs:Resource_version_207 .
 
 bs:Damper_Position_Setpoint_version_10 a brick:Damper_Position_Setpoint ;
-    rdfs:label bs:Literal_version_150 ;
-    ref:hasExternalReference bs:Resource_version_43 .
+    rdfs:label bs:Literal_version_156 ;
+    ref:hasExternalReference bs:Resource_version_21 .
 
 bs:Damper_Position_Setpoint_version_11 a brick:Damper_Position_Setpoint ;
-    rdfs:label bs:Literal_version_406 ;
-    ref:hasExternalReference bs:Resource_version_201 .
+    rdfs:label bs:Literal_version_431 ;
+    ref:hasExternalReference bs:Resource_version_234 .
 
 bs:Damper_Position_Setpoint_version_12 a brick:Damper_Position_Setpoint ;
-    rdfs:label bs:Literal_version_191 ;
-    ref:hasExternalReference bs:Resource_version_112 .
+    rdfs:label bs:Literal_version_196 ;
+    ref:hasExternalReference bs:Resource_version_116 .
 
 bs:Damper_Position_Setpoint_version_13 a brick:Damper_Position_Setpoint ;
-    rdfs:label bs:Literal_version_21 ;
-    ref:hasExternalReference bs:Resource_version_247 .
+    rdfs:label bs:Literal_version_17 ;
+    ref:hasExternalReference bs:Resource_version_115 .
 
 bs:Damper_Position_Setpoint_version_14 a brick:Damper_Position_Setpoint ;
-    rdfs:label bs:Literal_version_45 ;
-    ref:hasExternalReference bs:Resource_version_37 .
+    rdfs:label bs:Literal_version_41 ;
+    ref:hasExternalReference bs:Resource_version_17 .
 
 bs:Damper_Position_Setpoint_version_15 a brick:Damper_Position_Setpoint ;
-    rdfs:label bs:Literal_version_32 ;
-    ref:hasExternalReference bs:Resource_version_170 .
+    rdfs:label bs:Literal_version_29 ;
+    ref:hasExternalReference bs:Resource_version_16 .
 
 bs:Damper_Position_Setpoint_version_16 a brick:Damper_Position_Setpoint ;
-    rdfs:label bs:Literal_version_592 ;
-    ref:hasExternalReference bs:Resource_version_63 .
+    rdfs:label bs:Literal_version_609 ;
+    ref:hasExternalReference bs:Resource_version_93 .
 
 bs:Damper_Position_Setpoint_version_17 a brick:Damper_Position_Setpoint ;
-    rdfs:label bs:Literal_version_90 ;
-    ref:hasExternalReference bs:Resource_version_143 .
+    rdfs:label bs:Literal_version_95 ;
+    ref:hasExternalReference bs:Resource_version_26 .
 
 bs:Damper_Position_Setpoint_version_18 a brick:Damper_Position_Setpoint ;
-    rdfs:label bs:Literal_version_111 ;
-    ref:hasExternalReference bs:Resource_version_2 .
+    rdfs:label bs:Literal_version_120 ;
+    ref:hasExternalReference bs:Resource_version_222 .
 
 bs:Damper_Position_Setpoint_version_19 a brick:Damper_Position_Setpoint ;
-    rdfs:label bs:Literal_version_662 ;
-    ref:hasExternalReference bs:Resource_version_243 .
+    rdfs:label bs:Literal_version_684 ;
+    ref:hasExternalReference bs:Resource_version_125 .
 
 bs:Damper_Position_Setpoint_version_2 a brick:Damper_Position_Setpoint ;
-    rdfs:label bs:Literal_version_46 ;
-    ref:hasExternalReference bs:Resource_version_64 .
-
-bs:Damper_Position_Setpoint_version_20 a brick:Damper_Position_Setpoint ;
-    rdfs:label bs:Literal_version_115 ;
-    ref:hasExternalReference bs:Resource_version_61 .
-
-bs:Damper_Position_Setpoint_version_21 a brick:Damper_Position_Setpoint ;
-    rdfs:label bs:Literal_version_588 ;
-    ref:hasExternalReference bs:Resource_version_183 .
-
-bs:Damper_Position_Setpoint_version_22 a brick:Damper_Position_Setpoint ;
-    rdfs:label bs:Literal_version_139 ;
-    ref:hasExternalReference bs:Resource_version_41 .
-
-bs:Damper_Position_Setpoint_version_23 a brick:Damper_Position_Setpoint ;
-    rdfs:label bs:Literal_version_346 ;
-    ref:hasExternalReference bs:Resource_version_136 .
-
-bs:Damper_Position_Setpoint_version_24 a brick:Damper_Position_Setpoint ;
-    rdfs:label bs:Literal_version_656 ;
-    ref:hasExternalReference bs:Resource_version_163 .
-
-bs:Damper_Position_Setpoint_version_25 a brick:Damper_Position_Setpoint ;
-    rdfs:label bs:Literal_version_398 ;
-    ref:hasExternalReference bs:Resource_version_272 .
-
-bs:Damper_Position_Setpoint_version_26 a brick:Damper_Position_Setpoint ;
-    rdfs:label bs:Literal_version_153 ;
-    ref:hasExternalReference bs:Resource_version_15 .
-
-bs:Damper_Position_Setpoint_version_3 a brick:Damper_Position_Setpoint ;
-    rdfs:label bs:Literal_version_700 ;
-    ref:hasExternalReference bs:Resource_version_310 .
-
-bs:Damper_Position_Setpoint_version_4 a brick:Damper_Position_Setpoint ;
-    rdfs:label bs:Literal_version_336 ;
-    ref:hasExternalReference bs:Resource_version_5 .
-
-bs:Damper_Position_Setpoint_version_5 a brick:Damper_Position_Setpoint ;
-    rdfs:label bs:Literal_version_157 ;
-    ref:hasExternalReference bs:Resource_version_194 .
-
-bs:Damper_Position_Setpoint_version_6 a brick:Damper_Position_Setpoint ;
-    rdfs:label bs:Literal_version_688 ;
-    ref:hasExternalReference bs:Resource_version_179 .
-
-bs:Damper_Position_Setpoint_version_7 a brick:Damper_Position_Setpoint ;
-    rdfs:label bs:Literal_version_621 ;
-    ref:hasExternalReference bs:Resource_version_96 .
-
-bs:Damper_Position_Setpoint_version_8 a brick:Damper_Position_Setpoint ;
-    rdfs:label bs:Literal_version_134 ;
+    rdfs:label bs:Literal_version_42 ;
     ref:hasExternalReference bs:Resource_version_57 .
 
+bs:Damper_Position_Setpoint_version_20 a brick:Damper_Position_Setpoint ;
+    rdfs:label bs:Literal_version_122 ;
+    ref:hasExternalReference bs:Resource_version_182 .
+
+bs:Damper_Position_Setpoint_version_21 a brick:Damper_Position_Setpoint ;
+    rdfs:label bs:Literal_version_604 ;
+    ref:hasExternalReference bs:Resource_version_272 .
+
+bs:Damper_Position_Setpoint_version_22 a brick:Damper_Position_Setpoint ;
+    rdfs:label bs:Literal_version_145 ;
+    ref:hasExternalReference bs:Resource_version_47 .
+
+bs:Damper_Position_Setpoint_version_23 a brick:Damper_Position_Setpoint ;
+    rdfs:label bs:Literal_version_368 ;
+    ref:hasExternalReference bs:Resource_version_186 .
+
+bs:Damper_Position_Setpoint_version_24 a brick:Damper_Position_Setpoint ;
+    rdfs:label bs:Literal_version_677 ;
+    ref:hasExternalReference bs:Resource_version_229 .
+
+bs:Damper_Position_Setpoint_version_25 a brick:Damper_Position_Setpoint ;
+    rdfs:label bs:Literal_version_419 ;
+    ref:hasExternalReference bs:Resource_version_203 .
+
+bs:Damper_Position_Setpoint_version_26 a brick:Damper_Position_Setpoint ;
+    rdfs:label bs:Literal_version_162 ;
+    ref:hasExternalReference bs:Resource_version_258 .
+
+bs:Damper_Position_Setpoint_version_3 a brick:Damper_Position_Setpoint ;
+    rdfs:label bs:Literal_version_716 ;
+    ref:hasExternalReference bs:Resource_version_64 .
+
+bs:Damper_Position_Setpoint_version_4 a brick:Damper_Position_Setpoint ;
+    rdfs:label bs:Literal_version_356 ;
+    ref:hasExternalReference bs:Resource_version_53 .
+
+bs:Damper_Position_Setpoint_version_5 a brick:Damper_Position_Setpoint ;
+    rdfs:label bs:Literal_version_165 ;
+    ref:hasExternalReference bs:Resource_version_19 .
+
+bs:Damper_Position_Setpoint_version_6 a brick:Damper_Position_Setpoint ;
+    rdfs:label bs:Literal_version_708 ;
+    ref:hasExternalReference bs:Resource_version_188 .
+
+bs:Damper_Position_Setpoint_version_7 a brick:Damper_Position_Setpoint ;
+    rdfs:label bs:Literal_version_644 ;
+    ref:hasExternalReference bs:Resource_version_52 .
+
+bs:Damper_Position_Setpoint_version_8 a brick:Damper_Position_Setpoint ;
+    rdfs:label bs:Literal_version_140 ;
+    ref:hasExternalReference bs:Resource_version_297 .
+
 bs:Damper_Position_Setpoint_version_9 a brick:Damper_Position_Setpoint ;
-    rdfs:label bs:Literal_version_168 ;
-    ref:hasExternalReference bs:Resource_version_20 .
+    rdfs:label bs:Literal_version_177 ;
+    ref:hasExternalReference bs:Resource_version_111 .
 
 bs:Enable_Command_version_1 a brick:Enable_Command ;
-    rdfs:label bs:Literal_version_658 ;
-    ref:hasExternalReference bs:Resource_version_267 .
+    rdfs:label bs:Literal_version_679 ;
+    ref:hasExternalReference bs:Resource_version_36 .
 
 bs:HVAC_Zone_version_1 a brick:HVAC_Zone ;
     brick:hasPart bs:Room_version_1 .
@@ -3039,1049 +3039,1049 @@ bs:Literal_version_98 a rdfs:Literal .
 bs:Literal_version_99 a rdfs:Literal .
 
 bs:Mixed_Air_Temperature_Sensor_version_1 a brick:Mixed_Air_Temperature_Sensor ;
-    rdfs:label bs:Literal_version_426 .
+    rdfs:label bs:Literal_version_447 .
 
 bs:Mixed_Air_Temperature_Sensor_version_2 a brick:Mixed_Air_Temperature_Sensor ;
-    rdfs:label bs:Literal_version_589 .
+    rdfs:label bs:Literal_version_605 .
 
 bs:Mixed_Air_Temperature_Sensor_version_3 a brick:Mixed_Air_Temperature_Sensor ;
-    rdfs:label bs:Literal_version_627 .
+    rdfs:label bs:Literal_version_649 .
 
 bs:Mixed_Air_Temperature_Sensor_version_4 a brick:Mixed_Air_Temperature_Sensor ;
-    rdfs:label bs:Literal_version_400 .
+    rdfs:label bs:Literal_version_423 .
 
 bs:Mode_version_1 a brick:Mode ;
-    rdfs:label bs:Literal_version_439 ;
-    ref:hasExternalReference bs:Resource_version_145 .
+    rdfs:label bs:Literal_version_457 ;
+    ref:hasExternalReference bs:Resource_version_108 .
 
 bs:Outside_Air_Temperature_Sensor_version_1 a brick:Outside_Air_Temperature_Sensor ;
-    rdfs:label bs:Literal_version_477 ;
-    ref:hasExternalReference bs:Resource_version_227 .
+    rdfs:label bs:Literal_version_490 ;
+    ref:hasExternalReference bs:Resource_version_282 .
 
 bs:Outside_Air_Temperature_Sensor_version_2 a brick:Outside_Air_Temperature_Sensor ;
-    rdfs:label bs:Literal_version_735 ;
-    ref:hasExternalReference bs:Resource_version_205 .
+    rdfs:label bs:Literal_version_742 ;
+    ref:hasExternalReference bs:Resource_version_327 .
 
 bs:Outside_Air_Temperature_Sensor_version_3 a brick:Outside_Air_Temperature_Sensor ;
-    rdfs:label bs:Literal_version_678 ;
-    ref:hasExternalReference bs:Resource_version_72 .
+    rdfs:label bs:Literal_version_699 ;
+    ref:hasExternalReference bs:Resource_version_67 .
 
 bs:Outside_Air_Temperature_Sensor_version_4 a brick:Outside_Air_Temperature_Sensor ;
-    rdfs:label bs:Literal_version_321 ;
-    ref:hasExternalReference bs:Resource_version_155 .
+    rdfs:label bs:Literal_version_342 ;
+    ref:hasExternalReference bs:Resource_version_132 .
 
 bs:Outside_Air_Temperature_Sensor_version_5 a brick:Outside_Air_Temperature_Sensor ;
-    rdfs:label bs:Literal_version_752 ;
-    ref:hasExternalReference bs:Resource_version_307 .
+    rdfs:label bs:Literal_version_760 ;
+    ref:hasExternalReference bs:Resource_version_128 .
 
 bs:Outside_Air_Temperature_Sensor_version_6 a brick:Outside_Air_Temperature_Sensor ;
-    rdfs:label bs:Literal_version_696 ;
-    ref:hasExternalReference bs:Resource_version_225 .
+    rdfs:label bs:Literal_version_715 ;
+    ref:hasExternalReference bs:Resource_version_159 .
 
 bs:Outside_Air_Temperature_Sensor_version_7 a brick:Outside_Air_Temperature_Sensor ;
-    rdfs:label bs:Literal_version_502 ;
-    ref:hasExternalReference bs:Resource_version_269 .
+    rdfs:label bs:Literal_version_514 ;
+    ref:hasExternalReference bs:Resource_version_210 .
 
 bs:Outside_Air_Temperature_Sensor_version_8 a brick:Outside_Air_Temperature_Sensor ;
-    rdfs:label bs:Literal_version_517 ;
-    ref:hasExternalReference bs:Resource_version_231 .
+    rdfs:label bs:Literal_version_529 ;
+    ref:hasExternalReference bs:Resource_version_284 .
 
-bs:Resource_version_1 ref:hasTimeseriesId bs:Literal_version_683 .
+bs:Resource_version_1 ref:hasTimeseriesId bs:Literal_version_35 .
 
-bs:Resource_version_10 ref:hasTimeseriesId bs:Literal_version_384 .
+bs:Resource_version_10 ref:hasTimeseriesId bs:Literal_version_54 .
 
-bs:Resource_version_100 ref:hasTimeseriesId bs:Literal_version_51 .
+bs:Resource_version_100 ref:hasTimeseriesId bs:Literal_version_614 .
 
-bs:Resource_version_101 ref:hasTimeseriesId bs:Literal_version_451 .
+bs:Resource_version_101 ref:hasTimeseriesId bs:Literal_version_311 .
 
-bs:Resource_version_102 ref:hasTimeseriesId bs:Literal_version_576 .
+bs:Resource_version_102 ref:hasTimeseriesId bs:Literal_version_403 .
 
-bs:Resource_version_103 ref:hasTimeseriesId bs:Literal_version_509 .
+bs:Resource_version_103 ref:hasTimeseriesId bs:Literal_version_781 .
 
-bs:Resource_version_104 ref:hasTimeseriesId bs:Literal_version_37 .
+bs:Resource_version_104 ref:hasTimeseriesId bs:Literal_version_24 .
 
-bs:Resource_version_105 ref:hasTimeseriesId bs:Literal_version_124 .
+bs:Resource_version_105 ref:hasTimeseriesId bs:Literal_version_474 .
 
-bs:Resource_version_106 ref:hasTimeseriesId bs:Literal_version_409 .
+bs:Resource_version_106 ref:hasTimeseriesId bs:Literal_version_470 .
 
-bs:Resource_version_107 ref:hasTimeseriesId bs:Literal_version_148 .
+bs:Resource_version_107 ref:hasTimeseriesId bs:Literal_version_743 .
 
-bs:Resource_version_108 ref:hasTimeseriesId bs:Literal_version_254 .
+bs:Resource_version_108 ref:hasTimeseriesId bs:Literal_version_270 .
 
-bs:Resource_version_109 ref:hasTimeseriesId bs:Literal_version_442 .
+bs:Resource_version_109 ref:hasTimeseriesId bs:Literal_version_698 .
 
-bs:Resource_version_11 ref:hasTimeseriesId bs:Literal_version_103 .
+bs:Resource_version_11 ref:hasTimeseriesId bs:Literal_version_345 .
 
-bs:Resource_version_110 ref:hasTimeseriesId bs:Literal_version_34 .
+bs:Resource_version_110 ref:hasTimeseriesId bs:Literal_version_745 .
 
-bs:Resource_version_111 ref:hasTimeseriesId bs:Literal_version_14 .
+bs:Resource_version_111 ref:hasTimeseriesId bs:Literal_version_271 .
 
-bs:Resource_version_112 ref:hasTimeseriesId bs:Literal_version_246 .
+bs:Resource_version_112 ref:hasTimeseriesId bs:Literal_version_387 .
 
-bs:Resource_version_113 ref:hasTimeseriesId bs:Literal_version_516 .
+bs:Resource_version_113 ref:hasTimeseriesId bs:Literal_version_584 .
 
-bs:Resource_version_114 ref:hasTimeseriesId bs:Literal_version_130 .
+bs:Resource_version_114 ref:hasTimeseriesId bs:Literal_version_126 .
 
-bs:Resource_version_115 ref:hasTimeseriesId bs:Literal_version_476 .
+bs:Resource_version_115 ref:hasTimeseriesId bs:Literal_version_668 .
 
-bs:Resource_version_116 ref:hasTimeseriesId bs:Literal_version_143 .
+bs:Resource_version_116 ref:hasTimeseriesId bs:Literal_version_199 .
 
-bs:Resource_version_117 ref:hasTimeseriesId bs:Literal_version_413 .
+bs:Resource_version_117 ref:hasTimeseriesId bs:Literal_version_627 .
 
-bs:Resource_version_118 ref:hasTimeseriesId bs:Literal_version_711 .
+bs:Resource_version_118 ref:hasTimeseriesId bs:Literal_version_537 .
 
-bs:Resource_version_119 ref:hasTimeseriesId bs:Literal_version_619 .
+bs:Resource_version_119 ref:hasTimeseriesId bs:Literal_version_276 .
 
-bs:Resource_version_12 ref:hasTimeseriesId bs:Literal_version_114 .
+bs:Resource_version_12 ref:hasTimeseriesId bs:Literal_version_101 .
 
-bs:Resource_version_120 ref:hasTimeseriesId bs:Literal_version_258 .
+bs:Resource_version_120 ref:hasTimeseriesId bs:Literal_version_435 .
 
-bs:Resource_version_121 ref:hasTimeseriesId bs:Literal_version_277 .
+bs:Resource_version_121 ref:hasTimeseriesId bs:Literal_version_800 .
 
-bs:Resource_version_122 ref:hasTimeseriesId bs:Literal_version_285 .
+bs:Resource_version_122 ref:hasTimeseriesId bs:Literal_version_288 .
 
-bs:Resource_version_123 ref:hasTimeseriesId bs:Literal_version_44 .
+bs:Resource_version_123 ref:hasTimeseriesId bs:Literal_version_89 .
 
-bs:Resource_version_124 ref:hasTimeseriesId bs:Literal_version_620 .
+bs:Resource_version_124 ref:hasTimeseriesId bs:Literal_version_266 .
 
-bs:Resource_version_125 ref:hasTimeseriesId bs:Literal_version_390 .
+bs:Resource_version_125 ref:hasTimeseriesId bs:Literal_version_616 .
 
-bs:Resource_version_126 ref:hasTimeseriesId bs:Literal_version_207 .
+bs:Resource_version_126 ref:hasTimeseriesId bs:Literal_version_330 .
 
-bs:Resource_version_127 ref:hasTimeseriesId bs:Literal_version_116 .
+bs:Resource_version_127 ref:hasTimeseriesId bs:Literal_version_377 .
 
-bs:Resource_version_128 ref:hasTimeseriesId bs:Literal_version_333 .
+bs:Resource_version_128 ref:hasTimeseriesId bs:Literal_version_329 .
 
-bs:Resource_version_129 ref:hasTimeseriesId bs:Literal_version_549 .
+bs:Resource_version_129 ref:hasTimeseriesId bs:Literal_version_507 .
 
-bs:Resource_version_13 ref:hasTimeseriesId bs:Literal_version_43 .
+bs:Resource_version_13 ref:hasTimeseriesId bs:Literal_version_208 .
 
-bs:Resource_version_130 ref:hasTimeseriesId bs:Literal_version_482 .
+bs:Resource_version_130 ref:hasTimeseriesId bs:Literal_version_669 .
 
-bs:Resource_version_131 ref:hasTimeseriesId bs:Literal_version_403 .
+bs:Resource_version_131 ref:hasTimeseriesId bs:Literal_version_408 .
 
-bs:Resource_version_132 ref:hasTimeseriesId bs:Literal_version_86 .
+bs:Resource_version_132 ref:hasTimeseriesId bs:Literal_version_753 .
 
-bs:Resource_version_133 ref:hasTimeseriesId bs:Literal_version_208 .
+bs:Resource_version_133 ref:hasTimeseriesId bs:Literal_version_581 .
 
-bs:Resource_version_134 ref:hasTimeseriesId bs:Literal_version_119 .
+bs:Resource_version_134 ref:hasTimeseriesId bs:Literal_version_722 .
 
-bs:Resource_version_135 ref:hasTimeseriesId bs:Literal_version_461 .
+bs:Resource_version_135 ref:hasTimeseriesId bs:Literal_version_671 .
 
-bs:Resource_version_136 ref:hasTimeseriesId bs:Literal_version_458 .
+bs:Resource_version_136 ref:hasTimeseriesId bs:Literal_version_558 .
 
-bs:Resource_version_137 ref:hasTimeseriesId bs:Literal_version_65 .
+bs:Resource_version_137 ref:hasTimeseriesId bs:Literal_version_285 .
 
-bs:Resource_version_138 ref:hasTimeseriesId bs:Literal_version_418 .
+bs:Resource_version_138 ref:hasTimeseriesId bs:Literal_version_339 .
 
-bs:Resource_version_139 ref:hasTimeseriesId bs:Literal_version_187 .
+bs:Resource_version_139 ref:hasTimeseriesId bs:Literal_version_429 .
 
-bs:Resource_version_14 ref:hasTimeseriesId bs:Literal_version_13 .
+bs:Resource_version_14 ref:hasTimeseriesId bs:Literal_version_575 .
 
-bs:Resource_version_140 ref:hasTimeseriesId bs:Literal_version_651 .
+bs:Resource_version_140 ref:hasTimeseriesId bs:Literal_version_88 .
 
-bs:Resource_version_141 ref:hasTimeseriesId bs:Literal_version_456 .
+bs:Resource_version_141 ref:hasTimeseriesId bs:Literal_version_702 .
 
-bs:Resource_version_142 ref:hasTimeseriesId bs:Literal_version_327 .
+bs:Resource_version_142 ref:hasTimeseriesId bs:Literal_version_124 .
 
-bs:Resource_version_143 ref:hasTimeseriesId bs:Literal_version_167 .
+bs:Resource_version_143 ref:hasTimeseriesId bs:Literal_version_647 .
 
-bs:Resource_version_144 ref:hasTimeseriesId bs:Literal_version_761 .
+bs:Resource_version_144 ref:hasTimeseriesId bs:Literal_version_262 .
 
-bs:Resource_version_145 ref:hasTimeseriesId bs:Literal_version_563 .
+bs:Resource_version_145 ref:hasTimeseriesId bs:Literal_version_389 .
 
-bs:Resource_version_146 ref:hasTimeseriesId bs:Literal_version_344 .
+bs:Resource_version_146 ref:hasTimeseriesId bs:Literal_version_269 .
 
-bs:Resource_version_147 ref:hasTimeseriesId bs:Literal_version_238 .
+bs:Resource_version_147 ref:hasTimeseriesId bs:Literal_version_235 .
 
-bs:Resource_version_148 ref:hasTimeseriesId bs:Literal_version_350 .
+bs:Resource_version_148 ref:hasTimeseriesId bs:Literal_version_227 .
 
-bs:Resource_version_149 ref:hasTimeseriesId bs:Literal_version_9 .
+bs:Resource_version_149 ref:hasTimeseriesId bs:Literal_version_465 .
 
-bs:Resource_version_15 ref:hasTimeseriesId bs:Literal_version_47 .
+bs:Resource_version_15 ref:hasTimeseriesId bs:Literal_version_410 .
 
-bs:Resource_version_150 ref:hasTimeseriesId bs:Literal_version_236 .
+bs:Resource_version_150 ref:hasTimeseriesId bs:Literal_version_388 .
 
-bs:Resource_version_151 ref:hasTimeseriesId bs:Literal_version_616 .
+bs:Resource_version_151 ref:hasTimeseriesId bs:Literal_version_420 .
 
-bs:Resource_version_152 ref:hasTimeseriesId bs:Literal_version_691 .
+bs:Resource_version_152 ref:hasTimeseriesId bs:Literal_version_597 .
 
-bs:Resource_version_153 ref:hasTimeseriesId bs:Literal_version_78 .
+bs:Resource_version_153 ref:hasTimeseriesId bs:Literal_version_766 .
 
-bs:Resource_version_154 ref:hasTimeseriesId bs:Literal_version_358 .
+bs:Resource_version_154 ref:hasTimeseriesId bs:Literal_version_571 .
 
-bs:Resource_version_155 ref:hasTimeseriesId bs:Literal_version_223 .
+bs:Resource_version_155 ref:hasTimeseriesId bs:Literal_version_185 .
 
-bs:Resource_version_156 ref:hasTimeseriesId bs:Literal_version_574 .
+bs:Resource_version_156 ref:hasTimeseriesId bs:Literal_version_488 .
 
-bs:Resource_version_157 ref:hasTimeseriesId bs:Literal_version_340 .
+bs:Resource_version_157 ref:hasTimeseriesId bs:Literal_version_253 .
 
-bs:Resource_version_158 ref:hasTimeseriesId bs:Literal_version_468 .
+bs:Resource_version_158 ref:hasTimeseriesId bs:Literal_version_136 .
 
-bs:Resource_version_159 ref:hasTimeseriesId bs:Literal_version_665 .
+bs:Resource_version_159 ref:hasTimeseriesId bs:Literal_version_687 .
 
-bs:Resource_version_16 ref:hasTimeseriesId bs:Literal_version_173 .
+bs:Resource_version_16 ref:hasTimeseriesId bs:Literal_version_624 .
 
-bs:Resource_version_160 ref:hasTimeseriesId bs:Literal_version_39 .
+bs:Resource_version_160 ref:hasTimeseriesId bs:Literal_version_312 .
 
-bs:Resource_version_161 ref:hasTimeseriesId bs:Literal_version_649 .
+bs:Resource_version_161 ref:hasTimeseriesId bs:Literal_version_338 .
 
-bs:Resource_version_162 ref:hasTimeseriesId bs:Literal_version_368 .
+bs:Resource_version_162 ref:hasTimeseriesId bs:Literal_version_635 .
 
-bs:Resource_version_163 ref:hasTimeseriesId bs:Literal_version_261 .
+bs:Resource_version_163 ref:hasTimeseriesId bs:Literal_version_295 .
 
-bs:Resource_version_164 ref:hasTimeseriesId bs:Literal_version_121 .
+bs:Resource_version_164 ref:hasTimeseriesId bs:Literal_version_405 .
 
-bs:Resource_version_165 ref:hasTimeseriesId bs:Literal_version_715 .
+bs:Resource_version_165 ref:hasTimeseriesId bs:Literal_version_349 .
 
-bs:Resource_version_166 ref:hasTimeseriesId bs:Literal_version_401 .
+bs:Resource_version_166 ref:hasTimeseriesId bs:Literal_version_97 .
 
-bs:Resource_version_167 ref:hasTimeseriesId bs:Literal_version_291 .
+bs:Resource_version_167 ref:hasTimeseriesId bs:Literal_version_591 .
 
-bs:Resource_version_168 ref:hasTimeseriesId bs:Literal_version_757 .
+bs:Resource_version_168 ref:hasTimeseriesId bs:Literal_version_390 .
 
-bs:Resource_version_169 ref:hasTimeseriesId bs:Literal_version_436 .
+bs:Resource_version_169 ref:hasTimeseriesId bs:Literal_version_154 .
 
-bs:Resource_version_17 ref:hasTimeseriesId bs:Literal_version_63 .
+bs:Resource_version_17 ref:hasTimeseriesId bs:Literal_version_39 .
 
-bs:Resource_version_170 ref:hasTimeseriesId bs:Literal_version_784 .
+bs:Resource_version_170 ref:hasTimeseriesId bs:Literal_version_636 .
 
-bs:Resource_version_171 ref:hasTimeseriesId bs:Literal_version_294 .
+bs:Resource_version_171 ref:hasTimeseriesId bs:Literal_version_26 .
 
-bs:Resource_version_172 ref:hasTimeseriesId bs:Literal_version_265 .
+bs:Resource_version_172 ref:hasTimeseriesId bs:Literal_version_205 .
 
-bs:Resource_version_173 ref:hasTimeseriesId bs:Literal_version_104 .
+bs:Resource_version_173 ref:hasTimeseriesId bs:Literal_version_395 .
 
-bs:Resource_version_174 ref:hasTimeseriesId bs:Literal_version_541 .
+bs:Resource_version_174 ref:hasTimeseriesId bs:Literal_version_12 .
 
-bs:Resource_version_175 ref:hasTimeseriesId bs:Literal_version_381 .
+bs:Resource_version_175 ref:hasTimeseriesId bs:Literal_version_557 .
 
-bs:Resource_version_176 ref:hasTimeseriesId bs:Literal_version_766 .
+bs:Resource_version_176 ref:hasTimeseriesId bs:Literal_version_300 .
 
-bs:Resource_version_177 ref:hasTimeseriesId bs:Literal_version_140 .
+bs:Resource_version_177 ref:hasTimeseriesId bs:Literal_version_309 .
 
-bs:Resource_version_178 ref:hasTimeseriesId bs:Literal_version_722 .
+bs:Resource_version_178 ref:hasTimeseriesId bs:Literal_version_305 .
 
-bs:Resource_version_179 ref:hasTimeseriesId bs:Literal_version_421 .
+bs:Resource_version_179 ref:hasTimeseriesId bs:Literal_version_483 .
 
-bs:Resource_version_18 ref:hasTimeseriesId bs:Literal_version_58 .
+bs:Resource_version_18 ref:hasTimeseriesId bs:Literal_version_692 .
 
-bs:Resource_version_180 ref:hasTimeseriesId bs:Literal_version_314 .
+bs:Resource_version_180 ref:hasTimeseriesId bs:Literal_version_555 .
 
-bs:Resource_version_181 ref:hasTimeseriesId bs:Literal_version_25 .
+bs:Resource_version_181 ref:hasTimeseriesId bs:Literal_version_768 .
 
-bs:Resource_version_182 ref:hasTimeseriesId bs:Literal_version_585 .
+bs:Resource_version_182 ref:hasTimeseriesId bs:Literal_version_455 .
 
-bs:Resource_version_183 ref:hasTimeseriesId bs:Literal_version_351 .
+bs:Resource_version_183 ref:hasTimeseriesId bs:Literal_version_762 .
 
-bs:Resource_version_184 ref:hasTimeseriesId bs:Literal_version_244 .
+bs:Resource_version_184 ref:hasTimeseriesId bs:Literal_version_1 .
 
-bs:Resource_version_185 ref:hasTimeseriesId bs:Literal_version_596 .
+bs:Resource_version_185 ref:hasTimeseriesId bs:Literal_version_788 .
 
-bs:Resource_version_186 ref:hasTimeseriesId bs:Literal_version_136 .
+bs:Resource_version_186 ref:hasTimeseriesId bs:Literal_version_424 .
 
-bs:Resource_version_187 ref:hasTimeseriesId bs:Literal_version_488 .
+bs:Resource_version_187 ref:hasTimeseriesId bs:Literal_version_599 .
 
-bs:Resource_version_188 ref:hasTimeseriesId bs:Literal_version_19 .
+bs:Resource_version_188 ref:hasTimeseriesId bs:Literal_version_747 .
 
-bs:Resource_version_189 ref:hasTimeseriesId bs:Literal_version_496 .
+bs:Resource_version_189 ref:hasTimeseriesId bs:Literal_version_40 .
 
-bs:Resource_version_19 ref:hasTimeseriesId bs:Literal_version_305 .
+bs:Resource_version_19 ref:hasTimeseriesId bs:Literal_version_498 .
 
-bs:Resource_version_190 ref:hasTimeseriesId bs:Literal_version_474 .
+bs:Resource_version_190 ref:hasTimeseriesId bs:Literal_version_220 .
 
-bs:Resource_version_191 ref:hasTimeseriesId bs:Literal_version_570 .
+bs:Resource_version_191 ref:hasTimeseriesId bs:Literal_version_94 .
 
-bs:Resource_version_192 ref:hasTimeseriesId bs:Literal_version_169 .
+bs:Resource_version_192 ref:hasTimeseriesId bs:Literal_version_353 .
 
-bs:Resource_version_193 ref:hasTimeseriesId bs:Literal_version_117 .
+bs:Resource_version_193 ref:hasTimeseriesId bs:Literal_version_244 .
 
-bs:Resource_version_194 ref:hasTimeseriesId bs:Literal_version_171 .
+bs:Resource_version_194 ref:hasTimeseriesId bs:Literal_version_236 .
 
-bs:Resource_version_195 ref:hasTimeseriesId bs:Literal_version_631 .
+bs:Resource_version_195 ref:hasTimeseriesId bs:Literal_version_494 .
 
-bs:Resource_version_196 ref:hasTimeseriesId bs:Literal_version_293 .
+bs:Resource_version_196 ref:hasTimeseriesId bs:Literal_version_237 .
 
-bs:Resource_version_197 ref:hasTimeseriesId bs:Literal_version_197 .
+bs:Resource_version_197 ref:hasTimeseriesId bs:Literal_version_392 .
 
-bs:Resource_version_198 ref:hasTimeseriesId bs:Literal_version_613 .
+bs:Resource_version_198 ref:hasTimeseriesId bs:Literal_version_372 .
 
-bs:Resource_version_199 ref:hasTimeseriesId bs:Literal_version_523 .
+bs:Resource_version_199 ref:hasTimeseriesId bs:Literal_version_411 .
 
-bs:Resource_version_2 ref:hasTimeseriesId bs:Literal_version_366 .
+bs:Resource_version_2 ref:hasTimeseriesId bs:Literal_version_568 .
 
-bs:Resource_version_20 ref:hasTimeseriesId bs:Literal_version_64 .
+bs:Resource_version_20 ref:hasTimeseriesId bs:Literal_version_115 .
 
-bs:Resource_version_200 ref:hasTimeseriesId bs:Literal_version_702 .
+bs:Resource_version_200 ref:hasTimeseriesId bs:Literal_version_290 .
 
-bs:Resource_version_201 ref:hasTimeseriesId bs:Literal_version_367 .
+bs:Resource_version_201 ref:hasTimeseriesId bs:Literal_version_123 .
 
-bs:Resource_version_202 ref:hasTimeseriesId bs:Literal_version_354 .
+bs:Resource_version_202 ref:hasTimeseriesId bs:Literal_version_428 .
 
-bs:Resource_version_203 ref:hasTimeseriesId bs:Literal_version_774 .
+bs:Resource_version_203 ref:hasTimeseriesId bs:Literal_version_121 .
 
-bs:Resource_version_204 ref:hasTimeseriesId bs:Literal_version_120 .
+bs:Resource_version_204 ref:hasTimeseriesId bs:Literal_version_336 .
 
-bs:Resource_version_205 ref:hasTimeseriesId bs:Literal_version_1 .
+bs:Resource_version_205 ref:hasTimeseriesId bs:Literal_version_650 .
 
-bs:Resource_version_206 ref:hasTimeseriesId bs:Literal_version_769 .
+bs:Resource_version_206 ref:hasTimeseriesId bs:Literal_version_197 .
 
-bs:Resource_version_207 ref:hasTimeseriesId bs:Literal_version_264 .
+bs:Resource_version_207 ref:hasTimeseriesId bs:Literal_version_158 .
 
-bs:Resource_version_208 ref:hasTimeseriesId bs:Literal_version_745 .
+bs:Resource_version_208 ref:hasTimeseriesId bs:Literal_version_808 .
 
-bs:Resource_version_209 ref:hasTimeseriesId bs:Literal_version_511 .
+bs:Resource_version_209 ref:hasTimeseriesId bs:Literal_version_630 .
 
-bs:Resource_version_21 ref:hasTimeseriesId bs:Literal_version_48 .
+bs:Resource_version_21 ref:hasTimeseriesId bs:Literal_version_167 .
 
-bs:Resource_version_210 ref:hasTimeseriesId bs:Literal_version_319 .
+bs:Resource_version_210 ref:hasTimeseriesId bs:Literal_version_60 .
 
-bs:Resource_version_211 ref:hasTimeseriesId bs:Literal_version_420 .
+bs:Resource_version_211 ref:hasTimeseriesId bs:Literal_version_46 .
 
-bs:Resource_version_212 ref:hasTimeseriesId bs:Literal_version_185 .
+bs:Resource_version_212 ref:hasTimeseriesId bs:Literal_version_538 .
 
-bs:Resource_version_213 ref:hasTimeseriesId bs:Literal_version_623 .
+bs:Resource_version_213 ref:hasTimeseriesId bs:Literal_version_585 .
 
-bs:Resource_version_214 ref:hasTimeseriesId bs:Literal_version_540 .
+bs:Resource_version_214 ref:hasTimeseriesId bs:Literal_version_379 .
 
-bs:Resource_version_215 ref:hasTimeseriesId bs:Literal_version_105 .
+bs:Resource_version_215 ref:hasTimeseriesId bs:Literal_version_333 .
 
-bs:Resource_version_216 ref:hasTimeseriesId bs:Literal_version_708 .
+bs:Resource_version_216 ref:hasTimeseriesId bs:Literal_version_282 .
 
-bs:Resource_version_217 ref:hasTimeseriesId bs:Literal_version_331 .
+bs:Resource_version_217 ref:hasTimeseriesId bs:Literal_version_580 .
 
-bs:Resource_version_218 ref:hasTimeseriesId bs:Literal_version_560 .
+bs:Resource_version_218 ref:hasTimeseriesId bs:Literal_version_318 .
 
-bs:Resource_version_219 ref:hasTimeseriesId bs:Literal_version_499 .
+bs:Resource_version_219 ref:hasTimeseriesId bs:Literal_version_386 .
 
-bs:Resource_version_22 ref:hasTimeseriesId bs:Literal_version_212 .
+bs:Resource_version_22 ref:hasTimeseriesId bs:Literal_version_375 .
 
-bs:Resource_version_220 ref:hasTimeseriesId bs:Literal_version_659 .
+bs:Resource_version_220 ref:hasTimeseriesId bs:Literal_version_767 .
 
-bs:Resource_version_221 ref:hasTimeseriesId bs:Literal_version_537 .
+bs:Resource_version_221 ref:hasTimeseriesId bs:Literal_version_484 .
 
-bs:Resource_version_222 ref:hasTimeseriesId bs:Literal_version_226 .
+bs:Resource_version_222 ref:hasTimeseriesId bs:Literal_version_161 .
 
-bs:Resource_version_223 ref:hasTimeseriesId bs:Literal_version_753 .
+bs:Resource_version_223 ref:hasTimeseriesId bs:Literal_version_479 .
 
-bs:Resource_version_224 ref:hasTimeseriesId bs:Literal_version_11 .
+bs:Resource_version_224 ref:hasTimeseriesId bs:Literal_version_110 .
 
-bs:Resource_version_225 ref:hasTimeseriesId bs:Literal_version_391 .
+bs:Resource_version_225 ref:hasTimeseriesId bs:Literal_version_319 .
 
-bs:Resource_version_226 ref:hasTimeseriesId bs:Literal_version_785 .
+bs:Resource_version_226 ref:hasTimeseriesId bs:Literal_version_510 .
 
-bs:Resource_version_227 ref:hasTimeseriesId bs:Literal_version_690 .
+bs:Resource_version_227 ref:hasTimeseriesId bs:Literal_version_184 .
 
-bs:Resource_version_228 ref:hasTimeseriesId bs:Literal_version_281 .
+bs:Resource_version_228 ref:hasTimeseriesId bs:Literal_version_284 .
 
-bs:Resource_version_229 ref:hasTimeseriesId bs:Literal_version_746 .
+bs:Resource_version_229 ref:hasTimeseriesId bs:Literal_version_221 .
 
-bs:Resource_version_23 ref:hasTimeseriesId bs:Literal_version_385 .
+bs:Resource_version_23 ref:hasTimeseriesId bs:Literal_version_298 .
 
-bs:Resource_version_230 ref:hasTimeseriesId bs:Literal_version_484 .
+bs:Resource_version_230 ref:hasTimeseriesId bs:Literal_version_299 .
 
-bs:Resource_version_231 ref:hasTimeseriesId bs:Literal_version_718 .
+bs:Resource_version_231 ref:hasTimeseriesId bs:Literal_version_314 .
 
-bs:Resource_version_232 ref:hasTimeseriesId bs:Literal_version_422 .
+bs:Resource_version_232 ref:hasTimeseriesId bs:Literal_version_129 .
 
-bs:Resource_version_233 ref:hasTimeseriesId bs:Literal_version_343 .
+bs:Resource_version_233 ref:hasTimeseriesId bs:Literal_version_38 .
 
-bs:Resource_version_234 ref:hasTimeseriesId bs:Literal_version_642 .
+bs:Resource_version_234 ref:hasTimeseriesId bs:Literal_version_509 .
 
-bs:Resource_version_235 ref:hasTimeseriesId bs:Literal_version_699 .
+bs:Resource_version_235 ref:hasTimeseriesId bs:Literal_version_567 .
 
-bs:Resource_version_236 brick:hasUnits rdfs:Resource ;
-    brick:value bs:Literal_version_780 .
+bs:Resource_version_236 ref:hasTimeseriesId bs:Literal_version_554 .
 
-bs:Resource_version_237 ref:hasTimeseriesId bs:Literal_version_73 .
+bs:Resource_version_237 ref:hasTimeseriesId bs:Literal_version_331 .
 
-bs:Resource_version_238 ref:hasTimeseriesId bs:Literal_version_364 .
+bs:Resource_version_238 ref:hasTimeseriesId bs:Literal_version_131 .
 
-bs:Resource_version_239 ref:hasTimeseriesId bs:Literal_version_83 .
+bs:Resource_version_239 ref:hasTimeseriesId bs:Literal_version_233 .
 
-bs:Resource_version_24 ref:hasTimeseriesId bs:Literal_version_758 .
+bs:Resource_version_24 ref:hasTimeseriesId bs:Literal_version_109 .
 
-bs:Resource_version_240 ref:hasTimeseriesId bs:Literal_version_92 .
+bs:Resource_version_240 ref:hasTimeseriesId bs:Literal_version_68 .
 
-bs:Resource_version_241 ref:hasTimeseriesId bs:Literal_version_626 .
+bs:Resource_version_241 ref:hasTimeseriesId bs:Literal_version_211 .
 
-bs:Resource_version_242 ref:hasTimeseriesId bs:Literal_version_547 .
+bs:Resource_version_242 ref:hasTimeseriesId bs:Literal_version_659 .
 
-bs:Resource_version_243 ref:hasTimeseriesId bs:Literal_version_807 .
+bs:Resource_version_243 ref:hasTimeseriesId bs:Literal_version_497 .
 
-bs:Resource_version_244 ref:hasTimeseriesId bs:Literal_version_338 .
+bs:Resource_version_244 ref:hasTimeseriesId bs:Literal_version_252 .
 
-bs:Resource_version_245 ref:hasTimeseriesId bs:Literal_version_313 .
+bs:Resource_version_245 ref:hasTimeseriesId bs:Literal_version_117 .
 
-bs:Resource_version_246 ref:hasTimeseriesId bs:Literal_version_521 .
+bs:Resource_version_246 ref:hasTimeseriesId bs:Literal_version_116 .
 
-bs:Resource_version_247 ref:hasTimeseriesId bs:Literal_version_500 .
+bs:Resource_version_247 ref:hasTimeseriesId bs:Literal_version_482 .
 
-bs:Resource_version_248 ref:hasTimeseriesId bs:Literal_version_127 .
+bs:Resource_version_248 ref:hasTimeseriesId bs:Literal_version_206 .
 
-bs:Resource_version_249 ref:hasTimeseriesId bs:Literal_version_707 .
+bs:Resource_version_249 ref:hasTimeseriesId bs:Literal_version_755 .
 
-bs:Resource_version_25 ref:hasTimeseriesId bs:Literal_version_330 .
+bs:Resource_version_25 ref:hasTimeseriesId bs:Literal_version_175 .
 
-bs:Resource_version_250 ref:hasTimeseriesId bs:Literal_version_801 .
+bs:Resource_version_250 ref:hasTimeseriesId bs:Literal_version_341 .
 
-bs:Resource_version_251 ref:hasTimeseriesId bs:Literal_version_361 .
+bs:Resource_version_251 ref:hasTimeseriesId bs:Literal_version_364 .
 
-bs:Resource_version_252 ref:hasTimeseriesId bs:Literal_version_188 .
+bs:Resource_version_252 ref:hasTimeseriesId bs:Literal_version_376 .
 
-bs:Resource_version_253 ref:hasTimeseriesId bs:Literal_version_625 .
+bs:Resource_version_253 ref:hasTimeseriesId bs:Literal_version_347 .
 
-bs:Resource_version_254 ref:hasTimeseriesId bs:Literal_version_797 .
+bs:Resource_version_254 brick:hasUnits rdfs:Resource ;
+    brick:value bs:Literal_version_296 .
 
-bs:Resource_version_255 ref:hasTimeseriesId bs:Literal_version_440 .
+bs:Resource_version_255 ref:hasTimeseriesId bs:Literal_version_86 .
 
-bs:Resource_version_256 ref:hasTimeseriesId bs:Literal_version_808 .
+bs:Resource_version_256 ref:hasTimeseriesId bs:Literal_version_59 .
 
-bs:Resource_version_257 ref:hasTimeseriesId bs:Literal_version_775 .
+bs:Resource_version_257 ref:hasTimeseriesId bs:Literal_version_317 .
 
-bs:Resource_version_258 ref:hasTimeseriesId bs:Literal_version_469 .
+bs:Resource_version_258 ref:hasTimeseriesId bs:Literal_version_541 .
 
-bs:Resource_version_259 ref:hasTimeseriesId bs:Literal_version_438 .
+bs:Resource_version_259 ref:hasTimeseriesId bs:Literal_version_642 .
 
-bs:Resource_version_26 ref:hasTimeseriesId bs:Literal_version_750 .
+bs:Resource_version_26 ref:hasTimeseriesId bs:Literal_version_2 .
 
-bs:Resource_version_260 ref:hasTimeseriesId bs:Literal_version_449 .
+bs:Resource_version_260 ref:hasTimeseriesId bs:Literal_version_758 .
 
-bs:Resource_version_261 ref:hasTimeseriesId bs:Literal_version_528 .
+bs:Resource_version_261 ref:hasTimeseriesId bs:Literal_version_359 .
 
-bs:Resource_version_262 ref:hasTimeseriesId bs:Literal_version_777 .
+bs:Resource_version_262 ref:hasTimeseriesId bs:Literal_version_634 .
 
-bs:Resource_version_263 ref:hasTimeseriesId bs:Literal_version_267 .
+bs:Resource_version_263 ref:hasTimeseriesId bs:Literal_version_802 .
 
-bs:Resource_version_264 ref:hasTimeseriesId bs:Literal_version_747 .
+bs:Resource_version_264 ref:hasTimeseriesId bs:Literal_version_369 .
 
-bs:Resource_version_265 ref:hasTimeseriesId bs:Literal_version_309 .
+bs:Resource_version_265 ref:hasTimeseriesId bs:Literal_version_772 .
 
-bs:Resource_version_266 ref:hasTimeseriesId bs:Literal_version_600 .
+bs:Resource_version_266 ref:hasTimeseriesId bs:Literal_version_518 .
 
-bs:Resource_version_267 ref:hasTimeseriesId bs:Literal_version_773 .
+bs:Resource_version_267 ref:hasTimeseriesId bs:Literal_version_735 .
 
-bs:Resource_version_268 ref:hasTimeseriesId bs:Literal_version_760 .
+bs:Resource_version_268 ref:hasTimeseriesId bs:Literal_version_535 .
 
-bs:Resource_version_269 ref:hasTimeseriesId bs:Literal_version_85 .
+bs:Resource_version_269 ref:hasTimeseriesId bs:Literal_version_629 .
 
-bs:Resource_version_27 ref:hasTimeseriesId bs:Literal_version_470 .
+bs:Resource_version_27 ref:hasTimeseriesId bs:Literal_version_421 .
 
-bs:Resource_version_270 ref:hasTimeseriesId bs:Literal_version_453 .
+bs:Resource_version_270 ref:hasTimeseriesId bs:Literal_version_7 .
 
-bs:Resource_version_271 ref:hasTimeseriesId bs:Literal_version_519 .
+bs:Resource_version_271 ref:hasTimeseriesId bs:Literal_version_452 .
 
-bs:Resource_version_272 ref:hasTimeseriesId bs:Literal_version_697 .
+bs:Resource_version_272 ref:hasTimeseriesId bs:Literal_version_562 .
 
 bs:Resource_version_273 ref:hasTimeseriesId bs:Literal_version_615 .
 
-bs:Resource_version_274 ref:hasTimeseriesId bs:Literal_version_365 .
+bs:Resource_version_274 ref:hasTimeseriesId bs:Literal_version_229 .
 
-bs:Resource_version_275 ref:hasTimeseriesId bs:Literal_version_548 .
+bs:Resource_version_275 ref:hasTimeseriesId bs:Literal_version_135 .
 
-bs:Resource_version_276 ref:hasTimeseriesId bs:Literal_version_681 .
+bs:Resource_version_276 ref:hasTimeseriesId bs:Literal_version_62 .
 
-bs:Resource_version_277 ref:hasTimeseriesId bs:Literal_version_629 .
+bs:Resource_version_277 ref:hasTimeseriesId bs:Literal_version_550 .
 
-bs:Resource_version_278 ref:hasTimeseriesId bs:Literal_version_706 .
+bs:Resource_version_278 ref:hasTimeseriesId bs:Literal_version_612 .
 
-bs:Resource_version_279 ref:hasTimeseriesId bs:Literal_version_431 .
+bs:Resource_version_279 ref:hasTimeseriesId bs:Literal_version_680 .
 
-bs:Resource_version_28 ref:hasTimeseriesId bs:Literal_version_192 .
+bs:Resource_version_28 ref:hasTimeseriesId bs:Literal_version_380 .
 
-bs:Resource_version_280 ref:hasTimeseriesId bs:Literal_version_237 .
+bs:Resource_version_280 ref:hasTimeseriesId bs:Literal_version_756 .
 
-bs:Resource_version_281 ref:hasTimeseriesId bs:Literal_version_572 .
+bs:Resource_version_281 ref:hasTimeseriesId bs:Literal_version_286 .
 
-bs:Resource_version_282 ref:hasTimeseriesId bs:Literal_version_709 .
+bs:Resource_version_282 ref:hasTimeseriesId bs:Literal_version_682 .
 
-bs:Resource_version_283 ref:hasTimeseriesId bs:Literal_version_467 .
+bs:Resource_version_283 ref:hasTimeseriesId bs:Literal_version_443 .
 
-bs:Resource_version_284 ref:hasTimeseriesId bs:Literal_version_670 .
+bs:Resource_version_284 ref:hasTimeseriesId bs:Literal_version_71 .
 
-bs:Resource_version_285 ref:hasTimeseriesId bs:Literal_version_455 .
+bs:Resource_version_285 ref:hasTimeseriesId bs:Literal_version_92 .
 
-bs:Resource_version_286 ref:hasTimeseriesId bs:Literal_version_622 .
+bs:Resource_version_286 ref:hasTimeseriesId bs:Literal_version_720 .
 
-bs:Resource_version_287 ref:hasTimeseriesId bs:Literal_version_674 .
+bs:Resource_version_287 ref:hasTimeseriesId bs:Literal_version_559 .
 
-bs:Resource_version_288 ref:hasTimeseriesId bs:Literal_version_644 .
+bs:Resource_version_288 ref:hasTimeseriesId bs:Literal_version_641 .
 
-bs:Resource_version_289 ref:hasTimeseriesId bs:Literal_version_787 .
+bs:Resource_version_289 ref:hasTimeseriesId bs:Literal_version_481 .
 
-bs:Resource_version_29 ref:hasTimeseriesId bs:Literal_version_38 .
+bs:Resource_version_29 ref:hasTimeseriesId bs:Literal_version_226 .
 
-bs:Resource_version_290 ref:hasTimeseriesId bs:Literal_version_298 .
+bs:Resource_version_290 ref:hasTimeseriesId bs:Literal_version_44 .
 
-bs:Resource_version_291 ref:hasTimeseriesId bs:Literal_version_362 .
+bs:Resource_version_291 ref:hasTimeseriesId bs:Literal_version_209 .
 
-bs:Resource_version_292 ref:hasTimeseriesId bs:Literal_version_524 .
+bs:Resource_version_292 ref:hasTimeseriesId bs:Literal_version_694 .
 
-bs:Resource_version_293 ref:hasTimeseriesId bs:Literal_version_201 .
+bs:Resource_version_293 ref:hasTimeseriesId bs:Literal_version_251 .
 
-bs:Resource_version_294 ref:hasTimeseriesId bs:Literal_version_556 .
+bs:Resource_version_294 ref:hasTimeseriesId bs:Literal_version_258 .
 
-bs:Resource_version_295 ref:hasTimeseriesId bs:Literal_version_302 .
+bs:Resource_version_295 ref:hasTimeseriesId bs:Literal_version_783 .
 
-bs:Resource_version_296 ref:hasTimeseriesId bs:Literal_version_278 .
+bs:Resource_version_296 ref:hasTimeseriesId bs:Literal_version_594 .
 
-bs:Resource_version_297 ref:hasTimeseriesId bs:Literal_version_734 .
+bs:Resource_version_297 ref:hasTimeseriesId bs:Literal_version_741 .
 
-bs:Resource_version_298 ref:hasTimeseriesId bs:Literal_version_605 .
+bs:Resource_version_298 ref:hasTimeseriesId bs:Literal_version_672 .
 
-bs:Resource_version_299 ref:hasTimeseriesId bs:Literal_version_669 .
+bs:Resource_version_299 ref:hasTimeseriesId bs:Literal_version_752 .
 
-bs:Resource_version_3 ref:hasTimeseriesId bs:Literal_version_435 .
+bs:Resource_version_3 ref:hasTimeseriesId bs:Literal_version_147 .
 
-bs:Resource_version_30 ref:hasTimeseriesId bs:Literal_version_172 .
+bs:Resource_version_30 ref:hasTimeseriesId bs:Literal_version_160 .
 
-bs:Resource_version_300 ref:hasTimeseriesId bs:Literal_version_721 .
+bs:Resource_version_300 ref:hasTimeseriesId bs:Literal_version_460 .
 
-bs:Resource_version_301 ref:hasTimeseriesId bs:Literal_version_799 .
+bs:Resource_version_301 ref:hasTimeseriesId bs:Literal_version_686 .
 
-bs:Resource_version_302 ref:hasTimeseriesId bs:Literal_version_704 .
+bs:Resource_version_302 ref:hasTimeseriesId bs:Literal_version_102 .
 
-bs:Resource_version_303 ref:hasTimeseriesId bs:Literal_version_227 .
+bs:Resource_version_303 ref:hasTimeseriesId bs:Literal_version_228 .
 
-bs:Resource_version_304 ref:hasTimeseriesId bs:Literal_version_779 .
+bs:Resource_version_304 ref:hasTimeseriesId bs:Literal_version_685 .
 
-bs:Resource_version_305 ref:hasTimeseriesId bs:Literal_version_527 .
+bs:Resource_version_305 ref:hasTimeseriesId bs:Literal_version_530 .
 
-bs:Resource_version_306 ref:hasTimeseriesId bs:Literal_version_804 .
+bs:Resource_version_306 ref:hasTimeseriesId bs:Literal_version_148 .
 
-bs:Resource_version_307 ref:hasTimeseriesId bs:Literal_version_673 .
+bs:Resource_version_307 ref:hasTimeseriesId bs:Literal_version_475 .
 
-bs:Resource_version_308 ref:hasTimeseriesId bs:Literal_version_245 .
+bs:Resource_version_308 ref:hasTimeseriesId bs:Literal_version_225 .
 
-bs:Resource_version_309 ref:hasTimeseriesId bs:Literal_version_542 .
+bs:Resource_version_309 ref:hasTimeseriesId bs:Literal_version_608 .
 
-bs:Resource_version_31 ref:hasTimeseriesId bs:Literal_version_689 .
+bs:Resource_version_31 ref:hasTimeseriesId bs:Literal_version_248 .
 
-bs:Resource_version_310 ref:hasTimeseriesId bs:Literal_version_71 .
+bs:Resource_version_310 ref:hasTimeseriesId bs:Literal_version_434 .
 
-bs:Resource_version_311 ref:hasTimeseriesId bs:Literal_version_303 .
+bs:Resource_version_311 ref:hasTimeseriesId bs:Literal_version_491 .
 
-bs:Resource_version_312 ref:hasTimeseriesId bs:Literal_version_628 .
+bs:Resource_version_312 ref:hasTimeseriesId bs:Literal_version_462 .
 
-bs:Resource_version_313 ref:hasTimeseriesId bs:Literal_version_599 .
+bs:Resource_version_313 ref:hasTimeseriesId bs:Literal_version_602 .
 
-bs:Resource_version_314 ref:hasTimeseriesId bs:Literal_version_792 .
+bs:Resource_version_314 ref:hasTimeseriesId bs:Literal_version_272 .
 
-bs:Resource_version_315 ref:hasTimeseriesId bs:Literal_version_639 .
+bs:Resource_version_315 ref:hasTimeseriesId bs:Literal_version_648 .
 
-bs:Resource_version_316 ref:hasTimeseriesId bs:Literal_version_680 .
+bs:Resource_version_316 ref:hasTimeseriesId bs:Literal_version_693 .
 
-bs:Resource_version_317 ref:hasTimeseriesId bs:Literal_version_786 .
+bs:Resource_version_317 ref:hasTimeseriesId bs:Literal_version_688 .
 
-bs:Resource_version_318 ref:hasTimeseriesId bs:Literal_version_714 .
+bs:Resource_version_318 ref:hasTimeseriesId bs:Literal_version_520 .
 
-bs:Resource_version_319 ref:hasTimeseriesId bs:Literal_version_609 .
+bs:Resource_version_319 ref:hasTimeseriesId bs:Literal_version_526 .
 
-bs:Resource_version_32 ref:hasTimeseriesId bs:Literal_version_434 .
+bs:Resource_version_32 ref:hasTimeseriesId bs:Literal_version_798 .
 
-bs:Resource_version_320 ref:hasTimeseriesId bs:Literal_version_647 .
+bs:Resource_version_320 ref:hasTimeseriesId bs:Literal_version_257 .
 
-bs:Resource_version_321 ref:hasTimeseriesId bs:Literal_version_806 .
+bs:Resource_version_321 ref:hasTimeseriesId bs:Literal_version_769 .
 
-bs:Resource_version_322 ref:hasTimeseriesId bs:Literal_version_698 .
+bs:Resource_version_322 ref:hasTimeseriesId bs:Literal_version_775 .
 
-bs:Resource_version_323 ref:hasTimeseriesId bs:Literal_version_533 .
+bs:Resource_version_323 ref:hasTimeseriesId bs:Literal_version_638 .
 
-bs:Resource_version_324 ref:hasTimeseriesId bs:Literal_version_664 .
+bs:Resource_version_324 ref:hasTimeseriesId bs:Literal_version_710 .
 
-bs:Resource_version_325 ref:hasTimeseriesId bs:Literal_version_737 .
+bs:Resource_version_325 ref:hasTimeseriesId bs:Literal_version_754 .
 
-bs:Resource_version_326 ref:hasTimeseriesId bs:Literal_version_231 .
+bs:Resource_version_326 ref:hasTimeseriesId bs:Literal_version_795 .
 
-bs:Resource_version_327 ref:hasTimeseriesId bs:Literal_version_113 .
+bs:Resource_version_327 ref:hasTimeseriesId bs:Literal_version_794 .
 
-bs:Resource_version_328 ref:hasTimeseriesId bs:Literal_version_733 .
+bs:Resource_version_328 ref:hasTimeseriesId bs:Literal_version_739 .
 
-bs:Resource_version_329 ref:hasTimeseriesId bs:Literal_version_771 .
+bs:Resource_version_329 ref:hasTimeseriesId bs:Literal_version_789 .
 
-bs:Resource_version_33 ref:hasTimeseriesId bs:Literal_version_677 .
+bs:Resource_version_33 ref:hasTimeseriesId bs:Literal_version_382 .
 
-bs:Resource_version_34 ref:hasTimeseriesId bs:Literal_version_379 .
+bs:Resource_version_34 ref:hasTimeseriesId bs:Literal_version_540 .
 
-bs:Resource_version_35 ref:hasTimeseriesId bs:Literal_version_397 .
+bs:Resource_version_35 ref:hasTimeseriesId bs:Literal_version_547 .
 
-bs:Resource_version_36 ref:hasTimeseriesId bs:Literal_version_149 .
+bs:Resource_version_36 ref:hasTimeseriesId bs:Literal_version_33 .
 
-bs:Resource_version_37 ref:hasTimeseriesId bs:Literal_version_217 .
+bs:Resource_version_37 ref:hasTimeseriesId bs:Literal_version_505 .
 
-bs:Resource_version_38 ref:hasTimeseriesId bs:Literal_version_332 .
+bs:Resource_version_38 ref:hasTimeseriesId bs:Literal_version_256 .
 
-bs:Resource_version_39 ref:hasTimeseriesId bs:Literal_version_353 .
+bs:Resource_version_39 ref:hasTimeseriesId bs:Literal_version_70 .
 
-bs:Resource_version_4 ref:hasTimeseriesId bs:Literal_version_221 .
+bs:Resource_version_4 ref:hasTimeseriesId bs:Literal_version_32 .
 
-bs:Resource_version_40 ref:hasTimeseriesId bs:Literal_version_643 .
+bs:Resource_version_40 ref:hasTimeseriesId bs:Literal_version_130 .
 
-bs:Resource_version_41 ref:hasTimeseriesId bs:Literal_version_154 .
+bs:Resource_version_41 ref:hasTimeseriesId bs:Literal_version_663 .
 
-bs:Resource_version_42 ref:hasTimeseriesId bs:Literal_version_49 .
+bs:Resource_version_42 ref:hasTimeseriesId bs:Literal_version_125 .
 
-bs:Resource_version_43 ref:hasTimeseriesId bs:Literal_version_108 .
+bs:Resource_version_43 ref:hasTimeseriesId bs:Literal_version_49 .
 
-bs:Resource_version_44 ref:hasTimeseriesId bs:Literal_version_123 .
+bs:Resource_version_44 ref:hasTimeseriesId bs:Literal_version_79 .
 
-bs:Resource_version_45 ref:hasTimeseriesId bs:Literal_version_535 .
+bs:Resource_version_45 ref:hasTimeseriesId bs:Literal_version_416 .
 
-bs:Resource_version_46 ref:hasTimeseriesId bs:Literal_version_459 .
+bs:Resource_version_46 ref:hasTimeseriesId bs:Literal_version_366 .
 
-bs:Resource_version_47 ref:hasTimeseriesId bs:Literal_version_54 .
+bs:Resource_version_47 ref:hasTimeseriesId bs:Literal_version_64 .
 
-bs:Resource_version_48 ref:hasTimeseriesId bs:Literal_version_671 .
+bs:Resource_version_48 ref:hasTimeseriesId bs:Literal_version_458 .
 
-bs:Resource_version_49 ref:hasTimeseriesId bs:Literal_version_749 .
+bs:Resource_version_49 ref:hasTimeseriesId bs:Literal_version_706 .
 
-bs:Resource_version_5 ref:hasTimeseriesId bs:Literal_version_251 .
+bs:Resource_version_5 ref:hasTimeseriesId bs:Literal_version_214 .
 
-bs:Resource_version_50 ref:hasTimeseriesId bs:Literal_version_507 .
+bs:Resource_version_50 ref:hasTimeseriesId bs:Literal_version_725 .
 
-bs:Resource_version_51 ref:hasTimeseriesId bs:Literal_version_273 .
+bs:Resource_version_51 ref:hasTimeseriesId bs:Literal_version_546 .
 
-bs:Resource_version_52 ref:hasTimeseriesId bs:Literal_version_200 .
+bs:Resource_version_52 ref:hasTimeseriesId bs:Literal_version_451 .
 
-bs:Resource_version_53 ref:hasTimeseriesId bs:Literal_version_247 .
+bs:Resource_version_53 ref:hasTimeseriesId bs:Literal_version_373 .
 
-bs:Resource_version_54 ref:hasTimeseriesId bs:Literal_version_580 .
+bs:Resource_version_54 ref:hasTimeseriesId bs:Literal_version_170 .
 
-bs:Resource_version_55 ref:hasTimeseriesId bs:Literal_version_463 .
+bs:Resource_version_55 ref:hasTimeseriesId bs:Literal_version_138 .
 
-bs:Resource_version_56 ref:hasTimeseriesId bs:Literal_version_742 .
+bs:Resource_version_56 ref:hasTimeseriesId bs:Literal_version_426 .
 
-bs:Resource_version_57 ref:hasTimeseriesId bs:Literal_version_376 .
+bs:Resource_version_57 ref:hasTimeseriesId bs:Literal_version_55 .
 
-bs:Resource_version_58 ref:hasTimeseriesId bs:Literal_version_464 .
+bs:Resource_version_58 ref:hasTimeseriesId bs:Literal_version_80 .
 
-bs:Resource_version_59 ref:hasTimeseriesId bs:Literal_version_17 .
+bs:Resource_version_59 ref:hasTimeseriesId bs:Literal_version_776 .
 
-bs:Resource_version_6 ref:hasTimeseriesId bs:Literal_version_194 .
+bs:Resource_version_6 ref:hasTimeseriesId bs:Literal_version_361 .
 
-bs:Resource_version_60 ref:hasTimeseriesId bs:Literal_version_360 .
+bs:Resource_version_60 ref:hasTimeseriesId bs:Literal_version_618 .
 
-bs:Resource_version_61 ref:hasTimeseriesId bs:Literal_version_363 .
+bs:Resource_version_61 ref:hasTimeseriesId bs:Literal_version_496 .
 
-bs:Resource_version_62 ref:hasTimeseriesId bs:Literal_version_100 .
+bs:Resource_version_62 ref:hasTimeseriesId bs:Literal_version_385 .
 
-bs:Resource_version_63 ref:hasTimeseriesId bs:Literal_version_342 .
+bs:Resource_version_63 ref:hasTimeseriesId bs:Literal_version_50 .
 
-bs:Resource_version_64 ref:hasTimeseriesId bs:Literal_version_445 .
+bs:Resource_version_64 ref:hasTimeseriesId bs:Literal_version_666 .
 
-bs:Resource_version_65 ref:hasTimeseriesId bs:Literal_version_494 .
+bs:Resource_version_65 ref:hasTimeseriesId bs:Literal_version_643 .
 
-bs:Resource_version_66 ref:hasTimeseriesId bs:Literal_version_427 .
+bs:Resource_version_66 ref:hasTimeseriesId bs:Literal_version_519 .
 
-bs:Resource_version_67 ref:hasTimeseriesId bs:Literal_version_359 .
+bs:Resource_version_67 ref:hasTimeseriesId bs:Literal_version_365 .
 
-bs:Resource_version_68 ref:hasTimeseriesId bs:Literal_version_730 .
+bs:Resource_version_68 ref:hasTimeseriesId bs:Literal_version_76 .
 
-bs:Resource_version_69 ref:hasTimeseriesId bs:Literal_version_75 .
+bs:Resource_version_69 ref:hasTimeseriesId bs:Literal_version_645 .
 
-bs:Resource_version_7 ref:hasTimeseriesId bs:Literal_version_389 .
+bs:Resource_version_7 ref:hasTimeseriesId bs:Literal_version_141 .
 
-bs:Resource_version_70 ref:hasTimeseriesId bs:Literal_version_250 .
+bs:Resource_version_70 ref:hasTimeseriesId bs:Literal_version_74 .
 
-bs:Resource_version_71 ref:hasTimeseriesId bs:Literal_version_352 .
+bs:Resource_version_71 ref:hasTimeseriesId bs:Literal_version_459 .
 
-bs:Resource_version_72 ref:hasTimeseriesId bs:Literal_version_518 .
+bs:Resource_version_72 ref:hasTimeseriesId bs:Literal_version_348 .
 
-bs:Resource_version_73 ref:hasTimeseriesId bs:Literal_version_444 .
+bs:Resource_version_73 ref:hasTimeseriesId bs:Literal_version_463 .
 
-bs:Resource_version_74 ref:hasTimeseriesId bs:Literal_version_255 .
+bs:Resource_version_74 ref:hasTimeseriesId bs:Literal_version_603 .
 
-bs:Resource_version_75 ref:hasTimeseriesId bs:Literal_version_407 .
+bs:Resource_version_75 ref:hasTimeseriesId bs:Literal_version_105 .
 
-bs:Resource_version_76 ref:hasTimeseriesId bs:Literal_version_33 .
+bs:Resource_version_76 ref:hasTimeseriesId bs:Literal_version_200 .
 
-bs:Resource_version_77 ref:hasTimeseriesId bs:Literal_version_764 .
+bs:Resource_version_77 ref:hasTimeseriesId bs:Literal_version_360 .
 
-bs:Resource_version_78 ref:hasTimeseriesId bs:Literal_version_395 .
+bs:Resource_version_78 ref:hasTimeseriesId bs:Literal_version_104 .
 
-bs:Resource_version_79 ref:hasTimeseriesId bs:Literal_version_152 .
+bs:Resource_version_79 ref:hasTimeseriesId bs:Literal_version_320 .
 
-bs:Resource_version_8 ref:hasTimeseriesId bs:Literal_version_410 .
+bs:Resource_version_8 ref:hasTimeseriesId bs:Literal_version_662 .
 
-bs:Resource_version_80 ref:hasTimeseriesId bs:Literal_version_184 .
+bs:Resource_version_80 ref:hasTimeseriesId bs:Literal_version_391 .
 
-bs:Resource_version_81 ref:hasTimeseriesId bs:Literal_version_481 .
+bs:Resource_version_81 ref:hasTimeseriesId bs:Literal_version_83 .
 
-bs:Resource_version_82 ref:hasTimeseriesId bs:Literal_version_131 .
+bs:Resource_version_82 ref:hasTimeseriesId bs:Literal_version_43 .
 
-bs:Resource_version_83 ref:hasTimeseriesId bs:Literal_version_203 .
+bs:Resource_version_83 ref:hasTimeseriesId bs:Literal_version_194 .
 
-bs:Resource_version_84 ref:hasTimeseriesId bs:Literal_version_161 .
+bs:Resource_version_84 ref:hasTimeseriesId bs:Literal_version_315 .
 
-bs:Resource_version_85 ref:hasTimeseriesId bs:Literal_version_738 .
+bs:Resource_version_85 ref:hasTimeseriesId bs:Literal_version_157 .
 
-bs:Resource_version_86 ref:hasTimeseriesId bs:Literal_version_485 .
+bs:Resource_version_86 ref:hasTimeseriesId bs:Literal_version_322 .
 
-bs:Resource_version_87 ref:hasTimeseriesId bs:Literal_version_18 .
+bs:Resource_version_87 ref:hasTimeseriesId bs:Literal_version_155 .
 
-bs:Resource_version_88 ref:hasTimeseriesId bs:Literal_version_228 .
+bs:Resource_version_88 ref:hasTimeseriesId bs:Literal_version_207 .
 
-bs:Resource_version_89 ref:hasTimeseriesId bs:Literal_version_663 .
+bs:Resource_version_89 ref:hasTimeseriesId bs:Literal_version_15 .
 
-bs:Resource_version_9 ref:hasTimeseriesId bs:Literal_version_515 .
+bs:Resource_version_9 ref:hasTimeseriesId bs:Literal_version_231 .
 
-bs:Resource_version_90 ref:hasTimeseriesId bs:Literal_version_112 .
+bs:Resource_version_90 ref:hasTimeseriesId bs:Literal_version_714 .
 
-bs:Resource_version_91 ref:hasTimeseriesId bs:Literal_version_530 .
+bs:Resource_version_91 ref:hasTimeseriesId bs:Literal_version_433 .
 
-bs:Resource_version_92 ref:hasTimeseriesId bs:Literal_version_2 .
+bs:Resource_version_92 ref:hasTimeseriesId bs:Literal_version_378 .
 
-bs:Resource_version_93 ref:hasTimeseriesId bs:Literal_version_597 .
+bs:Resource_version_93 ref:hasTimeseriesId bs:Literal_version_522 .
 
-bs:Resource_version_94 ref:hasTimeseriesId bs:Literal_version_204 .
+bs:Resource_version_94 ref:hasTimeseriesId bs:Literal_version_619 .
 
-bs:Resource_version_95 ref:hasTimeseriesId bs:Literal_version_480 .
+bs:Resource_version_95 ref:hasTimeseriesId bs:Literal_version_770 .
 
-bs:Resource_version_96 ref:hasTimeseriesId bs:Literal_version_210 .
+bs:Resource_version_96 ref:hasTimeseriesId bs:Literal_version_188 .
 
-bs:Resource_version_97 ref:hasTimeseriesId bs:Literal_version_322 .
+bs:Resource_version_97 ref:hasTimeseriesId bs:Literal_version_78 .
 
-bs:Resource_version_98 ref:hasTimeseriesId bs:Literal_version_205 .
+bs:Resource_version_98 ref:hasTimeseriesId bs:Literal_version_543 .
 
-bs:Resource_version_99 ref:hasTimeseriesId bs:Literal_version_125 .
+bs:Resource_version_99 ref:hasTimeseriesId bs:Literal_version_362 .
 
 bs:Return_Air_Temperature_Sensor_version_1 a brick:Return_Air_Temperature_Sensor ;
-    rdfs:label bs:Literal_version_765 ;
-    ref:hasExternalReference bs:Resource_version_50 .
+    rdfs:label bs:Literal_version_774 ;
+    ref:hasExternalReference bs:Resource_version_219 .
 
 bs:Return_Air_Temperature_Sensor_version_2 a brick:Return_Air_Temperature_Sensor ;
-    rdfs:label bs:Literal_version_567 ;
-    ref:hasExternalReference bs:Resource_version_303 .
+    rdfs:label bs:Literal_version_579 ;
+    ref:hasExternalReference bs:Resource_version_305 .
 
 bs:Return_Air_Temperature_Sensor_version_3 a brick:Return_Air_Temperature_Sensor ;
-    rdfs:label bs:Literal_version_661 ;
-    ref:hasExternalReference bs:Resource_version_255 .
+    rdfs:label bs:Literal_version_683 ;
+    ref:hasExternalReference bs:Resource_version_200 .
 
 bs:Return_Air_Temperature_Sensor_version_4 a brick:Return_Air_Temperature_Sensor ;
-    rdfs:label bs:Literal_version_98 ;
-    ref:hasExternalReference bs:Resource_version_251 .
+    rdfs:label bs:Literal_version_107 ;
+    ref:hasExternalReference bs:Resource_version_299 .
 
 bs:Speed_Status_version_1 a brick:Speed_Status ;
-    rdfs:label bs:Literal_version_493 ;
-    ref:hasExternalReference bs:Resource_version_212 .
+    rdfs:label bs:Literal_version_506 ;
+    ref:hasExternalReference bs:Resource_version_283 .
 
 bs:Start_Stop_Command_version_1 a brick:Start_Stop_Command ;
-    rdfs:label bs:Literal_version_378 ;
-    ref:hasExternalReference bs:Resource_version_265 .
+    rdfs:label bs:Literal_version_402 ;
+    ref:hasExternalReference bs:Resource_version_242 .
 
 bs:Supply_Air_Flow_Sensor_version_1 a brick:Supply_Air_Flow_Sensor ;
-    rdfs:label bs:Literal_version_290 ;
-    ref:hasExternalReference bs:Resource_version_94 .
-
-bs:Supply_Air_Flow_Sensor_version_10 a brick:Supply_Air_Flow_Sensor ;
-    rdfs:label bs:Literal_version_215 ;
-    ref:hasExternalReference bs:Resource_version_162 .
-
-bs:Supply_Air_Flow_Sensor_version_11 a brick:Supply_Air_Flow_Sensor ;
-    rdfs:label bs:Literal_version_736 ;
-    ref:hasExternalReference bs:Resource_version_176 .
-
-bs:Supply_Air_Flow_Sensor_version_12 a brick:Supply_Air_Flow_Sensor ;
-    rdfs:label bs:Literal_version_79 ;
-    ref:hasExternalReference bs:Resource_version_111 .
-
-bs:Supply_Air_Flow_Sensor_version_13 a brick:Supply_Air_Flow_Sensor ;
-    rdfs:label bs:Literal_version_686 ;
-    ref:hasExternalReference bs:Resource_version_284 .
-
-bs:Supply_Air_Flow_Sensor_version_14 a brick:Supply_Air_Flow_Sensor ;
-    rdfs:label bs:Literal_version_69 ;
-    ref:hasExternalReference bs:Resource_version_18 .
-
-bs:Supply_Air_Flow_Sensor_version_15 a brick:Supply_Air_Flow_Sensor ;
-    rdfs:label bs:Literal_version_705 ;
-    ref:hasExternalReference bs:Resource_version_206 .
-
-bs:Supply_Air_Flow_Sensor_version_16 a brick:Supply_Air_Flow_Sensor ;
-    rdfs:label bs:Literal_version_497 ;
-    ref:hasExternalReference bs:Resource_version_4 .
-
-bs:Supply_Air_Flow_Sensor_version_17 a brick:Supply_Air_Flow_Sensor ;
-    rdfs:label bs:Literal_version_196 ;
-    ref:hasExternalReference bs:Resource_version_149 .
-
-bs:Supply_Air_Flow_Sensor_version_18 a brick:Supply_Air_Flow_Sensor ;
-    rdfs:label bs:Literal_version_311 ;
-    ref:hasExternalReference bs:Resource_version_90 .
-
-bs:Supply_Air_Flow_Sensor_version_19 a brick:Supply_Air_Flow_Sensor ;
-    rdfs:label bs:Literal_version_598 ;
-    ref:hasExternalReference bs:Resource_version_213 .
-
-bs:Supply_Air_Flow_Sensor_version_2 a brick:Supply_Air_Flow_Sensor ;
-    rdfs:label bs:Literal_version_182 ;
-    ref:hasExternalReference bs:Resource_version_34 .
-
-bs:Supply_Air_Flow_Sensor_version_20 a brick:Supply_Air_Flow_Sensor ;
-    rdfs:label bs:Literal_version_789 ;
-    ref:hasExternalReference bs:Resource_version_325 .
-
-bs:Supply_Air_Flow_Sensor_version_21 a brick:Supply_Air_Flow_Sensor ;
-    rdfs:label bs:Literal_version_186 ;
-    ref:hasExternalReference bs:Resource_version_132 .
-
-bs:Supply_Air_Flow_Sensor_version_22 a brick:Supply_Air_Flow_Sensor ;
-    rdfs:label bs:Literal_version_607 ;
-    ref:hasExternalReference bs:Resource_version_46 .
-
-bs:Supply_Air_Flow_Sensor_version_23 a brick:Supply_Air_Flow_Sensor ;
-    rdfs:label bs:Literal_version_202 ;
-    ref:hasExternalReference bs:Resource_version_109 .
-
-bs:Supply_Air_Flow_Sensor_version_24 a brick:Supply_Air_Flow_Sensor ;
-    rdfs:label bs:Literal_version_565 ;
-    ref:hasExternalReference bs:Resource_version_51 .
-
-bs:Supply_Air_Flow_Sensor_version_25 a brick:Supply_Air_Flow_Sensor ;
-    rdfs:label bs:Literal_version_61 ;
-    ref:hasExternalReference bs:Resource_version_211 .
-
-bs:Supply_Air_Flow_Sensor_version_26 a brick:Supply_Air_Flow_Sensor ;
-    rdfs:label bs:Literal_version_222 ;
-    ref:hasExternalReference bs:Resource_version_290 .
-
-bs:Supply_Air_Flow_Sensor_version_3 a brick:Supply_Air_Flow_Sensor ;
-    rdfs:label bs:Literal_version_703 ;
+    rdfs:label bs:Literal_version_303 ;
     ref:hasExternalReference bs:Resource_version_40 .
 
+bs:Supply_Air_Flow_Sensor_version_10 a brick:Supply_Air_Flow_Sensor ;
+    rdfs:label bs:Literal_version_218 ;
+    ref:hasExternalReference bs:Resource_version_88 .
+
+bs:Supply_Air_Flow_Sensor_version_11 a brick:Supply_Air_Flow_Sensor ;
+    rdfs:label bs:Literal_version_744 ;
+    ref:hasExternalReference bs:Resource_version_328 .
+
+bs:Supply_Air_Flow_Sensor_version_12 a brick:Supply_Air_Flow_Sensor ;
+    rdfs:label bs:Literal_version_81 ;
+    ref:hasExternalReference bs:Resource_version_62 .
+
+bs:Supply_Air_Flow_Sensor_version_13 a brick:Supply_Air_Flow_Sensor ;
+    rdfs:label bs:Literal_version_705 ;
+    ref:hasExternalReference bs:Resource_version_49 .
+
+bs:Supply_Air_Flow_Sensor_version_14 a brick:Supply_Air_Flow_Sensor ;
+    rdfs:label bs:Literal_version_67 ;
+    ref:hasExternalReference bs:Resource_version_44 .
+
+bs:Supply_Air_Flow_Sensor_version_15 a brick:Supply_Air_Flow_Sensor ;
+    rdfs:label bs:Literal_version_719 ;
+    ref:hasExternalReference bs:Resource_version_184 .
+
+bs:Supply_Air_Flow_Sensor_version_16 a brick:Supply_Air_Flow_Sensor ;
+    rdfs:label bs:Literal_version_511 ;
+    ref:hasExternalReference bs:Resource_version_313 .
+
+bs:Supply_Air_Flow_Sensor_version_17 a brick:Supply_Air_Flow_Sensor ;
+    rdfs:label bs:Literal_version_202 ;
+    ref:hasExternalReference bs:Resource_version_161 .
+
+bs:Supply_Air_Flow_Sensor_version_18 a brick:Supply_Air_Flow_Sensor ;
+    rdfs:label bs:Literal_version_327 ;
+    ref:hasExternalReference bs:Resource_version_70 .
+
+bs:Supply_Air_Flow_Sensor_version_19 a brick:Supply_Air_Flow_Sensor ;
+    rdfs:label bs:Literal_version_617 ;
+    ref:hasExternalReference bs:Resource_version_106 .
+
+bs:Supply_Air_Flow_Sensor_version_2 a brick:Supply_Air_Flow_Sensor ;
+    rdfs:label bs:Literal_version_190 ;
+    ref:hasExternalReference bs:Resource_version_10 .
+
+bs:Supply_Air_Flow_Sensor_version_20 a brick:Supply_Air_Flow_Sensor ;
+    rdfs:label bs:Literal_version_791 ;
+    ref:hasExternalReference bs:Resource_version_208 .
+
+bs:Supply_Air_Flow_Sensor_version_21 a brick:Supply_Air_Flow_Sensor ;
+    rdfs:label bs:Literal_version_192 ;
+    ref:hasExternalReference bs:Resource_version_165 .
+
+bs:Supply_Air_Flow_Sensor_version_22 a brick:Supply_Air_Flow_Sensor ;
+    rdfs:label bs:Literal_version_626 ;
+    ref:hasExternalReference bs:Resource_version_257 .
+
+bs:Supply_Air_Flow_Sensor_version_23 a brick:Supply_Air_Flow_Sensor ;
+    rdfs:label bs:Literal_version_210 ;
+    ref:hasExternalReference bs:Resource_version_124 .
+
+bs:Supply_Air_Flow_Sensor_version_24 a brick:Supply_Air_Flow_Sensor ;
+    rdfs:label bs:Literal_version_577 ;
+    ref:hasExternalReference bs:Resource_version_39 .
+
+bs:Supply_Air_Flow_Sensor_version_25 a brick:Supply_Air_Flow_Sensor ;
+    rdfs:label bs:Literal_version_58 ;
+    ref:hasExternalReference bs:Resource_version_154 .
+
+bs:Supply_Air_Flow_Sensor_version_26 a brick:Supply_Air_Flow_Sensor ;
+    rdfs:label bs:Literal_version_230 ;
+    ref:hasExternalReference bs:Resource_version_60 .
+
+bs:Supply_Air_Flow_Sensor_version_3 a brick:Supply_Air_Flow_Sensor ;
+    rdfs:label bs:Literal_version_718 ;
+    ref:hasExternalReference bs:Resource_version_310 .
+
 bs:Supply_Air_Flow_Sensor_version_4 a brick:Supply_Air_Flow_Sensor ;
-    rdfs:label bs:Literal_version_118 ;
-    ref:hasExternalReference bs:Resource_version_133 .
+    rdfs:label bs:Literal_version_127 ;
+    ref:hasExternalReference bs:Resource_version_55 .
 
 bs:Supply_Air_Flow_Sensor_version_5 a brick:Supply_Air_Flow_Sensor ;
-    rdfs:label bs:Literal_version_15 ;
-    ref:hasExternalReference bs:Resource_version_47 .
+    rdfs:label bs:Literal_version_13 ;
+    ref:hasExternalReference bs:Resource_version_163 .
 
 bs:Supply_Air_Flow_Sensor_version_6 a brick:Supply_Air_Flow_Sensor ;
-    rdfs:label bs:Literal_version_179 ;
-    ref:hasExternalReference bs:Resource_version_296 .
+    rdfs:label bs:Literal_version_186 ;
+    ref:hasExternalReference bs:Resource_version_273 .
 
 bs:Supply_Air_Flow_Sensor_version_7 a brick:Supply_Air_Flow_Sensor ;
-    rdfs:label bs:Literal_version_218 ;
-    ref:hasExternalReference bs:Resource_version_188 .
+    rdfs:label bs:Literal_version_222 ;
+    ref:hasExternalReference bs:Resource_version_11 .
 
 bs:Supply_Air_Flow_Sensor_version_8 a brick:Supply_Air_Flow_Sensor ;
-    rdfs:label bs:Literal_version_262 ;
-    ref:hasExternalReference bs:Resource_version_282 .
-
-bs:Supply_Air_Flow_Sensor_version_9 a brick:Supply_Air_Flow_Sensor ;
-    rdfs:label bs:Literal_version_374 ;
-    ref:hasExternalReference bs:Resource_version_131 .
-
-bs:Supply_Air_Static_Pressure_Sensor_version_1 a brick:Supply_Air_Static_Pressure_Sensor ;
-    rdfs:label bs:Literal_version_386 ;
-    ref:hasExternalReference bs:Resource_version_89 .
-
-bs:Supply_Air_Static_Pressure_Sensor_version_2 a brick:Supply_Air_Static_Pressure_Sensor ;
-    rdfs:label bs:Literal_version_587 ;
-    ref:hasExternalReference bs:Resource_version_274 .
-
-bs:Supply_Air_Static_Pressure_Sensor_version_3 a brick:Supply_Air_Static_Pressure_Sensor ;
-    rdfs:label bs:Literal_version_618 ;
-    ref:hasExternalReference bs:Resource_version_115 .
-
-bs:Supply_Air_Static_Pressure_Sensor_version_4 a brick:Supply_Air_Static_Pressure_Sensor ;
-    rdfs:label bs:Literal_version_487 ;
-    ref:hasExternalReference bs:Resource_version_180 .
-
-bs:Supply_Air_Static_Pressure_Sensor_version_5 a brick:Supply_Air_Static_Pressure_Sensor ;
-    rdfs:label bs:Literal_version_739 ;
-    ref:hasExternalReference bs:Resource_version_31 .
-
-bs:Supply_Air_Static_Pressure_Sensor_version_6 a brick:Supply_Air_Static_Pressure_Sensor ;
-    rdfs:label bs:Literal_version_728 ;
-    ref:hasExternalReference bs:Resource_version_322 .
-
-bs:Supply_Air_Static_Pressure_Sensor_version_7 a brick:Supply_Air_Static_Pressure_Sensor ;
-    rdfs:label bs:Literal_version_529 ;
-    ref:hasExternalReference bs:Resource_version_113 .
-
-bs:Supply_Air_Static_Pressure_Sensor_version_8 a brick:Supply_Air_Static_Pressure_Sensor ;
-    rdfs:label bs:Literal_version_717 ;
-    ref:hasExternalReference bs:Resource_version_215 .
-
-bs:Supply_Air_Static_Pressure_Sensor_version_9 a brick:Supply_Air_Static_Pressure_Sensor ;
-    rdfs:label bs:Literal_version_412 ;
+    rdfs:label bs:Literal_version_267 ;
     ref:hasExternalReference bs:Resource_version_306 .
 
+bs:Supply_Air_Flow_Sensor_version_9 a brick:Supply_Air_Flow_Sensor ;
+    rdfs:label bs:Literal_version_399 ;
+    ref:hasExternalReference bs:Resource_version_5 .
+
+bs:Supply_Air_Static_Pressure_Sensor_version_1 a brick:Supply_Air_Static_Pressure_Sensor ;
+    rdfs:label bs:Literal_version_409 ;
+    ref:hasExternalReference bs:Resource_version_214 .
+
+bs:Supply_Air_Static_Pressure_Sensor_version_2 a brick:Supply_Air_Static_Pressure_Sensor ;
+    rdfs:label bs:Literal_version_601 ;
+    ref:hasExternalReference bs:Resource_version_230 .
+
+bs:Supply_Air_Static_Pressure_Sensor_version_3 a brick:Supply_Air_Static_Pressure_Sensor ;
+    rdfs:label bs:Literal_version_640 ;
+    ref:hasExternalReference bs:Resource_version_158 .
+
+bs:Supply_Air_Static_Pressure_Sensor_version_4 a brick:Supply_Air_Static_Pressure_Sensor ;
+    rdfs:label bs:Literal_version_500 ;
+    ref:hasExternalReference bs:Resource_version_76 .
+
+bs:Supply_Air_Static_Pressure_Sensor_version_5 a brick:Supply_Air_Static_Pressure_Sensor ;
+    rdfs:label bs:Literal_version_746 ;
+    ref:hasExternalReference bs:Resource_version_292 .
+
+bs:Supply_Air_Static_Pressure_Sensor_version_6 a brick:Supply_Air_Static_Pressure_Sensor ;
+    rdfs:label bs:Literal_version_736 ;
+    ref:hasExternalReference bs:Resource_version_155 .
+
+bs:Supply_Air_Static_Pressure_Sensor_version_7 a brick:Supply_Air_Static_Pressure_Sensor ;
+    rdfs:label bs:Literal_version_536 ;
+    ref:hasExternalReference bs:Resource_version_324 .
+
+bs:Supply_Air_Static_Pressure_Sensor_version_8 a brick:Supply_Air_Static_Pressure_Sensor ;
+    rdfs:label bs:Literal_version_727 ;
+    ref:hasExternalReference bs:Resource_version_267 .
+
+bs:Supply_Air_Static_Pressure_Sensor_version_9 a brick:Supply_Air_Static_Pressure_Sensor ;
+    rdfs:label bs:Literal_version_437 ;
+    ref:hasExternalReference bs:Resource_version_152 .
+
 bs:Supply_Air_Temperature_Sensor_version_1 a brick:Supply_Air_Temperature_Sensor ;
-    rdfs:label bs:Literal_version_483 ;
-    ref:hasExternalReference bs:Resource_version_85 .
+    rdfs:label bs:Literal_version_495 ;
+    ref:hasExternalReference bs:Resource_version_298 .
 
 bs:Supply_Air_Temperature_Sensor_version_10 a brick:Supply_Air_Temperature_Sensor ;
-    rdfs:label bs:Literal_version_624 ;
-    ref:hasExternalReference bs:Resource_version_281 .
+    rdfs:label bs:Literal_version_646 ;
+    ref:hasExternalReference bs:Resource_version_288 .
 
 bs:Supply_Air_Temperature_Sensor_version_11 a brick:Supply_Air_Temperature_Sensor ;
-    rdfs:label bs:Literal_version_495 .
+    rdfs:label bs:Literal_version_508 .
 
 bs:Supply_Air_Temperature_Sensor_version_12 a brick:Supply_Air_Temperature_Sensor ;
-    rdfs:label bs:Literal_version_101 .
+    rdfs:label bs:Literal_version_111 .
 
 bs:Supply_Air_Temperature_Sensor_version_13 a brick:Supply_Air_Temperature_Sensor ;
-    rdfs:label bs:Literal_version_762 .
+    rdfs:label bs:Literal_version_771 .
 
 bs:Supply_Air_Temperature_Sensor_version_14 a brick:Supply_Air_Temperature_Sensor ;
-    rdfs:label bs:Literal_version_225 .
+    rdfs:label bs:Literal_version_234 .
 
 bs:Supply_Air_Temperature_Sensor_version_15 a brick:Supply_Air_Temperature_Sensor ;
-    rdfs:label bs:Literal_version_486 .
+    rdfs:label bs:Literal_version_499 .
 
 bs:Supply_Air_Temperature_Sensor_version_16 a brick:Supply_Air_Temperature_Sensor ;
-    rdfs:label bs:Literal_version_805 .
+    rdfs:label bs:Literal_version_807 .
 
 bs:Supply_Air_Temperature_Sensor_version_17 a brick:Supply_Air_Temperature_Sensor ;
-    rdfs:label bs:Literal_version_304 .
+    rdfs:label bs:Literal_version_321 .
 
 bs:Supply_Air_Temperature_Sensor_version_18 a brick:Supply_Air_Temperature_Sensor ;
-    rdfs:label bs:Literal_version_325 .
+    rdfs:label bs:Literal_version_346 .
 
 bs:Supply_Air_Temperature_Sensor_version_19 a brick:Supply_Air_Temperature_Sensor ;
-    rdfs:label bs:Literal_version_269 .
+    rdfs:label bs:Literal_version_275 .
 
 bs:Supply_Air_Temperature_Sensor_version_2 a brick:Supply_Air_Temperature_Sensor ;
-    rdfs:label bs:Literal_version_466 ;
-    ref:hasExternalReference bs:Resource_version_289 .
+    rdfs:label bs:Literal_version_480 ;
+    ref:hasExternalReference bs:Resource_version_279 .
 
 bs:Supply_Air_Temperature_Sensor_version_20 a brick:Supply_Air_Temperature_Sensor ;
-    rdfs:label bs:Literal_version_271 .
+    rdfs:label bs:Literal_version_278 .
 
 bs:Supply_Air_Temperature_Sensor_version_21 a brick:Supply_Air_Temperature_Sensor ;
-    rdfs:label bs:Literal_version_719 .
+    rdfs:label bs:Literal_version_728 .
 
 bs:Supply_Air_Temperature_Sensor_version_22 a brick:Supply_Air_Temperature_Sensor ;
-    rdfs:label bs:Literal_version_341 .
+    rdfs:label bs:Literal_version_363 .
 
 bs:Supply_Air_Temperature_Sensor_version_23 a brick:Supply_Air_Temperature_Sensor ;
-    rdfs:label bs:Literal_version_505 .
+    rdfs:label bs:Literal_version_517 .
 
 bs:Supply_Air_Temperature_Sensor_version_24 a brick:Supply_Air_Temperature_Sensor ;
-    rdfs:label bs:Literal_version_84 .
+    rdfs:label bs:Literal_version_87 .
 
 bs:Supply_Air_Temperature_Sensor_version_25 a brick:Supply_Air_Temperature_Sensor ;
-    rdfs:label bs:Literal_version_692 .
+    rdfs:label bs:Literal_version_709 .
 
 bs:Supply_Air_Temperature_Sensor_version_26 a brick:Supply_Air_Temperature_Sensor ;
-    rdfs:label bs:Literal_version_701 .
+    rdfs:label bs:Literal_version_717 .
 
 bs:Supply_Air_Temperature_Sensor_version_27 a brick:Supply_Air_Temperature_Sensor ;
-    rdfs:label bs:Literal_version_96 .
+    rdfs:label bs:Literal_version_103 .
 
 bs:Supply_Air_Temperature_Sensor_version_28 a brick:Supply_Air_Temperature_Sensor ;
     rdfs:label bs:Literal_version_5 .
 
 bs:Supply_Air_Temperature_Sensor_version_29 a brick:Supply_Air_Temperature_Sensor ;
-    rdfs:label bs:Literal_version_564 .
+    rdfs:label bs:Literal_version_576 .
 
 bs:Supply_Air_Temperature_Sensor_version_3 a brick:Supply_Air_Temperature_Sensor ;
-    rdfs:label bs:Literal_version_55 ;
-    ref:hasExternalReference bs:Resource_version_293 .
+    rdfs:label bs:Literal_version_51 ;
+    ref:hasExternalReference bs:Resource_version_322 .
 
 bs:Supply_Air_Temperature_Sensor_version_30 a brick:Supply_Air_Temperature_Sensor ;
-    rdfs:label bs:Literal_version_522 .
+    rdfs:label bs:Literal_version_532 .
 
 bs:Supply_Air_Temperature_Sensor_version_31 a brick:Supply_Air_Temperature_Sensor ;
-    rdfs:label bs:Literal_version_450 .
+    rdfs:label bs:Literal_version_469 .
 
 bs:Supply_Air_Temperature_Sensor_version_32 a brick:Supply_Air_Temperature_Sensor ;
-    rdfs:label bs:Literal_version_122 .
+    rdfs:label bs:Literal_version_128 .
 
 bs:Supply_Air_Temperature_Sensor_version_33 a brick:Supply_Air_Temperature_Sensor ;
-    rdfs:label bs:Literal_version_489 .
+    rdfs:label bs:Literal_version_501 .
 
 bs:Supply_Air_Temperature_Sensor_version_34 a brick:Supply_Air_Temperature_Sensor ;
-    rdfs:label bs:Literal_version_219 .
+    rdfs:label bs:Literal_version_223 .
 
 bs:Supply_Air_Temperature_Sensor_version_35 a brick:Supply_Air_Temperature_Sensor ;
-    rdfs:label bs:Literal_version_310 .
+    rdfs:label bs:Literal_version_326 .
 
 bs:Supply_Air_Temperature_Sensor_version_36 a brick:Supply_Air_Temperature_Sensor ;
-    rdfs:label bs:Literal_version_162 .
+    rdfs:label bs:Literal_version_171 .
 
 bs:Supply_Air_Temperature_Sensor_version_4 a brick:Supply_Air_Temperature_Sensor ;
-    rdfs:label bs:Literal_version_553 ;
-    ref:hasExternalReference bs:Resource_version_220 .
+    rdfs:label bs:Literal_version_564 ;
+    ref:hasExternalReference bs:Resource_version_181 .
 
 bs:Supply_Air_Temperature_Sensor_version_5 a brick:Supply_Air_Temperature_Sensor ;
-    rdfs:label bs:Literal_version_339 ;
-    ref:hasExternalReference bs:Resource_version_302 .
+    rdfs:label bs:Literal_version_358 ;
+    ref:hasExternalReference bs:Resource_version_126 .
 
 bs:Supply_Air_Temperature_Sensor_version_6 a brick:Supply_Air_Temperature_Sensor ;
-    rdfs:label bs:Literal_version_575 ;
-    ref:hasExternalReference bs:Resource_version_196 .
+    rdfs:label bs:Literal_version_588 ;
+    ref:hasExternalReference bs:Resource_version_164 .
 
 bs:Supply_Air_Temperature_Sensor_version_7 a brick:Supply_Air_Temperature_Sensor ;
-    rdfs:label bs:Literal_version_593 ;
-    ref:hasExternalReference bs:Resource_version_139 .
+    rdfs:label bs:Literal_version_610 ;
+    ref:hasExternalReference bs:Resource_version_136 .
 
 bs:Supply_Air_Temperature_Sensor_version_8 a brick:Supply_Air_Temperature_Sensor ;
-    rdfs:label bs:Literal_version_586 ;
-    ref:hasExternalReference bs:Resource_version_292 .
+    rdfs:label bs:Literal_version_600 ;
+    ref:hasExternalReference bs:Resource_version_293 .
 
 bs:Supply_Air_Temperature_Sensor_version_9 a brick:Supply_Air_Temperature_Sensor ;
-    rdfs:label bs:Literal_version_646 ;
-    ref:hasExternalReference bs:Resource_version_249 .
+    rdfs:label bs:Literal_version_665 ;
+    ref:hasExternalReference bs:Resource_version_280 .
 
 bs:Supply_Air_Temperature_Setpoint_version_1 a brick:Supply_Air_Temperature_Setpoint ;
-    rdfs:label bs:Literal_version_794 ;
-    ref:hasExternalReference bs:Resource_version_35 .
+    rdfs:label bs:Literal_version_797 ;
+    ref:hasExternalReference bs:Resource_version_263 .
 
 bs:Supply_Air_Temperature_Setpoint_version_10 a brick:Supply_Air_Temperature_Setpoint ;
-    rdfs:label bs:Literal_version_24 ;
-    ref:hasExternalReference bs:Resource_version_271 .
+    rdfs:label bs:Literal_version_20 ;
+    ref:hasExternalReference bs:Resource_version_66 .
 
 bs:Supply_Air_Temperature_Setpoint_version_2 a brick:Supply_Air_Temperature_Setpoint ;
-    rdfs:label bs:Literal_version_768 ;
-    ref:hasExternalReference bs:Resource_version_328 .
+    rdfs:label bs:Literal_version_778 ;
+    ref:hasExternalReference bs:Resource_version_260 .
 
 bs:Supply_Air_Temperature_Setpoint_version_3 a brick:Supply_Air_Temperature_Setpoint ;
-    rdfs:label bs:Literal_version_546 ;
-    ref:hasExternalReference bs:Resource_version_299 .
+    rdfs:label bs:Literal_version_556 ;
+    ref:hasExternalReference bs:Resource_version_156 .
 
 bs:Supply_Air_Temperature_Setpoint_version_4 a brick:Supply_Air_Temperature_Setpoint ;
-    rdfs:label bs:Literal_version_755 ;
-    ref:hasExternalReference bs:Resource_version_321 .
+    rdfs:label bs:Literal_version_763 ;
+    ref:hasExternalReference bs:Resource_version_32 .
 
 bs:Supply_Air_Temperature_Setpoint_version_5 a brick:Supply_Air_Temperature_Setpoint ;
-    rdfs:label bs:Literal_version_741 ;
-    ref:hasExternalReference bs:Resource_version_257 .
+    rdfs:label bs:Literal_version_749 ;
+    ref:hasExternalReference bs:Resource_version_141 .
 
 bs:Supply_Air_Temperature_Setpoint_version_6 a brick:Supply_Air_Temperature_Setpoint ;
-    rdfs:label bs:Literal_version_216 ;
-    ref:hasExternalReference bs:Resource_version_24 .
+    rdfs:label bs:Literal_version_219 ;
+    ref:hasExternalReference bs:Resource_version_74 .
 
 bs:Supply_Air_Temperature_Setpoint_version_7 a brick:Supply_Air_Temperature_Setpoint ;
-    rdfs:label bs:Literal_version_80 ;
-    ref:hasExternalReference bs:Resource_version_295 .
+    rdfs:label bs:Literal_version_82 ;
+    ref:hasExternalReference bs:Resource_version_8 .
 
 bs:Supply_Air_Temperature_Setpoint_version_8 a brick:Supply_Air_Temperature_Setpoint ;
-    rdfs:label bs:Literal_version_508 ;
-    ref:hasExternalReference bs:Resource_version_235 .
+    rdfs:label bs:Literal_version_523 ;
+    ref:hasExternalReference bs:Resource_version_287 .
 
 bs:Supply_Air_Temperature_Setpoint_version_9 a brick:Supply_Air_Temperature_Setpoint ;
-    rdfs:label bs:Literal_version_720 ;
-    ref:hasExternalReference bs:Resource_version_77 .
+    rdfs:label bs:Literal_version_729 ;
+    ref:hasExternalReference bs:Resource_version_9 .
 
 bs:Supply_Air_flow_version_1 a brick:Supply_Air_flow ;
-    rdfs:label bs:Literal_version_716 ;
-    ref:hasExternalReference bs:Resource_version_239 .
+    rdfs:label bs:Literal_version_726 ;
+    ref:hasExternalReference bs:Resource_version_308 .
 
 bs:Supply_Air_flow_version_2 a brick:Supply_Air_flow ;
-    rdfs:label bs:Literal_version_91 ;
-    ref:hasExternalReference bs:Resource_version_258 .
+    rdfs:label bs:Literal_version_96 ;
+    ref:hasExternalReference bs:Resource_version_117 .
 
 bs:Supply_Air_flow_version_3 a brick:Supply_Air_flow ;
-    rdfs:label bs:Literal_version_783 ;
+    rdfs:label bs:Literal_version_787 ;
     ref:hasExternalReference bs:Resource_version_103 .
 
 bs:Supply_Air_flow_version_4 a brick:Supply_Air_flow ;
-    rdfs:label bs:Literal_version_268 ;
-    ref:hasExternalReference bs:Resource_version_309 .
+    rdfs:label bs:Literal_version_274 ;
+    ref:hasExternalReference bs:Resource_version_94 .
 
 bs:VAV_version_1 a brick:VAV ;
     brick:feeds bs:HVAC_Zone_version_1 ;
@@ -4621,911 +4621,911 @@ bs:VAV_version_99 a brick:VAV ;
     brick:hasPoint bs:Zone_Air_Temperature_Sensor_version_29 .
 
 bs:Valve_Command_version_1 a brick:Valve_Command ;
-    rdfs:label bs:Literal_version_545 .
+    rdfs:label bs:Literal_version_553 .
 
 bs:Valve_Command_version_10 a brick:Valve_Command ;
-    rdfs:label bs:Literal_version_660 .
+    rdfs:label bs:Literal_version_681 .
 
 bs:Valve_Command_version_11 a brick:Valve_Command ;
-    rdfs:label bs:Literal_version_695 .
+    rdfs:label bs:Literal_version_713 .
 
 bs:Valve_Command_version_12 a brick:Valve_Command ;
-    rdfs:label bs:Literal_version_133 .
+    rdfs:label bs:Literal_version_139 .
 
 bs:Valve_Command_version_13 a brick:Valve_Command ;
-    rdfs:label bs:Literal_version_743 .
+    rdfs:label bs:Literal_version_750 .
 
 bs:Valve_Command_version_14 a brick:Valve_Command ;
-    rdfs:label bs:Literal_version_408 .
+    rdfs:label bs:Literal_version_432 .
 
 bs:Valve_Command_version_15 a brick:Valve_Command ;
-    rdfs:label bs:Literal_version_326 .
+    rdfs:label bs:Literal_version_350 .
 
 bs:Valve_Command_version_16 a brick:Valve_Command ;
-    rdfs:label bs:Literal_version_633 .
+    rdfs:label bs:Literal_version_653 .
 
 bs:Valve_Command_version_17 a brick:Valve_Command ;
-    rdfs:label bs:Literal_version_612 .
+    rdfs:label bs:Literal_version_633 .
 
 bs:Valve_Command_version_18 a brick:Valve_Command ;
-    rdfs:label bs:Literal_version_308 .
+    rdfs:label bs:Literal_version_325 .
 
 bs:Valve_Command_version_19 a brick:Valve_Command ;
-    rdfs:label bs:Literal_version_289 .
+    rdfs:label bs:Literal_version_302 .
 
 bs:Valve_Command_version_2 a brick:Valve_Command ;
-    rdfs:label bs:Literal_version_335 .
+    rdfs:label bs:Literal_version_355 .
 
 bs:Valve_Command_version_20 a brick:Valve_Command ;
-    rdfs:label bs:Literal_version_566 .
+    rdfs:label bs:Literal_version_578 .
 
 bs:Valve_Command_version_21 a brick:Valve_Command ;
-    rdfs:label bs:Literal_version_652 .
+    rdfs:label bs:Literal_version_673 .
 
 bs:Valve_Command_version_22 a brick:Valve_Command ;
-    rdfs:label bs:Literal_version_603 .
+    rdfs:label bs:Literal_version_622 .
 
 bs:Valve_Command_version_23 a brick:Valve_Command ;
-    rdfs:label bs:Literal_version_260 .
+    rdfs:label bs:Literal_version_265 .
 
 bs:Valve_Command_version_24 a brick:Valve_Command ;
-    rdfs:label bs:Literal_version_159 .
+    rdfs:label bs:Literal_version_168 .
 
 bs:Valve_Command_version_25 a brick:Valve_Command ;
-    rdfs:label bs:Literal_version_175 .
+    rdfs:label bs:Literal_version_180 .
 
 bs:Valve_Command_version_26 a brick:Valve_Command ;
-    rdfs:label bs:Literal_version_641 .
+    rdfs:label bs:Literal_version_661 .
 
 bs:Valve_Command_version_27 a brick:Valve_Command ;
-    rdfs:label bs:Literal_version_654 .
+    rdfs:label bs:Literal_version_675 .
 
 bs:Valve_Command_version_28 a brick:Valve_Command ;
-    rdfs:label bs:Literal_version_60 .
+    rdfs:label bs:Literal_version_57 .
 
 bs:Valve_Command_version_29 a brick:Valve_Command ;
-    rdfs:label bs:Literal_version_667 .
+    rdfs:label bs:Literal_version_690 .
 
 bs:Valve_Command_version_3 a brick:Valve_Command ;
-    rdfs:label bs:Literal_version_684 .
+    rdfs:label bs:Literal_version_703 .
 
 bs:Valve_Command_version_30 a brick:Valve_Command ;
-    rdfs:label bs:Literal_version_279 .
+    rdfs:label bs:Literal_version_287 .
 
 bs:Valve_Command_version_31 a brick:Valve_Command ;
-    rdfs:label bs:Literal_version_22 .
+    rdfs:label bs:Literal_version_18 .
 
 bs:Valve_Command_version_32 a brick:Valve_Command ;
-    rdfs:label bs:Literal_version_42 .
+    rdfs:label bs:Literal_version_37 .
 
 bs:Valve_Command_version_33 a brick:Valve_Command ;
-    rdfs:label bs:Literal_version_645 .
+    rdfs:label bs:Literal_version_664 .
 
 bs:Valve_Command_version_34 a brick:Valve_Command ;
-    rdfs:label bs:Literal_version_286 .
+    rdfs:label bs:Literal_version_294 .
 
 bs:Valve_Command_version_4 a brick:Valve_Command ;
-    rdfs:label bs:Literal_version_297 .
+    rdfs:label bs:Literal_version_308 .
 
 bs:Valve_Command_version_5 a brick:Valve_Command ;
-    rdfs:label bs:Literal_version_209 .
+    rdfs:label bs:Literal_version_213 .
 
 bs:Valve_Command_version_6 a brick:Valve_Command ;
-    rdfs:label bs:Literal_version_729 .
+    rdfs:label bs:Literal_version_737 .
 
 bs:Valve_Command_version_7 a brick:Valve_Command ;
-    rdfs:label bs:Literal_version_447 .
+    rdfs:label bs:Literal_version_467 .
 
 bs:Valve_Command_version_8 a brick:Valve_Command ;
-    rdfs:label bs:Literal_version_561 .
+    rdfs:label bs:Literal_version_573 .
 
 bs:Valve_Command_version_9 a brick:Valve_Command ;
-    rdfs:label bs:Literal_version_29 .
+    rdfs:label bs:Literal_version_25 .
 
 bs:Zone_Air_Temperature_Sensor_version_1 a brick:Zone_Air_Temperature_Sensor ;
-    rdfs:label bs:Literal_version_369 ;
-    ref:hasExternalReference bs:Resource_version_195 .
+    rdfs:label bs:Literal_version_393 ;
+    ref:hasExternalReference bs:Resource_version_223 .
 
 bs:Zone_Air_Temperature_Sensor_version_10 a brick:Zone_Air_Temperature_Sensor ;
-    rdfs:label bs:Literal_version_726 .
+    rdfs:label bs:Literal_version_733 .
 
 bs:Zone_Air_Temperature_Sensor_version_100 a brick:Zone_Air_Temperature_Sensor ;
-    rdfs:label bs:Literal_version_544 ;
-    ref:hasExternalReference bs:Resource_version_12 .
+    rdfs:label bs:Literal_version_552 ;
+    ref:hasExternalReference bs:Resource_version_194 .
 
 bs:Zone_Air_Temperature_Sensor_version_101 a brick:Zone_Air_Temperature_Sensor ;
-    rdfs:label bs:Literal_version_28 ;
-    ref:hasExternalReference bs:Resource_version_58 .
+    rdfs:label bs:Literal_version_23 ;
+    ref:hasExternalReference bs:Resource_version_174 .
 
 bs:Zone_Air_Temperature_Sensor_version_102 a brick:Zone_Air_Temperature_Sensor ;
-    rdfs:label bs:Literal_version_106 .
+    rdfs:label bs:Literal_version_113 .
 
 bs:Zone_Air_Temperature_Sensor_version_103 a brick:Zone_Air_Temperature_Sensor ;
-    rdfs:label bs:Literal_version_377 ;
-    ref:hasExternalReference bs:Resource_version_210 .
+    rdfs:label bs:Literal_version_401 ;
+    ref:hasExternalReference bs:Resource_version_303 .
 
 bs:Zone_Air_Temperature_Sensor_version_104 a brick:Zone_Air_Temperature_Sensor ;
-    rdfs:label bs:Literal_version_166 ;
-    ref:hasExternalReference bs:Resource_version_36 .
+    rdfs:label bs:Literal_version_176 ;
+    ref:hasExternalReference bs:Resource_version_206 .
 
 bs:Zone_Air_Temperature_Sensor_version_105 a brick:Zone_Air_Temperature_Sensor ;
-    rdfs:label bs:Literal_version_241 .
+    rdfs:label bs:Literal_version_247 .
 
 bs:Zone_Air_Temperature_Sensor_version_106 a brick:Zone_Air_Temperature_Sensor ;
-    rdfs:label bs:Literal_version_740 ;
-    ref:hasExternalReference bs:Resource_version_246 .
+    rdfs:label bs:Literal_version_748 ;
+    ref:hasExternalReference bs:Resource_version_198 .
 
 bs:Zone_Air_Temperature_Sensor_version_107 a brick:Zone_Air_Temperature_Sensor ;
-    rdfs:label bs:Literal_version_12 ;
-    ref:hasExternalReference bs:Resource_version_6 .
+    rdfs:label bs:Literal_version_11 ;
+    ref:hasExternalReference bs:Resource_version_97 .
 
 bs:Zone_Air_Temperature_Sensor_version_108 a brick:Zone_Air_Temperature_Sensor ;
-    rdfs:label bs:Literal_version_558 .
+    rdfs:label bs:Literal_version_570 .
 
 bs:Zone_Air_Temperature_Sensor_version_109 a brick:Zone_Air_Temperature_Sensor ;
-    rdfs:label bs:Literal_version_295 ;
-    ref:hasExternalReference bs:Resource_version_130 .
+    rdfs:label bs:Literal_version_306 ;
+    ref:hasExternalReference bs:Resource_version_2 .
 
 bs:Zone_Air_Temperature_Sensor_version_11 a brick:Zone_Air_Temperature_Sensor ;
-    rdfs:label bs:Literal_version_802 ;
-    ref:hasExternalReference bs:Resource_version_54 .
+    rdfs:label bs:Literal_version_805 ;
+    ref:hasExternalReference bs:Resource_version_95 .
 
 bs:Zone_Air_Temperature_Sensor_version_110 a brick:Zone_Air_Temperature_Sensor ;
-    rdfs:label bs:Literal_version_239 .
+    rdfs:label bs:Literal_version_245 .
 
 bs:Zone_Air_Temperature_Sensor_version_111 a brick:Zone_Air_Temperature_Sensor ;
-    rdfs:label bs:Literal_version_790 ;
-    ref:hasExternalReference bs:Resource_version_141 .
+    rdfs:label bs:Literal_version_792 ;
+    ref:hasExternalReference bs:Resource_version_286 .
 
 bs:Zone_Air_Temperature_Sensor_version_112 a brick:Zone_Air_Temperature_Sensor ;
-    rdfs:label bs:Literal_version_27 ;
-    ref:hasExternalReference bs:Resource_version_192 .
+    rdfs:label bs:Literal_version_22 ;
+    ref:hasExternalReference bs:Resource_version_112 .
 
 bs:Zone_Air_Temperature_Sensor_version_113 a brick:Zone_Air_Temperature_Sensor ;
-    rdfs:label bs:Literal_version_89 ;
-    ref:hasExternalReference bs:Resource_version_127 .
+    rdfs:label bs:Literal_version_93 ;
+    ref:hasExternalReference bs:Resource_version_38 .
 
 bs:Zone_Air_Temperature_Sensor_version_114 a brick:Zone_Air_Temperature_Sensor ;
-    rdfs:label bs:Literal_version_345 ;
-    ref:hasExternalReference bs:Resource_version_327 .
+    rdfs:label bs:Literal_version_367 ;
+    ref:hasExternalReference bs:Resource_version_22 .
 
 bs:Zone_Air_Temperature_Sensor_version_115 a brick:Zone_Air_Temperature_Sensor ;
-    rdfs:label bs:Literal_version_685 .
+    rdfs:label bs:Literal_version_704 .
 
 bs:Zone_Air_Temperature_Sensor_version_116 a brick:Zone_Air_Temperature_Sensor ;
-    rdfs:label bs:Literal_version_803 .
+    rdfs:label bs:Literal_version_806 .
 
 bs:Zone_Air_Temperature_Sensor_version_117 a brick:Zone_Air_Temperature_Sensor ;
-    rdfs:label bs:Literal_version_52 ;
-    ref:hasExternalReference bs:Resource_version_252 .
+    rdfs:label bs:Literal_version_47 ;
+    ref:hasExternalReference bs:Resource_version_41 .
 
 bs:Zone_Air_Temperature_Sensor_version_118 a brick:Zone_Air_Temperature_Sensor ;
-    rdfs:label bs:Literal_version_383 ;
-    ref:hasExternalReference bs:Resource_version_102 .
+    rdfs:label bs:Literal_version_407 ;
+    ref:hasExternalReference bs:Resource_version_232 .
 
 bs:Zone_Air_Temperature_Sensor_version_119 a brick:Zone_Air_Temperature_Sensor ;
-    rdfs:label bs:Literal_version_348 ;
-    ref:hasExternalReference bs:Resource_version_126 .
+    rdfs:label bs:Literal_version_371 ;
+    ref:hasExternalReference bs:Resource_version_290 .
 
 bs:Zone_Air_Temperature_Sensor_version_12 a brick:Zone_Air_Temperature_Sensor ;
-    rdfs:label bs:Literal_version_405 ;
-    ref:hasExternalReference bs:Resource_version_105 .
+    rdfs:label bs:Literal_version_430 ;
+    ref:hasExternalReference bs:Resource_version_27 .
 
 bs:Zone_Air_Temperature_Sensor_version_120 a brick:Zone_Air_Temperature_Sensor ;
     rdfs:label bs:Literal_version_10 ;
-    ref:hasExternalReference bs:Resource_version_202 .
+    ref:hasExternalReference bs:Resource_version_162 .
 
 bs:Zone_Air_Temperature_Sensor_version_121 a brick:Zone_Air_Temperature_Sensor ;
-    rdfs:label bs:Literal_version_382 ;
-    ref:hasExternalReference bs:Resource_version_181 .
+    rdfs:label bs:Literal_version_406 ;
+    ref:hasExternalReference bs:Resource_version_123 .
 
 bs:Zone_Air_Temperature_Sensor_version_122 a brick:Zone_Air_Temperature_Sensor ;
-    rdfs:label bs:Literal_version_534 ;
-    ref:hasExternalReference bs:Resource_version_101 .
+    rdfs:label bs:Literal_version_544 ;
+    ref:hasExternalReference bs:Resource_version_271 .
 
 bs:Zone_Air_Temperature_Sensor_version_123 a brick:Zone_Air_Temperature_Sensor ;
-    rdfs:label bs:Literal_version_557 ;
-    ref:hasExternalReference bs:Resource_version_275 .
+    rdfs:label bs:Literal_version_569 ;
+    ref:hasExternalReference bs:Resource_version_217 .
 
 bs:Zone_Air_Temperature_Sensor_version_124 a brick:Zone_Air_Temperature_Sensor ;
-    rdfs:label bs:Literal_version_76 ;
+    rdfs:label bs:Literal_version_75 ;
     ref:hasExternalReference bs:Resource_version_82 .
 
 bs:Zone_Air_Temperature_Sensor_version_125 a brick:Zone_Air_Temperature_Sensor ;
-    rdfs:label bs:Literal_version_31 .
+    rdfs:label bs:Literal_version_28 .
 
 bs:Zone_Air_Temperature_Sensor_version_126 a brick:Zone_Air_Temperature_Sensor ;
-    rdfs:label bs:Literal_version_555 ;
-    ref:hasExternalReference bs:Resource_version_118 .
+    rdfs:label bs:Literal_version_566 ;
+    ref:hasExternalReference bs:Resource_version_209 .
 
 bs:Zone_Air_Temperature_Sensor_version_127 a brick:Zone_Air_Temperature_Sensor ;
-    rdfs:label bs:Literal_version_387 ;
-    ref:hasExternalReference bs:Resource_version_184 .
+    rdfs:label bs:Literal_version_412 ;
+    ref:hasExternalReference bs:Resource_version_33 .
 
 bs:Zone_Air_Temperature_Sensor_version_128 a brick:Zone_Air_Temperature_Sensor ;
-    rdfs:label bs:Literal_version_357 .
+    rdfs:label bs:Literal_version_384 .
 
 bs:Zone_Air_Temperature_Sensor_version_129 a brick:Zone_Air_Temperature_Sensor ;
-    rdfs:label bs:Literal_version_272 ;
-    ref:hasExternalReference bs:Resource_version_234 .
+    rdfs:label bs:Literal_version_279 ;
+    ref:hasExternalReference bs:Resource_version_281 .
 
 bs:Zone_Air_Temperature_Sensor_version_13 a brick:Zone_Air_Temperature_Sensor ;
-    rdfs:label bs:Literal_version_479 ;
-    ref:hasExternalReference bs:Resource_version_151 .
+    rdfs:label bs:Literal_version_493 ;
+    ref:hasExternalReference bs:Resource_version_147 .
 
 bs:Zone_Air_Temperature_Sensor_version_130 a brick:Zone_Air_Temperature_Sensor ;
-    rdfs:label bs:Literal_version_74 ;
-    ref:hasExternalReference bs:Resource_version_134 .
+    rdfs:label bs:Literal_version_73 ;
+    ref:hasExternalReference bs:Resource_version_268 .
 
 bs:Zone_Air_Temperature_Sensor_version_14 a brick:Zone_Air_Temperature_Sensor ;
-    rdfs:label bs:Literal_version_87 ;
-    ref:hasExternalReference bs:Resource_version_116 .
+    rdfs:label bs:Literal_version_90 ;
+    ref:hasExternalReference bs:Resource_version_157 .
 
 bs:Zone_Air_Temperature_Sensor_version_15 a brick:Zone_Air_Temperature_Sensor ;
-    rdfs:label bs:Literal_version_471 .
+    rdfs:label bs:Literal_version_485 .
 
 bs:Zone_Air_Temperature_Sensor_version_16 a brick:Zone_Air_Temperature_Sensor ;
-    rdfs:label bs:Literal_version_230 ;
-    ref:hasExternalReference bs:Resource_version_28 .
+    rdfs:label bs:Literal_version_239 ;
+    ref:hasExternalReference bs:Resource_version_91 .
 
 bs:Zone_Air_Temperature_Sensor_version_17 a brick:Zone_Air_Temperature_Sensor ;
-    rdfs:label bs:Literal_version_504 ;
-    ref:hasExternalReference bs:Resource_version_238 .
+    rdfs:label bs:Literal_version_516 ;
+    ref:hasExternalReference bs:Resource_version_119 .
 
 bs:Zone_Air_Temperature_Sensor_version_18 a brick:Zone_Air_Temperature_Sensor ;
-    rdfs:label bs:Literal_version_93 .
+    rdfs:label bs:Literal_version_98 .
 
 bs:Zone_Air_Temperature_Sensor_version_19 a brick:Zone_Air_Temperature_Sensor ;
-    rdfs:label bs:Literal_version_160 ;
-    ref:hasExternalReference bs:Resource_version_25 .
+    rdfs:label bs:Literal_version_169 ;
+    ref:hasExternalReference bs:Resource_version_31 .
 
 bs:Zone_Air_Temperature_Sensor_version_2 a brick:Zone_Air_Temperature_Sensor ;
-    rdfs:label bs:Literal_version_543 .
+    rdfs:label bs:Literal_version_551 .
 
 bs:Zone_Air_Temperature_Sensor_version_20 a brick:Zone_Air_Temperature_Sensor ;
-    rdfs:label bs:Literal_version_693 .
+    rdfs:label bs:Literal_version_711 .
 
 bs:Zone_Air_Temperature_Sensor_version_21 a brick:Zone_Air_Temperature_Sensor ;
     rdfs:label bs:Literal_version_3 ;
-    ref:hasExternalReference bs:Resource_version_329 .
+    ref:hasExternalReference bs:Resource_version_146 .
 
 bs:Zone_Air_Temperature_Sensor_version_22 a brick:Zone_Air_Temperature_Sensor ;
-    rdfs:label bs:Literal_version_448 .
+    rdfs:label bs:Literal_version_468 .
 
 bs:Zone_Air_Temperature_Sensor_version_23 a brick:Zone_Air_Temperature_Sensor ;
-    rdfs:label bs:Literal_version_778 ;
-    ref:hasExternalReference bs:Resource_version_323 .
+    rdfs:label bs:Literal_version_784 ;
+    ref:hasExternalReference bs:Resource_version_269 .
 
 bs:Zone_Air_Temperature_Sensor_version_24 a brick:Zone_Air_Temperature_Sensor ;
-    rdfs:label bs:Literal_version_554 ;
-    ref:hasExternalReference bs:Resource_version_266 .
+    rdfs:label bs:Literal_version_565 ;
+    ref:hasExternalReference bs:Resource_version_250 .
 
 bs:Zone_Air_Temperature_Sensor_version_25 a brick:Zone_Air_Temperature_Sensor ;
-    rdfs:label bs:Literal_version_675 ;
-    ref:hasExternalReference bs:Resource_version_277 .
+    rdfs:label bs:Literal_version_696 ;
+    ref:hasExternalReference bs:Resource_version_325 .
 
 bs:Zone_Air_Temperature_Sensor_version_26 a brick:Zone_Air_Temperature_Sensor ;
-    rdfs:label bs:Literal_version_95 .
+    rdfs:label bs:Literal_version_100 .
 
 bs:Zone_Air_Temperature_Sensor_version_27 a brick:Zone_Air_Temperature_Sensor ;
-    rdfs:label bs:Literal_version_767 ;
-    ref:hasExternalReference bs:Resource_version_318 .
+    rdfs:label bs:Literal_version_777 ;
+    ref:hasExternalReference bs:Resource_version_266 .
 
 bs:Zone_Air_Temperature_Sensor_version_28 a brick:Zone_Air_Temperature_Sensor ;
-    rdfs:label bs:Literal_version_220 .
+    rdfs:label bs:Literal_version_224 .
 
 bs:Zone_Air_Temperature_Sensor_version_29 a brick:Zone_Air_Temperature_Sensor ;
-    rdfs:label bs:Literal_version_211 ;
-    ref:hasExternalReference bs:Resource_version_153 .
-
-bs:Zone_Air_Temperature_Sensor_version_3 a brick:Zone_Air_Temperature_Sensor ;
-    rdfs:label bs:Literal_version_640 .
-
-bs:Zone_Air_Temperature_Sensor_version_30 a brick:Zone_Air_Temperature_Sensor ;
-    rdfs:label bs:Literal_version_539 ;
-    ref:hasExternalReference bs:Resource_version_279 .
-
-bs:Zone_Air_Temperature_Sensor_version_31 a brick:Zone_Air_Temperature_Sensor ;
-    rdfs:label bs:Literal_version_551 .
-
-bs:Zone_Air_Temperature_Sensor_version_32 a brick:Zone_Air_Temperature_Sensor ;
-    rdfs:label bs:Literal_version_788 .
-
-bs:Zone_Air_Temperature_Sensor_version_33 a brick:Zone_Air_Temperature_Sensor ;
-    rdfs:label bs:Literal_version_713 ;
-    ref:hasExternalReference bs:Resource_version_128 .
-
-bs:Zone_Air_Temperature_Sensor_version_34 a brick:Zone_Air_Temperature_Sensor ;
-    rdfs:label bs:Literal_version_199 ;
+    rdfs:label bs:Literal_version_215 ;
     ref:hasExternalReference bs:Resource_version_276 .
 
+bs:Zone_Air_Temperature_Sensor_version_3 a brick:Zone_Air_Temperature_Sensor ;
+    rdfs:label bs:Literal_version_660 .
+
+bs:Zone_Air_Temperature_Sensor_version_30 a brick:Zone_Air_Temperature_Sensor ;
+    rdfs:label bs:Literal_version_549 ;
+    ref:hasExternalReference bs:Resource_version_218 .
+
+bs:Zone_Air_Temperature_Sensor_version_31 a brick:Zone_Air_Temperature_Sensor ;
+    rdfs:label bs:Literal_version_561 .
+
+bs:Zone_Air_Temperature_Sensor_version_32 a brick:Zone_Air_Temperature_Sensor ;
+    rdfs:label bs:Literal_version_790 .
+
+bs:Zone_Air_Temperature_Sensor_version_33 a brick:Zone_Air_Temperature_Sensor ;
+    rdfs:label bs:Literal_version_724 ;
+    ref:hasExternalReference bs:Resource_version_191 .
+
+bs:Zone_Air_Temperature_Sensor_version_34 a brick:Zone_Air_Temperature_Sensor ;
+    rdfs:label bs:Literal_version_204 ;
+    ref:hasExternalReference bs:Resource_version_180 .
+
 bs:Zone_Air_Temperature_Sensor_version_35 a brick:Zone_Air_Temperature_Sensor ;
-    rdfs:label bs:Literal_version_682 ;
-    ref:hasExternalReference bs:Resource_version_228 .
+    rdfs:label bs:Literal_version_701 ;
+    ref:hasExternalReference bs:Resource_version_56 .
 
 bs:Zone_Air_Temperature_Sensor_version_36 a brick:Zone_Air_Temperature_Sensor ;
-    rdfs:label bs:Literal_version_177 .
+    rdfs:label bs:Literal_version_182 .
 
 bs:Zone_Air_Temperature_Sensor_version_37 a brick:Zone_Air_Temperature_Sensor ;
-    rdfs:label bs:Literal_version_415 .
+    rdfs:label bs:Literal_version_439 .
 
 bs:Zone_Air_Temperature_Sensor_version_38 a brick:Zone_Air_Temperature_Sensor ;
-    rdfs:label bs:Literal_version_180 ;
-    ref:hasExternalReference bs:Resource_version_70 .
+    rdfs:label bs:Literal_version_187 ;
+    ref:hasExternalReference bs:Resource_version_12 .
 
 bs:Zone_Air_Temperature_Sensor_version_39 a brick:Zone_Air_Temperature_Sensor ;
-    rdfs:label bs:Literal_version_356 ;
-    ref:hasExternalReference bs:Resource_version_93 .
+    rdfs:label bs:Literal_version_383 ;
+    ref:hasExternalReference bs:Resource_version_84 .
 
 bs:Zone_Air_Temperature_Sensor_version_4 a brick:Zone_Air_Temperature_Sensor ;
-    rdfs:label bs:Literal_version_610 ;
-    ref:hasExternalReference bs:Resource_version_177 .
+    rdfs:label bs:Literal_version_631 ;
+    ref:hasExternalReference bs:Resource_version_265 .
 
 bs:Zone_Air_Temperature_Sensor_version_40 a brick:Zone_Air_Temperature_Sensor ;
-    rdfs:label bs:Literal_version_135 ;
-    ref:hasExternalReference bs:Resource_version_14 .
+    rdfs:label bs:Literal_version_142 ;
+    ref:hasExternalReference bs:Resource_version_81 .
 
 bs:Zone_Air_Temperature_Sensor_version_41 a brick:Zone_Air_Temperature_Sensor ;
-    rdfs:label bs:Literal_version_165 ;
-    ref:hasExternalReference bs:Resource_version_221 .
+    rdfs:label bs:Literal_version_174 ;
+    ref:hasExternalReference bs:Resource_version_277 .
 
 bs:Zone_Air_Temperature_Sensor_version_42 a brick:Zone_Air_Temperature_Sensor ;
-    rdfs:label bs:Literal_version_772 ;
-    ref:hasExternalReference bs:Resource_version_261 .
+    rdfs:label bs:Literal_version_780 ;
+    ref:hasExternalReference bs:Resource_version_302 .
 
 bs:Zone_Air_Temperature_Sensor_version_43 a brick:Zone_Air_Temperature_Sensor ;
-    rdfs:label bs:Literal_version_595 .
+    rdfs:label bs:Literal_version_613 .
 
 bs:Zone_Air_Temperature_Sensor_version_44 a brick:Zone_Air_Temperature_Sensor ;
-    rdfs:label bs:Literal_version_146 ;
-    ref:hasExternalReference bs:Resource_version_121 .
+    rdfs:label bs:Literal_version_152 ;
+    ref:hasExternalReference bs:Resource_version_3 .
 
 bs:Zone_Air_Temperature_Sensor_version_45 a brick:Zone_Air_Temperature_Sensor ;
-    rdfs:label bs:Literal_version_712 ;
-    ref:hasExternalReference bs:Resource_version_207 .
+    rdfs:label bs:Literal_version_723 ;
+    ref:hasExternalReference bs:Resource_version_109 .
 
 bs:Zone_Air_Temperature_Sensor_version_46 a brick:Zone_Air_Temperature_Sensor ;
-    rdfs:label bs:Literal_version_550 ;
-    ref:hasExternalReference bs:Resource_version_280 .
+    rdfs:label bs:Literal_version_560 ;
+    ref:hasExternalReference bs:Resource_version_110 .
 
 bs:Zone_Air_Temperature_Sensor_version_47 a brick:Zone_Air_Temperature_Sensor ;
-    rdfs:label bs:Literal_version_732 .
+    rdfs:label bs:Literal_version_740 .
 
 bs:Zone_Air_Temperature_Sensor_version_48 a brick:Zone_Air_Temperature_Sensor ;
-    rdfs:label bs:Literal_version_513 ;
-    ref:hasExternalReference bs:Resource_version_222 .
+    rdfs:label bs:Literal_version_527 ;
+    ref:hasExternalReference bs:Resource_version_264 .
 
 bs:Zone_Air_Temperature_Sensor_version_49 a brick:Zone_Air_Temperature_Sensor ;
-    rdfs:label bs:Literal_version_299 ;
-    ref:hasExternalReference bs:Resource_version_320 .
+    rdfs:label bs:Literal_version_310 ;
+    ref:hasExternalReference bs:Resource_version_240 .
 
 bs:Zone_Air_Temperature_Sensor_version_5 a brick:Zone_Air_Temperature_Sensor ;
-    rdfs:label bs:Literal_version_425 ;
-    ref:hasExternalReference bs:Resource_version_304 .
+    rdfs:label bs:Literal_version_446 ;
+    ref:hasExternalReference bs:Resource_version_246 .
 
 bs:Zone_Air_Temperature_Sensor_version_50 a brick:Zone_Air_Temperature_Sensor ;
-    rdfs:label bs:Literal_version_275 ;
-    ref:hasExternalReference bs:Resource_version_308 .
+    rdfs:label bs:Literal_version_281 ;
+    ref:hasExternalReference bs:Resource_version_278 .
 
 bs:Zone_Air_Temperature_Sensor_version_51 a brick:Zone_Air_Temperature_Sensor ;
-    rdfs:label bs:Literal_version_446 .
+    rdfs:label bs:Literal_version_466 .
 
 bs:Zone_Air_Temperature_Sensor_version_52 a brick:Zone_Air_Temperature_Sensor ;
-    rdfs:label bs:Literal_version_257 ;
-    ref:hasExternalReference bs:Resource_version_55 .
+    rdfs:label bs:Literal_version_263 ;
+    ref:hasExternalReference bs:Resource_version_34 .
 
 bs:Zone_Air_Temperature_Sensor_version_53 a brick:Zone_Air_Temperature_Sensor ;
-    rdfs:label bs:Literal_version_512 ;
-    ref:hasExternalReference bs:Resource_version_317 .
+    rdfs:label bs:Literal_version_525 ;
+    ref:hasExternalReference bs:Resource_version_259 .
 
 bs:Zone_Air_Temperature_Sensor_version_54 a brick:Zone_Air_Temperature_Sensor ;
-    rdfs:label bs:Literal_version_573 ;
-    ref:hasExternalReference bs:Resource_version_315 .
+    rdfs:label bs:Literal_version_587 ;
+    ref:hasExternalReference bs:Resource_version_51 .
 
 bs:Zone_Air_Temperature_Sensor_version_55 a brick:Zone_Air_Temperature_Sensor ;
-    rdfs:label bs:Literal_version_193 .
+    rdfs:label bs:Literal_version_198 .
 
 bs:Zone_Air_Temperature_Sensor_version_56 a brick:Zone_Air_Temperature_Sensor ;
-    rdfs:label bs:Literal_version_569 ;
-    ref:hasExternalReference bs:Resource_version_87 .
+    rdfs:label bs:Literal_version_583 ;
+    ref:hasExternalReference bs:Resource_version_54 .
 
 bs:Zone_Air_Temperature_Sensor_version_57 a brick:Zone_Air_Temperature_Sensor ;
-    rdfs:label bs:Literal_version_35 .
+    rdfs:label bs:Literal_version_30 .
 
 bs:Zone_Air_Temperature_Sensor_version_58 a brick:Zone_Air_Temperature_Sensor ;
-    rdfs:label bs:Literal_version_581 ;
-    ref:hasExternalReference bs:Resource_version_216 .
+    rdfs:label bs:Literal_version_593 ;
+    ref:hasExternalReference bs:Resource_version_80 .
 
 bs:Zone_Air_Temperature_Sensor_version_59 a brick:Zone_Air_Temperature_Sensor ;
-    rdfs:label bs:Literal_version_582 ;
-    ref:hasExternalReference bs:Resource_version_45 .
+    rdfs:label bs:Literal_version_595 ;
+    ref:hasExternalReference bs:Resource_version_183 .
 
 bs:Zone_Air_Temperature_Sensor_version_6 a brick:Zone_Air_Temperature_Sensor ;
-    rdfs:label bs:Literal_version_724 ;
-    ref:hasExternalReference bs:Resource_version_273 .
+    rdfs:label bs:Literal_version_731 ;
+    ref:hasExternalReference bs:Resource_version_129 .
 
 bs:Zone_Air_Temperature_Sensor_version_60 a brick:Zone_Air_Temperature_Sensor ;
-    rdfs:label bs:Literal_version_635 ;
-    ref:hasExternalReference bs:Resource_version_287 .
+    rdfs:label bs:Literal_version_655 ;
+    ref:hasExternalReference bs:Resource_version_241 .
 
 bs:Zone_Air_Temperature_Sensor_version_61 a brick:Zone_Air_Temperature_Sensor ;
     rdfs:label bs:Literal_version_77 ;
-    ref:hasExternalReference bs:Resource_version_59 .
+    ref:hasExternalReference bs:Resource_version_63 .
 
 bs:Zone_Air_Temperature_Sensor_version_62 a brick:Zone_Air_Temperature_Sensor ;
-    rdfs:label bs:Literal_version_490 .
+    rdfs:label bs:Literal_version_502 .
 
 bs:Zone_Air_Temperature_Sensor_version_63 a brick:Zone_Air_Temperature_Sensor ;
-    rdfs:label bs:Literal_version_514 ;
-    ref:hasExternalReference bs:Resource_version_203 .
+    rdfs:label bs:Literal_version_528 ;
+    ref:hasExternalReference bs:Resource_version_187 .
 
 bs:Zone_Air_Temperature_Sensor_version_64 a brick:Zone_Air_Temperature_Sensor ;
-    rdfs:label bs:Literal_version_473 ;
-    ref:hasExternalReference bs:Resource_version_129 .
+    rdfs:label bs:Literal_version_487 ;
+    ref:hasExternalReference bs:Resource_version_131 .
 
 bs:Zone_Air_Temperature_Sensor_version_65 a brick:Zone_Air_Temperature_Sensor ;
-    rdfs:label bs:Literal_version_144 ;
-    ref:hasExternalReference bs:Resource_version_104 .
+    rdfs:label bs:Literal_version_150 ;
+    ref:hasExternalReference bs:Resource_version_85 .
 
 bs:Zone_Air_Temperature_Sensor_version_66 a brick:Zone_Air_Temperature_Sensor ;
-    rdfs:label bs:Literal_version_411 ;
-    ref:hasExternalReference bs:Resource_version_158 .
+    rdfs:label bs:Literal_version_436 ;
+    ref:hasExternalReference bs:Resource_version_143 .
 
 bs:Zone_Air_Temperature_Sensor_version_67 a brick:Zone_Air_Temperature_Sensor ;
-    rdfs:label bs:Literal_version_181 ;
-    ref:hasExternalReference bs:Resource_version_26 .
+    rdfs:label bs:Literal_version_189 ;
+    ref:hasExternalReference bs:Resource_version_118 .
 
 bs:Zone_Air_Temperature_Sensor_version_68 a brick:Zone_Air_Temperature_Sensor ;
-    rdfs:label bs:Literal_version_287 .
+    rdfs:label bs:Literal_version_297 .
 
 bs:Zone_Air_Temperature_Sensor_version_69 a brick:Zone_Air_Temperature_Sensor ;
-    rdfs:label bs:Literal_version_526 ;
-    ref:hasExternalReference bs:Resource_version_124 .
+    rdfs:label bs:Literal_version_534 ;
+    ref:hasExternalReference bs:Resource_version_252 .
 
 bs:Zone_Air_Temperature_Sensor_version_7 a brick:Zone_Air_Temperature_Sensor ;
-    rdfs:label bs:Literal_version_687 ;
-    ref:hasExternalReference bs:Resource_version_316 .
+    rdfs:label bs:Literal_version_707 ;
+    ref:hasExternalReference bs:Resource_version_285 .
 
 bs:Zone_Air_Temperature_Sensor_version_70 a brick:Zone_Air_Temperature_Sensor ;
-    rdfs:label bs:Literal_version_234 ;
-    ref:hasExternalReference bs:Resource_version_233 .
+    rdfs:label bs:Literal_version_242 ;
+    ref:hasExternalReference bs:Resource_version_18 .
 
 bs:Zone_Air_Temperature_Sensor_version_71 a brick:Zone_Air_Temperature_Sensor ;
-    rdfs:label bs:Literal_version_259 ;
-    ref:hasExternalReference bs:Resource_version_311 .
+    rdfs:label bs:Literal_version_264 ;
+    ref:hasExternalReference bs:Resource_version_291 .
 
 bs:Zone_Air_Temperature_Sensor_version_72 a brick:Zone_Air_Temperature_Sensor ;
-    rdfs:label bs:Literal_version_280 .
+    rdfs:label bs:Literal_version_289 .
 
 bs:Zone_Air_Temperature_Sensor_version_73 a brick:Zone_Air_Temperature_Sensor ;
-    rdfs:label bs:Literal_version_248 ;
-    ref:hasExternalReference bs:Resource_version_23 .
+    rdfs:label bs:Literal_version_254 ;
+    ref:hasExternalReference bs:Resource_version_101 .
 
 bs:Zone_Air_Temperature_Sensor_version_74 a brick:Zone_Air_Temperature_Sensor ;
-    rdfs:label bs:Literal_version_423 ;
-    ref:hasExternalReference bs:Resource_version_135 .
+    rdfs:label bs:Literal_version_444 ;
+    ref:hasExternalReference bs:Resource_version_151 .
 
 bs:Zone_Air_Temperature_Sensor_version_75 a brick:Zone_Air_Temperature_Sensor ;
-    rdfs:label bs:Literal_version_472 ;
-    ref:hasExternalReference bs:Resource_version_312 .
+    rdfs:label bs:Literal_version_486 ;
+    ref:hasExternalReference bs:Resource_version_192 .
 
 bs:Zone_Air_Temperature_Sensor_version_76 a brick:Zone_Air_Temperature_Sensor ;
-    rdfs:label bs:Literal_version_174 .
+    rdfs:label bs:Literal_version_179 .
 
 bs:Zone_Air_Temperature_Sensor_version_77 a brick:Zone_Air_Temperature_Sensor ;
-    rdfs:label bs:Literal_version_798 ;
-    ref:hasExternalReference bs:Resource_version_264 .
+    rdfs:label bs:Literal_version_803 ;
+    ref:hasExternalReference bs:Resource_version_320 .
 
 bs:Zone_Air_Temperature_Sensor_version_78 a brick:Zone_Air_Temperature_Sensor ;
-    rdfs:label bs:Literal_version_393 ;
-    ref:hasExternalReference bs:Resource_version_244 .
+    rdfs:label bs:Literal_version_415 ;
+    ref:hasExternalReference bs:Resource_version_238 .
 
 bs:Zone_Air_Temperature_Sensor_version_79 a brick:Zone_Air_Temperature_Sensor ;
-    rdfs:label bs:Literal_version_53 ;
-    ref:hasExternalReference bs:Resource_version_42 .
-
-bs:Zone_Air_Temperature_Sensor_version_8 a brick:Zone_Air_Temperature_Sensor ;
-    rdfs:label bs:Literal_version_525 ;
-    ref:hasExternalReference bs:Resource_version_313 .
-
-bs:Zone_Air_Temperature_Sensor_version_80 a brick:Zone_Air_Temperature_Sensor ;
-    rdfs:label bs:Literal_version_235 ;
-    ref:hasExternalReference bs:Resource_version_65 .
-
-bs:Zone_Air_Temperature_Sensor_version_81 a brick:Zone_Air_Temperature_Sensor ;
-    rdfs:label bs:Literal_version_7 .
-
-bs:Zone_Air_Temperature_Sensor_version_82 a brick:Zone_Air_Temperature_Sensor ;
-    rdfs:label bs:Literal_version_213 ;
-    ref:hasExternalReference bs:Resource_version_91 .
-
-bs:Zone_Air_Temperature_Sensor_version_83 a brick:Zone_Air_Temperature_Sensor ;
-    rdfs:label bs:Literal_version_23 .
-
-bs:Zone_Air_Temperature_Sensor_version_84 a brick:Zone_Air_Temperature_Sensor ;
-    rdfs:label bs:Literal_version_770 ;
-    ref:hasExternalReference bs:Resource_version_182 .
-
-bs:Zone_Air_Temperature_Sensor_version_85 a brick:Zone_Air_Temperature_Sensor ;
-    rdfs:label bs:Literal_version_138 .
-
-bs:Zone_Air_Temperature_Sensor_version_86 a brick:Zone_Air_Temperature_Sensor ;
-    rdfs:label bs:Literal_version_731 ;
-    ref:hasExternalReference bs:Resource_version_218 .
-
-bs:Zone_Air_Temperature_Sensor_version_87 a brick:Zone_Air_Temperature_Sensor ;
-    rdfs:label bs:Literal_version_601 ;
-    ref:hasExternalReference bs:Resource_version_241 .
-
-bs:Zone_Air_Temperature_Sensor_version_88 a brick:Zone_Air_Temperature_Sensor ;
-    rdfs:label bs:Literal_version_776 ;
-    ref:hasExternalReference bs:Resource_version_223 .
-
-bs:Zone_Air_Temperature_Sensor_version_89 a brick:Zone_Air_Temperature_Sensor ;
-    rdfs:label bs:Literal_version_206 .
-
-bs:Zone_Air_Temperature_Sensor_version_9 a brick:Zone_Air_Temperature_Sensor ;
-    rdfs:label bs:Literal_version_614 ;
+    rdfs:label bs:Literal_version_48 ;
     ref:hasExternalReference bs:Resource_version_78 .
 
+bs:Zone_Air_Temperature_Sensor_version_8 a brick:Zone_Air_Temperature_Sensor ;
+    rdfs:label bs:Literal_version_533 ;
+    ref:hasExternalReference bs:Resource_version_301 .
+
+bs:Zone_Air_Temperature_Sensor_version_80 a brick:Zone_Air_Temperature_Sensor ;
+    rdfs:label bs:Literal_version_243 ;
+    ref:hasExternalReference bs:Resource_version_4 .
+
+bs:Zone_Air_Temperature_Sensor_version_81 a brick:Zone_Air_Temperature_Sensor ;
+    rdfs:label bs:Literal_version_8 .
+
+bs:Zone_Air_Temperature_Sensor_version_82 a brick:Zone_Air_Temperature_Sensor ;
+    rdfs:label bs:Literal_version_216 ;
+    ref:hasExternalReference bs:Resource_version_138 .
+
+bs:Zone_Air_Temperature_Sensor_version_83 a brick:Zone_Air_Temperature_Sensor ;
+    rdfs:label bs:Literal_version_19 .
+
+bs:Zone_Air_Temperature_Sensor_version_84 a brick:Zone_Air_Temperature_Sensor ;
+    rdfs:label bs:Literal_version_779 ;
+    ref:hasExternalReference bs:Resource_version_135 .
+
+bs:Zone_Air_Temperature_Sensor_version_85 a brick:Zone_Air_Temperature_Sensor ;
+    rdfs:label bs:Literal_version_144 .
+
+bs:Zone_Air_Temperature_Sensor_version_86 a brick:Zone_Air_Temperature_Sensor ;
+    rdfs:label bs:Literal_version_738 ;
+    ref:hasExternalReference bs:Resource_version_45 .
+
+bs:Zone_Air_Temperature_Sensor_version_87 a brick:Zone_Air_Temperature_Sensor ;
+    rdfs:label bs:Literal_version_620 ;
+    ref:hasExternalReference bs:Resource_version_321 .
+
+bs:Zone_Air_Temperature_Sensor_version_88 a brick:Zone_Air_Temperature_Sensor ;
+    rdfs:label bs:Literal_version_782 ;
+    ref:hasExternalReference bs:Resource_version_190 .
+
+bs:Zone_Air_Temperature_Sensor_version_89 a brick:Zone_Air_Temperature_Sensor ;
+    rdfs:label bs:Literal_version_212 .
+
+bs:Zone_Air_Temperature_Sensor_version_9 a brick:Zone_Air_Temperature_Sensor ;
+    rdfs:label bs:Literal_version_637 ;
+    ref:hasExternalReference bs:Resource_version_312 .
+
 bs:Zone_Air_Temperature_Sensor_version_90 a brick:Zone_Air_Temperature_Sensor ;
-    rdfs:label bs:Literal_version_373 ;
-    ref:hasExternalReference bs:Resource_version_81 .
+    rdfs:label bs:Literal_version_398 ;
+    ref:hasExternalReference bs:Resource_version_248 .
 
 bs:Zone_Air_Temperature_Sensor_version_91 a brick:Zone_Air_Temperature_Sensor ;
-    rdfs:label bs:Literal_version_36 ;
-    ref:hasExternalReference bs:Resource_version_17 .
+    rdfs:label bs:Literal_version_31 ;
+    ref:hasExternalReference bs:Resource_version_201 .
 
 bs:Zone_Air_Temperature_Sensor_version_92 a brick:Zone_Air_Temperature_Sensor ;
-    rdfs:label bs:Literal_version_20 ;
-    ref:hasExternalReference bs:Resource_version_197 .
+    rdfs:label bs:Literal_version_16 ;
+    ref:hasExternalReference bs:Resource_version_239 .
 
 bs:Zone_Air_Temperature_Sensor_version_93 a brick:Zone_Air_Temperature_Sensor ;
-    rdfs:label bs:Literal_version_611 ;
-    ref:hasExternalReference bs:Resource_version_229 .
+    rdfs:label bs:Literal_version_632 ;
+    ref:hasExternalReference bs:Resource_version_185 .
 
 bs:Zone_Air_Temperature_Sensor_version_94 a brick:Zone_Air_Temperature_Sensor ;
-    rdfs:label bs:Literal_version_126 ;
-    ref:hasExternalReference bs:Resource_version_189 .
+    rdfs:label bs:Literal_version_132 ;
+    ref:hasExternalReference bs:Resource_version_120 .
 
 bs:Zone_Air_Temperature_Sensor_version_95 a brick:Zone_Air_Temperature_Sensor ;
-    rdfs:label bs:Literal_version_183 ;
-    ref:hasExternalReference bs:Resource_version_44 .
+    rdfs:label bs:Literal_version_191 ;
+    ref:hasExternalReference bs:Resource_version_114 .
 
 bs:Zone_Air_Temperature_Sensor_version_96 a brick:Zone_Air_Temperature_Sensor ;
-    rdfs:label bs:Literal_version_751 .
-
-bs:Zone_Air_Temperature_Sensor_version_97 a brick:Zone_Air_Temperature_Sensor ;
-    rdfs:label bs:Literal_version_347 ;
-    ref:hasExternalReference bs:Resource_version_9 .
-
-bs:Zone_Air_Temperature_Sensor_version_98 a brick:Zone_Air_Temperature_Sensor ;
-    rdfs:label bs:Literal_version_178 ;
-    ref:hasExternalReference bs:Resource_version_169 .
-
-bs:Zone_Air_Temperature_Sensor_version_99 a brick:Zone_Air_Temperature_Sensor ;
-    rdfs:label bs:Literal_version_781 ;
-    ref:hasExternalReference bs:Resource_version_198 .
-
-bs:Zone_Air_Temperature_Setpoint_version_1 a brick:Zone_Air_Temperature_Setpoint ;
-    rdfs:label bs:Literal_version_424 .
-
-bs:Zone_Air_Temperature_Setpoint_version_10 a brick:Zone_Air_Temperature_Setpoint ;
-    rdfs:label bs:Literal_version_756 ;
-    ref:hasExternalReference bs:Resource_version_172 .
-
-bs:Zone_Air_Temperature_Setpoint_version_11 a brick:Zone_Air_Temperature_Setpoint ;
-    rdfs:label bs:Literal_version_266 .
-
-bs:Zone_Air_Temperature_Setpoint_version_12 a brick:Zone_Air_Temperature_Setpoint ;
     rdfs:label bs:Literal_version_759 .
 
+bs:Zone_Air_Temperature_Sensor_version_97 a brick:Zone_Air_Temperature_Sensor ;
+    rdfs:label bs:Literal_version_370 ;
+    ref:hasExternalReference bs:Resource_version_130 .
+
+bs:Zone_Air_Temperature_Sensor_version_98 a brick:Zone_Air_Temperature_Sensor ;
+    rdfs:label bs:Literal_version_183 ;
+    ref:hasExternalReference bs:Resource_version_176 .
+
+bs:Zone_Air_Temperature_Sensor_version_99 a brick:Zone_Air_Temperature_Sensor ;
+    rdfs:label bs:Literal_version_785 ;
+    ref:hasExternalReference bs:Resource_version_228 .
+
+bs:Zone_Air_Temperature_Setpoint_version_1 a brick:Zone_Air_Temperature_Setpoint ;
+    rdfs:label bs:Literal_version_445 .
+
+bs:Zone_Air_Temperature_Setpoint_version_10 a brick:Zone_Air_Temperature_Setpoint ;
+    rdfs:label bs:Literal_version_764 ;
+    ref:hasExternalReference bs:Resource_version_220 .
+
+bs:Zone_Air_Temperature_Setpoint_version_11 a brick:Zone_Air_Temperature_Setpoint ;
+    rdfs:label bs:Literal_version_273 .
+
+bs:Zone_Air_Temperature_Setpoint_version_12 a brick:Zone_Air_Temperature_Setpoint ;
+    rdfs:label bs:Literal_version_765 .
+
 bs:Zone_Air_Temperature_Setpoint_version_13 a brick:Zone_Air_Temperature_Setpoint ;
-    rdfs:label bs:Literal_version_195 .
+    rdfs:label bs:Literal_version_201 .
 
 bs:Zone_Air_Temperature_Setpoint_version_14 a brick:Zone_Air_Temperature_Setpoint ;
-    rdfs:label bs:Literal_version_318 .
+    rdfs:label bs:Literal_version_337 .
 
 bs:Zone_Air_Temperature_Setpoint_version_15 a brick:Zone_Air_Temperature_Setpoint ;
-    rdfs:label bs:Literal_version_800 ;
-    ref:hasExternalReference bs:Resource_version_288 .
+    rdfs:label bs:Literal_version_804 ;
+    ref:hasExternalReference bs:Resource_version_275 .
 
 bs:Zone_Air_Temperature_Setpoint_version_16 a brick:Zone_Air_Temperature_Setpoint ;
-    rdfs:label bs:Literal_version_636 .
+    rdfs:label bs:Literal_version_656 .
 
 bs:Zone_Air_Temperature_Setpoint_version_17 a brick:Zone_Air_Temperature_Setpoint ;
-    rdfs:label bs:Literal_version_430 .
+    rdfs:label bs:Literal_version_450 .
 
 bs:Zone_Air_Temperature_Setpoint_version_18 a brick:Zone_Air_Temperature_Setpoint ;
-    rdfs:label bs:Literal_version_41 .
+    rdfs:label bs:Literal_version_36 .
 
 bs:Zone_Air_Temperature_Setpoint_version_19 a brick:Zone_Air_Temperature_Setpoint ;
-    rdfs:label bs:Literal_version_380 ;
-    ref:hasExternalReference bs:Resource_version_166 .
+    rdfs:label bs:Literal_version_404 ;
+    ref:hasExternalReference bs:Resource_version_96 .
 
 bs:Zone_Air_Temperature_Setpoint_version_2 a brick:Zone_Air_Temperature_Setpoint ;
-    rdfs:label bs:Literal_version_88 ;
-    ref:hasExternalReference bs:Resource_version_217 .
+    rdfs:label bs:Literal_version_91 ;
+    ref:hasExternalReference bs:Resource_version_99 .
 
 bs:Zone_Air_Temperature_Setpoint_version_20 a brick:Zone_Air_Temperature_Setpoint ;
-    rdfs:label bs:Literal_version_506 .
+    rdfs:label bs:Literal_version_521 .
 
 bs:Zone_Air_Temperature_Setpoint_version_21 a brick:Zone_Air_Temperature_Setpoint ;
-    rdfs:label bs:Literal_version_375 ;
-    ref:hasExternalReference bs:Resource_version_154 .
-
-bs:Zone_Air_Temperature_Setpoint_version_22 a brick:Zone_Air_Temperature_Setpoint ;
-    rdfs:label bs:Literal_version_782 ;
-    ref:hasExternalReference bs:Resource_version_294 .
-
-bs:Zone_Air_Temperature_Setpoint_version_23 a brick:Zone_Air_Temperature_Setpoint ;
-    rdfs:label bs:Literal_version_650 .
-
-bs:Zone_Air_Temperature_Setpoint_version_24 a brick:Zone_Air_Temperature_Setpoint ;
-    rdfs:label bs:Literal_version_324 ;
-    ref:hasExternalReference bs:Resource_version_283 .
-
-bs:Zone_Air_Temperature_Setpoint_version_25 a brick:Zone_Air_Temperature_Setpoint ;
-    rdfs:label bs:Literal_version_316 .
-
-bs:Zone_Air_Temperature_Setpoint_version_26 a brick:Zone_Air_Temperature_Setpoint ;
-    rdfs:label bs:Literal_version_164 .
-
-bs:Zone_Air_Temperature_Setpoint_version_27 a brick:Zone_Air_Temperature_Setpoint ;
-    rdfs:label bs:Literal_version_419 .
-
-bs:Zone_Air_Temperature_Setpoint_version_28 a brick:Zone_Air_Temperature_Setpoint ;
-    rdfs:label bs:Literal_version_274 .
-
-bs:Zone_Air_Temperature_Setpoint_version_29 a brick:Zone_Air_Temperature_Setpoint ;
-    rdfs:label bs:Literal_version_630 ;
-    ref:hasExternalReference bs:Resource_version_95 .
-
-bs:Zone_Air_Temperature_Setpoint_version_3 a brick:Zone_Air_Temperature_Setpoint ;
-    rdfs:label bs:Literal_version_571 .
-
-bs:Zone_Air_Temperature_Setpoint_version_30 a brick:Zone_Air_Temperature_Setpoint ;
-    rdfs:label bs:Literal_version_602 .
-
-bs:Zone_Air_Temperature_Setpoint_version_31 a brick:Zone_Air_Temperature_Setpoint ;
-    rdfs:label bs:Literal_version_190 .
-
-bs:Zone_Air_Temperature_Setpoint_version_32 a brick:Zone_Air_Temperature_Setpoint ;
-    rdfs:label bs:Literal_version_538 .
-
-bs:Zone_Air_Temperature_Setpoint_version_33 a brick:Zone_Air_Temperature_Setpoint ;
-    rdfs:label bs:Literal_version_82 .
-
-bs:Zone_Air_Temperature_Setpoint_version_34 a brick:Zone_Air_Temperature_Setpoint ;
-    rdfs:label bs:Literal_version_634 .
-
-bs:Zone_Air_Temperature_Setpoint_version_35 a brick:Zone_Air_Temperature_Setpoint ;
-    rdfs:label bs:Literal_version_648 ;
-    ref:hasExternalReference bs:Resource_version_263 .
-
-bs:Zone_Air_Temperature_Setpoint_version_36 a brick:Zone_Air_Temperature_Setpoint ;
-    rdfs:label bs:Literal_version_176 .
-
-bs:Zone_Air_Temperature_Setpoint_version_37 a brick:Zone_Air_Temperature_Setpoint ;
-    rdfs:label bs:Literal_version_30 ;
-    ref:hasExternalReference bs:Resource_version_140 .
-
-bs:Zone_Air_Temperature_Setpoint_version_38 a brick:Zone_Air_Temperature_Setpoint ;
-    rdfs:label bs:Literal_version_666 ;
+    rdfs:label bs:Literal_version_400 ;
     ref:hasExternalReference bs:Resource_version_300 .
 
+bs:Zone_Air_Temperature_Setpoint_version_22 a brick:Zone_Air_Temperature_Setpoint ;
+    rdfs:label bs:Literal_version_786 ;
+    ref:hasExternalReference bs:Resource_version_153 .
+
+bs:Zone_Air_Temperature_Setpoint_version_23 a brick:Zone_Air_Temperature_Setpoint ;
+    rdfs:label bs:Literal_version_670 .
+
+bs:Zone_Air_Temperature_Setpoint_version_24 a brick:Zone_Air_Temperature_Setpoint ;
+    rdfs:label bs:Literal_version_344 ;
+    ref:hasExternalReference bs:Resource_version_160 .
+
+bs:Zone_Air_Temperature_Setpoint_version_25 a brick:Zone_Air_Temperature_Setpoint ;
+    rdfs:label bs:Literal_version_334 .
+
+bs:Zone_Air_Temperature_Setpoint_version_26 a brick:Zone_Air_Temperature_Setpoint ;
+    rdfs:label bs:Literal_version_173 .
+
+bs:Zone_Air_Temperature_Setpoint_version_27 a brick:Zone_Air_Temperature_Setpoint ;
+    rdfs:label bs:Literal_version_442 .
+
+bs:Zone_Air_Temperature_Setpoint_version_28 a brick:Zone_Air_Temperature_Setpoint ;
+    rdfs:label bs:Literal_version_280 .
+
+bs:Zone_Air_Temperature_Setpoint_version_29 a brick:Zone_Air_Temperature_Setpoint ;
+    rdfs:label bs:Literal_version_651 ;
+    ref:hasExternalReference bs:Resource_version_233 .
+
+bs:Zone_Air_Temperature_Setpoint_version_3 a brick:Zone_Air_Temperature_Setpoint ;
+    rdfs:label bs:Literal_version_586 .
+
+bs:Zone_Air_Temperature_Setpoint_version_30 a brick:Zone_Air_Temperature_Setpoint ;
+    rdfs:label bs:Literal_version_621 .
+
+bs:Zone_Air_Temperature_Setpoint_version_31 a brick:Zone_Air_Temperature_Setpoint ;
+    rdfs:label bs:Literal_version_195 .
+
+bs:Zone_Air_Temperature_Setpoint_version_32 a brick:Zone_Air_Temperature_Setpoint ;
+    rdfs:label bs:Literal_version_548 .
+
+bs:Zone_Air_Temperature_Setpoint_version_33 a brick:Zone_Air_Temperature_Setpoint ;
+    rdfs:label bs:Literal_version_85 .
+
+bs:Zone_Air_Temperature_Setpoint_version_34 a brick:Zone_Air_Temperature_Setpoint ;
+    rdfs:label bs:Literal_version_654 .
+
+bs:Zone_Air_Temperature_Setpoint_version_35 a brick:Zone_Air_Temperature_Setpoint ;
+    rdfs:label bs:Literal_version_667 ;
+    ref:hasExternalReference bs:Resource_version_294 .
+
+bs:Zone_Air_Temperature_Setpoint_version_36 a brick:Zone_Air_Temperature_Setpoint ;
+    rdfs:label bs:Literal_version_181 .
+
+bs:Zone_Air_Temperature_Setpoint_version_37 a brick:Zone_Air_Temperature_Setpoint ;
+    rdfs:label bs:Literal_version_27 ;
+    ref:hasExternalReference bs:Resource_version_289 .
+
+bs:Zone_Air_Temperature_Setpoint_version_38 a brick:Zone_Air_Temperature_Setpoint ;
+    rdfs:label bs:Literal_version_689 ;
+    ref:hasExternalReference bs:Resource_version_295 .
+
 bs:Zone_Air_Temperature_Setpoint_version_39 a brick:Zone_Air_Temperature_Setpoint ;
-    rdfs:label bs:Literal_version_296 ;
-    ref:hasExternalReference bs:Resource_version_178 .
+    rdfs:label bs:Literal_version_307 ;
+    ref:hasExternalReference bs:Resource_version_167 .
 
 bs:Zone_Air_Temperature_Setpoint_version_4 a brick:Zone_Air_Temperature_Setpoint ;
-    rdfs:label bs:Literal_version_414 ;
-    ref:hasExternalReference bs:Resource_version_33 .
+    rdfs:label bs:Literal_version_438 ;
+    ref:hasExternalReference bs:Resource_version_256 .
 
 bs:Zone_Air_Temperature_Setpoint_version_40 a brick:Zone_Air_Temperature_Setpoint ;
-    rdfs:label bs:Literal_version_465 ;
-    ref:hasExternalReference bs:Resource_version_8 .
+    rdfs:label bs:Literal_version_478 ;
+    ref:hasExternalReference bs:Resource_version_89 .
 
 bs:Zone_Air_Temperature_Setpoint_version_41 a brick:Zone_Air_Temperature_Setpoint ;
     rdfs:label bs:Literal_version_810 ;
-    ref:hasExternalReference bs:Resource_version_68 .
+    ref:hasExternalReference bs:Resource_version_270 .
 
 bs:Zone_Air_Temperature_Setpoint_version_42 a brick:Zone_Air_Temperature_Setpoint ;
-    rdfs:label bs:Literal_version_242 .
-
-bs:Zone_Air_Temperature_Setpoint_version_43 a brick:Zone_Air_Temperature_Setpoint ;
-    rdfs:label bs:Literal_version_399 .
-
-bs:Zone_Air_Temperature_Setpoint_version_44 a brick:Zone_Air_Temperature_Setpoint ;
-    rdfs:label bs:Literal_version_520 .
-
-bs:Zone_Air_Temperature_Setpoint_version_45 a brick:Zone_Air_Temperature_Setpoint ;
-    rdfs:label bs:Literal_version_371 .
-
-bs:Zone_Air_Temperature_Setpoint_version_46 a brick:Zone_Air_Temperature_Setpoint ;
-    rdfs:label bs:Literal_version_189 .
-
-bs:Zone_Air_Temperature_Setpoint_version_47 a brick:Zone_Air_Temperature_Setpoint ;
-    rdfs:label bs:Literal_version_568 ;
-    ref:hasExternalReference bs:Resource_version_125 .
-
-bs:Zone_Air_Temperature_Setpoint_version_48 a brick:Zone_Air_Temperature_Setpoint ;
-    rdfs:label bs:Literal_version_402 .
-
-bs:Zone_Air_Temperature_Setpoint_version_49 a brick:Zone_Air_Temperature_Setpoint ;
     rdfs:label bs:Literal_version_249 .
 
+bs:Zone_Air_Temperature_Setpoint_version_43 a brick:Zone_Air_Temperature_Setpoint ;
+    rdfs:label bs:Literal_version_422 .
+
+bs:Zone_Air_Temperature_Setpoint_version_44 a brick:Zone_Air_Temperature_Setpoint ;
+    rdfs:label bs:Literal_version_531 .
+
+bs:Zone_Air_Temperature_Setpoint_version_45 a brick:Zone_Air_Temperature_Setpoint ;
+    rdfs:label bs:Literal_version_396 .
+
+bs:Zone_Air_Temperature_Setpoint_version_46 a brick:Zone_Air_Temperature_Setpoint ;
+    rdfs:label bs:Literal_version_193 .
+
+bs:Zone_Air_Temperature_Setpoint_version_47 a brick:Zone_Air_Temperature_Setpoint ;
+    rdfs:label bs:Literal_version_582 ;
+    ref:hasExternalReference bs:Resource_version_142 .
+
+bs:Zone_Air_Temperature_Setpoint_version_48 a brick:Zone_Air_Temperature_Setpoint ;
+    rdfs:label bs:Literal_version_425 .
+
+bs:Zone_Air_Temperature_Setpoint_version_49 a brick:Zone_Air_Temperature_Setpoint ;
+    rdfs:label bs:Literal_version_255 .
+
 bs:Zone_Air_Temperature_Setpoint_version_5 a brick:Zone_Air_Temperature_Setpoint ;
-    rdfs:label bs:Literal_version_653 ;
-    ref:hasExternalReference bs:Resource_version_319 .
+    rdfs:label bs:Literal_version_674 ;
+    ref:hasExternalReference bs:Resource_version_323 .
 
 bs:Zone_Air_Temperature_Setpoint_version_50 a brick:Zone_Air_Temperature_Setpoint ;
-    rdfs:label bs:Literal_version_99 .
+    rdfs:label bs:Literal_version_108 .
 
 bs:Zone_Air_Temperature_Setpoint_version_51 a brick:Zone_Air_Temperature_Setpoint ;
-    rdfs:label bs:Literal_version_763 .
+    rdfs:label bs:Literal_version_773 .
 
 bs:Zone_Air_Temperature_Setpoint_version_52 a brick:Zone_Air_Temperature_Setpoint ;
-    rdfs:label bs:Literal_version_283 ;
-    ref:hasExternalReference bs:Resource_version_168 .
+    rdfs:label bs:Literal_version_292 ;
+    ref:hasExternalReference bs:Resource_version_121 .
 
 bs:Zone_Air_Temperature_Setpoint_version_53 a brick:Zone_Air_Temperature_Setpoint ;
-    rdfs:label bs:Literal_version_129 .
+    rdfs:label bs:Literal_version_134 .
 
 bs:Zone_Air_Temperature_Setpoint_version_54 a brick:Zone_Air_Temperature_Setpoint ;
-    rdfs:label bs:Literal_version_583 .
+    rdfs:label bs:Literal_version_596 .
 
 bs:Zone_Air_Temperature_Setpoint_version_55 a brick:Zone_Air_Temperature_Setpoint ;
-    rdfs:label bs:Literal_version_579 .
+    rdfs:label bs:Literal_version_592 .
 
 bs:Zone_Air_Temperature_Setpoint_version_56 a brick:Zone_Air_Temperature_Setpoint ;
-    rdfs:label bs:Literal_version_791 .
+    rdfs:label bs:Literal_version_793 .
 
 bs:Zone_Air_Temperature_Setpoint_version_57 a brick:Zone_Air_Temperature_Setpoint ;
     rdfs:label bs:Literal_version_6 .
 
 bs:Zone_Air_Temperature_Setpoint_version_58 a brick:Zone_Air_Temperature_Setpoint ;
-    rdfs:label bs:Literal_version_457 .
+    rdfs:label bs:Literal_version_473 .
 
 bs:Zone_Air_Temperature_Setpoint_version_59 a brick:Zone_Air_Temperature_Setpoint ;
-    rdfs:label bs:Literal_version_725 .
+    rdfs:label bs:Literal_version_732 .
 
 bs:Zone_Air_Temperature_Setpoint_version_6 a brick:Zone_Air_Temperature_Setpoint ;
     rdfs:label bs:Literal_version_4 .
 
 bs:Zone_Air_Temperature_Setpoint_version_60 a brick:Zone_Air_Temperature_Setpoint ;
-    rdfs:label bs:Literal_version_156 ;
-    ref:hasExternalReference bs:Resource_version_10 .
+    rdfs:label bs:Literal_version_164 ;
+    ref:hasExternalReference bs:Resource_version_58 .
 
 bs:Zone_Air_Temperature_Setpoint_version_61 a brick:Zone_Air_Temperature_Setpoint ;
-    rdfs:label bs:Literal_version_81 ;
-    ref:hasExternalReference bs:Resource_version_53 .
+    rdfs:label bs:Literal_version_84 ;
+    ref:hasExternalReference bs:Resource_version_23 .
 
 bs:Zone_Air_Temperature_Setpoint_version_62 a brick:Zone_Air_Temperature_Setpoint ;
-    rdfs:label bs:Literal_version_498 ;
-    ref:hasExternalReference bs:Resource_version_268 .
+    rdfs:label bs:Literal_version_512 ;
+    ref:hasExternalReference bs:Resource_version_251 .
 
 bs:Zone_Air_Temperature_Setpoint_version_63 a brick:Zone_Air_Temperature_Setpoint ;
-    rdfs:label bs:Literal_version_562 ;
-    ref:hasExternalReference bs:Resource_version_157 .
+    rdfs:label bs:Literal_version_574 ;
+    ref:hasExternalReference bs:Resource_version_169 .
 
 bs:Zone_Air_Temperature_Setpoint_version_64 a brick:Zone_Air_Temperature_Setpoint ;
-    rdfs:label bs:Literal_version_396 ;
-    ref:hasExternalReference bs:Resource_version_52 .
+    rdfs:label bs:Literal_version_418 ;
+    ref:hasExternalReference bs:Resource_version_6 .
 
 bs:Zone_Air_Temperature_Setpoint_version_65 a brick:Zone_Air_Temperature_Setpoint ;
-    rdfs:label bs:Literal_version_229 ;
-    ref:hasExternalReference bs:Resource_version_314 .
+    rdfs:label bs:Literal_version_238 ;
+    ref:hasExternalReference bs:Resource_version_69 .
 
 bs:Zone_Air_Temperature_Setpoint_version_66 a brick:Zone_Air_Temperature_Setpoint ;
-    rdfs:label bs:Literal_version_102 ;
-    ref:hasExternalReference bs:Resource_version_21 .
+    rdfs:label bs:Literal_version_112 ;
+    ref:hasExternalReference bs:Resource_version_212 .
 
 bs:Zone_Air_Temperature_Setpoint_version_67 a brick:Zone_Air_Temperature_Setpoint ;
-    rdfs:label bs:Literal_version_578 ;
-    ref:hasExternalReference bs:Resource_version_285 .
+    rdfs:label bs:Literal_version_590 ;
+    ref:hasExternalReference bs:Resource_version_196 .
 
 bs:Zone_Air_Temperature_Setpoint_version_68 a brick:Zone_Air_Temperature_Setpoint ;
-    rdfs:label bs:Literal_version_301 ;
-    ref:hasExternalReference bs:Resource_version_76 .
-
-bs:Zone_Air_Temperature_Setpoint_version_69 a brick:Zone_Air_Temperature_Setpoint ;
-    rdfs:label bs:Literal_version_147 ;
-    ref:hasExternalReference bs:Resource_version_74 .
-
-bs:Zone_Air_Temperature_Setpoint_version_7 a brick:Zone_Air_Temperature_Setpoint ;
-    rdfs:label bs:Literal_version_591 ;
-    ref:hasExternalReference bs:Resource_version_242 .
-
-bs:Zone_Air_Temperature_Setpoint_version_70 a brick:Zone_Air_Temperature_Setpoint ;
-    rdfs:label bs:Literal_version_270 ;
-    ref:hasExternalReference bs:Resource_version_56 .
-
-bs:Zone_Air_Temperature_Setpoint_version_71 a brick:Zone_Air_Temperature_Setpoint ;
-    rdfs:label bs:Literal_version_323 ;
-    ref:hasExternalReference bs:Resource_version_19 .
-
-bs:Zone_Air_Temperature_Setpoint_version_72 a brick:Zone_Air_Temperature_Setpoint ;
-    rdfs:label bs:Literal_version_110 ;
-    ref:hasExternalReference bs:Resource_version_260 .
-
-bs:Zone_Air_Temperature_Setpoint_version_73 a brick:Zone_Air_Temperature_Setpoint ;
-    rdfs:label bs:Literal_version_240 ;
-    ref:hasExternalReference bs:Resource_version_13 .
-
-bs:Zone_Air_Temperature_Setpoint_version_74 a brick:Zone_Air_Temperature_Setpoint ;
-    rdfs:label bs:Literal_version_655 ;
-    ref:hasExternalReference bs:Resource_version_250 .
-
-bs:Zone_Air_Temperature_Setpoint_version_75 a brick:Zone_Air_Temperature_Setpoint ;
-    rdfs:label bs:Literal_version_370 ;
+    rdfs:label bs:Literal_version_316 ;
     ref:hasExternalReference bs:Resource_version_144 .
 
-bs:Zone_Air_Temperature_Setpoint_version_76 a brick:Zone_Air_Temperature_Setpoint ;
-    rdfs:label bs:Literal_version_94 ;
-    ref:hasExternalReference bs:Resource_version_106 .
+bs:Zone_Air_Temperature_Setpoint_version_69 a brick:Zone_Air_Temperature_Setpoint ;
+    rdfs:label bs:Literal_version_153 ;
+    ref:hasExternalReference bs:Resource_version_68 .
 
-bs:Zone_Air_Temperature_Setpoint_version_77 a brick:Zone_Air_Temperature_Setpoint ;
-    rdfs:label bs:Literal_version_137 ;
-    ref:hasExternalReference bs:Resource_version_187 .
+bs:Zone_Air_Temperature_Setpoint_version_7 a brick:Zone_Air_Temperature_Setpoint ;
+    rdfs:label bs:Literal_version_607 ;
+    ref:hasExternalReference bs:Resource_version_71 .
 
-bs:Zone_Air_Temperature_Setpoint_version_78 a brick:Zone_Air_Temperature_Setpoint ;
-    rdfs:label bs:Literal_version_142 ;
-    ref:hasExternalReference bs:Resource_version_224 .
+bs:Zone_Air_Temperature_Setpoint_version_70 a brick:Zone_Air_Temperature_Setpoint ;
+    rdfs:label bs:Literal_version_277 ;
+    ref:hasExternalReference bs:Resource_version_65 .
 
-bs:Zone_Air_Temperature_Setpoint_version_79 a brick:Zone_Air_Temperature_Setpoint ;
-    rdfs:label bs:Literal_version_744 .
-
-bs:Zone_Air_Temperature_Setpoint_version_8 a brick:Zone_Air_Temperature_Setpoint ;
-    rdfs:label bs:Literal_version_312 .
-
-bs:Zone_Air_Temperature_Setpoint_version_80 a brick:Zone_Air_Temperature_Setpoint ;
-    rdfs:label bs:Literal_version_793 ;
-    ref:hasExternalReference bs:Resource_version_167 .
-
-bs:Zone_Air_Temperature_Setpoint_version_81 a brick:Zone_Air_Temperature_Setpoint ;
-    rdfs:label bs:Literal_version_263 ;
-    ref:hasExternalReference bs:Resource_version_30 .
-
-bs:Zone_Air_Temperature_Setpoint_version_82 a brick:Zone_Air_Temperature_Setpoint ;
-    rdfs:label bs:Literal_version_478 ;
+bs:Zone_Air_Temperature_Setpoint_version_71 a brick:Zone_Air_Temperature_Setpoint ;
+    rdfs:label bs:Literal_version_343 ;
     ref:hasExternalReference bs:Resource_version_75 .
 
+bs:Zone_Air_Temperature_Setpoint_version_72 a brick:Zone_Air_Temperature_Setpoint ;
+    rdfs:label bs:Literal_version_119 ;
+    ref:hasExternalReference bs:Resource_version_113 .
+
+bs:Zone_Air_Temperature_Setpoint_version_73 a brick:Zone_Air_Temperature_Setpoint ;
+    rdfs:label bs:Literal_version_246 ;
+    ref:hasExternalReference bs:Resource_version_83 .
+
+bs:Zone_Air_Temperature_Setpoint_version_74 a brick:Zone_Air_Temperature_Setpoint ;
+    rdfs:label bs:Literal_version_676 ;
+    ref:hasExternalReference bs:Resource_version_329 .
+
+bs:Zone_Air_Temperature_Setpoint_version_75 a brick:Zone_Air_Temperature_Setpoint ;
+    rdfs:label bs:Literal_version_394 ;
+    ref:hasExternalReference bs:Resource_version_314 .
+
+bs:Zone_Air_Temperature_Setpoint_version_76 a brick:Zone_Air_Temperature_Setpoint ;
+    rdfs:label bs:Literal_version_99 ;
+    ref:hasExternalReference bs:Resource_version_86 .
+
+bs:Zone_Air_Temperature_Setpoint_version_77 a brick:Zone_Air_Temperature_Setpoint ;
+    rdfs:label bs:Literal_version_143 ;
+    ref:hasExternalReference bs:Resource_version_177 .
+
+bs:Zone_Air_Temperature_Setpoint_version_78 a brick:Zone_Air_Temperature_Setpoint ;
+    rdfs:label bs:Literal_version_149 ;
+    ref:hasExternalReference bs:Resource_version_127 .
+
+bs:Zone_Air_Temperature_Setpoint_version_79 a brick:Zone_Air_Temperature_Setpoint ;
+    rdfs:label bs:Literal_version_751 .
+
+bs:Zone_Air_Temperature_Setpoint_version_8 a brick:Zone_Air_Temperature_Setpoint ;
+    rdfs:label bs:Literal_version_328 .
+
+bs:Zone_Air_Temperature_Setpoint_version_80 a brick:Zone_Air_Temperature_Setpoint ;
+    rdfs:label bs:Literal_version_796 ;
+    ref:hasExternalReference bs:Resource_version_195 .
+
+bs:Zone_Air_Temperature_Setpoint_version_81 a brick:Zone_Air_Temperature_Setpoint ;
+    rdfs:label bs:Literal_version_268 ;
+    ref:hasExternalReference bs:Resource_version_100 .
+
+bs:Zone_Air_Temperature_Setpoint_version_82 a brick:Zone_Air_Temperature_Setpoint ;
+    rdfs:label bs:Literal_version_492 ;
+    ref:hasExternalReference bs:Resource_version_149 .
+
 bs:Zone_Air_Temperature_Setpoint_version_83 a brick:Zone_Air_Temperature_Setpoint ;
-    rdfs:label bs:Literal_version_292 ;
-    ref:hasExternalReference bs:Resource_version_92 .
+    rdfs:label bs:Literal_version_304 ;
+    ref:hasExternalReference bs:Resource_version_172 .
 
 bs:Zone_Air_Temperature_Setpoint_version_84 a brick:Zone_Air_Temperature_Setpoint ;
-    rdfs:label bs:Literal_version_282 ;
-    ref:hasExternalReference bs:Resource_version_27 .
+    rdfs:label bs:Literal_version_291 ;
+    ref:hasExternalReference bs:Resource_version_90 .
 
 bs:Zone_Air_Temperature_Setpoint_version_85 a brick:Zone_Air_Temperature_Setpoint ;
-    rdfs:label bs:Literal_version_145 ;
-    ref:hasExternalReference bs:Resource_version_253 .
+    rdfs:label bs:Literal_version_151 ;
+    ref:hasExternalReference bs:Resource_version_243 .
 
 bs:Zone_Air_Temperature_Setpoint_version_86 a brick:Zone_Air_Temperature_Setpoint ;
-    rdfs:label bs:Literal_version_355 ;
-    ref:hasExternalReference bs:Resource_version_173 .
+    rdfs:label bs:Literal_version_381 ;
+    ref:hasExternalReference bs:Resource_version_102 .
 
 bs:Zone_Air_Temperature_Setpoint_version_87 a brick:Zone_Air_Temperature_Setpoint ;
-    rdfs:label bs:Literal_version_62 ;
-    ref:hasExternalReference bs:Resource_version_22 .
+    rdfs:label bs:Literal_version_61 ;
+    ref:hasExternalReference bs:Resource_version_7 .
 
 bs:Zone_Air_Temperature_Setpoint_version_88 a brick:Zone_Air_Temperature_Setpoint ;
-    rdfs:label bs:Literal_version_256 ;
-    ref:hasExternalReference bs:Resource_version_156 .
+    rdfs:label bs:Literal_version_261 ;
+    ref:hasExternalReference bs:Resource_version_227 .
 
 bs:Zone_Air_Temperature_Setpoint_version_89 a brick:Zone_Air_Temperature_Setpoint ;
-    rdfs:label bs:Literal_version_795 ;
-    ref:hasExternalReference bs:Resource_version_38 .
+    rdfs:label bs:Literal_version_799 ;
+    ref:hasExternalReference bs:Resource_version_199 .
 
 bs:Zone_Air_Temperature_Setpoint_version_9 a brick:Zone_Air_Temperature_Setpoint ;
-    rdfs:label bs:Literal_version_531 ;
-    ref:hasExternalReference bs:Resource_version_165 .
+    rdfs:label bs:Literal_version_539 ;
+    ref:hasExternalReference bs:Resource_version_307 .
 
 bs:Zone_Air_Temperature_Setpoint_version_90 a brick:Zone_Air_Temperature_Setpoint ;
-    rdfs:label bs:Literal_version_128 ;
-    ref:hasExternalReference bs:Resource_version_67 .
+    rdfs:label bs:Literal_version_133 ;
+    ref:hasExternalReference bs:Resource_version_215 .
 
 bs:Room_version_1 a brick:Room .
 

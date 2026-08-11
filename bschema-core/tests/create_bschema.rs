@@ -1,7 +1,7 @@
 use bschema_core::algorithm::create_bschema;
 use bschema_core::graph::RdfGraph;
 use oxigraph::io::RdfFormat;
-use oxigraph::model::Term;
+use oxigraph::model::{NamedOrBlankNode, Term};
 use std::collections::HashSet;
 
 const TTL: &str = r#"
@@ -150,4 +150,44 @@ fn groups_blank_nodes_by_topology_and_reports_as_blank_nodes() {
         .filter(|t| matches!(&t.object, Term::BlankNode(_)))
         .count();
     assert_eq!(blank_member_count, 2, "the two isomorphic blank-node specs should be grouped together");
+}
+
+#[test]
+fn threshold_zero_member_graph_is_keyed_consistently_with_class_graph() {
+    // Regression test: `similarity_threshold == Some(0.0)` breaks out of
+    // the iteration loop right after applying iteration 0's relabeling, so
+    // the member graph must be keyed by that *applied* label - not by
+    // `subject_classes`, which (only on this path) still describes each
+    // group's class as of the *start* of iteration 0, before relabeling.
+    // Getting this wrong means class_graph references a `bs:` class the
+    // member graph has no entry for at all.
+    let data_graph = RdfGraph::parse_str(TTL, RdfFormat::Turtle).unwrap();
+    let result = create_bschema(&data_graph, 10, Some(0.0), true, true).unwrap();
+
+    let member_classes: HashSet<String> = result
+        .member_graph
+        .triples()
+        .into_iter()
+        .filter(|t| t.predicate.as_str().ends_with("rdf-schema#member"))
+        .filter_map(|t| match t.subject {
+            NamedOrBlankNode::NamedNode(n) => Some(n.as_str().to_string()),
+            NamedOrBlankNode::BlankNode(_) => None,
+        })
+        .collect();
+
+    let mut checked_any = false;
+    for t in result.class_graph.triples() {
+        for term in [Term::from(t.subject.clone()), t.object.clone()] {
+            if let Term::NamedNode(n) = &term {
+                if n.as_str().starts_with("urn:bschema#") {
+                    checked_any = true;
+                    assert!(
+                        member_classes.contains(n.as_str()),
+                        "class_graph references {n} but member_graph has no members for it"
+                    );
+                }
+            }
+        }
+    }
+    assert!(checked_any, "test setup: expected at least one bs: class in class_graph");
 }

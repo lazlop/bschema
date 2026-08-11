@@ -92,8 +92,8 @@
 (ns1:BuildingStorey_157 ns1:BuildingStorey_161) brick:hasPart (ns1:Space_1126 ns1:Space_1307) .
 (ns1:BuildingStorey_157 ns1:BuildingStorey_161) brick:isLocationOf (ns1:null_Equipment) .
 (ns1:BuildingStorey_157 ns1:BuildingStorey_161) ref:hasExternalReference [
-    ref:ifcGlobalID ("04fvfeI2P3MOmu2cRam2oG" "04fvfeI2P3MOmu2cRam2oO") ;
-    ref:ifcName ("CORRIDOR_A" "CORRIDOR_B")
+    ref:ifcGlobalID ("04fvfeI2P3MOmu2cRam3GG" "04fvfeI2P3MOmu2cRam3GR") ;
+    ref:ifcName ("Fujitsu General-ASYG18-24KMTA-Back_Left:ASYG18-24KMTA:431955" "Fujitsu General-ASYG18-24KMTA-Back_Left:ASYG18-24KMTA:433790")
 ] .
 (ns1:BuildingStorey_157 ns1:BuildingStorey_161) s4bldg:contains (ns1:null_Equipment) .
 (ns1:RC04N0041_TempSensingPoint ns1:RC04N0042_TempSensingPoint) a
