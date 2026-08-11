@@ -1,6 +1,6 @@
 //! Core bschema algorithm, ported from `graph-pattern-id/bschema/bschema.py`.
 
-use crate::canon::{canonicalize, common_canon_triple_count, CanonTriple};
+use crate::canon::{canonicalize, common_canon_triple_count, named_node_key, CanonTriple};
 use crate::error::Result;
 use crate::graph::RdfGraph;
 use crate::namespace::{
@@ -152,6 +152,25 @@ pub struct ClassIsomorphisms {
     pub subject_classes: Vec<NamedNode>,
 }
 
+/// Is `t` the canonical form of `<literal-skolem> a rdfs:Literal`, the
+/// synthetic marker `RdfGraph::skolemize` tags every not-yet-classified
+/// literal skolem with? It's identical for every such literal regardless
+/// of datatype, predicate, or subject, so it carries zero discriminating
+/// power - yet it appears in the 1-hop pattern of anything that mentions
+/// one (the literal's own pattern, and any entity's pattern that has an
+/// edge to it). Because those patterns are small (a literal's own is
+/// typically 2-3 triples total), this one always-shared triple alone can
+/// push an unrelated pair's overlap ratio above a `similarity_threshold`
+/// that would otherwise correctly keep them apart - see the over-merging
+/// discussion on PR #1 and the follow-up literal-topology work. Filtered
+/// out of every pattern in [`class_isomorphisms`] before it's ever stored
+/// or compared, for both exact and threshold-based matching.
+fn is_literal_marker_canon_triple(t: &CanonTriple) -> bool {
+    let literal_key = named_node_key(RDFS_LITERAL.as_str());
+    let type_key = named_node_key(A.as_str());
+    t.0 == literal_key && t.1 == type_key && t.2 == literal_key
+}
+
 /// Groups subjects of `data_graph` by the isomorphism (or, if
 /// `similarity_threshold` is set, high overlap) of their 1-hop class
 /// pattern subgraph. Ports `get_class_isomorphisms`.
@@ -169,7 +188,10 @@ pub fn class_isomorphisms(
             let subject_class = get_class(&Term::from(s.clone()), data_graph);
             let subgraph = subgraph_with_hops(data_graph, s, 1, false)?;
             let pattern_graph = class_graph(&subgraph)?.triples();
-            let canon_pattern = canonicalize(&pattern_graph);
+            let canon_pattern: HashSet<CanonTriple> = canonicalize(&pattern_graph)
+                .into_iter()
+                .filter(|t| !is_literal_marker_canon_triple(t))
+                .collect();
             Ok((s.clone(), subject_class, canon_pattern))
         })
         .collect();

@@ -442,11 +442,11 @@
     (ns2:131_Tele-Health ns2:132_MECH_STEAM) .
 (ns3:Gas_Vault ns4:Gas_Vault) a s223:PhysicalSpace .
 (ns2:Mode_1_Volume_Total ns2:Mode_1_Volume_Total_Device_57018) s223:hasExternalReference [
-    bacnet:description ("002QgMwn12248" "003jdRyq12263") ;
+    bacnet:description ("0KFJmtNI84" "0M3qaT0T2282") ;
     bacnet:device-identifier (ns2:4FsOfbEa2841 ns2:5wSA7AlJ2418) ;
-    bacnet:object-identifier ("002QgMwn12248" "003jdRyq12263") ;
+    bacnet:object-identifier ("00fhSrXC2346" "011SIUOH357") ;
     bacnet:object-name ("002QgMwn12248" "003jdRyq12263") ;
-    bacnet:object-type ("002QgMwn12248" "003jdRyq12263") ;
+    bacnet:object-type ("analogInput" "analogOutput") ;
     a s223:BACnetExternalReference
 ] .
 (ns2:Mode_1_Volume_Total ns2:Mode_1_Volume_Total_Device_57018) qudt:hasUnit
@@ -454,21 +454,21 @@
     unit:GAL_US .
 (ns2:Mode_1_Volume_Total ns2:Mode_1_Volume_Total_Device_57018) a s223:Property .
 (ns2:bldg.AH1A.SF_VFD_DI_5_ACTUAL ns2:bldg.AH1A.SF_VFD_DI_6_ACTUAL) s223:hasExternalReference [
-    bacnet:description ("002QgMwn12248" "003jdRyq12263") ;
+    bacnet:description ("0KFJmtNI84" "0M3qaT0T2282") ;
     bacnet:device-identifier (ns2:4FsOfbEa2841 ns2:5wSA7AlJ2418) ;
-    bacnet:object-identifier ("002QgMwn12248" "003jdRyq12263") ;
+    bacnet:object-identifier ("00fhSrXC2346" "011SIUOH357") ;
     bacnet:object-name ("002QgMwn12248" "003jdRyq12263") ;
-    bacnet:object-type ("002QgMwn12248" "003jdRyq12263") ;
+    bacnet:object-type ("analogInput" "analogOutput") ;
     a s223:BACnetExternalReference
 ] .
 (ns2:bldg.AH1A.SF_VFD_DI_5_ACTUAL ns2:bldg.AH1A.SF_VFD_DI_6_ACTUAL) qudt:hasUnit unit:UNITLESS .
 (ns2:bldg.AH1A.SF_VFD_DI_5_ACTUAL ns2:bldg.AH1A.SF_VFD_DI_6_ACTUAL) a s223:Property .
 (ns2:bldg.MDC.CAC01_HUM_DB_CMD ns2:bldg.MDC.CAC01_LO_DITPLM_CD) s223:hasExternalReference [
-    bacnet:description ("002QgMwn12248" "003jdRyq12263") ;
+    bacnet:description ("0KFJmtNI84" "0M3qaT0T2282") ;
     bacnet:device-identifier (ns2:4FsOfbEa2841 ns2:5wSA7AlJ2418) ;
-    bacnet:object-identifier ("002QgMwn12248" "003jdRyq12263") ;
+    bacnet:object-identifier ("00fhSrXC2346" "011SIUOH357") ;
     bacnet:object-name ("002QgMwn12248" "003jdRyq12263") ;
-    bacnet:object-type ("002QgMwn12248" "003jdRyq12263") ;
+    bacnet:object-type ("analogInput" "analogOutput") ;
     a s223:BACnetExternalReference
 ] .
 (ns2:bldg.MDC.CAC01_HUM_DB_CMD ns2:bldg.MDC.CAC01_LO_DITPLM_CD) qudt:hasUnit
@@ -477,11 +477,11 @@
     unit:DEG_F .
 (ns2:bldg.MDC.CAC01_HUM_DB_CMD ns2:bldg.MDC.CAC01_LO_DITPLM_CD) a s223:Property .
 (ns2:bldg.SW.MSA.MAIN.PWR_REAL_3_P ns2:bldg.SW.MSA_B.MAIN.PWR_REAL_3_P) s223:hasExternalReference [
-    bacnet:description ("002QgMwn12248" "003jdRyq12263") ;
+    bacnet:description ("0KFJmtNI84" "0M3qaT0T2282") ;
     bacnet:device-identifier (ns2:4FsOfbEa2841 ns2:5wSA7AlJ2418) ;
-    bacnet:object-identifier ("002QgMwn12248" "003jdRyq12263") ;
+    bacnet:object-identifier ("00fhSrXC2346" "011SIUOH357") ;
     bacnet:object-name ("002QgMwn12248" "003jdRyq12263") ;
-    bacnet:object-type ("002QgMwn12248" "003jdRyq12263") ;
+    bacnet:object-type ("analogInput" "analogOutput") ;
     a s223:BACnetExternalReference
 ] .
 (ns2:bldg.SW.MSA.MAIN.PWR_REAL_3_P ns2:bldg.SW.MSA_B.MAIN.PWR_REAL_3_P) s223:hasProperty (ns2:bldg.SW.MSA.MAIN.PWR_REAL_3_P ns2:bldg.SW.MSA_B.MAIN.PWR_REAL_3_P) .
@@ -502,11 +502,11 @@
 (ns2:HWP1 ns2:HWP2) s223:hasRole s223:Role-Heating .
 (ns2:HWP1 ns2:HWP2) a s223:Pump .
 (ns2:TEST.ACTCHWDPSP ns2:TEST.ACTCWDPSP) s223:hasExternalReference [
-    bacnet:description ("002QgMwn12248" "003jdRyq12263") ;
+    bacnet:description ("0KFJmtNI84" "0M3qaT0T2282") ;
     bacnet:device-identifier (ns2:4FsOfbEa2841 ns2:5wSA7AlJ2418) ;
-    bacnet:object-identifier ("002QgMwn12248" "003jdRyq12263") ;
+    bacnet:object-identifier ("00fhSrXC2346" "011SIUOH357") ;
     bacnet:object-name ("002QgMwn12248" "003jdRyq12263") ;
-    bacnet:object-type ("002QgMwn12248" "003jdRyq12263") ;
+    bacnet:object-type ("analogInput" "analogOutput") ;
     a s223:BACnetExternalReference
 ] .
 (ns2:TEST.ACTCHWDPSP ns2:TEST.ACTCWDPSP) s223:hasRole
@@ -544,11 +544,11 @@
     s223:Role-Discharge ,
     s223:EnumerationKind-Position .
 (ns2:bldg.S1-01_AI_3 ns2:bldg.S1-02_AI_3) s223:hasExternalReference [
-    bacnet:description ("002QgMwn12248" "003jdRyq12263") ;
+    bacnet:description ("0KFJmtNI84" "0M3qaT0T2282") ;
     bacnet:device-identifier (ns2:4FsOfbEa2841 ns2:5wSA7AlJ2418) ;
-    bacnet:object-identifier ("002QgMwn12248" "003jdRyq12263") ;
+    bacnet:object-identifier ("00fhSrXC2346" "011SIUOH357") ;
     bacnet:object-name ("002QgMwn12248" "003jdRyq12263") ;
-    bacnet:object-type ("002QgMwn12248" "003jdRyq12263") ;
+    bacnet:object-type ("analogInput" "analogOutput") ;
     a s223:BACnetExternalReference
 ] .
 (ns2:bldg.S1-01_AI_3 ns2:bldg.S1-02_AI_3) s223:hasRole
@@ -572,11 +572,11 @@
 (ns2:damper-command_0154248d ns2:damper-command_019a4adc) a s223:QuantifiableActuatableProperty .
 (ns2:Energy_Rate ns2:Energy_Rate_Device_57018) s223:hasAspect s223:Role-Discharge .
 (ns2:Energy_Rate ns2:Energy_Rate_Device_57018) s223:hasExternalReference [
-    bacnet:description ("002QgMwn12248" "003jdRyq12263") ;
+    bacnet:description ("0KFJmtNI84" "0M3qaT0T2282") ;
     bacnet:device-identifier (ns2:4FsOfbEa2841 ns2:5wSA7AlJ2418) ;
-    bacnet:object-identifier ("002QgMwn12248" "003jdRyq12263") ;
+    bacnet:object-identifier ("00fhSrXC2346" "011SIUOH357") ;
     bacnet:object-name ("002QgMwn12248" "003jdRyq12263") ;
-    bacnet:object-type ("002QgMwn12248" "003jdRyq12263") ;
+    bacnet:object-type ("analogInput" "analogOutput") ;
     a s223:BACnetExternalReference
 ] .
 (ns2:Energy_Rate ns2:Energy_Rate_Device_57018) s223:hasRole
@@ -668,11 +668,11 @@
 (ns2:reheat-coil-valve-position_0c51efe3 ns2:reheat-coil-valve-position_1500e243) qudt:hasUnit unit:PERCENT .
 (ns2:reheat-coil-valve-position_0c51efe3 ns2:reheat-coil-valve-position_1500e243) a s223:QuantifiableObservableProperty .
 (ns2:Aux_Input_Total ns2:Aux_Input_Total_Device_57018) s223:hasExternalReference [
-    bacnet:description ("002QgMwn12248" "003jdRyq12263") ;
+    bacnet:description ("0KFJmtNI84" "0M3qaT0T2282") ;
     bacnet:device-identifier (ns2:4FsOfbEa2841 ns2:5wSA7AlJ2418) ;
-    bacnet:object-identifier ("002QgMwn12248" "003jdRyq12263") ;
+    bacnet:object-identifier ("00fhSrXC2346" "011SIUOH357") ;
     bacnet:object-name ("002QgMwn12248" "003jdRyq12263") ;
-    bacnet:object-type ("002QgMwn12248" "003jdRyq12263") ;
+    bacnet:object-type ("analogInput" "analogOutput") ;
     a s223:BACnetExternalReference
 ] .
 (ns2:Aux_Input_Total ns2:Aux_Input_Total_Device_57018) s223:hasRole
@@ -684,11 +684,11 @@
     unit:DEG_F .
 (ns2:Aux_Input_Total ns2:Aux_Input_Total_Device_57018) a s223:QuantifiableProperty .
 (ns2:TEST.CHWDP1ERR ns2:TEST.CHWDP2ERR) s223:hasExternalReference [
-    bacnet:description ("002QgMwn12248" "003jdRyq12263") ;
+    bacnet:description ("0KFJmtNI84" "0M3qaT0T2282") ;
     bacnet:device-identifier (ns2:4FsOfbEa2841 ns2:5wSA7AlJ2418) ;
-    bacnet:object-identifier ("002QgMwn12248" "003jdRyq12263") ;
+    bacnet:object-identifier ("00fhSrXC2346" "011SIUOH357") ;
     bacnet:object-name ("002QgMwn12248" "003jdRyq12263") ;
-    bacnet:object-type ("002QgMwn12248" "003jdRyq12263") ;
+    bacnet:object-type ("analogInput" "analogOutput") ;
     a s223:BACnetExternalReference
 ] .
 (ns2:TEST.CHWDP1ERR ns2:TEST.CHWDP2ERR) qudt:hasUnit
@@ -699,21 +699,21 @@
     unit:DEG_F .
 (ns2:TEST.CHWDP1ERR ns2:TEST.CHWDP2ERR) a s223:QuantifiableProperty .
 (ns2:bldg.AH1A_TD1 ns2:bldg.AH1B_TD1) s223:hasExternalReference [
-    bacnet:description ("002QgMwn12248" "003jdRyq12263") ;
+    bacnet:description ("0KFJmtNI84" "0M3qaT0T2282") ;
     bacnet:device-identifier (ns2:4FsOfbEa2841 ns2:5wSA7AlJ2418) ;
-    bacnet:object-identifier ("002QgMwn12248" "003jdRyq12263") ;
+    bacnet:object-identifier ("00fhSrXC2346" "011SIUOH357") ;
     bacnet:object-name ("002QgMwn12248" "003jdRyq12263") ;
-    bacnet:object-type ("002QgMwn12248" "003jdRyq12263") ;
+    bacnet:object-type ("analogInput" "analogOutput") ;
     a s223:BACnetExternalReference
 ] .
 (ns2:bldg.AH1A_TD1 ns2:bldg.AH1B_TD1) qudt:hasUnit unit:SEC .
 (ns2:bldg.AH1A_TD1 ns2:bldg.AH1B_TD1) a s223:QuantifiableProperty .
 (ns2:bldg.S3-01_DMPR_ROT_ANG ns2:bldg.S3-01_DUCT_AREA) s223:hasExternalReference [
-    bacnet:description ("002QgMwn12248" "003jdRyq12263") ;
+    bacnet:description ("0KFJmtNI84" "0M3qaT0T2282") ;
     bacnet:device-identifier (ns2:4FsOfbEa2841 ns2:5wSA7AlJ2418) ;
-    bacnet:object-identifier ("002QgMwn12248" "003jdRyq12263") ;
+    bacnet:object-identifier ("00fhSrXC2346" "011SIUOH357") ;
     bacnet:object-name ("002QgMwn12248" "003jdRyq12263") ;
-    bacnet:object-type ("002QgMwn12248" "003jdRyq12263") ;
+    bacnet:object-type ("analogInput" "analogOutput") ;
     a s223:BACnetExternalReference
 ] .
 (ns2:bldg.S3-01_DMPR_ROT_ANG ns2:bldg.S3-01_DUCT_AREA) qudt:hasUnit

@@ -6395,9 +6395,9 @@
     bacnet:objectOf (ns1:4N19XNg936 ns1:62QQTiBC2245) ;
     a ref:BACnetReference
 ] .
-(ns1:4N19XNg936 ns1:62QQTiBC2245) bacnet:device-instance ("000BIQfW8016" "00UczMEc1533") .
+(ns1:4N19XNg936 ns1:62QQTiBC2245) bacnet:device-instance ("8gOpOoQd16753" "IYVVFXuw15884") .
 (ns1:4N19XNg936 ns1:62QQTiBC2245) bacnet:hasPort [
     a bacnet:Port ;
-    ref:storedAt ("000BIQfW8016" "00UczMEc1533")
+    ref:storedAt ("40gRYu3R14157" "4C3ojkiG5063")
 ] .
 (ns1:4N19XNg936 ns1:62QQTiBC2245) a bacnet:ukWxk1OT528 .

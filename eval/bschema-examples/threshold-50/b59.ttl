@@ -36,10 +36,10 @@
     (ns1:RTU_1.outsideAirInlet00176 ns1:RTU_2.outsideAirInlet00335) ,
     (ns1:0078700787 ns1:0079000790) .
 (ns1:RTU_100174 ns1:RTU_200333) s223:hasProperty
-    (ns1:hwgp1_kw00039 ns1:hwgp2_kw00040) ,
-    (ns1:condenser_water_return_temperature00271 ns1:condenser_water_return_temperature00430) ,
     (ns1:bypass_damper_percentage_position00269 ns1:bypass_damper_percentage_position00428) ,
-    (ns1:AIRFLOW_PER_UFT_CFM00939 ns1:AIRFLOW_PER_UFT_CFM01007) ,
+    (ns1:aru_cws_fr_gpm.Flow00031 ns1:aru_hws_fr_gpm.Flow00033) ,
+    (ns1:aru_cwr_temp.Temperature00025 ns1:aru_cws_temp.Temperature00023) ,
+    (ns1:hwgp1_kw00039 ns1:hwgp2_kw00040) ,
     (ns1:static_pressure_setpoint00248 ns1:static_pressure_setpoint00407) ,
     (ns1:rtu_supply_fan_speed_setpoint_carbon00251 ns1:rtu_supply_fan_speed_setpoint_carbon00410) ,
     (ns1:rtu_supply_air_temperature_setpoint_carbon00254 ns1:rtu_supply_air_temperature_setpoint_carbon00413) ,
@@ -66,23 +66,17 @@
     bob:AirConnectionPoint ,
     s223:BidirectionalConnectionPoint .
 (ns1:0077700777 ns1:0077800778) rdfs:label ("00777" "00778") .
-(ns1:00048 ns1:00951) s223:cnx
-    (ns1:G-1.waterOutlet02744 ns1:G-10.waterOutlet03383) ,
+(ns1:00048) s223:cnx
     (ns1:B59_HeatPump.hotWaterOut00021) ,
     (ns1:0004700047 ns1:0095000950) .
-(ns1:00048 ns1:00951) s223:connectsAt
-    (ns1:G-1.waterOutlet02744 ns1:G-10.waterOutlet03383) ,
+(ns1:00048) s223:connectsAt
     (ns1:B59_HeatPump.hotWaterOut00021) ,
     (ns1:0004700047 ns1:0095000950) .
-(ns1:00048 ns1:00951) s223:connectsFrom
-    (ns1:G-1003379 ns1:G-102740) ,
-    (ns1:B59_HeatPump00017) .
-(ns1:00048 ns1:00951) s223:connectsTo (ns1:B59_HeatPump_water_return_junction00046 ns1:B59_HeatPump_water_supply_junction00045) .
-(ns1:00048 ns1:00951) s223:hasMedium
-    s223:Water-HotWater ,
-    s223:Fluid-Water .
-(ns1:00048 ns1:00951) a s223:Connection .
-(ns1:00048 ns1:00951) rdfs:label ("00048" "00951") .
+(ns1:00048) s223:connectsFrom (ns1:B59_HeatPump00017) .
+(ns1:00048) s223:connectsTo (ns1:B59_HeatPump_water_return_junction00046 ns1:B59_HeatPump_water_supply_junction00045) .
+(ns1:00048) s223:hasMedium s223:Water-HotWater .
+(ns1:00048) a s223:Connection .
+(ns1:00048) rdfs:label ("00048") .
 (ns1:00050) s223:cnx
     (ns1:0004900049 ns1:0094800948) ,
     (ns1:B59_HeatPump.hotWaterIn00020) .
@@ -164,6 +158,17 @@
 (ns1:00949 ns1:01017) s223:hasMedium s223:Fluid-Water .
 (ns1:00949 ns1:01017) a s223:Connection .
 (ns1:00949 ns1:01017) rdfs:label ("00949" "01017") .
+(ns1:00951 ns1:01019) s223:cnx
+    (ns1:G-1.waterOutlet02744 ns1:G-10.waterOutlet03383) ,
+    (ns1:0004700047 ns1:0095000950) .
+(ns1:00951 ns1:01019) s223:connectsAt
+    (ns1:G-1.waterOutlet02744 ns1:G-10.waterOutlet03383) ,
+    (ns1:0004700047 ns1:0095000950) .
+(ns1:00951 ns1:01019) s223:connectsFrom (ns1:G-1003379 ns1:G-102740) .
+(ns1:00951 ns1:01019) s223:connectsTo (ns1:B59_HeatPump_water_return_junction00046 ns1:B59_HeatPump_water_supply_junction00045) .
+(ns1:00951 ns1:01019) s223:hasMedium s223:Fluid-Water .
+(ns1:00951 ns1:01019) a s223:Connection .
+(ns1:00951 ns1:01019) rdfs:label ("00951" "01019") .
 (ns1:00969 ns1:01037) s223:cnx
     (ns1:G-1.airOutlet02742 ns1:G-10.airOutlet03381) ,
     (ns1:0096800968 ns1:0103601036) .
@@ -268,7 +273,7 @@
     s223:Sensor ,
     s223:DifferentialSensor .
 (ns1:ff_press00232 ns1:ff_press00391) rdfs:comment ("FF_differential_pressure" "PF_differential_pressure") .
-(ns1:ff_press00232 ns1:ff_press00391) rdfs:label ("FF_differential_pressure" "PF_differential_pressure") .
+(ns1:ff_press00232 ns1:ff_press00391) rdfs:label ("ff_press" "pf_press") .
 (ns1:Floor_3.RTU_1.CoreZone00769 ns1:Floor_3.RTU_2.CoreZone00776) s223:cnx
     (ns1:0078600786 ns1:0078900789) ,
     (ns1:0078700787 ns1:0079000790) ,
@@ -341,20 +346,20 @@
 (ns1:boolean_trigger_to_activate_mpc00264 ns1:boolean_trigger_to_activate_mpc00423) s223:hasEnumerationKind s223:EnumerationKind-OnOff .
 (ns1:boolean_trigger_to_activate_mpc00264 ns1:boolean_trigger_to_activate_mpc00423) s223:hasExternalReference (ns1:00001 ns1:00002) .
 (ns1:boolean_trigger_to_activate_mpc00264 ns1:boolean_trigger_to_activate_mpc00423) a s223:EnumeratedActuatableProperty .
-(ns1:boolean_trigger_to_activate_mpc00264 ns1:boolean_trigger_to_activate_mpc00423) rdfs:comment ("boolean trigger to activate mpc" "boolean_trigger_to_activate_mpc") .
-(ns1:boolean_trigger_to_activate_mpc00264 ns1:boolean_trigger_to_activate_mpc00423) rdfs:label ("boolean trigger to activate mpc" "boolean_trigger_to_activate_mpc") .
+(ns1:boolean_trigger_to_activate_mpc00264 ns1:boolean_trigger_to_activate_mpc00423) rdfs:comment ("boolean trigger to activate mpc" "increasing number watchdog alc") .
+(ns1:boolean_trigger_to_activate_mpc00264 ns1:boolean_trigger_to_activate_mpc00423) rdfs:label ("boolean_trigger_to_activate_mpc" "increasing_number_watchdog_alc") .
 (ns1:ITEM00938 ns1:ITEM01006) s223:hasEnumerationKind
     s223:EnumerationKind-Binary ,
     s223:Aspect-Manufacturer ,
     s223:Aspect-CatalogNumber .
 (ns1:ITEM00938 ns1:ITEM01006) s223:hasValue ("1"^^xsd:integer "2"^^xsd:integer) .
 (ns1:ITEM00938 ns1:ITEM01006) a s223:EnumeratedObservableProperty .
-(ns1:ITEM00938 ns1:ITEM01006) rdfs:label ("1"^^xsd:integer "2"^^xsd:integer) .
+(ns1:ITEM00938 ns1:ITEM01006) rdfs:label ("ITEM" "ORIENTATION") .
 (ns1:hp-1status_200036) s223:hasEnumerationKind s223:EnumerationKind-OnOff .
 (ns1:hp-1status_200036) s223:hasExternalReference (ns1:00001 ns1:00002) .
 (ns1:hp-1status_200036) a s223:EnumeratedObservableProperty .
-(ns1:hp-1status_200036) rdfs:comment ("Binary status of heat pump" "hp-1status_2") .
-(ns1:hp-1status_200036) rdfs:label ("Binary status of heat pump" "hp-1status_2") .
+(ns1:hp-1status_200036) rdfs:comment ("Binary status of heat pump") .
+(ns1:hp-1status_200036) rdfs:label ("hp-1status_2") .
 (ns1:B59_HeatPump00017) s223:cnx
     (ns1:B59_HeatPump.hotWaterOut00021) ,
     (ns1:B59_HeatPump.chilledWaterOut00019) ,
@@ -364,7 +369,7 @@
 (ns1:B59_HeatPump00017) s223:connectedFrom (ns1:B59_HeatPump_water_return_junction00046 ns1:B59_HeatPump_water_supply_junction00045) .
 (ns1:B59_HeatPump00017) s223:connectedThrough
     (ns1:00050) ,
-    (ns1:00048 ns1:00951) .
+    (ns1:00048) .
 (ns1:B59_HeatPump00017) s223:connectedTo (ns1:B59_HeatPump_water_return_junction00046 ns1:B59_HeatPump_water_supply_junction00045) .
 (ns1:B59_HeatPump00017) s223:contains
     (ns1:aru_cwr_temp00024 ns1:aru_cws_temp00022) ,
@@ -376,9 +381,9 @@
     (ns1:B59_HeatPump.hotWaterIn00020) ,
     (ns1:B59_HeatPump.chilledWaterIn00018) .
 (ns1:B59_HeatPump00017) s223:hasProperty
-    (ns1:hwgp1_kw00039 ns1:hwgp2_kw00040) ,
-    (ns1:condenser_water_return_temperature00271 ns1:condenser_water_return_temperature00430) ,
     (ns1:bypass_damper_percentage_position00269 ns1:bypass_damper_percentage_position00428) ,
+    (ns1:aru_cwr_temp.Temperature00025 ns1:aru_cws_temp.Temperature00023) ,
+    (ns1:hwgp1_kw00039 ns1:hwgp2_kw00040) ,
     (ns1:hp-1status_200036) .
 (ns1:B59_HeatPump00017) ns1:chilledWaterIn (ns1:B59_HeatPump.chilledWaterIn00018) .
 (ns1:B59_HeatPump00017) ns1:chilledWaterOut (ns1:B59_HeatPump.chilledWaterOut00019) .
@@ -410,9 +415,9 @@
     (ns1:B59_HeatPump_water_return_junction00046 ns1:B59_HeatPump_water_supply_junction00045) .
 (ns1:G-1003379 ns1:G-102740) s223:connectedThrough
     (ns1:00969 ns1:01037) ,
+    (ns1:00951 ns1:01019) ,
     (ns1:00949 ns1:01017) ,
-    (ns1:00279 ns1:00280) ,
-    (ns1:00048 ns1:00951) .
+    (ns1:00279 ns1:00280) .
 (ns1:G-1003379 ns1:G-102740) s223:connectedTo
     (ns1:supply_junction_G-1003436 ns1:supply_junction_G-102797) ,
     (ns1:B59_HeatPump_water_return_junction00046 ns1:B59_HeatPump_water_supply_junction00045) .
@@ -450,8 +455,8 @@
 (ns1:fan00915 ns1:fan00983) bob:airInlet (ns1:fan.airInlet00916 ns1:fan.airInlet00984) .
 (ns1:fan00915 ns1:fan00983) bob:airOutlet (ns1:fan.airOutlet00917 ns1:fan.airOutlet00985) .
 (ns1:fan00915 ns1:fan00983) a s223:Fan .
-(ns1:fan00915 ns1:fan00983) rdfs:comment ("Fan Powered Terminal Fan" "fan") .
-(ns1:fan00915 ns1:fan00983) rdfs:label ("Fan Powered Terminal Fan" "fan") .
+(ns1:fan00915 ns1:fan00983) rdfs:comment ("Fan Powered Terminal Fan") .
+(ns1:fan00915 ns1:fan00983) rdfs:label ("fan") .
 (ns1:return_fan00182 ns1:return_fan00341) s223:cnx
     (ns1:0078600786 ns1:0078900789) ,
     (ns1:0078700787 ns1:0079000790) ,
@@ -606,8 +611,11 @@
 (ns1:supply_fan.airInlet00922 ns1:supply_fan.airInlet00990) rdfs:label ("supply_fan.airInlet") .
 (ns1:0004700047 ns1:0095000950) s223:cnx
     (ns1:B59_HeatPump_water_return_junction00046 ns1:B59_HeatPump_water_supply_junction00045) ,
-    (ns1:00048 ns1:00951) .
-(ns1:0004700047 ns1:0095000950) s223:connectsThrough (ns1:00048 ns1:00951) .
+    (ns1:00951 ns1:01019) ,
+    (ns1:00048) .
+(ns1:0004700047 ns1:0095000950) s223:connectsThrough
+    (ns1:00951 ns1:01019) ,
+    (ns1:00048) .
 (ns1:0004700047 ns1:0095000950) s223:hasMedium
     s223:Water-HotWater ,
     s223:Fluid-Water .
@@ -656,8 +664,8 @@
 (ns1:B59_HeatPump.chilledWaterIn00018) s223:cnx (ns1:B59_HeatPump00017) .
 (ns1:B59_HeatPump.chilledWaterIn00018) s223:hasMedium s223:Water-ChilledWater .
 (ns1:B59_HeatPump.chilledWaterIn00018) s223:hasProperty
-    (ns1:AIRFLOW_PER_UFT_CFM00939 ns1:AIRFLOW_PER_UFT_CFM01007) ,
-    (ns1:59-BL-024c.Temperature04603 ns1:59-BL-025c.Temperature04600) .
+    (ns1:aru_cws_fr_gpm.Flow00031 ns1:aru_hws_fr_gpm.Flow00033) ,
+    (ns1:aru_cwr_temp.Temperature00025 ns1:aru_cws_temp.Temperature00023) .
 (ns1:B59_HeatPump.chilledWaterIn00018) s223:isConnectionPointOf (ns1:B59_HeatPump00017) .
 (ns1:B59_HeatPump.chilledWaterIn00018) a
     bob:ChilledWaterConnectionPoint ,
@@ -669,8 +677,8 @@
 (ns1:B59_HeatPump.hotWaterIn00020) s223:connectsThrough (ns1:00050) .
 (ns1:B59_HeatPump.hotWaterIn00020) s223:hasMedium s223:Water-HotWater .
 (ns1:B59_HeatPump.hotWaterIn00020) s223:hasProperty
-    (ns1:AIRFLOW_PER_UFT_CFM00939 ns1:AIRFLOW_PER_UFT_CFM01007) ,
-    (ns1:59-BL-024c.Temperature04603 ns1:59-BL-025c.Temperature04600) .
+    (ns1:aru_cws_fr_gpm.Flow00031 ns1:aru_hws_fr_gpm.Flow00033) ,
+    (ns1:aru_cwr_temp.Temperature00025 ns1:aru_cws_temp.Temperature00023) .
 (ns1:B59_HeatPump.hotWaterIn00020) s223:isConnectionPointOf (ns1:B59_HeatPump00017) .
 (ns1:B59_HeatPump.hotWaterIn00020) a
     bob:HotWaterConnectionPoint ,
@@ -727,9 +735,10 @@
     (ns1:G-1003379 ns1:G-102740) ,
     (ns1:B59_HeatPump00017) .
 (ns1:B59_HeatPump_water_return_junction00046 ns1:B59_HeatPump_water_supply_junction00045) s223:connectedThrough
+    (ns1:00951 ns1:01019) ,
     (ns1:00949 ns1:01017) ,
     (ns1:00050) ,
-    (ns1:00048 ns1:00951) .
+    (ns1:00048) .
 (ns1:B59_HeatPump_water_return_junction00046 ns1:B59_HeatPump_water_supply_junction00045) s223:connectedTo
     (ns1:G-1003379 ns1:G-102740) ,
     (ns1:B59_HeatPump00017) .
@@ -891,8 +900,8 @@
 (ns1:0078600786 ns1:0078900789) s223:connectsThrough (ns1:00279 ns1:00280) .
 (ns1:0078600786 ns1:0078900789) s223:hasMedium s223:Fluid-Air .
 (ns1:0078600786 ns1:0078900789) s223:hasProperty
+    (ns1:aru_cws_fr_gpm.Flow00031 ns1:aru_hws_fr_gpm.Flow00033) ,
     (ns1:Floor_3.RTU_1.Plenum.press_sens.DifferentialStaticPressure00766 ns1:Floor_3.RTU_2.Plenum.press_sens.DifferentialStaticPressure00773) ,
-    (ns1:AIRFLOW_PER_UFT_CFM00939 ns1:AIRFLOW_PER_UFT_CFM01007) ,
     (ns1:59-BL-024c.Temperature04603 ns1:59-BL-025c.Temperature04600) .
 (ns1:0078600786 ns1:0078900789) s223:isConnectionPointOf
     (ns1:Floor_3.RTU_1.Plenum00763 ns1:Floor_3.RTU_2.Plenum00770) ,
@@ -919,7 +928,7 @@
 (ns1:0097300973 ns1:0104101041) rdfs:label ("00973" "01041") .
 (ns1:B59_HeatPump.chilledWaterOut00019) s223:cnx (ns1:B59_HeatPump00017) .
 (ns1:B59_HeatPump.chilledWaterOut00019) s223:hasMedium s223:Water-ChilledWater .
-(ns1:B59_HeatPump.chilledWaterOut00019) s223:hasProperty (ns1:59-BL-024c.Temperature04603 ns1:59-BL-025c.Temperature04600) .
+(ns1:B59_HeatPump.chilledWaterOut00019) s223:hasProperty (ns1:aru_cwr_temp.Temperature00025 ns1:aru_cws_temp.Temperature00023) .
 (ns1:B59_HeatPump.chilledWaterOut00019) s223:isConnectionPointOf (ns1:B59_HeatPump00017) .
 (ns1:B59_HeatPump.chilledWaterOut00019) a
     bob:ChilledWaterConnectionPoint ,
@@ -927,12 +936,12 @@
 (ns1:B59_HeatPump.chilledWaterOut00019) rdfs:label ("B59_HeatPump.chilledWaterOut") .
 (ns1:B59_HeatPump.hotWaterOut00021) s223:cnx
     (ns1:B59_HeatPump00017) ,
-    (ns1:00048 ns1:00951) .
-(ns1:B59_HeatPump.hotWaterOut00021) s223:connectsThrough (ns1:00048 ns1:00951) .
+    (ns1:00048) .
+(ns1:B59_HeatPump.hotWaterOut00021) s223:connectsThrough (ns1:00048) .
 (ns1:B59_HeatPump.hotWaterOut00021) s223:hasMedium s223:Water-HotWater .
 (ns1:B59_HeatPump.hotWaterOut00021) s223:hasProperty
     (ns1:aru_power_mbutph.HeatFlowRate00035) ,
-    (ns1:59-BL-024c.Temperature04603 ns1:59-BL-025c.Temperature04600) .
+    (ns1:aru_cwr_temp.Temperature00025 ns1:aru_cws_temp.Temperature00023) .
 (ns1:B59_HeatPump.hotWaterOut00021) s223:isConnectionPointOf (ns1:B59_HeatPump00017) .
 (ns1:B59_HeatPump.hotWaterOut00021) a
     bob:HotWaterConnectionPoint ,
@@ -950,8 +959,8 @@
 (ns1:G-1.airOutlet02742 ns1:G-10.airOutlet03381) rdfs:label ("G-1.airOutlet" "G-10.airOutlet") .
 (ns1:G-1.waterOutlet02744 ns1:G-10.waterOutlet03383) s223:cnx
     (ns1:G-1003379 ns1:G-102740) ,
-    (ns1:00048 ns1:00951) .
-(ns1:G-1.waterOutlet02744 ns1:G-10.waterOutlet03383) s223:connectsThrough (ns1:00048 ns1:00951) .
+    (ns1:00951 ns1:01019) .
+(ns1:G-1.waterOutlet02744 ns1:G-10.waterOutlet03383) s223:connectsThrough (ns1:00951 ns1:01019) .
 (ns1:G-1.waterOutlet02744 ns1:G-10.waterOutlet03383) s223:hasMedium s223:Fluid-Water .
 (ns1:G-1.waterOutlet02744 ns1:G-10.waterOutlet03383) s223:isConnectionPointOf (ns1:G-1003379 ns1:G-102740) .
 (ns1:G-1.waterOutlet02744 ns1:G-10.waterOutlet03383) a
@@ -978,10 +987,12 @@
     bob:ZoneConnectionPoint ,
     bob:OutletZoneConnectionPoint .
 (ns1:zone_016.airOutlet00954 ns1:zone_017.airOutlet01022) rdfs:label ("zone_016.airOutlet" "zone_017.airOutlet") .
-(ns1:300100089 ns1:300200090) s223:contains (ns1:300100089 ns1:300200090) .
 (ns1:300100089 ns1:300200090) s223:encloses (ns1:domain_space_for_room_300102800 ns1:domain_space_for_room_300202868) .
 (ns1:300100089 ns1:300200090) a s223:PhysicalSpace .
 (ns1:300100089 ns1:300200090) rdfs:label ("3001" "3002") .
+(ns1:Floor_300051 ns1:Floor_400052) s223:contains (ns1:300100089 ns1:300200090) .
+(ns1:Floor_300051 ns1:Floor_400052) a s223:PhysicalSpace .
+(ns1:Floor_300051 ns1:Floor_400052) rdfs:label ("Floor_3" "Floor_4") .
 (ns1:0092000920 ns1:0098800988) s223:hasExternalReference (ns1:00001 ns1:00002) .
 (ns1:0092000920 ns1:0098800988) qudt:hasQuantityKind quantitykind:DimensionlessRatio .
 (ns1:0092000920 ns1:0098800988) qudt:hasUnit unit:PERCENT .
@@ -1019,7 +1030,7 @@
     unit:HZ .
 (ns1:rtu_supply_fan_speed_setpoint_carbon00251 ns1:rtu_supply_fan_speed_setpoint_carbon00410) a s223:QuantifiableActuatableProperty .
 (ns1:rtu_supply_fan_speed_setpoint_carbon00251 ns1:rtu_supply_fan_speed_setpoint_carbon00410) rdfs:comment ("rtu supply fan speed setpoint carbon" "rtu supply fan speed setpoint cost") .
-(ns1:rtu_supply_fan_speed_setpoint_carbon00251 ns1:rtu_supply_fan_speed_setpoint_carbon00410) rdfs:label ("rtu supply fan speed setpoint carbon" "rtu supply fan speed setpoint cost") .
+(ns1:rtu_supply_fan_speed_setpoint_carbon00251 ns1:rtu_supply_fan_speed_setpoint_carbon00410) rdfs:label ("rtu_supply_fan_speed_setpoint_carbon" "rtu_supply_fan_speed_setpoint_cost") .
 (ns1:static_pressure_setpoint00248 ns1:static_pressure_setpoint00407) s223:hasAspect s223:Aspect-Setpoint .
 (ns1:static_pressure_setpoint00248 ns1:static_pressure_setpoint00407) s223:hasExternalReference (ns1:00001 ns1:00002) .
 (ns1:static_pressure_setpoint00248 ns1:static_pressure_setpoint00407) qudt:hasQuantityKind quantitykind:ForcePerArea .
@@ -1027,8 +1038,17 @@
 (ns1:static_pressure_setpoint00248 ns1:static_pressure_setpoint00407) a
     s223:Sensor ,
     s223:QuantifiableActuatableProperty .
-(ns1:static_pressure_setpoint00248 ns1:static_pressure_setpoint00407) rdfs:comment ("Static Pressure Setpoint" "static_pressure_setpoint") .
-(ns1:static_pressure_setpoint00248 ns1:static_pressure_setpoint00407) rdfs:label ("Static Pressure Setpoint" "static_pressure_setpoint") .
+(ns1:static_pressure_setpoint00248 ns1:static_pressure_setpoint00407) rdfs:comment ("Static Pressure Setpoint") .
+(ns1:static_pressure_setpoint00248 ns1:static_pressure_setpoint00407) rdfs:label ("static_pressure_setpoint") .
+(ns1:hwgp1_kw00039 ns1:hwgp2_kw00040) s223:hasExternalReference (ns1:00001 ns1:00002) .
+(ns1:hwgp1_kw00039 ns1:hwgp2_kw00040) qudt:hasQuantityKind quantitykind:ElectricPower .
+(ns1:hwgp1_kw00039 ns1:hwgp2_kw00040) qudt:hasUnit unit:KiloW .
+(ns1:hwgp1_kw00039 ns1:hwgp2_kw00040) a
+    bob:ElectricPowerkW ,
+    bob:ElectricPower ,
+    s223:QuantifiableObservableProperty .
+(ns1:hwgp1_kw00039 ns1:hwgp2_kw00040) rdfs:comment ("heat pump power" "hwgp1_kw") .
+(ns1:hwgp1_kw00039 ns1:hwgp2_kw00040) rdfs:label ("heat pump power" "hwgp1_kw") .
 (ns1:staticPressure00936 ns1:staticPressure01004) qudt:hasQuantityKind quantitykind:Pressure .
 (ns1:staticPressure00936 ns1:staticPressure01004) qudt:hasUnit unit:PA .
 (ns1:staticPressure00936 ns1:staticPressure01004) a
@@ -1066,9 +1086,7 @@
 (ns1:AIRFLOW_PER_UFT_CFM00939 ns1:AIRFLOW_PER_UFT_CFM01007) s223:hasAspect
     s223:Aspect-Nominal ,
     s223:Aspect-Minimum .
-(ns1:AIRFLOW_PER_UFT_CFM00939 ns1:AIRFLOW_PER_UFT_CFM01007) s223:hasExternalReference (ns1:00001 ns1:00002) .
 (ns1:AIRFLOW_PER_UFT_CFM00939 ns1:AIRFLOW_PER_UFT_CFM01007) s223:hasValue ("0.2"^^xsd:decimal "0.3"^^xsd:decimal) .
-(ns1:AIRFLOW_PER_UFT_CFM00939 ns1:AIRFLOW_PER_UFT_CFM01007) s223:ofMedium rdfs:Resource .
 (ns1:AIRFLOW_PER_UFT_CFM00939 ns1:AIRFLOW_PER_UFT_CFM01007) qudt:hasQuantityKind quantitykind:VolumeFlowRate .
 (ns1:AIRFLOW_PER_UFT_CFM00939 ns1:AIRFLOW_PER_UFT_CFM01007) qudt:hasUnit
     unit:GAL_US_PER_MIN ,
@@ -1076,7 +1094,6 @@
 (ns1:AIRFLOW_PER_UFT_CFM00939 ns1:AIRFLOW_PER_UFT_CFM01007) a
     bob:Flow ,
     s223:QuantifiableObservableProperty .
-(ns1:AIRFLOW_PER_UFT_CFM00939 ns1:AIRFLOW_PER_UFT_CFM01007) rdfs:comment ("0.2"^^xsd:decimal "0.3"^^xsd:decimal) .
 (ns1:AIRFLOW_PER_UFT_CFM00939 ns1:AIRFLOW_PER_UFT_CFM01007) rdfs:label ("0.2"^^xsd:decimal "0.3"^^xsd:decimal) .
 (ns1:Floor_3.RTU_1.Plenum.press_sens.DifferentialStaticPressure00766 ns1:Floor_3.RTU_2.Plenum.press_sens.DifferentialStaticPressure00773) s223:hasExternalReference (ns1:00001 ns1:00002) .
 (ns1:Floor_3.RTU_1.Plenum.press_sens.DifferentialStaticPressure00766 ns1:Floor_3.RTU_2.Plenum.press_sens.DifferentialStaticPressure00773) s223:ofMedium rdfs:Resource .
@@ -1095,7 +1112,25 @@
     unit:UNITLESS ,
     unit:BTU_IT_PER_HR .
 (ns1:MINIMUM_CAPACITY_BTUH00941 ns1:MINIMUM_CAPACITY_BTUH01009) a s223:QuantifiableObservableProperty .
-(ns1:MINIMUM_CAPACITY_BTUH00941 ns1:MINIMUM_CAPACITY_BTUH01009) rdfs:label ("0"^^xsd:decimal "1"^^xsd:integer) .
+(ns1:MINIMUM_CAPACITY_BTUH00941 ns1:MINIMUM_CAPACITY_BTUH01009) rdfs:label ("MINIMUM CAPACITY (BTUH)" "QUANTITY") .
+(ns1:aru_cwr_temp.Temperature00025 ns1:aru_cws_temp.Temperature00023) s223:hasExternalReference (ns1:00001 ns1:00002) .
+(ns1:aru_cwr_temp.Temperature00025 ns1:aru_cws_temp.Temperature00023) s223:ofMedium rdfs:Resource .
+(ns1:aru_cwr_temp.Temperature00025 ns1:aru_cws_temp.Temperature00023) qudt:hasQuantityKind quantitykind:Temperature .
+(ns1:aru_cwr_temp.Temperature00025 ns1:aru_cws_temp.Temperature00023) qudt:hasUnit unit:DEG_F .
+(ns1:aru_cwr_temp.Temperature00025 ns1:aru_cws_temp.Temperature00023) a
+    bob:Temperature ,
+    s223:QuantifiableObservableProperty .
+(ns1:aru_cwr_temp.Temperature00025 ns1:aru_cws_temp.Temperature00023) rdfs:comment ("Heat pump heat water return temperature" "Heat pump heating water supply temperature") .
+(ns1:aru_cwr_temp.Temperature00025 ns1:aru_cws_temp.Temperature00023) rdfs:label ("Heat pump heat water return temperature" "Heat pump heating water supply temperature") .
+(ns1:aru_cws_fr_gpm.Flow00031 ns1:aru_hws_fr_gpm.Flow00033) s223:hasExternalReference (ns1:00001 ns1:00002) .
+(ns1:aru_cws_fr_gpm.Flow00031 ns1:aru_hws_fr_gpm.Flow00033) s223:ofMedium rdfs:Resource .
+(ns1:aru_cws_fr_gpm.Flow00031 ns1:aru_hws_fr_gpm.Flow00033) qudt:hasQuantityKind quantitykind:VolumeFlowRate .
+(ns1:aru_cws_fr_gpm.Flow00031 ns1:aru_hws_fr_gpm.Flow00033) qudt:hasUnit unit:FT3-PER-MIN .
+(ns1:aru_cws_fr_gpm.Flow00031 ns1:aru_hws_fr_gpm.Flow00033) a
+    bob:Flow ,
+    s223:QuantifiableObservableProperty .
+(ns1:aru_cws_fr_gpm.Flow00031 ns1:aru_hws_fr_gpm.Flow00033) rdfs:comment ("Return Air Flow" "Supply Air Flow") .
+(ns1:aru_cws_fr_gpm.Flow00031 ns1:aru_hws_fr_gpm.Flow00033) rdfs:label ("Return Air Flow" "Supply Air Flow") .
 (ns1:aru_power_mbutph.HeatFlowRate00035) s223:hasExternalReference (ns1:00001 ns1:00002) .
 (ns1:aru_power_mbutph.HeatFlowRate00035) qudt:hasQuantityKind quantitykind:HeatFlowRate .
 (ns1:aru_power_mbutph.HeatFlowRate00035) qudt:hasUnit unit:BTU_PER_HOUR .
@@ -1108,40 +1143,23 @@
     unit:UNITLESS ,
     unit:PERCENT .
 (ns1:bypass_damper_percentage_position00269 ns1:bypass_damper_percentage_position00428) a s223:QuantifiableObservableProperty .
-(ns1:bypass_damper_percentage_position00269 ns1:bypass_damper_percentage_position00428) rdfs:comment ("bypass damper percentage position" "bypass_damper_percentage_position") .
-(ns1:bypass_damper_percentage_position00269 ns1:bypass_damper_percentage_position00428) rdfs:label ("bypass damper percentage position" "bypass_damper_percentage_position") .
-(ns1:condenser_water_return_temperature00271 ns1:condenser_water_return_temperature00430) s223:hasExternalReference (ns1:00001 ns1:00002) .
-(ns1:condenser_water_return_temperature00271 ns1:condenser_water_return_temperature00430) qudt:hasQuantityKind quantitykind:Temperature .
-(ns1:condenser_water_return_temperature00271 ns1:condenser_water_return_temperature00430) qudt:hasUnit unit:DEG_F .
-(ns1:condenser_water_return_temperature00271 ns1:condenser_water_return_temperature00430) a
-    bob:Temperature ,
-    s223:QuantifiableObservableProperty .
-(ns1:condenser_water_return_temperature00271 ns1:condenser_water_return_temperature00430) rdfs:comment ("Heat pump heat water return temperature" "Heat pump heating water supply temperature") .
-(ns1:condenser_water_return_temperature00271 ns1:condenser_water_return_temperature00430) rdfs:label ("Heat pump heat water return temperature" "Heat pump heating water supply temperature") .
-(ns1:hwgp1_kw00039 ns1:hwgp2_kw00040) s223:hasExternalReference (ns1:00001 ns1:00002) .
-(ns1:hwgp1_kw00039 ns1:hwgp2_kw00040) qudt:hasQuantityKind quantitykind:ElectricPower .
-(ns1:hwgp1_kw00039 ns1:hwgp2_kw00040) qudt:hasUnit unit:KiloW .
-(ns1:hwgp1_kw00039 ns1:hwgp2_kw00040) a
-    bob:ElectricPowerkW ,
-    bob:ElectricPower ,
-    s223:QuantifiableObservableProperty .
-(ns1:hwgp1_kw00039 ns1:hwgp2_kw00040) rdfs:comment ("heat pump power" "hwgp1_kw") .
-(ns1:hwgp1_kw00039 ns1:hwgp2_kw00040) rdfs:label ("heat pump power" "hwgp1_kw") .
+(ns1:bypass_damper_percentage_position00269 ns1:bypass_damper_percentage_position00428) rdfs:comment ("bypass damper percentage position" "compressor 1 speed") .
+(ns1:bypass_damper_percentage_position00269 ns1:bypass_damper_percentage_position00428) rdfs:label ("bypass_damper_percentage_position" "compressor_1_speed") .
 (ns1:Floor_3.RTU_1.Plenum.press_sens00765 ns1:Floor_3.RTU_2.Plenum.press_sens00772) s223:hasObservationLocation
     (ns1:0078600786 ns1:0078900789) ,
     (ns1:Floor_3.RTU_1.Plenum00763 ns1:Floor_3.RTU_2.Plenum00770) ,
     (ns1:00279 ns1:00280) .
 (ns1:Floor_3.RTU_1.Plenum.press_sens00765 ns1:Floor_3.RTU_2.Plenum.press_sens00772) s223:observes (ns1:Floor_3.RTU_1.Plenum.press_sens.DifferentialStaticPressure00766 ns1:Floor_3.RTU_2.Plenum.press_sens.DifferentialStaticPressure00773) .
 (ns1:Floor_3.RTU_1.Plenum.press_sens00765 ns1:Floor_3.RTU_2.Plenum.press_sens00772) a s223:Sensor .
-(ns1:Floor_3.RTU_1.Plenum.press_sens00765 ns1:Floor_3.RTU_2.Plenum.press_sens00772) rdfs:comment ("Floor_3.RTU_1.Plenum.press_sens" "Floor_3.RTU_2.Plenum.press_sens") .
+(ns1:Floor_3.RTU_1.Plenum.press_sens00765 ns1:Floor_3.RTU_2.Plenum.press_sens00772) rdfs:comment ("Ground Level Plenum Pressure" "Level 2 Plenum Pressure") .
 (ns1:Floor_3.RTU_1.Plenum.press_sens00765 ns1:Floor_3.RTU_2.Plenum.press_sens00772) rdfs:label ("Floor_3.RTU_1.Plenum.press_sens" "Floor_3.RTU_2.Plenum.press_sens") .
 (ns1:aru_cws_fr_gpm00030 ns1:aru_hws_fr_gpm00032) s223:hasObservationLocation
     (ns1:0078600786 ns1:0078900789) ,
     (ns1:B59_HeatPump.hotWaterIn00020) ,
     (ns1:B59_HeatPump.chilledWaterIn00018) .
-(ns1:aru_cws_fr_gpm00030 ns1:aru_hws_fr_gpm00032) s223:observes (ns1:AIRFLOW_PER_UFT_CFM00939 ns1:AIRFLOW_PER_UFT_CFM01007) .
+(ns1:aru_cws_fr_gpm00030 ns1:aru_hws_fr_gpm00032) s223:observes (ns1:aru_cws_fr_gpm.Flow00031 ns1:aru_hws_fr_gpm.Flow00033) .
 (ns1:aru_cws_fr_gpm00030 ns1:aru_hws_fr_gpm00032) a s223:Sensor .
-(ns1:aru_cws_fr_gpm00030 ns1:aru_hws_fr_gpm00032) rdfs:comment ("aru_cws_fr_gpm" "aru_hws_fr_gpm") .
+(ns1:aru_cws_fr_gpm00030 ns1:aru_hws_fr_gpm00032) rdfs:comment ("chilld water flow rate" "hot water flow rate") .
 (ns1:aru_cws_fr_gpm00030 ns1:aru_hws_fr_gpm00032) rdfs:label ("aru_cws_fr_gpm" "aru_hws_fr_gpm") .
 (ns1:aru_power_mbutph00034) s223:hasObservationLocation (ns1:B59_HeatPump.hotWaterOut00021) .
 (ns1:aru_power_mbutph00034) s223:observes (ns1:aru_power_mbutph.HeatFlowRate00035) .
@@ -1155,7 +1173,7 @@
     (ns1:RTU_1.outsideAirInlet00176 ns1:RTU_2.outsideAirInlet00335) ,
     (ns1:Floor_3.RTU_1.CoreZone00769 ns1:Floor_3.RTU_2.CoreZone00776) ,
     (ns1:00279 ns1:00280) .
-(ns1:59-BL-024c04602 ns1:59-BL-025c04599) s223:hasPhysicalLocation (ns1:300100089 ns1:300200090) .
+(ns1:59-BL-024c04602 ns1:59-BL-025c04599) s223:hasPhysicalLocation (ns1:Floor_300051 ns1:Floor_400052) .
 (ns1:59-BL-024c04602 ns1:59-BL-025c04599) s223:observes (ns1:59-BL-024c.Temperature04603 ns1:59-BL-025c.Temperature04600) .
 (ns1:59-BL-024c04602 ns1:59-BL-025c04599) a
     bob:AirTemperatureSensor ,
@@ -1167,7 +1185,7 @@
     (ns1:B59_HeatPump.chilledWaterOut00019) ,
     (ns1:B59_HeatPump.hotWaterIn00020) ,
     (ns1:B59_HeatPump.chilledWaterIn00018) .
-(ns1:aru_cwr_temp00024 ns1:aru_cws_temp00022) s223:observes (ns1:59-BL-024c.Temperature04603 ns1:59-BL-025c.Temperature04600) .
+(ns1:aru_cwr_temp00024 ns1:aru_cws_temp00022) s223:observes (ns1:aru_cwr_temp.Temperature00025 ns1:aru_cws_temp.Temperature00023) .
 (ns1:aru_cwr_temp00024 ns1:aru_cws_temp00022) a
     bob:WaterTemperatureSensor ,
     s223:TemperatureSensor .
@@ -1178,8 +1196,8 @@
     (ns1:cwc.refrigerantInlet00204 ns1:cwc.refrigerantInlet00363) .
 (ns1:cwc.r_in_temp00206 ns1:cwc.r_in_temp00208) s223:observes (ns1:59-BL-024c.Temperature04603 ns1:59-BL-025c.Temperature04600) .
 (ns1:cwc.r_in_temp00206 ns1:cwc.r_in_temp00208) a s223:TemperatureSensor .
-(ns1:cwc.r_in_temp00206 ns1:cwc.r_in_temp00208) rdfs:comment ("cwc.r_in_temp" "refrigerant temperature after coil") .
-(ns1:cwc.r_in_temp00206 ns1:cwc.r_in_temp00208) rdfs:label ("cwc.r_in_temp" "refrigerant temperature after coil") .
+(ns1:cwc.r_in_temp00206 ns1:cwc.r_in_temp00208) rdfs:comment ("refrigerant temperature after coil") .
+(ns1:cwc.r_in_temp00206 ns1:cwc.r_in_temp00208) rdfs:label ("cwc.r_in_temp") .
 (ns1:hw_valve00930 ns1:hw_valve00998) s223:cnx
     (ns1:hw_valve.waterOutlet00932 ns1:hw_valve.waterOutlet01000) ,
     (ns1:hw_valve.waterInlet00931 ns1:hw_valve.waterInlet00999) .
@@ -1202,7 +1220,7 @@
 (ns1:zone_01600952 ns1:zone_01701020) s223:hasDomain s223:Domain-HVAC .
 (ns1:zone_01600952 ns1:zone_01701020) s223:hasDomainSpace (ns1:domain_space_for_room_300102800 ns1:domain_space_for_room_300202868) .
 (ns1:zone_01600952 ns1:zone_01701020) s223:hasProperty
-    (ns1:condenser_water_return_temperature00271 ns1:condenser_water_return_temperature00430) ,
+    (ns1:aru_cwr_temp.Temperature00025 ns1:aru_cws_temp.Temperature00023) ,
     (ns1:zone_fan_speed00964 ns1:zone_fan_speed01032) ,
     (ns1:zone_co201320 ns1:zone_co201746) ,
     (ns1:rtu_supply_air_temperature_setpoint_carbon00254 ns1:rtu_supply_air_temperature_setpoint_carbon00413) ,

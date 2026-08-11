@@ -169,6 +169,8 @@
 (ns1:bldg11.AHU.AHU01.Supply_Air_Temp ns1:bldg11.AHU.AHU02.Supply_Air_Temp) ref:hasExternalReference [
     ref:hasTimeseriesId ("0880180a-9718-4dcd-8a21-d6a897f71c9c" "27725205-1e2d-4ead-9b6b-b0bb977e2f63")
 ] .
+(ns1:bldg11.ZONE.AHU05.RM2502.Zone_Supply_Air_Temp ns1:bldg11.ZONE.AHU05.RM2505.Zone_Supply_Air_Temp) a brick:Supply_Air_Temperature_Sensor .
+(ns1:bldg11.ZONE.AHU05.RM2502.Zone_Supply_Air_Temp ns1:bldg11.ZONE.AHU05.RM2505.Zone_Supply_Air_Temp) rdfs:label ("bldg11.ZONE.AHU05.RM2502.Zone Supply Air Temp" "bldg11.ZONE.AHU05.RM2505.Zone Supply Air Temp") .
 (ns1:bldg11.AHU.AHU01.Supply_Air_Temp_Setpoint ns1:bldg11.AHU.AHU02.Supply_Air_Temp_Setpoint) a brick:Supply_Air_Temperature_Setpoint .
 (ns1:bldg11.AHU.AHU01.Supply_Air_Temp_Setpoint ns1:bldg11.AHU.AHU02.Supply_Air_Temp_Setpoint) rdfs:label ("bldg11.AHU.AHU01.Supply Air Temp Setpoint" "bldg11.AHU.AHU02.Supply Air Temp Setpoint") .
 (ns1:bldg11.AHU.AHU01.Supply_Air_Temp_Setpoint ns1:bldg11.AHU.AHU02.Supply_Air_Temp_Setpoint) ref:hasExternalReference [
@@ -183,9 +185,10 @@
 (ns1:VAVRM0101 ns1:VAVRM0111) brick:feeds (ns1:RM0101 ns1:RM0111) .
 (ns1:VAVRM0101 ns1:VAVRM0111) brick:hasPoint
     (ns1:bldg11.ZONE.AHU01.RM1018.Zone_Air_Temp_Setpoint ns1:bldg11.ZONE.AHU01.RM1111.Zone_Air_Temp_Setpoint) ,
+    (ns1:bldg11.ZONE.AHU01.RM1703.Zone_Air_Temp ns1:bldg11.ZONE.AHU01.RM2603B.Zone_Air_Temp) ,
     (ns1:bldg11.AHU.AHU01.Zone_Air_Temp ns1:bldg11.AHU.AHU02.Zone_Air_Temp) ,
     (ns1:bldg11.ZONE.AHU01.RM1018.VLV_2_COMD ns1:bldg11.ZONE.AHU01.RM1111.VLV_2_COMD) ,
-    (ns1:bldg11.AHU.AHU01.Supply_Air_Temp ns1:bldg11.AHU.AHU02.Supply_Air_Temp) ,
+    (ns1:bldg11.ZONE.AHU05.RM2502.Zone_Supply_Air_Temp ns1:bldg11.ZONE.AHU05.RM2505.Zone_Supply_Air_Temp) ,
     (ns1:bldg11.ZONE.AHU05.RM2502.Zone_Supply_Air_Flow ns1:bldg11.ZONE.AHU05.RM2505.Zone_Supply_Air_Flow) ,
     (ns1:bldg11.ZONE.AHU01.RM2603B.VS_1_REHEAT ns1:bldg11.ZONE.AHU01.RM2603B.VS_2_REHEAT) ,
     (ns1:bldg11.ZONE.AHU05.RM2502.Zone_Percent_Air_Flow ns1:bldg11.ZONE.AHU05.RM2505.Zone_Percent_Air_Flow) .
@@ -196,6 +199,8 @@
 (ns1:bldg11.AHU.AHU01.Zone_Air_Temp ns1:bldg11.AHU.AHU02.Zone_Air_Temp) ref:hasExternalReference [
     ref:hasTimeseriesId ("020e8ec2-6eed-474d-8d41-3b109f65ae1a" "02ff0500-ef5e-4c13-a430-e84508a4ad73")
 ] .
+(ns1:bldg11.ZONE.AHU01.RM1703.Zone_Air_Temp ns1:bldg11.ZONE.AHU01.RM2603B.Zone_Air_Temp) a brick:Zone_Air_Temperature_Sensor .
+(ns1:bldg11.ZONE.AHU01.RM1703.Zone_Air_Temp ns1:bldg11.ZONE.AHU01.RM2603B.Zone_Air_Temp) rdfs:label ("bldg11.ZONE.AHU01.RM1703.Zone Air Temp" "bldg11.ZONE.AHU01.RM2603B.Zone Air Temp") .
 (ns1:bldg11.ZONE.AHU01.RM1018.Zone_Air_Temp_Setpoint ns1:bldg11.ZONE.AHU01.RM1111.Zone_Air_Temp_Setpoint) a brick:Zone_Air_Temperature_Setpoint .
 (ns1:bldg11.ZONE.AHU01.RM1018.Zone_Air_Temp_Setpoint ns1:bldg11.ZONE.AHU01.RM1111.Zone_Air_Temp_Setpoint) rdfs:label ("bldg11.ZONE.AHU01.RM1018.Zone Air Temp Setpoint" "bldg11.ZONE.AHU01.RM1111.Zone Air Temp Setpoint") .
 (ns1:bldg11.ZONE.AHU01.RM1018.Zone_Air_Temp_Setpoint ns1:bldg11.ZONE.AHU01.RM1111.Zone_Air_Temp_Setpoint) ref:hasExternalReference [

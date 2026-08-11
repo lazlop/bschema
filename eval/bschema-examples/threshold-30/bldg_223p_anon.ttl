@@ -52,7 +52,7 @@
     s223:AirHandlingUnit .
 (ns2:4FsOfbEa2841 ns2:5wSA7AlJ2418) bacnet:device-instance rdfs:Resource .
 (ns2:4FsOfbEa2841 ns2:5wSA7AlJ2418) bacnet:hasPort [
-    bacnet:storedAt ("002QgMwn12248" "003jdRyq12263") ;
+    bacnet:storedAt ("2cH8UkCT5723" "3VVRBXJH12758") ;
     a bacnet:Port
 ] .
 (ns2:4FsOfbEa2841 ns2:5wSA7AlJ2418) a bacnet:BACnetDevice .

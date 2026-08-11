@@ -7,7 +7,7 @@
 @prefix ref: <https://brickschema.org/schema/Brick/ref#> .
 
 (ns1:bldg11.ZONE.AHU05.RM2502.Zone_Percent_Air_Flow ns1:bldg11.ZONE.AHU05.RM2505.Zone_Percent_Air_Flow) a brick:Air_Flow_Sensor .
-(ns1:bldg11.ZONE.AHU05.RM2502.Zone_Percent_Air_Flow ns1:bldg11.ZONE.AHU05.RM2505.Zone_Percent_Air_Flow) rdfs:label ("00d0c066-d247-417c-a07b-09ef71c14114" "010b4082-dbba-46b5-ae09-782274ab695b") .
+(ns1:bldg11.ZONE.AHU05.RM2502.Zone_Percent_Air_Flow ns1:bldg11.ZONE.AHU05.RM2505.Zone_Percent_Air_Flow) rdfs:label ("bldg11.ZONE.AHU05.RM2502.Zone Percent Air Flow" "bldg11.ZONE.AHU05.RM2505.Zone Percent Air Flow") .
 (ns1:bldg11.ZONE.AHU05.RM2502.Zone_Percent_Air_Flow ns1:bldg11.ZONE.AHU05.RM2505.Zone_Percent_Air_Flow) ref:hasExternalReference [
     ref:hasTimeseriesId ("00d0c066-d247-417c-a07b-09ef71c14114" "010b4082-dbba-46b5-ae09-782274ab695b")
 ] .
@@ -27,42 +27,42 @@
     (ns1:bldg11.AHU.AHU01.Heating_Valve_Output ns1:bldg11.AHU.AHU02.Heating_Valve_Output) .
 (ns1:AHU01 ns1:AHU02) brick:isFedBy (ns1:chiller) .
 (ns1:bldg11_Electricity_Demand_kBtu) a brick:Building_Electrical_Meter .
-(ns1:bldg11_Electricity_Demand_kBtu) rdfs:label ("00d0c066-d247-417c-a07b-09ef71c14114" "010b4082-dbba-46b5-ae09-782274ab695b") .
+(ns1:bldg11_Electricity_Demand_kBtu) rdfs:label ("bldg11_Electricity_Demand_kBtu") .
 (ns1:bldg11_Electricity_Demand_kBtu) ref:hasExternalReference [
     ref:hasTimeseriesId ("00d0c066-d247-417c-a07b-09ef71c14114" "010b4082-dbba-46b5-ae09-782274ab695b")
 ] .
 (ns1:bldg11) a brick:Building .
 (ns1:bldg11) brick:area [
     brick:hasUnits rdfs:Resource ;
-    brick:value ("00d0c066-d247-417c-a07b-09ef71c14114" "010b4082-dbba-46b5-ae09-782274ab695b")
+    brick:value ("228431^^<http://www.w3.org/2001/XMLSchema#integer>")
 ] .
 (ns1:bldg11.CHW.Building_Chilled_Water_Delta_Temp) a brick:Chilled_Water_Differential_Temperature_Sensor .
-(ns1:bldg11.CHW.Building_Chilled_Water_Delta_Temp) rdfs:label ("00d0c066-d247-417c-a07b-09ef71c14114" "010b4082-dbba-46b5-ae09-782274ab695b") .
+(ns1:bldg11.CHW.Building_Chilled_Water_Delta_Temp) rdfs:label ("bldg11.CHW.Building Chilled Water Delta Temp") .
 (ns1:bldg11.CHW.Building_Chilled_Water_Delta_Temp) ref:hasExternalReference [
     ref:hasTimeseriesId ("00d0c066-d247-417c-a07b-09ef71c14114" "010b4082-dbba-46b5-ae09-782274ab695b")
 ] .
 (ns1:bldg11.CHW.Building_Chilled_Water_Flow ns1:bldg11.CHW.Loop_Chilled_Water_Flow) a brick:Chilled_Water_Flow_Sensor .
-(ns1:bldg11.CHW.Building_Chilled_Water_Flow ns1:bldg11.CHW.Loop_Chilled_Water_Flow) rdfs:label ("00d0c066-d247-417c-a07b-09ef71c14114" "010b4082-dbba-46b5-ae09-782274ab695b") .
+(ns1:bldg11.CHW.Building_Chilled_Water_Flow ns1:bldg11.CHW.Loop_Chilled_Water_Flow) rdfs:label ("bldg11.CHW.Building Chilled Water Flow" "bldg11.CHW.Loop Chilled Water Flow") .
 (ns1:bldg11.CHW.Building_Chilled_Water_Flow ns1:bldg11.CHW.Loop_Chilled_Water_Flow) ref:hasExternalReference [
     ref:hasTimeseriesId ("00d0c066-d247-417c-a07b-09ef71c14114" "010b4082-dbba-46b5-ae09-782274ab695b")
 ] .
 (ns1:bldg11.CHW.Building_Chilled_Water_Return_Temp ns1:bldg11.CHW.Loop_Chilled_Water_Return_Temp) a brick:Chilled_Water_Return_Temperature_Sensor .
-(ns1:bldg11.CHW.Building_Chilled_Water_Return_Temp ns1:bldg11.CHW.Loop_Chilled_Water_Return_Temp) rdfs:label ("00d0c066-d247-417c-a07b-09ef71c14114" "010b4082-dbba-46b5-ae09-782274ab695b") .
+(ns1:bldg11.CHW.Building_Chilled_Water_Return_Temp ns1:bldg11.CHW.Loop_Chilled_Water_Return_Temp) rdfs:label ("bldg11.CHW.Building Chilled Water Return Temp" "bldg11.CHW.Loop Chilled Water Return Temp") .
 (ns1:bldg11.CHW.Building_Chilled_Water_Return_Temp ns1:bldg11.CHW.Loop_Chilled_Water_Return_Temp) ref:hasExternalReference [
     ref:hasTimeseriesId ("00d0c066-d247-417c-a07b-09ef71c14114" "010b4082-dbba-46b5-ae09-782274ab695b")
 ] .
 (ns1:bldg11.CHW.Building_Chilled_Water_Return_Temp_Setpoint ns1:bldg11.CHW.Loop_Chilled_Water_Return_Temp_Setpoint) a brick:Chilled_Water_Return_Temperature_Setpoint .
-(ns1:bldg11.CHW.Building_Chilled_Water_Return_Temp_Setpoint ns1:bldg11.CHW.Loop_Chilled_Water_Return_Temp_Setpoint) rdfs:label ("00d0c066-d247-417c-a07b-09ef71c14114" "010b4082-dbba-46b5-ae09-782274ab695b") .
+(ns1:bldg11.CHW.Building_Chilled_Water_Return_Temp_Setpoint ns1:bldg11.CHW.Loop_Chilled_Water_Return_Temp_Setpoint) rdfs:label ("bldg11.CHW.Building Chilled Water Return Temp Setpoint" "bldg11.CHW.Loop Chilled Water Return Temp Setpoint") .
 (ns1:bldg11.CHW.Building_Chilled_Water_Return_Temp_Setpoint ns1:bldg11.CHW.Loop_Chilled_Water_Return_Temp_Setpoint) ref:hasExternalReference [
     ref:hasTimeseriesId ("00d0c066-d247-417c-a07b-09ef71c14114" "010b4082-dbba-46b5-ae09-782274ab695b")
 ] .
 (ns1:bldg11.CHW.Building_Chilled_Water_Supply_Temp ns1:bldg11.CHW.Loop_Chilled_Water_Supply_Temp) a brick:Chilled_Water_Supply_Temperature_Sensor .
-(ns1:bldg11.CHW.Building_Chilled_Water_Supply_Temp ns1:bldg11.CHW.Loop_Chilled_Water_Supply_Temp) rdfs:label ("00d0c066-d247-417c-a07b-09ef71c14114" "010b4082-dbba-46b5-ae09-782274ab695b") .
+(ns1:bldg11.CHW.Building_Chilled_Water_Supply_Temp ns1:bldg11.CHW.Loop_Chilled_Water_Supply_Temp) rdfs:label ("bldg11.CHW.Building Chilled Water Supply Temp" "bldg11.CHW.Loop Chilled Water Supply Temp") .
 (ns1:bldg11.CHW.Building_Chilled_Water_Supply_Temp ns1:bldg11.CHW.Loop_Chilled_Water_Supply_Temp) ref:hasExternalReference [
     ref:hasTimeseriesId ("00d0c066-d247-417c-a07b-09ef71c14114" "010b4082-dbba-46b5-ae09-782274ab695b")
 ] .
 (ns1:bldg11.CHW.Building_Chilled_Water_Supply_Temp_Setpoint ns1:bldg11.CHW.Building_Chilled_Water_Supply_Temp_Sp_2) a brick:Chilled_Water_Supply_Temperature_Setpoint .
-(ns1:bldg11.CHW.Building_Chilled_Water_Supply_Temp_Setpoint ns1:bldg11.CHW.Building_Chilled_Water_Supply_Temp_Sp_2) rdfs:label ("00d0c066-d247-417c-a07b-09ef71c14114" "010b4082-dbba-46b5-ae09-782274ab695b") .
+(ns1:bldg11.CHW.Building_Chilled_Water_Supply_Temp_Setpoint ns1:bldg11.CHW.Building_Chilled_Water_Supply_Temp_Sp_2) rdfs:label ("bldg11.CHW.Building Chilled Water Supply Temp Setpoint" "bldg11.CHW.Building Chilled Water Supply Temp Sp 2") .
 (ns1:bldg11.CHW.Building_Chilled_Water_Supply_Temp_Setpoint ns1:bldg11.CHW.Building_Chilled_Water_Supply_Temp_Sp_2) ref:hasExternalReference [
     ref:hasTimeseriesId ("00d0c066-d247-417c-a07b-09ef71c14114" "010b4082-dbba-46b5-ae09-782274ab695b")
 ] .
@@ -82,29 +82,29 @@
 (ns1:bldg11.AHU.AHU01.Heating_Valve_Output ns1:bldg11.AHU.AHU02.Heating_Valve_Output) a
     brick:Heating_Command ,
     brick:Command .
-(ns1:bldg11.AHU.AHU01.Heating_Valve_Output ns1:bldg11.AHU.AHU02.Heating_Valve_Output) rdfs:label ("00d0c066-d247-417c-a07b-09ef71c14114" "010b4082-dbba-46b5-ae09-782274ab695b") .
+(ns1:bldg11.AHU.AHU01.Heating_Valve_Output ns1:bldg11.AHU.AHU02.Heating_Valve_Output) rdfs:label ("bldg11.AHU.AHU01.Heating Valve Output" "bldg11.AHU.AHU02.Heating Valve Output") .
 (ns1:bldg11.AHU.AHU01.Heating_Valve_Output ns1:bldg11.AHU.AHU02.Heating_Valve_Output) ref:hasExternalReference [
     ref:hasTimeseriesId ("00d0c066-d247-417c-a07b-09ef71c14114" "010b4082-dbba-46b5-ae09-782274ab695b")
 ] .
 (ns1:bldg11.ZONE.AHU01.RM2603B.VS_1_REHEAT ns1:bldg11.ZONE.AHU01.RM2603B.VS_2_REHEAT) a brick:Command .
-(ns1:bldg11.ZONE.AHU01.RM2603B.VS_1_REHEAT ns1:bldg11.ZONE.AHU01.RM2603B.VS_2_REHEAT) rdfs:label ("00d0c066-d247-417c-a07b-09ef71c14114" "010b4082-dbba-46b5-ae09-782274ab695b") .
+(ns1:bldg11.ZONE.AHU01.RM2603B.VS_1_REHEAT ns1:bldg11.ZONE.AHU01.RM2603B.VS_2_REHEAT) rdfs:label ("bldg11.ZONE.AHU01.RM2603B.VS 1 REHEAT" "bldg11.ZONE.AHU01.RM2603B.VS 2 REHEAT") .
 (ns1:bldg11.ZONE.AHU01.RM2603B.VS_1_REHEAT ns1:bldg11.ZONE.AHU01.RM2603B.VS_2_REHEAT) ref:hasExternalReference [
     ref:hasTimeseriesId ("00d0c066-d247-417c-a07b-09ef71c14114" "010b4082-dbba-46b5-ae09-782274ab695b")
 ] .
 (ns1:bldg11.AHU.AHU01.CCV ns1:bldg11.AHU.AHU01.Cooling_Valve_Output) a
     brick:Valve_Command ,
     brick:Cooling_Command .
-(ns1:bldg11.AHU.AHU01.CCV ns1:bldg11.AHU.AHU01.Cooling_Valve_Output) rdfs:label ("00d0c066-d247-417c-a07b-09ef71c14114" "010b4082-dbba-46b5-ae09-782274ab695b") .
+(ns1:bldg11.AHU.AHU01.CCV ns1:bldg11.AHU.AHU01.Cooling_Valve_Output) rdfs:label ("bldg11.AHU.AHU01.CCV" "bldg11.AHU.AHU01.Cooling Valve Output") .
 (ns1:bldg11.AHU.AHU01.CCV ns1:bldg11.AHU.AHU01.Cooling_Valve_Output) ref:hasExternalReference [
     ref:hasTimeseriesId ("00d0c066-d247-417c-a07b-09ef71c14114" "010b4082-dbba-46b5-ae09-782274ab695b")
 ] .
 (ns1:bldg11.CHW.ECONOMIZER) a brick:Damper_Position_Command .
-(ns1:bldg11.CHW.ECONOMIZER) rdfs:label ("00d0c066-d247-417c-a07b-09ef71c14114" "010b4082-dbba-46b5-ae09-782274ab695b") .
+(ns1:bldg11.CHW.ECONOMIZER) rdfs:label ("bldg11.CHW.ECONOMIZER") .
 (ns1:bldg11.CHW.ECONOMIZER) ref:hasExternalReference [
     ref:hasTimeseriesId ("00d0c066-d247-417c-a07b-09ef71c14114" "010b4082-dbba-46b5-ae09-782274ab695b")
 ] .
 (ns1:bldg11.ZONE.AHU05.RM2502.Zone_Air_Damper_Command ns1:bldg11.ZONE.AHU05.RM2505.Zone_Air_Damper_Command) a brick:Damper_Position_Setpoint .
-(ns1:bldg11.ZONE.AHU05.RM2502.Zone_Air_Damper_Command ns1:bldg11.ZONE.AHU05.RM2505.Zone_Air_Damper_Command) rdfs:label ("00d0c066-d247-417c-a07b-09ef71c14114" "010b4082-dbba-46b5-ae09-782274ab695b") .
+(ns1:bldg11.ZONE.AHU05.RM2502.Zone_Air_Damper_Command ns1:bldg11.ZONE.AHU05.RM2505.Zone_Air_Damper_Command) rdfs:label ("bldg11.ZONE.AHU05.RM2502.Zone Air Damper Command" "bldg11.ZONE.AHU05.RM2505.Zone Air Damper Command") .
 (ns1:bldg11.ZONE.AHU05.RM2502.Zone_Air_Damper_Command ns1:bldg11.ZONE.AHU05.RM2505.Zone_Air_Damper_Command) ref:hasExternalReference [
     ref:hasTimeseriesId ("00d0c066-d247-417c-a07b-09ef71c14114" "010b4082-dbba-46b5-ae09-782274ab695b")
 ] .
@@ -112,13 +112,13 @@
 (ns1:damperVAVRM1002 ns1:damperVAVRM1005-1) brick:hasPoint (ns1:bldg11.ZONE.AHU05.RM2502.Zone_Air_Damper_Command ns1:bldg11.ZONE.AHU05.RM2505.Zone_Air_Damper_Command) .
 (ns1:damperVAVRM1002 ns1:damperVAVRM1005-1) brick:isPartOf (ns1:VAVRM0101 ns1:VAVRM0111) .
 (ns1:bldg11_ChilledWater_Demand_kBtu) a brick:Electric_Meter .
-(ns1:bldg11_ChilledWater_Demand_kBtu) rdfs:label ("00d0c066-d247-417c-a07b-09ef71c14114" "010b4082-dbba-46b5-ae09-782274ab695b") .
+(ns1:bldg11_ChilledWater_Demand_kBtu) rdfs:label ("bldg11_ChilledWater_Demand_kBtu") .
 (ns1:bldg11_ChilledWater_Demand_kBtu) brick:isPointOf (ns1:chiller) .
 (ns1:bldg11_ChilledWater_Demand_kBtu) ref:hasExternalReference [
     ref:hasTimeseriesId ("00d0c066-d247-417c-a07b-09ef71c14114" "010b4082-dbba-46b5-ae09-782274ab695b")
 ] .
 (ns1:bldg11.CHW.Enable) a brick:Enable_Command .
-(ns1:bldg11.CHW.Enable) rdfs:label ("00d0c066-d247-417c-a07b-09ef71c14114" "010b4082-dbba-46b5-ae09-782274ab695b") .
+(ns1:bldg11.CHW.Enable) rdfs:label ("bldg11.CHW.Enable") .
 (ns1:bldg11.CHW.Enable) ref:hasExternalReference [
     ref:hasTimeseriesId ("00d0c066-d247-417c-a07b-09ef71c14114" "010b4082-dbba-46b5-ae09-782274ab695b")
 ] .
@@ -127,55 +127,55 @@
 (ns1:RM0101 ns1:RM0111) a brick:HVAC_Zone .
 (ns1:RM0101 ns1:RM0111) brick:hasPart (ns1:RM0101_room ns1:RM0111_room) .
 (ns1:bldg11.AHU.AHU05.Mixed_Air_Temp ns1:bldg11.AHU.AHU06.Mixed_Air_Temp) a brick:Mixed_Air_Temperature_Sensor .
-(ns1:bldg11.AHU.AHU05.Mixed_Air_Temp ns1:bldg11.AHU.AHU06.Mixed_Air_Temp) rdfs:label ("00d0c066-d247-417c-a07b-09ef71c14114" "010b4082-dbba-46b5-ae09-782274ab695b") .
+(ns1:bldg11.AHU.AHU05.Mixed_Air_Temp ns1:bldg11.AHU.AHU06.Mixed_Air_Temp) rdfs:label ("bldg11.AHU.AHU05.Mixed Air Temp" "bldg11.AHU.AHU06.Mixed Air Temp") .
 (ns1:bldg11.AHU.AHU05.Mode) a brick:Mode .
-(ns1:bldg11.AHU.AHU05.Mode) rdfs:label ("00d0c066-d247-417c-a07b-09ef71c14114" "010b4082-dbba-46b5-ae09-782274ab695b") .
+(ns1:bldg11.AHU.AHU05.Mode) rdfs:label ("bldg11.AHU.AHU05.Mode") .
 (ns1:bldg11.AHU.AHU05.Mode) ref:hasExternalReference [
     ref:hasTimeseriesId ("00d0c066-d247-417c-a07b-09ef71c14114" "010b4082-dbba-46b5-ae09-782274ab695b")
 ] .
 (ns1:bldg11.AHU.AHU01.Outside_Air_Temp ns1:bldg11.AHU.AHU03.Outside_Air_Temp) a brick:Outside_Air_Temperature_Sensor .
-(ns1:bldg11.AHU.AHU01.Outside_Air_Temp ns1:bldg11.AHU.AHU03.Outside_Air_Temp) rdfs:label ("00d0c066-d247-417c-a07b-09ef71c14114" "010b4082-dbba-46b5-ae09-782274ab695b") .
+(ns1:bldg11.AHU.AHU01.Outside_Air_Temp ns1:bldg11.AHU.AHU03.Outside_Air_Temp) rdfs:label ("bldg11.AHU.AHU01.Outside Air Temp" "bldg11.AHU.AHU03.Outside Air Temp") .
 (ns1:bldg11.AHU.AHU01.Outside_Air_Temp ns1:bldg11.AHU.AHU03.Outside_Air_Temp) ref:hasExternalReference [
     ref:hasTimeseriesId ("00d0c066-d247-417c-a07b-09ef71c14114" "010b4082-dbba-46b5-ae09-782274ab695b")
 ] .
 (ns1:bldg11.AHU.AHU05.Return_Air_Temp ns1:bldg11.AHU.AHU06.Return_Air_Temp) a brick:Return_Air_Temperature_Sensor .
-(ns1:bldg11.AHU.AHU05.Return_Air_Temp ns1:bldg11.AHU.AHU06.Return_Air_Temp) rdfs:label ("00d0c066-d247-417c-a07b-09ef71c14114" "010b4082-dbba-46b5-ae09-782274ab695b") .
+(ns1:bldg11.AHU.AHU05.Return_Air_Temp ns1:bldg11.AHU.AHU06.Return_Air_Temp) rdfs:label ("bldg11.AHU.AHU05.Return Air Temp" "bldg11.AHU.AHU06.Return Air Temp") .
 (ns1:bldg11.AHU.AHU05.Return_Air_Temp ns1:bldg11.AHU.AHU06.Return_Air_Temp) ref:hasExternalReference [
     ref:hasTimeseriesId ("00d0c066-d247-417c-a07b-09ef71c14114" "010b4082-dbba-46b5-ae09-782274ab695b")
 ] .
 (ns1:RM0101_room ns1:RM0111_room) a brick:Room .
 (ns1:bldg11.CHW.Pump1_SPEED ns1:bldg11.CHW.Pump2_SPEED) a brick:Speed_Status .
-(ns1:bldg11.CHW.Pump1_SPEED ns1:bldg11.CHW.Pump2_SPEED) rdfs:label ("00d0c066-d247-417c-a07b-09ef71c14114" "010b4082-dbba-46b5-ae09-782274ab695b") .
+(ns1:bldg11.CHW.Pump1_SPEED ns1:bldg11.CHW.Pump2_SPEED) rdfs:label ("bldg11.CHW.Pump1_SPEED" "bldg11.CHW.Pump2_SPEED") .
 (ns1:bldg11.CHW.Pump1_SPEED ns1:bldg11.CHW.Pump2_SPEED) ref:hasExternalReference [
     ref:hasTimeseriesId ("00d0c066-d247-417c-a07b-09ef71c14114" "010b4082-dbba-46b5-ae09-782274ab695b")
 ] .
 (ns2:Stop ns3:Stop) a brick:Start_Stop_Command .
-(ns2:Stop ns3:Stop) rdfs:label ("00d0c066-d247-417c-a07b-09ef71c14114" "010b4082-dbba-46b5-ae09-782274ab695b") .
+(ns2:Stop ns3:Stop) rdfs:label ("bldg11.CHW.Pump1_Start/Stop" "bldg11.CHW.Pump2_Start/Stop") .
 (ns2:Stop ns3:Stop) ref:hasExternalReference [
     ref:hasTimeseriesId ("00d0c066-d247-417c-a07b-09ef71c14114" "010b4082-dbba-46b5-ae09-782274ab695b")
 ] .
 (ns1:bldg11.ZONE.AHU05.RM2502.Zone_Supply_Air_Flow ns1:bldg11.ZONE.AHU05.RM2505.Zone_Supply_Air_Flow) a brick:Supply_Air_Flow_Sensor .
-(ns1:bldg11.ZONE.AHU05.RM2502.Zone_Supply_Air_Flow ns1:bldg11.ZONE.AHU05.RM2505.Zone_Supply_Air_Flow) rdfs:label ("00d0c066-d247-417c-a07b-09ef71c14114" "010b4082-dbba-46b5-ae09-782274ab695b") .
+(ns1:bldg11.ZONE.AHU05.RM2502.Zone_Supply_Air_Flow ns1:bldg11.ZONE.AHU05.RM2505.Zone_Supply_Air_Flow) rdfs:label ("bldg11.ZONE.AHU05.RM2502.Zone Supply Air Flow" "bldg11.ZONE.AHU05.RM2505.Zone Supply Air Flow") .
 (ns1:bldg11.ZONE.AHU05.RM2502.Zone_Supply_Air_Flow ns1:bldg11.ZONE.AHU05.RM2505.Zone_Supply_Air_Flow) ref:hasExternalReference [
     ref:hasTimeseriesId ("00d0c066-d247-417c-a07b-09ef71c14114" "010b4082-dbba-46b5-ae09-782274ab695b")
 ] .
 (ns1:bldg11.AHU.AHU01.Supply_Air_Pressure ns1:bldg11.AHU.AHU02.Supply_Air_Pressure) a brick:Supply_Air_Static_Pressure_Sensor .
-(ns1:bldg11.AHU.AHU01.Supply_Air_Pressure ns1:bldg11.AHU.AHU02.Supply_Air_Pressure) rdfs:label ("00d0c066-d247-417c-a07b-09ef71c14114" "010b4082-dbba-46b5-ae09-782274ab695b") .
+(ns1:bldg11.AHU.AHU01.Supply_Air_Pressure ns1:bldg11.AHU.AHU02.Supply_Air_Pressure) rdfs:label ("bldg11.AHU.AHU01.Supply Air Pressure" "bldg11.AHU.AHU02.Supply Air Pressure") .
 (ns1:bldg11.AHU.AHU01.Supply_Air_Pressure ns1:bldg11.AHU.AHU02.Supply_Air_Pressure) ref:hasExternalReference [
     ref:hasTimeseriesId ("00d0c066-d247-417c-a07b-09ef71c14114" "010b4082-dbba-46b5-ae09-782274ab695b")
 ] .
 (ns1:bldg11.AHU.AHU01.Supply_Air_Temp ns1:bldg11.AHU.AHU02.Supply_Air_Temp) a brick:Supply_Air_Temperature_Sensor .
-(ns1:bldg11.AHU.AHU01.Supply_Air_Temp ns1:bldg11.AHU.AHU02.Supply_Air_Temp) rdfs:label ("00d0c066-d247-417c-a07b-09ef71c14114" "010b4082-dbba-46b5-ae09-782274ab695b") .
+(ns1:bldg11.AHU.AHU01.Supply_Air_Temp ns1:bldg11.AHU.AHU02.Supply_Air_Temp) rdfs:label ("bldg11.AHU.AHU01.Supply Air Temp" "bldg11.AHU.AHU02.Supply Air Temp") .
 (ns1:bldg11.AHU.AHU01.Supply_Air_Temp ns1:bldg11.AHU.AHU02.Supply_Air_Temp) ref:hasExternalReference [
     ref:hasTimeseriesId ("00d0c066-d247-417c-a07b-09ef71c14114" "010b4082-dbba-46b5-ae09-782274ab695b")
 ] .
 (ns1:bldg11.AHU.AHU01.Supply_Air_Temp_Setpoint ns1:bldg11.AHU.AHU02.Supply_Air_Temp_Setpoint) a brick:Supply_Air_Temperature_Setpoint .
-(ns1:bldg11.AHU.AHU01.Supply_Air_Temp_Setpoint ns1:bldg11.AHU.AHU02.Supply_Air_Temp_Setpoint) rdfs:label ("00d0c066-d247-417c-a07b-09ef71c14114" "010b4082-dbba-46b5-ae09-782274ab695b") .
+(ns1:bldg11.AHU.AHU01.Supply_Air_Temp_Setpoint ns1:bldg11.AHU.AHU02.Supply_Air_Temp_Setpoint) rdfs:label ("bldg11.AHU.AHU01.Supply Air Temp Setpoint" "bldg11.AHU.AHU02.Supply Air Temp Setpoint") .
 (ns1:bldg11.AHU.AHU01.Supply_Air_Temp_Setpoint ns1:bldg11.AHU.AHU02.Supply_Air_Temp_Setpoint) ref:hasExternalReference [
     ref:hasTimeseriesId ("00d0c066-d247-417c-a07b-09ef71c14114" "010b4082-dbba-46b5-ae09-782274ab695b")
 ] .
 (ns1:bldg11.AHU.AHU05.SUPFLOW ns1:bldg11.AHU.AHU06.SUPFLOW) a brick:Supply_Air_flow .
-(ns1:bldg11.AHU.AHU05.SUPFLOW ns1:bldg11.AHU.AHU06.SUPFLOW) rdfs:label ("00d0c066-d247-417c-a07b-09ef71c14114" "010b4082-dbba-46b5-ae09-782274ab695b") .
+(ns1:bldg11.AHU.AHU05.SUPFLOW ns1:bldg11.AHU.AHU06.SUPFLOW) rdfs:label ("bldg11.AHU.AHU05.SUPFLOW" "bldg11.AHU.AHU06.SUPFLOW") .
 (ns1:bldg11.AHU.AHU05.SUPFLOW ns1:bldg11.AHU.AHU06.SUPFLOW) ref:hasExternalReference [
     ref:hasTimeseriesId ("00d0c066-d247-417c-a07b-09ef71c14114" "010b4082-dbba-46b5-ae09-782274ab695b")
 ] .
@@ -190,14 +190,14 @@
     (ns1:bldg11.ZONE.AHU01.RM2603B.VS_1_REHEAT ns1:bldg11.ZONE.AHU01.RM2603B.VS_2_REHEAT) ,
     (ns1:bldg11.ZONE.AHU05.RM2502.Zone_Percent_Air_Flow ns1:bldg11.ZONE.AHU05.RM2505.Zone_Percent_Air_Flow) .
 (ns1:bldg11.ZONE.AHU01.RM1018.VLV_2_COMD ns1:bldg11.ZONE.AHU01.RM1111.VLV_2_COMD) a brick:Valve_Command .
-(ns1:bldg11.ZONE.AHU01.RM1018.VLV_2_COMD ns1:bldg11.ZONE.AHU01.RM1111.VLV_2_COMD) rdfs:label ("00d0c066-d247-417c-a07b-09ef71c14114" "010b4082-dbba-46b5-ae09-782274ab695b") .
+(ns1:bldg11.ZONE.AHU01.RM1018.VLV_2_COMD ns1:bldg11.ZONE.AHU01.RM1111.VLV_2_COMD) rdfs:label ("bldg11.AHU.AHU01.CCV" "bldg11.AHU.AHU01.Cooling Valve Output") .
 (ns1:bldg11.AHU.AHU01.Zone_Air_Temp ns1:bldg11.AHU.AHU02.Zone_Air_Temp) a brick:Zone_Air_Temperature_Sensor .
-(ns1:bldg11.AHU.AHU01.Zone_Air_Temp ns1:bldg11.AHU.AHU02.Zone_Air_Temp) rdfs:label ("00d0c066-d247-417c-a07b-09ef71c14114" "010b4082-dbba-46b5-ae09-782274ab695b") .
+(ns1:bldg11.AHU.AHU01.Zone_Air_Temp ns1:bldg11.AHU.AHU02.Zone_Air_Temp) rdfs:label ("bldg11.AHU.AHU01.Zone Air Temp" "bldg11.AHU.AHU02.Zone Air Temp") .
 (ns1:bldg11.AHU.AHU01.Zone_Air_Temp ns1:bldg11.AHU.AHU02.Zone_Air_Temp) ref:hasExternalReference [
     ref:hasTimeseriesId ("00d0c066-d247-417c-a07b-09ef71c14114" "010b4082-dbba-46b5-ae09-782274ab695b")
 ] .
 (ns1:bldg11.ZONE.AHU01.RM1018.Zone_Air_Temp_Setpoint ns1:bldg11.ZONE.AHU01.RM1111.Zone_Air_Temp_Setpoint) a brick:Zone_Air_Temperature_Setpoint .
-(ns1:bldg11.ZONE.AHU01.RM1018.Zone_Air_Temp_Setpoint ns1:bldg11.ZONE.AHU01.RM1111.Zone_Air_Temp_Setpoint) rdfs:label ("00d0c066-d247-417c-a07b-09ef71c14114" "010b4082-dbba-46b5-ae09-782274ab695b") .
+(ns1:bldg11.ZONE.AHU01.RM1018.Zone_Air_Temp_Setpoint ns1:bldg11.ZONE.AHU01.RM1111.Zone_Air_Temp_Setpoint) rdfs:label ("bldg11.ZONE.AHU01.RM1018.Zone Air Temp Setpoint" "bldg11.ZONE.AHU01.RM1111.Zone Air Temp Setpoint") .
 (ns1:bldg11.ZONE.AHU01.RM1018.Zone_Air_Temp_Setpoint ns1:bldg11.ZONE.AHU01.RM1111.Zone_Air_Temp_Setpoint) ref:hasExternalReference [
     ref:hasTimeseriesId ("00d0c066-d247-417c-a07b-09ef71c14114" "010b4082-dbba-46b5-ae09-782274ab695b")
 ] .

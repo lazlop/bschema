@@ -3959,15 +3959,21 @@
     bacnet:objectOf (ns1:4N19XNg936 ns1:62QQTiBC2245) ;
     a ref:BACnetReference
 ] .
-(ns1:Condenser_Blowdown_Meter ns1:Condenser_Make_Up_Meter) s223:hasExternalReference [
-    bacnet:ReadableProperty ("000BIQfW8016" "00UczMEc1533") ;
-    bacnet:description ("000BIQfW8016" "00UczMEc1533") ;
-    bacnet:object-identifier ("000BIQfW8016" "00UczMEc1533") ;
-    bacnet:object-name ("000BIQfW8016" "00UczMEc1533") ;
-    bacnet:object-type ("000BIQfW8016" "00UczMEc1533") ;
-    bacnet:objectOf (ns1:4N19XNg936 ns1:62QQTiBC2245) ;
-    a ref:BACnetReference
-] .
+(ns1:Condenser_Blowdown_Meter ns1:Condenser_Make_Up_Meter) s223:hasExternalReference
+    [
+        bacnet:ReadableProperty ("000BIQfW8016" "00UczMEc1533") ;
+        bacnet:object-name ("000BIQfW8016" "00UczMEc1533") ;
+        a ref:BACnetReference
+    ] ,
+    [
+        bacnet:ReadableProperty ("000BIQfW8016" "00UczMEc1533") ;
+        bacnet:description ("000BIQfW8016" "00UczMEc1533") ;
+        bacnet:object-identifier ("000BIQfW8016" "00UczMEc1533") ;
+        bacnet:object-name ("000BIQfW8016" "00UczMEc1533") ;
+        bacnet:object-type ("000BIQfW8016" "00UczMEc1533") ;
+        bacnet:objectOf (ns1:4N19XNg936 ns1:62QQTiBC2245) ;
+        a ref:BACnetReference
+    ] .
 (ns1:Condenser_Blowdown_Meter ns1:Condenser_Make_Up_Meter) a
     ns1:bldg_Water_Meter ,
     ns1:bldg.CW.MAKE.UP_FLOW.V ,
@@ -3996,15 +4002,21 @@
     (ns1:CH1_Condenser_Water_Loop ns1:CH2_Condenser_Water_Loop) ,
     (ns1:Device_57018_Thermal_Meter ns1:Main_Chilled_Water_Thermal_Meter_2) .
 (ns1:Condenser_Blowdown_Meter ns1:Condenser_Make_Up_Meter) brick:meters (ns1:CH1_Condenser_Water_Loop ns1:CH2_Condenser_Water_Loop) .
-(ns1:Condenser_Blowdown_Meter ns1:Condenser_Make_Up_Meter) ref:hasExternalReference [
-    bacnet:ReadableProperty ("000BIQfW8016" "00UczMEc1533") ;
-    bacnet:description ("000BIQfW8016" "00UczMEc1533") ;
-    bacnet:object-identifier ("000BIQfW8016" "00UczMEc1533") ;
-    bacnet:object-name ("000BIQfW8016" "00UczMEc1533") ;
-    bacnet:object-type ("000BIQfW8016" "00UczMEc1533") ;
-    bacnet:objectOf (ns1:4N19XNg936 ns1:62QQTiBC2245) ;
-    a ref:BACnetReference
-] .
+(ns1:Condenser_Blowdown_Meter ns1:Condenser_Make_Up_Meter) ref:hasExternalReference
+    [
+        bacnet:ReadableProperty ("000BIQfW8016" "00UczMEc1533") ;
+        bacnet:object-name ("000BIQfW8016" "00UczMEc1533") ;
+        a ref:BACnetReference
+    ] ,
+    [
+        bacnet:ReadableProperty ("000BIQfW8016" "00UczMEc1533") ;
+        bacnet:description ("000BIQfW8016" "00UczMEc1533") ;
+        bacnet:object-identifier ("000BIQfW8016" "00UczMEc1533") ;
+        bacnet:object-name ("000BIQfW8016" "00UczMEc1533") ;
+        bacnet:object-type ("000BIQfW8016" "00UczMEc1533") ;
+        bacnet:objectOf (ns1:4N19XNg936 ns1:62QQTiBC2245) ;
+        a ref:BACnetReference
+    ] .
 (ns1:132_MECH_STEAM ns1:149_MDC_MECH) a
     rec:UtilitiesRoom ,
     brick:Mechanical_Room .
@@ -6743,9 +6755,9 @@
     bacnet:objectOf (ns1:4N19XNg936 ns1:62QQTiBC2245) ;
     a ref:BACnetReference
 ] .
-(ns1:4N19XNg936 ns1:62QQTiBC2245) bacnet:device-instance ("000BIQfW8016" "00UczMEc1533") .
+(ns1:4N19XNg936 ns1:62QQTiBC2245) bacnet:device-instance ("8gOpOoQd16753" "IYVVFXuw15884") .
 (ns1:4N19XNg936 ns1:62QQTiBC2245) bacnet:hasPort [
     a bacnet:Port ;
-    ref:storedAt ("000BIQfW8016" "00UczMEc1533")
+    ref:storedAt ("40gRYu3R14157" "4C3ojkiG5063")
 ] .
 (ns1:4N19XNg936 ns1:62QQTiBC2245) a bacnet:ukWxk1OT528 .

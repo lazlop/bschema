@@ -65,8 +65,8 @@
     [
         a ref:TimeseriesReference ;
         ref:hasTimeseriesId ("LowerSetp[cor]" "LowerSetp[eas]") ;
-        ref:onTable ("LowerSetp[cor]" "LowerSetp[eas]") ;
-        ref:storedAt ("LowerSetp[cor]" "LowerSetp[eas]")
+        ref:onTable ("baseline_dataset" "baseline_tempData_dataset") ;
+        ref:storedAt ("data.db")
     ] ,
     [
         ref:hasTimeseriesId ("chi_reaPChi_y" "chi_reaPPumDis_y")
@@ -94,8 +94,8 @@
     [
         a ref:TimeseriesReference ;
         ref:hasTimeseriesId ("LowerSetp[cor]" "LowerSetp[eas]") ;
-        ref:onTable ("LowerSetp[cor]" "LowerSetp[eas]") ;
-        ref:storedAt ("LowerSetp[cor]" "LowerSetp[eas]")
+        ref:onTable ("baseline_dataset" "baseline_tempData_dataset") ;
+        ref:storedAt ("data.db")
     ] ,
     [
         ref:hasTimeseriesId ("UpperSetp[cor]" "UpperSetp[eas]")
@@ -105,8 +105,8 @@
     [
         a ref:TimeseriesReference ;
         ref:hasTimeseriesId ("LowerSetp[cor]" "LowerSetp[eas]") ;
-        ref:onTable ("LowerSetp[cor]" "LowerSetp[eas]") ;
-        ref:storedAt ("LowerSetp[cor]" "LowerSetp[eas]")
+        ref:onTable ("baseline_dataset" "baseline_tempData_dataset") ;
+        ref:storedAt ("data.db")
     ] ,
     [
         ref:hasTimeseriesId ("LowerSetp[cor]" "LowerSetp[eas]")
@@ -120,8 +120,8 @@
     [
         a ref:TimeseriesReference ;
         ref:hasTimeseriesId ("LowerSetp[cor]" "LowerSetp[eas]") ;
-        ref:onTable ("LowerSetp[cor]" "LowerSetp[eas]") ;
-        ref:storedAt ("LowerSetp[cor]" "LowerSetp[eas]")
+        ref:onTable ("baseline_dataset" "baseline_tempData_dataset") ;
+        ref:storedAt ("data.db")
     ] ,
     [
         ref:hasTimeseriesId ("Occupancy[cor]" "Occupancy[eas]")
@@ -168,8 +168,8 @@
     [
         a ref:TimeseriesReference ;
         ref:hasTimeseriesId ("LowerSetp[cor]" "LowerSetp[eas]") ;
-        ref:onTable ("LowerSetp[cor]" "LowerSetp[eas]") ;
-        ref:storedAt ("LowerSetp[cor]" "LowerSetp[eas]")
+        ref:onTable ("baseline_dataset" "baseline_tempData_dataset") ;
+        ref:storedAt ("data.db")
     ] ,
     [
         ref:hasTimeseriesId ("hvac_oveZonSupCor_TZonCooSet_u" "hvac_oveZonSupEas_TZonCooSet_u")
@@ -179,8 +179,8 @@
     [
         a ref:TimeseriesReference ;
         ref:hasTimeseriesId ("LowerSetp[cor]" "LowerSetp[eas]") ;
-        ref:onTable ("LowerSetp[cor]" "LowerSetp[eas]") ;
-        ref:storedAt ("LowerSetp[cor]" "LowerSetp[eas]")
+        ref:onTable ("baseline_dataset" "baseline_tempData_dataset") ;
+        ref:storedAt ("data.db")
     ] ,
     [
         ref:hasTimeseriesId ("hvac_oveZonSupCor_TZonHeaSet_u" "hvac_oveZonSupEas_TZonHeaSet_u")
@@ -190,8 +190,8 @@
     [
         a ref:TimeseriesReference ;
         ref:hasTimeseriesId ("LowerSetp[cor]" "LowerSetp[eas]") ;
-        ref:onTable ("LowerSetp[cor]" "LowerSetp[eas]") ;
-        ref:storedAt ("LowerSetp[cor]" "LowerSetp[eas]")
+        ref:onTable ("baseline_dataset" "baseline_tempData_dataset") ;
+        ref:storedAt ("data.db")
     ] ,
     [
         ref:hasTimeseriesId ("hvac_reaZonCor_TZon_y" "hvac_reaZonEas_TZon_y")

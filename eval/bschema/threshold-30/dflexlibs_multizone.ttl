@@ -58,6 +58,12 @@ bs:Heating_Coil_version_1 a brick:Heating_Coil ;
 bs:Hot_Water_Pump_version_1 a brick:Hot_Water_Pump ;
     brick:hasPoint bs:Electric_Power_Sensor_version_1 .
 
+bs:Literal_version_2 a rdfs:Literal .
+
+bs:Literal_version_3 a rdfs:Literal .
+
+bs:Literal_version_4 a rdfs:Literal .
+
 bs:Max_Air_Temperature_Setpoint_version_1 a brick:Max_Air_Temperature_Setpoint ;
     ref:hasExternalReference bs:Resource_version_1,
         bs:TimeseriesReference_version_1 .
@@ -73,7 +79,7 @@ bs:Occupancy_Sensor_version_1 a brick:Occupancy_Sensor ;
     ref:hasExternalReference bs:Resource_version_1,
         bs:TimeseriesReference_version_1 .
 
-bs:Resource_version_2 brick:value bs:Literal_version_1 .
+bs:Resource_version_2 brick:value bs:Literal_version_4 .
 
 bs:Return_Air_Flow_Sensor_version_1 a brick:Return_Air_Flow_Sensor ;
     ref:hasExternalReference bs:Resource_version_1 .
@@ -116,7 +122,7 @@ bs:Zone_Air_Temperature_Sensor_version_1 a brick:Zone_Air_Temperature_Sensor ;
         bs:TimeseriesReference_version_1 .
 
 bs:HVAC_Zone_version_1 a brick:HVAC_Zone ;
-    rdfs:label bs:Literal_version_1 ;
+    rdfs:label bs:Literal_version_3 ;
     brick:hasPoint bs:CO2_Sensor_version_1,
         bs:Discharge_Air_Flow_Sensor_version_1,
         bs:Max_Air_Temperature_Setpoint_version_1,
@@ -130,16 +136,16 @@ bs:Pump_version_1 a brick:Pump ;
     brick:feeds bs:Hot_Water_Pump_version_1 ;
     brick:hasPoint bs:Electric_Power_Sensor_version_1 .
 
+bs:Literal_version_1 a rdfs:Literal .
+
 bs:Electric_Power_Sensor_version_1 a brick:Electric_Power_Sensor ;
     ref:hasExternalReference bs:Resource_version_1,
         bs:TimeseriesReference_version_1 .
-
-bs:Literal_version_1 a rdfs:Literal .
 
 bs:TimeseriesReference_version_1 a ref:TimeseriesReference ;
     ref:hasTimeseriesId bs:Literal_version_1 ;
     ref:onTable bs:Literal_version_1 ;
     ref:storedAt bs:Literal_version_1 .
 
-bs:Resource_version_1 ref:hasTimeseriesId bs:Literal_version_1 .
+bs:Resource_version_1 ref:hasTimeseriesId bs:Literal_version_2 .
 

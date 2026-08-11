@@ -139,11 +139,13 @@ bs:Filter_version_1 a s223:Filter,
 bs:InletConnectionPoint_version_4 a s223:InletConnectionPoint ;
     s223:cnx bs:Connection_version_2 .
 
+bs:Literal_version_2 a rdfs:Literal .
+
 bs:OutletConnectionPoint_version_4 a s223:OutletConnectionPoint ;
     s223:cnx bs:Connection_version_2 .
 
 bs:Port_version_1 a bacnet:Port ;
-    bacnet:storedAt bs:Literal_version_1 .
+    bacnet:storedAt bs:Literal_version_2 .
 
 bs:Resource_version_2 s223:hasProperty bs:Property_version_1,
         bs:QuantifiableActuatableProperty_version_1,
@@ -283,6 +285,8 @@ bs:Junction_version_1 a s223:Junction ;
         bs:OutletConnectionPoint_version_1,
         bs:OutletConnectionPoint_version_2 .
 
+bs:Literal_version_1 a rdfs:Literal .
+
 bs:Valve_version_3 a s223:Valve,
         <http://data.ashrae.org/standard223/1.0/extensions/g36#HotWaterValve> ;
     s223:cnx bs:InletConnectionPoint_version_2,
@@ -306,8 +310,6 @@ bs:BACnetExternalReference_version_1 a s223:BACnetExternalReference ;
     bacnet:object-identifier bs:Literal_version_1 ;
     bacnet:object-name bs:Literal_version_1 ;
     bacnet:object-type bs:Literal_version_1 .
-
-bs:Literal_version_1 a rdfs:Literal .
 
 bs:QuantifiableActuatableProperty_version_2 a s223:QuantifiableActuatableProperty,
         s223:QuantifiableObservableProperty ;

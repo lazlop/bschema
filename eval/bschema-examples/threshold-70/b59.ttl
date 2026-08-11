@@ -41,9 +41,9 @@
     (ns1:RTU_1.outsideAirInlet00176 ns1:RTU_2.outsideAirInlet00335) .
 (ns1:RTU_100174 ns1:RTU_200333) s223:hasProperty
     (ns1:bypass_damper_percentage_position00269 ns1:bypass_damper_percentage_position00428) ,
-    (ns1:aru_cws_fr_gpm.Flow00031 ns1:aru_hws_fr_gpm.Flow00033) ,
-    (ns1:aru_cwr_temp.Temperature00025 ns1:aru_cws_temp.Temperature00023) ,
+    (ns1:return_air_flow00245 ns1:return_air_flow00404) ,
     (ns1:hwgp1_kw00039 ns1:hwgp2_kw00040) ,
+    (ns1:condenser_water_return_temperature00271 ns1:condenser_water_return_temperature00430) ,
     (ns1:static_pressure_setpoint00248 ns1:static_pressure_setpoint00407) ,
     (ns1:rtu_supply_fan_speed_setpoint_carbon00251 ns1:rtu_supply_fan_speed_setpoint_carbon00410) ,
     (ns1:rtu_supply_air_temperature_setpoint_carbon00254 ns1:rtu_supply_air_temperature_setpoint_carbon00413) ,
@@ -359,8 +359,8 @@
 (ns1:cwc00201 ns1:cwc00360) a
     ns1:DXCoil ,
     s223:CoolingCoil .
-(ns1:cwc00201 ns1:cwc00360) rdfs:comment ("cwc" "dx_coil") .
-(ns1:cwc00201 ns1:cwc00360) rdfs:label ("cwc" "dx_coil") .
+(ns1:cwc00201 ns1:cwc00360) rdfs:comment ("dx_coil") .
+(ns1:cwc00201 ns1:cwc00360) rdfs:label ("cwc") .
 (ns1:bp_damper00198 ns1:bp_damper00357) s223:cnx
     (ns1:bp_damper.airOutlet00200 ns1:bp_damper.airOutlet00359) ,
     (ns1:bp_damper.airInlet00199 ns1:bp_damper.airInlet00358) .
@@ -387,8 +387,8 @@
 (ns1:bp_damper00198 ns1:bp_damper00357) a
     ns1:RTUDamper ,
     s223:Damper .
-(ns1:bp_damper00198 ns1:bp_damper00357) rdfs:comment ("bp_damper" "bypass_damper") .
-(ns1:bp_damper00198 ns1:bp_damper00357) rdfs:label ("bp_damper" "bypass_damper") .
+(ns1:bp_damper00198 ns1:bp_damper00357) rdfs:comment ("bypass_damper" "mixed_air_damper") .
+(ns1:bp_damper00198 ns1:bp_damper00357) rdfs:label ("bp_damper" "mixed_air_damper") .
 (ns1:ea_damper00188 ns1:ea_damper00347) s223:cnx
     (ns1:ea_damper.airOutlet00190 ns1:ea_damper.airOutlet00349) ,
     (ns1:ea_damper.airInlet00189 ns1:ea_damper.airInlet00348) .
@@ -406,8 +406,8 @@
 (ns1:ea_damper00188 ns1:ea_damper00347) a
     ns1:RTUDamper ,
     s223:Damper .
-(ns1:ea_damper00188 ns1:ea_damper00347) rdfs:comment ("ea_damper" "exhaust_air_damper") .
-(ns1:ea_damper00188 ns1:ea_damper00347) rdfs:label ("ea_damper" "exhaust_air_damper") .
+(ns1:ea_damper00188 ns1:ea_damper00347) rdfs:comment ("exhaust_air_damper") .
+(ns1:ea_damper00188 ns1:ea_damper00347) rdfs:label ("ea_damper") .
 (ns1:iso_damper00219 ns1:iso_damper00378) s223:cnx
     (ns1:iso_damper.airOutlet00221 ns1:iso_damper.airOutlet00380) ,
     (ns1:iso_damper.airInlet00220 ns1:iso_damper.airInlet00379) .
@@ -563,14 +563,94 @@
     s223:WatertoWaterHeatPump ,
     s223:Equipment .
 (ns1:B59_HeatPump00017) rdfs:label ("B59_HeatPump") .
+(ns1:00963 ns1:01031) a
+    ns2:APIReference ,
+    s223:ExternalReference .
+(ns1:00963 ns1:01031) rdfs:label ("00963" "01031") .
+(ns1:00963 ns1:01031) ns2:endpoint ("#lbnl_59-bl-016/fan_spd" "#lbnl_59-bl-017/fan_spd") .
+(ns1:00963 ns1:01031) ns2:mpc_db_name ("zone_016_fan_spd" "zone_017_fan_spd") .
+(ns1:00963 ns1:01031) ns2:source ("ALC SOAP API") .
+(ns1:00963 ns1:01031) ns2:writable ("False") .
+(ns1:01319 ns1:01745) a
+    ns2:APIReference ,
+    s223:ExternalReference .
+(ns1:01319 ns1:01745) rdfs:label ("01319" "01745") .
+(ns1:01319 ns1:01745) ns2:endpoint ("#lbnl_59-bl-022/zone_co2" "#lbnl_59-bl-028/zone_co2") .
+(ns1:01319 ns1:01745) ns2:mpc_db_name ("zone_022_co2" "zone_028_co2") .
+(ns1:01319 ns1:01745) ns2:source ("ALC SOAP API") .
+(ns1:01319 ns1:01745) ns2:writable ("False") .
 (ns1:00001 ns1:00002) a
     ns2:APIReference ,
     s223:ExternalReference .
-(ns1:00001 ns1:00002) rdfs:label ("#crtf_59-aru-001/cw_fm" "#crtf_59-aru-001/cwr") .
-(ns1:00001 ns1:00002) ns2:endpoint ("#crtf_59-aru-001/cw_fm" "#crtf_59-aru-001/cwr") .
-(ns1:00001 ns1:00002) ns2:mpc_db_name ("#crtf_59-aru-001/cw_fm" "#crtf_59-aru-001/cwr") .
-(ns1:00001 ns1:00002) ns2:source ("#crtf_59-aru-001/cw_fm" "#crtf_59-aru-001/cwr") .
-(ns1:00001 ns1:00002) ns2:writable ("#crtf_59-aru-001/cw_fm" "#crtf_59-aru-001/cwr") .
+(ns1:00001 ns1:00002) rdfs:label ("00001" "00002") .
+(ns1:00001 ns1:00002) ns2:endpoint ("#crtf_59-aru-001/cwr" "#crtf_59-aru-001/cws") .
+(ns1:00001 ns1:00002) ns2:mpc_db_name ("59-BL-024c" "59-BL-025c") .
+(ns1:00001 ns1:00002) ns2:source ("ALC SOAP API" "MPC DB") .
+(ns1:00001 ns1:00002) ns2:writable ("False" "True") .
+(ns1:00005 ns1:00006) a
+    ns2:APIReference ,
+    s223:ExternalReference .
+(ns1:00005 ns1:00006) rdfs:label ("00005" "00006") .
+(ns1:00005 ns1:00006) ns2:endpoint ("#crtf_59-aru-001/cw_fm" "#crtf_59-aru-001/hw_fm") .
+(ns1:00005 ns1:00006) ns2:mpc_db_name ("aru_001/cws_fr_gpm" "aru_001/hws_fr_gpm") .
+(ns1:00005 ns1:00006) ns2:source ("ALC SOAP API") .
+(ns1:00005 ns1:00006) ns2:writable ("False") .
+(ns1:00007) a
+    ns2:APIReference ,
+    s223:ExternalReference .
+(ns1:00007) rdfs:label ("00007") .
+(ns1:00007) ns2:endpoint ("#crtf_59-aru-001/hw_mbtu_hr_tn") .
+(ns1:00007) ns2:mpc_db_name ("aru_001/power_mbtuph") .
+(ns1:00007) ns2:source ("ALC SOAP API") .
+(ns1:00007) ns2:writable ("False") .
+(ns1:00011 ns1:00012) a
+    ns2:APIReference ,
+    s223:ExternalReference .
+(ns1:00011 ns1:00012) rdfs:label ("00011" "00012") .
+(ns1:00011 ns1:00012) ns2:endpoint ("#hp-1/hwgp1_kw" "#hp-1/hwgp2_kw") .
+(ns1:00011 ns1:00012) ns2:mpc_db_name ("hp_hwgp1_kw" "hp_hwgp2_kw") .
+(ns1:00011 ns1:00012) ns2:source ("ALC SOAP API") .
+(ns1:00011 ns1:00012) ns2:writable ("False") .
+(ns1:00127 ns1:00287) a
+    ns2:APIReference ,
+    s223:ExternalReference .
+(ns1:00127 ns1:00287) rdfs:label ("00127" "00287") .
+(ns1:00127 ns1:00287) ns2:endpoint ("#lbnl_59-ac-001/oadmpr_pct" "#lbnl_59-ac-002/oadmpr_pct") .
+(ns1:00127 ns1:00287) ns2:mpc_db_name ("rtu_001_oadmpr_pct" "rtu_002_oadmpr_pct") .
+(ns1:00127 ns1:00287) ns2:source ("ALC SOAP API") .
+(ns1:00127 ns1:00287) ns2:writable ("False") .
+(ns1:00137 ns1:00138) a
+    ns2:APIReference ,
+    s223:ExternalReference .
+(ns1:00137 ns1:00138) rdfs:label ("00137" "00138") .
+(ns1:00137 ns1:00138) ns2:endpoint ("#lbnl_59-ac-001/fltrd_gnd_lvl_plenum_press_tn" "#lbnl_59-ac-001/fltrd_lvl2_plenum_press_tn") .
+(ns1:00137 ns1:00138) ns2:mpc_db_name ("rtu_001_fltrd_gnd_lvl_plenum_press_tn" "rtu_001_fltrd_lvl2_plenum_press_tn") .
+(ns1:00137 ns1:00138) ns2:source ("ALC SOAP API") .
+(ns1:00137 ns1:00138) ns2:writable ("False") .
+(ns1:00139 ns1:00147) a
+    ns2:APIReference ,
+    s223:ExternalReference .
+(ns1:00139 ns1:00147) rdfs:label ("00139" "00147") .
+(ns1:00139 ns1:00147) ns2:endpoint ("#lbnl_59-ac-001/sat_sp_tn" "#lbnl_59-ac-002/sat_sp_tn") .
+(ns1:00139 ns1:00147) ns2:mpc_db_name ("optset_1_T_sa_carbon" "optset_1_T_sa_cost") .
+(ns1:00139 ns1:00147) ns2:source ("ALC SOAP API") .
+(ns1:00139 ns1:00147) ns2:writable ("False" "True") .
+(ns1:00142 ns1:00302) a
+    ns2:APIReference ,
+    s223:ExternalReference .
+(ns1:00142 ns1:00302) rdfs:label ("00142" "00302") .
+(ns1:00142 ns1:00302) ns2:endpoint ("#lbnl_59-ac-001/econ_stpt_tn" "#lbnl_59-ac-002/econ_stpt_tn") .
+(ns1:00142 ns1:00302) ns2:mpc_db_name ("rtu_001_econ_stpt_tn" "rtu_002_econ_stpt_tn") .
+(ns1:00142 ns1:00302) ns2:source ("ALC SOAP API") .
+(ns1:00142 ns1:00302) ns2:writable ("False") .
+(ns1:00143 ns1:00303) a
+    ns2:APIReference ,
+    s223:ExternalReference .
+(ns1:00143 ns1:00303) rdfs:label ("00143" "00303") .
+(ns1:00143 ns1:00303) ns2:endpoint ("#lbnl_59-ac-001/pa_static_stpt_tn" "#lbnl_59-ac-002/pa_static_stpt_tn") .
+(ns1:00143 ns1:00303) ns2:mpc_db_name ("rtu_001_pa_static_stpt_tn" "rtu_002_pa_static_stpt_tn") .
+(ns1:00143 ns1:00303) ns2:source ("ALC SOAP API") .
+(ns1:00143 ns1:00303) ns2:writable ("False") .
 (ns1:G-1003379 ns1:G-102740) s223:cnx
     (ns1:G-1.waterOutlet02744 ns1:G-10.waterOutlet03383) ,
     (ns1:G-1.airOutlet02742 ns1:G-10.airOutlet03381) ,
@@ -1404,15 +1484,15 @@
     s223:QuantifiableActuatableProperty .
 (ns1:0092000920 ns1:0098800988) rdfs:label ("00920" "00988") .
 (ns1:economizer_setpoint00247 ns1:economizer_setpoint00406) s223:hasAspect s223:Aspect-Setpoint .
-(ns1:economizer_setpoint00247 ns1:economizer_setpoint00406) s223:hasExternalReference (ns1:00001 ns1:00002) .
+(ns1:economizer_setpoint00247 ns1:economizer_setpoint00406) s223:hasExternalReference (ns1:00142 ns1:00302) .
 (ns1:economizer_setpoint00247 ns1:economizer_setpoint00406) qudt:hasQuantityKind quantitykind:VolumeFlowRate .
 (ns1:economizer_setpoint00247 ns1:economizer_setpoint00406) qudt:hasUnit unit:FT3-PER-MIN .
 (ns1:economizer_setpoint00247 ns1:economizer_setpoint00406) a
     ns1:FlowSetpoint ,
     s223:QuantifiableActuatableProperty .
-(ns1:economizer_setpoint00247 ns1:economizer_setpoint00406) rdfs:comment ("Economizer Setpoint" "economizer_setpoint") .
-(ns1:economizer_setpoint00247 ns1:economizer_setpoint00406) rdfs:label ("Economizer Setpoint" "economizer_setpoint") .
-(ns1:positionCommand00194 ns1:positionCommand00353) s223:hasExternalReference (ns1:00001 ns1:00002) .
+(ns1:economizer_setpoint00247 ns1:economizer_setpoint00406) rdfs:comment ("Economizer Setpoint") .
+(ns1:economizer_setpoint00247 ns1:economizer_setpoint00406) rdfs:label ("economizer_setpoint") .
+(ns1:positionCommand00194 ns1:positionCommand00353) s223:hasExternalReference (ns1:00127 ns1:00287) .
 (ns1:positionCommand00194 ns1:positionCommand00353) qudt:hasQuantityKind quantitykind:DimensionlessRatio .
 (ns1:positionCommand00194 ns1:positionCommand00353) qudt:hasUnit unit:PERCENT .
 (ns1:positionCommand00194 ns1:positionCommand00353) a
@@ -1424,14 +1504,14 @@
     s223:Role-Heating ,
     s223:Role-Cooling ,
     s223:Aspect-Setpoint .
-(ns1:rtu_supply_air_temperature_setpoint_carbon00254 ns1:rtu_supply_air_temperature_setpoint_carbon00413) s223:hasExternalReference (ns1:00001 ns1:00002) .
+(ns1:rtu_supply_air_temperature_setpoint_carbon00254 ns1:rtu_supply_air_temperature_setpoint_carbon00413) s223:hasExternalReference (ns1:00139 ns1:00147) .
 (ns1:rtu_supply_air_temperature_setpoint_carbon00254 ns1:rtu_supply_air_temperature_setpoint_carbon00413) qudt:hasQuantityKind quantitykind:Temperature .
 (ns1:rtu_supply_air_temperature_setpoint_carbon00254 ns1:rtu_supply_air_temperature_setpoint_carbon00413) qudt:hasUnit unit:DEG_F .
 (ns1:rtu_supply_air_temperature_setpoint_carbon00254 ns1:rtu_supply_air_temperature_setpoint_carbon00413) a
     bob:TemperatureSetpoint ,
     s223:QuantifiableActuatableProperty .
 (ns1:rtu_supply_air_temperature_setpoint_carbon00254 ns1:rtu_supply_air_temperature_setpoint_carbon00413) rdfs:comment ("Supply Air Temperature Setpoint" "rtu supply air temperature setpoint carbon") .
-(ns1:rtu_supply_air_temperature_setpoint_carbon00254 ns1:rtu_supply_air_temperature_setpoint_carbon00413) rdfs:label ("Supply Air Temperature Setpoint" "rtu supply air temperature setpoint carbon") .
+(ns1:rtu_supply_air_temperature_setpoint_carbon00254 ns1:rtu_supply_air_temperature_setpoint_carbon00413) rdfs:label ("rtu_supply_air_temperature_setpoint_carbon" "rtu_supply_air_temperature_setpoint_cost") .
 (ns1:rtu_supply_fan_speed_setpoint_carbon00251 ns1:rtu_supply_fan_speed_setpoint_carbon00410) s223:hasAspect s223:Aspect-Setpoint .
 (ns1:rtu_supply_fan_speed_setpoint_carbon00251 ns1:rtu_supply_fan_speed_setpoint_carbon00410) s223:hasExternalReference (ns1:00001 ns1:00002) .
 (ns1:rtu_supply_fan_speed_setpoint_carbon00251 ns1:rtu_supply_fan_speed_setpoint_carbon00410) qudt:hasUnit
@@ -1451,7 +1531,7 @@
 (ns1:speed_perc00218 ns1:speed_perc00377) a s223:QuantifiableActuatableProperty .
 (ns1:speed_perc00218 ns1:speed_perc00377) rdfs:label ("speed_perc") .
 (ns1:static_pressure_setpoint00248 ns1:static_pressure_setpoint00407) s223:hasAspect s223:Aspect-Setpoint .
-(ns1:static_pressure_setpoint00248 ns1:static_pressure_setpoint00407) s223:hasExternalReference (ns1:00001 ns1:00002) .
+(ns1:static_pressure_setpoint00248 ns1:static_pressure_setpoint00407) s223:hasExternalReference (ns1:00143 ns1:00303) .
 (ns1:static_pressure_setpoint00248 ns1:static_pressure_setpoint00407) qudt:hasQuantityKind quantitykind:ForcePerArea .
 (ns1:static_pressure_setpoint00248 ns1:static_pressure_setpoint00407) qudt:hasUnit unit:PSI .
 (ns1:static_pressure_setpoint00248 ns1:static_pressure_setpoint00407) a
@@ -1459,6 +1539,14 @@
     s223:QuantifiableActuatableProperty .
 (ns1:static_pressure_setpoint00248 ns1:static_pressure_setpoint00407) rdfs:comment ("Static Pressure Setpoint") .
 (ns1:static_pressure_setpoint00248 ns1:static_pressure_setpoint00407) rdfs:label ("static_pressure_setpoint") .
+(ns1:condenser_water_return_temperature00271 ns1:condenser_water_return_temperature00430) s223:hasExternalReference (ns1:00001 ns1:00002) .
+(ns1:condenser_water_return_temperature00271 ns1:condenser_water_return_temperature00430) qudt:hasQuantityKind quantitykind:Temperature .
+(ns1:condenser_water_return_temperature00271 ns1:condenser_water_return_temperature00430) qudt:hasUnit unit:DEG_F .
+(ns1:condenser_water_return_temperature00271 ns1:condenser_water_return_temperature00430) a
+    bob:Temperature ,
+    s223:QuantifiableObservableProperty .
+(ns1:condenser_water_return_temperature00271 ns1:condenser_water_return_temperature00430) rdfs:comment ("condenser water return temperature" "condenser water supply temperature") .
+(ns1:condenser_water_return_temperature00271 ns1:condenser_water_return_temperature00430) rdfs:label ("condenser_water_return_temperature" "condenser_water_supply_temperature") .
 (ns1:cwc.r_in_temp.Temperature00207 ns1:cwc.r_in_temp.Temperature00209) s223:ofMedium rdfs:Resource .
 (ns1:cwc.r_in_temp.Temperature00207 ns1:cwc.r_in_temp.Temperature00209) qudt:hasQuantityKind quantitykind:Temperature .
 (ns1:cwc.r_in_temp.Temperature00207 ns1:cwc.r_in_temp.Temperature00209) qudt:hasUnit unit:DEG_F .
@@ -1473,7 +1561,7 @@
     bob:DifferentialStaticPressure ,
     s223:QuantifiableObservableProperty .
 (ns1:ff_press.DifferentialStaticPressure00233 ns1:ff_press.DifferentialStaticPressure00392) rdfs:label ("ff_press.DifferentialStaticPressure" "pf_press.DifferentialStaticPressure") .
-(ns1:hwgp1_kw00039 ns1:hwgp2_kw00040) s223:hasExternalReference (ns1:00001 ns1:00002) .
+(ns1:hwgp1_kw00039 ns1:hwgp2_kw00040) s223:hasExternalReference (ns1:00011 ns1:00012) .
 (ns1:hwgp1_kw00039 ns1:hwgp2_kw00040) qudt:hasQuantityKind quantitykind:ElectricPower .
 (ns1:hwgp1_kw00039 ns1:hwgp2_kw00040) qudt:hasUnit unit:KiloW .
 (ns1:hwgp1_kw00039 ns1:hwgp2_kw00040) a
@@ -1489,7 +1577,7 @@
     bob:Temperature ,
     s223:QuantifiableObservableProperty .
 (ns1:hwr_temp00038 ns1:hws_temp00037) rdfs:comment ("Heat pump heat water return temperature" "Heat pump heating water supply temperature") .
-(ns1:hwr_temp00038 ns1:hws_temp00037) rdfs:label ("Heat pump heat water return temperature" "Heat pump heating water supply temperature") .
+(ns1:hwr_temp00038 ns1:hws_temp00037) rdfs:label ("hwr_temp" "hws_temp") .
 (ns1:ma_temp.Temperature00223 ns1:ma_temp.Temperature00382) s223:hasExternalReference (ns1:00001 ns1:00002) .
 (ns1:ma_temp.Temperature00223 ns1:ma_temp.Temperature00382) s223:ofMedium rdfs:Resource .
 (ns1:ma_temp.Temperature00223 ns1:ma_temp.Temperature00382) qudt:hasQuantityKind quantitykind:Temperature .
@@ -1498,7 +1586,7 @@
     bob:Temperature ,
     s223:QuantifiableObservableProperty .
 (ns1:ma_temp.Temperature00223 ns1:ma_temp.Temperature00382) rdfs:label ("ma_temp.Temperature" "oa_temp.Temperature") .
-(ns1:oa_flow_station.Flow00229 ns1:oa_flow_station.Flow00388) s223:hasExternalReference (ns1:00001 ns1:00002) .
+(ns1:oa_flow_station.Flow00229 ns1:oa_flow_station.Flow00388) s223:hasExternalReference (ns1:00005 ns1:00006) .
 (ns1:oa_flow_station.Flow00229 ns1:oa_flow_station.Flow00388) s223:ofMedium rdfs:Resource .
 (ns1:oa_flow_station.Flow00229 ns1:oa_flow_station.Flow00388) qudt:hasQuantityKind quantitykind:VolumeFlowRate .
 (ns1:oa_flow_station.Flow00229 ns1:oa_flow_station.Flow00388) qudt:hasUnit unit:FT3-PER-MIN .
@@ -1519,6 +1607,20 @@
     bob:DifferentialStaticPressure ,
     s223:QuantifiableObservableProperty .
 (ns1:ra_pres.DifferentialStaticPressure00227 ns1:ra_pres.DifferentialStaticPressure00386) rdfs:label ("ra_pres.DifferentialStaticPressure") .
+(ns1:return_air_flow00245 ns1:return_air_flow00404) s223:hasExternalReference (ns1:00005 ns1:00006) .
+(ns1:return_air_flow00245 ns1:return_air_flow00404) qudt:hasQuantityKind quantitykind:VolumeFlowRate .
+(ns1:return_air_flow00245 ns1:return_air_flow00404) qudt:hasUnit unit:FT3-PER-MIN .
+(ns1:return_air_flow00245 ns1:return_air_flow00404) a
+    bob:Flow ,
+    s223:QuantifiableObservableProperty .
+(ns1:return_air_flow00245 ns1:return_air_flow00404) rdfs:comment ("Return Air Flow" "Supply Air Flow") .
+(ns1:return_air_flow00245 ns1:return_air_flow00404) rdfs:label ("return_air_flow" "supply_air_flow") .
+(ns1:0092100921 ns1:0098900989) qudt:hasQuantityKind quantitykind:DimensionlessRatio .
+(ns1:0092100921 ns1:0098900989) qudt:hasUnit unit:PERCENT .
+(ns1:0092100921 ns1:0098900989) a
+    bob:Percent ,
+    s223:QuantifiableObservableProperty .
+(ns1:0092100921 ns1:0098900989) rdfs:label ("00921" "00989") .
 (ns1:sa_press.DifferentialStaticPressure00235 ns1:sa_press.DifferentialStaticPressure00394) s223:ofMedium rdfs:Resource .
 (ns1:sa_press.DifferentialStaticPressure00235 ns1:sa_press.DifferentialStaticPressure00394) qudt:hasQuantityKind quantitykind:ForcePerArea .
 (ns1:sa_press.DifferentialStaticPressure00235 ns1:sa_press.DifferentialStaticPressure00394) qudt:hasUnit unit:PA .
@@ -1532,20 +1634,14 @@
     ns1:Pressure ,
     s223:QuantifiableObservableProperty .
 (ns1:staticPressure00936 ns1:staticPressure01004) rdfs:label ("staticPressure") .
-(ns1:0092100921 ns1:0098900989) qudt:hasQuantityKind quantitykind:DimensionlessRatio .
-(ns1:0092100921 ns1:0098900989) qudt:hasUnit unit:PERCENT .
-(ns1:0092100921 ns1:0098900989) a
-    bob:Percent ,
-    s223:QuantifiableObservableProperty .
-(ns1:0092100921 ns1:0098900989) rdfs:label ("00921" "00989") .
-(ns1:zone_co201320 ns1:zone_co201746) s223:hasExternalReference (ns1:00001 ns1:00002) .
+(ns1:zone_co201320 ns1:zone_co201746) s223:hasExternalReference (ns1:01319 ns1:01745) .
 (ns1:zone_co201320 ns1:zone_co201746) qudt:hasQuantityKind quantitykind:MoleFraction .
 (ns1:zone_co201320 ns1:zone_co201746) qudt:hasUnit unit:PPM .
 (ns1:zone_co201320 ns1:zone_co201746) a
     ns1:CO2Concentration ,
     s223:QuantifiableObservableProperty .
 (ns1:zone_co201320 ns1:zone_co201746) rdfs:label ("zone_co2") .
-(ns1:zone_fan_speed00964 ns1:zone_fan_speed01032) s223:hasExternalReference (ns1:00001 ns1:00002) .
+(ns1:zone_fan_speed00964 ns1:zone_fan_speed01032) s223:hasExternalReference (ns1:00963 ns1:01031) .
 (ns1:zone_fan_speed00964 ns1:zone_fan_speed01032) qudt:hasQuantityKind quantitykind:AngularVelocity .
 (ns1:zone_fan_speed00964 ns1:zone_fan_speed01032) qudt:hasUnit unit:REV-PER-MIN .
 (ns1:zone_fan_speed00964 ns1:zone_fan_speed01032) a
@@ -1570,8 +1666,8 @@
 (ns1:AIRFLOW_PER_UFT_CFM00939 ns1:AIRFLOW_PER_UFT_CFM01007) a
     bob:Flow ,
     s223:QuantifiableObservableProperty .
-(ns1:AIRFLOW_PER_UFT_CFM00939 ns1:AIRFLOW_PER_UFT_CFM01007) rdfs:label ("0.2"^^xsd:decimal "0.3"^^xsd:decimal) .
-(ns1:Floor_3.RTU_1.Plenum.press_sens.DifferentialStaticPressure00766 ns1:Floor_3.RTU_2.Plenum.press_sens.DifferentialStaticPressure00773) s223:hasExternalReference (ns1:00001 ns1:00002) .
+(ns1:AIRFLOW_PER_UFT_CFM00939 ns1:AIRFLOW_PER_UFT_CFM01007) rdfs:label ("AIRFLOW PER UFT (CFM)" "TURN DOWN AIRFLOW PER UFT (CFM)") .
+(ns1:Floor_3.RTU_1.Plenum.press_sens.DifferentialStaticPressure00766 ns1:Floor_3.RTU_2.Plenum.press_sens.DifferentialStaticPressure00773) s223:hasExternalReference (ns1:00137 ns1:00138) .
 (ns1:Floor_3.RTU_1.Plenum.press_sens.DifferentialStaticPressure00766 ns1:Floor_3.RTU_2.Plenum.press_sens.DifferentialStaticPressure00773) s223:ofMedium rdfs:Resource .
 (ns1:Floor_3.RTU_1.Plenum.press_sens.DifferentialStaticPressure00766 ns1:Floor_3.RTU_2.Plenum.press_sens.DifferentialStaticPressure00773) qudt:hasQuantityKind quantitykind:ForcePerArea .
 (ns1:Floor_3.RTU_1.Plenum.press_sens.DifferentialStaticPressure00766 ns1:Floor_3.RTU_2.Plenum.press_sens.DifferentialStaticPressure00773) qudt:hasUnit
@@ -1596,18 +1692,16 @@
 (ns1:aru_cwr_temp.Temperature00025 ns1:aru_cws_temp.Temperature00023) a
     bob:Temperature ,
     s223:QuantifiableObservableProperty .
-(ns1:aru_cwr_temp.Temperature00025 ns1:aru_cws_temp.Temperature00023) rdfs:comment ("aru_cwr_temp.Temperature" "aru_cws_temp.Temperature") .
 (ns1:aru_cwr_temp.Temperature00025 ns1:aru_cws_temp.Temperature00023) rdfs:label ("aru_cwr_temp.Temperature" "aru_cws_temp.Temperature") .
-(ns1:aru_cws_fr_gpm.Flow00031 ns1:aru_hws_fr_gpm.Flow00033) s223:hasExternalReference (ns1:00001 ns1:00002) .
+(ns1:aru_cws_fr_gpm.Flow00031 ns1:aru_hws_fr_gpm.Flow00033) s223:hasExternalReference (ns1:00005 ns1:00006) .
 (ns1:aru_cws_fr_gpm.Flow00031 ns1:aru_hws_fr_gpm.Flow00033) s223:ofMedium rdfs:Resource .
 (ns1:aru_cws_fr_gpm.Flow00031 ns1:aru_hws_fr_gpm.Flow00033) qudt:hasQuantityKind quantitykind:VolumeFlowRate .
 (ns1:aru_cws_fr_gpm.Flow00031 ns1:aru_hws_fr_gpm.Flow00033) qudt:hasUnit unit:FT3-PER-MIN .
 (ns1:aru_cws_fr_gpm.Flow00031 ns1:aru_hws_fr_gpm.Flow00033) a
     bob:Flow ,
     s223:QuantifiableObservableProperty .
-(ns1:aru_cws_fr_gpm.Flow00031 ns1:aru_hws_fr_gpm.Flow00033) rdfs:comment ("Return Air Flow" "Supply Air Flow") .
-(ns1:aru_cws_fr_gpm.Flow00031 ns1:aru_hws_fr_gpm.Flow00033) rdfs:label ("Return Air Flow" "Supply Air Flow") .
-(ns1:aru_power_mbutph.HeatFlowRate00035) s223:hasExternalReference (ns1:00001 ns1:00002) .
+(ns1:aru_cws_fr_gpm.Flow00031 ns1:aru_hws_fr_gpm.Flow00033) rdfs:label ("aru_cws_fr_gpm.Flow" "aru_hws_fr_gpm.Flow") .
+(ns1:aru_power_mbutph.HeatFlowRate00035) s223:hasExternalReference (ns1:00007) .
 (ns1:aru_power_mbutph.HeatFlowRate00035) qudt:hasQuantityKind quantitykind:HeatFlowRate .
 (ns1:aru_power_mbutph.HeatFlowRate00035) qudt:hasUnit unit:BTU_PER_HOUR .
 (ns1:aru_power_mbutph.HeatFlowRate00035) a
@@ -1638,8 +1732,8 @@
 (ns1:aru_power_mbutph00034) a
     ns1:HeatFlowSensor ,
     s223:Sensor .
-(ns1:aru_power_mbutph00034) rdfs:comment ("Heat meter for air source heat pump" "aru_power_mbutph") .
-(ns1:aru_power_mbutph00034) rdfs:label ("Heat meter for air source heat pump" "aru_power_mbutph") .
+(ns1:aru_power_mbutph00034) rdfs:comment ("Heat meter for air source heat pump") .
+(ns1:aru_power_mbutph00034) rdfs:label ("aru_power_mbutph") .
 (ns1:oa_flow_station00228 ns1:oa_flow_station00387) s223:hasObservationLocation (ns1:bp_damper.airOutlet00200 ns1:bp_damper.airOutlet00359) .
 (ns1:oa_flow_station00228 ns1:oa_flow_station00387) s223:observes (ns1:oa_flow_station.Flow00229 ns1:oa_flow_station.Flow00388) .
 (ns1:oa_flow_station00228 ns1:oa_flow_station00387) a s223:Sensor .
@@ -1671,7 +1765,7 @@
 (ns1:aru_cwr_temp00024 ns1:aru_cws_temp00022) a
     bob:WaterTemperatureSensor ,
     s223:TemperatureSensor .
-(ns1:aru_cwr_temp00024 ns1:aru_cws_temp00022) rdfs:comment ("aru_cwr_temp" "aru_cws_temp") .
+(ns1:aru_cwr_temp00024 ns1:aru_cws_temp00022) rdfs:comment ("chilld water return temp" "chilld water supply temp") .
 (ns1:aru_cwr_temp00024 ns1:aru_cws_temp00022) rdfs:label ("aru_cwr_temp" "aru_cws_temp") .
 (ns1:cwc.r_in_temp00206 ns1:cwc.r_in_temp00208) s223:hasObservationLocation
     (ns1:cwc.refrigerantOutlet00205 ns1:cwc.refrigerantOutlet00364) ,
@@ -1690,7 +1784,7 @@
     bob:AirTemperatureSensor ,
     s223:TemperatureSensor .
 (ns1:ma_temp00222 ns1:ma_temp00381) rdfs:comment ("MA_temp_sensor" "RA_temp_sensor") .
-(ns1:ma_temp00222 ns1:ma_temp00381) rdfs:label ("MA_temp_sensor" "RA_temp_sensor") .
+(ns1:ma_temp00222 ns1:ma_temp00381) rdfs:label ("ma_temp" "oa_temp") .
 (ns1:hw_valve00930 ns1:hw_valve00998) s223:cnx
     (ns1:hw_valve.waterOutlet00932 ns1:hw_valve.waterOutlet01000) ,
     (ns1:hw_valve.waterInlet00931 ns1:hw_valve.waterInlet00999) .

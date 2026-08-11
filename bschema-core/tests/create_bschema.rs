@@ -191,3 +191,40 @@ fn threshold_zero_member_graph_is_keyed_consistently_with_class_graph() {
     }
     assert!(checked_any, "test setup: expected at least one bs: class in class_graph");
 }
+
+const TTL_WITH_UNRELATED_LITERALS: &str = r#"
+    @prefix ex: <urn:example#> .
+    @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+    ex:sensorA a ex:Sensor ; ex:hasReading "22.5"^^xsd:float .
+    ex:buildingA a ex:Building ; ex:hasName "MainBuilding" .
+"#;
+
+#[test]
+fn literals_reached_via_different_predicates_do_not_merge_at_low_threshold() {
+    // Regression test for the literal-topology over-merging bug: the
+    // synthetic `<literal-skolem> a rdfs:Literal` marker is identical for
+    // every literal, so before it was excluded from the similarity ratio,
+    // these two totally unrelated literals - different predicate,
+    // different subject type, nothing else in common - would share that
+    // one trivial triple out of three total, giving a 0.33 overlap ratio:
+    // enough to merge at threshold=0.3 despite having no real similarity.
+    let data_graph = RdfGraph::parse_str(TTL_WITH_UNRELATED_LITERALS, RdfFormat::Turtle).unwrap();
+    let result = create_bschema(&data_graph, 10, Some(0.3), true, true).unwrap();
+
+    let member_triples = result.member_graph.triples();
+    let reading_class = member_triples
+        .iter()
+        .find(|t| matches!(&t.object, Term::Literal(l) if l.value() == "22.5"))
+        .map(|t| t.subject.clone());
+    let name_class = member_triples
+        .iter()
+        .find(|t| matches!(&t.object, Term::Literal(l) if l.value() == "MainBuilding"))
+        .map(|t| t.subject.clone());
+
+    assert!(reading_class.is_some() && name_class.is_some(), "test setup: both literals should appear as members");
+    assert_ne!(
+        reading_class, name_class,
+        "unrelated literals reached via different predicates/subject types should not be merged into the same class"
+    );
+}
