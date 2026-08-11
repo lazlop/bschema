@@ -1,125 +1,154 @@
 @prefix ns1: <http://openmetrics.eu/openmetrics#> .
+@prefix quantitykind: <http://qudt.org/vocab/quantitykind/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix brick: <https://brickschema.org/schema/Brick#> .
 @prefix ref: <https://brickschema.org/schema/Brick/ref#> .
 @prefix saref: <https://saref.etsi.org/core#> .
 @prefix s4bldg: <https://saref.etsi.org/saref4bldg#> .
 @prefix s4ener: <https://saref.etsi.org/saref4ener#> .
-@prefix bs: <urn:bschema#> .
 
-bs:Building_version_1 a (ns1:Building_142) .
-bs:Building_version_1 brick:hasPart bs:Storey_version_1 .
-bs:Building_version_1 ref:hasExternalReference bs:IFCReference_version_1 .
-bs:Delay_Parameter_version_1 a (ns1:RC04N0041_Delay_Parameter ns1:RC04N0042_Delay_Parameter) .
-bs:Delay_Parameter_version_1 brick:isPointOf bs:Thermostat_version_1 .
-bs:Delay_Parameter_version_1 ref:hasExternalReference bs:Resource_version_1 .
-bs:Energy_version_1 a
+(ns1:Building_142) a brick:Building ;
+    brick:hasPart (ns1:BuildingStorey_157 ns1:BuildingStorey_161) ;
+    ref:hasExternalReference (ns1:ZoneRef_62124 ns1:ZoneRef_62229) .
+(ns1:RC04N0041_Delay_Parameter ns1:RC04N0042_Delay_Parameter) a brick:Delay_Parameter ;
+    brick:isPointOf (ns1:RC04N0041_Equipment ns1:RC04N0042_Equipment) ;
+    ref:hasExternalReference [
+        ref:hasTimeseriesId ("TUC.245.76.R0" "TUC.245.76.R100")
+    ] .
+(ns1:EnergyProperty) a
     saref:Property ,
-    (ns1:EnergyProperty) .
-bs:Humidity_version_1 a
+    quantitykind:Energy .
+(ns1:HumProperty) a
     saref:Property ,
-    (ns1:HumProperty) .
-bs:IFCReference_version_1 a (ns1:ZoneRef_62124 ns1:ZoneRef_62229) .
-bs:IFCReference_version_1 ref:ifcGlobalID bs:Literal_version_1 .
-bs:IFCReference_version_1 ref:ifcName bs:Literal_version_1 .
-bs:Lockout_Command_version_1 a (ns1:RC04N0041_Lockout_Command ns1:RC04N0042_Lockout_Command) .
-bs:Lockout_Command_version_1 brick:isPointOf bs:Thermostat_version_1 .
-bs:Lockout_Command_version_1 ref:hasExternalReference bs:Resource_version_1 .
-bs:Max_Air_Temperature_Setpoint_version_1 a (ns1:RC04N0041_TempSetpointMax ns1:RC04N0042_TempSetpointMax) .
-bs:Max_Air_Temperature_Setpoint_version_1 brick:isPointOf bs:Thermostat_version_1 .
-bs:Max_Air_Temperature_Setpoint_version_1 ref:hasExternalReference bs:Resource_version_1 .
-bs:Min_Air_Temperature_Setpoint_version_1 a (ns1:RC04N0041_TempSetpointMin ns1:RC04N0042_TempSetpointMin) .
-bs:Min_Air_Temperature_Setpoint_version_1 brick:isPointOf bs:Thermostat_version_1 .
-bs:Min_Air_Temperature_Setpoint_version_1 ref:hasExternalReference bs:Resource_version_1 .
-bs:Mode_Command_version_1 a (ns1:RC04N0042_Mode_Command ns1:RC04N0043_Mode_Command) .
-bs:Mode_Command_version_1 brick:isPointOf bs:Thermostat_version_1 .
-bs:Mode_Command_version_1 ref:hasExternalReference bs:Resource_version_1 .
-bs:Occupancy_Sensor_version_1 a
+    quantitykind:Humidity .
+(ns1:ZoneRef_62124 ns1:ZoneRef_62229) a ref:IFCReference ;
+    ref:ifcGlobalID ("06B2afrsv0uBHvTl5DaaCm" "0J5GGcHXH0CP8hbTp3jIv0") ;
+    ref:ifcName ("06B2afrsv0uBHvTl5DaaCm" "0J5GGcHXH0CP8hbTp3jIv0") .
+(ns1:RC04N0041_Lockout_Command ns1:RC04N0042_Lockout_Command) a brick:Lockout_Command ;
+    brick:isPointOf (ns1:RC04N0041_Equipment ns1:RC04N0042_Equipment) ;
+    ref:hasExternalReference [
+        ref:hasTimeseriesId ("TUC.245.76.R0" "TUC.245.76.R100")
+    ] .
+(ns1:RC04N0041_TempSetpointMax ns1:RC04N0042_TempSetpointMax) a brick:Max_Air_Temperature_Setpoint ;
+    brick:isPointOf (ns1:RC04N0041_Equipment ns1:RC04N0042_Equipment) ;
+    ref:hasExternalReference [
+        ref:hasTimeseriesId ("TUC.245.76.R0" "TUC.245.76.R100")
+    ] .
+(ns1:RC04N0041_TempSetpointMin ns1:RC04N0042_TempSetpointMin) a brick:Min_Air_Temperature_Setpoint ;
+    brick:isPointOf (ns1:RC04N0041_Equipment ns1:RC04N0042_Equipment) ;
+    ref:hasExternalReference [
+        ref:hasTimeseriesId ("TUC.245.76.R0" "TUC.245.76.R100")
+    ] .
+(ns1:RC04N0042_Mode_Command ns1:RC04N0043_Mode_Command) a brick:Mode_Command ;
+    brick:isPointOf (ns1:RC04N0041_Equipment ns1:RC04N0042_Equipment) ;
+    ref:hasExternalReference [
+        ref:hasTimeseriesId ("TUC.245.76.R0" "TUC.245.76.R100")
+    ] .
+(ns1:RC04N0041_OccSensingPoint ns1:RC04N0042_OccSensingPoint) a
     saref:Sensor ,
-    (ns1:RC04N0041_OccSensingPoint ns1:RC04N0042_OccSensingPoint) .
-bs:Occupancy_Sensor_version_1 brick:isPointOf bs:Thermostat_version_1 .
-bs:Occupancy_Sensor_version_1 ref:hasExternalReference bs:Resource_version_1 .
-bs:Occupancy_Sensor_version_1 saref:observes bs:Occupancy_version_1 .
-bs:Occupancy_version_1 a
+    brick:Occupancy_Sensor ;
+    brick:isPointOf (ns1:RC04N0041_Equipment ns1:RC04N0042_Equipment) ;
+    ref:hasExternalReference [
+        ref:hasTimeseriesId ("TUC.245.76.R0" "TUC.245.76.R100")
+    ] ;
+    saref:observes (ns1:OccProperty) .
+(ns1:OccProperty) a
     saref:Property ,
-    (ns1:OccProperty) .
-bs:On_Off_Command_version_1 a (ns1:RC04N0041_OnOffCommand ns1:RC04N0042_OnOffCommand) .
-bs:On_Off_Command_version_1 brick:isPointOf bs:Thermostat_version_1 .
-bs:On_Off_Command_version_1 ref:hasExternalReference bs:Resource_version_1 .
-bs:Power_version_1 a
+    quantitykind:Occupancy .
+(ns1:RC04N0041_OnOffCommand ns1:RC04N0042_OnOffCommand) a brick:On_Off_Command ;
+    brick:isPointOf (ns1:RC04N0041_Equipment ns1:RC04N0042_Equipment) ;
+    ref:hasExternalReference [
+        ref:hasTimeseriesId ("TUC.245.76.R0" "TUC.245.76.R100")
+    ] .
+(ns1:PowerProperty) a
     saref:Property ,
-    (ns1:PowerProperty) .
-bs:Pressure_version_1 a
+    quantitykind:Power .
+(ns1:PresProperty) a
     saref:Property ,
-    (ns1:PresProperty) .
-bs:Resource_version_1 ref:hasTimeseriesId bs:Literal_version_1 .
-bs:Resource_version_1 ref:ifcGlobalID bs:Literal_version_1 .
-bs:Resource_version_1 ref:ifcName bs:Literal_version_1 .
-bs:Run_Request_Command_version_1 a (ns1:RC04N0041_Run_Request_Command ns1:RC04N0042_Run_Request_Command) .
-bs:Run_Request_Command_version_1 brick:isPointOf bs:Thermostat_version_1 .
-bs:Run_Request_Command_version_1 ref:hasExternalReference bs:Resource_version_1 .
-bs:Site_version_1 a (ns1:Site_243) .
-bs:Site_version_1 brick:hasPart bs:Building_version_1 .
-bs:Site_version_1 ref:hasExternalReference bs:IFCReference_version_1 .
-bs:Space_version_1 a
+    quantitykind:Pressure .
+(ns1:RC04N0041_Run_Request_Command ns1:RC04N0042_Run_Request_Command) a brick:Run_Request_Command ;
+    brick:isPointOf (ns1:RC04N0041_Equipment ns1:RC04N0042_Equipment) ;
+    ref:hasExternalReference [
+        ref:hasTimeseriesId ("TUC.245.76.R0" "TUC.245.76.R100")
+    ] .
+(ns1:Site_243) a brick:Site ;
+    brick:hasPart (ns1:Building_142) ;
+    ref:hasExternalReference (ns1:ZoneRef_62124 ns1:ZoneRef_62229) .
+(ns1:Space_1126 ns1:Space_1307) a
     s4bldg:BuildingSpace ,
-    (ns1:Space_1126 ns1:Space_1307) .
-bs:Space_version_1 brick:isLocationOf bs:Thermostat_version_1 .
-bs:Space_version_1 ref:hasExternalReference bs:Resource_version_1 .
-bs:Space_version_1 s4bldg:contains bs:Thermostat_version_1 .
-bs:Storey_version_1 a (ns1:BuildingStorey_157 ns1:BuildingStorey_161) .
-bs:Storey_version_1 brick:hasPart bs:Space_version_1 .
-bs:Storey_version_1 brick:isLocationOf bs:Terminal_Unit_version_1 .
-bs:Storey_version_1 ref:hasExternalReference bs:Resource_version_1 .
-bs:Storey_version_1 s4bldg:contains bs:Terminal_Unit_version_1 .
-bs:Temperature_Sensor_version_1 a
+    brick:Space ;
+    brick:isLocationOf (ns1:RC04N0041_Equipment ns1:RC04N0042_Equipment) ;
+    ref:hasExternalReference [
+        ref:ifcGlobalID ("04fvfeI2P3MOmu2cRam2oG" "04fvfeI2P3MOmu2cRam2oO") ;
+        ref:ifcName ("CORRIDOR_A" "CORRIDOR_B")
+    ] ;
+    s4bldg:contains (ns1:RC04N0041_Equipment ns1:RC04N0042_Equipment) .
+(ns1:BuildingStorey_157 ns1:BuildingStorey_161) a brick:Storey ;
+    brick:hasPart (ns1:Space_1126 ns1:Space_1307) ;
+    brick:isLocationOf (ns1:null_Equipment) ;
+    ref:hasExternalReference [
+        ref:ifcGlobalID ("04fvfeI2P3MOmu2cRam2oG" "04fvfeI2P3MOmu2cRam2oO") ;
+        ref:ifcName ("CORRIDOR_A" "CORRIDOR_B")
+    ] ;
+    s4bldg:contains (ns1:null_Equipment) .
+(ns1:RC04N0041_TempSensingPoint ns1:RC04N0042_TempSensingPoint) a
     saref:Sensor ,
-    (ns1:RC04N0041_TempSensingPoint ns1:RC04N0042_TempSensingPoint) .
-bs:Temperature_Sensor_version_1 brick:isPointOf bs:Thermostat_version_1 .
-bs:Temperature_Sensor_version_1 ref:hasExternalReference bs:Resource_version_1 .
-bs:Temperature_Sensor_version_1 saref:observes bs:Temperature_version_1 .
-bs:Temperature_Setpoint_version_1 a
+    brick:Temperature_Sensor ;
+    brick:isPointOf (ns1:RC04N0041_Equipment ns1:RC04N0042_Equipment) ;
+    ref:hasExternalReference [
+        ref:hasTimeseriesId ("TUC.245.76.R0" "TUC.245.76.R100")
+    ] ;
+    saref:observes (ns1:TempProperty) .
+(ns1:RC04N0041_TempSetpoint ns1:RC04N0042_TempSetpoint) a
     saref:Actuator ,
-    (ns1:RC04N0041_TempSetpoint ns1:RC04N0042_TempSetpoint) .
-bs:Temperature_Setpoint_version_1 brick:isPointOf bs:Thermostat_version_1 .
-bs:Temperature_Setpoint_version_1 ref:hasExternalReference bs:Resource_version_1 .
-bs:Temperature_Setpoint_version_1 saref:controls bs:Temperature_version_1 .
-bs:Temperature_version_1 a
+    brick:Temperature_Setpoint ;
+    brick:isPointOf (ns1:RC04N0041_Equipment ns1:RC04N0042_Equipment) ;
+    ref:hasExternalReference [
+        ref:hasTimeseriesId ("TUC.245.76.R0" "TUC.245.76.R100")
+    ] ;
+    saref:controls (ns1:TempProperty) .
+(ns1:TempProperty) a
     saref:Property ,
-    (ns1:TempProperty) .
-bs:Terminal_Unit_version_1 a
+    quantitykind:Temperature .
+(ns1:null_Equipment) a
     s4bldg:FlowTerminal ,
-    (ns1:null_Equipment) .
-bs:Terminal_Unit_version_1 brick:hasLocation bs:Storey_version_1 .
-bs:Terminal_Unit_version_1 ref:hasExternalReference bs:Resource_version_1 .
-bs:Thermostat_version_1 a
+    brick:Terminal_Unit ;
+    brick:hasLocation (ns1:BuildingStorey_157 ns1:BuildingStorey_161) ;
+    ref:hasExternalReference [
+        ref:ifcGlobalID ("04fvfeI2P3MOmu2cRam2oG" "04fvfeI2P3MOmu2cRam2oO") ;
+        ref:ifcName ("CORRIDOR_A" "CORRIDOR_B")
+    ] .
+(ns1:RC04N0041_Equipment ns1:RC04N0042_Equipment) a
     s4bldg:UnitaryControlElement ,
-    (ns1:RC04N0041_Equipment ns1:RC04N0042_Equipment) .
-bs:Thermostat_version_1 brick:hasLocation bs:Space_version_1 .
-bs:Thermostat_version_1 brick:hasPoint
-    bs:Temperature_Setpoint_version_1 ,
-    bs:Temperature_Sensor_version_1 ,
-    bs:Run_Request_Command_version_1 ,
-    bs:On_Off_Command_version_1 ,
-    bs:Occupancy_Sensor_version_1 ,
-    bs:Mode_Command_version_1 ,
-    bs:Min_Air_Temperature_Setpoint_version_1 ,
-    bs:Max_Air_Temperature_Setpoint_version_1 ,
-    bs:Lockout_Command_version_1 ,
-    bs:Delay_Parameter_version_1 .
-bs:Thermostat_version_1 ref:hasExternalReference bs:Resource_version_1 .
-bs:Thermostat_version_1 saref:consistOf
-    bs:Temperature_Setpoint_version_1 ,
-    bs:Temperature_Sensor_version_1 ,
-    bs:Run_Request_Command_version_1 ,
-    bs:On_Off_Command_version_1 ,
-    bs:Occupancy_Sensor_version_1 ,
-    bs:Mode_Command_version_1 ,
-    bs:Min_Air_Temperature_Setpoint_version_1 ,
-    bs:Max_Air_Temperature_Setpoint_version_1 ,
-    bs:Lockout_Command_version_1 ,
-    bs:Delay_Parameter_version_1 .
-bs:Thermostat_version_1 s4ener:serialNumber bs:Literal_version_1 .
-bs:Zone_version_1 a (ns1:Zone_62124 ns1:Zone_62229) .
-bs:Zone_version_1 brick:hasPart bs:Space_version_1 .
-bs:Zone_version_1 ref:hasExternalReference bs:IFCReference_version_1 .
+    brick:Thermostat ;
+    brick:hasLocation (ns1:Space_1126 ns1:Space_1307) ;
+    brick:hasPoint
+        (ns1:RC04N0041_TempSetpoint ns1:RC04N0042_TempSetpoint) ,
+        (ns1:RC04N0041_TempSensingPoint ns1:RC04N0042_TempSensingPoint) ,
+        (ns1:RC04N0041_Run_Request_Command ns1:RC04N0042_Run_Request_Command) ,
+        (ns1:RC04N0041_OnOffCommand ns1:RC04N0042_OnOffCommand) ,
+        (ns1:RC04N0041_OccSensingPoint ns1:RC04N0042_OccSensingPoint) ,
+        (ns1:RC04N0042_Mode_Command ns1:RC04N0043_Mode_Command) ,
+        (ns1:RC04N0041_TempSetpointMin ns1:RC04N0042_TempSetpointMin) ,
+        (ns1:RC04N0041_TempSetpointMax ns1:RC04N0042_TempSetpointMax) ,
+        (ns1:RC04N0041_Lockout_Command ns1:RC04N0042_Lockout_Command) ,
+        (ns1:RC04N0041_Delay_Parameter ns1:RC04N0042_Delay_Parameter) ;
+    ref:hasExternalReference [
+        ref:ifcGlobalID ("04fvfeI2P3MOmu2cRam2oG" "04fvfeI2P3MOmu2cRam2oO") ;
+        ref:ifcName ("CORRIDOR_A" "CORRIDOR_B")
+    ] ;
+    saref:consistOf
+        (ns1:RC04N0041_TempSetpoint ns1:RC04N0042_TempSetpoint) ,
+        (ns1:RC04N0041_TempSensingPoint ns1:RC04N0042_TempSensingPoint) ,
+        (ns1:RC04N0041_Run_Request_Command ns1:RC04N0042_Run_Request_Command) ,
+        (ns1:RC04N0041_OnOffCommand ns1:RC04N0042_OnOffCommand) ,
+        (ns1:RC04N0041_OccSensingPoint ns1:RC04N0042_OccSensingPoint) ,
+        (ns1:RC04N0042_Mode_Command ns1:RC04N0043_Mode_Command) ,
+        (ns1:RC04N0041_TempSetpointMin ns1:RC04N0042_TempSetpointMin) ,
+        (ns1:RC04N0041_TempSetpointMax ns1:RC04N0042_TempSetpointMax) ,
+        (ns1:RC04N0041_Lockout_Command ns1:RC04N0042_Lockout_Command) ,
+        (ns1:RC04N0041_Delay_Parameter ns1:RC04N0042_Delay_Parameter) ;
+    s4ener:serialNumber ("RC04N00" "RC04N0041") .
+(ns1:Zone_62124 ns1:Zone_62229) a brick:Zone ;
+    brick:hasPart (ns1:Space_1126 ns1:Space_1307) ;
+    ref:hasExternalReference (ns1:ZoneRef_62124 ns1:ZoneRef_62229) .

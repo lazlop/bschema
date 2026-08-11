@@ -5,451 +5,474 @@
 @prefix quantitykind: <http://qudt.org/vocab/quantitykind/> .
 @prefix unit: <http://qudt.org/vocab/unit/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix ns2: <urn:bldg#> .
-@prefix bs: <urn:bschema#> .
 
-bs:Actuator_version_1 s223:actuatedByProperty bs:QuantifiableActuatableProperty_version_1 .
-bs:Actuator_version_1 s223:actuates
-    bs:VariableFrequencyDrive_version_1 ,
-    bs:Valve_version_1 ,
-    bs:SingleDuctTerminal_version_1 ,
-    bs:Resource_version_2 ,
-    bs:Pump_version_1 ,
-    bs:PhysicalSpace_version_1 ,
-    bs:OutdoorPhysicalSpace_version_1 ,
-    bs:HeatingCoil_version_1 ,
-    bs:Fan_version_1 ,
-    bs:FanCoilUnit_version_1 ,
-    bs:Equipment_version_1 ,
-    bs:Damper_version_1 ,
-    bs:Chiller_version_1 ,
-    bs:AirHandlingUnit_version_1 .
-bs:Actuator_version_1 a (ns2:TEST.ACTCHWDPSP_Actuator ns2:TEST.ACTCWDPSP_Actuator) .
-bs:AirHandlingUnit_version_1 s223:cnx
-    bs:Resource_version_1 ,
-    bs:OutletConnectionPoint_version_1 ,
-    bs:InletConnectionPoint_version_1 .
-bs:AirHandlingUnit_version_1 s223:contains
-    bs:HeatingCoil_version_1 ,
-    bs:Filter_version_1 ,
-    bs:Fan_version_1 ,
-    bs:Damper_version_1 ,
-    bs:CoolingCoil_version_1 ,
-    bs:AirHandlingUnit_version_1 .
-bs:AirHandlingUnit_version_1 s223:hasProperty
-    bs:QuantifiableProperty_version_1 ,
-    bs:QuantifiableObservableProperty_version_1 ,
-    bs:QuantifiableActuatableProperty_version_1 .
-bs:AirHandlingUnit_version_1 a
-    ns1:MultipleZoneVAVAirHandlingUnit ,
-    (ns2:AH1 ns2:AH1A) .
-bs:BACnetDevice_version_1 bacnet:device-instance (ns2:AH2A-ea-out ns2:AH2A-ra-in) .
-bs:BACnetDevice_version_1 bacnet:hasPort bs:Port_version_1 .
-bs:BACnetDevice_version_1 a (ns2:4FsOfbEa2841 ns2:5wSA7AlJ2418) .
-bs:BACnetExternalReference_version_1 bacnet:description bs:Literal_version_1 .
-bs:BACnetExternalReference_version_1 bacnet:device-identifier bs:BACnetDevice_version_1 .
-bs:BACnetExternalReference_version_1 bacnet:object-identifier bs:Literal_version_1 .
-bs:BACnetExternalReference_version_1 bacnet:object-name bs:Literal_version_1 .
-bs:BACnetExternalReference_version_1 bacnet:object-type bs:Literal_version_1 .
-bs:BACnetExternalReference_version_1 a [] .
-bs:Chiller_version_1 s223:cnx
-    bs:OutletConnectionPoint_version_1 ,
-    bs:InletConnectionPoint_version_1 .
-bs:Chiller_version_1 s223:contains bs:Compressor_version_1 .
-bs:Chiller_version_1 s223:hasProperty
-    bs:QuantifiableProperty_version_1 ,
-    bs:QuantifiableObservableProperty_version_1 ,
-    bs:QuantifiableActuatableProperty_version_1 .
-bs:Chiller_version_1 s223:hasRole
-    s223:Role-Supply ,
-    s223:Role-Recirculating ,
-    s223:Role-Cooling .
-bs:Chiller_version_1 a (ns2:CH1 ns2:CH2) .
-bs:Compressor_version_1 s223:hasProperty bs:QuantifiableObservableProperty_version_1 .
-bs:Compressor_version_1 a (ns2:CH2_Compressor) .
-bs:Connection_version_1 s223:cnx
-    bs:OutletConnectionPoint_version_1 ,
-    bs:InletConnectionPoint_version_1 .
-bs:Connection_version_1 s223:hasMedium
-    s223:Water-Steam ,
-    s223:Fluid-Water ,
-    s223:Fluid-Air .
-bs:Connection_version_1 a
-    s223:Pipe ,
-    (ns2:AH2A_Return_Fan-in-duct ns2:AH2B_Return_Fan-in-duct) ,
-    (ns2:131_Tele-Health_hvac_domain_in_connection ns2:131_Tele-Health_hvac_domain_out_connection) .
-bs:Connection_version_2 s223:cnx bs:OutletConnectionPoint_version_1 .
-bs:Connection_version_2 s223:hasMedium
-    s223:Fluid-Water ,
-    s223:Fluid-Air .
-bs:Connection_version_2 s223:hasRole s223:Role-Exhaust .
-bs:Connection_version_2 a
-    s223:Pipe ,
-    (ns2:AH2A_Return_Fan-in-duct ns2:AH2B_Return_Fan-in-duct) ,
-    (ns2:131_Tele-Health_hvac_domain_in_connection ns2:131_Tele-Health_hvac_domain_out_connection) .
-bs:CoolingCoil_version_1 s223:cnx
-    bs:OutletConnectionPoint_version_1 ,
-    bs:InletConnectionPoint_version_1 .
-bs:CoolingCoil_version_1 s223:contains bs:Valve_version_1 .
-bs:CoolingCoil_version_1 s223:hasRole s223:Role-Cooling .
-bs:CoolingCoil_version_1 a
-    ns1:ChilledWaterCoil ,
-    (ns2:AH1A_Cooling_Coil ns2:AH1B_Cooling_Coil) .
-bs:CoolingTower_version_1 s223:contains bs:Fan_version_1 .
-bs:CoolingTower_version_1 s223:hasProperty bs:QuantifiableObservableProperty_version_1 .
-bs:CoolingTower_version_1 s223:hasRole s223:Role-Cooling .
-bs:CoolingTower_version_1 a (ns2:CT1 ns2:CT2) .
-bs:Damper_version_1 s223:cnx
-    bs:OutletConnectionPoint_version_1 ,
-    bs:InletConnectionPoint_version_1 .
-bs:Damper_version_1 s223:hasProperty
-    bs:QuantifiableObservableProperty_version_1 ,
-    bs:QuantifiableActuatableProperty_version_1 .
-bs:Damper_version_1 s223:hasRole
-    s223:Role-Outside ,
-    s223:Role-OutdoorAirIntake ,
-    s223:Role-Economizer .
-bs:Damper_version_1 a
-    ns1:Damper ,
-    (ns2:AH1A_Isolation_Damper ns2:AH1B_Isolation_Damper) .
-bs:Damper_version_2 a (ns2:AH1A_Isolation_Damper ns2:AH1B_Isolation_Damper) .
-bs:DomainSpace_version_1 s223:cnx
-    bs:OutletConnectionPoint_version_1 ,
-    bs:InletConnectionPoint_version_1 .
-bs:DomainSpace_version_1 s223:hasDomain s223:Domain-HVAC .
-bs:DomainSpace_version_1 a (ns2:131_Tele-Health_hvac_domain ns2:132_MECH_STEAM_hvac_domain) .
-bs:Duct_version_1 a (ns2:AH2A_Return_Fan-in-duct ns2:AH2B_Return_Fan-in-duct) .
-bs:ElectricBreaker_version_1 s223:hasProperty bs:QuantifiableObservableProperty_version_1 .
-bs:ElectricBreaker_version_1 a (ns2:ATS-ES_ESCD4RA ns2:CB4A_CR26A) .
-bs:ElectricMeter_version_1 s223:hasProperty
-    bs:QuantifiableObservableProperty_version_1 ,
-    bs:Property_version_1 .
-bs:ElectricMeter_version_1 a (ns2:MSA_ATS-E1 ns2:MSA_ATS-ES) .
-bs:Equipment_version_1 s223:cnx
-    bs:OutletConnectionPoint_version_1 ,
-    bs:InletConnectionPoint_version_1 .
-bs:Equipment_version_1 s223:contains
-    bs:Valve_version_1 ,
-    bs:Pump_version_1 ,
-    bs:CoolingCoil_version_1 .
-bs:Equipment_version_1 s223:hasProperty
-    bs:QuantifiableProperty_version_1 ,
-    bs:QuantifiableObservableProperty_version_1 ,
-    bs:QuantifiableActuatableProperty_version_1 ,
-    bs:Property_version_1 .
-bs:Equipment_version_1 s223:hasRole
-    s223:Role-Supply ,
-    s223:Role-Recirculating ,
-    s223:Role-Heating ,
-    s223:Role-Cooling .
-bs:Equipment_version_1 a (ns2:AH1_Generator ns2:CAC-1) .
-bs:FanCoilUnit_version_1 s223:contains
-    bs:Fan_version_1 ,
-    bs:CoolingCoil_version_1 .
-bs:FanCoilUnit_version_1 s223:hasProperty
-    bs:QuantifiableObservableProperty_version_1 ,
-    bs:QuantifiableActuatableProperty_version_1 .
-bs:FanCoilUnit_version_1 a (ns2:FCU-1) .
-bs:Fan_version_1 s223:cnx
-    bs:OutletConnectionPoint_version_1 ,
-    bs:InletConnectionPoint_version_1 .
-bs:Fan_version_1 s223:contains
-    bs:VariableFrequencyDrive_version_1 ,
-    bs:Fan_version_1 ,
-    bs:Damper_version_2 ,
-    bs:Damper_version_1 .
-bs:Fan_version_1 s223:hasProperty
-    bs:QuantifiableProperty_version_1 ,
-    bs:QuantifiableObservableProperty_version_1 ,
-    bs:QuantifiableActuatableProperty_version_1 .
-bs:Fan_version_1 s223:hasRole
-    s223:Role-Supply ,
-    s223:Role-Cooling .
-bs:Fan_version_1 a
-    ns1:FanWithVFD ,
-    (ns2:AH1A_SF_VFD ns2:AH1B_SF_VFD) ,
-    (ns2:AH1A_Supply_Fan ns2:AH1B_Supply_Fan) .
-bs:Filter_version_1 s223:cnx
-    bs:OutletConnectionPoint_version_1 ,
-    bs:InletConnectionPoint_version_1 .
-bs:Filter_version_1 s223:hasProperty bs:QuantifiableObservableProperty_version_1 .
-bs:Filter_version_1 a
-    ns1:Filter ,
-    (ns2:AH1A_Final_Filter ns2:AH1A_Pre_Filter) .
-bs:HeatExchanger_version_1 s223:cnx
-    bs:OutletConnectionPoint_version_1 ,
-    bs:InletConnectionPoint_version_1 .
-bs:HeatExchanger_version_1 s223:contains bs:Valve_version_1 .
-bs:HeatExchanger_version_1 s223:hasProperty bs:QuantifiableObservableProperty_version_1 .
-bs:HeatExchanger_version_1 s223:hasRole
-    s223:Role-Supply ,
-    s223:Role-Recirculating ,
-    s223:Role-Heating .
-bs:HeatExchanger_version_1 a (ns2:HX-1 ns2:HX-2) .
-bs:HeatingCoil_version_1 s223:cnx
-    bs:OutletConnectionPoint_version_1 ,
-    bs:InletConnectionPoint_version_1 .
-bs:HeatingCoil_version_1 s223:contains bs:Valve_version_1 .
-bs:HeatingCoil_version_1 s223:hasProperty
-    bs:QuantifiableObservableProperty_version_1 ,
-    bs:QuantifiableActuatableProperty_version_1 .
-bs:HeatingCoil_version_1 s223:hasRole s223:Role-Heating .
-bs:HeatingCoil_version_1 a
-    ns1:HotWaterCoil ,
-    (ns2:AH1A_Heating_Coil ns2:AH1B_Heating_Coil) .
-bs:InletConnectionPoint_version_1 s223:cnx
-    bs:Resource_version_3 ,
-    bs:Junction_version_1 ,
-    bs:HeatingCoil_version_1 ,
-    bs:CoolingCoil_version_1 ,
-    bs:Connection_version_1 .
-bs:InletConnectionPoint_version_1 s223:hasMedium
-    s223:Water-Steam ,
-    s223:Fluid-Water ,
-    s223:Fluid-Air .
-bs:InletConnectionPoint_version_1 s223:hasProperty (ns2:AH2A-ea-out ns2:AH2A-ra-in) .
-bs:InletConnectionPoint_version_1 s223:hasRole
-    s223:Role-Return ,
-    s223:Role-OutdoorAirIntake .
-bs:InletConnectionPoint_version_1 s223:mapsTo
-    bs:Resource_version_1 ,
-    bs:InletConnectionPoint_version_1 .
-bs:InletConnectionPoint_version_1 a (ns2:131_Tele-Health_hvac_domain_in ns2:132_MECH_STEAM_hvac_domain_in) .
-bs:Junction_version_1 s223:cnx
-    bs:OutletConnectionPoint_version_1 ,
-    bs:InletConnectionPoint_version_1 .
-bs:Junction_version_1 a (ns2:Chilled_Water_Plant-junction ns2:Chilled_Water_System-junction) .
-bs:OutdoorPhysicalSpace_version_1 s223:encloses bs:DomainSpace_version_1 .
-bs:OutdoorPhysicalSpace_version_1 s223:hasProperty
-    bs:QuantifiableObservableProperty_version_1 ,
-    bs:QuantifiableActuatableProperty_version_1 .
-bs:OutdoorPhysicalSpace_version_1 a
-    (ns2:131_Tele-Health ns2:132_MECH_STEAM) ,
-    (ns2:266_RECEIVING) .
-bs:OutletConnectionPoint_version_1 s223:cnx
-    bs:Junction_version_1 ,
-    bs:HeatingCoil_version_1 ,
-    bs:CoolingCoil_version_1 ,
-    bs:Connection_version_2 ,
-    bs:Connection_version_1 .
-bs:OutletConnectionPoint_version_1 s223:hasMedium
-    s223:Fluid-Water ,
-    s223:Fluid-Air .
-bs:OutletConnectionPoint_version_1 s223:hasProperty
-    bs:QuantifiableObservableProperty_version_1 ,
-    bs:QuantifiableActuatableProperty_version_1 ,
-    (ns2:AH2A-ea-out ns2:AH2A-ra-in) .
-bs:OutletConnectionPoint_version_1 s223:hasRole s223:Role-Supply .
-bs:OutletConnectionPoint_version_1 s223:mapsTo bs:OutletConnectionPoint_version_1 .
-bs:OutletConnectionPoint_version_1 a (ns2:131_Tele-Health_hvac_domain_out ns2:132_MECH_STEAM_hvac_domain_out) .
-bs:PhysicalSpace_version_1 s223:contains bs:PhysicalSpace_version_1 .
-bs:PhysicalSpace_version_1 s223:encloses bs:DomainSpace_version_1 .
-bs:PhysicalSpace_version_1 s223:hasProperty
-    bs:QuantifiableObservableProperty_version_1 ,
-    bs:QuantifiableActuatableProperty_version_1 ,
-    bs:Property_version_1 .
-bs:PhysicalSpace_version_1 a (ns2:131_Tele-Health ns2:132_MECH_STEAM) .
-bs:Port_version_1 bacnet:storedAt bs:Literal_version_1 .
-bs:Port_version_1 a [] .
-bs:Property_version_1 s223:hasExternalReference bs:BACnetExternalReference_version_1 .
-bs:Property_version_1 s223:hasProperty bs:Property_version_1 .
-bs:Property_version_1 qudt:hasQuantityKind quantitykind:ActivePower .
-bs:Property_version_1 qudt:hasUnit
-    unit:W ,
-    unit:UNITLESS ,
-    unit:SEC ,
-    unit:PERCENT ,
-    unit:KiloW ,
-    unit:GAL_US ,
-    unit:DEG_F .
-bs:Property_version_1 a
+(ns2:TEST.ACTCHWDPSP_Actuator ns2:TEST.ACTCWDPSP_Actuator) s223:actuatedByProperty (ns2:TEST.ACTCHWDPSP ns2:TEST.ACTCWDPSP) ;
+    s223:actuates
+        (ns2:AH1A_SF_VFD ns2:AH1B_SF_VFD) ,
+        (ns2:AH1A_Cooling_Coil_Valve ns2:AH1A_Heating_Coil_Valve) ,
+        (ns2:S1-01_VAV ns2:S1-02_VAV) ,
+        (ns2:ATS-E1 ns2:ATS-E2) ,
+        (ns2:CHP1 ns2:CHP2) ,
+        (ns2:131_Tele-Health ns2:132_MECH_STEAM) ,
+        (ns2:266_RECEIVING) ,
+        (ns2:AH1A_Heating_Coil ns2:AH1B_Heating_Coil) ,
+        (ns2:AH1A_Supply_Fan ns2:AH1B_Supply_Fan) ,
+        (ns2:FCU-1) ,
+        (ns2:AH1_Generator ns2:CAC-1) ,
+        (ns2:AH1A_Isolation_Damper ns2:AH1B_Isolation_Damper) ,
+        (ns2:CH1 ns2:CH2) ,
+        (ns2:AH1 ns2:AH1A) ;
+    a s223:Actuator .
+(ns2:AH1 ns2:AH1A) s223:cnx
+    (ns2:AH2A-ea-out ns2:AH2A-ra-in) ,
+    (ns2:131_Tele-Health_hvac_domain_out ns2:132_MECH_STEAM_hvac_domain_out) ,
+    (ns2:131_Tele-Health_hvac_domain_in ns2:132_MECH_STEAM_hvac_domain_in) ;
+    s223:contains
+        (ns2:AH1A_Heating_Coil ns2:AH1B_Heating_Coil) ,
+        (ns2:AH1A_Final_Filter ns2:AH1A_Pre_Filter) ,
+        (ns2:AH1A_Supply_Fan ns2:AH1B_Supply_Fan) ,
+        (ns2:AH1A_Isolation_Damper ns2:AH1B_Isolation_Damper) ,
+        (ns2:AH1A_Cooling_Coil ns2:AH1B_Cooling_Coil) ,
+        (ns2:AH1 ns2:AH1A) ;
+    s223:hasProperty
+        (ns2:Aux_Input_Total ns2:Aux_Input_Total_Device_57018) ,
+        (ns2:Energy_Rate ns2:Energy_Rate_Device_57018) ,
+        (ns2:TEST.ACTCHWDPSP ns2:TEST.ACTCWDPSP) ;
+    a
+        ns1:MultipleZoneVAVAirHandlingUnit ,
+        s223:AirHandlingUnit .
+(ns2:4FsOfbEa2841 ns2:5wSA7AlJ2418) bacnet:device-instance rdfs:Resource ;
+    bacnet:hasPort [
+        bacnet:storedAt ("2cH8UkCT5723" "3VVRBXJH12758") ;
+        a bacnet:Port
+    ] ;
+    a bacnet:BACnetDevice .
+(ns2:CH1 ns2:CH2) s223:cnx
+    (ns2:131_Tele-Health_hvac_domain_out ns2:132_MECH_STEAM_hvac_domain_out) ,
+    (ns2:131_Tele-Health_hvac_domain_in ns2:132_MECH_STEAM_hvac_domain_in) ;
+    s223:contains (ns2:CH2_Compressor) ;
+    s223:hasProperty
+        (ns2:Aux_Input_Total ns2:Aux_Input_Total_Device_57018) ,
+        (ns2:Energy_Rate ns2:Energy_Rate_Device_57018) ,
+        (ns2:TEST.ACTCHWDPSP ns2:TEST.ACTCWDPSP) ;
+    s223:hasRole
+        s223:Role-Supply ,
+        s223:Role-Recirculating ,
+        s223:Role-Cooling ;
+    a s223:Chiller .
+(ns2:CH2_Compressor) s223:hasProperty (ns2:Energy_Rate ns2:Energy_Rate_Device_57018) ;
+    a s223:Compressor .
+(ns2:131_Tele-Health_hvac_domain_in_connection ns2:131_Tele-Health_hvac_domain_out_connection) s223:cnx
+    (ns2:131_Tele-Health_hvac_domain_out ns2:132_MECH_STEAM_hvac_domain_out) ,
+    (ns2:131_Tele-Health_hvac_domain_in ns2:132_MECH_STEAM_hvac_domain_in) ;
+    s223:hasMedium
+        s223:Water-Steam ,
+        s223:Fluid-Water ,
+        s223:Fluid-Air ;
+    a
+        s223:Pipe ,
+        s223:Duct ,
+        s223:Connection .
+(ns2:AH1A_Cooling_Coil-water-out-pipe ns2:AH1A_Heating_Coil-water-out-pipe) s223:cnx (ns2:131_Tele-Health_hvac_domain_out ns2:132_MECH_STEAM_hvac_domain_out) ;
+    s223:hasMedium
+        s223:Fluid-Water ,
+        s223:Fluid-Air ;
+    s223:hasRole s223:Role-Exhaust ;
+    a
+        s223:Pipe ,
+        s223:Duct ,
+        s223:Connection .
+(ns2:AH1A_Cooling_Coil ns2:AH1B_Cooling_Coil) s223:cnx
+    (ns2:131_Tele-Health_hvac_domain_out ns2:132_MECH_STEAM_hvac_domain_out) ,
+    (ns2:131_Tele-Health_hvac_domain_in ns2:132_MECH_STEAM_hvac_domain_in) ;
+    s223:contains (ns2:AH1A_Cooling_Coil_Valve ns2:AH1A_Heating_Coil_Valve) ;
+    s223:hasRole s223:Role-Cooling ;
+    a
+        ns1:ChilledWaterCoil ,
+        s223:CoolingCoil .
+(ns2:CT1 ns2:CT2) s223:contains (ns2:AH1A_Supply_Fan ns2:AH1B_Supply_Fan) ;
+    s223:hasProperty (ns2:Energy_Rate ns2:Energy_Rate_Device_57018) ;
+    s223:hasRole s223:Role-Cooling ;
+    a s223:CoolingTower .
+(ns2:AH1A_Isolation_Damper ns2:AH1B_Isolation_Damper) s223:cnx
+    (ns2:131_Tele-Health_hvac_domain_out ns2:132_MECH_STEAM_hvac_domain_out) ,
+    (ns2:131_Tele-Health_hvac_domain_in ns2:132_MECH_STEAM_hvac_domain_in) ;
+    s223:hasProperty
+        (ns2:Energy_Rate ns2:Energy_Rate_Device_57018) ,
+        (ns2:TEST.ACTCHWDPSP ns2:TEST.ACTCWDPSP) ;
+    s223:hasRole
+        s223:Role-Outside ,
+        s223:Role-OutdoorAirIntake ,
+        s223:Role-Economizer ;
+    a
+        ns1:Damper ,
+        s223:Damper .
+(ns2:EF1_Outside_Damper) a s223:Damper .
+(ns2:131_Tele-Health_hvac_domain ns2:132_MECH_STEAM_hvac_domain) s223:cnx
+    (ns2:131_Tele-Health_hvac_domain_out ns2:132_MECH_STEAM_hvac_domain_out) ,
+    (ns2:131_Tele-Health_hvac_domain_in ns2:132_MECH_STEAM_hvac_domain_in) ;
+    s223:hasDomain s223:Domain-HVAC ;
+    a s223:DomainSpace .
+(ns2:AH2A_Return_Fan-in-duct ns2:AH2B_Return_Fan-in-duct) a s223:Duct .
+(ns2:ATS-ES_ESCD4RA ns2:CB4A_CR26A) s223:hasProperty (ns2:Energy_Rate ns2:Energy_Rate_Device_57018) ;
+    a s223:ElectricBreaker .
+(ns2:MSA_ATS-E1 ns2:MSA_ATS-ES) s223:hasProperty
     (ns2:Energy_Rate ns2:Energy_Rate_Device_57018) ,
-    (ns2:Mode_1_Volume_Total ns2:Mode_1_Volume_Total_Device_57018) .
-bs:Pump_version_1 s223:contains bs:VariableFrequencyDrive_version_1 .
-bs:Pump_version_1 s223:hasProperty
-    bs:QuantifiableObservableProperty_version_1 ,
-    bs:QuantifiableActuatableProperty_version_1 .
-bs:Pump_version_1 s223:hasRole
-    s223:Role-Heating ,
-    s223:Role-Cooling .
-bs:Pump_version_1 a (ns2:CHP1 ns2:CHP2) .
-bs:QuantifiableActuatableProperty_version_1 s223:hasAspect
+    (ns2:Mode_1_Volume_Total ns2:Mode_1_Volume_Total_Device_57018) ;
+    a s223:ElectricMeter .
+(ns2:AH1_Generator ns2:CAC-1) s223:cnx
+    (ns2:131_Tele-Health_hvac_domain_out ns2:132_MECH_STEAM_hvac_domain_out) ,
+    (ns2:131_Tele-Health_hvac_domain_in ns2:132_MECH_STEAM_hvac_domain_in) ;
+    s223:contains
+        (ns2:AH1A_Cooling_Coil_Valve ns2:AH1A_Heating_Coil_Valve) ,
+        (ns2:CHP1 ns2:CHP2) ,
+        (ns2:AH1A_Cooling_Coil ns2:AH1B_Cooling_Coil) ;
+    s223:hasProperty
+        (ns2:Aux_Input_Total ns2:Aux_Input_Total_Device_57018) ,
+        (ns2:Energy_Rate ns2:Energy_Rate_Device_57018) ,
+        (ns2:TEST.ACTCHWDPSP ns2:TEST.ACTCWDPSP) ,
+        (ns2:Mode_1_Volume_Total ns2:Mode_1_Volume_Total_Device_57018) ;
+    s223:hasRole
+        s223:Role-Supply ,
+        s223:Role-Recirculating ,
+        s223:Role-Heating ,
+        s223:Role-Cooling ;
+    a s223:Equipment .
+(ns2:FCU-1) s223:contains
+    (ns2:AH1A_Supply_Fan ns2:AH1B_Supply_Fan) ,
+    (ns2:AH1A_Cooling_Coil ns2:AH1B_Cooling_Coil) ;
+    s223:hasProperty
+        (ns2:Energy_Rate ns2:Energy_Rate_Device_57018) ,
+        (ns2:TEST.ACTCHWDPSP ns2:TEST.ACTCWDPSP) ;
+    a s223:FanCoilUnit .
+(ns2:AH1A_Supply_Fan ns2:AH1B_Supply_Fan) s223:cnx
+    (ns2:131_Tele-Health_hvac_domain_out ns2:132_MECH_STEAM_hvac_domain_out) ,
+    (ns2:131_Tele-Health_hvac_domain_in ns2:132_MECH_STEAM_hvac_domain_in) ;
+    s223:contains
+        (ns2:AH1A_SF_VFD ns2:AH1B_SF_VFD) ,
+        (ns2:AH1A_Supply_Fan ns2:AH1B_Supply_Fan) ,
+        (ns2:EF1_Outside_Damper) ,
+        (ns2:AH1A_Isolation_Damper ns2:AH1B_Isolation_Damper) ;
+    s223:hasProperty
+        (ns2:Aux_Input_Total ns2:Aux_Input_Total_Device_57018) ,
+        (ns2:Energy_Rate ns2:Energy_Rate_Device_57018) ,
+        (ns2:TEST.ACTCHWDPSP ns2:TEST.ACTCWDPSP) ;
+    s223:hasRole
+        s223:Role-Supply ,
+        s223:Role-Cooling ;
+    a
+        ns1:FanWithVFD ,
+        s223:VariableFrequencyDrive ,
+        s223:Fan .
+(ns2:AH1A_Final_Filter ns2:AH1A_Pre_Filter) s223:cnx
+    (ns2:131_Tele-Health_hvac_domain_out ns2:132_MECH_STEAM_hvac_domain_out) ,
+    (ns2:131_Tele-Health_hvac_domain_in ns2:132_MECH_STEAM_hvac_domain_in) ;
+    s223:hasProperty (ns2:Energy_Rate ns2:Energy_Rate_Device_57018) ;
+    a
+        ns1:Filter ,
+        s223:Filter .
+(ns2:HX-1 ns2:HX-2) s223:cnx
+    (ns2:131_Tele-Health_hvac_domain_out ns2:132_MECH_STEAM_hvac_domain_out) ,
+    (ns2:131_Tele-Health_hvac_domain_in ns2:132_MECH_STEAM_hvac_domain_in) ;
+    s223:contains (ns2:AH1A_Cooling_Coil_Valve ns2:AH1A_Heating_Coil_Valve) ;
+    s223:hasProperty (ns2:Energy_Rate ns2:Energy_Rate_Device_57018) ;
+    s223:hasRole
+        s223:Role-Supply ,
+        s223:Role-Recirculating ,
+        s223:Role-Heating ;
+    a s223:HeatExchanger .
+(ns2:AH1A_Heating_Coil ns2:AH1B_Heating_Coil) s223:cnx
+    (ns2:131_Tele-Health_hvac_domain_out ns2:132_MECH_STEAM_hvac_domain_out) ,
+    (ns2:131_Tele-Health_hvac_domain_in ns2:132_MECH_STEAM_hvac_domain_in) ;
+    s223:contains (ns2:AH1A_Cooling_Coil_Valve ns2:AH1A_Heating_Coil_Valve) ;
+    s223:hasProperty
+        (ns2:Energy_Rate ns2:Energy_Rate_Device_57018) ,
+        (ns2:TEST.ACTCHWDPSP ns2:TEST.ACTCWDPSP) ;
+    s223:hasRole s223:Role-Heating ;
+    a
+        ns1:HotWaterCoil ,
+        s223:HeatingCoil .
+(ns2:131_Tele-Health_hvac_domain_in ns2:132_MECH_STEAM_hvac_domain_in) s223:cnx
+    (ns2:HX-1_water-out-pipe ns2:HX-2_water-out-pipe) ,
+    (ns2:Chilled_Water_Plant-junction ns2:Chilled_Water_System-junction) ,
+    (ns2:AH1A_Heating_Coil ns2:AH1B_Heating_Coil) ,
+    (ns2:AH1A_Cooling_Coil ns2:AH1B_Cooling_Coil) ,
+    (ns2:131_Tele-Health_hvac_domain_in_connection ns2:131_Tele-Health_hvac_domain_out_connection) ;
+    s223:hasMedium
+        s223:Water-Steam ,
+        s223:Fluid-Water ,
+        s223:Fluid-Air ;
+    s223:hasProperty rdfs:Resource ;
+    s223:hasRole
+        s223:Role-Return ,
+        s223:Role-OutdoorAirIntake ;
+    s223:mapsTo
+        (ns2:AH2A-ea-out ns2:AH2A-ra-in) ,
+        (ns2:131_Tele-Health_hvac_domain_in ns2:132_MECH_STEAM_hvac_domain_in) ;
+    a s223:InletConnectionPoint .
+(ns2:Chilled_Water_Plant-junction ns2:Chilled_Water_System-junction) s223:cnx
+    (ns2:131_Tele-Health_hvac_domain_out ns2:132_MECH_STEAM_hvac_domain_out) ,
+    (ns2:131_Tele-Health_hvac_domain_in ns2:132_MECH_STEAM_hvac_domain_in) ;
+    a s223:Junction .
+(ns2:266_RECEIVING) s223:encloses (ns2:131_Tele-Health_hvac_domain ns2:132_MECH_STEAM_hvac_domain) ;
+    s223:hasProperty
+        (ns2:Energy_Rate ns2:Energy_Rate_Device_57018) ,
+        (ns2:TEST.ACTCHWDPSP ns2:TEST.ACTCWDPSP) ;
+    a
+        s223:PhysicalSpace ,
+        s223:OutdoorPhysicalSpace .
+(ns2:131_Tele-Health_hvac_domain_out ns2:132_MECH_STEAM_hvac_domain_out) s223:cnx
+    (ns2:Chilled_Water_Plant-junction ns2:Chilled_Water_System-junction) ,
+    (ns2:AH1A_Heating_Coil ns2:AH1B_Heating_Coil) ,
+    (ns2:AH1A_Cooling_Coil ns2:AH1B_Cooling_Coil) ,
+    (ns2:AH1A_Cooling_Coil-water-out-pipe ns2:AH1A_Heating_Coil-water-out-pipe) ,
+    (ns2:131_Tele-Health_hvac_domain_in_connection ns2:131_Tele-Health_hvac_domain_out_connection) ;
+    s223:hasMedium
+        s223:Fluid-Water ,
+        s223:Fluid-Air ;
+    s223:hasProperty
+        (ns2:Energy_Rate ns2:Energy_Rate_Device_57018) ,
+        (ns2:TEST.ACTCHWDPSP ns2:TEST.ACTCWDPSP) ,
+        rdfs:Resource ;
+    s223:hasRole s223:Role-Supply ;
+    s223:mapsTo (ns2:131_Tele-Health_hvac_domain_out ns2:132_MECH_STEAM_hvac_domain_out) ;
+    a s223:OutletConnectionPoint .
+(ns2:131_Tele-Health ns2:132_MECH_STEAM) s223:contains (ns2:131_Tele-Health ns2:132_MECH_STEAM) ;
+    s223:encloses (ns2:131_Tele-Health_hvac_domain ns2:132_MECH_STEAM_hvac_domain) ;
+    s223:hasProperty
+        (ns2:Energy_Rate ns2:Energy_Rate_Device_57018) ,
+        (ns2:TEST.ACTCHWDPSP ns2:TEST.ACTCWDPSP) ,
+        (ns2:Mode_1_Volume_Total ns2:Mode_1_Volume_Total_Device_57018) ;
+    a s223:PhysicalSpace .
+(ns2:Mode_1_Volume_Total ns2:Mode_1_Volume_Total_Device_57018) s223:hasExternalReference [
+    bacnet:description ("002QgMwn12248" "003jdRyq12263") ;
+    bacnet:device-identifier (ns2:4FsOfbEa2841 ns2:5wSA7AlJ2418) ;
+    bacnet:object-identifier ("002QgMwn12248" "003jdRyq12263") ;
+    bacnet:object-name ("002QgMwn12248" "003jdRyq12263") ;
+    bacnet:object-type ("002QgMwn12248" "003jdRyq12263") ;
+    a s223:BACnetExternalReference
+] ;
+    s223:hasProperty (ns2:Mode_1_Volume_Total ns2:Mode_1_Volume_Total_Device_57018) ;
+    qudt:hasQuantityKind quantitykind:ActivePower ;
+    qudt:hasUnit
+        unit:W ,
+        unit:UNITLESS ,
+        unit:SEC ,
+        unit:PERCENT ,
+        unit:KiloW ,
+        unit:GAL_US ,
+        unit:DEG_F ;
+    a
+        s223:QuantifiableObservableProperty ,
+        s223:Property .
+(ns2:CHP1 ns2:CHP2) s223:contains (ns2:AH1A_SF_VFD ns2:AH1B_SF_VFD) ;
+    s223:hasProperty
+        (ns2:Energy_Rate ns2:Energy_Rate_Device_57018) ,
+        (ns2:TEST.ACTCHWDPSP ns2:TEST.ACTCWDPSP) ;
+    s223:hasRole
+        s223:Role-Heating ,
+        s223:Role-Cooling ;
+    a s223:Pump .
+(ns2:TEST.ACTCHWDPSP ns2:TEST.ACTCWDPSP) s223:hasAspect
     s223:Role-Discharge ,
-    s223:EnumerationKind-Position .
-bs:QuantifiableActuatableProperty_version_1 s223:hasExternalReference bs:BACnetExternalReference_version_1 .
-bs:QuantifiableActuatableProperty_version_1 s223:hasRole
-    ns2:OnOff-Unknown ,
-    s223:RunStatus-Unknown ,
-    s223:Role-Supply ,
-    s223:Role-Return ,
-    s223:Role-Condenser ,
-    s223:Position-Unknown ,
-    s223:OnOff-Unknown ,
-    s223:EnumerationKind-Speed ,
-    s223:Aspect-Command .
-bs:QuantifiableActuatableProperty_version_1 qudt:hasQuantityKind
-    quantitykind:VolumeFlowRate ,
-    quantitykind:Temperature ,
-    quantitykind:RelativeHumidity ,
-    quantitykind:Power ,
-    quantitykind:DimensionlessRatio ,
-    quantitykind:DewPointTemperature .
-bs:QuantifiableActuatableProperty_version_1 qudt:hasUnit
-    unit:UNITLESS ,
-    unit:PERCENT ,
-    unit:LB_F-PER-IN2 ,
-    unit:IN_H2O ,
-    unit:GAL_US-PER-MIN ,
-    unit:FT3-PER-SEC ,
-    unit:FT3-PER-MIN ,
-    unit:DEG_F ,
-    unit:DEG_C ,
-    unit:A .
-bs:QuantifiableActuatableProperty_version_1 a
+    s223:EnumerationKind-Position ;
+    s223:hasExternalReference [
+        bacnet:description ("002QgMwn12248" "003jdRyq12263") ;
+        bacnet:device-identifier (ns2:4FsOfbEa2841 ns2:5wSA7AlJ2418) ;
+        bacnet:object-identifier ("002QgMwn12248" "003jdRyq12263") ;
+        bacnet:object-name ("002QgMwn12248" "003jdRyq12263") ;
+        bacnet:object-type ("002QgMwn12248" "003jdRyq12263") ;
+        a s223:BACnetExternalReference
+    ] ;
+    s223:hasRole
+        ns2:OnOff-Unknown ,
+        s223:RunStatus-Unknown ,
+        s223:Role-Supply ,
+        s223:Role-Return ,
+        s223:Role-Condenser ,
+        s223:Position-Unknown ,
+        s223:OnOff-Unknown ,
+        s223:EnumerationKind-Speed ,
+        s223:Aspect-Command ;
+    qudt:hasQuantityKind
+        quantitykind:VolumeFlowRate ,
+        quantitykind:Temperature ,
+        quantitykind:RelativeHumidity ,
+        quantitykind:Power ,
+        quantitykind:DimensionlessRatio ,
+        quantitykind:DewPointTemperature ;
+    qudt:hasUnit
+        unit:UNITLESS ,
+        unit:PERCENT ,
+        unit:LB_F-PER-IN2 ,
+        unit:IN_H2O ,
+        unit:GAL_US-PER-MIN ,
+        unit:FT3-PER-SEC ,
+        unit:FT3-PER-MIN ,
+        unit:DEG_F ,
+        unit:DEG_C ,
+        unit:A ;
+    a
+        s223:QuantifiableObservableProperty ,
+        s223:QuantifiableActuatableProperty .
+(ns2:Energy_Rate ns2:Energy_Rate_Device_57018) s223:hasAspect s223:Role-Discharge ;
+    s223:hasExternalReference [
+        bacnet:description ("002QgMwn12248" "003jdRyq12263") ;
+        bacnet:device-identifier (ns2:4FsOfbEa2841 ns2:5wSA7AlJ2418) ;
+        bacnet:object-identifier ("002QgMwn12248" "003jdRyq12263") ;
+        bacnet:object-name ("002QgMwn12248" "003jdRyq12263") ;
+        bacnet:object-type ("002QgMwn12248" "003jdRyq12263") ;
+        a s223:BACnetExternalReference
+    ] ;
+    s223:hasRole
+        ns2:OnOff-Unknown ,
+        s223:RunStatus-Unknown ,
+        s223:Role-Supply ,
+        s223:Role-Return ,
+        s223:Role-Condenser ,
+        s223:Position-Unknown ,
+        s223:OnOff-Unknown ,
+        s223:EnumerationKind-Speed ;
+    qudt:hasQuantityKind
+        quantitykind:VolumeFlowRate ,
+        quantitykind:Volume ,
+        quantitykind:Voltage ,
+        quantitykind:Torque ,
+        quantitykind:Time ,
+        quantitykind:Temperature ,
+        quantitykind:RelativeHumidity ,
+        quantitykind:ReactivePower ,
+        quantitykind:PressureRatio ,
+        quantitykind:Power ,
+        quantitykind:ElectricPower ,
+        quantitykind:ElectricCurrent ,
+        quantitykind:DimensionlessRatio ,
+        quantitykind:DewPointTemperature ,
+        quantitykind:Conductivity ,
+        quantitykind:ActivePower ;
+    qudt:hasUnit
+        unit:W-HR ,
+        unit:W ,
+        unit:V-A_Reactive ,
+        unit:V-A ,
+        unit:V ,
+        unit:UNITLESS ,
+        unit:TON_FG-HR ,
+        unit:TON_FG ,
+        unit:SEC ,
+        unit:REV-PER-MIN ,
+        unit:PPM ,
+        unit:PERCENT_RH ,
+        unit:PERCENT ,
+        unit:Overridden_Status ,
+        unit:MicroS ,
+        unit:MegaW-HR ,
+        unit:LB_F-PER-IN2 ,
+        unit:LB-PER-HR ,
+        unit:LB ,
+        unit:KiloW-HR ,
+        unit:KiloW ,
+        unit:KiloV-A_Reactive ,
+        unit:KiloV-A-HR ,
+        unit:KiloV-A ,
+        unit:IN_H2O ,
+        unit:HZ ,
+        unit:HR ,
+        unit:HP ,
+        unit:GAL_US-PER-MIN ,
+        unit:GAL_US-PER-HR ,
+        unit:GAL_US ,
+        unit:FT3-PER-SEC ,
+        unit:FT3-PER-MIN ,
+        unit:DEG_F ,
+        unit:DEG_C ,
+        unit:A ;
+    a s223:QuantifiableObservableProperty .
+(ns2:Aux_Input_Total ns2:Aux_Input_Total_Device_57018) s223:hasExternalReference [
+    bacnet:description ("002QgMwn12248" "003jdRyq12263") ;
+    bacnet:device-identifier (ns2:4FsOfbEa2841 ns2:5wSA7AlJ2418) ;
+    bacnet:object-identifier ("002QgMwn12248" "003jdRyq12263") ;
+    bacnet:object-name ("002QgMwn12248" "003jdRyq12263") ;
+    bacnet:object-type ("002QgMwn12248" "003jdRyq12263") ;
+    a s223:BACnetExternalReference
+] ;
+    s223:hasRole
+        s223:Role-Supply ,
+        s223:OnOff-Unknown ;
+    qudt:hasUnit
+        unit:UNITLESS ,
+        unit:SEC ,
+        unit:PERCENT ,
+        unit:MIN ,
+        unit:LB_F-PER-IN2 ,
+        unit:HR ,
+        unit:FT2 ,
+        unit:DEG_F ,
+        unit:DEG ;
+    a s223:QuantifiableProperty .
+(ns2:AH2A-ea-out ns2:AH2A-ra-in) s223:hasProperty rdfs:Resource ;
+    s223:hasRole
+        s223:Role-Return ,
+        s223:Role-Exhaust .
+(ns2:ATS-E1 ns2:ATS-E2) s223:hasProperty
+    (ns2:Aux_Input_Total ns2:Aux_Input_Total_Device_57018) ,
     (ns2:Energy_Rate ns2:Energy_Rate_Device_57018) ,
-    (ns2:TEST.ACTCHWDPSP ns2:TEST.ACTCWDPSP) .
-bs:QuantifiableObservableProperty_version_1 s223:hasAspect s223:Role-Discharge .
-bs:QuantifiableObservableProperty_version_1 s223:hasExternalReference bs:BACnetExternalReference_version_1 .
-bs:QuantifiableObservableProperty_version_1 s223:hasRole
-    ns2:OnOff-Unknown ,
-    s223:RunStatus-Unknown ,
-    s223:Role-Supply ,
-    s223:Role-Return ,
-    s223:Role-Condenser ,
-    s223:Position-Unknown ,
-    s223:OnOff-Unknown ,
-    s223:EnumerationKind-Speed .
-bs:QuantifiableObservableProperty_version_1 qudt:hasQuantityKind
-    quantitykind:VolumeFlowRate ,
-    quantitykind:Volume ,
-    quantitykind:Voltage ,
-    quantitykind:Torque ,
-    quantitykind:Time ,
-    quantitykind:Temperature ,
-    quantitykind:RelativeHumidity ,
-    quantitykind:ReactivePower ,
-    quantitykind:PressureRatio ,
-    quantitykind:Power ,
-    quantitykind:ElectricPower ,
-    quantitykind:ElectricCurrent ,
-    quantitykind:DimensionlessRatio ,
-    quantitykind:DewPointTemperature ,
-    quantitykind:Conductivity ,
-    quantitykind:ActivePower .
-bs:QuantifiableObservableProperty_version_1 qudt:hasUnit
-    unit:W-HR ,
-    unit:W ,
-    unit:V-A_Reactive ,
-    unit:V-A ,
-    unit:V ,
-    unit:UNITLESS ,
-    unit:TON_FG-HR ,
-    unit:TON_FG ,
-    unit:SEC ,
-    unit:REV-PER-MIN ,
-    unit:PPM ,
-    unit:PERCENT_RH ,
-    unit:PERCENT ,
-    unit:Overridden_Status ,
-    unit:MicroS ,
-    unit:MegaW-HR ,
-    unit:LB_F-PER-IN2 ,
-    unit:LB-PER-HR ,
-    unit:LB ,
-    unit:KiloW-HR ,
-    unit:KiloW ,
-    unit:KiloV-A_Reactive ,
-    unit:KiloV-A-HR ,
-    unit:KiloV-A ,
-    unit:IN_H2O ,
-    unit:HZ ,
-    unit:HR ,
-    unit:HP ,
-    unit:GAL_US-PER-MIN ,
-    unit:GAL_US-PER-HR ,
-    unit:GAL_US ,
-    unit:FT3-PER-SEC ,
-    unit:FT3-PER-MIN ,
-    unit:DEG_F ,
-    unit:DEG_C ,
-    unit:A .
-bs:QuantifiableObservableProperty_version_1 a (ns2:Energy_Rate ns2:Energy_Rate_Device_57018) .
-bs:QuantifiableProperty_version_1 s223:hasExternalReference bs:BACnetExternalReference_version_1 .
-bs:QuantifiableProperty_version_1 s223:hasRole
-    s223:Role-Supply ,
-    s223:OnOff-Unknown .
-bs:QuantifiableProperty_version_1 qudt:hasUnit
-    unit:UNITLESS ,
-    unit:SEC ,
-    unit:PERCENT ,
-    unit:MIN ,
-    unit:LB_F-PER-IN2 ,
-    unit:HR ,
-    unit:FT2 ,
-    unit:DEG_F ,
-    unit:DEG .
-bs:QuantifiableProperty_version_1 a (ns2:Aux_Input_Total ns2:Aux_Input_Total_Device_57018) .
-bs:Resource_version_1 s223:hasProperty (ns2:AH2A-ea-out ns2:AH2A-ra-in) .
-bs:Resource_version_1 s223:hasRole
-    s223:Role-Return ,
-    s223:Role-Exhaust .
-bs:Resource_version_2 s223:hasProperty
-    bs:QuantifiableProperty_version_1 ,
-    bs:QuantifiableObservableProperty_version_1 ,
-    bs:QuantifiableActuatableProperty_version_1 ,
-    bs:Property_version_1 .
-bs:Resource_version_3 s223:cnx bs:InletConnectionPoint_version_1 .
-bs:Sensor_version_1 s223:hasObservationLocation
-    bs:PhysicalSpace_version_1 ,
-    bs:OutletConnectionPoint_version_1 ,
-    bs:OutdoorPhysicalSpace_version_1 ,
-    bs:InletConnectionPoint_version_1 .
-bs:Sensor_version_1 s223:hasProperty
-    bs:QuantifiableProperty_version_1 ,
-    bs:QuantifiableObservableProperty_version_1 ,
-    bs:Property_version_1 .
-bs:Sensor_version_1 s223:hasRole s223:Role-Cooling .
-bs:Sensor_version_1 s223:observes
-    bs:QuantifiableObservableProperty_version_1 ,
-    bs:QuantifiableActuatableProperty_version_1 ,
-    bs:Property_version_1 .
-bs:Sensor_version_1 a (ns2:Condenser_Blowdown_Meter ns2:Condenser_Make_Up_Meter) .
-bs:SingleDuctTerminal_version_1 s223:cnx
-    bs:OutletConnectionPoint_version_1 ,
-    bs:InletConnectionPoint_version_1 .
-bs:SingleDuctTerminal_version_1 s223:contains
-    bs:Valve_version_1 ,
-    bs:HeatingCoil_version_1 ,
-    bs:Damper_version_1 .
-bs:SingleDuctTerminal_version_1 s223:hasProperty
-    bs:QuantifiableProperty_version_1 ,
-    bs:QuantifiableObservableProperty_version_1 ,
-    bs:QuantifiableActuatableProperty_version_1 ,
-    bs:Property_version_1 .
-bs:SingleDuctTerminal_version_1 s223:hasRole s223:Role-Heating .
-bs:SingleDuctTerminal_version_1 a
-    ns1:VAVWithReheat ,
-    (ns2:S1-01_VAV ns2:S1-02_VAV) .
-bs:Valve_version_1 s223:cnx
-    bs:OutletConnectionPoint_version_1 ,
-    bs:InletConnectionPoint_version_1 .
-bs:Valve_version_1 s223:hasProperty
-    bs:QuantifiableProperty_version_1 ,
-    bs:QuantifiableObservableProperty_version_1 ,
-    bs:QuantifiableActuatableProperty_version_1 .
-bs:Valve_version_1 s223:hasRole
-    s223:Role-Supply ,
-    s223:Role-Recirculating ,
-    s223:Role-Heating ,
-    s223:Role-Cooling .
-bs:Valve_version_1 a
-    ns1:HotWaterValve ,
-    (ns2:AH1A_Cooling_Coil_Valve ns2:AH1A_Heating_Coil_Valve) .
-bs:VariableFrequencyDrive_version_1 s223:hasProperty
-    bs:QuantifiableProperty_version_1 ,
-    bs:QuantifiableObservableProperty_version_1 ,
-    bs:QuantifiableActuatableProperty_version_1 ,
-    bs:Property_version_1 .
-bs:VariableFrequencyDrive_version_1 a
-    ns1:FanWithVFD ,
-    (ns2:AH1A_SF_VFD ns2:AH1B_SF_VFD) .
+    (ns2:TEST.ACTCHWDPSP ns2:TEST.ACTCWDPSP) ,
+    (ns2:Mode_1_Volume_Total ns2:Mode_1_Volume_Total_Device_57018) .
+(ns2:HX-1_water-out-pipe ns2:HX-2_water-out-pipe) s223:cnx (ns2:131_Tele-Health_hvac_domain_in ns2:132_MECH_STEAM_hvac_domain_in) .
+(ns2:Condenser_Blowdown_Meter ns2:Condenser_Make_Up_Meter) s223:hasObservationLocation
+    (ns2:131_Tele-Health ns2:132_MECH_STEAM) ,
+    (ns2:131_Tele-Health_hvac_domain_out ns2:132_MECH_STEAM_hvac_domain_out) ,
+    (ns2:266_RECEIVING) ,
+    (ns2:131_Tele-Health_hvac_domain_in ns2:132_MECH_STEAM_hvac_domain_in) ;
+    s223:hasProperty
+        (ns2:Aux_Input_Total ns2:Aux_Input_Total_Device_57018) ,
+        (ns2:Energy_Rate ns2:Energy_Rate_Device_57018) ,
+        (ns2:Mode_1_Volume_Total ns2:Mode_1_Volume_Total_Device_57018) ;
+    s223:hasRole s223:Role-Cooling ;
+    s223:observes
+        (ns2:Energy_Rate ns2:Energy_Rate_Device_57018) ,
+        (ns2:TEST.ACTCHWDPSP ns2:TEST.ACTCWDPSP) ,
+        (ns2:Mode_1_Volume_Total ns2:Mode_1_Volume_Total_Device_57018) ;
+    a s223:Sensor .
+(ns2:S1-01_VAV ns2:S1-02_VAV) s223:cnx
+    (ns2:131_Tele-Health_hvac_domain_out ns2:132_MECH_STEAM_hvac_domain_out) ,
+    (ns2:131_Tele-Health_hvac_domain_in ns2:132_MECH_STEAM_hvac_domain_in) ;
+    s223:contains
+        (ns2:AH1A_Cooling_Coil_Valve ns2:AH1A_Heating_Coil_Valve) ,
+        (ns2:AH1A_Heating_Coil ns2:AH1B_Heating_Coil) ,
+        (ns2:AH1A_Isolation_Damper ns2:AH1B_Isolation_Damper) ;
+    s223:hasProperty
+        (ns2:Aux_Input_Total ns2:Aux_Input_Total_Device_57018) ,
+        (ns2:Energy_Rate ns2:Energy_Rate_Device_57018) ,
+        (ns2:TEST.ACTCHWDPSP ns2:TEST.ACTCWDPSP) ,
+        (ns2:Mode_1_Volume_Total ns2:Mode_1_Volume_Total_Device_57018) ;
+    s223:hasRole s223:Role-Heating ;
+    a
+        ns1:VAVWithReheat ,
+        s223:SingleDuctTerminal .
+(ns2:AH1A_Cooling_Coil_Valve ns2:AH1A_Heating_Coil_Valve) s223:cnx
+    (ns2:131_Tele-Health_hvac_domain_out ns2:132_MECH_STEAM_hvac_domain_out) ,
+    (ns2:131_Tele-Health_hvac_domain_in ns2:132_MECH_STEAM_hvac_domain_in) ;
+    s223:hasProperty
+        (ns2:Aux_Input_Total ns2:Aux_Input_Total_Device_57018) ,
+        (ns2:Energy_Rate ns2:Energy_Rate_Device_57018) ,
+        (ns2:TEST.ACTCHWDPSP ns2:TEST.ACTCWDPSP) ;
+    s223:hasRole
+        s223:Role-Supply ,
+        s223:Role-Recirculating ,
+        s223:Role-Heating ,
+        s223:Role-Cooling ;
+    a
+        ns1:HotWaterValve ,
+        s223:Valve .
+(ns2:AH1A_SF_VFD ns2:AH1B_SF_VFD) s223:hasProperty
+    (ns2:Aux_Input_Total ns2:Aux_Input_Total_Device_57018) ,
+    (ns2:Energy_Rate ns2:Energy_Rate_Device_57018) ,
+    (ns2:TEST.ACTCHWDPSP ns2:TEST.ACTCWDPSP) ,
+    (ns2:Mode_1_Volume_Total ns2:Mode_1_Volume_Total_Device_57018) ;
+    a
+        ns1:FanWithVFD ,
+        s223:VariableFrequencyDrive .

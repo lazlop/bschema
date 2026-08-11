@@ -1,7 +1,7 @@
 use bschema_core::algorithm::create_bschema;
 use bschema_core::graph::RdfGraph;
 use oxigraph::io::RdfFormat;
-use oxigraph::model::Term;
+use oxigraph::model::{NamedOrBlankNode, Term};
 use std::collections::HashSet;
 
 const TTL: &str = r#"
@@ -121,6 +121,24 @@ fn groups_literals_by_topology_and_reports_original_values() {
     }
 }
 
+#[test]
+fn strips_the_synthetic_rdfs_literal_marker_from_class_graph() {
+    // <literal-skolem> a rdfs:Literal is bookkeeping RdfGraph::skolemize
+    // adds so the matching algorithm can treat literals uniformly - it's
+    // never present in the original data graph, so class_graph shouldn't
+    // carry it either, regardless of remove_added_labels (which only
+    // concerns the bs: labels themselves, a different kind of synthetic
+    // content).
+    let data_graph = RdfGraph::parse_str(TTL_WITH_LITERALS, RdfFormat::Turtle).unwrap();
+    let result = create_bschema(&data_graph, 10, None, true, true).unwrap();
+
+    assert!(
+        result.class_graph.triples().iter().all(|t| !t.object.to_string().contains("rdf-schema#Literal")),
+        "class_graph should not contain the synthetic rdfs:Literal marker, got: {:?}",
+        result.class_graph.triples()
+    );
+}
+
 const TTL_WITH_BLANK_NODES: &str = r#"
     @prefix ex: <urn:example#> .
 
@@ -150,4 +168,81 @@ fn groups_blank_nodes_by_topology_and_reports_as_blank_nodes() {
         .filter(|t| matches!(&t.object, Term::BlankNode(_)))
         .count();
     assert_eq!(blank_member_count, 2, "the two isomorphic blank-node specs should be grouped together");
+}
+
+#[test]
+fn threshold_zero_member_graph_is_keyed_consistently_with_class_graph() {
+    // Regression test: `similarity_threshold == Some(0.0)` breaks out of
+    // the iteration loop right after applying iteration 0's relabeling, so
+    // the member graph must be keyed by that *applied* label - not by
+    // `subject_classes`, which (only on this path) still describes each
+    // group's class as of the *start* of iteration 0, before relabeling.
+    // Getting this wrong means class_graph references a `bs:` class the
+    // member graph has no entry for at all.
+    let data_graph = RdfGraph::parse_str(TTL, RdfFormat::Turtle).unwrap();
+    let result = create_bschema(&data_graph, 10, Some(0.0), true, true).unwrap();
+
+    let member_classes: HashSet<String> = result
+        .member_graph
+        .triples()
+        .into_iter()
+        .filter(|t| t.predicate.as_str().ends_with("rdf-schema#member"))
+        .filter_map(|t| match t.subject {
+            NamedOrBlankNode::NamedNode(n) => Some(n.as_str().to_string()),
+            NamedOrBlankNode::BlankNode(_) => None,
+        })
+        .collect();
+
+    let mut checked_any = false;
+    for t in result.class_graph.triples() {
+        for term in [Term::from(t.subject.clone()), t.object.clone()] {
+            if let Term::NamedNode(n) = &term {
+                if n.as_str().starts_with("urn:bschema#") {
+                    checked_any = true;
+                    assert!(
+                        member_classes.contains(n.as_str()),
+                        "class_graph references {n} but member_graph has no members for it"
+                    );
+                }
+            }
+        }
+    }
+    assert!(checked_any, "test setup: expected at least one bs: class in class_graph");
+}
+
+const TTL_WITH_UNRELATED_LITERALS: &str = r#"
+    @prefix ex: <urn:example#> .
+    @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+    ex:sensorA a ex:Sensor ; ex:hasReading "22.5"^^xsd:float .
+    ex:buildingA a ex:Building ; ex:hasName "MainBuilding" .
+"#;
+
+#[test]
+fn literals_reached_via_different_predicates_do_not_merge_at_low_threshold() {
+    // Regression test for the literal-topology over-merging bug: the
+    // synthetic `<literal-skolem> a rdfs:Literal` marker is identical for
+    // every literal, so before it was excluded from the similarity ratio,
+    // these two totally unrelated literals - different predicate,
+    // different subject type, nothing else in common - would share that
+    // one trivial triple out of three total, giving a 0.33 overlap ratio:
+    // enough to merge at threshold=0.3 despite having no real similarity.
+    let data_graph = RdfGraph::parse_str(TTL_WITH_UNRELATED_LITERALS, RdfFormat::Turtle).unwrap();
+    let result = create_bschema(&data_graph, 10, Some(0.3), true, true).unwrap();
+
+    let member_triples = result.member_graph.triples();
+    let reading_class = member_triples
+        .iter()
+        .find(|t| matches!(&t.object, Term::Literal(l) if l.value() == "22.5"))
+        .map(|t| t.subject.clone());
+    let name_class = member_triples
+        .iter()
+        .find(|t| matches!(&t.object, Term::Literal(l) if l.value() == "MainBuilding"))
+        .map(|t| t.subject.clone());
+
+    assert!(reading_class.is_some() && name_class.is_some(), "test setup: both literals should appear as members");
+    assert_ne!(
+        reading_class, name_class,
+        "unrelated literals reached via different predicates/subject types should not be merged into the same class"
+    );
 }

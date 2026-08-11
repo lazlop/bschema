@@ -48,58 +48,7 @@ bs:BidirectionalConnectionPoint_version_1 a rdf:Seq ;
         <http://data.ashrae.org/standard223/data/lbnl-example-2#0090100901> .
 
 bs:Connection_version_1 a rdf:Seq ;
-    rdfs:member <http://data.ashrae.org/standard223/data/lbnl-example-2#00048>,
-        <http://data.ashrae.org/standard223/data/lbnl-example-2#00951>,
-        <http://data.ashrae.org/standard223/data/lbnl-example-2#01019>,
-        <http://data.ashrae.org/standard223/data/lbnl-example-2#01094>,
-        <http://data.ashrae.org/standard223/data/lbnl-example-2#01166>,
-        <http://data.ashrae.org/standard223/data/lbnl-example-2#01232>,
-        <http://data.ashrae.org/standard223/data/lbnl-example-2#01307>,
-        <http://data.ashrae.org/standard223/data/lbnl-example-2#01375>,
-        <http://data.ashrae.org/standard223/data/lbnl-example-2#01443>,
-        <http://data.ashrae.org/standard223/data/lbnl-example-2#01513>,
-        <http://data.ashrae.org/standard223/data/lbnl-example-2#01590>,
-        <http://data.ashrae.org/standard223/data/lbnl-example-2#01665>,
-        <http://data.ashrae.org/standard223/data/lbnl-example-2#01733>,
-        <http://data.ashrae.org/standard223/data/lbnl-example-2#01798>,
-        <http://data.ashrae.org/standard223/data/lbnl-example-2#01861>,
-        <http://data.ashrae.org/standard223/data/lbnl-example-2#01917>,
-        <http://data.ashrae.org/standard223/data/lbnl-example-2#01985>,
-        <http://data.ashrae.org/standard223/data/lbnl-example-2#02060>,
-        <http://data.ashrae.org/standard223/data/lbnl-example-2#02135>,
-        <http://data.ashrae.org/standard223/data/lbnl-example-2#02210>,
-        <http://data.ashrae.org/standard223/data/lbnl-example-2#02278>,
-        <http://data.ashrae.org/standard223/data/lbnl-example-2#02353>,
-        <http://data.ashrae.org/standard223/data/lbnl-example-2#02421>,
-        <http://data.ashrae.org/standard223/data/lbnl-example-2#02496>,
-        <http://data.ashrae.org/standard223/data/lbnl-example-2#02566>,
-        <http://data.ashrae.org/standard223/data/lbnl-example-2#02643>,
-        <http://data.ashrae.org/standard223/data/lbnl-example-2#02713>,
-        <http://data.ashrae.org/standard223/data/lbnl-example-2#02781>,
-        <http://data.ashrae.org/standard223/data/lbnl-example-2#02849>,
-        <http://data.ashrae.org/standard223/data/lbnl-example-2#02924>,
-        <http://data.ashrae.org/standard223/data/lbnl-example-2#02996>,
-        <http://data.ashrae.org/standard223/data/lbnl-example-2#03062>,
-        <http://data.ashrae.org/standard223/data/lbnl-example-2#03132>,
-        <http://data.ashrae.org/standard223/data/lbnl-example-2#03200>,
-        <http://data.ashrae.org/standard223/data/lbnl-example-2#03275>,
-        <http://data.ashrae.org/standard223/data/lbnl-example-2#03352>,
-        <http://data.ashrae.org/standard223/data/lbnl-example-2#03420>,
-        <http://data.ashrae.org/standard223/data/lbnl-example-2#03495>,
-        <http://data.ashrae.org/standard223/data/lbnl-example-2#03570>,
-        <http://data.ashrae.org/standard223/data/lbnl-example-2#03635>,
-        <http://data.ashrae.org/standard223/data/lbnl-example-2#03701>,
-        <http://data.ashrae.org/standard223/data/lbnl-example-2#03766>,
-        <http://data.ashrae.org/standard223/data/lbnl-example-2#03834>,
-        <http://data.ashrae.org/standard223/data/lbnl-example-2#03909>,
-        <http://data.ashrae.org/standard223/data/lbnl-example-2#03984>,
-        <http://data.ashrae.org/standard223/data/lbnl-example-2#04059>,
-        <http://data.ashrae.org/standard223/data/lbnl-example-2#04127>,
-        <http://data.ashrae.org/standard223/data/lbnl-example-2#04204>,
-        <http://data.ashrae.org/standard223/data/lbnl-example-2#04272>,
-        <http://data.ashrae.org/standard223/data/lbnl-example-2#04347>,
-        <http://data.ashrae.org/standard223/data/lbnl-example-2#04422>,
-        <http://data.ashrae.org/standard223/data/lbnl-example-2#04499> .
+    rdfs:member <http://data.ashrae.org/standard223/data/lbnl-example-2#00048> .
 
 bs:Connection_version_2 a rdf:Seq ;
     rdfs:member <http://data.ashrae.org/standard223/data/lbnl-example-2#00050> .
@@ -453,6 +402,59 @@ bs:Connection_version_6 a rdf:Seq ;
         <http://data.ashrae.org/standard223/data/lbnl-example-2#04497> .
 
 bs:Connection_version_7 a rdf:Seq ;
+    rdfs:member <http://data.ashrae.org/standard223/data/lbnl-example-2#00951>,
+        <http://data.ashrae.org/standard223/data/lbnl-example-2#01019>,
+        <http://data.ashrae.org/standard223/data/lbnl-example-2#01094>,
+        <http://data.ashrae.org/standard223/data/lbnl-example-2#01166>,
+        <http://data.ashrae.org/standard223/data/lbnl-example-2#01232>,
+        <http://data.ashrae.org/standard223/data/lbnl-example-2#01307>,
+        <http://data.ashrae.org/standard223/data/lbnl-example-2#01375>,
+        <http://data.ashrae.org/standard223/data/lbnl-example-2#01443>,
+        <http://data.ashrae.org/standard223/data/lbnl-example-2#01513>,
+        <http://data.ashrae.org/standard223/data/lbnl-example-2#01590>,
+        <http://data.ashrae.org/standard223/data/lbnl-example-2#01665>,
+        <http://data.ashrae.org/standard223/data/lbnl-example-2#01733>,
+        <http://data.ashrae.org/standard223/data/lbnl-example-2#01798>,
+        <http://data.ashrae.org/standard223/data/lbnl-example-2#01861>,
+        <http://data.ashrae.org/standard223/data/lbnl-example-2#01917>,
+        <http://data.ashrae.org/standard223/data/lbnl-example-2#01985>,
+        <http://data.ashrae.org/standard223/data/lbnl-example-2#02060>,
+        <http://data.ashrae.org/standard223/data/lbnl-example-2#02135>,
+        <http://data.ashrae.org/standard223/data/lbnl-example-2#02210>,
+        <http://data.ashrae.org/standard223/data/lbnl-example-2#02278>,
+        <http://data.ashrae.org/standard223/data/lbnl-example-2#02353>,
+        <http://data.ashrae.org/standard223/data/lbnl-example-2#02421>,
+        <http://data.ashrae.org/standard223/data/lbnl-example-2#02496>,
+        <http://data.ashrae.org/standard223/data/lbnl-example-2#02566>,
+        <http://data.ashrae.org/standard223/data/lbnl-example-2#02643>,
+        <http://data.ashrae.org/standard223/data/lbnl-example-2#02713>,
+        <http://data.ashrae.org/standard223/data/lbnl-example-2#02781>,
+        <http://data.ashrae.org/standard223/data/lbnl-example-2#02849>,
+        <http://data.ashrae.org/standard223/data/lbnl-example-2#02924>,
+        <http://data.ashrae.org/standard223/data/lbnl-example-2#02996>,
+        <http://data.ashrae.org/standard223/data/lbnl-example-2#03062>,
+        <http://data.ashrae.org/standard223/data/lbnl-example-2#03132>,
+        <http://data.ashrae.org/standard223/data/lbnl-example-2#03200>,
+        <http://data.ashrae.org/standard223/data/lbnl-example-2#03275>,
+        <http://data.ashrae.org/standard223/data/lbnl-example-2#03352>,
+        <http://data.ashrae.org/standard223/data/lbnl-example-2#03420>,
+        <http://data.ashrae.org/standard223/data/lbnl-example-2#03495>,
+        <http://data.ashrae.org/standard223/data/lbnl-example-2#03570>,
+        <http://data.ashrae.org/standard223/data/lbnl-example-2#03635>,
+        <http://data.ashrae.org/standard223/data/lbnl-example-2#03701>,
+        <http://data.ashrae.org/standard223/data/lbnl-example-2#03766>,
+        <http://data.ashrae.org/standard223/data/lbnl-example-2#03834>,
+        <http://data.ashrae.org/standard223/data/lbnl-example-2#03909>,
+        <http://data.ashrae.org/standard223/data/lbnl-example-2#03984>,
+        <http://data.ashrae.org/standard223/data/lbnl-example-2#04059>,
+        <http://data.ashrae.org/standard223/data/lbnl-example-2#04127>,
+        <http://data.ashrae.org/standard223/data/lbnl-example-2#04204>,
+        <http://data.ashrae.org/standard223/data/lbnl-example-2#04272>,
+        <http://data.ashrae.org/standard223/data/lbnl-example-2#04347>,
+        <http://data.ashrae.org/standard223/data/lbnl-example-2#04422>,
+        <http://data.ashrae.org/standard223/data/lbnl-example-2#04499> .
+
+bs:Connection_version_8 a rdf:Seq ;
     rdfs:member <http://data.ashrae.org/standard223/data/lbnl-example-2#00969>,
         <http://data.ashrae.org/standard223/data/lbnl-example-2#01037>,
         <http://data.ashrae.org/standard223/data/lbnl-example-2#01112>,
@@ -505,7 +507,7 @@ bs:Connection_version_7 a rdf:Seq ;
         <http://data.ashrae.org/standard223/data/lbnl-example-2#04442>,
         <http://data.ashrae.org/standard223/data/lbnl-example-2#04519> .
 
-bs:Connection_version_8 a rdf:Seq ;
+bs:Connection_version_9 a rdf:Seq ;
     rdfs:member <http://data.ashrae.org/standard223/data/lbnl-example-2#00974>,
         <http://data.ashrae.org/standard223/data/lbnl-example-2#01042>,
         <http://data.ashrae.org/standard223/data/lbnl-example-2#01049>,
@@ -4227,8 +4229,44 @@ bs:Literal_version_10 a rdf:Seq ;
         "zone_air_temp_cooling_setpoint"^^xsd:string,
         "zone_air_temp_heating_setpoint"^^xsd:string .
 
+bs:Literal_version_100 a rdf:Seq ;
+    rdfs:member "B59_HeatPump.chilledWaterOut"^^xsd:string .
+
+bs:Literal_version_101 a rdf:Seq ;
+    rdfs:member "iso_damper"^^xsd:string .
+
+bs:Literal_version_102 a rdf:Seq ;
+    rdfs:member "Binary status of heat pump"^^xsd:string .
+
+bs:Literal_version_103 a rdf:Seq ;
+    rdfs:member "return_fan.electricalInlet"^^xsd:string,
+        "supply_fan.electricalInlet"^^xsd:string .
+
+bs:Literal_version_104 a rdf:Seq ;
+    rdfs:member "Static Pressure Setpoint"^^xsd:string .
+
+bs:Literal_version_105 a rdf:Seq ;
+    rdfs:member "Floor_3"^^xsd:string,
+        "Floor_4"^^xsd:string .
+
+bs:Literal_version_106 a rdf:Seq ;
+    rdfs:member "iso_damper.airOutlet"^^xsd:string .
+
+bs:Literal_version_107 a rdf:Seq ;
+    rdfs:member "B59_HeatPump.chilledWaterIn"^^xsd:string .
+
+bs:Literal_version_108 a rdf:Seq ;
+    rdfs:member "B59_HeatPump_water_return_junction"^^xsd:string,
+        "B59_HeatPump_water_supply_junction"^^xsd:string .
+
+bs:Literal_version_109 a rdf:Seq ;
+    rdfs:member "00050"^^xsd:string .
+
 bs:Literal_version_11 a rdf:Seq ;
     rdfs:member "hw_coil.airOutlet"^^xsd:string .
+
+bs:Literal_version_110 a rdf:Seq ;
+    rdfs:member "B59_HeatPump.hotWaterIn"^^xsd:string .
 
 bs:Literal_version_12 a rdf:Seq ;
     rdfs:member "zone_016.airOutlet"^^xsd:string,
@@ -4327,9 +4365,7 @@ bs:Literal_version_13 a rdf:Seq ;
         5967.0,
         6090.0,
         7229.0,
-        9058.0,
-        "MINIMUM CAPACITY (BTUH)"^^xsd:string,
-        "QUANTITY"^^xsd:string .
+        9058.0 .
 
 bs:Literal_version_14 a rdf:Seq ;
     rdfs:member "3001"^^xsd:string,
@@ -4405,9 +4441,7 @@ bs:Literal_version_14 a rdf:Seq ;
         "6038"^^xsd:string,
         "6040"^^xsd:string,
         "6051"^^xsd:string,
-        "793"^^xsd:string,
-        "Floor_3"^^xsd:string,
-        "Floor_4"^^xsd:string .
+        "793"^^xsd:string .
 
 bs:Literal_version_15 a rdf:Seq ;
     rdfs:member "G-1.waterInlet"^^xsd:string,
@@ -4690,17 +4724,9 @@ bs:Literal_version_19 a rdf:Seq ;
     rdfs:member "rtu supply fan speed setpoint carbon"^^xsd:string,
         "rtu supply fan speed setpoint cost"^^xsd:string,
         "rtu supply fan speed setpoint energy"^^xsd:string,
-        "rtu_supply_fan_speed_setpoint_carbon"^^xsd:string,
-        "rtu_supply_fan_speed_setpoint_cost"^^xsd:string,
-        "rtu_supply_fan_speed_setpoint_energy"^^xsd:string,
-        "speed"^^xsd:string,
-        "speed_perc"^^xsd:string,
         "summary of optimization carbon"^^xsd:string,
         "summary of optimization cost"^^xsd:string,
-        "summary of optimization energy"^^xsd:string,
-        "summary_of_optimization_carbon"^^xsd:string,
-        "summary_of_optimization_cost"^^xsd:string,
-        "summary_of_optimization_energy"^^xsd:string .
+        "summary of optimization energy"^^xsd:string .
 
 bs:Literal_version_2 a rdf:Seq ;
     rdfs:member "supply_fan"^^xsd:string .
@@ -4907,33 +4933,27 @@ bs:Literal_version_23 a rdf:Seq ;
         "sa_temp"^^xsd:string .
 
 bs:Literal_version_24 a rdf:Seq ;
-    rdfs:member "bypass damper percentage position"^^xsd:string,
-        "bypass_damper_percentage_position"^^xsd:string,
-        "compressor 1 speed"^^xsd:string,
-        "compressor 2 speed"^^xsd:string,
-        "compressor_1_speed"^^xsd:string,
-        "compressor_2_speed"^^xsd:string,
-        "exhaust air damper position"^^xsd:string,
-        "exhaust_air_damper_position"^^xsd:string,
-        "heat pump speed feedback"^^xsd:string,
-        "heat pump speed output"^^xsd:string,
-        "hwgp1_spd_fbk"^^xsd:string,
-        "hwgp2_spd_fbk"^^xsd:string,
-        "m565 unclear"^^xsd:string,
-        "m565_unclear"^^xsd:string,
-        "outside air damper position feedback"^^xsd:string,
-        "outside_air_damper_position_feedback"^^xsd:string,
-        "p1_vfd_output"^^xsd:string,
-        "p2_vfd_output"^^xsd:string,
-        "return fan speed output"^^xsd:string,
-        "return_fan_speed_output"^^xsd:string,
-        "supply fan speed output"^^xsd:string,
-        "supply_fan_speed_output"^^xsd:string .
+    rdfs:member "ITEM"^^xsd:string,
+        "ORIENTATION"^^xsd:string,
+        "RTU"^^xsd:string,
+        "TO USE"^^xsd:string .
 
 bs:Literal_version_25 a rdf:Seq ;
-    rdfs:member "fan.airInlet"^^xsd:string .
+    rdfs:member "bypass damper percentage position"^^xsd:string,
+        "compressor 1 speed"^^xsd:string,
+        "compressor 2 speed"^^xsd:string,
+        "exhaust air damper position"^^xsd:string,
+        "heat pump speed feedback"^^xsd:string,
+        "heat pump speed output"^^xsd:string,
+        "m565 unclear"^^xsd:string,
+        "outside air damper position feedback"^^xsd:string,
+        "return fan speed output"^^xsd:string,
+        "supply fan speed output"^^xsd:string .
 
 bs:Literal_version_26 a rdf:Seq ;
+    rdfs:member "fan.airInlet"^^xsd:string .
+
+bs:Literal_version_27 a rdf:Seq ;
     rdfs:member "G-1"^^xsd:string,
         "G-10"^^xsd:string,
         "G-11"^^xsd:string,
@@ -4986,7 +5006,7 @@ bs:Literal_version_26 a rdf:Seq ;
         "G-x044"^^xsd:string,
         "G-x045"^^xsd:string .
 
-bs:Literal_version_27 a rdf:Seq ;
+bs:Literal_version_28 a rdf:Seq ;
     rdfs:member "00947"^^xsd:string,
         "01015"^^xsd:string,
         "01090"^^xsd:string,
@@ -5039,7 +5059,7 @@ bs:Literal_version_27 a rdf:Seq ;
         "04418"^^xsd:string,
         "04495"^^xsd:string .
 
-bs:Literal_version_28 a rdf:Seq ;
+bs:Literal_version_29 a rdf:Seq ;
     rdfs:member "00974"^^xsd:string,
         "01042"^^xsd:string,
         "01049"^^xsd:string,
@@ -5115,9 +5135,6 @@ bs:Literal_version_28 a rdf:Seq ;
         "04454"^^xsd:string,
         "04524"^^xsd:string .
 
-bs:Literal_version_29 a rdf:Seq ;
-    rdfs:member "hw_valve.waterOutlet"^^xsd:string .
-
 bs:Literal_version_3 a rdf:Seq ;
     rdfs:member "zone_016"^^xsd:string,
         "zone_017"^^xsd:string,
@@ -5172,9 +5189,31 @@ bs:Literal_version_3 a rdf:Seq ;
         "zone_072"^^xsd:string .
 
 bs:Literal_version_30 a rdf:Seq ;
-    rdfs:member "zone_co2"^^xsd:string .
+    rdfs:member "Return Air Flow"^^xsd:string,
+        "Supply Air Flow"^^xsd:string,
+        "aru_cws_fr_gpm.Flow"^^xsd:string,
+        "aru_hws_fr_gpm.Flow"^^xsd:string,
+        "oa_flow_station.Flow"^^xsd:string,
+        "return_air_flow"^^xsd:string,
+        "supply_air_flow"^^xsd:string .
 
 bs:Literal_version_31 a rdf:Seq ;
+    rdfs:member "rtu_supply_fan_speed_setpoint_carbon"^^xsd:string,
+        "rtu_supply_fan_speed_setpoint_cost"^^xsd:string,
+        "rtu_supply_fan_speed_setpoint_energy"^^xsd:string,
+        "speed"^^xsd:string,
+        "speed_perc"^^xsd:string,
+        "summary_of_optimization_carbon"^^xsd:string,
+        "summary_of_optimization_cost"^^xsd:string,
+        "summary_of_optimization_energy"^^xsd:string .
+
+bs:Literal_version_32 a rdf:Seq ;
+    rdfs:member "hw_valve.waterOutlet"^^xsd:string .
+
+bs:Literal_version_33 a rdf:Seq ;
+    rdfs:member "zone_co2"^^xsd:string .
+
+bs:Literal_version_34 a rdf:Seq ;
     rdfs:member "zone_016.airInlet"^^xsd:string,
         "zone_017.airInlet"^^xsd:string,
         "zone_018.airInlet"^^xsd:string,
@@ -5227,7 +5266,7 @@ bs:Literal_version_31 a rdf:Seq ;
         "zone_071.airInlet"^^xsd:string,
         "zone_072.airInlet"^^xsd:string .
 
-bs:Literal_version_32 a rdf:Seq ;
+bs:Literal_version_35 a rdf:Seq ;
     rdfs:member "00921"^^xsd:string,
         "00989"^^xsd:string,
         "01064"^^xsd:string,
@@ -5281,7 +5320,7 @@ bs:Literal_version_32 a rdf:Seq ;
         "04469"^^xsd:string,
         "position"^^xsd:string .
 
-bs:Literal_version_33 a rdf:Seq ;
+bs:Literal_version_36 a rdf:Seq ;
     rdfs:member "59-BL-024c.Temperature"^^xsd:string,
         "59-BL-025c.Temperature"^^xsd:string,
         "59-BL-042c.Temperature"^^xsd:string,
@@ -5292,10 +5331,6 @@ bs:Literal_version_33 a rdf:Seq ;
         "59-BL-067c.Temperature"^^xsd:string,
         "59-BL-071c.Temperature"^^xsd:string,
         "59-BL-072c.Temperature"^^xsd:string,
-        "aru_cwr_temp.Temperature"^^xsd:string,
-        "aru_cws_temp.Temperature"^^xsd:string,
-        "aru_hwr_temp.Temperature"^^xsd:string,
-        "aru_hws_temp.Temperature"^^xsd:string,
         "cerc_templogger_1.Temperature"^^xsd:string,
         "cerc_templogger_10.Temperature"^^xsd:string,
         "cerc_templogger_11.Temperature"^^xsd:string,
@@ -5318,9 +5353,13 @@ bs:Literal_version_33 a rdf:Seq ;
         "ra_temp.Temperature"^^xsd:string,
         "sa_temp.Temperature"^^xsd:string .
 
-bs:Literal_version_34 a rdf:Seq ;
+bs:Literal_version_37 a rdf:Seq ;
     rdfs:member "Heat pump heat water return temperature"^^xsd:string,
         "Heat pump heating water supply temperature"^^xsd:string,
+        "aru_cwr_temp.Temperature"^^xsd:string,
+        "aru_cws_temp.Temperature"^^xsd:string,
+        "aru_hwr_temp.Temperature"^^xsd:string,
+        "aru_hws_temp.Temperature"^^xsd:string,
         "condenser water return temperature"^^xsd:string,
         "condenser water supply temperature"^^xsd:string,
         "condenser_water_return_temperature"^^xsd:string,
@@ -5338,7 +5377,7 @@ bs:Literal_version_34 a rdf:Seq ;
         "rtu_zones_thermostat_offset_energy"^^xsd:string,
         "zone_air_temp"^^xsd:string .
 
-bs:Literal_version_35 a rdf:Seq ;
+bs:Literal_version_38 a rdf:Seq ;
     rdfs:member "supply_junction_G-1"^^xsd:string,
         "supply_junction_G-10"^^xsd:string,
         "supply_junction_G-11"^^xsd:string,
@@ -5391,7 +5430,7 @@ bs:Literal_version_35 a rdf:Seq ;
         "supply_junction_G-x044"^^xsd:string,
         "supply_junction_G-x045"^^xsd:string .
 
-bs:Literal_version_36 a rdf:Seq ;
+bs:Literal_version_39 a rdf:Seq ;
     rdfs:member "00047"^^xsd:string,
         "00950"^^xsd:string,
         "01018"^^xsd:string,
@@ -5445,7 +5484,66 @@ bs:Literal_version_36 a rdf:Seq ;
         "04421"^^xsd:string,
         "04498"^^xsd:string .
 
-bs:Literal_version_37 a rdf:Seq ;
+bs:Literal_version_4 a rdf:Seq ;
+    rdfs:member 0.2,
+        0.3,
+        0.4,
+        0.5,
+        0.6,
+        0.7,
+        0.8,
+        0.9,
+        1.0,
+        1.1,
+        1.2,
+        1.3,
+        1.5,
+        1.6,
+        1.7,
+        1.8,
+        2.0,
+        2.2,
+        2.4,
+        3.5,
+        3.6,
+        4.1,
+        110.0,
+        120.0,
+        150.0,
+        170.0,
+        180.0,
+        190.0,
+        210.0,
+        220.0,
+        240.0,
+        250.0,
+        260.0,
+        300.0,
+        330.0,
+        340.0,
+        360.0,
+        380.0,
+        400.0,
+        500.0,
+        600.0,
+        630.0,
+        700.0,
+        720.0,
+        800.0,
+        810.0,
+        840.0,
+        990.0,
+        1000.0,
+        1080.0,
+        1100.0,
+        1120.0,
+        1250.0,
+        "AIRFLOW PER UFT (CFM)"^^xsd:string,
+        "TURN DOWN AIRFLOW PER UFT (CFM)"^^xsd:string,
+        "WATER FLOW (GPM)"^^xsd:string,
+        "airFlow"^^xsd:string .
+
+bs:Literal_version_40 a rdf:Seq ;
     rdfs:member "00920"^^xsd:string,
         "00988"^^xsd:string,
         "01063"^^xsd:string,
@@ -5500,7 +5598,7 @@ bs:Literal_version_37 a rdf:Seq ;
         "positionCommand"^^xsd:string,
         "position_command"^^xsd:string .
 
-bs:Literal_version_38 a rdf:Seq ;
+bs:Literal_version_41 a rdf:Seq ;
     rdfs:member "00787"^^xsd:string,
         "00790"^^xsd:string,
         "00809"^^xsd:string,
@@ -5660,7 +5758,7 @@ bs:Literal_version_38 a rdf:Seq ;
         "pre_filter.airInlet"^^xsd:string,
         "supply_fan.airInlet"^^xsd:string .
 
-bs:Literal_version_39 a rdf:Seq ;
+bs:Literal_version_42 a rdf:Seq ;
     rdfs:member "domain_space_for_room_3001"^^xsd:string,
         "domain_space_for_room_3002"^^xsd:string,
         "domain_space_for_room_3004"^^xsd:string,
@@ -5736,73 +5834,7 @@ bs:Literal_version_39 a rdf:Seq ;
         "domain_space_for_room_6051"^^xsd:string,
         "domain_space_for_room_793"^^xsd:string .
 
-bs:Literal_version_4 a rdf:Seq ;
-    rdfs:member 0.2,
-        0.3,
-        0.4,
-        0.5,
-        0.6,
-        0.7,
-        0.8,
-        0.9,
-        1.0,
-        1.1,
-        1.2,
-        1.3,
-        1.5,
-        1.6,
-        1.7,
-        1.8,
-        2.0,
-        2.2,
-        2.4,
-        3.5,
-        3.6,
-        4.1,
-        110.0,
-        120.0,
-        150.0,
-        170.0,
-        180.0,
-        190.0,
-        210.0,
-        220.0,
-        240.0,
-        250.0,
-        260.0,
-        300.0,
-        330.0,
-        340.0,
-        360.0,
-        380.0,
-        400.0,
-        500.0,
-        600.0,
-        630.0,
-        700.0,
-        720.0,
-        800.0,
-        810.0,
-        840.0,
-        990.0,
-        1000.0,
-        1080.0,
-        1100.0,
-        1120.0,
-        1250.0,
-        "AIRFLOW PER UFT (CFM)"^^xsd:string,
-        "Return Air Flow"^^xsd:string,
-        "Supply Air Flow"^^xsd:string,
-        "TURN DOWN AIRFLOW PER UFT (CFM)"^^xsd:string,
-        "WATER FLOW (GPM)"^^xsd:string,
-        "airFlow"^^xsd:string,
-        "aru_cws_fr_gpm.Flow"^^xsd:string,
-        "aru_hws_fr_gpm.Flow"^^xsd:string,
-        "oa_flow_station.Flow"^^xsd:string,
-        "return_air_flow"^^xsd:string,
-        "supply_air_flow"^^xsd:string .
-
-bs:Literal_version_40 a rdf:Seq ;
+bs:Literal_version_43 a rdf:Seq ;
     rdfs:member "Floor_3.RTU_1.Plenum.press_sens.DifferentialStaticPressure"^^xsd:string,
         "Floor_3.RTU_2.Plenum.press_sens.DifferentialStaticPressure"^^xsd:string,
         "Floor_3.RTU_3.Plenum.press_sens.DifferentialStaticPressure"^^xsd:string,
@@ -5818,117 +5850,24 @@ bs:Literal_version_40 a rdf:Seq ;
         "ra_pres.DifferentialStaticPressure"^^xsd:string,
         "sa_press.DifferentialStaticPressure"^^xsd:string .
 
-bs:Literal_version_41 a rdf:Seq ;
-    rdfs:member "zone_fan_speed"^^xsd:string .
-
-bs:Literal_version_42 a rdf:Seq ;
-    rdfs:member "hw_valve.waterInlet"^^xsd:string .
-
-bs:Literal_version_43 a rdf:Seq ;
-    rdfs:member "fan.electricalInlet"^^xsd:string .
-
 bs:Literal_version_44 a rdf:Seq ;
-    rdfs:member "hw_coil"^^xsd:string .
+    rdfs:member "MINIMUM CAPACITY (BTUH)"^^xsd:string,
+        "QUANTITY"^^xsd:string .
 
 bs:Literal_version_45 a rdf:Seq ;
-    rdfs:member "oa_damper.airInlet"^^xsd:string .
+    rdfs:member "zone_fan_speed"^^xsd:string .
 
 bs:Literal_version_46 a rdf:Seq ;
-    rdfs:member "00779"^^xsd:string,
-        "00782"^^xsd:string,
-        "00785"^^xsd:string,
-        "00801"^^xsd:string,
-        "00804"^^xsd:string,
-        "00807"^^xsd:string,
-        "00823"^^xsd:string,
-        "00826"^^xsd:string,
-        "00829"^^xsd:string,
-        "00852"^^xsd:string,
-        "00855"^^xsd:string,
-        "00858"^^xsd:string,
-        "00874"^^xsd:string,
-        "00877"^^xsd:string,
-        "00880"^^xsd:string,
-        "00896"^^xsd:string,
-        "00899"^^xsd:string,
-        "00902"^^xsd:string .
+    rdfs:member "hw_valve.waterInlet"^^xsd:string .
 
 bs:Literal_version_47 a rdf:Seq ;
-    rdfs:member "boolean trigger to activate mpc"^^xsd:string,
-        "boolean_trigger_to_activate_mpc"^^xsd:string,
-        "increasing number watchdog alc"^^xsd:string,
-        "increasing_number_watchdog_alc"^^xsd:string,
-        "occupancy_schedule"^^xsd:string,
-        "rtu boolean to turn on during unoccupied hours carbon"^^xsd:string,
-        "rtu boolean to turn on during unoccupied hours cost"^^xsd:string,
-        "rtu boolean to turn on during unoccupied hours energy"^^xsd:string,
-        "rtu_boolean_to_turn_on_during_unoccupied_hours_carbon"^^xsd:string,
-        "rtu_boolean_to_turn_on_during_unoccupied_hours_cost"^^xsd:string,
-        "rtu_boolean_to_turn_on_during_unoccupied_hours_energy"^^xsd:string .
+    rdfs:member "fan.electricalInlet"^^xsd:string .
 
 bs:Literal_version_48 a rdf:Seq ;
-    rdfs:member "Floor_3.RTU_1.CoreZone"^^xsd:string,
-        "Floor_3.RTU_2.CoreZone"^^xsd:string,
-        "Floor_3.RTU_3.CoreZone"^^xsd:string,
-        "Floor_3.RTU_4.CoreZone"^^xsd:string,
-        "Floor_4.RTU_1.CoreZone"^^xsd:string,
-        "Floor_4.RTU_2.CoreZone"^^xsd:string,
-        "Floor_4.RTU_3.CoreZone"^^xsd:string,
-        "Floor_4.RTU_4.CoreZone"^^xsd:string .
+    rdfs:member "hw_coil"^^xsd:string .
 
 bs:Literal_version_49 a rdf:Seq ;
-    rdfs:member "00049"^^xsd:string,
-        "00948"^^xsd:string,
-        "01016"^^xsd:string,
-        "01091"^^xsd:string,
-        "01163"^^xsd:string,
-        "01229"^^xsd:string,
-        "01304"^^xsd:string,
-        "01372"^^xsd:string,
-        "01440"^^xsd:string,
-        "01510"^^xsd:string,
-        "01587"^^xsd:string,
-        "01662"^^xsd:string,
-        "01730"^^xsd:string,
-        "01795"^^xsd:string,
-        "01858"^^xsd:string,
-        "01914"^^xsd:string,
-        "01982"^^xsd:string,
-        "02057"^^xsd:string,
-        "02132"^^xsd:string,
-        "02207"^^xsd:string,
-        "02275"^^xsd:string,
-        "02350"^^xsd:string,
-        "02418"^^xsd:string,
-        "02493"^^xsd:string,
-        "02563"^^xsd:string,
-        "02640"^^xsd:string,
-        "02710"^^xsd:string,
-        "02778"^^xsd:string,
-        "02846"^^xsd:string,
-        "02921"^^xsd:string,
-        "02993"^^xsd:string,
-        "03059"^^xsd:string,
-        "03129"^^xsd:string,
-        "03197"^^xsd:string,
-        "03272"^^xsd:string,
-        "03349"^^xsd:string,
-        "03417"^^xsd:string,
-        "03492"^^xsd:string,
-        "03567"^^xsd:string,
-        "03632"^^xsd:string,
-        "03698"^^xsd:string,
-        "03763"^^xsd:string,
-        "03831"^^xsd:string,
-        "03906"^^xsd:string,
-        "03981"^^xsd:string,
-        "04056"^^xsd:string,
-        "04124"^^xsd:string,
-        "04201"^^xsd:string,
-        "04269"^^xsd:string,
-        "04344"^^xsd:string,
-        "04419"^^xsd:string,
-        "04496"^^xsd:string .
+    rdfs:member "oa_damper.airInlet"^^xsd:string .
 
 bs:Literal_version_5 a rdf:Seq ;
     rdfs:member "domain_space_for_room_3001.supplyInlet"^^xsd:string,
@@ -6007,10 +5946,101 @@ bs:Literal_version_5 a rdf:Seq ;
         "domain_space_for_room_793.supplyInlet"^^xsd:string .
 
 bs:Literal_version_50 a rdf:Seq ;
-    rdfs:member "Fan Powered Terminal Fan"^^xsd:string,
-        "fan"^^xsd:string .
+    rdfs:member "00779"^^xsd:string,
+        "00782"^^xsd:string,
+        "00785"^^xsd:string,
+        "00801"^^xsd:string,
+        "00804"^^xsd:string,
+        "00807"^^xsd:string,
+        "00823"^^xsd:string,
+        "00826"^^xsd:string,
+        "00829"^^xsd:string,
+        "00852"^^xsd:string,
+        "00855"^^xsd:string,
+        "00858"^^xsd:string,
+        "00874"^^xsd:string,
+        "00877"^^xsd:string,
+        "00880"^^xsd:string,
+        "00896"^^xsd:string,
+        "00899"^^xsd:string,
+        "00902"^^xsd:string .
 
 bs:Literal_version_51 a rdf:Seq ;
+    rdfs:member "boolean_trigger_to_activate_mpc"^^xsd:string,
+        "increasing_number_watchdog_alc"^^xsd:string,
+        "occupancy_schedule"^^xsd:string,
+        "rtu_boolean_to_turn_on_during_unoccupied_hours_carbon"^^xsd:string,
+        "rtu_boolean_to_turn_on_during_unoccupied_hours_cost"^^xsd:string,
+        "rtu_boolean_to_turn_on_during_unoccupied_hours_energy"^^xsd:string .
+
+bs:Literal_version_52 a rdf:Seq ;
+    rdfs:member "Floor_3.RTU_1.CoreZone"^^xsd:string,
+        "Floor_3.RTU_2.CoreZone"^^xsd:string,
+        "Floor_3.RTU_3.CoreZone"^^xsd:string,
+        "Floor_3.RTU_4.CoreZone"^^xsd:string,
+        "Floor_4.RTU_1.CoreZone"^^xsd:string,
+        "Floor_4.RTU_2.CoreZone"^^xsd:string,
+        "Floor_4.RTU_3.CoreZone"^^xsd:string,
+        "Floor_4.RTU_4.CoreZone"^^xsd:string .
+
+bs:Literal_version_53 a rdf:Seq ;
+    rdfs:member "00049"^^xsd:string,
+        "00948"^^xsd:string,
+        "01016"^^xsd:string,
+        "01091"^^xsd:string,
+        "01163"^^xsd:string,
+        "01229"^^xsd:string,
+        "01304"^^xsd:string,
+        "01372"^^xsd:string,
+        "01440"^^xsd:string,
+        "01510"^^xsd:string,
+        "01587"^^xsd:string,
+        "01662"^^xsd:string,
+        "01730"^^xsd:string,
+        "01795"^^xsd:string,
+        "01858"^^xsd:string,
+        "01914"^^xsd:string,
+        "01982"^^xsd:string,
+        "02057"^^xsd:string,
+        "02132"^^xsd:string,
+        "02207"^^xsd:string,
+        "02275"^^xsd:string,
+        "02350"^^xsd:string,
+        "02418"^^xsd:string,
+        "02493"^^xsd:string,
+        "02563"^^xsd:string,
+        "02640"^^xsd:string,
+        "02710"^^xsd:string,
+        "02778"^^xsd:string,
+        "02846"^^xsd:string,
+        "02921"^^xsd:string,
+        "02993"^^xsd:string,
+        "03059"^^xsd:string,
+        "03129"^^xsd:string,
+        "03197"^^xsd:string,
+        "03272"^^xsd:string,
+        "03349"^^xsd:string,
+        "03417"^^xsd:string,
+        "03492"^^xsd:string,
+        "03567"^^xsd:string,
+        "03632"^^xsd:string,
+        "03698"^^xsd:string,
+        "03763"^^xsd:string,
+        "03831"^^xsd:string,
+        "03906"^^xsd:string,
+        "03981"^^xsd:string,
+        "04056"^^xsd:string,
+        "04124"^^xsd:string,
+        "04201"^^xsd:string,
+        "04269"^^xsd:string,
+        "04344"^^xsd:string,
+        "04419"^^xsd:string,
+        "04496"^^xsd:string .
+
+bs:Literal_version_54 a rdf:Seq ;
+    rdfs:member "Fan Powered Terminal Fan"^^xsd:string .
+
+bs:Literal_version_55 a rdf:Seq ;
     rdfs:member "Floor_3.RTU_1.Ceiling"^^xsd:string,
         "Floor_3.RTU_2.Ceiling"^^xsd:string,
         "Floor_3.RTU_3.Ceiling"^^xsd:string,
@@ -6020,10 +6050,10 @@ bs:Literal_version_51 a rdf:Seq ;
         "Floor_4.RTU_3.Ceiling"^^xsd:string,
         "Floor_4.RTU_4.Ceiling"^^xsd:string .
 
-bs:Literal_version_52 a rdf:Seq ;
+bs:Literal_version_56 a rdf:Seq ;
     rdfs:member "hw_coil.hotWaterInlet"^^xsd:string .
 
-bs:Literal_version_53 a rdf:Seq ;
+bs:Literal_version_57 a rdf:Seq ;
     rdfs:member "aru_cwr_temp"^^xsd:string,
         "aru_cws_temp"^^xsd:string,
         "aru_hwr_temp"^^xsd:string,
@@ -6033,7 +6063,7 @@ bs:Literal_version_53 a rdf:Seq ;
         "hot water return temp"^^xsd:string,
         "hot water supply temp"^^xsd:string .
 
-bs:Literal_version_54 a rdf:Seq ;
+bs:Literal_version_58 a rdf:Seq ;
     rdfs:member "00968"^^xsd:string,
         "01036"^^xsd:string,
         "01111"^^xsd:string,
@@ -6086,74 +6116,19 @@ bs:Literal_version_54 a rdf:Seq ;
         "04441"^^xsd:string,
         "04518"^^xsd:string .
 
-bs:Literal_version_55 a rdf:Seq ;
-    rdfs:member "Floor_3.RTU_1.Plenum.press_sens"^^xsd:string,
-        "Floor_3.RTU_2.Plenum.press_sens"^^xsd:string,
-        "Floor_3.RTU_3.Plenum.press_sens"^^xsd:string,
-        "Floor_3.RTU_4.Plenum.press_sens"^^xsd:string,
-        "Floor_4.RTU_1.Plenum.press_sens"^^xsd:string,
-        "Floor_4.RTU_2.Plenum.press_sens"^^xsd:string,
-        "Floor_4.RTU_3.Plenum.press_sens"^^xsd:string,
-        "Floor_4.RTU_4.Plenum.press_sens"^^xsd:string,
-        "Ground Level Plenum Pressure"^^xsd:string,
-        "Level 2 Plenum Pressure"^^xsd:string,
-        "RA_static_pressure"^^xsd:string,
-        "SA_static_pressure"^^xsd:string,
-        "ground_level_plenum_pressure"^^xsd:string,
-        "level2_plenum_pressure"^^xsd:string,
-        "ra_pres"^^xsd:string,
-        "sa_press"^^xsd:string .
-
-bs:Literal_version_56 a rdf:Seq ;
-    rdfs:member "iso_damper"^^xsd:string .
-
-bs:Literal_version_57 a rdf:Seq ;
-    rdfs:member "FF_differential_pressure"^^xsd:string,
-        "PF_differential_pressure"^^xsd:string,
-        "ff_press"^^xsd:string,
-        "pf_press"^^xsd:string .
-
-bs:Literal_version_58 a rdf:Seq ;
-    rdfs:member "cwc.r_in_temp"^^xsd:string,
-        "refrigerant temperature after coil"^^xsd:string .
-
 bs:Literal_version_59 a rdf:Seq ;
-    rdfs:member "00777"^^xsd:string,
-        "00778"^^xsd:string,
-        "00780"^^xsd:string,
-        "00781"^^xsd:string,
-        "00783"^^xsd:string,
-        "00784"^^xsd:string,
-        "00799"^^xsd:string,
-        "00800"^^xsd:string,
-        "00802"^^xsd:string,
-        "00803"^^xsd:string,
-        "00805"^^xsd:string,
-        "00806"^^xsd:string,
-        "00821"^^xsd:string,
-        "00822"^^xsd:string,
-        "00824"^^xsd:string,
-        "00825"^^xsd:string,
-        "00827"^^xsd:string,
-        "00828"^^xsd:string,
-        "00850"^^xsd:string,
-        "00851"^^xsd:string,
-        "00853"^^xsd:string,
-        "00854"^^xsd:string,
-        "00856"^^xsd:string,
-        "00857"^^xsd:string,
-        "00872"^^xsd:string,
-        "00873"^^xsd:string,
-        "00875"^^xsd:string,
-        "00876"^^xsd:string,
-        "00878"^^xsd:string,
-        "00879"^^xsd:string,
-        "00894"^^xsd:string,
-        "00895"^^xsd:string,
-        "00897"^^xsd:string,
-        "00898"^^xsd:string,
-        "00900"^^xsd:string,
-        "00901"^^xsd:string .
+    rdfs:member "bypass_damper_percentage_position"^^xsd:string,
+        "compressor_1_speed"^^xsd:string,
+        "compressor_2_speed"^^xsd:string,
+        "exhaust_air_damper_position"^^xsd:string,
+        "hwgp1_spd_fbk"^^xsd:string,
+        "hwgp2_spd_fbk"^^xsd:string,
+        "m565_unclear"^^xsd:string,
+        "outside_air_damper_position_feedback"^^xsd:string,
+        "p1_vfd_output"^^xsd:string,
+        "p2_vfd_output"^^xsd:string,
+        "return_fan_speed_output"^^xsd:string,
+        "supply_fan_speed_output"^^xsd:string .
 
 bs:Literal_version_6 a rdf:Seq ;
     rdfs:member "G-1.airOutlet"^^xsd:string,
@@ -6209,8 +6184,64 @@ bs:Literal_version_6 a rdf:Seq ;
         "G-x045.airOutlet"^^xsd:string .
 
 bs:Literal_version_60 a rdf:Seq ;
-    rdfs:member "00048"^^xsd:string,
-        "00951"^^xsd:string,
+    rdfs:member "fan"^^xsd:string .
+
+bs:Literal_version_61 a rdf:Seq ;
+    rdfs:member "Ground Level Plenum Pressure"^^xsd:string,
+        "Level 2 Plenum Pressure"^^xsd:string,
+        "RA_static_pressure"^^xsd:string,
+        "SA_static_pressure"^^xsd:string .
+
+bs:Literal_version_62 a rdf:Seq ;
+    rdfs:member "iso_damper"^^xsd:string .
+
+bs:Literal_version_63 a rdf:Seq ;
+    rdfs:member "FF_differential_pressure"^^xsd:string,
+        "PF_differential_pressure"^^xsd:string .
+
+bs:Literal_version_64 a rdf:Seq ;
+    rdfs:member "refrigerant temperature after coil"^^xsd:string .
+
+bs:Literal_version_65 a rdf:Seq ;
+    rdfs:member "00777"^^xsd:string,
+        "00778"^^xsd:string,
+        "00780"^^xsd:string,
+        "00781"^^xsd:string,
+        "00783"^^xsd:string,
+        "00784"^^xsd:string,
+        "00799"^^xsd:string,
+        "00800"^^xsd:string,
+        "00802"^^xsd:string,
+        "00803"^^xsd:string,
+        "00805"^^xsd:string,
+        "00806"^^xsd:string,
+        "00821"^^xsd:string,
+        "00822"^^xsd:string,
+        "00824"^^xsd:string,
+        "00825"^^xsd:string,
+        "00827"^^xsd:string,
+        "00828"^^xsd:string,
+        "00850"^^xsd:string,
+        "00851"^^xsd:string,
+        "00853"^^xsd:string,
+        "00854"^^xsd:string,
+        "00856"^^xsd:string,
+        "00857"^^xsd:string,
+        "00872"^^xsd:string,
+        "00873"^^xsd:string,
+        "00875"^^xsd:string,
+        "00876"^^xsd:string,
+        "00878"^^xsd:string,
+        "00879"^^xsd:string,
+        "00894"^^xsd:string,
+        "00895"^^xsd:string,
+        "00897"^^xsd:string,
+        "00898"^^xsd:string,
+        "00900"^^xsd:string,
+        "00901"^^xsd:string .
+
+bs:Literal_version_66 a rdf:Seq ;
+    rdfs:member "00951"^^xsd:string,
         "01019"^^xsd:string,
         "01094"^^xsd:string,
         "01166"^^xsd:string,
@@ -6262,7 +6293,10 @@ bs:Literal_version_60 a rdf:Seq ;
         "04422"^^xsd:string,
         "04499"^^xsd:string .
 
-bs:Literal_version_61 a rdf:Seq ;
+bs:Literal_version_67 a rdf:Seq ;
+    rdfs:member "hw_coil"^^xsd:string .
+
+bs:Literal_version_68 a rdf:Seq ;
     rdfs:member "00973"^^xsd:string,
         "01041"^^xsd:string,
         "01048"^^xsd:string,
@@ -6338,7 +6372,7 @@ bs:Literal_version_61 a rdf:Seq ;
         "04453"^^xsd:string,
         "04523"^^xsd:string .
 
-bs:Literal_version_62 a rdf:Seq ;
+bs:Literal_version_69 a rdf:Seq ;
     rdfs:member "heat pump power"^^xsd:string,
         "hwgp1_kw"^^xsd:string,
         "hwgp2_kw"^^xsd:string,
@@ -6346,128 +6380,6 @@ bs:Literal_version_62 a rdf:Seq ;
         "return_fan_power"^^xsd:string,
         "supply fan power consumption"^^xsd:string,
         "supply_fan_power_consumption"^^xsd:string .
-
-bs:Literal_version_63 a rdf:Seq ;
-    rdfs:member "00969"^^xsd:string,
-        "01037"^^xsd:string,
-        "01112"^^xsd:string,
-        "01182"^^xsd:string,
-        "01250"^^xsd:string,
-        "01325"^^xsd:string,
-        "01393"^^xsd:string,
-        "01463"^^xsd:string,
-        "01533"^^xsd:string,
-        "01608"^^xsd:string,
-        "01683"^^xsd:string,
-        "01751"^^xsd:string,
-        "01814"^^xsd:string,
-        "01877"^^xsd:string,
-        "01935"^^xsd:string,
-        "02003"^^xsd:string,
-        "02078"^^xsd:string,
-        "02153"^^xsd:string,
-        "02228"^^xsd:string,
-        "02296"^^xsd:string,
-        "02371"^^xsd:string,
-        "02439"^^xsd:string,
-        "02516"^^xsd:string,
-        "02586"^^xsd:string,
-        "02663"^^xsd:string,
-        "02731"^^xsd:string,
-        "02799"^^xsd:string,
-        "02867"^^xsd:string,
-        "02942"^^xsd:string,
-        "03012"^^xsd:string,
-        "03082"^^xsd:string,
-        "03150"^^xsd:string,
-        "03218"^^xsd:string,
-        "03295"^^xsd:string,
-        "03370"^^xsd:string,
-        "03438"^^xsd:string,
-        "03513"^^xsd:string,
-        "03588"^^xsd:string,
-        "03651"^^xsd:string,
-        "03719"^^xsd:string,
-        "03784"^^xsd:string,
-        "03852"^^xsd:string,
-        "03927"^^xsd:string,
-        "04002"^^xsd:string,
-        "04077"^^xsd:string,
-        "04147"^^xsd:string,
-        "04222"^^xsd:string,
-        "04290"^^xsd:string,
-        "04365"^^xsd:string,
-        "04442"^^xsd:string,
-        "04519"^^xsd:string .
-
-bs:Literal_version_64 a rdf:Seq ;
-    rdfs:member "cwc.refrigerantOutlet"^^xsd:string .
-
-bs:Literal_version_65 a rdf:Seq ;
-    rdfs:member "supply_fan.electricalInlet"^^xsd:string .
-
-bs:Literal_version_66 a rdf:Seq ;
-    rdfs:member "return_fan.airInlet"^^xsd:string .
-
-bs:Literal_version_67 a rdf:Seq ;
-    rdfs:member "00949"^^xsd:string,
-        "01017"^^xsd:string,
-        "01092"^^xsd:string,
-        "01164"^^xsd:string,
-        "01230"^^xsd:string,
-        "01305"^^xsd:string,
-        "01373"^^xsd:string,
-        "01441"^^xsd:string,
-        "01511"^^xsd:string,
-        "01588"^^xsd:string,
-        "01663"^^xsd:string,
-        "01731"^^xsd:string,
-        "01796"^^xsd:string,
-        "01859"^^xsd:string,
-        "01915"^^xsd:string,
-        "01983"^^xsd:string,
-        "02058"^^xsd:string,
-        "02133"^^xsd:string,
-        "02208"^^xsd:string,
-        "02276"^^xsd:string,
-        "02351"^^xsd:string,
-        "02419"^^xsd:string,
-        "02494"^^xsd:string,
-        "02564"^^xsd:string,
-        "02641"^^xsd:string,
-        "02711"^^xsd:string,
-        "02779"^^xsd:string,
-        "02847"^^xsd:string,
-        "02922"^^xsd:string,
-        "02994"^^xsd:string,
-        "03060"^^xsd:string,
-        "03130"^^xsd:string,
-        "03198"^^xsd:string,
-        "03273"^^xsd:string,
-        "03350"^^xsd:string,
-        "03418"^^xsd:string,
-        "03493"^^xsd:string,
-        "03568"^^xsd:string,
-        "03633"^^xsd:string,
-        "03699"^^xsd:string,
-        "03764"^^xsd:string,
-        "03832"^^xsd:string,
-        "03907"^^xsd:string,
-        "03982"^^xsd:string,
-        "04057"^^xsd:string,
-        "04125"^^xsd:string,
-        "04202"^^xsd:string,
-        "04270"^^xsd:string,
-        "04345"^^xsd:string,
-        "04420"^^xsd:string,
-        "04497"^^xsd:string .
-
-bs:Literal_version_68 a rdf:Seq ;
-    rdfs:member "ea_damper.airOutlet"^^xsd:string .
-
-bs:Literal_version_69 a rdf:Seq ;
-    rdfs:member "return_fan"^^xsd:string,
-        "supply_fan"^^xsd:string .
 
 bs:Literal_version_7 a rdf:Seq ;
     rdfs:member 1,
@@ -6527,34 +6439,167 @@ bs:Literal_version_7 a rdf:Seq ;
         "G-x043"^^xsd:string,
         "G-x044"^^xsd:string,
         "G-x045"^^xsd:string,
-        "ITEM"^^xsd:string,
-        "ORIENTATION"^^xsd:string,
-        "RTU"^^xsd:string,
-        "TO USE"^^xsd:string,
         "USE"^^xsd:string .
 
 bs:Literal_version_70 a rdf:Seq ;
-    rdfs:member "aru_cws_fr_gpm"^^xsd:string,
-        "aru_hws_fr_gpm"^^xsd:string,
-        "chilld water flow rate"^^xsd:string,
-        "hot water flow rate"^^xsd:string,
-        "oa_flow_station"^^xsd:string,
-        "outside_air_flow_station"^^xsd:string .
+    rdfs:member "00969"^^xsd:string,
+        "01037"^^xsd:string,
+        "01112"^^xsd:string,
+        "01182"^^xsd:string,
+        "01250"^^xsd:string,
+        "01325"^^xsd:string,
+        "01393"^^xsd:string,
+        "01463"^^xsd:string,
+        "01533"^^xsd:string,
+        "01608"^^xsd:string,
+        "01683"^^xsd:string,
+        "01751"^^xsd:string,
+        "01814"^^xsd:string,
+        "01877"^^xsd:string,
+        "01935"^^xsd:string,
+        "02003"^^xsd:string,
+        "02078"^^xsd:string,
+        "02153"^^xsd:string,
+        "02228"^^xsd:string,
+        "02296"^^xsd:string,
+        "02371"^^xsd:string,
+        "02439"^^xsd:string,
+        "02516"^^xsd:string,
+        "02586"^^xsd:string,
+        "02663"^^xsd:string,
+        "02731"^^xsd:string,
+        "02799"^^xsd:string,
+        "02867"^^xsd:string,
+        "02942"^^xsd:string,
+        "03012"^^xsd:string,
+        "03082"^^xsd:string,
+        "03150"^^xsd:string,
+        "03218"^^xsd:string,
+        "03295"^^xsd:string,
+        "03370"^^xsd:string,
+        "03438"^^xsd:string,
+        "03513"^^xsd:string,
+        "03588"^^xsd:string,
+        "03651"^^xsd:string,
+        "03719"^^xsd:string,
+        "03784"^^xsd:string,
+        "03852"^^xsd:string,
+        "03927"^^xsd:string,
+        "04002"^^xsd:string,
+        "04077"^^xsd:string,
+        "04147"^^xsd:string,
+        "04222"^^xsd:string,
+        "04290"^^xsd:string,
+        "04365"^^xsd:string,
+        "04442"^^xsd:string,
+        "04519"^^xsd:string .
 
 bs:Literal_version_71 a rdf:Seq ;
+    rdfs:member "cwc.refrigerantOutlet"^^xsd:string .
+
+bs:Literal_version_72 a rdf:Seq ;
+    rdfs:member "supply_fan.electricalInlet"^^xsd:string .
+
+bs:Literal_version_73 a rdf:Seq ;
+    rdfs:member "return_fan.airInlet"^^xsd:string .
+
+bs:Literal_version_74 a rdf:Seq ;
+    rdfs:member "00949"^^xsd:string,
+        "01017"^^xsd:string,
+        "01092"^^xsd:string,
+        "01164"^^xsd:string,
+        "01230"^^xsd:string,
+        "01305"^^xsd:string,
+        "01373"^^xsd:string,
+        "01441"^^xsd:string,
+        "01511"^^xsd:string,
+        "01588"^^xsd:string,
+        "01663"^^xsd:string,
+        "01731"^^xsd:string,
+        "01796"^^xsd:string,
+        "01859"^^xsd:string,
+        "01915"^^xsd:string,
+        "01983"^^xsd:string,
+        "02058"^^xsd:string,
+        "02133"^^xsd:string,
+        "02208"^^xsd:string,
+        "02276"^^xsd:string,
+        "02351"^^xsd:string,
+        "02419"^^xsd:string,
+        "02494"^^xsd:string,
+        "02564"^^xsd:string,
+        "02641"^^xsd:string,
+        "02711"^^xsd:string,
+        "02779"^^xsd:string,
+        "02847"^^xsd:string,
+        "02922"^^xsd:string,
+        "02994"^^xsd:string,
+        "03060"^^xsd:string,
+        "03130"^^xsd:string,
+        "03198"^^xsd:string,
+        "03273"^^xsd:string,
+        "03350"^^xsd:string,
+        "03418"^^xsd:string,
+        "03493"^^xsd:string,
+        "03568"^^xsd:string,
+        "03633"^^xsd:string,
+        "03699"^^xsd:string,
+        "03764"^^xsd:string,
+        "03832"^^xsd:string,
+        "03907"^^xsd:string,
+        "03982"^^xsd:string,
+        "04057"^^xsd:string,
+        "04125"^^xsd:string,
+        "04202"^^xsd:string,
+        "04270"^^xsd:string,
+        "04345"^^xsd:string,
+        "04420"^^xsd:string,
+        "04497"^^xsd:string .
+
+bs:Literal_version_75 a rdf:Seq ;
+    rdfs:member "ea_damper.airOutlet"^^xsd:string .
+
+bs:Literal_version_76 a rdf:Seq ;
+    rdfs:member "return_fan"^^xsd:string,
+        "supply_fan"^^xsd:string .
+
+bs:Literal_version_77 a rdf:Seq ;
+    rdfs:member "chilld water flow rate"^^xsd:string,
+        "hot water flow rate"^^xsd:string,
+        "outside_air_flow_station"^^xsd:string .
+
+bs:Literal_version_78 a rdf:Seq ;
     rdfs:member "final_filter"^^xsd:string,
         "pre_filter"^^xsd:string .
 
-bs:Literal_version_72 a rdf:Seq ;
+bs:Literal_version_79 a rdf:Seq ;
+    rdfs:member "aru_cws_fr_gpm"^^xsd:string,
+        "aru_hws_fr_gpm"^^xsd:string,
+        "oa_flow_station"^^xsd:string .
+
+bs:Literal_version_8 a rdf:Seq ;
+    rdfs:member "bp_damper"^^xsd:string,
+        "bypass_damper"^^xsd:string,
+        "ea_damper"^^xsd:string,
+        "exhaust_air_damper"^^xsd:string,
+        "mixed_air_damper"^^xsd:string,
+        "oa_damper"^^xsd:string,
+        "outside_air_damper"^^xsd:string .
+
+bs:Literal_version_80 a rdf:Seq ;
+    rdfs:member "final_filter"^^xsd:string,
+        "pre_filter"^^xsd:string .
+
+bs:Literal_version_81 a rdf:Seq ;
     rdfs:member "B59_HeatPump"^^xsd:string .
 
-bs:Literal_version_73 a rdf:Seq ;
+bs:Literal_version_82 a rdf:Seq ;
     rdfs:member "RTU_1.outsideAirInlet"^^xsd:string,
         "RTU_2.outsideAirInlet"^^xsd:string,
         "RTU_3.outsideAirInlet"^^xsd:string,
         "RTU_4.outsideAirInlet"^^xsd:string .
 
-bs:Literal_version_74 a rdf:Seq ;
+bs:Literal_version_83 a rdf:Seq ;
     rdfs:member "G-1.waterOutlet"^^xsd:string,
         "G-10.waterOutlet"^^xsd:string,
         "G-11.waterOutlet"^^xsd:string,
@@ -6607,11 +6652,20 @@ bs:Literal_version_74 a rdf:Seq ;
         "G-x044.waterOutlet"^^xsd:string,
         "G-x045.waterOutlet"^^xsd:string .
 
-bs:Literal_version_75 a rdf:Seq ;
-    rdfs:member "Binary status of heat pump"^^xsd:string,
-        "hp-1status_2"^^xsd:string .
+bs:Literal_version_84 a rdf:Seq ;
+    rdfs:member "boolean trigger to activate mpc"^^xsd:string,
+        "increasing number watchdog alc"^^xsd:string,
+        "rtu boolean to turn on during unoccupied hours carbon"^^xsd:string,
+        "rtu boolean to turn on during unoccupied hours cost"^^xsd:string,
+        "rtu boolean to turn on during unoccupied hours energy"^^xsd:string .
 
-bs:Literal_version_76 a rdf:Seq ;
+bs:Literal_version_85 a rdf:Seq ;
+    rdfs:member "hp-1status_2"^^xsd:string .
+
+bs:Literal_version_86 a rdf:Seq ;
+    rdfs:member "cwc.r_in_temp"^^xsd:string .
+
+bs:Literal_version_87 a rdf:Seq ;
     rdfs:member "Floor_3.RTU_1.Plenum"^^xsd:string,
         "Floor_3.RTU_2.Plenum"^^xsd:string,
         "Floor_3.RTU_3.Plenum"^^xsd:string,
@@ -6621,77 +6675,65 @@ bs:Literal_version_76 a rdf:Seq ;
         "Floor_4.RTU_3.Plenum"^^xsd:string,
         "Floor_4.RTU_4.Plenum"^^xsd:string .
 
-bs:Literal_version_77 a rdf:Seq ;
-    rdfs:member "Static Pressure Setpoint"^^xsd:string,
-        "static_pressure_setpoint"^^xsd:string .
-
-bs:Literal_version_78 a rdf:Seq ;
-    rdfs:member "B59_HeatPump.hotWaterOut"^^xsd:string .
-
-bs:Literal_version_79 a rdf:Seq ;
-    rdfs:member "RTU_1.exhaustAirOutlet"^^xsd:string,
-        "RTU_2.exhaustAirOutlet"^^xsd:string,
-        "RTU_3.exhaustAirOutlet"^^xsd:string,
-        "RTU_4.exhaustAirOutlet"^^xsd:string .
-
-bs:Literal_version_8 a rdf:Seq ;
-    rdfs:member "bp_damper"^^xsd:string,
-        "bypass_damper"^^xsd:string,
-        "ea_damper"^^xsd:string,
-        "exhaust_air_damper"^^xsd:string,
-        "mixed_air_damper"^^xsd:string,
-        "oa_damper"^^xsd:string,
-        "outside_air_damper"^^xsd:string .
-
-bs:Literal_version_80 a rdf:Seq ;
-    rdfs:member "RTU_1"^^xsd:string,
-        "RTU_2"^^xsd:string,
-        "RTU_3"^^xsd:string,
-        "RTU_4"^^xsd:string .
-
-bs:Literal_version_81 a rdf:Seq ;
-    rdfs:member "cwc"^^xsd:string,
-        "dx_coil"^^xsd:string .
-
-bs:Literal_version_82 a rdf:Seq ;
-    rdfs:member "supply_fan.airInlet"^^xsd:string .
-
-bs:Literal_version_83 a rdf:Seq ;
-    rdfs:member "Economizer Setpoint"^^xsd:string,
-        "economizer_setpoint"^^xsd:string .
-
-bs:Literal_version_84 a rdf:Seq ;
-    rdfs:member "aru_power_mbutph.HeatFlowRate"^^xsd:string .
-
-bs:Literal_version_85 a rdf:Seq ;
-    rdfs:member "Heat meter for air source heat pump"^^xsd:string,
-        "aru_power_mbutph"^^xsd:string .
-
-bs:Literal_version_86 a rdf:Seq ;
-    rdfs:member "B59_HeatPump.chilledWaterOut"^^xsd:string .
-
-bs:Literal_version_87 a rdf:Seq ;
-    rdfs:member "return_fan.electricalInlet"^^xsd:string,
-        "supply_fan.electricalInlet"^^xsd:string .
-
 bs:Literal_version_88 a rdf:Seq ;
-    rdfs:member "iso_damper.airOutlet"^^xsd:string .
+    rdfs:member "static_pressure_setpoint"^^xsd:string .
 
 bs:Literal_version_89 a rdf:Seq ;
-    rdfs:member "B59_HeatPump.chilledWaterIn"^^xsd:string .
+    rdfs:member "B59_HeatPump.hotWaterOut"^^xsd:string .
 
 bs:Literal_version_9 a rdf:Seq ;
     rdfs:member "staticPressure"^^xsd:string .
 
 bs:Literal_version_90 a rdf:Seq ;
-    rdfs:member "B59_HeatPump_water_return_junction"^^xsd:string,
-        "B59_HeatPump_water_supply_junction"^^xsd:string .
+    rdfs:member "RTU_1.exhaustAirOutlet"^^xsd:string,
+        "RTU_2.exhaustAirOutlet"^^xsd:string,
+        "RTU_3.exhaustAirOutlet"^^xsd:string,
+        "RTU_4.exhaustAirOutlet"^^xsd:string .
 
 bs:Literal_version_91 a rdf:Seq ;
-    rdfs:member "00050"^^xsd:string .
+    rdfs:member "RTU_1"^^xsd:string,
+        "RTU_2"^^xsd:string,
+        "RTU_3"^^xsd:string,
+        "RTU_4"^^xsd:string .
 
 bs:Literal_version_92 a rdf:Seq ;
-    rdfs:member "B59_HeatPump.hotWaterIn"^^xsd:string .
+    rdfs:member "cwc"^^xsd:string,
+        "dx_coil"^^xsd:string .
+
+bs:Literal_version_93 a rdf:Seq ;
+    rdfs:member "ff_press"^^xsd:string,
+        "pf_press"^^xsd:string .
+
+bs:Literal_version_94 a rdf:Seq ;
+    rdfs:member "supply_fan.airInlet"^^xsd:string .
+
+bs:Literal_version_95 a rdf:Seq ;
+    rdfs:member "00048"^^xsd:string .
+
+bs:Literal_version_96 a rdf:Seq ;
+    rdfs:member "Floor_3.RTU_1.Plenum.press_sens"^^xsd:string,
+        "Floor_3.RTU_2.Plenum.press_sens"^^xsd:string,
+        "Floor_3.RTU_3.Plenum.press_sens"^^xsd:string,
+        "Floor_3.RTU_4.Plenum.press_sens"^^xsd:string,
+        "Floor_4.RTU_1.Plenum.press_sens"^^xsd:string,
+        "Floor_4.RTU_2.Plenum.press_sens"^^xsd:string,
+        "Floor_4.RTU_3.Plenum.press_sens"^^xsd:string,
+        "Floor_4.RTU_4.Plenum.press_sens"^^xsd:string,
+        "ground_level_plenum_pressure"^^xsd:string,
+        "level2_plenum_pressure"^^xsd:string,
+        "ra_pres"^^xsd:string,
+        "sa_press"^^xsd:string .
+
+bs:Literal_version_97 a rdf:Seq ;
+    rdfs:member "Economizer Setpoint"^^xsd:string,
+        "economizer_setpoint"^^xsd:string .
+
+bs:Literal_version_98 a rdf:Seq ;
+    rdfs:member "aru_power_mbutph.HeatFlowRate"^^xsd:string .
+
+bs:Literal_version_99 a rdf:Seq ;
+    rdfs:member "Heat meter for air source heat pump"^^xsd:string,
+        "aru_power_mbutph"^^xsd:string .
 
 bs:OutletConnectionPoint_version_1 a rdf:Seq ;
     rdfs:member <http://data.ashrae.org/standard223/data/lbnl-example-2#0004900049>,
@@ -7532,8 +7574,10 @@ bs:PhysicalSpace_version_1 a rdf:Seq ;
         <http://data.ashrae.org/standard223/data/lbnl-example-2#603800078>,
         <http://data.ashrae.org/standard223/data/lbnl-example-2#604000081>,
         <http://data.ashrae.org/standard223/data/lbnl-example-2#605100095>,
-        <http://data.ashrae.org/standard223/data/lbnl-example-2#79300080>,
-        <http://data.ashrae.org/standard223/data/lbnl-example-2#Floor_300051>,
+        <http://data.ashrae.org/standard223/data/lbnl-example-2#79300080> .
+
+bs:PhysicalSpace_version_2 a rdf:Seq ;
+    rdfs:member <http://data.ashrae.org/standard223/data/lbnl-example-2#Floor_300051>,
         <http://data.ashrae.org/standard223/data/lbnl-example-2#Floor_400052> .
 
 bs:QuantifiableActuatableProperty_version_1 a rdf:Seq ;
@@ -7916,6 +7960,18 @@ bs:QuantifiableObservableProperty_version_1 a rdf:Seq ;
         <http://data.ashrae.org/standard223/data/lbnl-example-2#position04481> .
 
 bs:QuantifiableObservableProperty_version_10 a rdf:Seq ;
+    rdfs:member <http://data.ashrae.org/standard223/data/lbnl-example-2#hwgp1_kw00039>,
+        <http://data.ashrae.org/standard223/data/lbnl-example-2#hwgp2_kw00040>,
+        <http://data.ashrae.org/standard223/data/lbnl-example-2#return_fan_power00267>,
+        <http://data.ashrae.org/standard223/data/lbnl-example-2#return_fan_power00426>,
+        <http://data.ashrae.org/standard223/data/lbnl-example-2#return_fan_power00584>,
+        <http://data.ashrae.org/standard223/data/lbnl-example-2#return_fan_power00743>,
+        <http://data.ashrae.org/standard223/data/lbnl-example-2#supply_fan_power_consumption00276>,
+        <http://data.ashrae.org/standard223/data/lbnl-example-2#supply_fan_power_consumption00435>,
+        <http://data.ashrae.org/standard223/data/lbnl-example-2#supply_fan_power_consumption00593>,
+        <http://data.ashrae.org/standard223/data/lbnl-example-2#supply_fan_power_consumption00752> .
+
+bs:QuantifiableObservableProperty_version_11 a rdf:Seq ;
     rdfs:member <http://data.ashrae.org/standard223/data/lbnl-example-2#staticPressure00936>,
         <http://data.ashrae.org/standard223/data/lbnl-example-2#staticPressure01004>,
         <http://data.ashrae.org/standard223/data/lbnl-example-2#staticPressure01079>,
@@ -7968,7 +8024,7 @@ bs:QuantifiableObservableProperty_version_10 a rdf:Seq ;
         <http://data.ashrae.org/standard223/data/lbnl-example-2#staticPressure04407>,
         <http://data.ashrae.org/standard223/data/lbnl-example-2#staticPressure04484> .
 
-bs:QuantifiableObservableProperty_version_11 a rdf:Seq ;
+bs:QuantifiableObservableProperty_version_12 a rdf:Seq ;
     rdfs:member <http://data.ashrae.org/standard223/data/lbnl-example-2#zone_co201320>,
         <http://data.ashrae.org/standard223/data/lbnl-example-2#zone_co201746>,
         <http://data.ashrae.org/standard223/data/lbnl-example-2#zone_co201930>,
@@ -7981,7 +8037,7 @@ bs:QuantifiableObservableProperty_version_11 a rdf:Seq ;
         <http://data.ashrae.org/standard223/data/lbnl-example-2#zone_co204217>,
         <http://data.ashrae.org/standard223/data/lbnl-example-2#zone_co204512> .
 
-bs:QuantifiableObservableProperty_version_12 a rdf:Seq ;
+bs:QuantifiableObservableProperty_version_13 a rdf:Seq ;
     rdfs:member <http://data.ashrae.org/standard223/data/lbnl-example-2#zone_fan_speed00964>,
         <http://data.ashrae.org/standard223/data/lbnl-example-2#zone_fan_speed01032>,
         <http://data.ashrae.org/standard223/data/lbnl-example-2#zone_fan_speed01107>,
@@ -8045,10 +8101,6 @@ bs:QuantifiableObservableProperty_version_2 a rdf:Seq ;
         <http://data.ashrae.org/standard223/data/lbnl-example-2#59-BL-067c.Temperature04576>,
         <http://data.ashrae.org/standard223/data/lbnl-example-2#59-BL-071c.Temperature04579>,
         <http://data.ashrae.org/standard223/data/lbnl-example-2#59-BL-072c.Temperature04582>,
-        <http://data.ashrae.org/standard223/data/lbnl-example-2#aru_cwr_temp.Temperature00025>,
-        <http://data.ashrae.org/standard223/data/lbnl-example-2#aru_cws_temp.Temperature00023>,
-        <http://data.ashrae.org/standard223/data/lbnl-example-2#aru_hwr_temp.Temperature00029>,
-        <http://data.ashrae.org/standard223/data/lbnl-example-2#aru_hws_temp.Temperature00027>,
         <http://data.ashrae.org/standard223/data/lbnl-example-2#cerc_templogger_1.Temperature04528>,
         <http://data.ashrae.org/standard223/data/lbnl-example-2#cerc_templogger_10.Temperature04555>,
         <http://data.ashrae.org/standard223/data/lbnl-example-2#cerc_templogger_11.Temperature04558>,
@@ -8287,21 +8339,7 @@ bs:QuantifiableObservableProperty_version_3 a rdf:Seq ;
         <http://data.ashrae.org/standard223/data/lbnl-example-2#airFlow04256>,
         <http://data.ashrae.org/standard223/data/lbnl-example-2#airFlow04331>,
         <http://data.ashrae.org/standard223/data/lbnl-example-2#airFlow04406>,
-        <http://data.ashrae.org/standard223/data/lbnl-example-2#airFlow04483>,
-        <http://data.ashrae.org/standard223/data/lbnl-example-2#aru_cws_fr_gpm.Flow00031>,
-        <http://data.ashrae.org/standard223/data/lbnl-example-2#aru_hws_fr_gpm.Flow00033>,
-        <http://data.ashrae.org/standard223/data/lbnl-example-2#oa_flow_station.Flow00229>,
-        <http://data.ashrae.org/standard223/data/lbnl-example-2#oa_flow_station.Flow00388>,
-        <http://data.ashrae.org/standard223/data/lbnl-example-2#oa_flow_station.Flow00546>,
-        <http://data.ashrae.org/standard223/data/lbnl-example-2#oa_flow_station.Flow00705>,
-        <http://data.ashrae.org/standard223/data/lbnl-example-2#return_air_flow00245>,
-        <http://data.ashrae.org/standard223/data/lbnl-example-2#return_air_flow00404>,
-        <http://data.ashrae.org/standard223/data/lbnl-example-2#return_air_flow00562>,
-        <http://data.ashrae.org/standard223/data/lbnl-example-2#return_air_flow00721>,
-        <http://data.ashrae.org/standard223/data/lbnl-example-2#supply_air_flow00246>,
-        <http://data.ashrae.org/standard223/data/lbnl-example-2#supply_air_flow00405>,
-        <http://data.ashrae.org/standard223/data/lbnl-example-2#supply_air_flow00563>,
-        <http://data.ashrae.org/standard223/data/lbnl-example-2#supply_air_flow00722> .
+        <http://data.ashrae.org/standard223/data/lbnl-example-2#airFlow04483> .
 
 bs:QuantifiableObservableProperty_version_4 a rdf:Seq ;
     rdfs:member <http://data.ashrae.org/standard223/data/lbnl-example-2#Floor_3.RTU_1.Plenum.press_sens.DifferentialStaticPressure00766>,
@@ -8442,46 +8480,11 @@ bs:QuantifiableObservableProperty_version_5 a rdf:Seq ;
         <http://data.ashrae.org/standard223/data/lbnl-example-2#QUANTITY04485> .
 
 bs:QuantifiableObservableProperty_version_6 a rdf:Seq ;
-    rdfs:member <http://data.ashrae.org/standard223/data/lbnl-example-2#aru_power_mbutph.HeatFlowRate00035> .
-
-bs:QuantifiableObservableProperty_version_7 a rdf:Seq ;
-    rdfs:member <http://data.ashrae.org/standard223/data/lbnl-example-2#bypass_damper_percentage_position00269>,
-        <http://data.ashrae.org/standard223/data/lbnl-example-2#bypass_damper_percentage_position00428>,
-        <http://data.ashrae.org/standard223/data/lbnl-example-2#bypass_damper_percentage_position00586>,
-        <http://data.ashrae.org/standard223/data/lbnl-example-2#bypass_damper_percentage_position00745>,
-        <http://data.ashrae.org/standard223/data/lbnl-example-2#compressor_1_speed00274>,
-        <http://data.ashrae.org/standard223/data/lbnl-example-2#compressor_1_speed00433>,
-        <http://data.ashrae.org/standard223/data/lbnl-example-2#compressor_1_speed00591>,
-        <http://data.ashrae.org/standard223/data/lbnl-example-2#compressor_1_speed00750>,
-        <http://data.ashrae.org/standard223/data/lbnl-example-2#compressor_2_speed00272>,
-        <http://data.ashrae.org/standard223/data/lbnl-example-2#compressor_2_speed00431>,
-        <http://data.ashrae.org/standard223/data/lbnl-example-2#compressor_2_speed00589>,
-        <http://data.ashrae.org/standard223/data/lbnl-example-2#compressor_2_speed00748>,
-        <http://data.ashrae.org/standard223/data/lbnl-example-2#exhaust_air_damper_position00275>,
-        <http://data.ashrae.org/standard223/data/lbnl-example-2#exhaust_air_damper_position00434>,
-        <http://data.ashrae.org/standard223/data/lbnl-example-2#exhaust_air_damper_position00592>,
-        <http://data.ashrae.org/standard223/data/lbnl-example-2#exhaust_air_damper_position00751>,
-        <http://data.ashrae.org/standard223/data/lbnl-example-2#hwgp1_spd_fbk00041>,
-        <http://data.ashrae.org/standard223/data/lbnl-example-2#hwgp2_spd_fbk00042>,
-        <http://data.ashrae.org/standard223/data/lbnl-example-2#m565_unclear00278>,
-        <http://data.ashrae.org/standard223/data/lbnl-example-2#m565_unclear00754>,
-        <http://data.ashrae.org/standard223/data/lbnl-example-2#outside_air_damper_position_feedback00270>,
-        <http://data.ashrae.org/standard223/data/lbnl-example-2#outside_air_damper_position_feedback00429>,
-        <http://data.ashrae.org/standard223/data/lbnl-example-2#outside_air_damper_position_feedback00587>,
-        <http://data.ashrae.org/standard223/data/lbnl-example-2#outside_air_damper_position_feedback00746>,
-        <http://data.ashrae.org/standard223/data/lbnl-example-2#p1_vfd_output00043>,
-        <http://data.ashrae.org/standard223/data/lbnl-example-2#p2_vfd_output00044>,
-        <http://data.ashrae.org/standard223/data/lbnl-example-2#return_fan_speed_output00266>,
-        <http://data.ashrae.org/standard223/data/lbnl-example-2#return_fan_speed_output00425>,
-        <http://data.ashrae.org/standard223/data/lbnl-example-2#return_fan_speed_output00583>,
-        <http://data.ashrae.org/standard223/data/lbnl-example-2#return_fan_speed_output00742>,
-        <http://data.ashrae.org/standard223/data/lbnl-example-2#supply_fan_speed_output00277>,
-        <http://data.ashrae.org/standard223/data/lbnl-example-2#supply_fan_speed_output00436>,
-        <http://data.ashrae.org/standard223/data/lbnl-example-2#supply_fan_speed_output00594>,
-        <http://data.ashrae.org/standard223/data/lbnl-example-2#supply_fan_speed_output00753> .
-
-bs:QuantifiableObservableProperty_version_8 a rdf:Seq ;
-    rdfs:member <http://data.ashrae.org/standard223/data/lbnl-example-2#condenser_water_return_temperature00271>,
+    rdfs:member <http://data.ashrae.org/standard223/data/lbnl-example-2#aru_cwr_temp.Temperature00025>,
+        <http://data.ashrae.org/standard223/data/lbnl-example-2#aru_cws_temp.Temperature00023>,
+        <http://data.ashrae.org/standard223/data/lbnl-example-2#aru_hwr_temp.Temperature00029>,
+        <http://data.ashrae.org/standard223/data/lbnl-example-2#aru_hws_temp.Temperature00027>,
+        <http://data.ashrae.org/standard223/data/lbnl-example-2#condenser_water_return_temperature00271>,
         <http://data.ashrae.org/standard223/data/lbnl-example-2#condenser_water_return_temperature00430>,
         <http://data.ashrae.org/standard223/data/lbnl-example-2#condenser_water_return_temperature00588>,
         <http://data.ashrae.org/standard223/data/lbnl-example-2#condenser_water_return_temperature00747>,
@@ -8569,17 +8572,60 @@ bs:QuantifiableObservableProperty_version_8 a rdf:Seq ;
         <http://data.ashrae.org/standard223/data/lbnl-example-2#zone_air_temp04427>,
         <http://data.ashrae.org/standard223/data/lbnl-example-2#zone_air_temp04504> .
 
+bs:QuantifiableObservableProperty_version_7 a rdf:Seq ;
+    rdfs:member <http://data.ashrae.org/standard223/data/lbnl-example-2#aru_cws_fr_gpm.Flow00031>,
+        <http://data.ashrae.org/standard223/data/lbnl-example-2#aru_hws_fr_gpm.Flow00033>,
+        <http://data.ashrae.org/standard223/data/lbnl-example-2#oa_flow_station.Flow00229>,
+        <http://data.ashrae.org/standard223/data/lbnl-example-2#oa_flow_station.Flow00388>,
+        <http://data.ashrae.org/standard223/data/lbnl-example-2#oa_flow_station.Flow00546>,
+        <http://data.ashrae.org/standard223/data/lbnl-example-2#oa_flow_station.Flow00705>,
+        <http://data.ashrae.org/standard223/data/lbnl-example-2#return_air_flow00245>,
+        <http://data.ashrae.org/standard223/data/lbnl-example-2#return_air_flow00404>,
+        <http://data.ashrae.org/standard223/data/lbnl-example-2#return_air_flow00562>,
+        <http://data.ashrae.org/standard223/data/lbnl-example-2#return_air_flow00721>,
+        <http://data.ashrae.org/standard223/data/lbnl-example-2#supply_air_flow00246>,
+        <http://data.ashrae.org/standard223/data/lbnl-example-2#supply_air_flow00405>,
+        <http://data.ashrae.org/standard223/data/lbnl-example-2#supply_air_flow00563>,
+        <http://data.ashrae.org/standard223/data/lbnl-example-2#supply_air_flow00722> .
+
+bs:QuantifiableObservableProperty_version_8 a rdf:Seq ;
+    rdfs:member <http://data.ashrae.org/standard223/data/lbnl-example-2#aru_power_mbutph.HeatFlowRate00035> .
+
 bs:QuantifiableObservableProperty_version_9 a rdf:Seq ;
-    rdfs:member <http://data.ashrae.org/standard223/data/lbnl-example-2#hwgp1_kw00039>,
-        <http://data.ashrae.org/standard223/data/lbnl-example-2#hwgp2_kw00040>,
-        <http://data.ashrae.org/standard223/data/lbnl-example-2#return_fan_power00267>,
-        <http://data.ashrae.org/standard223/data/lbnl-example-2#return_fan_power00426>,
-        <http://data.ashrae.org/standard223/data/lbnl-example-2#return_fan_power00584>,
-        <http://data.ashrae.org/standard223/data/lbnl-example-2#return_fan_power00743>,
-        <http://data.ashrae.org/standard223/data/lbnl-example-2#supply_fan_power_consumption00276>,
-        <http://data.ashrae.org/standard223/data/lbnl-example-2#supply_fan_power_consumption00435>,
-        <http://data.ashrae.org/standard223/data/lbnl-example-2#supply_fan_power_consumption00593>,
-        <http://data.ashrae.org/standard223/data/lbnl-example-2#supply_fan_power_consumption00752> .
+    rdfs:member <http://data.ashrae.org/standard223/data/lbnl-example-2#bypass_damper_percentage_position00269>,
+        <http://data.ashrae.org/standard223/data/lbnl-example-2#bypass_damper_percentage_position00428>,
+        <http://data.ashrae.org/standard223/data/lbnl-example-2#bypass_damper_percentage_position00586>,
+        <http://data.ashrae.org/standard223/data/lbnl-example-2#bypass_damper_percentage_position00745>,
+        <http://data.ashrae.org/standard223/data/lbnl-example-2#compressor_1_speed00274>,
+        <http://data.ashrae.org/standard223/data/lbnl-example-2#compressor_1_speed00433>,
+        <http://data.ashrae.org/standard223/data/lbnl-example-2#compressor_1_speed00591>,
+        <http://data.ashrae.org/standard223/data/lbnl-example-2#compressor_1_speed00750>,
+        <http://data.ashrae.org/standard223/data/lbnl-example-2#compressor_2_speed00272>,
+        <http://data.ashrae.org/standard223/data/lbnl-example-2#compressor_2_speed00431>,
+        <http://data.ashrae.org/standard223/data/lbnl-example-2#compressor_2_speed00589>,
+        <http://data.ashrae.org/standard223/data/lbnl-example-2#compressor_2_speed00748>,
+        <http://data.ashrae.org/standard223/data/lbnl-example-2#exhaust_air_damper_position00275>,
+        <http://data.ashrae.org/standard223/data/lbnl-example-2#exhaust_air_damper_position00434>,
+        <http://data.ashrae.org/standard223/data/lbnl-example-2#exhaust_air_damper_position00592>,
+        <http://data.ashrae.org/standard223/data/lbnl-example-2#exhaust_air_damper_position00751>,
+        <http://data.ashrae.org/standard223/data/lbnl-example-2#hwgp1_spd_fbk00041>,
+        <http://data.ashrae.org/standard223/data/lbnl-example-2#hwgp2_spd_fbk00042>,
+        <http://data.ashrae.org/standard223/data/lbnl-example-2#m565_unclear00278>,
+        <http://data.ashrae.org/standard223/data/lbnl-example-2#m565_unclear00754>,
+        <http://data.ashrae.org/standard223/data/lbnl-example-2#outside_air_damper_position_feedback00270>,
+        <http://data.ashrae.org/standard223/data/lbnl-example-2#outside_air_damper_position_feedback00429>,
+        <http://data.ashrae.org/standard223/data/lbnl-example-2#outside_air_damper_position_feedback00587>,
+        <http://data.ashrae.org/standard223/data/lbnl-example-2#outside_air_damper_position_feedback00746>,
+        <http://data.ashrae.org/standard223/data/lbnl-example-2#p1_vfd_output00043>,
+        <http://data.ashrae.org/standard223/data/lbnl-example-2#p2_vfd_output00044>,
+        <http://data.ashrae.org/standard223/data/lbnl-example-2#return_fan_speed_output00266>,
+        <http://data.ashrae.org/standard223/data/lbnl-example-2#return_fan_speed_output00425>,
+        <http://data.ashrae.org/standard223/data/lbnl-example-2#return_fan_speed_output00583>,
+        <http://data.ashrae.org/standard223/data/lbnl-example-2#return_fan_speed_output00742>,
+        <http://data.ashrae.org/standard223/data/lbnl-example-2#supply_fan_speed_output00277>,
+        <http://data.ashrae.org/standard223/data/lbnl-example-2#supply_fan_speed_output00436>,
+        <http://data.ashrae.org/standard223/data/lbnl-example-2#supply_fan_speed_output00594>,
+        <http://data.ashrae.org/standard223/data/lbnl-example-2#supply_fan_speed_output00753> .
 
 bs:Sensor_version_1 a rdf:Seq ;
     rdfs:member <http://data.ashrae.org/standard223/data/lbnl-example-2#Floor_3.RTU_1.Plenum.press_sens00765>,

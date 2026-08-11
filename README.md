@@ -143,6 +143,15 @@ keeping the output actually readable:
       (ns1:hvac_reaZonCor_TZon_y ns1:hvac_reaZonEas_TZon_y) ,
       (ns1:hvac_oveZonSupCor_TZonHeaSet_u ns1:hvac_oveZonSupEas_TZonHeaSet_u) .
   ```
+- **Multiple predicates on one subject.** Likewise, a subject with several
+  different predicates shares one statement via Turtle's
+  predicateObjectList semicolon syntax instead of repeating the subject
+  once per predicate:
+  ```turtle
+  (ns1:vav_cor ns1:vav_eas) a brick:Variable_Air_Volume_Box_With_Reheat ;
+      brick:feeds (ns1:hvac_cor_zone ns1:hvac_eas_zone) ;
+      brick:hasPoint (...) .
+  ```
 - **Prefixes.** Every namespace used in the output gets a `@prefix`
   binding — the crate's own known short names (`brick:`, `ex:`, ...) where
   they apply, else an auto-numbered `ns1:`, `ns2:`, ... Nothing is left as
@@ -172,16 +181,25 @@ keeping the output actually readable:
 - `iterations` (default `10`) — max number of relabeling passes.
 - `similarity_threshold` (default `None`) — if set, groups subjects whose
   class-pattern subgraphs overlap above this ratio (0–1), instead of
-  requiring exact isomorphism. **Known caveat:** at `0.0` (merge on any
-  shared pattern triple at all), literals now participate in this matching
-  too, and can supply a triple that's trivially shared by almost every
-  instance of a type (e.g. many properties resolving to the same derived
-  literal class). On some real models this has been observed to merge
-  instances that shouldn't be merged (e.g. distinct physical-quantity types
-  collapsing into one class) - see the discussion on PR #1. Prefer a
-  threshold of `0.3` or higher, or `None`, until this is addressed.
+  requiring exact isomorphism. Literals participate in this matching too
+  (grouped by 1-hop topology, like any other node - see `RdfGraph::skolemize`),
+  and the synthetic `<literal> a rdfs:Literal` marker that makes this
+  possible is excluded from the similarity ratio itself, since it's
+  identical for every literal and would otherwise inflate the overlap
+  between two literals that share nothing else. **Known caveat:** a
+  literal's own 1-hop pattern is still small (its reaching predicate plus
+  its subject's type), so two literals reached via *different* predicates
+  from the *same* subject type can still share enough of that small
+  pattern to merge at a moderate threshold, even though the trivial marker
+  no longer causes false matches *across* unrelated subject types - see the
+  discussion on PR #1 and PR #2. Prefer a threshold of `0.5` or higher, or
+  `None`, until this is addressed.
 - `remove_added_labels` (default `True`) — strip the `bs:` classes the
-  algorithm added from the output class graph.
+  algorithm added from the output class graph. This is unrelated to (and
+  doesn't control) the synthetic `<literal-skolem> a rdfs:Literal` marker
+  `RdfGraph::skolemize` adds internally for matching purposes: that marker
+  never corresponds to anything in the original data graph, so it's always
+  stripped from the class graph, regardless of this flag.
 - `use_original_names` (default `True`) — derive new class names from the
   common substring of grouped subjects' original IRIs, instead of
   versioning the existing class name.
