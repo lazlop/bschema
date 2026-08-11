@@ -85,7 +85,7 @@
 (<urn:bldg#Energy_Rate> <urn:bldg#Energy_Rate_Device_57018>) s223:hasRole s223:Position-Unknown .
 (<urn:bldg#Energy_Rate> <urn:bldg#Energy_Rate_Device_57018>) s223:hasRole s223:OnOff-Unknown .
 (<urn:bldg#Energy_Rate> <urn:bldg#Energy_Rate_Device_57018>) s223:hasRole s223:EnumerationKind-Speed .
-(<urn:bldg#Energy_Rate> <urn:bldg#Energy_Rate_Device_57018>) s223:hasExternalReference (<urn:bschema-rs:skolem:a00385d70d4ee4834feaa2005aa7234c> <urn:bschema-rs:skolem:a0053163427f6a534518feb8b3ed00a0>) .
+(<urn:bldg#Energy_Rate> <urn:bldg#Energy_Rate_Device_57018>) s223:hasExternalReference (_:a00385d70d4ee4834feaa2005aa7234c _:a0053163427f6a534518feb8b3ed00a0) .
 (<urn:bldg#Energy_Rate> <urn:bldg#Energy_Rate_Device_57018>) s223:hasAspect s223:Role-Discharge .
 (<urn:bldg#Energy_Rate> <urn:bldg#Energy_Rate_Device_57018>) a s223:QuantifiableObservableProperty .
 (<urn:bldg#TEST.ACTCHWDPSP> <urn:bldg#TEST.ACTCWDPSP>) qudt:hasUnit unit:UNITLESS .
@@ -113,7 +113,7 @@
 (<urn:bldg#TEST.ACTCHWDPSP> <urn:bldg#TEST.ACTCWDPSP>) s223:hasRole s223:OnOff-Unknown .
 (<urn:bldg#TEST.ACTCHWDPSP> <urn:bldg#TEST.ACTCWDPSP>) s223:hasRole s223:EnumerationKind-Speed .
 (<urn:bldg#TEST.ACTCHWDPSP> <urn:bldg#TEST.ACTCWDPSP>) s223:hasRole s223:Aspect-Command .
-(<urn:bldg#TEST.ACTCHWDPSP> <urn:bldg#TEST.ACTCWDPSP>) s223:hasExternalReference (<urn:bschema-rs:skolem:a00385d70d4ee4834feaa2005aa7234c> <urn:bschema-rs:skolem:a0053163427f6a534518feb8b3ed00a0>) .
+(<urn:bldg#TEST.ACTCHWDPSP> <urn:bldg#TEST.ACTCWDPSP>) s223:hasExternalReference (_:a00385d70d4ee4834feaa2005aa7234c _:a0053163427f6a534518feb8b3ed00a0) .
 (<urn:bldg#TEST.ACTCHWDPSP> <urn:bldg#TEST.ACTCWDPSP>) s223:hasAspect s223:EnumerationKind-Position .
 (<urn:bldg#TEST.ACTCHWDPSP> <urn:bldg#TEST.ACTCWDPSP>) a s223:QuantifiableActuatableProperty .
 (<urn:bldg#131_Tele-Health_hvac_domain_in> <urn:bldg#132_MECH_STEAM_hvac_domain_in>) s223:mapsTo (<urn:bldg#AH2A-ea-out> <urn:bldg#AH2A-ra-in>) .
@@ -155,7 +155,7 @@
 (<urn:bldg#Aux_Input_Total> <urn:bldg#Aux_Input_Total_Device_57018>) qudt:hasUnit unit:DEG .
 (<urn:bldg#Aux_Input_Total> <urn:bldg#Aux_Input_Total_Device_57018>) s223:hasRole s223:Role-Supply .
 (<urn:bldg#Aux_Input_Total> <urn:bldg#Aux_Input_Total_Device_57018>) s223:hasRole s223:OnOff-Unknown .
-(<urn:bldg#Aux_Input_Total> <urn:bldg#Aux_Input_Total_Device_57018>) s223:hasExternalReference (<urn:bschema-rs:skolem:a00385d70d4ee4834feaa2005aa7234c> <urn:bschema-rs:skolem:a0053163427f6a534518feb8b3ed00a0>) .
+(<urn:bldg#Aux_Input_Total> <urn:bldg#Aux_Input_Total_Device_57018>) s223:hasExternalReference (_:a00385d70d4ee4834feaa2005aa7234c _:a0053163427f6a534518feb8b3ed00a0) .
 (<urn:bldg#Aux_Input_Total> <urn:bldg#Aux_Input_Total_Device_57018>) a s223:QuantifiableProperty .
 (<urn:bldg#Mode_1_Volume_Total> <urn:bldg#Mode_1_Volume_Total_Device_57018>) qudt:hasUnit unit:W .
 (<urn:bldg#Mode_1_Volume_Total> <urn:bldg#Mode_1_Volume_Total_Device_57018>) qudt:hasUnit unit:UNITLESS .
@@ -166,7 +166,7 @@
 (<urn:bldg#Mode_1_Volume_Total> <urn:bldg#Mode_1_Volume_Total_Device_57018>) qudt:hasUnit unit:DEG_F .
 (<urn:bldg#Mode_1_Volume_Total> <urn:bldg#Mode_1_Volume_Total_Device_57018>) qudt:hasQuantityKind quantitykind:ActivePower .
 (<urn:bldg#Mode_1_Volume_Total> <urn:bldg#Mode_1_Volume_Total_Device_57018>) s223:hasProperty (<urn:bldg#Mode_1_Volume_Total> <urn:bldg#Mode_1_Volume_Total_Device_57018>) .
-(<urn:bldg#Mode_1_Volume_Total> <urn:bldg#Mode_1_Volume_Total_Device_57018>) s223:hasExternalReference (<urn:bschema-rs:skolem:a00385d70d4ee4834feaa2005aa7234c> <urn:bschema-rs:skolem:a0053163427f6a534518feb8b3ed00a0>) .
+(<urn:bldg#Mode_1_Volume_Total> <urn:bldg#Mode_1_Volume_Total_Device_57018>) s223:hasExternalReference (_:a00385d70d4ee4834feaa2005aa7234c _:a0053163427f6a534518feb8b3ed00a0) .
 (<urn:bldg#Mode_1_Volume_Total> <urn:bldg#Mode_1_Volume_Total_Device_57018>) a s223:QuantifiableObservableProperty .
 (<urn:bldg#Mode_1_Volume_Total> <urn:bldg#Mode_1_Volume_Total_Device_57018>) a s223:Property .
 (<urn:bldg#AH1A_Cooling_Coil-water-out> <urn:bldg#AH1A_Heating_Coil-water-out>) s223:mapsTo (<urn:bldg#AH1A_Cooling_Coil-water-out> <urn:bldg#AH1A_Heating_Coil-water-out>) .
@@ -225,18 +225,18 @@
 (<urn:bldg#bldg.S1-01_AI_3> <urn:bldg#bldg.S1-02_AI_3>) s223:hasRole s223:RunStatus-Unknown .
 (<urn:bldg#bldg.S1-01_AI_3> <urn:bldg#bldg.S1-02_AI_3>) s223:hasRole s223:Role-Supply .
 (<urn:bldg#bldg.S1-01_AI_3> <urn:bldg#bldg.S1-02_AI_3>) s223:hasRole s223:OnOff-Unknown .
-(<urn:bldg#bldg.S1-01_AI_3> <urn:bldg#bldg.S1-02_AI_3>) s223:hasExternalReference (<urn:bschema-rs:skolem:a00385d70d4ee4834feaa2005aa7234c> <urn:bschema-rs:skolem:a0053163427f6a534518feb8b3ed00a0>) .
+(<urn:bldg#bldg.S1-01_AI_3> <urn:bldg#bldg.S1-02_AI_3>) s223:hasExternalReference (_:a00385d70d4ee4834feaa2005aa7234c _:a0053163427f6a534518feb8b3ed00a0) .
 (<urn:bldg#bldg.S1-01_AI_3> <urn:bldg#bldg.S1-02_AI_3>) s223:hasAspect s223:Role-Discharge .
 (<urn:bldg#bldg.S1-01_AI_3> <urn:bldg#bldg.S1-02_AI_3>) s223:hasAspect s223:EnumerationKind-Position .
 (<urn:bldg#bldg.S1-01_AI_3> <urn:bldg#bldg.S1-02_AI_3>) a s223:QuantifiableObservableProperty .
 (<urn:bldg#bldg.S1-01_AI_3> <urn:bldg#bldg.S1-02_AI_3>) a s223:QuantifiableActuatableProperty .
 ("002QgMwn12248" "003jdRyq12263") a rdfs:Literal .
-(<urn:bschema-rs:skolem:a00385d70d4ee4834feaa2005aa7234c> <urn:bschema-rs:skolem:a0053163427f6a534518feb8b3ed00a0>) bacnet:object-type ("002QgMwn12248" "003jdRyq12263") .
-(<urn:bschema-rs:skolem:a00385d70d4ee4834feaa2005aa7234c> <urn:bschema-rs:skolem:a0053163427f6a534518feb8b3ed00a0>) bacnet:object-name ("002QgMwn12248" "003jdRyq12263") .
-(<urn:bschema-rs:skolem:a00385d70d4ee4834feaa2005aa7234c> <urn:bschema-rs:skolem:a0053163427f6a534518feb8b3ed00a0>) bacnet:object-identifier ("002QgMwn12248" "003jdRyq12263") .
-(<urn:bschema-rs:skolem:a00385d70d4ee4834feaa2005aa7234c> <urn:bschema-rs:skolem:a0053163427f6a534518feb8b3ed00a0>) bacnet:device-identifier (<urn:bldg#4FsOfbEa2841> <urn:bldg#5wSA7AlJ2418>) .
-(<urn:bschema-rs:skolem:a00385d70d4ee4834feaa2005aa7234c> <urn:bschema-rs:skolem:a0053163427f6a534518feb8b3ed00a0>) bacnet:description ("002QgMwn12248" "003jdRyq12263") .
-(<urn:bschema-rs:skolem:a00385d70d4ee4834feaa2005aa7234c> <urn:bschema-rs:skolem:a0053163427f6a534518feb8b3ed00a0>) a s223:BACnetExternalReference .
+(_:a00385d70d4ee4834feaa2005aa7234c _:a0053163427f6a534518feb8b3ed00a0) bacnet:object-type ("002QgMwn12248" "003jdRyq12263") .
+(_:a00385d70d4ee4834feaa2005aa7234c _:a0053163427f6a534518feb8b3ed00a0) bacnet:object-name ("002QgMwn12248" "003jdRyq12263") .
+(_:a00385d70d4ee4834feaa2005aa7234c _:a0053163427f6a534518feb8b3ed00a0) bacnet:object-identifier ("002QgMwn12248" "003jdRyq12263") .
+(_:a00385d70d4ee4834feaa2005aa7234c _:a0053163427f6a534518feb8b3ed00a0) bacnet:device-identifier (<urn:bldg#4FsOfbEa2841> <urn:bldg#5wSA7AlJ2418>) .
+(_:a00385d70d4ee4834feaa2005aa7234c _:a0053163427f6a534518feb8b3ed00a0) bacnet:description ("002QgMwn12248" "003jdRyq12263") .
+(_:a00385d70d4ee4834feaa2005aa7234c _:a0053163427f6a534518feb8b3ed00a0) a s223:BACnetExternalReference .
 (<urn:bldg#AH1A_SF_VFD> <urn:bldg#AH1B_SF_VFD>) s223:hasProperty (<urn:bldg#Aux_Input_Total> <urn:bldg#Aux_Input_Total_Device_57018>) .
 (<urn:bldg#AH1A_SF_VFD> <urn:bldg#AH1B_SF_VFD>) s223:hasProperty (<urn:bldg#Energy_Rate> <urn:bldg#Energy_Rate_Device_57018>) .
 (<urn:bldg#AH1A_SF_VFD> <urn:bldg#AH1B_SF_VFD>) s223:hasProperty (<urn:bldg#TEST.ACTCHWDPSP> <urn:bldg#TEST.ACTCWDPSP>) .
@@ -371,8 +371,8 @@
 (<urn:bldg#ATS-E1> <urn:bldg#ATS-E2>) s223:hasProperty (<urn:bldg#Energy_Rate> <urn:bldg#Energy_Rate_Device_57018>) .
 (<urn:bldg#ATS-E1> <urn:bldg#ATS-E2>) s223:hasProperty (<urn:bldg#TEST.ACTCHWDPSP> <urn:bldg#TEST.ACTCWDPSP>) .
 (<urn:bldg#ATS-E1> <urn:bldg#ATS-E2>) s223:hasProperty (<urn:bldg#Mode_1_Volume_Total> <urn:bldg#Mode_1_Volume_Total_Device_57018>) .
-(<urn:bschema-rs:skolem:a51c2e62762fac019cede35cb6fa9094> <urn:bschema-rs:skolem:a8ed997e7503ca7eb38c8997d289f149>) bacnet:storedAt ("002QgMwn12248" "003jdRyq12263") .
-(<urn:bschema-rs:skolem:a51c2e62762fac019cede35cb6fa9094> <urn:bschema-rs:skolem:a8ed997e7503ca7eb38c8997d289f149>) a bacnet:Port .
+(_:a51c2e62762fac019cede35cb6fa9094 _:a8ed997e7503ca7eb38c8997d289f149) bacnet:storedAt ("002QgMwn12248" "003jdRyq12263") .
+(_:a51c2e62762fac019cede35cb6fa9094 _:a8ed997e7503ca7eb38c8997d289f149) a bacnet:Port .
 (<urn:bldg#rs-junction-out-cp-ea_3cebd1a3> <urn:bldg#rs-junction-out-cp-ea_c9662bc3>) s223:cnx (<urn:bldg#AH1A_Cooling_Coil-air-out-duct> <urn:bldg#AH1A_Final_Filter-out-duct>) .
 (<urn:bldg#rs-junction-out-cp-ea_3cebd1a3> <urn:bldg#rs-junction-out-cp-ea_c9662bc3>) a s223:OutletConnectionPoint .
 (<urn:bldg#rs-junction-in-cp_54d42e50> <urn:bldg#rs-junction-in-cp_7069af46>) s223:cnx (<urn:bldg#AH1A_Cooling_Coil-air-out-duct> <urn:bldg#AH1A_Final_Filter-out-duct>) .
@@ -422,7 +422,7 @@
 (<urn:bldg#CH1> <urn:bldg#CH2>) s223:cnx (<urn:bldg#131_Tele-Health_hvac_domain_out> <urn:bldg#132_MECH_STEAM_hvac_domain_out>) .
 (<urn:bldg#CH1> <urn:bldg#CH2>) s223:cnx (<urn:bldg#131_Tele-Health_hvac_domain_in> <urn:bldg#132_MECH_STEAM_hvac_domain_in>) .
 (<urn:bldg#CH1> <urn:bldg#CH2>) a s223:Chiller .
-(<urn:bldg#4FsOfbEa2841> <urn:bldg#5wSA7AlJ2418>) bacnet:hasPort (<urn:bschema-rs:skolem:a51c2e62762fac019cede35cb6fa9094> <urn:bschema-rs:skolem:a8ed997e7503ca7eb38c8997d289f149>) .
+(<urn:bldg#4FsOfbEa2841> <urn:bldg#5wSA7AlJ2418>) bacnet:hasPort (_:a51c2e62762fac019cede35cb6fa9094 _:a8ed997e7503ca7eb38c8997d289f149) .
 (<urn:bldg#4FsOfbEa2841> <urn:bldg#5wSA7AlJ2418>) bacnet:device-instance rdfs:Resource .
 (<urn:bldg#4FsOfbEa2841> <urn:bldg#5wSA7AlJ2418>) a bacnet:BACnetDevice .
 (<urn:bldg#Condenser_Blowdown_Meter> <urn:bldg#Condenser_Make_Up_Meter>) s223:observes (<urn:bldg#Energy_Rate> <urn:bldg#Energy_Rate_Device_57018>) .

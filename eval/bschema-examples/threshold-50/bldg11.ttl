@@ -26,7 +26,7 @@
 @prefix s4ener: <https://saref.etsi.org/saref4ener#> .
 @prefix saref: <https://saref.etsi.org/core#> .
 
-(<http://buildsys.org/ontologies/bldg11#bldg11.AHU.AHU01.Zone_Air_Temp> <http://buildsys.org/ontologies/bldg11#bldg11.AHU.AHU02.Zone_Air_Temp>) ref:hasExternalReference (<urn:bschema-rs:skolem:a02a802a3cbeba3fa8312dd7d62bdc3b> <urn:bschema-rs:skolem:a08c069711846b9bb84f51a7bfba08ad>) .
+(<http://buildsys.org/ontologies/bldg11#bldg11.AHU.AHU01.Zone_Air_Temp> <http://buildsys.org/ontologies/bldg11#bldg11.AHU.AHU02.Zone_Air_Temp>) ref:hasExternalReference (_:a02a802a3cbeba3fa8312dd7d62bdc3b _:a08c069711846b9bb84f51a7bfba08ad) .
 (<http://buildsys.org/ontologies/bldg11#bldg11.AHU.AHU01.Zone_Air_Temp> <http://buildsys.org/ontologies/bldg11#bldg11.AHU.AHU02.Zone_Air_Temp>) rdfs:label ("bldg11.AHU.AHU01.Zone Air Temp" "bldg11.AHU.AHU02.Zone Air Temp") .
 (<http://buildsys.org/ontologies/bldg11#bldg11.AHU.AHU01.Zone_Air_Temp> <http://buildsys.org/ontologies/bldg11#bldg11.AHU.AHU02.Zone_Air_Temp>) a brick:Zone_Air_Temperature_Sensor .
 (<http://buildsys.org/ontologies/bldg11#VAVRM0101> <http://buildsys.org/ontologies/bldg11#VAVRM0111>) brick:hasPoint (<http://buildsys.org/ontologies/bldg11#bldg11.ZONE.AHU01.RM1018.Zone_Air_Temp_Setpoint> <http://buildsys.org/ontologies/bldg11#bldg11.ZONE.AHU01.RM1111.Zone_Air_Temp_Setpoint>) .
@@ -38,11 +38,11 @@
 (<http://buildsys.org/ontologies/bldg11#VAVRM0101> <http://buildsys.org/ontologies/bldg11#VAVRM0111>) brick:hasPoint (<http://buildsys.org/ontologies/bldg11#bldg11.ZONE.AHU05.RM2502.Zone_Percent_Air_Flow> <http://buildsys.org/ontologies/bldg11#bldg11.ZONE.AHU05.RM2505.Zone_Percent_Air_Flow>) .
 (<http://buildsys.org/ontologies/bldg11#VAVRM0101> <http://buildsys.org/ontologies/bldg11#VAVRM0111>) brick:feeds (<http://buildsys.org/ontologies/bldg11#RM0101> <http://buildsys.org/ontologies/bldg11#RM0111>) .
 (<http://buildsys.org/ontologies/bldg11#VAVRM0101> <http://buildsys.org/ontologies/bldg11#VAVRM0111>) a brick:VAV .
-(<http://buildsys.org/ontologies/bldg11#bldg11.AHU.AHU01.Supply_Air_Temp> <http://buildsys.org/ontologies/bldg11#bldg11.AHU.AHU02.Supply_Air_Temp>) ref:hasExternalReference (<urn:bschema-rs:skolem:a69d115505bcd173f47e8f91ab999c38> <urn:bschema-rs:skolem:b012098780e36e765fb9f31cb8d1963f>) .
+(<http://buildsys.org/ontologies/bldg11#bldg11.AHU.AHU01.Supply_Air_Temp> <http://buildsys.org/ontologies/bldg11#bldg11.AHU.AHU02.Supply_Air_Temp>) ref:hasExternalReference (_:a69d115505bcd173f47e8f91ab999c38 _:b012098780e36e765fb9f31cb8d1963f) .
 (<http://buildsys.org/ontologies/bldg11#bldg11.AHU.AHU01.Supply_Air_Temp> <http://buildsys.org/ontologies/bldg11#bldg11.AHU.AHU02.Supply_Air_Temp>) rdfs:label ("bldg11.AHU.AHU01.Supply Air Temp" "bldg11.AHU.AHU02.Supply Air Temp") .
 (<http://buildsys.org/ontologies/bldg11#bldg11.AHU.AHU01.Supply_Air_Temp> <http://buildsys.org/ontologies/bldg11#bldg11.AHU.AHU02.Supply_Air_Temp>) a brick:Supply_Air_Temperature_Sensor .
 (<http://buildsys.org/ontologies/bldg11#RM0101_room> <http://buildsys.org/ontologies/bldg11#RM0111_room>) a brick:Room .
-(<http://buildsys.org/ontologies/bldg11#bldg11.AHU.AHU01.Outside_Air_Temp> <http://buildsys.org/ontologies/bldg11#bldg11.AHU.AHU03.Outside_Air_Temp>) ref:hasExternalReference (<urn:bschema-rs:skolem:a241e62316174dcccdf9c2c405c0f35> <urn:bschema-rs:skolem:a96715407d560736f6c84c8678b94097>) .
+(<http://buildsys.org/ontologies/bldg11#bldg11.AHU.AHU01.Outside_Air_Temp> <http://buildsys.org/ontologies/bldg11#bldg11.AHU.AHU03.Outside_Air_Temp>) ref:hasExternalReference (_:a241e62316174dcccdf9c2c405c0f35 _:a96715407d560736f6c84c8678b94097) .
 (<http://buildsys.org/ontologies/bldg11#bldg11.AHU.AHU01.Outside_Air_Temp> <http://buildsys.org/ontologies/bldg11#bldg11.AHU.AHU03.Outside_Air_Temp>) rdfs:label ("bldg11.AHU.AHU01.Outside Air Temp" "bldg11.AHU.AHU03.Outside Air Temp") .
 (<http://buildsys.org/ontologies/bldg11#bldg11.AHU.AHU01.Outside_Air_Temp> <http://buildsys.org/ontologies/bldg11#bldg11.AHU.AHU03.Outside_Air_Temp>) a brick:Outside_Air_Temperature_Sensor .
 (<http://buildsys.org/ontologies/bldg11#chiller>) brick:hasPoint (<http://buildsys.org/ontologies/bldg11#bldg11.CHW.Pump1_Start/Stop> <http://buildsys.org/ontologies/bldg11#bldg11.CHW.Pump2_Start/Stop>) .
@@ -57,62 +57,62 @@
 (<http://buildsys.org/ontologies/bldg11#chiller>) brick:hasPoint (<http://buildsys.org/ontologies/bldg11#bldg11.CHW.Building_Chilled_Water_Flow> <http://buildsys.org/ontologies/bldg11#bldg11.CHW.Loop_Chilled_Water_Flow>) .
 (<http://buildsys.org/ontologies/bldg11#chiller>) brick:hasPoint (<http://buildsys.org/ontologies/bldg11#bldg11.CHW.Building_Chilled_Water_Delta_Temp>) .
 (<http://buildsys.org/ontologies/bldg11#chiller>) a brick:Chiller .
-(<http://buildsys.org/ontologies/bldg11#bldg11.ZONE.AHU01.RM1018.Zone_Air_Temp_Setpoint> <http://buildsys.org/ontologies/bldg11#bldg11.ZONE.AHU01.RM1111.Zone_Air_Temp_Setpoint>) ref:hasExternalReference (<urn:bschema-rs:skolem:a0f6fa34120192646039ae67ee8563a> <urn:bschema-rs:skolem:a1c276568356ae34ebae7500a36a0189>) .
+(<http://buildsys.org/ontologies/bldg11#bldg11.ZONE.AHU01.RM1018.Zone_Air_Temp_Setpoint> <http://buildsys.org/ontologies/bldg11#bldg11.ZONE.AHU01.RM1111.Zone_Air_Temp_Setpoint>) ref:hasExternalReference (_:a0f6fa34120192646039ae67ee8563a _:a1c276568356ae34ebae7500a36a0189) .
 (<http://buildsys.org/ontologies/bldg11#bldg11.ZONE.AHU01.RM1018.Zone_Air_Temp_Setpoint> <http://buildsys.org/ontologies/bldg11#bldg11.ZONE.AHU01.RM1111.Zone_Air_Temp_Setpoint>) rdfs:label ("bldg11.ZONE.AHU01.RM1018.Zone Air Temp Setpoint" "bldg11.ZONE.AHU01.RM1111.Zone Air Temp Setpoint") .
 (<http://buildsys.org/ontologies/bldg11#bldg11.ZONE.AHU01.RM1018.Zone_Air_Temp_Setpoint> <http://buildsys.org/ontologies/bldg11#bldg11.ZONE.AHU01.RM1111.Zone_Air_Temp_Setpoint>) a brick:Zone_Air_Temperature_Setpoint .
 (<http://buildsys.org/ontologies/bldg11#bldg11.ZONE.AHU01.RM1018.VLV_2_COMD> <http://buildsys.org/ontologies/bldg11#bldg11.ZONE.AHU01.RM1111.VLV_2_COMD>) rdfs:label ("bldg11.ZONE.AHU01.RM1018.VLV 2 COMD" "bldg11.ZONE.AHU01.RM1111.VLV 2 COMD") .
 (<http://buildsys.org/ontologies/bldg11#bldg11.ZONE.AHU01.RM1018.VLV_2_COMD> <http://buildsys.org/ontologies/bldg11#bldg11.ZONE.AHU01.RM1111.VLV_2_COMD>) a brick:Valve_Command .
-(<http://buildsys.org/ontologies/bldg11#bldg11.AHU.AHU05.SUPFLOW> <http://buildsys.org/ontologies/bldg11#bldg11.AHU.AHU06.SUPFLOW>) ref:hasExternalReference (<urn:bschema-rs:skolem:acefdd579055a7b063f98d9cf3aaa805> <urn:bschema-rs:skolem:e29e207c1a88efb6e95e6fa4dcc1bc4c>) .
+(<http://buildsys.org/ontologies/bldg11#bldg11.AHU.AHU05.SUPFLOW> <http://buildsys.org/ontologies/bldg11#bldg11.AHU.AHU06.SUPFLOW>) ref:hasExternalReference (_:acefdd579055a7b063f98d9cf3aaa805 _:e29e207c1a88efb6e95e6fa4dcc1bc4c) .
 (<http://buildsys.org/ontologies/bldg11#bldg11.AHU.AHU05.SUPFLOW> <http://buildsys.org/ontologies/bldg11#bldg11.AHU.AHU06.SUPFLOW>) rdfs:label ("bldg11.AHU.AHU05.SUPFLOW" "bldg11.AHU.AHU06.SUPFLOW") .
 (<http://buildsys.org/ontologies/bldg11#bldg11.AHU.AHU05.SUPFLOW> <http://buildsys.org/ontologies/bldg11#bldg11.AHU.AHU06.SUPFLOW>) a brick:Supply_Air_flow .
-(<http://buildsys.org/ontologies/bldg11#bldg11.AHU.AHU01.Supply_Air_Temp_Setpoint> <http://buildsys.org/ontologies/bldg11#bldg11.AHU.AHU02.Supply_Air_Temp_Setpoint>) ref:hasExternalReference (<urn:bschema-rs:skolem:a19dad2ac1b6bd8a0439cabfd831676f> <urn:bschema-rs:skolem:aa2c402db8a145a7a8408c4d992d5216>) .
+(<http://buildsys.org/ontologies/bldg11#bldg11.AHU.AHU01.Supply_Air_Temp_Setpoint> <http://buildsys.org/ontologies/bldg11#bldg11.AHU.AHU02.Supply_Air_Temp_Setpoint>) ref:hasExternalReference (_:a19dad2ac1b6bd8a0439cabfd831676f _:aa2c402db8a145a7a8408c4d992d5216) .
 (<http://buildsys.org/ontologies/bldg11#bldg11.AHU.AHU01.Supply_Air_Temp_Setpoint> <http://buildsys.org/ontologies/bldg11#bldg11.AHU.AHU02.Supply_Air_Temp_Setpoint>) rdfs:label ("bldg11.AHU.AHU01.Supply Air Temp Setpoint" "bldg11.AHU.AHU02.Supply Air Temp Setpoint") .
 (<http://buildsys.org/ontologies/bldg11#bldg11.AHU.AHU01.Supply_Air_Temp_Setpoint> <http://buildsys.org/ontologies/bldg11#bldg11.AHU.AHU02.Supply_Air_Temp_Setpoint>) a brick:Supply_Air_Temperature_Setpoint .
-(<http://buildsys.org/ontologies/bldg11#bldg11.AHU.AHU01.Supply_Air_Pressure> <http://buildsys.org/ontologies/bldg11#bldg11.AHU.AHU02.Supply_Air_Pressure>) ref:hasExternalReference (<urn:bschema-rs:skolem:af1a03e60ae5865cda4861707ae7400> <urn:bschema-rs:skolem:b00a5e4b21769c84c358310c8f656e4f>) .
+(<http://buildsys.org/ontologies/bldg11#bldg11.AHU.AHU01.Supply_Air_Pressure> <http://buildsys.org/ontologies/bldg11#bldg11.AHU.AHU02.Supply_Air_Pressure>) ref:hasExternalReference (_:af1a03e60ae5865cda4861707ae7400 _:b00a5e4b21769c84c358310c8f656e4f) .
 (<http://buildsys.org/ontologies/bldg11#bldg11.AHU.AHU01.Supply_Air_Pressure> <http://buildsys.org/ontologies/bldg11#bldg11.AHU.AHU02.Supply_Air_Pressure>) rdfs:label ("bldg11.AHU.AHU01.Supply Air Pressure" "bldg11.AHU.AHU02.Supply Air Pressure") .
 (<http://buildsys.org/ontologies/bldg11#bldg11.AHU.AHU01.Supply_Air_Pressure> <http://buildsys.org/ontologies/bldg11#bldg11.AHU.AHU02.Supply_Air_Pressure>) a brick:Supply_Air_Static_Pressure_Sensor .
-(<http://buildsys.org/ontologies/bldg11#bldg11.ZONE.AHU05.RM2502.Zone_Supply_Air_Flow> <http://buildsys.org/ontologies/bldg11#bldg11.ZONE.AHU05.RM2505.Zone_Supply_Air_Flow>) ref:hasExternalReference (<urn:bschema-rs:skolem:a0e6ed51f7be717fd15e62494d8f775d> <urn:bschema-rs:skolem:a17c5f72f55ff7192ffd65a93c55570a>) .
+(<http://buildsys.org/ontologies/bldg11#bldg11.ZONE.AHU05.RM2502.Zone_Supply_Air_Flow> <http://buildsys.org/ontologies/bldg11#bldg11.ZONE.AHU05.RM2505.Zone_Supply_Air_Flow>) ref:hasExternalReference (_:a0e6ed51f7be717fd15e62494d8f775d _:a17c5f72f55ff7192ffd65a93c55570a) .
 (<http://buildsys.org/ontologies/bldg11#bldg11.ZONE.AHU05.RM2502.Zone_Supply_Air_Flow> <http://buildsys.org/ontologies/bldg11#bldg11.ZONE.AHU05.RM2505.Zone_Supply_Air_Flow>) rdfs:label ("bldg11.ZONE.AHU05.RM2502.Zone Supply Air Flow" "bldg11.ZONE.AHU05.RM2505.Zone Supply Air Flow") .
 (<http://buildsys.org/ontologies/bldg11#bldg11.ZONE.AHU05.RM2502.Zone_Supply_Air_Flow> <http://buildsys.org/ontologies/bldg11#bldg11.ZONE.AHU05.RM2505.Zone_Supply_Air_Flow>) a brick:Supply_Air_Flow_Sensor .
-(<http://buildsys.org/ontologies/bldg11#bldg11.CHW.Pump1_Start/Stop> <http://buildsys.org/ontologies/bldg11#bldg11.CHW.Pump2_Start/Stop>) ref:hasExternalReference (<urn:bschema-rs:skolem:e3596757b7a89ee1c5ef126e2c633a5d> <urn:bschema-rs:skolem:e6f6cf5c662dddbc284435efcf0268fc>) .
+(<http://buildsys.org/ontologies/bldg11#bldg11.CHW.Pump1_Start/Stop> <http://buildsys.org/ontologies/bldg11#bldg11.CHW.Pump2_Start/Stop>) ref:hasExternalReference (_:e3596757b7a89ee1c5ef126e2c633a5d _:e6f6cf5c662dddbc284435efcf0268fc) .
 (<http://buildsys.org/ontologies/bldg11#bldg11.CHW.Pump1_Start/Stop> <http://buildsys.org/ontologies/bldg11#bldg11.CHW.Pump2_Start/Stop>) rdfs:label ("bldg11.CHW.Pump1_Start/Stop" "bldg11.CHW.Pump2_Start/Stop") .
 (<http://buildsys.org/ontologies/bldg11#bldg11.CHW.Pump1_Start/Stop> <http://buildsys.org/ontologies/bldg11#bldg11.CHW.Pump2_Start/Stop>) a brick:Start_Stop_Command .
-(<http://buildsys.org/ontologies/bldg11#bldg11.CHW.Pump1_SPEED> <http://buildsys.org/ontologies/bldg11#bldg11.CHW.Pump2_SPEED>) ref:hasExternalReference (<urn:bschema-rs:skolem:b69d62ed45eaf1bdfadac7b8906e9654> <urn:bschema-rs:skolem:e881b10669942d8e375bdfb9411168ff>) .
+(<http://buildsys.org/ontologies/bldg11#bldg11.CHW.Pump1_SPEED> <http://buildsys.org/ontologies/bldg11#bldg11.CHW.Pump2_SPEED>) ref:hasExternalReference (_:b69d62ed45eaf1bdfadac7b8906e9654 _:e881b10669942d8e375bdfb9411168ff) .
 (<http://buildsys.org/ontologies/bldg11#bldg11.CHW.Pump1_SPEED> <http://buildsys.org/ontologies/bldg11#bldg11.CHW.Pump2_SPEED>) rdfs:label ("bldg11.CHW.Pump1_SPEED" "bldg11.CHW.Pump2_SPEED") .
 (<http://buildsys.org/ontologies/bldg11#bldg11.CHW.Pump1_SPEED> <http://buildsys.org/ontologies/bldg11#bldg11.CHW.Pump2_SPEED>) a brick:Speed_Status .
-(<http://buildsys.org/ontologies/bldg11#bldg11.AHU.AHU05.Return_Air_Temp> <http://buildsys.org/ontologies/bldg11#bldg11.AHU.AHU06.Return_Air_Temp>) ref:hasExternalReference (<urn:bschema-rs:skolem:d76057d37064b8b3cb1e634ef9d85d75> <urn:bschema-rs:skolem:e55fb864b5a89d5231b519e70f452db9>) .
+(<http://buildsys.org/ontologies/bldg11#bldg11.AHU.AHU05.Return_Air_Temp> <http://buildsys.org/ontologies/bldg11#bldg11.AHU.AHU06.Return_Air_Temp>) ref:hasExternalReference (_:d76057d37064b8b3cb1e634ef9d85d75 _:e55fb864b5a89d5231b519e70f452db9) .
 (<http://buildsys.org/ontologies/bldg11#bldg11.AHU.AHU05.Return_Air_Temp> <http://buildsys.org/ontologies/bldg11#bldg11.AHU.AHU06.Return_Air_Temp>) rdfs:label ("bldg11.AHU.AHU05.Return Air Temp" "bldg11.AHU.AHU06.Return Air Temp") .
 (<http://buildsys.org/ontologies/bldg11#bldg11.AHU.AHU05.Return_Air_Temp> <http://buildsys.org/ontologies/bldg11#bldg11.AHU.AHU06.Return_Air_Temp>) a brick:Return_Air_Temperature_Sensor .
-(<urn:bschema-rs:skolem:a30e3d99603392afc4a64485092ccd85> <urn:bschema-rs:skolem:a7b9a7ff3a369a0b699b15bc11874e68>) ref:hasTimeseriesId ("0152d888-05fc-4c80-bd9e-f135d8fb7bd6" "20c189ca-9204-4e12-bcda-5221711583d2") .
-(<urn:bschema-rs:skolem:a241e62316174dcccdf9c2c405c0f35> <urn:bschema-rs:skolem:a96715407d560736f6c84c8678b94097>) ref:hasTimeseriesId ("51fe3ad2-e897-4a49-8b2c-d665002a2d30" "54b5b783-f167-42df-ae1b-6f0619014127") .
-(<urn:bschema-rs:skolem:a19dad2ac1b6bd8a0439cabfd831676f> <urn:bschema-rs:skolem:aa2c402db8a145a7a8408c4d992d5216>) ref:hasTimeseriesId ("0f4edca1-3ccf-4957-8f88-1fd4f96378d7" "1817f31b-1f9a-48d8-bc97-3594f2141668") .
-(<urn:bschema-rs:skolem:a0f6fa34120192646039ae67ee8563a> <urn:bschema-rs:skolem:a1c276568356ae34ebae7500a36a0189>) ref:hasTimeseriesId ("00d0c066-d247-417c-a07b-09ef71c14114" "010b4082-dbba-46b5-ae09-782274ab695b") .
-(<urn:bschema-rs:skolem:a0e6ed51f7be717fd15e62494d8f775d> <urn:bschema-rs:skolem:a17c5f72f55ff7192ffd65a93c55570a>) ref:hasTimeseriesId ("066f9b0b-8313-4e82-a727-12b305c6c302" "07a0b5b4-d5eb-42e7-82b5-91297b29eef8") .
-(<urn:bschema-rs:skolem:a0a278f4b701950237d238f59c099706> <urn:bschema-rs:skolem:a456258d2f0ae10c92c4323175937c81>) ref:hasTimeseriesId ("0401316f-a372-4dcb-9a56-448ee5841ab5" "041c0313-f4e9-4e6f-af40-6f88ecc51ab6") .
-(<urn:bschema-rs:skolem:a058ebfaae33bb7b441f221bfb5f9bd5> <urn:bschema-rs:skolem:a08a86c9158bf3eec51eb60b26a47e42>) ref:hasTimeseriesId ("01e6b3b9-9b56-4524-907f-4c6e0320e1c0" "030c8f46-e9ce-4b69-876a-9dca2cee2bcb") .
-(<urn:bschema-rs:skolem:f95fe5086af62d76a1416e397a04dc19>) ref:hasTimeseriesId ("9ea40f8b-4325-410d-b8cd-09bd57439d41") .
-(<urn:bschema-rs:skolem:e3596757b7a89ee1c5ef126e2c633a5d> <urn:bschema-rs:skolem:e6f6cf5c662dddbc284435efcf0268fc>) ref:hasTimeseriesId ("2e6044d4-7654-4354-b226-ab114d821ea3" "85cd46ca-af06-4880-856c-6e0f2ddad259") .
-(<urn:bschema-rs:skolem:d9ca5ea5399128dcee53c2373b0c2484>) ref:hasTimeseriesId ("78cc3fc7-d321-4ec5-ae11-5f47765a2417") .
-(<urn:bschema-rs:skolem:d76057d37064b8b3cb1e634ef9d85d75> <urn:bschema-rs:skolem:e55fb864b5a89d5231b519e70f452db9>) ref:hasTimeseriesId ("1435afca-d842-472d-95d6-b18896817903" "752f49c6-746b-4c51-a77d-cea54150d2d0") .
-(<urn:bschema-rs:skolem:d0b9b076c5ccc85bd64600e50da16ebe>) ref:hasTimeseriesId ("76964954-cdc1-4df1-90f1-78e843dc67d8") .
-(<urn:bschema-rs:skolem:cd41f968e0e34d970c6f9a90843dfd33> <urn:bschema-rs:skolem:f63d1d1807489f9d6083715bd8ff0073>) ref:hasTimeseriesId ("0624c15f-a222-4037-ac9e-6eac63c87bda" "8716aad3-9471-4d3d-8dc7-87ffbb409e6c") .
-(<urn:bschema-rs:skolem:bf3022bc9164f7f85700b18f4bb8addd>) brick:value ("228431^^<http://www.w3.org/2001/XMLSchema#integer>") .
-(<urn:bschema-rs:skolem:bf3022bc9164f7f85700b18f4bb8addd>) brick:hasUnits rdfs:Resource .
-(<urn:bschema-rs:skolem:bb9795fbc0d37b9227ae8a740bc49a6f>) ref:hasTimeseriesId ("9bcc6d0e-ea66-495c-9c60-5ab3d17e9112") .
-(<urn:bschema-rs:skolem:bab25d86782fdc0bbb3410e7753f4be2> <urn:bschema-rs:skolem:caa6676c9742d639131812afcf829c27>) ref:hasTimeseriesId ("54ffb162-5758-4ce3-bd7d-a577d3b5ff9c" "853f4bed-50d4-4e5f-8962-55928fb48c3d") .
-(<urn:bschema-rs:skolem:a035a9ab8ba55cf84ac446001fd9a24a> <urn:bschema-rs:skolem:a049230133b1deaa53ca5fea4a6e503f>) ref:hasTimeseriesId ("01f1d607-ab47-45c3-854f-3a6b6232f1b3" "07c04827-a69c-41b9-98b3-e90f0fde2e55") .
-(<urn:bschema-rs:skolem:b69d62ed45eaf1bdfadac7b8906e9654> <urn:bschema-rs:skolem:e881b10669942d8e375bdfb9411168ff>) ref:hasTimeseriesId ("5fdebd74-b776-4a45-968a-82a8eebb40c7" "6445b2ec-d344-41a0-8780-5ad94138d564") .
-(<urn:bschema-rs:skolem:b4598eee87dd348f420a218dffc7954> <urn:bschema-rs:skolem:c820c6caf55312d2e0d67c1112b0a39>) ref:hasTimeseriesId ("0fc37d55-0bdc-472a-989f-15a5a303a310" "22396137-82f2-4427-8a80-155ec5ac01c0") .
-(<urn:bschema-rs:skolem:b29ff1dc885c39e74222a426b9f96ba1>) ref:hasTimeseriesId ("ff56e8d1-e0b8-4081-9a05-033c420428a8") .
-(<urn:bschema-rs:skolem:af1a03e60ae5865cda4861707ae7400> <urn:bschema-rs:skolem:b00a5e4b21769c84c358310c8f656e4f>) ref:hasTimeseriesId ("08dd6856-1679-4ecf-b4f4-41c0263ece09" "16ec7579-30f4-4b73-9b04-e16edb76a851") .
-(<urn:bschema-rs:skolem:acefdd579055a7b063f98d9cf3aaa805> <urn:bschema-rs:skolem:e29e207c1a88efb6e95e6fa4dcc1bc4c>) ref:hasTimeseriesId ("2f07e931-8454-46e8-8cd3-7c4cde9d549a" "73737480-354f-4d08-8c28-bd8b7936b8f9") .
-(<urn:bschema-rs:skolem:aa60f838db6d196dd025ac4db9c7f97d> <urn:bschema-rs:skolem:c1248d27baff4ead61d423b54ef823f8>) ref:hasTimeseriesId ("644780fe-7b3c-4ad8-ac16-786c4eeccd4a") .
-(<urn:bschema-rs:skolem:a6f7becdb29174a9a0c574e1ce04ad56> <urn:bschema-rs:skolem:fde74c930524dc9fdfe7ea0c96d7d76b>) ref:hasTimeseriesId ("03a754ac-8aa4-4c88-9b23-e9f3d2a6e9b6" "73783d4e-58d7-4b83-a60b-4ac30e166bc5") .
-(<urn:bschema-rs:skolem:a69d115505bcd173f47e8f91ab999c38> <urn:bschema-rs:skolem:b012098780e36e765fb9f31cb8d1963f>) ref:hasTimeseriesId ("0880180a-9718-4dcd-8a21-d6a897f71c9c" "27725205-1e2d-4ead-9b6b-b0bb977e2f63") .
-(<urn:bschema-rs:skolem:a5fc932601472b4b332b130b77368859> <urn:bschema-rs:skolem:adbc3f1e5fab6ded3d463b83658e8061>) ref:hasTimeseriesId ("0f11f18e-3514-4177-be92-dd1c052cae58" "47f14f8d-9551-4289-add5-13e21464ab01") .
-(<urn:bschema-rs:skolem:a5a319533be618ad4e69bf9e1ece69a0> <urn:bschema-rs:skolem:f5e23c567c0739f2418be5cfb583a027>) ref:hasTimeseriesId ("503db1b0-0751-4879-a158-6b2b7a99b46f" "6f5f3006-6255-412e-985f-73b56f8f3a28") .
-(<urn:bschema-rs:skolem:a02a802a3cbeba3fa8312dd7d62bdc3b> <urn:bschema-rs:skolem:a08c069711846b9bb84f51a7bfba08ad>) ref:hasTimeseriesId ("020e8ec2-6eed-474d-8d41-3b109f65ae1a" "02ff0500-ef5e-4c13-a430-e84508a4ad73") .
-(<http://buildsys.org/ontologies/bldg11#bldg11.AHU.AHU05.Mode>) ref:hasExternalReference (<urn:bschema-rs:skolem:d0b9b076c5ccc85bd64600e50da16ebe>) .
+(_:a30e3d99603392afc4a64485092ccd85 _:a7b9a7ff3a369a0b699b15bc11874e68) ref:hasTimeseriesId ("0152d888-05fc-4c80-bd9e-f135d8fb7bd6" "20c189ca-9204-4e12-bcda-5221711583d2") .
+(_:a241e62316174dcccdf9c2c405c0f35 _:a96715407d560736f6c84c8678b94097) ref:hasTimeseriesId ("51fe3ad2-e897-4a49-8b2c-d665002a2d30" "54b5b783-f167-42df-ae1b-6f0619014127") .
+(_:a19dad2ac1b6bd8a0439cabfd831676f _:aa2c402db8a145a7a8408c4d992d5216) ref:hasTimeseriesId ("0f4edca1-3ccf-4957-8f88-1fd4f96378d7" "1817f31b-1f9a-48d8-bc97-3594f2141668") .
+(_:a0f6fa34120192646039ae67ee8563a _:a1c276568356ae34ebae7500a36a0189) ref:hasTimeseriesId ("00d0c066-d247-417c-a07b-09ef71c14114" "010b4082-dbba-46b5-ae09-782274ab695b") .
+(_:a0e6ed51f7be717fd15e62494d8f775d _:a17c5f72f55ff7192ffd65a93c55570a) ref:hasTimeseriesId ("066f9b0b-8313-4e82-a727-12b305c6c302" "07a0b5b4-d5eb-42e7-82b5-91297b29eef8") .
+(_:a0a278f4b701950237d238f59c099706 _:a456258d2f0ae10c92c4323175937c81) ref:hasTimeseriesId ("0401316f-a372-4dcb-9a56-448ee5841ab5" "041c0313-f4e9-4e6f-af40-6f88ecc51ab6") .
+(_:a058ebfaae33bb7b441f221bfb5f9bd5 _:a08a86c9158bf3eec51eb60b26a47e42) ref:hasTimeseriesId ("01e6b3b9-9b56-4524-907f-4c6e0320e1c0" "030c8f46-e9ce-4b69-876a-9dca2cee2bcb") .
+(_:f95fe5086af62d76a1416e397a04dc19) ref:hasTimeseriesId ("9ea40f8b-4325-410d-b8cd-09bd57439d41") .
+(_:e3596757b7a89ee1c5ef126e2c633a5d _:e6f6cf5c662dddbc284435efcf0268fc) ref:hasTimeseriesId ("2e6044d4-7654-4354-b226-ab114d821ea3" "85cd46ca-af06-4880-856c-6e0f2ddad259") .
+(_:d9ca5ea5399128dcee53c2373b0c2484) ref:hasTimeseriesId ("78cc3fc7-d321-4ec5-ae11-5f47765a2417") .
+(_:d76057d37064b8b3cb1e634ef9d85d75 _:e55fb864b5a89d5231b519e70f452db9) ref:hasTimeseriesId ("1435afca-d842-472d-95d6-b18896817903" "752f49c6-746b-4c51-a77d-cea54150d2d0") .
+(_:d0b9b076c5ccc85bd64600e50da16ebe) ref:hasTimeseriesId ("76964954-cdc1-4df1-90f1-78e843dc67d8") .
+(_:cd41f968e0e34d970c6f9a90843dfd33 _:f63d1d1807489f9d6083715bd8ff0073) ref:hasTimeseriesId ("0624c15f-a222-4037-ac9e-6eac63c87bda" "8716aad3-9471-4d3d-8dc7-87ffbb409e6c") .
+(_:bf3022bc9164f7f85700b18f4bb8addd) brick:value ("228431^^<http://www.w3.org/2001/XMLSchema#integer>") .
+(_:bf3022bc9164f7f85700b18f4bb8addd) brick:hasUnits rdfs:Resource .
+(_:bb9795fbc0d37b9227ae8a740bc49a6f) ref:hasTimeseriesId ("9bcc6d0e-ea66-495c-9c60-5ab3d17e9112") .
+(_:bab25d86782fdc0bbb3410e7753f4be2 _:caa6676c9742d639131812afcf829c27) ref:hasTimeseriesId ("54ffb162-5758-4ce3-bd7d-a577d3b5ff9c" "853f4bed-50d4-4e5f-8962-55928fb48c3d") .
+(_:a035a9ab8ba55cf84ac446001fd9a24a _:a049230133b1deaa53ca5fea4a6e503f) ref:hasTimeseriesId ("01f1d607-ab47-45c3-854f-3a6b6232f1b3" "07c04827-a69c-41b9-98b3-e90f0fde2e55") .
+(_:b69d62ed45eaf1bdfadac7b8906e9654 _:e881b10669942d8e375bdfb9411168ff) ref:hasTimeseriesId ("5fdebd74-b776-4a45-968a-82a8eebb40c7" "6445b2ec-d344-41a0-8780-5ad94138d564") .
+(_:b4598eee87dd348f420a218dffc7954 _:c820c6caf55312d2e0d67c1112b0a39) ref:hasTimeseriesId ("0fc37d55-0bdc-472a-989f-15a5a303a310" "22396137-82f2-4427-8a80-155ec5ac01c0") .
+(_:b29ff1dc885c39e74222a426b9f96ba1) ref:hasTimeseriesId ("ff56e8d1-e0b8-4081-9a05-033c420428a8") .
+(_:af1a03e60ae5865cda4861707ae7400 _:b00a5e4b21769c84c358310c8f656e4f) ref:hasTimeseriesId ("08dd6856-1679-4ecf-b4f4-41c0263ece09" "16ec7579-30f4-4b73-9b04-e16edb76a851") .
+(_:acefdd579055a7b063f98d9cf3aaa805 _:e29e207c1a88efb6e95e6fa4dcc1bc4c) ref:hasTimeseriesId ("2f07e931-8454-46e8-8cd3-7c4cde9d549a" "73737480-354f-4d08-8c28-bd8b7936b8f9") .
+(_:aa60f838db6d196dd025ac4db9c7f97d _:c1248d27baff4ead61d423b54ef823f8) ref:hasTimeseriesId ("644780fe-7b3c-4ad8-ac16-786c4eeccd4a") .
+(_:a6f7becdb29174a9a0c574e1ce04ad56 _:fde74c930524dc9fdfe7ea0c96d7d76b) ref:hasTimeseriesId ("03a754ac-8aa4-4c88-9b23-e9f3d2a6e9b6" "73783d4e-58d7-4b83-a60b-4ac30e166bc5") .
+(_:a69d115505bcd173f47e8f91ab999c38 _:b012098780e36e765fb9f31cb8d1963f) ref:hasTimeseriesId ("0880180a-9718-4dcd-8a21-d6a897f71c9c" "27725205-1e2d-4ead-9b6b-b0bb977e2f63") .
+(_:a5fc932601472b4b332b130b77368859 _:adbc3f1e5fab6ded3d463b83658e8061) ref:hasTimeseriesId ("0f11f18e-3514-4177-be92-dd1c052cae58" "47f14f8d-9551-4289-add5-13e21464ab01") .
+(_:a5a319533be618ad4e69bf9e1ece69a0 _:f5e23c567c0739f2418be5cfb583a027) ref:hasTimeseriesId ("503db1b0-0751-4879-a158-6b2b7a99b46f" "6f5f3006-6255-412e-985f-73b56f8f3a28") .
+(_:a02a802a3cbeba3fa8312dd7d62bdc3b _:a08c069711846b9bb84f51a7bfba08ad) ref:hasTimeseriesId ("020e8ec2-6eed-474d-8d41-3b109f65ae1a" "02ff0500-ef5e-4c13-a430-e84508a4ad73") .
+(<http://buildsys.org/ontologies/bldg11#bldg11.AHU.AHU05.Mode>) ref:hasExternalReference (_:d0b9b076c5ccc85bd64600e50da16ebe) .
 (<http://buildsys.org/ontologies/bldg11#bldg11.AHU.AHU05.Mode>) rdfs:label ("bldg11.AHU.AHU05.Mode") .
 (<http://buildsys.org/ontologies/bldg11#bldg11.AHU.AHU05.Mode>) a brick:Mode .
 (<http://buildsys.org/ontologies/bldg11#bldg11.AHU.AHU05.Mixed_Air_Temp> <http://buildsys.org/ontologies/bldg11#bldg11.AHU.AHU06.Mixed_Air_Temp>) rdfs:label ("bldg11.AHU.AHU05.Mixed Air Temp" "bldg11.AHU.AHU06.Mixed Air Temp") .
@@ -176,59 +176,59 @@
 ("066f9b0b-8313-4e82-a727-12b305c6c302" "07a0b5b4-d5eb-42e7-82b5-91297b29eef8") a rdfs:Literal .
 (<http://buildsys.org/ontologies/bldg11#RM0101> <http://buildsys.org/ontologies/bldg11#RM0111>) brick:hasPart (<http://buildsys.org/ontologies/bldg11#RM0101_room> <http://buildsys.org/ontologies/bldg11#RM0111_room>) .
 (<http://buildsys.org/ontologies/bldg11#RM0101> <http://buildsys.org/ontologies/bldg11#RM0111>) a brick:HVAC_Zone .
-(<http://buildsys.org/ontologies/bldg11#bldg11.CHW.Enable>) ref:hasExternalReference (<urn:bschema-rs:skolem:bb9795fbc0d37b9227ae8a740bc49a6f>) .
+(<http://buildsys.org/ontologies/bldg11#bldg11.CHW.Enable>) ref:hasExternalReference (_:bb9795fbc0d37b9227ae8a740bc49a6f) .
 (<http://buildsys.org/ontologies/bldg11#bldg11.CHW.Enable>) rdfs:label ("bldg11.CHW.Enable") .
 (<http://buildsys.org/ontologies/bldg11#bldg11.CHW.Enable>) a brick:Enable_Command .
-(<http://buildsys.org/ontologies/bldg11#bldg11.ZONE.AHU05.RM2502.Zone_Air_Damper_Command> <http://buildsys.org/ontologies/bldg11#bldg11.ZONE.AHU05.RM2505.Zone_Air_Damper_Command>) ref:hasExternalReference (<urn:bschema-rs:skolem:a035a9ab8ba55cf84ac446001fd9a24a> <urn:bschema-rs:skolem:a049230133b1deaa53ca5fea4a6e503f>) .
+(<http://buildsys.org/ontologies/bldg11#bldg11.ZONE.AHU05.RM2502.Zone_Air_Damper_Command> <http://buildsys.org/ontologies/bldg11#bldg11.ZONE.AHU05.RM2505.Zone_Air_Damper_Command>) ref:hasExternalReference (_:a035a9ab8ba55cf84ac446001fd9a24a _:a049230133b1deaa53ca5fea4a6e503f) .
 (<http://buildsys.org/ontologies/bldg11#bldg11.ZONE.AHU05.RM2502.Zone_Air_Damper_Command> <http://buildsys.org/ontologies/bldg11#bldg11.ZONE.AHU05.RM2505.Zone_Air_Damper_Command>) rdfs:label ("bldg11.ZONE.AHU05.RM2502.Zone Air Damper Command" "bldg11.ZONE.AHU05.RM2505.Zone Air Damper Command") .
 (<http://buildsys.org/ontologies/bldg11#bldg11.ZONE.AHU05.RM2502.Zone_Air_Damper_Command> <http://buildsys.org/ontologies/bldg11#bldg11.ZONE.AHU05.RM2505.Zone_Air_Damper_Command>) a brick:Damper_Position_Setpoint .
-(<http://buildsys.org/ontologies/bldg11#bldg11.CHW.ECONOMIZER>) ref:hasExternalReference (<urn:bschema-rs:skolem:f95fe5086af62d76a1416e397a04dc19>) .
+(<http://buildsys.org/ontologies/bldg11#bldg11.CHW.ECONOMIZER>) ref:hasExternalReference (_:f95fe5086af62d76a1416e397a04dc19) .
 (<http://buildsys.org/ontologies/bldg11#bldg11.CHW.ECONOMIZER>) rdfs:label ("bldg11.CHW.ECONOMIZER") .
 (<http://buildsys.org/ontologies/bldg11#bldg11.CHW.ECONOMIZER>) a brick:Damper_Position_Command .
-(<http://buildsys.org/ontologies/bldg11#bldg11.AHU.AHU01.CCV> <http://buildsys.org/ontologies/bldg11#bldg11.AHU.AHU01.Cooling_Valve_Output>) ref:hasExternalReference (<urn:bschema-rs:skolem:a30e3d99603392afc4a64485092ccd85> <urn:bschema-rs:skolem:a7b9a7ff3a369a0b699b15bc11874e68>) .
+(<http://buildsys.org/ontologies/bldg11#bldg11.AHU.AHU01.CCV> <http://buildsys.org/ontologies/bldg11#bldg11.AHU.AHU01.Cooling_Valve_Output>) ref:hasExternalReference (_:a30e3d99603392afc4a64485092ccd85 _:a7b9a7ff3a369a0b699b15bc11874e68) .
 (<http://buildsys.org/ontologies/bldg11#bldg11.AHU.AHU01.CCV> <http://buildsys.org/ontologies/bldg11#bldg11.AHU.AHU01.Cooling_Valve_Output>) rdfs:label ("bldg11.AHU.AHU01.CCV" "bldg11.AHU.AHU01.Cooling Valve Output") .
 (<http://buildsys.org/ontologies/bldg11#bldg11.AHU.AHU01.CCV> <http://buildsys.org/ontologies/bldg11#bldg11.AHU.AHU01.Cooling_Valve_Output>) a brick:Valve_Command .
 (<http://buildsys.org/ontologies/bldg11#bldg11.AHU.AHU01.CCV> <http://buildsys.org/ontologies/bldg11#bldg11.AHU.AHU01.Cooling_Valve_Output>) a brick:Cooling_Command .
-(<http://buildsys.org/ontologies/bldg11#bldg11.ZONE.AHU01.RM2603B.VS_1_REHEAT> <http://buildsys.org/ontologies/bldg11#bldg11.ZONE.AHU01.RM2603B.VS_2_REHEAT>) ref:hasExternalReference (<urn:bschema-rs:skolem:a058ebfaae33bb7b441f221bfb5f9bd5> <urn:bschema-rs:skolem:a08a86c9158bf3eec51eb60b26a47e42>) .
+(<http://buildsys.org/ontologies/bldg11#bldg11.ZONE.AHU01.RM2603B.VS_1_REHEAT> <http://buildsys.org/ontologies/bldg11#bldg11.ZONE.AHU01.RM2603B.VS_2_REHEAT>) ref:hasExternalReference (_:a058ebfaae33bb7b441f221bfb5f9bd5 _:a08a86c9158bf3eec51eb60b26a47e42) .
 (<http://buildsys.org/ontologies/bldg11#bldg11.ZONE.AHU01.RM2603B.VS_1_REHEAT> <http://buildsys.org/ontologies/bldg11#bldg11.ZONE.AHU01.RM2603B.VS_2_REHEAT>) rdfs:label ("bldg11.ZONE.AHU01.RM2603B.VS 1 REHEAT" "bldg11.ZONE.AHU01.RM2603B.VS 2 REHEAT") .
 (<http://buildsys.org/ontologies/bldg11#bldg11.ZONE.AHU01.RM2603B.VS_1_REHEAT> <http://buildsys.org/ontologies/bldg11#bldg11.ZONE.AHU01.RM2603B.VS_2_REHEAT>) a brick:Command .
-(<http://buildsys.org/ontologies/bldg11#bldg11.AHU.AHU01.Heating_Valve_Output> <http://buildsys.org/ontologies/bldg11#bldg11.AHU.AHU02.Heating_Valve_Output>) ref:hasExternalReference (<urn:bschema-rs:skolem:a5fc932601472b4b332b130b77368859> <urn:bschema-rs:skolem:adbc3f1e5fab6ded3d463b83658e8061>) .
+(<http://buildsys.org/ontologies/bldg11#bldg11.AHU.AHU01.Heating_Valve_Output> <http://buildsys.org/ontologies/bldg11#bldg11.AHU.AHU02.Heating_Valve_Output>) ref:hasExternalReference (_:a5fc932601472b4b332b130b77368859 _:adbc3f1e5fab6ded3d463b83658e8061) .
 (<http://buildsys.org/ontologies/bldg11#bldg11.AHU.AHU01.Heating_Valve_Output> <http://buildsys.org/ontologies/bldg11#bldg11.AHU.AHU02.Heating_Valve_Output>) rdfs:label ("bldg11.AHU.AHU01.Heating Valve Output" "bldg11.AHU.AHU02.Heating Valve Output") .
 (<http://buildsys.org/ontologies/bldg11#bldg11.AHU.AHU01.Heating_Valve_Output> <http://buildsys.org/ontologies/bldg11#bldg11.AHU.AHU02.Heating_Valve_Output>) a brick:Heating_Command .
 (<http://buildsys.org/ontologies/bldg11#bldg11.AHU.AHU01.Heating_Valve_Output> <http://buildsys.org/ontologies/bldg11#bldg11.AHU.AHU02.Heating_Valve_Output>) a brick:Command .
-(<http://buildsys.org/ontologies/bldg11#bldg11.CHW.Building_Chilled_Water_Supply_Temp_Setpoint> <http://buildsys.org/ontologies/bldg11#bldg11.CHW.Building_Chilled_Water_Supply_Temp_Sp_2>) ref:hasExternalReference (<urn:bschema-rs:skolem:b4598eee87dd348f420a218dffc7954> <urn:bschema-rs:skolem:c820c6caf55312d2e0d67c1112b0a39>) .
+(<http://buildsys.org/ontologies/bldg11#bldg11.CHW.Building_Chilled_Water_Supply_Temp_Setpoint> <http://buildsys.org/ontologies/bldg11#bldg11.CHW.Building_Chilled_Water_Supply_Temp_Sp_2>) ref:hasExternalReference (_:b4598eee87dd348f420a218dffc7954 _:c820c6caf55312d2e0d67c1112b0a39) .
 (<http://buildsys.org/ontologies/bldg11#bldg11.CHW.Building_Chilled_Water_Supply_Temp_Setpoint> <http://buildsys.org/ontologies/bldg11#bldg11.CHW.Building_Chilled_Water_Supply_Temp_Sp_2>) rdfs:label ("bldg11.CHW.Building Chilled Water Supply Temp Setpoint" "bldg11.CHW.Building Chilled Water Supply Temp Sp 2") .
 (<http://buildsys.org/ontologies/bldg11#bldg11.CHW.Building_Chilled_Water_Supply_Temp_Setpoint> <http://buildsys.org/ontologies/bldg11#bldg11.CHW.Building_Chilled_Water_Supply_Temp_Sp_2>) a brick:Chilled_Water_Supply_Temperature_Setpoint .
-(<http://buildsys.org/ontologies/bldg11#bldg11.CHW.Building_Chilled_Water_Supply_Temp> <http://buildsys.org/ontologies/bldg11#bldg11.CHW.Loop_Chilled_Water_Supply_Temp>) ref:hasExternalReference (<urn:bschema-rs:skolem:bab25d86782fdc0bbb3410e7753f4be2> <urn:bschema-rs:skolem:caa6676c9742d639131812afcf829c27>) .
+(<http://buildsys.org/ontologies/bldg11#bldg11.CHW.Building_Chilled_Water_Supply_Temp> <http://buildsys.org/ontologies/bldg11#bldg11.CHW.Loop_Chilled_Water_Supply_Temp>) ref:hasExternalReference (_:bab25d86782fdc0bbb3410e7753f4be2 _:caa6676c9742d639131812afcf829c27) .
 (<http://buildsys.org/ontologies/bldg11#bldg11.CHW.Building_Chilled_Water_Supply_Temp> <http://buildsys.org/ontologies/bldg11#bldg11.CHW.Loop_Chilled_Water_Supply_Temp>) rdfs:label ("bldg11.CHW.Building Chilled Water Supply Temp" "bldg11.CHW.Loop Chilled Water Supply Temp") .
 (<http://buildsys.org/ontologies/bldg11#bldg11.CHW.Building_Chilled_Water_Supply_Temp> <http://buildsys.org/ontologies/bldg11#bldg11.CHW.Loop_Chilled_Water_Supply_Temp>) a brick:Chilled_Water_Supply_Temperature_Sensor .
-(<http://buildsys.org/ontologies/bldg11#bldg11.CHW.Building_Chilled_Water_Return_Temp_Setpoint> <http://buildsys.org/ontologies/bldg11#bldg11.CHW.Loop_Chilled_Water_Return_Temp_Setpoint>) ref:hasExternalReference (<urn:bschema-rs:skolem:a5a319533be618ad4e69bf9e1ece69a0> <urn:bschema-rs:skolem:f5e23c567c0739f2418be5cfb583a027>) .
+(<http://buildsys.org/ontologies/bldg11#bldg11.CHW.Building_Chilled_Water_Return_Temp_Setpoint> <http://buildsys.org/ontologies/bldg11#bldg11.CHW.Loop_Chilled_Water_Return_Temp_Setpoint>) ref:hasExternalReference (_:a5a319533be618ad4e69bf9e1ece69a0 _:f5e23c567c0739f2418be5cfb583a027) .
 (<http://buildsys.org/ontologies/bldg11#bldg11.CHW.Building_Chilled_Water_Return_Temp_Setpoint> <http://buildsys.org/ontologies/bldg11#bldg11.CHW.Loop_Chilled_Water_Return_Temp_Setpoint>) rdfs:label ("bldg11.CHW.Building Chilled Water Return Temp Setpoint" "bldg11.CHW.Loop Chilled Water Return Temp Setpoint") .
 (<http://buildsys.org/ontologies/bldg11#bldg11.CHW.Building_Chilled_Water_Return_Temp_Setpoint> <http://buildsys.org/ontologies/bldg11#bldg11.CHW.Loop_Chilled_Water_Return_Temp_Setpoint>) a brick:Chilled_Water_Return_Temperature_Setpoint .
-(<http://buildsys.org/ontologies/bldg11#bldg11.CHW.Building_Chilled_Water_Return_Temp> <http://buildsys.org/ontologies/bldg11#bldg11.CHW.Loop_Chilled_Water_Return_Temp>) ref:hasExternalReference (<urn:bschema-rs:skolem:a6f7becdb29174a9a0c574e1ce04ad56> <urn:bschema-rs:skolem:fde74c930524dc9fdfe7ea0c96d7d76b>) .
+(<http://buildsys.org/ontologies/bldg11#bldg11.CHW.Building_Chilled_Water_Return_Temp> <http://buildsys.org/ontologies/bldg11#bldg11.CHW.Loop_Chilled_Water_Return_Temp>) ref:hasExternalReference (_:a6f7becdb29174a9a0c574e1ce04ad56 _:fde74c930524dc9fdfe7ea0c96d7d76b) .
 (<http://buildsys.org/ontologies/bldg11#bldg11.CHW.Building_Chilled_Water_Return_Temp> <http://buildsys.org/ontologies/bldg11#bldg11.CHW.Loop_Chilled_Water_Return_Temp>) rdfs:label ("bldg11.CHW.Building Chilled Water Return Temp" "bldg11.CHW.Loop Chilled Water Return Temp") .
 (<http://buildsys.org/ontologies/bldg11#bldg11.CHW.Building_Chilled_Water_Return_Temp> <http://buildsys.org/ontologies/bldg11#bldg11.CHW.Loop_Chilled_Water_Return_Temp>) a brick:Chilled_Water_Return_Temperature_Sensor .
-(<http://buildsys.org/ontologies/bldg11#bldg11.CHW.Building_Chilled_Water_Flow> <http://buildsys.org/ontologies/bldg11#bldg11.CHW.Loop_Chilled_Water_Flow>) ref:hasExternalReference (<urn:bschema-rs:skolem:cd41f968e0e34d970c6f9a90843dfd33> <urn:bschema-rs:skolem:f63d1d1807489f9d6083715bd8ff0073>) .
+(<http://buildsys.org/ontologies/bldg11#bldg11.CHW.Building_Chilled_Water_Flow> <http://buildsys.org/ontologies/bldg11#bldg11.CHW.Loop_Chilled_Water_Flow>) ref:hasExternalReference (_:cd41f968e0e34d970c6f9a90843dfd33 _:f63d1d1807489f9d6083715bd8ff0073) .
 (<http://buildsys.org/ontologies/bldg11#bldg11.CHW.Building_Chilled_Water_Flow> <http://buildsys.org/ontologies/bldg11#bldg11.CHW.Loop_Chilled_Water_Flow>) rdfs:label ("bldg11.CHW.Building Chilled Water Flow" "bldg11.CHW.Loop Chilled Water Flow") .
 (<http://buildsys.org/ontologies/bldg11#bldg11.CHW.Building_Chilled_Water_Flow> <http://buildsys.org/ontologies/bldg11#bldg11.CHW.Loop_Chilled_Water_Flow>) a brick:Chilled_Water_Flow_Sensor .
-(<http://buildsys.org/ontologies/bldg11#bldg11.CHW.Building_Chilled_Water_Delta_Temp>) ref:hasExternalReference (<urn:bschema-rs:skolem:d9ca5ea5399128dcee53c2373b0c2484>) .
+(<http://buildsys.org/ontologies/bldg11#bldg11.CHW.Building_Chilled_Water_Delta_Temp>) ref:hasExternalReference (_:d9ca5ea5399128dcee53c2373b0c2484) .
 (<http://buildsys.org/ontologies/bldg11#bldg11.CHW.Building_Chilled_Water_Delta_Temp>) rdfs:label ("bldg11.CHW.Building Chilled Water Delta Temp") .
 (<http://buildsys.org/ontologies/bldg11#bldg11.CHW.Building_Chilled_Water_Delta_Temp>) a brick:Chilled_Water_Differential_Temperature_Sensor .
-(<http://buildsys.org/ontologies/bldg11#bldg11.ZONE.AHU05.RM2502.Zone_Percent_Air_Flow> <http://buildsys.org/ontologies/bldg11#bldg11.ZONE.AHU05.RM2505.Zone_Percent_Air_Flow>) ref:hasExternalReference (<urn:bschema-rs:skolem:a0a278f4b701950237d238f59c099706> <urn:bschema-rs:skolem:a456258d2f0ae10c92c4323175937c81>) .
+(<http://buildsys.org/ontologies/bldg11#bldg11.ZONE.AHU05.RM2502.Zone_Percent_Air_Flow> <http://buildsys.org/ontologies/bldg11#bldg11.ZONE.AHU05.RM2505.Zone_Percent_Air_Flow>) ref:hasExternalReference (_:a0a278f4b701950237d238f59c099706 _:a456258d2f0ae10c92c4323175937c81) .
 (<http://buildsys.org/ontologies/bldg11#bldg11.ZONE.AHU05.RM2502.Zone_Percent_Air_Flow> <http://buildsys.org/ontologies/bldg11#bldg11.ZONE.AHU05.RM2505.Zone_Percent_Air_Flow>) rdfs:label ("bldg11.ZONE.AHU05.RM2502.Zone Percent Air Flow" "bldg11.ZONE.AHU05.RM2505.Zone Percent Air Flow") .
 (<http://buildsys.org/ontologies/bldg11#bldg11.ZONE.AHU05.RM2502.Zone_Percent_Air_Flow> <http://buildsys.org/ontologies/bldg11#bldg11.ZONE.AHU05.RM2505.Zone_Percent_Air_Flow>) a brick:Air_Flow_Sensor .
 (<http://buildsys.org/ontologies/bldg11#floor0> <http://buildsys.org/ontologies/bldg11#floor1>) brick:hasPart (<http://buildsys.org/ontologies/bldg11#RM0101_room> <http://buildsys.org/ontologies/bldg11#RM0111_room>) .
 (<http://buildsys.org/ontologies/bldg11#floor0> <http://buildsys.org/ontologies/bldg11#floor1>) a brick:Floor .
-(<http://buildsys.org/ontologies/bldg11#bldg11_ChilledWater_Demand_kBtu>) ref:hasExternalReference (<urn:bschema-rs:skolem:b29ff1dc885c39e74222a426b9f96ba1>) .
+(<http://buildsys.org/ontologies/bldg11#bldg11_ChilledWater_Demand_kBtu>) ref:hasExternalReference (_:b29ff1dc885c39e74222a426b9f96ba1) .
 (<http://buildsys.org/ontologies/bldg11#bldg11_ChilledWater_Demand_kBtu>) brick:isPointOf (<http://buildsys.org/ontologies/bldg11#chiller>) .
 (<http://buildsys.org/ontologies/bldg11#bldg11_ChilledWater_Demand_kBtu>) rdfs:label ("bldg11_ChilledWater_Demand_kBtu") .
 (<http://buildsys.org/ontologies/bldg11#bldg11_ChilledWater_Demand_kBtu>) a brick:Electric_Meter .
 (<http://buildsys.org/ontologies/bldg11#damperVAVRM1002> <http://buildsys.org/ontologies/bldg11#damperVAVRM1005-1>) brick:isPartOf (<http://buildsys.org/ontologies/bldg11#VAVRM0101> <http://buildsys.org/ontologies/bldg11#VAVRM0111>) .
 (<http://buildsys.org/ontologies/bldg11#damperVAVRM1002> <http://buildsys.org/ontologies/bldg11#damperVAVRM1005-1>) brick:hasPoint (<http://buildsys.org/ontologies/bldg11#bldg11.ZONE.AHU05.RM2502.Zone_Air_Damper_Command> <http://buildsys.org/ontologies/bldg11#bldg11.ZONE.AHU05.RM2505.Zone_Air_Damper_Command>) .
 (<http://buildsys.org/ontologies/bldg11#damperVAVRM1002> <http://buildsys.org/ontologies/bldg11#damperVAVRM1005-1>) a brick:Damper .
-(<http://buildsys.org/ontologies/bldg11#bldg11>) brick:area (<urn:bschema-rs:skolem:bf3022bc9164f7f85700b18f4bb8addd>) .
+(<http://buildsys.org/ontologies/bldg11#bldg11>) brick:area (_:bf3022bc9164f7f85700b18f4bb8addd) .
 (<http://buildsys.org/ontologies/bldg11#bldg11>) a brick:Building .
-(<http://buildsys.org/ontologies/bldg11#bldg11_Electricity_Demand_kBtu>) ref:hasExternalReference (<urn:bschema-rs:skolem:aa60f838db6d196dd025ac4db9c7f97d> <urn:bschema-rs:skolem:c1248d27baff4ead61d423b54ef823f8>) .
+(<http://buildsys.org/ontologies/bldg11#bldg11_Electricity_Demand_kBtu>) ref:hasExternalReference (_:aa60f838db6d196dd025ac4db9c7f97d _:c1248d27baff4ead61d423b54ef823f8) .
 (<http://buildsys.org/ontologies/bldg11#bldg11_Electricity_Demand_kBtu>) rdfs:label ("bldg11_Electricity_Demand_kBtu") .
 (<http://buildsys.org/ontologies/bldg11#bldg11_Electricity_Demand_kBtu>) a brick:Building_Electrical_Meter .
 (<http://buildsys.org/ontologies/bldg11#AHU01> <http://buildsys.org/ontologies/bldg11#AHU02>) brick:isFedBy (<http://buildsys.org/ontologies/bldg11#chiller>) .

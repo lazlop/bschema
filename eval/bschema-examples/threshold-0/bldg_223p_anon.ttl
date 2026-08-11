@@ -225,7 +225,7 @@ bs:BACnetExternalReference_version_1 bacnet:object-name bs:Literal_version_1 .
 bs:BACnetExternalReference_version_1 bacnet:object-identifier bs:Literal_version_1 .
 bs:BACnetExternalReference_version_1 bacnet:device-identifier bs:BACnetDevice_version_1 .
 bs:BACnetExternalReference_version_1 bacnet:description bs:Literal_version_1 .
-bs:BACnetExternalReference_version_1 a (<urn:bschema-rs:skolem:a002be2e5ef43dff0c1db340c3ca9c2d> <urn:bschema-rs:skolem:a002cc3291a5bf46b8c88635a892ff43>) .
+bs:BACnetExternalReference_version_1 a (_:a002be2e5ef43dff0c1db340c3ca9c2d _:a002cc3291a5bf46b8c88635a892ff43) .
 bs:VariableFrequencyDrive_version_1 s223:hasProperty bs:QuantifiableProperty_version_1 .
 bs:VariableFrequencyDrive_version_1 s223:hasProperty bs:QuantifiableObservableProperty_version_1 .
 bs:VariableFrequencyDrive_version_1 s223:hasProperty bs:QuantifiableActuatableProperty_version_1 .
@@ -299,7 +299,7 @@ bs:Resource_version_2 s223:hasProperty bs:QuantifiableObservableProperty_version
 bs:Resource_version_2 s223:hasProperty bs:QuantifiableActuatableProperty_version_1 .
 bs:Resource_version_2 s223:hasProperty bs:Property_version_1 .
 bs:Port_version_1 bacnet:storedAt bs:Literal_version_1 .
-bs:Port_version_1 a (<urn:bschema-rs:skolem:b614feece1fb7e33bc094e1909566cf9> <urn:bschema-rs:skolem:bc4f66baf086511b10bce379427df10f>) .
+bs:Port_version_1 a (_:b614feece1fb7e33bc094e1909566cf9 _:bc4f66baf086511b10bce379427df10f) .
 bs:Filter_version_1 s223:hasProperty bs:QuantifiableObservableProperty_version_1 .
 bs:Filter_version_1 s223:cnx bs:OutletConnectionPoint_version_1 .
 bs:Filter_version_1 s223:cnx bs:InletConnectionPoint_version_1 .

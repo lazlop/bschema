@@ -32,7 +32,7 @@ bs:BACnetReference_version_1 bacnet:object-name bs:Literal_version_1 .
 bs:BACnetReference_version_1 bacnet:object-identifier bs:Literal_version_1 .
 bs:BACnetReference_version_1 bacnet:description bs:Literal_version_1 .
 bs:BACnetReference_version_1 bacnet:ReadableProperty bs:Literal_version_1 .
-bs:BACnetReference_version_1 a (<urn:bschema-rs:skolem:a001410dfe17227c339d43f9deacd651> <urn:bschema-rs:skolem:a0030e851dbe58264c0c4ede06703245>) .
+bs:BACnetReference_version_1 a (_:a001410dfe17227c339d43f9deacd651 _:a0030e851dbe58264c0c4ede06703245) .
 bs:RVAV_version_1 rec:locatedIn bs:Team_Room_version_1 .
 bs:RVAV_version_1 rec:locatedIn bs:Room_version_1 .
 bs:RVAV_version_1 rec:locatedIn bs:Retail_Room_version_1 .
@@ -2303,7 +2303,7 @@ bs:Pump_Command_version_1 brick:hasUnit unit:PERCENT .
 bs:Pump_Command_version_1 s223:hasExternalReference bs:BACnetReference_version_1 .
 bs:Pump_Command_version_1 a (<urn:bldg#bldg.CW_DP_LOOPOUT>) .
 bs:Port_version_1 ref:storedAt bs:Literal_version_1 .
-bs:Port_version_1 a (<urn:bschema-rs:skolem:a0af741b9f9a5ce1480f3e2d3d9d25e9> <urn:bschema-rs:skolem:a752dbeca16d61c2879b1d24b68601>) .
+bs:Port_version_1 a (_:a0af741b9f9a5ce1480f3e2d3d9d25e9 _:a752dbeca16d61c2879b1d24b68601) .
 bs:Override_Command_version_1 ref:hasExternalReference bs:BACnetReference_version_1 .
 bs:Override_Command_version_1 brick:isPointOf bs:CRAC_version_1 .
 bs:Override_Command_version_1 brick:hasUnit unit:UNITLESS .

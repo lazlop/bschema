@@ -29,7 +29,7 @@
 bs:Literal_version_1 a ("00d0c066-d247-417c-a07b-09ef71c14114" "010b4082-dbba-46b5-ae09-782274ab695b") .
 bs:Resource_version_1 ref:hasTimeseriesId bs:Literal_version_1 .
 bs:Resource_version_1 brick:value bs:Literal_version_1 .
-bs:Resource_version_1 brick:hasUnits (<urn:bschema-rs:skolem:a0590ad959795ad0069306692e4cece9> <urn:bschema-rs:skolem:a0645ace9c56d902e7cf930c3e1ce92c>) .
+bs:Resource_version_1 brick:hasUnits (_:a0590ad959795ad0069306692e4cece9 _:a0645ace9c56d902e7cf930c3e1ce92c) .
 bs:Zone_Air_Temperature_Sensor_version_1 ref:hasExternalReference bs:Resource_version_1 .
 bs:Zone_Air_Temperature_Sensor_version_1 rdfs:label bs:Literal_version_1 .
 bs:Zone_Air_Temperature_Sensor_version_1 a (<http://buildsys.org/ontologies/bldg11#bldg11.AHU.AHU01.Zone_Air_Temp> <http://buildsys.org/ontologies/bldg11#bldg11.AHU.AHU02.Zone_Air_Temp>) .

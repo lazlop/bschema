@@ -26,14 +26,14 @@
 @prefix s4ener: <https://saref.etsi.org/saref4ener#> .
 @prefix saref: <https://saref.etsi.org/core#> .
 
-(<urn:bschema-rs:skolem:a09841351662b889a0623d08c264c7be> <urn:bschema-rs:skolem:a2c85899a0dc446e6d38f73bd326fb58>) ref:hasTimeseriesId ("1662.66"^^xsd:float "LowerSetp[cor]") .
-(<urn:bschema-rs:skolem:a034b189053d0fef745ae59c2df35642> <urn:bschema-rs:skolem:a0c7d115462c89ed75423c1134ddbbf>) ref:storedAt ("1662.66"^^xsd:float "LowerSetp[cor]") .
-(<urn:bschema-rs:skolem:a034b189053d0fef745ae59c2df35642> <urn:bschema-rs:skolem:a0c7d115462c89ed75423c1134ddbbf>) ref:onTable ("1662.66"^^xsd:float "LowerSetp[cor]") .
-(<urn:bschema-rs:skolem:a034b189053d0fef745ae59c2df35642> <urn:bschema-rs:skolem:a0c7d115462c89ed75423c1134ddbbf>) ref:hasTimeseriesId ("1662.66"^^xsd:float "LowerSetp[cor]") .
-(<urn:bschema-rs:skolem:a034b189053d0fef745ae59c2df35642> <urn:bschema-rs:skolem:a0c7d115462c89ed75423c1134ddbbf>) a ref:TimeseriesReference .
+(_:a09841351662b889a0623d08c264c7be _:a2c85899a0dc446e6d38f73bd326fb58) ref:hasTimeseriesId ("1662.66"^^xsd:float "LowerSetp[cor]") .
+(_:a034b189053d0fef745ae59c2df35642 _:a0c7d115462c89ed75423c1134ddbbf) ref:storedAt ("1662.66"^^xsd:float "LowerSetp[cor]") .
+(_:a034b189053d0fef745ae59c2df35642 _:a0c7d115462c89ed75423c1134ddbbf) ref:onTable ("1662.66"^^xsd:float "LowerSetp[cor]") .
+(_:a034b189053d0fef745ae59c2df35642 _:a0c7d115462c89ed75423c1134ddbbf) ref:hasTimeseriesId ("1662.66"^^xsd:float "LowerSetp[cor]") .
+(_:a034b189053d0fef745ae59c2df35642 _:a0c7d115462c89ed75423c1134ddbbf) a ref:TimeseriesReference .
 ("1662.66"^^xsd:float "LowerSetp[cor]") a rdfs:Literal .
-(<urn:bldg/chi_reaPChi_y> <urn:bldg/chi_reaPPumDis_y>) ref:hasExternalReference (<urn:bschema-rs:skolem:a034b189053d0fef745ae59c2df35642> <urn:bschema-rs:skolem:a0c7d115462c89ed75423c1134ddbbf>) .
-(<urn:bldg/chi_reaPChi_y> <urn:bldg/chi_reaPPumDis_y>) ref:hasExternalReference (<urn:bschema-rs:skolem:a09841351662b889a0623d08c264c7be> <urn:bschema-rs:skolem:a2c85899a0dc446e6d38f73bd326fb58>) .
+(<urn:bldg/chi_reaPChi_y> <urn:bldg/chi_reaPPumDis_y>) ref:hasExternalReference (_:a034b189053d0fef745ae59c2df35642 _:a0c7d115462c89ed75423c1134ddbbf) .
+(<urn:bldg/chi_reaPChi_y> <urn:bldg/chi_reaPPumDis_y>) ref:hasExternalReference (_:a09841351662b889a0623d08c264c7be _:a2c85899a0dc446e6d38f73bd326fb58) .
 (<urn:bldg/chi_reaPChi_y> <urn:bldg/chi_reaPPumDis_y>) a brick:Electric_Power_Sensor .
 (<urn:bldg/chi_pump> <urn:bldg/heat_pump>) brick:hasPoint (<urn:bldg/chi_reaPChi_y> <urn:bldg/chi_reaPPumDis_y>) .
 (<urn:bldg/chi_pump> <urn:bldg/heat_pump>) brick:feeds (<urn:bldg/hwd_pump>) .
@@ -48,46 +48,46 @@
 (<urn:bldg/hvac_cor_zone> <urn:bldg/hvac_eas_zone>) brick:hasPoint (<urn:bldg/hvac_reaZonCor_CO2Zon_y> <urn:bldg/hvac_reaZonEas_CO2Zon_y>) .
 (<urn:bldg/hvac_cor_zone> <urn:bldg/hvac_eas_zone>) rdfs:label ("1662.66"^^xsd:float "LowerSetp[cor]") .
 (<urn:bldg/hvac_cor_zone> <urn:bldg/hvac_eas_zone>) a brick:HVAC_Zone .
-(<urn:bldg/hvac_reaZonCor_TZon_y> <urn:bldg/hvac_reaZonEas_TZon_y>) ref:hasExternalReference (<urn:bschema-rs:skolem:a034b189053d0fef745ae59c2df35642> <urn:bschema-rs:skolem:a0c7d115462c89ed75423c1134ddbbf>) .
-(<urn:bldg/hvac_reaZonCor_TZon_y> <urn:bldg/hvac_reaZonEas_TZon_y>) ref:hasExternalReference (<urn:bschema-rs:skolem:a09841351662b889a0623d08c264c7be> <urn:bschema-rs:skolem:a2c85899a0dc446e6d38f73bd326fb58>) .
+(<urn:bldg/hvac_reaZonCor_TZon_y> <urn:bldg/hvac_reaZonEas_TZon_y>) ref:hasExternalReference (_:a034b189053d0fef745ae59c2df35642 _:a0c7d115462c89ed75423c1134ddbbf) .
+(<urn:bldg/hvac_reaZonCor_TZon_y> <urn:bldg/hvac_reaZonEas_TZon_y>) ref:hasExternalReference (_:a09841351662b889a0623d08c264c7be _:a2c85899a0dc446e6d38f73bd326fb58) .
 (<urn:bldg/hvac_reaZonCor_TZon_y> <urn:bldg/hvac_reaZonEas_TZon_y>) a brick:Zone_Air_Temperature_Sensor .
-(<urn:bldg/hvac_oveZonSupCor_TZonHeaSet_u> <urn:bldg/hvac_oveZonSupEas_TZonHeaSet_u>) ref:hasExternalReference (<urn:bschema-rs:skolem:a034b189053d0fef745ae59c2df35642> <urn:bschema-rs:skolem:a0c7d115462c89ed75423c1134ddbbf>) .
-(<urn:bldg/hvac_oveZonSupCor_TZonHeaSet_u> <urn:bldg/hvac_oveZonSupEas_TZonHeaSet_u>) ref:hasExternalReference (<urn:bschema-rs:skolem:a09841351662b889a0623d08c264c7be> <urn:bschema-rs:skolem:a2c85899a0dc446e6d38f73bd326fb58>) .
+(<urn:bldg/hvac_oveZonSupCor_TZonHeaSet_u> <urn:bldg/hvac_oveZonSupEas_TZonHeaSet_u>) ref:hasExternalReference (_:a034b189053d0fef745ae59c2df35642 _:a0c7d115462c89ed75423c1134ddbbf) .
+(<urn:bldg/hvac_oveZonSupCor_TZonHeaSet_u> <urn:bldg/hvac_oveZonSupEas_TZonHeaSet_u>) ref:hasExternalReference (_:a09841351662b889a0623d08c264c7be _:a2c85899a0dc446e6d38f73bd326fb58) .
 (<urn:bldg/hvac_oveZonSupCor_TZonHeaSet_u> <urn:bldg/hvac_oveZonSupEas_TZonHeaSet_u>) a brick:Zone_Air_Heating_Temperature_Setpoint .
-(<urn:bldg/hvac_oveZonSupCor_TZonCooSet_u> <urn:bldg/hvac_oveZonSupEas_TZonCooSet_u>) ref:hasExternalReference (<urn:bschema-rs:skolem:a034b189053d0fef745ae59c2df35642> <urn:bschema-rs:skolem:a0c7d115462c89ed75423c1134ddbbf>) .
-(<urn:bldg/hvac_oveZonSupCor_TZonCooSet_u> <urn:bldg/hvac_oveZonSupEas_TZonCooSet_u>) ref:hasExternalReference (<urn:bschema-rs:skolem:a09841351662b889a0623d08c264c7be> <urn:bschema-rs:skolem:a2c85899a0dc446e6d38f73bd326fb58>) .
+(<urn:bldg/hvac_oveZonSupCor_TZonCooSet_u> <urn:bldg/hvac_oveZonSupEas_TZonCooSet_u>) ref:hasExternalReference (_:a034b189053d0fef745ae59c2df35642 _:a0c7d115462c89ed75423c1134ddbbf) .
+(<urn:bldg/hvac_oveZonSupCor_TZonCooSet_u> <urn:bldg/hvac_oveZonSupEas_TZonCooSet_u>) ref:hasExternalReference (_:a09841351662b889a0623d08c264c7be _:a2c85899a0dc446e6d38f73bd326fb58) .
 (<urn:bldg/hvac_oveZonSupCor_TZonCooSet_u> <urn:bldg/hvac_oveZonSupEas_TZonCooSet_u>) a brick:Zone_Air_Cooling_Temperature_Setpoint .
 (<urn:bldg/vav_cor> <urn:bldg/vav_eas>) brick:hasPoint (<urn:bldg/hvac_oveZonActCor_yReaHea_u> <urn:bldg/hvac_oveZonActEas_yReaHea_u>) .
 (<urn:bldg/vav_cor> <urn:bldg/vav_eas>) brick:hasPoint (<urn:bldg/hvac_reaZonCor_TSup_y> <urn:bldg/hvac_reaZonEas_TSup_y>) .
 (<urn:bldg/vav_cor> <urn:bldg/vav_eas>) brick:hasPoint (<urn:bldg/hvac_oveZonActCor_yDam_u> <urn:bldg/hvac_oveZonActEas_yDam_u>) .
 (<urn:bldg/vav_cor> <urn:bldg/vav_eas>) brick:feeds (<urn:bldg/hvac_cor_zone> <urn:bldg/hvac_eas_zone>) .
 (<urn:bldg/vav_cor> <urn:bldg/vav_eas>) a brick:Variable_Air_Volume_Box_With_Reheat .
-(<urn:bldg/hvac_oveZonActCor_yReaHea_u> <urn:bldg/hvac_oveZonActEas_yReaHea_u>) ref:hasExternalReference (<urn:bschema-rs:skolem:a09841351662b889a0623d08c264c7be> <urn:bschema-rs:skolem:a2c85899a0dc446e6d38f73bd326fb58>) .
+(<urn:bldg/hvac_oveZonActCor_yReaHea_u> <urn:bldg/hvac_oveZonActEas_yReaHea_u>) ref:hasExternalReference (_:a09841351662b889a0623d08c264c7be _:a2c85899a0dc446e6d38f73bd326fb58) .
 (<urn:bldg/hvac_oveZonActCor_yReaHea_u> <urn:bldg/hvac_oveZonActEas_yReaHea_u>) a brick:Valve_Command .
 (<urn:bldg/hvac_fanSup>) brick:hasPoint (<urn:bldg/chi_reaPChi_y> <urn:bldg/chi_reaPPumDis_y>) .
 (<urn:bldg/hvac_fanSup>) brick:hasPoint (<urn:bldg/hvac_reaAhu_dp_sup_y>) .
 (<urn:bldg/hvac_fanSup>) a brick:Supply_Fan .
-(<urn:bldg/hvac_oveAhu_TSupSet_u>) ref:hasExternalReference (<urn:bschema-rs:skolem:a09841351662b889a0623d08c264c7be> <urn:bschema-rs:skolem:a2c85899a0dc446e6d38f73bd326fb58>) .
+(<urn:bldg/hvac_oveAhu_TSupSet_u>) ref:hasExternalReference (_:a09841351662b889a0623d08c264c7be _:a2c85899a0dc446e6d38f73bd326fb58) .
 (<urn:bldg/hvac_oveAhu_TSupSet_u>) a brick:Supply_Air_Temperature_Setpoint .
-(<urn:bldg/hvac_reaAhu_TSup_y>) ref:hasExternalReference (<urn:bschema-rs:skolem:a09841351662b889a0623d08c264c7be> <urn:bschema-rs:skolem:a2c85899a0dc446e6d38f73bd326fb58>) .
+(<urn:bldg/hvac_reaAhu_TSup_y>) ref:hasExternalReference (_:a09841351662b889a0623d08c264c7be _:a2c85899a0dc446e6d38f73bd326fb58) .
 (<urn:bldg/hvac_reaAhu_TSup_y>) a brick:Supply_Air_Temperature_Sensor .
-(<urn:bldg/hvac_reaAhu_V_flow_sup_y>) ref:hasExternalReference (<urn:bschema-rs:skolem:a09841351662b889a0623d08c264c7be> <urn:bschema-rs:skolem:a2c85899a0dc446e6d38f73bd326fb58>) .
+(<urn:bldg/hvac_reaAhu_V_flow_sup_y>) ref:hasExternalReference (_:a09841351662b889a0623d08c264c7be _:a2c85899a0dc446e6d38f73bd326fb58) .
 (<urn:bldg/hvac_reaAhu_V_flow_sup_y>) a brick:Supply_Air_Flow_Sensor .
-(<urn:bldg/hvac_reaAhu_TRet_y>) ref:hasExternalReference (<urn:bschema-rs:skolem:a09841351662b889a0623d08c264c7be> <urn:bschema-rs:skolem:a2c85899a0dc446e6d38f73bd326fb58>) .
+(<urn:bldg/hvac_reaAhu_TRet_y>) ref:hasExternalReference (_:a09841351662b889a0623d08c264c7be _:a2c85899a0dc446e6d38f73bd326fb58) .
 (<urn:bldg/hvac_reaAhu_TRet_y>) a brick:Return_Air_Temperature_Sensor .
-(<urn:bldg/hvac_reaAhu_V_flow_ret_y>) ref:hasExternalReference (<urn:bschema-rs:skolem:a09841351662b889a0623d08c264c7be> <urn:bschema-rs:skolem:a2c85899a0dc446e6d38f73bd326fb58>) .
+(<urn:bldg/hvac_reaAhu_V_flow_ret_y>) ref:hasExternalReference (_:a09841351662b889a0623d08c264c7be _:a2c85899a0dc446e6d38f73bd326fb58) .
 (<urn:bldg/hvac_reaAhu_V_flow_ret_y>) a brick:Return_Air_Flow_Sensor .
-(<urn:bschema-rs:skolem:b2e4a47da3734d8d696ce74a65c5c7f4>) brick:value ("1662.66"^^xsd:float "LowerSetp[cor]") .
-(<urn:bldg/occ_cor> <urn:bldg/occ_eas>) ref:hasExternalReference (<urn:bschema-rs:skolem:a034b189053d0fef745ae59c2df35642> <urn:bschema-rs:skolem:a0c7d115462c89ed75423c1134ddbbf>) .
-(<urn:bldg/occ_cor> <urn:bldg/occ_eas>) ref:hasExternalReference (<urn:bschema-rs:skolem:a09841351662b889a0623d08c264c7be> <urn:bschema-rs:skolem:a2c85899a0dc446e6d38f73bd326fb58>) .
+(_:b2e4a47da3734d8d696ce74a65c5c7f4) brick:value ("1662.66"^^xsd:float "LowerSetp[cor]") .
+(<urn:bldg/occ_cor> <urn:bldg/occ_eas>) ref:hasExternalReference (_:a034b189053d0fef745ae59c2df35642 _:a0c7d115462c89ed75423c1134ddbbf) .
+(<urn:bldg/occ_cor> <urn:bldg/occ_eas>) ref:hasExternalReference (_:a09841351662b889a0623d08c264c7be _:a2c85899a0dc446e6d38f73bd326fb58) .
 (<urn:bldg/occ_cor> <urn:bldg/occ_eas>) a brick:Occupancy_Sensor .
-(<urn:bldg/hvac_reaAhu_TMix_y>) ref:hasExternalReference (<urn:bschema-rs:skolem:a09841351662b889a0623d08c264c7be> <urn:bschema-rs:skolem:a2c85899a0dc446e6d38f73bd326fb58>) .
+(<urn:bldg/hvac_reaAhu_TMix_y>) ref:hasExternalReference (_:a09841351662b889a0623d08c264c7be _:a2c85899a0dc446e6d38f73bd326fb58) .
 (<urn:bldg/hvac_reaAhu_TMix_y>) a brick:Mixed_Air_Temperature_Sensor .
-(<urn:bldg/LowerSetp_cor> <urn:bldg/LowerSetp_eas>) ref:hasExternalReference (<urn:bschema-rs:skolem:a034b189053d0fef745ae59c2df35642> <urn:bschema-rs:skolem:a0c7d115462c89ed75423c1134ddbbf>) .
-(<urn:bldg/LowerSetp_cor> <urn:bldg/LowerSetp_eas>) ref:hasExternalReference (<urn:bschema-rs:skolem:a09841351662b889a0623d08c264c7be> <urn:bschema-rs:skolem:a2c85899a0dc446e6d38f73bd326fb58>) .
+(<urn:bldg/LowerSetp_cor> <urn:bldg/LowerSetp_eas>) ref:hasExternalReference (_:a034b189053d0fef745ae59c2df35642 _:a0c7d115462c89ed75423c1134ddbbf) .
+(<urn:bldg/LowerSetp_cor> <urn:bldg/LowerSetp_eas>) ref:hasExternalReference (_:a09841351662b889a0623d08c264c7be _:a2c85899a0dc446e6d38f73bd326fb58) .
 (<urn:bldg/LowerSetp_cor> <urn:bldg/LowerSetp_eas>) a brick:Min_Air_Temperature_Setpoint .
-(<urn:bldg/UpperSetp_cor> <urn:bldg/UpperSetp_eas>) ref:hasExternalReference (<urn:bschema-rs:skolem:a034b189053d0fef745ae59c2df35642> <urn:bschema-rs:skolem:a0c7d115462c89ed75423c1134ddbbf>) .
-(<urn:bldg/UpperSetp_cor> <urn:bldg/UpperSetp_eas>) ref:hasExternalReference (<urn:bschema-rs:skolem:a09841351662b889a0623d08c264c7be> <urn:bschema-rs:skolem:a2c85899a0dc446e6d38f73bd326fb58>) .
+(<urn:bldg/UpperSetp_cor> <urn:bldg/UpperSetp_eas>) ref:hasExternalReference (_:a034b189053d0fef745ae59c2df35642 _:a0c7d115462c89ed75423c1134ddbbf) .
+(<urn:bldg/UpperSetp_cor> <urn:bldg/UpperSetp_eas>) ref:hasExternalReference (_:a09841351662b889a0623d08c264c7be _:a2c85899a0dc446e6d38f73bd326fb58) .
 (<urn:bldg/UpperSetp_cor> <urn:bldg/UpperSetp_eas>) a brick:Max_Air_Temperature_Setpoint .
 (<urn:bldg/hwd_pump>) brick:hasPoint (<urn:bldg/chi_reaPChi_y> <urn:bldg/chi_reaPPumDis_y>) .
 (<urn:bldg/hwd_pump>) a brick:Hot_Water_Pump .
@@ -95,13 +95,13 @@
 (<urn:bldg/heating_coil>) brick:hasPoint (<urn:bldg/chi_reaPChi_y> <urn:bldg/chi_reaPPumDis_y>) .
 (<urn:bldg/heating_coil>) brick:hasPoint rdfs:Resource .
 (<urn:bldg/heating_coil>) a brick:Heating_Coil .
-(<urn:bldg/hvac_reaZonCor_TSup_y> <urn:bldg/hvac_reaZonEas_TSup_y>) ref:hasExternalReference (<urn:bschema-rs:skolem:a09841351662b889a0623d08c264c7be> <urn:bschema-rs:skolem:a2c85899a0dc446e6d38f73bd326fb58>) .
+(<urn:bldg/hvac_reaZonCor_TSup_y> <urn:bldg/hvac_reaZonEas_TSup_y>) ref:hasExternalReference (_:a09841351662b889a0623d08c264c7be _:a2c85899a0dc446e6d38f73bd326fb58) .
 (<urn:bldg/hvac_reaZonCor_TSup_y> <urn:bldg/hvac_reaZonEas_TSup_y>) a brick:Discharge_Air_Temperature_Sensor .
-(<urn:bldg/hvac_reaAhu_dp_sup_y>) ref:hasExternalReference (<urn:bschema-rs:skolem:a09841351662b889a0623d08c264c7be> <urn:bschema-rs:skolem:a2c85899a0dc446e6d38f73bd326fb58>) .
+(<urn:bldg/hvac_reaAhu_dp_sup_y>) ref:hasExternalReference (_:a09841351662b889a0623d08c264c7be _:a2c85899a0dc446e6d38f73bd326fb58) .
 (<urn:bldg/hvac_reaAhu_dp_sup_y>) a brick:Discharge_Air_Static_Pressure_Sensor .
-(<urn:bldg/hvac_reaZonCor_V_flow_y> <urn:bldg/hvac_reaZonEas_V_flow_y>) ref:hasExternalReference (<urn:bschema-rs:skolem:a09841351662b889a0623d08c264c7be> <urn:bschema-rs:skolem:a2c85899a0dc446e6d38f73bd326fb58>) .
+(<urn:bldg/hvac_reaZonCor_V_flow_y> <urn:bldg/hvac_reaZonEas_V_flow_y>) ref:hasExternalReference (_:a09841351662b889a0623d08c264c7be _:a2c85899a0dc446e6d38f73bd326fb58) .
 (<urn:bldg/hvac_reaZonCor_V_flow_y> <urn:bldg/hvac_reaZonEas_V_flow_y>) a brick:Discharge_Air_Flow_Sensor .
-(<urn:bldg/hvac_oveZonActCor_yDam_u> <urn:bldg/hvac_oveZonActEas_yDam_u>) ref:hasExternalReference (<urn:bschema-rs:skolem:a09841351662b889a0623d08c264c7be> <urn:bschema-rs:skolem:a2c85899a0dc446e6d38f73bd326fb58>) .
+(<urn:bldg/hvac_oveZonActCor_yDam_u> <urn:bldg/hvac_oveZonActEas_yDam_u>) ref:hasExternalReference (_:a09841351662b889a0623d08c264c7be _:a2c85899a0dc446e6d38f73bd326fb58) .
 (<urn:bldg/hvac_oveZonActCor_yDam_u> <urn:bldg/hvac_oveZonActEas_yDam_u>) a brick:Damper_Position_Setpoint .
 (<urn:bldg/cooling_coil>) brick:isFedBy (<urn:bldg/chiller>) .
 (<urn:bldg/cooling_coil>) brick:hasPoint (<urn:bldg/chi_reaPChi_y> <urn:bldg/chi_reaPPumDis_y>) .
@@ -111,14 +111,14 @@
 (<urn:bldg/chiller>) brick:hasPoint (<urn:bldg/chi_reaTRet_y>) .
 (<urn:bldg/chiller>) brick:feeds (<urn:bldg/chi_pump> <urn:bldg/heat_pump>) .
 (<urn:bldg/chiller>) a brick:Chiller .
-(<urn:bldg/chi_reaTSup_y>) ref:hasExternalReference (<urn:bschema-rs:skolem:a09841351662b889a0623d08c264c7be> <urn:bschema-rs:skolem:a2c85899a0dc446e6d38f73bd326fb58>) .
+(<urn:bldg/chi_reaTSup_y>) ref:hasExternalReference (_:a09841351662b889a0623d08c264c7be _:a2c85899a0dc446e6d38f73bd326fb58) .
 (<urn:bldg/chi_reaTSup_y>) a brick:Chilled_Water_Supply_Temperature_Sensor .
-(<urn:bldg/chi_reaTRet_y>) ref:hasExternalReference (<urn:bschema-rs:skolem:a09841351662b889a0623d08c264c7be> <urn:bschema-rs:skolem:a2c85899a0dc446e6d38f73bd326fb58>) .
+(<urn:bldg/chi_reaTRet_y>) ref:hasExternalReference (_:a09841351662b889a0623d08c264c7be _:a2c85899a0dc446e6d38f73bd326fb58) .
 (<urn:bldg/chi_reaTRet_y>) a brick:Chilled_Water_Return_Temperature_Sensor .
-(<urn:bldg/hvac_reaZonCor_CO2Zon_y> <urn:bldg/hvac_reaZonEas_CO2Zon_y>) ref:hasExternalReference (<urn:bschema-rs:skolem:a09841351662b889a0623d08c264c7be> <urn:bschema-rs:skolem:a2c85899a0dc446e6d38f73bd326fb58>) .
+(<urn:bldg/hvac_reaZonCor_CO2Zon_y> <urn:bldg/hvac_reaZonEas_CO2Zon_y>) ref:hasExternalReference (_:a09841351662b889a0623d08c264c7be _:a2c85899a0dc446e6d38f73bd326fb58) .
 (<urn:bldg/hvac_reaZonCor_CO2Zon_y> <urn:bldg/hvac_reaZonEas_CO2Zon_y>) a brick:CO2_Sensor .
 (<urn:bldg/Building>) brick:hasPart (<urn:bldg/hvac_cor_zone> <urn:bldg/hvac_eas_zone>) .
-(<urn:bldg/Building>) brick:area (<urn:bschema-rs:skolem:b2e4a47da3734d8d696ce74a65c5c7f4>) .
+(<urn:bldg/Building>) brick:area (_:b2e4a47da3734d8d696ce74a65c5c7f4) .
 (<urn:bldg/Building>) a brick:Building .
 (<urn:bldg/hvac_ahu>) brick:hasPoint (<urn:bldg/hvac_oveAhu_TSupSet_u>) .
 (<urn:bldg/hvac_ahu>) brick:hasPoint (<urn:bldg/hvac_reaAhu_TSup_y>) .

@@ -31,7 +31,7 @@ bs:Resource_version_1 brick:value bs:Literal_version_1 .
 bs:TimeseriesReference_version_1 ref:storedAt bs:Literal_version_1 .
 bs:TimeseriesReference_version_1 ref:onTable bs:Literal_version_1 .
 bs:TimeseriesReference_version_1 ref:hasTimeseriesId bs:Literal_version_1 .
-bs:TimeseriesReference_version_1 a (<urn:bschema-rs:skolem:a039482dee0eeac60092b93e6c97ebc3> <urn:bschema-rs:skolem:a25b8bfd4fe3a345e9dcfbf8b16f62d3>) .
+bs:TimeseriesReference_version_1 a (_:a039482dee0eeac60092b93e6c97ebc3 _:a25b8bfd4fe3a345e9dcfbf8b16f62d3) .
 bs:Literal_version_1 a ("1662.66"^^xsd:float "LowerSetp[cor]") .
 bs:Electric_Power_Sensor_version_1 ref:hasExternalReference bs:TimeseriesReference_version_1 .
 bs:Electric_Power_Sensor_version_1 ref:hasExternalReference bs:Resource_version_1 .
@@ -93,7 +93,7 @@ bs:Hot_Water_Pump_version_1 brick:hasPoint bs:Electric_Power_Sensor_version_1 .
 bs:Hot_Water_Pump_version_1 a (<urn:bldg/hwd_pump>) .
 bs:Heating_Coil_version_1 brick:isFedBy bs:Pump_version_1 .
 bs:Heating_Coil_version_1 brick:hasPoint bs:Electric_Power_Sensor_version_1 .
-bs:Heating_Coil_version_1 brick:hasPoint (<urn:bschema-rs:skolem:a1fb290f9272ca4b9cdccdf66dd7b8c5> <urn:bschema-rs:skolem:a317f54dd5f99df22a6acc6c194b34d1>) .
+bs:Heating_Coil_version_1 brick:hasPoint (_:a1fb290f9272ca4b9cdccdf66dd7b8c5 _:a317f54dd5f99df22a6acc6c194b34d1) .
 bs:Heating_Coil_version_1 a (<urn:bldg/heating_coil>) .
 bs:Discharge_Air_Temperature_Sensor_version_1 ref:hasExternalReference bs:Resource_version_1 .
 bs:Discharge_Air_Temperature_Sensor_version_1 a (<urn:bldg/hvac_reaZonCor_TSup_y> <urn:bldg/hvac_reaZonEas_TSup_y>) .

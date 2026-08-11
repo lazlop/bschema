@@ -37,7 +37,7 @@
 (<http://openmetrics.eu/openmetrics#RC04N0041_Equipment> <http://openmetrics.eu/openmetrics#RC04N0042_Equipment>) saref:consistOf (<http://openmetrics.eu/openmetrics#RC04N0041_TempSetpointMax> <http://openmetrics.eu/openmetrics#RC04N0042_TempSetpointMax>) .
 (<http://openmetrics.eu/openmetrics#RC04N0041_Equipment> <http://openmetrics.eu/openmetrics#RC04N0042_Equipment>) saref:consistOf (<http://openmetrics.eu/openmetrics#RC04N0041_Lockout_Command> <http://openmetrics.eu/openmetrics#RC04N0042_Lockout_Command>) .
 (<http://openmetrics.eu/openmetrics#RC04N0041_Equipment> <http://openmetrics.eu/openmetrics#RC04N0042_Equipment>) saref:consistOf (<http://openmetrics.eu/openmetrics#RC04N0041_Delay_Parameter> <http://openmetrics.eu/openmetrics#RC04N0042_Delay_Parameter>) .
-(<http://openmetrics.eu/openmetrics#RC04N0041_Equipment> <http://openmetrics.eu/openmetrics#RC04N0042_Equipment>) ref:hasExternalReference (<urn:bschema-rs:skolem:a2e0b1cc1125c66996fd1b17f23aa487> <urn:bschema-rs:skolem:ab031a7a0e65c0a950c3f67a205821cd>) .
+(<http://openmetrics.eu/openmetrics#RC04N0041_Equipment> <http://openmetrics.eu/openmetrics#RC04N0042_Equipment>) ref:hasExternalReference (_:a2e0b1cc1125c66996fd1b17f23aa487 _:ab031a7a0e65c0a950c3f67a205821cd) .
 (<http://openmetrics.eu/openmetrics#RC04N0041_Equipment> <http://openmetrics.eu/openmetrics#RC04N0042_Equipment>) brick:hasPoint (<http://openmetrics.eu/openmetrics#RC04N0041_TempSetpoint> <http://openmetrics.eu/openmetrics#RC04N0042_TempSetpoint>) .
 (<http://openmetrics.eu/openmetrics#RC04N0041_Equipment> <http://openmetrics.eu/openmetrics#RC04N0042_Equipment>) brick:hasPoint (<http://openmetrics.eu/openmetrics#RC04N0041_TempSensingPoint> <http://openmetrics.eu/openmetrics#RC04N0042_TempSensingPoint>) .
 (<http://openmetrics.eu/openmetrics#RC04N0041_Equipment> <http://openmetrics.eu/openmetrics#RC04N0042_Equipment>) brick:hasPoint (<http://openmetrics.eu/openmetrics#RC04N0041_Run_Request_Command> <http://openmetrics.eu/openmetrics#RC04N0042_Run_Request_Command>) .
@@ -52,58 +52,58 @@
 (<http://openmetrics.eu/openmetrics#RC04N0041_Equipment> <http://openmetrics.eu/openmetrics#RC04N0042_Equipment>) a s4bldg:UnitaryControlElement .
 (<http://openmetrics.eu/openmetrics#RC04N0041_Equipment> <http://openmetrics.eu/openmetrics#RC04N0042_Equipment>) a brick:Thermostat .
 (<http://openmetrics.eu/openmetrics#Space_1126> <http://openmetrics.eu/openmetrics#Space_1307>) s4bldg:contains (<http://openmetrics.eu/openmetrics#RC04N0041_Equipment> <http://openmetrics.eu/openmetrics#RC04N0042_Equipment>) .
-(<http://openmetrics.eu/openmetrics#Space_1126> <http://openmetrics.eu/openmetrics#Space_1307>) ref:hasExternalReference (<urn:bschema-rs:skolem:a090d9a1fc091598910436cd31b89fc1> <urn:bschema-rs:skolem:a36002e5f8e269274acf8f038e689ae0>) .
+(<http://openmetrics.eu/openmetrics#Space_1126> <http://openmetrics.eu/openmetrics#Space_1307>) ref:hasExternalReference (_:a090d9a1fc091598910436cd31b89fc1 _:a36002e5f8e269274acf8f038e689ae0) .
 (<http://openmetrics.eu/openmetrics#Space_1126> <http://openmetrics.eu/openmetrics#Space_1307>) brick:isLocationOf (<http://openmetrics.eu/openmetrics#RC04N0041_Equipment> <http://openmetrics.eu/openmetrics#RC04N0042_Equipment>) .
 (<http://openmetrics.eu/openmetrics#Space_1126> <http://openmetrics.eu/openmetrics#Space_1307>) a s4bldg:BuildingSpace .
 (<http://openmetrics.eu/openmetrics#Space_1126> <http://openmetrics.eu/openmetrics#Space_1307>) a brick:Space .
-(<http://openmetrics.eu/openmetrics#null_Equipment>) ref:hasExternalReference (<urn:bschema-rs:skolem:a11cd9fd27f659f4bbc7de0d855847c3> <urn:bschema-rs:skolem:a43d82282f4efd86bab037f74c31bc77>) .
+(<http://openmetrics.eu/openmetrics#null_Equipment>) ref:hasExternalReference (_:a11cd9fd27f659f4bbc7de0d855847c3 _:a43d82282f4efd86bab037f74c31bc77) .
 (<http://openmetrics.eu/openmetrics#null_Equipment>) brick:hasLocation (<http://openmetrics.eu/openmetrics#BuildingStorey_157> <http://openmetrics.eu/openmetrics#BuildingStorey_161>) .
 (<http://openmetrics.eu/openmetrics#null_Equipment>) a s4bldg:FlowTerminal .
 (<http://openmetrics.eu/openmetrics#null_Equipment>) a brick:Terminal_Unit .
 (<http://openmetrics.eu/openmetrics#TempProperty>) a saref:Property .
 (<http://openmetrics.eu/openmetrics#TempProperty>) a quantitykind:Temperature .
 (<http://openmetrics.eu/openmetrics#RC04N0041_TempSetpoint> <http://openmetrics.eu/openmetrics#RC04N0042_TempSetpoint>) saref:controls (<http://openmetrics.eu/openmetrics#TempProperty>) .
-(<http://openmetrics.eu/openmetrics#RC04N0041_TempSetpoint> <http://openmetrics.eu/openmetrics#RC04N0042_TempSetpoint>) ref:hasExternalReference (<urn:bschema-rs:skolem:a98a4d3ad5f3a8bc26206820a0afc509> <urn:bschema-rs:skolem:aa04158e266db1e87def0c026166db5e>) .
+(<http://openmetrics.eu/openmetrics#RC04N0041_TempSetpoint> <http://openmetrics.eu/openmetrics#RC04N0042_TempSetpoint>) ref:hasExternalReference (_:a98a4d3ad5f3a8bc26206820a0afc509 _:aa04158e266db1e87def0c026166db5e) .
 (<http://openmetrics.eu/openmetrics#RC04N0041_TempSetpoint> <http://openmetrics.eu/openmetrics#RC04N0042_TempSetpoint>) brick:isPointOf (<http://openmetrics.eu/openmetrics#RC04N0041_Equipment> <http://openmetrics.eu/openmetrics#RC04N0042_Equipment>) .
 (<http://openmetrics.eu/openmetrics#RC04N0041_TempSetpoint> <http://openmetrics.eu/openmetrics#RC04N0042_TempSetpoint>) a saref:Actuator .
 (<http://openmetrics.eu/openmetrics#RC04N0041_TempSetpoint> <http://openmetrics.eu/openmetrics#RC04N0042_TempSetpoint>) a brick:Temperature_Setpoint .
 (<http://openmetrics.eu/openmetrics#RC04N0041_TempSensingPoint> <http://openmetrics.eu/openmetrics#RC04N0042_TempSensingPoint>) saref:observes (<http://openmetrics.eu/openmetrics#TempProperty>) .
-(<http://openmetrics.eu/openmetrics#RC04N0041_TempSensingPoint> <http://openmetrics.eu/openmetrics#RC04N0042_TempSensingPoint>) ref:hasExternalReference (<urn:bschema-rs:skolem:aa5814fa62a8436e6d84068791c241> <urn:bschema-rs:skolem:afaf1a11fff1b84129ae540ae41921a4>) .
+(<http://openmetrics.eu/openmetrics#RC04N0041_TempSensingPoint> <http://openmetrics.eu/openmetrics#RC04N0042_TempSensingPoint>) ref:hasExternalReference (_:aa5814fa62a8436e6d84068791c241 _:afaf1a11fff1b84129ae540ae41921a4) .
 (<http://openmetrics.eu/openmetrics#RC04N0041_TempSensingPoint> <http://openmetrics.eu/openmetrics#RC04N0042_TempSensingPoint>) brick:isPointOf (<http://openmetrics.eu/openmetrics#RC04N0041_Equipment> <http://openmetrics.eu/openmetrics#RC04N0042_Equipment>) .
 (<http://openmetrics.eu/openmetrics#RC04N0041_TempSensingPoint> <http://openmetrics.eu/openmetrics#RC04N0042_TempSensingPoint>) a saref:Sensor .
 (<http://openmetrics.eu/openmetrics#RC04N0041_TempSensingPoint> <http://openmetrics.eu/openmetrics#RC04N0042_TempSensingPoint>) a brick:Temperature_Sensor .
 (<http://openmetrics.eu/openmetrics#BuildingStorey_157> <http://openmetrics.eu/openmetrics#BuildingStorey_161>) s4bldg:contains (<http://openmetrics.eu/openmetrics#null_Equipment>) .
-(<http://openmetrics.eu/openmetrics#BuildingStorey_157> <http://openmetrics.eu/openmetrics#BuildingStorey_161>) ref:hasExternalReference (<urn:bschema-rs:skolem:a52c1c72cd9f5e0209662833767ddfae> <urn:bschema-rs:skolem:b68bb66dc00e770b769202969f6268f0>) .
+(<http://openmetrics.eu/openmetrics#BuildingStorey_157> <http://openmetrics.eu/openmetrics#BuildingStorey_161>) ref:hasExternalReference (_:a52c1c72cd9f5e0209662833767ddfae _:b68bb66dc00e770b769202969f6268f0) .
 (<http://openmetrics.eu/openmetrics#BuildingStorey_157> <http://openmetrics.eu/openmetrics#BuildingStorey_161>) brick:isLocationOf (<http://openmetrics.eu/openmetrics#null_Equipment>) .
 (<http://openmetrics.eu/openmetrics#BuildingStorey_157> <http://openmetrics.eu/openmetrics#BuildingStorey_161>) brick:hasPart (<http://openmetrics.eu/openmetrics#Space_1126> <http://openmetrics.eu/openmetrics#Space_1307>) .
 (<http://openmetrics.eu/openmetrics#BuildingStorey_157> <http://openmetrics.eu/openmetrics#BuildingStorey_161>) a brick:Storey .
-(<http://openmetrics.eu/openmetrics#RC04N0041_Run_Request_Command> <http://openmetrics.eu/openmetrics#RC04N0042_Run_Request_Command>) ref:hasExternalReference (<urn:bschema-rs:skolem:a1b5d5b9aed0504b5746cc5a97d1a008> <urn:bschema-rs:skolem:a5849daa7ec0684acf9f03fbf65aa9a3>) .
+(<http://openmetrics.eu/openmetrics#RC04N0041_Run_Request_Command> <http://openmetrics.eu/openmetrics#RC04N0042_Run_Request_Command>) ref:hasExternalReference (_:a1b5d5b9aed0504b5746cc5a97d1a008 _:a5849daa7ec0684acf9f03fbf65aa9a3) .
 (<http://openmetrics.eu/openmetrics#RC04N0041_Run_Request_Command> <http://openmetrics.eu/openmetrics#RC04N0042_Run_Request_Command>) brick:isPointOf (<http://openmetrics.eu/openmetrics#RC04N0041_Equipment> <http://openmetrics.eu/openmetrics#RC04N0042_Equipment>) .
 (<http://openmetrics.eu/openmetrics#RC04N0041_Run_Request_Command> <http://openmetrics.eu/openmetrics#RC04N0042_Run_Request_Command>) a brick:Run_Request_Command .
-(<http://openmetrics.eu/openmetrics#RC04N0041_OnOffCommand> <http://openmetrics.eu/openmetrics#RC04N0042_OnOffCommand>) ref:hasExternalReference (<urn:bschema-rs:skolem:a1057a01adbea2805293d57df89ef09b> <urn:bschema-rs:skolem:b26fde06df068ca793be97c597bfd475>) .
+(<http://openmetrics.eu/openmetrics#RC04N0041_OnOffCommand> <http://openmetrics.eu/openmetrics#RC04N0042_OnOffCommand>) ref:hasExternalReference (_:a1057a01adbea2805293d57df89ef09b _:b26fde06df068ca793be97c597bfd475) .
 (<http://openmetrics.eu/openmetrics#RC04N0041_OnOffCommand> <http://openmetrics.eu/openmetrics#RC04N0042_OnOffCommand>) brick:isPointOf (<http://openmetrics.eu/openmetrics#RC04N0041_Equipment> <http://openmetrics.eu/openmetrics#RC04N0042_Equipment>) .
 (<http://openmetrics.eu/openmetrics#RC04N0041_OnOffCommand> <http://openmetrics.eu/openmetrics#RC04N0042_OnOffCommand>) a brick:On_Off_Command .
 (<http://openmetrics.eu/openmetrics#RC04N0041_OccSensingPoint> <http://openmetrics.eu/openmetrics#RC04N0042_OccSensingPoint>) saref:observes (<http://openmetrics.eu/openmetrics#OccProperty>) .
-(<http://openmetrics.eu/openmetrics#RC04N0041_OccSensingPoint> <http://openmetrics.eu/openmetrics#RC04N0042_OccSensingPoint>) ref:hasExternalReference (<urn:bschema-rs:skolem:a10038bfee837a326005c0c11739efd6> <urn:bschema-rs:skolem:a8cc2890990a494cf0914ccd1939515a>) .
+(<http://openmetrics.eu/openmetrics#RC04N0041_OccSensingPoint> <http://openmetrics.eu/openmetrics#RC04N0042_OccSensingPoint>) ref:hasExternalReference (_:a10038bfee837a326005c0c11739efd6 _:a8cc2890990a494cf0914ccd1939515a) .
 (<http://openmetrics.eu/openmetrics#RC04N0041_OccSensingPoint> <http://openmetrics.eu/openmetrics#RC04N0042_OccSensingPoint>) brick:isPointOf (<http://openmetrics.eu/openmetrics#RC04N0041_Equipment> <http://openmetrics.eu/openmetrics#RC04N0042_Equipment>) .
 (<http://openmetrics.eu/openmetrics#RC04N0041_OccSensingPoint> <http://openmetrics.eu/openmetrics#RC04N0042_OccSensingPoint>) a saref:Sensor .
 (<http://openmetrics.eu/openmetrics#RC04N0041_OccSensingPoint> <http://openmetrics.eu/openmetrics#RC04N0042_OccSensingPoint>) a brick:Occupancy_Sensor .
-(<http://openmetrics.eu/openmetrics#RC04N00_Mode_Command>) ref:hasExternalReference (<urn:bschema-rs:skolem:ba35b07a1e1beede078fa9de238556b5>) .
+(<http://openmetrics.eu/openmetrics#RC04N00_Mode_Command>) ref:hasExternalReference (_:ba35b07a1e1beede078fa9de238556b5) .
 (<http://openmetrics.eu/openmetrics#RC04N00_Mode_Command>) brick:isPointOf (<http://openmetrics.eu/openmetrics#RC04N00_Equipment>) .
 (<http://openmetrics.eu/openmetrics#RC04N00_Mode_Command>) a brick:Mode_Command .
-(<http://openmetrics.eu/openmetrics#RC04N0042_Mode_Command> <http://openmetrics.eu/openmetrics#RC04N0043_Mode_Command>) ref:hasExternalReference (<urn:bschema-rs:skolem:a10ccd7e84ff7fd555ee9c4251a0789e> <urn:bschema-rs:skolem:ad749f7e1f6c71e73f159a40c86201d3>) .
+(<http://openmetrics.eu/openmetrics#RC04N0042_Mode_Command> <http://openmetrics.eu/openmetrics#RC04N0043_Mode_Command>) ref:hasExternalReference (_:a10ccd7e84ff7fd555ee9c4251a0789e _:ad749f7e1f6c71e73f159a40c86201d3) .
 (<http://openmetrics.eu/openmetrics#RC04N0042_Mode_Command> <http://openmetrics.eu/openmetrics#RC04N0043_Mode_Command>) brick:isPointOf (<http://openmetrics.eu/openmetrics#RC04N0041_Equipment> <http://openmetrics.eu/openmetrics#RC04N0042_Equipment>) .
 (<http://openmetrics.eu/openmetrics#RC04N0042_Mode_Command> <http://openmetrics.eu/openmetrics#RC04N0043_Mode_Command>) a brick:Mode_Command .
-(<http://openmetrics.eu/openmetrics#RC04N0041_TempSetpointMin> <http://openmetrics.eu/openmetrics#RC04N0042_TempSetpointMin>) ref:hasExternalReference (<urn:bschema-rs:skolem:a5723a0dc8968f9692ff1d9fdd8aa48d> <urn:bschema-rs:skolem:a6b240f1c8ccfe074b50b11a8149fea1>) .
+(<http://openmetrics.eu/openmetrics#RC04N0041_TempSetpointMin> <http://openmetrics.eu/openmetrics#RC04N0042_TempSetpointMin>) ref:hasExternalReference (_:a5723a0dc8968f9692ff1d9fdd8aa48d _:a6b240f1c8ccfe074b50b11a8149fea1) .
 (<http://openmetrics.eu/openmetrics#RC04N0041_TempSetpointMin> <http://openmetrics.eu/openmetrics#RC04N0042_TempSetpointMin>) brick:isPointOf (<http://openmetrics.eu/openmetrics#RC04N0041_Equipment> <http://openmetrics.eu/openmetrics#RC04N0042_Equipment>) .
 (<http://openmetrics.eu/openmetrics#RC04N0041_TempSetpointMin> <http://openmetrics.eu/openmetrics#RC04N0042_TempSetpointMin>) a brick:Min_Air_Temperature_Setpoint .
-(<http://openmetrics.eu/openmetrics#RC04N0041_TempSetpointMax> <http://openmetrics.eu/openmetrics#RC04N0042_TempSetpointMax>) ref:hasExternalReference (<urn:bschema-rs:skolem:a60e34a21140bf77a70aa7830c8dddf9> <urn:bschema-rs:skolem:a9956693b6f5f6f544cccc3dd0b29397>) .
+(<http://openmetrics.eu/openmetrics#RC04N0041_TempSetpointMax> <http://openmetrics.eu/openmetrics#RC04N0042_TempSetpointMax>) ref:hasExternalReference (_:a60e34a21140bf77a70aa7830c8dddf9 _:a9956693b6f5f6f544cccc3dd0b29397) .
 (<http://openmetrics.eu/openmetrics#RC04N0041_TempSetpointMax> <http://openmetrics.eu/openmetrics#RC04N0042_TempSetpointMax>) brick:isPointOf (<http://openmetrics.eu/openmetrics#RC04N0041_Equipment> <http://openmetrics.eu/openmetrics#RC04N0042_Equipment>) .
 (<http://openmetrics.eu/openmetrics#RC04N0041_TempSetpointMax> <http://openmetrics.eu/openmetrics#RC04N0042_TempSetpointMax>) a brick:Max_Air_Temperature_Setpoint .
-(<http://openmetrics.eu/openmetrics#RC04N0041_Lockout_Command> <http://openmetrics.eu/openmetrics#RC04N0042_Lockout_Command>) ref:hasExternalReference (<urn:bschema-rs:skolem:a60608181959a06eb842267846270176> <urn:bschema-rs:skolem:b95c64156e5652bcb4e4a1fd1d2ffa0d>) .
+(<http://openmetrics.eu/openmetrics#RC04N0041_Lockout_Command> <http://openmetrics.eu/openmetrics#RC04N0042_Lockout_Command>) ref:hasExternalReference (_:a60608181959a06eb842267846270176 _:b95c64156e5652bcb4e4a1fd1d2ffa0d) .
 (<http://openmetrics.eu/openmetrics#RC04N0041_Lockout_Command> <http://openmetrics.eu/openmetrics#RC04N0042_Lockout_Command>) brick:isPointOf (<http://openmetrics.eu/openmetrics#RC04N0041_Equipment> <http://openmetrics.eu/openmetrics#RC04N0042_Equipment>) .
 (<http://openmetrics.eu/openmetrics#RC04N0041_Lockout_Command> <http://openmetrics.eu/openmetrics#RC04N0042_Lockout_Command>) a brick:Lockout_Command .
-(<http://openmetrics.eu/openmetrics#RC04N0041_Delay_Parameter> <http://openmetrics.eu/openmetrics#RC04N0042_Delay_Parameter>) ref:hasExternalReference (<urn:bschema-rs:skolem:a227d314d8a8fd9ce948326e6af8f2ad> <urn:bschema-rs:skolem:a9b90a4079c5fb526ac16b41e138e86e>) .
+(<http://openmetrics.eu/openmetrics#RC04N0041_Delay_Parameter> <http://openmetrics.eu/openmetrics#RC04N0042_Delay_Parameter>) ref:hasExternalReference (_:a227d314d8a8fd9ce948326e6af8f2ad _:a9b90a4079c5fb526ac16b41e138e86e) .
 (<http://openmetrics.eu/openmetrics#RC04N0041_Delay_Parameter> <http://openmetrics.eu/openmetrics#RC04N0042_Delay_Parameter>) brick:isPointOf (<http://openmetrics.eu/openmetrics#RC04N0041_Equipment> <http://openmetrics.eu/openmetrics#RC04N0042_Equipment>) .
 (<http://openmetrics.eu/openmetrics#RC04N0041_Delay_Parameter> <http://openmetrics.eu/openmetrics#RC04N0042_Delay_Parameter>) a brick:Delay_Parameter .
 (<http://openmetrics.eu/openmetrics#RC04N00_Equipment>) s4ener:serialNumber ("RC04N00") .
@@ -111,25 +111,25 @@
 (<http://openmetrics.eu/openmetrics#RC04N00_Equipment>) brick:hasPoint (<http://openmetrics.eu/openmetrics#RC04N00_Mode_Command>) .
 (<http://openmetrics.eu/openmetrics#RC04N00_Equipment>) a s4bldg:UnitaryControlElement .
 (<http://openmetrics.eu/openmetrics#RC04N00_Equipment>) a brick:Thermostat .
-(<urn:bschema-rs:skolem:a52c1c72cd9f5e0209662833767ddfae> <urn:bschema-rs:skolem:b68bb66dc00e770b769202969f6268f0>) ref:ifcName ("") .
-(<urn:bschema-rs:skolem:a52c1c72cd9f5e0209662833767ddfae> <urn:bschema-rs:skolem:b68bb66dc00e770b769202969f6268f0>) ref:ifcGlobalID ("0a0u_yaVr91RamT04O09sz") .
-(<urn:bschema-rs:skolem:a2e0b1cc1125c66996fd1b17f23aa487> <urn:bschema-rs:skolem:ab031a7a0e65c0a950c3f67a205821cd>) ref:ifcName ("HC_Control Unit_F_MEPcontent_Mitsubishi Electric Corporation_PZ-DR_INT-EN:PZ-61DR:433961" "HC_Control Unit_F_MEPcontent_Mitsubishi Electric Corporation_PZ-DR_INT-EN:PZ-61DR:434029") .
-(<urn:bschema-rs:skolem:a2e0b1cc1125c66996fd1b17f23aa487> <urn:bschema-rs:skolem:ab031a7a0e65c0a950c3f67a205821cd>) ref:ifcGlobalID ("04fvfeI2P3MOmu2cRam3GO" "04fvfeI2P3MOmu2cRam3GQ") .
-(<urn:bschema-rs:skolem:a227d314d8a8fd9ce948326e6af8f2ad> <urn:bschema-rs:skolem:a9b90a4079c5fb526ac16b41e138e86e>) ref:hasTimeseriesId ("TUC.245.76.R117" "TUC.245.76.R17") .
-(<urn:bschema-rs:skolem:a1b5d5b9aed0504b5746cc5a97d1a008> <urn:bschema-rs:skolem:a5849daa7ec0684acf9f03fbf65aa9a3>) ref:hasTimeseriesId ("TUC.245.76.R118" "TUC.245.76.R18") .
-(<urn:bschema-rs:skolem:a11cd9fd27f659f4bbc7de0d855847c3> <urn:bschema-rs:skolem:a43d82282f4efd86bab037f74c31bc77>) ref:ifcName ("Fujitsu General-ASYG18-24KMTA-Back_Left:ASYG18-24KMTA:431955" "Fujitsu General-ASYG18-24KMTA-Back_Left:ASYG18-24KMTA:433790") .
-(<urn:bschema-rs:skolem:a11cd9fd27f659f4bbc7de0d855847c3> <urn:bschema-rs:skolem:a43d82282f4efd86bab037f74c31bc77>) ref:ifcGlobalID ("04fvfeI2P3MOmu2cRam3GG" "04fvfeI2P3MOmu2cRam3GR") .
-(<urn:bschema-rs:skolem:a10ccd7e84ff7fd555ee9c4251a0789e> <urn:bschema-rs:skolem:ad749f7e1f6c71e73f159a40c86201d3>) ref:hasTimeseriesId ("TUC.245.76.R107" "TUC.245.76.R187") .
-(<urn:bschema-rs:skolem:a1057a01adbea2805293d57df89ef09b> <urn:bschema-rs:skolem:b26fde06df068ca793be97c597bfd475>) ref:hasTimeseriesId ("TUC.245.76.R106" "TUC.245.76.R186") .
-(<urn:bschema-rs:skolem:a10038bfee837a326005c0c11739efd6> <urn:bschema-rs:skolem:a8cc2890990a494cf0914ccd1939515a>) ref:hasTimeseriesId ("TUC.245.76.R104" "TUC.245.76.R184") .
-(<urn:bschema-rs:skolem:ba35b07a1e1beede078fa9de238556b5>) ref:hasTimeseriesId ("TUC.245.76.R7") .
-(<urn:bschema-rs:skolem:aa5814fa62a8436e6d84068791c241> <urn:bschema-rs:skolem:afaf1a11fff1b84129ae540ae41921a4>) ref:hasTimeseriesId ("TUC.245.76.R0" "TUC.245.76.R100") .
-(<urn:bschema-rs:skolem:a98a4d3ad5f3a8bc26206820a0afc509> <urn:bschema-rs:skolem:aa04158e266db1e87def0c026166db5e>) ref:hasTimeseriesId ("TUC.245.76.R108" "TUC.245.76.R188") .
-(<urn:bschema-rs:skolem:a60e34a21140bf77a70aa7830c8dddf9> <urn:bschema-rs:skolem:a9956693b6f5f6f544cccc3dd0b29397>) ref:hasTimeseriesId ("TUC.245.76.R115" "TUC.245.76.R15") .
-(<urn:bschema-rs:skolem:a60608181959a06eb842267846270176> <urn:bschema-rs:skolem:b95c64156e5652bcb4e4a1fd1d2ffa0d>) ref:hasTimeseriesId ("TUC.245.76.R119" "TUC.245.76.R19") .
-(<urn:bschema-rs:skolem:a5723a0dc8968f9692ff1d9fdd8aa48d> <urn:bschema-rs:skolem:a6b240f1c8ccfe074b50b11a8149fea1>) ref:hasTimeseriesId ("TUC.245.76.R114" "TUC.245.76.R14") .
-(<urn:bschema-rs:skolem:a090d9a1fc091598910436cd31b89fc1> <urn:bschema-rs:skolem:a36002e5f8e269274acf8f038e689ae0>) ref:ifcName ("CORRIDOR_A" "CORRIDOR_B") .
-(<urn:bschema-rs:skolem:a090d9a1fc091598910436cd31b89fc1> <urn:bschema-rs:skolem:a36002e5f8e269274acf8f038e689ae0>) ref:ifcGlobalID ("04fvfeI2P3MOmu2cRam2oG" "04fvfeI2P3MOmu2cRam2oO") .
+(_:a52c1c72cd9f5e0209662833767ddfae _:b68bb66dc00e770b769202969f6268f0) ref:ifcName ("") .
+(_:a52c1c72cd9f5e0209662833767ddfae _:b68bb66dc00e770b769202969f6268f0) ref:ifcGlobalID ("0a0u_yaVr91RamT04O09sz") .
+(_:a2e0b1cc1125c66996fd1b17f23aa487 _:ab031a7a0e65c0a950c3f67a205821cd) ref:ifcName ("HC_Control Unit_F_MEPcontent_Mitsubishi Electric Corporation_PZ-DR_INT-EN:PZ-61DR:433961" "HC_Control Unit_F_MEPcontent_Mitsubishi Electric Corporation_PZ-DR_INT-EN:PZ-61DR:434029") .
+(_:a2e0b1cc1125c66996fd1b17f23aa487 _:ab031a7a0e65c0a950c3f67a205821cd) ref:ifcGlobalID ("04fvfeI2P3MOmu2cRam3GO" "04fvfeI2P3MOmu2cRam3GQ") .
+(_:a227d314d8a8fd9ce948326e6af8f2ad _:a9b90a4079c5fb526ac16b41e138e86e) ref:hasTimeseriesId ("TUC.245.76.R117" "TUC.245.76.R17") .
+(_:a1b5d5b9aed0504b5746cc5a97d1a008 _:a5849daa7ec0684acf9f03fbf65aa9a3) ref:hasTimeseriesId ("TUC.245.76.R118" "TUC.245.76.R18") .
+(_:a11cd9fd27f659f4bbc7de0d855847c3 _:a43d82282f4efd86bab037f74c31bc77) ref:ifcName ("Fujitsu General-ASYG18-24KMTA-Back_Left:ASYG18-24KMTA:431955" "Fujitsu General-ASYG18-24KMTA-Back_Left:ASYG18-24KMTA:433790") .
+(_:a11cd9fd27f659f4bbc7de0d855847c3 _:a43d82282f4efd86bab037f74c31bc77) ref:ifcGlobalID ("04fvfeI2P3MOmu2cRam3GG" "04fvfeI2P3MOmu2cRam3GR") .
+(_:a10ccd7e84ff7fd555ee9c4251a0789e _:ad749f7e1f6c71e73f159a40c86201d3) ref:hasTimeseriesId ("TUC.245.76.R107" "TUC.245.76.R187") .
+(_:a1057a01adbea2805293d57df89ef09b _:b26fde06df068ca793be97c597bfd475) ref:hasTimeseriesId ("TUC.245.76.R106" "TUC.245.76.R186") .
+(_:a10038bfee837a326005c0c11739efd6 _:a8cc2890990a494cf0914ccd1939515a) ref:hasTimeseriesId ("TUC.245.76.R104" "TUC.245.76.R184") .
+(_:ba35b07a1e1beede078fa9de238556b5) ref:hasTimeseriesId ("TUC.245.76.R7") .
+(_:aa5814fa62a8436e6d84068791c241 _:afaf1a11fff1b84129ae540ae41921a4) ref:hasTimeseriesId ("TUC.245.76.R0" "TUC.245.76.R100") .
+(_:a98a4d3ad5f3a8bc26206820a0afc509 _:aa04158e266db1e87def0c026166db5e) ref:hasTimeseriesId ("TUC.245.76.R108" "TUC.245.76.R188") .
+(_:a60e34a21140bf77a70aa7830c8dddf9 _:a9956693b6f5f6f544cccc3dd0b29397) ref:hasTimeseriesId ("TUC.245.76.R115" "TUC.245.76.R15") .
+(_:a60608181959a06eb842267846270176 _:b95c64156e5652bcb4e4a1fd1d2ffa0d) ref:hasTimeseriesId ("TUC.245.76.R119" "TUC.245.76.R19") .
+(_:a5723a0dc8968f9692ff1d9fdd8aa48d _:a6b240f1c8ccfe074b50b11a8149fea1) ref:hasTimeseriesId ("TUC.245.76.R114" "TUC.245.76.R14") .
+(_:a090d9a1fc091598910436cd31b89fc1 _:a36002e5f8e269274acf8f038e689ae0) ref:ifcName ("CORRIDOR_A" "CORRIDOR_B") .
+(_:a090d9a1fc091598910436cd31b89fc1 _:a36002e5f8e269274acf8f038e689ae0) ref:ifcGlobalID ("04fvfeI2P3MOmu2cRam2oG" "04fvfeI2P3MOmu2cRam2oO") .
 (<http://openmetrics.eu/openmetrics#OccProperty>) a saref:Property .
 (<http://openmetrics.eu/openmetrics#OccProperty>) a quantitykind:Occupancy .
 ("HC_Control Unit_F_MEPcontent_Mitsubishi Electric Corporation_PZ-DR_INT-EN:PZ-61DR:433961" "HC_Control Unit_F_MEPcontent_Mitsubishi Electric Corporation_PZ-DR_INT-EN:PZ-61DR:434029") a rdfs:Literal .
@@ -159,22 +159,22 @@
 ("TUC.245.76.R0" "TUC.245.76.R100") a rdfs:Literal .
 ("04fvfeI2P3MOmu2cRam3GO" "04fvfeI2P3MOmu2cRam3GQ") a rdfs:Literal .
 ("CORRIDOR_A" "CORRIDOR_B") a rdfs:Literal .
-(<urn:bschema-rs:skolem:fcfe13003ca28ea9a563462594f6282d>) ref:ifcName ("Surface:440560") .
-(<urn:bschema-rs:skolem:fcfe13003ca28ea9a563462594f6282d>) ref:ifcGlobalID ("0a0u_yaVr91RamT04O09s_") .
-(<urn:bschema-rs:skolem:fcfe13003ca28ea9a563462594f6282d>) a ref:IFCReference .
-(<urn:bschema-rs:skolem:b3e9801e1c4991a3c7662be8ea037ffc>) ref:ifcName ("") .
-(<urn:bschema-rs:skolem:b3e9801e1c4991a3c7662be8ea037ffc>) ref:ifcGlobalID ("0a0u_yaVr91RamT04O09sz") .
-(<urn:bschema-rs:skolem:b3e9801e1c4991a3c7662be8ea037ffc>) a ref:IFCReference .
+(_:fcfe13003ca28ea9a563462594f6282d) ref:ifcName ("Surface:440560") .
+(_:fcfe13003ca28ea9a563462594f6282d) ref:ifcGlobalID ("0a0u_yaVr91RamT04O09s_") .
+(_:fcfe13003ca28ea9a563462594f6282d) a ref:IFCReference .
+(_:b3e9801e1c4991a3c7662be8ea037ffc) ref:ifcName ("") .
+(_:b3e9801e1c4991a3c7662be8ea037ffc) ref:ifcGlobalID ("0a0u_yaVr91RamT04O09sz") .
+(_:b3e9801e1c4991a3c7662be8ea037ffc) a ref:IFCReference .
 (<http://openmetrics.eu/openmetrics#ZoneRef_62124> <http://openmetrics.eu/openmetrics#ZoneRef_62229>) ref:ifcName ("A1:453257" "A2:453258") .
 (<http://openmetrics.eu/openmetrics#ZoneRef_62124> <http://openmetrics.eu/openmetrics#ZoneRef_62229>) ref:ifcGlobalID ("06B2afrsv0uBHvTl5DaaCm" "0J5GGcHXH0CP8hbTp3jIv0") .
 (<http://openmetrics.eu/openmetrics#ZoneRef_62124> <http://openmetrics.eu/openmetrics#ZoneRef_62229>) a ref:IFCReference .
-(<http://openmetrics.eu/openmetrics#Building_142>) ref:hasExternalReference (<urn:bschema-rs:skolem:b3e9801e1c4991a3c7662be8ea037ffc>) .
+(<http://openmetrics.eu/openmetrics#Building_142>) ref:hasExternalReference (_:b3e9801e1c4991a3c7662be8ea037ffc) .
 (<http://openmetrics.eu/openmetrics#Building_142>) brick:hasPart (<http://openmetrics.eu/openmetrics#BuildingStorey_157> <http://openmetrics.eu/openmetrics#BuildingStorey_161>) .
 (<http://openmetrics.eu/openmetrics#Building_142>) a brick:Building .
 (<http://openmetrics.eu/openmetrics#Zone_62124> <http://openmetrics.eu/openmetrics#Zone_62229>) ref:hasExternalReference (<http://openmetrics.eu/openmetrics#ZoneRef_62124> <http://openmetrics.eu/openmetrics#ZoneRef_62229>) .
 (<http://openmetrics.eu/openmetrics#Zone_62124> <http://openmetrics.eu/openmetrics#Zone_62229>) brick:hasPart (<http://openmetrics.eu/openmetrics#Space_1126> <http://openmetrics.eu/openmetrics#Space_1307>) .
 (<http://openmetrics.eu/openmetrics#Zone_62124> <http://openmetrics.eu/openmetrics#Zone_62229>) a brick:Zone .
-(<http://openmetrics.eu/openmetrics#Site_243>) ref:hasExternalReference (<urn:bschema-rs:skolem:fcfe13003ca28ea9a563462594f6282d>) .
+(<http://openmetrics.eu/openmetrics#Site_243>) ref:hasExternalReference (_:fcfe13003ca28ea9a563462594f6282d) .
 (<http://openmetrics.eu/openmetrics#Site_243>) brick:hasPart (<http://openmetrics.eu/openmetrics#Building_142>) .
 (<http://openmetrics.eu/openmetrics#Site_243>) a brick:Site .
 (<http://openmetrics.eu/openmetrics#PresProperty>) a saref:Property .

@@ -131,23 +131,32 @@ impl RdfGraph {
     /// edge, so it can only merge with other nodes reached the same way
     /// (same subject-class + predicate) - which is the topology grouping we
     /// actually want, without that shared-value hub effect. Returns the
-    /// skolemized graph alongside a reverse map from each literal's skolem
-    /// node back to the original literal, so callers can undo the
-    /// substitution when reporting results (e.g. the member graph).
+    /// skolemized graph alongside a reverse map from each skolem node (blank
+    /// *or* literal) back to the original term, so callers can undo the
+    /// substitution when reporting results (e.g. the member graph): a
+    /// blank-origin skolem reverses to the original `Term::BlankNode` (so it
+    /// prints as `_:...` and reads as "this was a blank node", not an opaque
+    /// `urn:bschema-rs:skolem:...` resource), a literal-origin skolem
+    /// reverses to the original `Term::Literal`.
     pub fn skolemize(&self) -> Result<(Self, HashMap<NamedNode, Term>)> {
         let out = Self::new()?;
         let mut blank_mapping: HashMap<BlankNode, NamedNode> = HashMap::new();
-        let mut literal_reverse: HashMap<NamedNode, Term> = HashMap::new();
+        let mut skolem_reverse: HashMap<NamedNode, Term> = HashMap::new();
+        let mut literal_skolem_nodes: Vec<NamedNode> = Vec::new();
 
-        let skolem_blank = |b: &BlankNode, mapping: &mut HashMap<BlankNode, NamedNode>| {
+        let skolem_blank = |b: &BlankNode,
+                             mapping: &mut HashMap<BlankNode, NamedNode>,
+                             reverse: &mut HashMap<NamedNode, Term>| {
             mapping
                 .entry(b.clone())
                 .or_insert_with(|| {
-                    NamedNode::new_unchecked(format!(
+                    let node = NamedNode::new_unchecked(format!(
                         "{}{}",
                         crate::namespace::BNODE_BASE,
                         b.as_str()
-                    ))
+                    ));
+                    reverse.insert(node.clone(), Term::BlankNode(b.clone()));
+                    node
                 })
                 .clone()
         };
@@ -166,14 +175,17 @@ impl RdfGraph {
 
         for t in self.triples() {
             let subject = match &t.subject {
-                NamedOrBlankNode::BlankNode(b) => NamedOrBlankNode::NamedNode(skolem_blank(b, &mut blank_mapping)),
+                NamedOrBlankNode::BlankNode(b) => {
+                    NamedOrBlankNode::NamedNode(skolem_blank(b, &mut blank_mapping, &mut skolem_reverse))
+                }
                 other => other.clone(),
             };
             let object = match &t.object {
-                Term::BlankNode(b) => Term::NamedNode(skolem_blank(b, &mut blank_mapping)),
+                Term::BlankNode(b) => Term::NamedNode(skolem_blank(b, &mut blank_mapping, &mut skolem_reverse)),
                 Term::Literal(l) => {
                     let node = skolem_literal(&t.subject, &t.predicate, l);
-                    literal_reverse.insert(node.clone(), Term::Literal(l.clone()));
+                    skolem_reverse.insert(node.clone(), Term::Literal(l.clone()));
+                    literal_skolem_nodes.push(node.clone());
                     Term::NamedNode(node)
                 }
                 other => other.clone(),
@@ -181,7 +193,7 @@ impl RdfGraph {
             out.insert(&Triple::new(subject, t.predicate, object));
         }
 
-        for node in literal_reverse.keys() {
+        for node in &literal_skolem_nodes {
             out.insert(&Triple::new(
                 node.clone(),
                 crate::namespace::A.clone(),
@@ -189,7 +201,7 @@ impl RdfGraph {
             ));
         }
 
-        Ok((out, literal_reverse))
+        Ok((out, skolem_reverse))
     }
 
     pub fn serialize_turtle(&self) -> Result<String> {

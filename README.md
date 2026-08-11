@@ -131,6 +131,12 @@ through a generic Turtle writer (rdflib only folds collections used as
 objects), so re-parsing it would only get back an uglier equivalent, not
 this compact form.
 
+Members that were originally blank nodes are rendered as real Turtle blank
+nodes (`_:...`), not the internal `urn:bschema-rs:skolem:...` IRI bschema
+uses to track their identity - e.g. `(_:a1 _:a2) brick:hasUnit brick:m` -
+so it's clear at a glance that they're anonymous nodes, not named
+resources.
+
 `create_bschema` / `create_bschema_from_file` accept:
 
 - `iterations` (default `10`) — max number of relabeling passes.

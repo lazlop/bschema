@@ -93,6 +93,15 @@ fn format_collection(items: &[Term]) -> String {
 
 fn format_term(term: &Term) -> String {
     match term {
+        // `member_graph`s produced by a current `create_bschema` already
+        // reverse blank-origin skolem nodes back to a real `Term::BlankNode`
+        // (see `RdfGraph::skolemize`), but this also catches a still-raw
+        // skolem IRI surviving in a `member_graph` computed by an older
+        // version and only reloaded from disk here - render it as a blank
+        // node too rather than an opaque `urn:bschema-rs:skolem:...` IRI.
+        Term::NamedNode(n) if n.as_str().starts_with(namespace::BNODE_BASE) => {
+            format!("_:{}", &n.as_str()[namespace::BNODE_BASE.len()..])
+        }
         Term::NamedNode(n) => abbreviate_iri(n.as_str()),
         Term::BlankNode(b) => format!("_:{}", b.as_str()),
         Term::Literal(l) => format_literal(l),

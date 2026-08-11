@@ -26,12 +26,12 @@
 @prefix s4ener: <https://saref.etsi.org/saref4ener#> .
 @prefix saref: <https://saref.etsi.org/core#> .
 
-(<urn:bschema-rs:skolem:a000009dc0775d30f473af1b61e64b44> <urn:bschema-rs:skolem:a0019f05e81dcb12fbbc970de2b77af8>) bacnet:object-type ("analogInput" "analogOutput") .
-(<urn:bschema-rs:skolem:a000009dc0775d30f473af1b61e64b44> <urn:bschema-rs:skolem:a0019f05e81dcb12fbbc970de2b77af8>) bacnet:object-name ("002QgMwn12248" "003jdRyq12263") .
-(<urn:bschema-rs:skolem:a000009dc0775d30f473af1b61e64b44> <urn:bschema-rs:skolem:a0019f05e81dcb12fbbc970de2b77af8>) bacnet:object-identifier ("00fhSrXC2346" "011SIUOH357") .
-(<urn:bschema-rs:skolem:a000009dc0775d30f473af1b61e64b44> <urn:bschema-rs:skolem:a0019f05e81dcb12fbbc970de2b77af8>) bacnet:device-identifier (<urn:bldg#4FsOfbEa2841> <urn:bldg#5wSA7AlJ2418>) .
-(<urn:bschema-rs:skolem:a000009dc0775d30f473af1b61e64b44> <urn:bschema-rs:skolem:a0019f05e81dcb12fbbc970de2b77af8>) bacnet:description ("0KFJmtNI84" "0M3qaT0T2282") .
-(<urn:bschema-rs:skolem:a000009dc0775d30f473af1b61e64b44> <urn:bschema-rs:skolem:a0019f05e81dcb12fbbc970de2b77af8>) a s223:BACnetExternalReference .
+(_:a000009dc0775d30f473af1b61e64b44 _:a0019f05e81dcb12fbbc970de2b77af8) bacnet:object-type ("analogInput" "analogOutput") .
+(_:a000009dc0775d30f473af1b61e64b44 _:a0019f05e81dcb12fbbc970de2b77af8) bacnet:object-name ("002QgMwn12248" "003jdRyq12263") .
+(_:a000009dc0775d30f473af1b61e64b44 _:a0019f05e81dcb12fbbc970de2b77af8) bacnet:object-identifier ("00fhSrXC2346" "011SIUOH357") .
+(_:a000009dc0775d30f473af1b61e64b44 _:a0019f05e81dcb12fbbc970de2b77af8) bacnet:device-identifier (<urn:bldg#4FsOfbEa2841> <urn:bldg#5wSA7AlJ2418>) .
+(_:a000009dc0775d30f473af1b61e64b44 _:a0019f05e81dcb12fbbc970de2b77af8) bacnet:description ("0KFJmtNI84" "0M3qaT0T2282") .
+(_:a000009dc0775d30f473af1b61e64b44 _:a0019f05e81dcb12fbbc970de2b77af8) a s223:BACnetExternalReference .
 (<urn:bldg#MEC09.BATTERY> <urn:bldg#bldg.AH1A.SF.S>) qudt:hasUnit unit:UNITLESS .
 (<urn:bldg#MEC09.BATTERY> <urn:bldg#bldg.AH1A.SF.S>) qudt:hasUnit unit:PERCENT .
 (<urn:bldg#MEC09.BATTERY> <urn:bldg#bldg.AH1A.SF.S>) qudt:hasUnit unit:Overridden_Status .
@@ -40,7 +40,7 @@
 (<urn:bldg#MEC09.BATTERY> <urn:bldg#bldg.AH1A.SF.S>) s223:hasRole s223:Role-Supply .
 (<urn:bldg#MEC09.BATTERY> <urn:bldg#bldg.AH1A.SF.S>) s223:hasRole s223:OnOff-Unknown .
 (<urn:bldg#MEC09.BATTERY> <urn:bldg#bldg.AH1A.SF.S>) s223:hasRole s223:EnumerationKind-Speed .
-(<urn:bldg#MEC09.BATTERY> <urn:bldg#bldg.AH1A.SF.S>) s223:hasExternalReference (<urn:bschema-rs:skolem:a000009dc0775d30f473af1b61e64b44> <urn:bschema-rs:skolem:a0019f05e81dcb12fbbc970de2b77af8>) .
+(<urn:bldg#MEC09.BATTERY> <urn:bldg#bldg.AH1A.SF.S>) s223:hasExternalReference (_:a000009dc0775d30f473af1b61e64b44 _:a0019f05e81dcb12fbbc970de2b77af8) .
 (<urn:bldg#MEC09.BATTERY> <urn:bldg#bldg.AH1A.SF.S>) a s223:QuantifiableObservableProperty .
 (<urn:bldg#AH1A_Cooling_Coil> <urn:bldg#AH1B_Cooling_Coil>) s223:hasRole s223:Role-Cooling .
 (<urn:bldg#AH1A_Cooling_Coil> <urn:bldg#AH1B_Cooling_Coil>) s223:contains (<urn:bldg#AH1A_Cooling_Coil_Valve> <urn:bldg#AH1B_Cooling_Coil_Valve>) .
@@ -59,7 +59,7 @@
 (<urn:bldg#bldg.AH4_RM.TEMP> <urn:bldg#bldg.AUDITORIUM_CO2>) s223:hasRole s223:Role-Supply .
 (<urn:bldg#bldg.AH4_RM.TEMP> <urn:bldg#bldg.AUDITORIUM_CO2>) s223:hasRole s223:Role-Condenser .
 (<urn:bldg#bldg.AH4_RM.TEMP> <urn:bldg#bldg.AUDITORIUM_CO2>) s223:hasRole s223:OnOff-Unknown .
-(<urn:bldg#bldg.AH4_RM.TEMP> <urn:bldg#bldg.AUDITORIUM_CO2>) s223:hasExternalReference (<urn:bschema-rs:skolem:a000009dc0775d30f473af1b61e64b44> <urn:bschema-rs:skolem:a0019f05e81dcb12fbbc970de2b77af8>) .
+(<urn:bldg#bldg.AH4_RM.TEMP> <urn:bldg#bldg.AUDITORIUM_CO2>) s223:hasExternalReference (_:a000009dc0775d30f473af1b61e64b44 _:a0019f05e81dcb12fbbc970de2b77af8) .
 (<urn:bldg#bldg.AH4_RM.TEMP> <urn:bldg#bldg.AUDITORIUM_CO2>) a s223:QuantifiableObservableProperty .
 (<urn:bldg#bldg.AH1.3M88_DP> <urn:bldg#bldg.AH1.3M88_DP_2>) qudt:hasUnit unit:SEC .
 (<urn:bldg#bldg.AH1.3M88_DP> <urn:bldg#bldg.AH1.3M88_DP_2>) qudt:hasUnit unit:PERCENT .
@@ -72,7 +72,7 @@
 (<urn:bldg#bldg.AH1.3M88_DP> <urn:bldg#bldg.AH1.3M88_DP_2>) s223:hasRole s223:Role-Supply .
 (<urn:bldg#bldg.AH1.3M88_DP> <urn:bldg#bldg.AH1.3M88_DP_2>) s223:hasRole s223:Role-Return .
 (<urn:bldg#bldg.AH1.3M88_DP> <urn:bldg#bldg.AH1.3M88_DP_2>) s223:hasRole s223:OnOff-Unknown .
-(<urn:bldg#bldg.AH1.3M88_DP> <urn:bldg#bldg.AH1.3M88_DP_2>) s223:hasExternalReference (<urn:bschema-rs:skolem:a000009dc0775d30f473af1b61e64b44> <urn:bschema-rs:skolem:a0019f05e81dcb12fbbc970de2b77af8>) .
+(<urn:bldg#bldg.AH1.3M88_DP> <urn:bldg#bldg.AH1.3M88_DP_2>) s223:hasExternalReference (_:a000009dc0775d30f473af1b61e64b44 _:a0019f05e81dcb12fbbc970de2b77af8) .
 (<urn:bldg#bldg.AH1.3M88_DP> <urn:bldg#bldg.AH1.3M88_DP_2>) a s223:QuantifiableObservableProperty .
 (<urn:bldg#Office_HVAC_Equip_Water_Loop-junction> <urn:bldg#Office_Space_Water_Loop-junction>) s223:cnx (<urn:bldg#SCHW_and_AH1_Water_Loop-junction-out-cp-3>) .
 (<urn:bldg#Office_HVAC_Equip_Water_Loop-junction> <urn:bldg#Office_Space_Water_Loop-junction>) s223:cnx (<urn:bldg#Office_Space_Water_Loop-junction-out-cp-1>) .
@@ -93,18 +93,18 @@
 (<urn:bldg#AH1A_Heating_Coil> <urn:bldg#AH1B_Heating_Coil>) a s223:HeatingCoil .
 (<urn:bldg#bldg.CH2.LOAD> <urn:bldg#bldg.CHW1.CHP3_CT>) qudt:hasUnit unit:A .
 (<urn:bldg#bldg.CH2.LOAD> <urn:bldg#bldg.CHW1.CHP3_CT>) qudt:hasQuantityKind quantitykind:ElectricCurrent .
-(<urn:bldg#bldg.CH2.LOAD> <urn:bldg#bldg.CHW1.CHP3_CT>) s223:hasExternalReference (<urn:bschema-rs:skolem:a000009dc0775d30f473af1b61e64b44> <urn:bschema-rs:skolem:a0019f05e81dcb12fbbc970de2b77af8>) .
+(<urn:bldg#bldg.CH2.LOAD> <urn:bldg#bldg.CHW1.CHP3_CT>) s223:hasExternalReference (_:a000009dc0775d30f473af1b61e64b44 _:a0019f05e81dcb12fbbc970de2b77af8) .
 (<urn:bldg#bldg.CH2.LOAD> <urn:bldg#bldg.CHW1.CHP3_CT>) a s223:QuantifiableObservableProperty .
 (<urn:bldg#bldg.AH2A_RAT> <urn:bldg#bldg.AH2B_RAT>) qudt:hasUnit unit:DEG_F .
 (<urn:bldg#bldg.AH2A_RAT> <urn:bldg#bldg.AH2B_RAT>) s223:hasRole s223:Role-Return .
 (<urn:bldg#bldg.AH2A_RAT> <urn:bldg#bldg.AH2B_RAT>) s223:hasRole s223:Role-Condenser .
 (<urn:bldg#bldg.AH2A_RAT> <urn:bldg#bldg.AH2B_RAT>) s223:hasRole s223:OnOff-Unknown .
-(<urn:bldg#bldg.AH2A_RAT> <urn:bldg#bldg.AH2B_RAT>) s223:hasExternalReference (<urn:bschema-rs:skolem:a000009dc0775d30f473af1b61e64b44> <urn:bschema-rs:skolem:a0019f05e81dcb12fbbc970de2b77af8>) .
+(<urn:bldg#bldg.AH2A_RAT> <urn:bldg#bldg.AH2B_RAT>) s223:hasExternalReference (_:a000009dc0775d30f473af1b61e64b44 _:a0019f05e81dcb12fbbc970de2b77af8) .
 (<urn:bldg#bldg.AH2A_RAT> <urn:bldg#bldg.AH2B_RAT>) a s223:QuantifiableObservableProperty .
 (<urn:bldg#bldg.AH1_RHC-1_VLV_1_POS> <urn:bldg#bldg.AH1_RHC-2_VLV_1_POS>) qudt:hasUnit unit:PERCENT .
 (<urn:bldg#bldg.AH1_RHC-1_VLV_1_POS> <urn:bldg#bldg.AH1_RHC-2_VLV_1_POS>) s223:hasRole s223:Position-Unknown .
 (<urn:bldg#bldg.AH1_RHC-1_VLV_1_POS> <urn:bldg#bldg.AH1_RHC-2_VLV_1_POS>) s223:hasRole s223:OnOff-Unknown .
-(<urn:bldg#bldg.AH1_RHC-1_VLV_1_POS> <urn:bldg#bldg.AH1_RHC-2_VLV_1_POS>) s223:hasExternalReference (<urn:bschema-rs:skolem:a000009dc0775d30f473af1b61e64b44> <urn:bschema-rs:skolem:a0019f05e81dcb12fbbc970de2b77af8>) .
+(<urn:bldg#bldg.AH1_RHC-1_VLV_1_POS> <urn:bldg#bldg.AH1_RHC-2_VLV_1_POS>) s223:hasExternalReference (_:a000009dc0775d30f473af1b61e64b44 _:a0019f05e81dcb12fbbc970de2b77af8) .
 (<urn:bldg#bldg.AH1_RHC-1_VLV_1_POS> <urn:bldg#bldg.AH1_RHC-2_VLV_1_POS>) a s223:QuantifiableObservableProperty .
 (<urn:bldg#bldg.S1-01_AI_3> <urn:bldg#bldg.S1-02_AI_3>) qudt:hasUnit unit:UNITLESS .
 (<urn:bldg#bldg.S1-01_AI_3> <urn:bldg#bldg.S1-02_AI_3>) qudt:hasUnit unit:PERCENT .
@@ -115,7 +115,7 @@
 (<urn:bldg#bldg.S1-01_AI_3> <urn:bldg#bldg.S1-02_AI_3>) s223:hasRole s223:RunStatus-Unknown .
 (<urn:bldg#bldg.S1-01_AI_3> <urn:bldg#bldg.S1-02_AI_3>) s223:hasRole s223:Role-Supply .
 (<urn:bldg#bldg.S1-01_AI_3> <urn:bldg#bldg.S1-02_AI_3>) s223:hasRole s223:OnOff-Unknown .
-(<urn:bldg#bldg.S1-01_AI_3> <urn:bldg#bldg.S1-02_AI_3>) s223:hasExternalReference (<urn:bschema-rs:skolem:a000009dc0775d30f473af1b61e64b44> <urn:bschema-rs:skolem:a0019f05e81dcb12fbbc970de2b77af8>) .
+(<urn:bldg#bldg.S1-01_AI_3> <urn:bldg#bldg.S1-02_AI_3>) s223:hasExternalReference (_:a000009dc0775d30f473af1b61e64b44 _:a0019f05e81dcb12fbbc970de2b77af8) .
 (<urn:bldg#bldg.S1-01_AI_3> <urn:bldg#bldg.S1-02_AI_3>) s223:hasAspect s223:Role-Discharge .
 (<urn:bldg#bldg.S1-01_AI_3> <urn:bldg#bldg.S1-02_AI_3>) s223:hasAspect s223:EnumerationKind-Position .
 (<urn:bldg#bldg.S1-01_AI_3> <urn:bldg#bldg.S1-02_AI_3>) a s223:QuantifiableObservableProperty .
@@ -167,7 +167,7 @@
 (<urn:bldg#bldg.CH1.LCHWT> <urn:bldg#bldg.CH2.LCHWT>) qudt:hasUnit unit:DEG_C .
 (<urn:bldg#bldg.CH1.LCHWT> <urn:bldg#bldg.CH2.LCHWT>) qudt:hasQuantityKind quantitykind:Temperature .
 (<urn:bldg#bldg.CH1.LCHWT> <urn:bldg#bldg.CH2.LCHWT>) s223:hasRole s223:Role-Supply .
-(<urn:bldg#bldg.CH1.LCHWT> <urn:bldg#bldg.CH2.LCHWT>) s223:hasExternalReference (<urn:bschema-rs:skolem:a000009dc0775d30f473af1b61e64b44> <urn:bschema-rs:skolem:a0019f05e81dcb12fbbc970de2b77af8>) .
+(<urn:bldg#bldg.CH1.LCHWT> <urn:bldg#bldg.CH2.LCHWT>) s223:hasExternalReference (_:a000009dc0775d30f473af1b61e64b44 _:a0019f05e81dcb12fbbc970de2b77af8) .
 (<urn:bldg#bldg.CH1.LCHWT> <urn:bldg#bldg.CH2.LCHWT>) s223:hasAspect s223:Role-Discharge .
 (<urn:bldg#bldg.CH1.LCHWT> <urn:bldg#bldg.CH2.LCHWT>) a s223:QuantifiableObservableProperty .
 (<urn:bldg#Energy_Rate> <urn:bldg#Energy_Rate_Device_57018>) qudt:hasUnit unit:W-HR .
@@ -186,7 +186,7 @@
 (<urn:bldg#Energy_Rate> <urn:bldg#Energy_Rate_Device_57018>) s223:hasRole s223:RunStatus-Unknown .
 (<urn:bldg#Energy_Rate> <urn:bldg#Energy_Rate_Device_57018>) s223:hasRole s223:Role-Supply .
 (<urn:bldg#Energy_Rate> <urn:bldg#Energy_Rate_Device_57018>) s223:hasRole s223:Role-Return .
-(<urn:bldg#Energy_Rate> <urn:bldg#Energy_Rate_Device_57018>) s223:hasExternalReference (<urn:bschema-rs:skolem:a000009dc0775d30f473af1b61e64b44> <urn:bschema-rs:skolem:a0019f05e81dcb12fbbc970de2b77af8>) .
+(<urn:bldg#Energy_Rate> <urn:bldg#Energy_Rate_Device_57018>) s223:hasExternalReference (_:a000009dc0775d30f473af1b61e64b44 _:a0019f05e81dcb12fbbc970de2b77af8) .
 (<urn:bldg#Energy_Rate> <urn:bldg#Energy_Rate_Device_57018>) a s223:QuantifiableObservableProperty .
 (<urn:bldg#S1-01_VAV_air-out> <urn:bldg#S1-02_VAV_air-out>) s223:mapsTo (<urn:bldg#S1-01_VAV_reheat-coil-air-out> <urn:bldg#S1-02_VAV_reheat-coil-air-out>) .
 (<urn:bldg#S1-01_VAV_air-out> <urn:bldg#S1-02_VAV_air-out>) s223:hasProperty (<urn:bldg#bldg.S3-01_AI_3> <urn:bldg#bldg.S3-02_AI_3>) .
@@ -273,7 +273,7 @@
 (<urn:bldg#bldg.CHW1.CWP1_RUNTIME> <urn:bldg#bldg.CHW1.CWP2_RUNTIME>) qudt:hasQuantityKind quantitykind:Time .
 (<urn:bldg#bldg.CHW1.CWP1_RUNTIME> <urn:bldg#bldg.CHW1.CWP2_RUNTIME>) qudt:hasQuantityKind quantitykind:ElectricCurrent .
 (<urn:bldg#bldg.CHW1.CWP1_RUNTIME> <urn:bldg#bldg.CHW1.CWP2_RUNTIME>) s223:hasRole s223:OnOff-Unknown .
-(<urn:bldg#bldg.CHW1.CWP1_RUNTIME> <urn:bldg#bldg.CHW1.CWP2_RUNTIME>) s223:hasExternalReference (<urn:bschema-rs:skolem:a000009dc0775d30f473af1b61e64b44> <urn:bschema-rs:skolem:a0019f05e81dcb12fbbc970de2b77af8>) .
+(<urn:bldg#bldg.CHW1.CWP1_RUNTIME> <urn:bldg#bldg.CHW1.CWP2_RUNTIME>) s223:hasExternalReference (_:a000009dc0775d30f473af1b61e64b44 _:a0019f05e81dcb12fbbc970de2b77af8) .
 (<urn:bldg#bldg.CHW1.CWP1_RUNTIME> <urn:bldg#bldg.CHW1.CWP2_RUNTIME>) a s223:QuantifiableObservableProperty .
 (<urn:bldg#bldg.AH2A.SF_CFM> <urn:bldg#bldg.AH2A_MAT>) qudt:hasUnit unit:PERCENT_RH .
 (<urn:bldg#bldg.AH2A.SF_CFM> <urn:bldg#bldg.AH2A_MAT>) qudt:hasUnit unit:PERCENT .
@@ -284,13 +284,13 @@
 (<urn:bldg#bldg.AH2A.SF_CFM> <urn:bldg#bldg.AH2A_MAT>) qudt:hasQuantityKind quantitykind:RelativeHumidity .
 (<urn:bldg#bldg.AH2A.SF_CFM> <urn:bldg#bldg.AH2A_MAT>) s223:hasRole s223:Role-Supply .
 (<urn:bldg#bldg.AH2A.SF_CFM> <urn:bldg#bldg.AH2A_MAT>) s223:hasRole s223:Role-Return .
-(<urn:bldg#bldg.AH2A.SF_CFM> <urn:bldg#bldg.AH2A_MAT>) s223:hasExternalReference (<urn:bschema-rs:skolem:a000009dc0775d30f473af1b61e64b44> <urn:bschema-rs:skolem:a0019f05e81dcb12fbbc970de2b77af8>) .
+(<urn:bldg#bldg.AH2A.SF_CFM> <urn:bldg#bldg.AH2A_MAT>) s223:hasExternalReference (_:a000009dc0775d30f473af1b61e64b44 _:a0019f05e81dcb12fbbc970de2b77af8) .
 (<urn:bldg#bldg.AH2A.SF_CFM> <urn:bldg#bldg.AH2A_MAT>) s223:hasAspect s223:Role-Discharge .
 (<urn:bldg#bldg.AH2A.SF_CFM> <urn:bldg#bldg.AH2A_MAT>) a s223:QuantifiableObservableProperty .
 (<urn:bldg#bldg.AH1A.SF_VFD_POWER> <urn:bldg#bldg.AH1B.SF_VFD_POWER>) qudt:hasUnit unit:PERCENT .
 (<urn:bldg#bldg.AH1A.SF_VFD_POWER> <urn:bldg#bldg.AH1B.SF_VFD_POWER>) qudt:hasUnit unit:HP .
 (<urn:bldg#bldg.AH1A.SF_VFD_POWER> <urn:bldg#bldg.AH1B.SF_VFD_POWER>) qudt:hasQuantityKind quantitykind:Power .
-(<urn:bldg#bldg.AH1A.SF_VFD_POWER> <urn:bldg#bldg.AH1B.SF_VFD_POWER>) s223:hasExternalReference (<urn:bschema-rs:skolem:a000009dc0775d30f473af1b61e64b44> <urn:bschema-rs:skolem:a0019f05e81dcb12fbbc970de2b77af8>) .
+(<urn:bldg#bldg.AH1A.SF_VFD_POWER> <urn:bldg#bldg.AH1B.SF_VFD_POWER>) s223:hasExternalReference (_:a000009dc0775d30f473af1b61e64b44 _:a0019f05e81dcb12fbbc970de2b77af8) .
 (<urn:bldg#bldg.AH1A.SF_VFD_POWER> <urn:bldg#bldg.AH1B.SF_VFD_POWER>) a s223:QuantifiableObservableProperty .
 (<urn:bldg#Chilled_Water_System-junction>) s223:cnx (<urn:bldg#Chilled_Water_System-junction-out-cp-7>) .
 (<urn:bldg#Chilled_Water_System-junction>) s223:cnx (<urn:bldg#Chilled_Water_System-junction-out-cp-4> <urn:bldg#Chilled_Water_System-junction-out-cp-6>) .
@@ -331,7 +331,7 @@
 (<urn:bldg#AH1A_Heating_Coil_Valve> <urn:bldg#AH1B_Heating_Coil_Valve>) s223:hasProperty (<urn:bldg#bldg.AH1A_HCV.LOOP> <urn:bldg#bldg.AH1A_HCV>) .
 (<urn:bldg#AH1A_Heating_Coil_Valve> <urn:bldg#AH1B_Heating_Coil_Valve>) a s223:Valve .
 (<urn:bldg#Aux_Input_Total> <urn:bldg#Aux_Input_Total_Device_57018>) qudt:hasUnit unit:UNITLESS .
-(<urn:bldg#Aux_Input_Total> <urn:bldg#Aux_Input_Total_Device_57018>) s223:hasExternalReference (<urn:bschema-rs:skolem:a000009dc0775d30f473af1b61e64b44> <urn:bschema-rs:skolem:a0019f05e81dcb12fbbc970de2b77af8>) .
+(<urn:bldg#Aux_Input_Total> <urn:bldg#Aux_Input_Total_Device_57018>) s223:hasExternalReference (_:a000009dc0775d30f473af1b61e64b44 _:a0019f05e81dcb12fbbc970de2b77af8) .
 (<urn:bldg#Aux_Input_Total> <urn:bldg#Aux_Input_Total_Device_57018>) a s223:QuantifiableProperty .
 (<urn:bldg#bldg.AH1A.SF.SPEED> <urn:bldg#bldg.AH1A.SF_VFD_CURRENT>) qudt:hasUnit unit:UNITLESS .
 (<urn:bldg#bldg.AH1A.SF.SPEED> <urn:bldg#bldg.AH1A.SF_VFD_CURRENT>) qudt:hasUnit unit:REV-PER-MIN .
@@ -344,7 +344,7 @@
 (<urn:bldg#bldg.AH1A.SF.SPEED> <urn:bldg#bldg.AH1A.SF_VFD_CURRENT>) qudt:hasQuantityKind quantitykind:ElectricCurrent .
 (<urn:bldg#bldg.AH1A.SF.SPEED> <urn:bldg#bldg.AH1A.SF_VFD_CURRENT>) s223:hasRole s223:RunStatus-Unknown .
 (<urn:bldg#bldg.AH1A.SF.SPEED> <urn:bldg#bldg.AH1A.SF_VFD_CURRENT>) s223:hasRole s223:EnumerationKind-Speed .
-(<urn:bldg#bldg.AH1A.SF.SPEED> <urn:bldg#bldg.AH1A.SF_VFD_CURRENT>) s223:hasExternalReference (<urn:bschema-rs:skolem:a000009dc0775d30f473af1b61e64b44> <urn:bschema-rs:skolem:a0019f05e81dcb12fbbc970de2b77af8>) .
+(<urn:bldg#bldg.AH1A.SF.SPEED> <urn:bldg#bldg.AH1A.SF_VFD_CURRENT>) s223:hasExternalReference (_:a000009dc0775d30f473af1b61e64b44 _:a0019f05e81dcb12fbbc970de2b77af8) .
 (<urn:bldg#bldg.AH1A.SF.SPEED> <urn:bldg#bldg.AH1A.SF_VFD_CURRENT>) a s223:QuantifiableObservableProperty .
 (<urn:bldg#TEST.ACTCHWDP> <urn:bldg#TEST.ACTCWDP>) qudt:hasUnit unit:PERCENT .
 (<urn:bldg#TEST.ACTCHWDP> <urn:bldg#TEST.ACTCWDP>) qudt:hasUnit unit:MicroS .
@@ -363,7 +363,7 @@
 (<urn:bldg#TEST.ACTCHWDP> <urn:bldg#TEST.ACTCWDP>) s223:hasRole s223:Role-Supply .
 (<urn:bldg#TEST.ACTCHWDP> <urn:bldg#TEST.ACTCWDP>) s223:hasRole s223:Role-Condenser .
 (<urn:bldg#TEST.ACTCHWDP> <urn:bldg#TEST.ACTCWDP>) s223:hasRole s223:OnOff-Unknown .
-(<urn:bldg#TEST.ACTCHWDP> <urn:bldg#TEST.ACTCWDP>) s223:hasExternalReference (<urn:bschema-rs:skolem:a000009dc0775d30f473af1b61e64b44> <urn:bschema-rs:skolem:a0019f05e81dcb12fbbc970de2b77af8>) .
+(<urn:bldg#TEST.ACTCHWDP> <urn:bldg#TEST.ACTCWDP>) s223:hasExternalReference (_:a000009dc0775d30f473af1b61e64b44 _:a0019f05e81dcb12fbbc970de2b77af8) .
 (<urn:bldg#TEST.ACTCHWDP> <urn:bldg#TEST.ACTCWDP>) a s223:QuantifiableObservableProperty .
 (<urn:bldg#reheat-coil-return-water-temp_01eceea5> <urn:bldg#reheat-coil-return-water-temp_0281d2af>) qudt:hasUnit unit:DEG_C .
 (<urn:bldg#reheat-coil-return-water-temp_01eceea5> <urn:bldg#reheat-coil-return-water-temp_0281d2af>) qudt:hasQuantityKind quantitykind:Temperature .
@@ -372,7 +372,7 @@
 (<urn:bldg#bldg.S3-01_AI_3> <urn:bldg#bldg.S3-02_AI_3>) qudt:hasUnit unit:DEG_C .
 (<urn:bldg#bldg.S3-01_AI_3> <urn:bldg#bldg.S3-02_AI_3>) qudt:hasQuantityKind quantitykind:Temperature .
 (<urn:bldg#bldg.S3-01_AI_3> <urn:bldg#bldg.S3-02_AI_3>) s223:hasRole s223:Role-Supply .
-(<urn:bldg#bldg.S3-01_AI_3> <urn:bldg#bldg.S3-02_AI_3>) s223:hasExternalReference (<urn:bschema-rs:skolem:a000009dc0775d30f473af1b61e64b44> <urn:bschema-rs:skolem:a0019f05e81dcb12fbbc970de2b77af8>) .
+(<urn:bldg#bldg.S3-01_AI_3> <urn:bldg#bldg.S3-02_AI_3>) s223:hasExternalReference (_:a000009dc0775d30f473af1b61e64b44 _:a0019f05e81dcb12fbbc970de2b77af8) .
 (<urn:bldg#bldg.S3-01_AI_3> <urn:bldg#bldg.S3-02_AI_3>) s223:hasAspect s223:Role-Discharge .
 (<urn:bldg#bldg.S3-01_AI_3> <urn:bldg#bldg.S3-02_AI_3>) a s223:QuantifiableObservableProperty .
 (<urn:bldg#bldg.S1-22_AI_3> <urn:bldg#bldg.S1-23_AI_3>) qudt:hasUnit unit:PERCENT .
@@ -381,35 +381,35 @@
 (<urn:bldg#bldg.S1-22_AI_3> <urn:bldg#bldg.S1-23_AI_3>) qudt:hasUnit unit:DEG_C .
 (<urn:bldg#bldg.S1-22_AI_3> <urn:bldg#bldg.S1-23_AI_3>) qudt:hasQuantityKind quantitykind:Temperature .
 (<urn:bldg#bldg.S1-22_AI_3> <urn:bldg#bldg.S1-23_AI_3>) s223:hasRole s223:Role-Supply .
-(<urn:bldg#bldg.S1-22_AI_3> <urn:bldg#bldg.S1-23_AI_3>) s223:hasExternalReference (<urn:bschema-rs:skolem:a000009dc0775d30f473af1b61e64b44> <urn:bschema-rs:skolem:a0019f05e81dcb12fbbc970de2b77af8>) .
+(<urn:bldg#bldg.S1-22_AI_3> <urn:bldg#bldg.S1-23_AI_3>) s223:hasExternalReference (_:a000009dc0775d30f473af1b61e64b44 _:a0019f05e81dcb12fbbc970de2b77af8) .
 (<urn:bldg#bldg.S1-22_AI_3> <urn:bldg#bldg.S1-23_AI_3>) s223:hasAspect s223:Role-Discharge .
 (<urn:bldg#bldg.S1-22_AI_3> <urn:bldg#bldg.S1-23_AI_3>) a s223:QuantifiableObservableProperty .
 (<urn:bldg#bldg.HWP1_VFD_FREQ_OUTPUT> <urn:bldg#bldg.HWP1_VFD_SPEED>) qudt:hasUnit unit:REV-PER-MIN .
 (<urn:bldg#bldg.HWP1_VFD_FREQ_OUTPUT> <urn:bldg#bldg.HWP1_VFD_SPEED>) qudt:hasUnit unit:HZ .
 (<urn:bldg#bldg.HWP1_VFD_FREQ_OUTPUT> <urn:bldg#bldg.HWP1_VFD_SPEED>) s223:hasRole s223:EnumerationKind-Speed .
-(<urn:bldg#bldg.HWP1_VFD_FREQ_OUTPUT> <urn:bldg#bldg.HWP1_VFD_SPEED>) s223:hasExternalReference (<urn:bschema-rs:skolem:a000009dc0775d30f473af1b61e64b44> <urn:bschema-rs:skolem:a0019f05e81dcb12fbbc970de2b77af8>) .
+(<urn:bldg#bldg.HWP1_VFD_FREQ_OUTPUT> <urn:bldg#bldg.HWP1_VFD_SPEED>) s223:hasExternalReference (_:a000009dc0775d30f473af1b61e64b44 _:a0019f05e81dcb12fbbc970de2b77af8) .
 (<urn:bldg#bldg.HWP1_VFD_FREQ_OUTPUT> <urn:bldg#bldg.HWP1_VFD_SPEED>) a s223:QuantifiableObservableProperty .
 (<urn:bldg#bldg.CHW2.MULTISTACK_ACTLOADLIMIT> <urn:bldg#bldg.S3-01_FLOW>) qudt:hasUnit unit:PERCENT .
 (<urn:bldg#bldg.CHW2.MULTISTACK_ACTLOADLIMIT> <urn:bldg#bldg.S3-01_FLOW>) qudt:hasQuantityKind quantitykind:Power .
-(<urn:bldg#bldg.CHW2.MULTISTACK_ACTLOADLIMIT> <urn:bldg#bldg.S3-01_FLOW>) s223:hasExternalReference (<urn:bschema-rs:skolem:a000009dc0775d30f473af1b61e64b44> <urn:bschema-rs:skolem:a0019f05e81dcb12fbbc970de2b77af8>) .
+(<urn:bldg#bldg.CHW2.MULTISTACK_ACTLOADLIMIT> <urn:bldg#bldg.S3-01_FLOW>) s223:hasExternalReference (_:a000009dc0775d30f473af1b61e64b44 _:a0019f05e81dcb12fbbc970de2b77af8) .
 (<urn:bldg#bldg.CHW2.MULTISTACK_ACTLOADLIMIT> <urn:bldg#bldg.S3-01_FLOW>) a s223:QuantifiableObservableProperty .
 (<urn:bldg#bldg.CHW.CHWRT.PCW_TEMP> <urn:bldg#bldg.CHW2_CWST>) qudt:hasUnit unit:PERCENT .
 (<urn:bldg#bldg.CHW.CHWRT.PCW_TEMP> <urn:bldg#bldg.CHW2_CWST>) qudt:hasUnit unit:DEG_F .
 (<urn:bldg#bldg.CHW.CHWRT.PCW_TEMP> <urn:bldg#bldg.CHW2_CWST>) s223:hasRole s223:Role-Supply .
 (<urn:bldg#bldg.CHW.CHWRT.PCW_TEMP> <urn:bldg#bldg.CHW2_CWST>) s223:hasRole s223:Role-Condenser .
 (<urn:bldg#bldg.CHW.CHWRT.PCW_TEMP> <urn:bldg#bldg.CHW2_CWST>) s223:hasRole s223:OnOff-Unknown .
-(<urn:bldg#bldg.CHW.CHWRT.PCW_TEMP> <urn:bldg#bldg.CHW2_CWST>) s223:hasExternalReference (<urn:bschema-rs:skolem:a000009dc0775d30f473af1b61e64b44> <urn:bschema-rs:skolem:a0019f05e81dcb12fbbc970de2b77af8>) .
+(<urn:bldg#bldg.CHW.CHWRT.PCW_TEMP> <urn:bldg#bldg.CHW2_CWST>) s223:hasExternalReference (_:a000009dc0775d30f473af1b61e64b44 _:a0019f05e81dcb12fbbc970de2b77af8) .
 (<urn:bldg#bldg.CHW.CHWRT.PCW_TEMP> <urn:bldg#bldg.CHW2_CWST>) a s223:QuantifiableObservableProperty .
 (<urn:bldg#bldg.S1-01_CTL_STPT> <urn:bldg#bldg.S1-02_CTL_STPT>) qudt:hasUnit unit:DEG_F .
 (<urn:bldg#bldg.S1-01_CTL_STPT> <urn:bldg#bldg.S1-02_CTL_STPT>) qudt:hasUnit unit:DEG_C .
 (<urn:bldg#bldg.S1-01_CTL_STPT> <urn:bldg#bldg.S1-02_CTL_STPT>) qudt:hasQuantityKind quantitykind:Temperature .
 (<urn:bldg#bldg.S1-01_CTL_STPT> <urn:bldg#bldg.S1-02_CTL_STPT>) s223:hasRole s223:Role-Supply .
-(<urn:bldg#bldg.S1-01_CTL_STPT> <urn:bldg#bldg.S1-02_CTL_STPT>) s223:hasExternalReference (<urn:bschema-rs:skolem:a000009dc0775d30f473af1b61e64b44> <urn:bschema-rs:skolem:a0019f05e81dcb12fbbc970de2b77af8>) .
+(<urn:bldg#bldg.S1-01_CTL_STPT> <urn:bldg#bldg.S1-02_CTL_STPT>) s223:hasExternalReference (_:a000009dc0775d30f473af1b61e64b44 _:a0019f05e81dcb12fbbc970de2b77af8) .
 (<urn:bldg#bldg.S1-01_CTL_STPT> <urn:bldg#bldg.S1-02_CTL_STPT>) a s223:QuantifiableActuatableProperty .
 (<urn:bldg#bldg.CHW1.CWP1.VFD_ENA.DIS_CMD> <urn:bldg#bldg.CHW1.CWP1.VFD_RUN.STOP_CMD>) qudt:hasUnit unit:UNITLESS .
 (<urn:bldg#bldg.CHW1.CWP1.VFD_ENA.DIS_CMD> <urn:bldg#bldg.CHW1.CWP1.VFD_RUN.STOP_CMD>) s223:hasRole s223:Role-Supply .
 (<urn:bldg#bldg.CHW1.CWP1.VFD_ENA.DIS_CMD> <urn:bldg#bldg.CHW1.CWP1.VFD_RUN.STOP_CMD>) s223:hasRole s223:Aspect-Command .
-(<urn:bldg#bldg.CHW1.CWP1.VFD_ENA.DIS_CMD> <urn:bldg#bldg.CHW1.CWP1.VFD_RUN.STOP_CMD>) s223:hasExternalReference (<urn:bschema-rs:skolem:a000009dc0775d30f473af1b61e64b44> <urn:bschema-rs:skolem:a0019f05e81dcb12fbbc970de2b77af8>) .
+(<urn:bldg#bldg.CHW1.CWP1.VFD_ENA.DIS_CMD> <urn:bldg#bldg.CHW1.CWP1.VFD_RUN.STOP_CMD>) s223:hasExternalReference (_:a000009dc0775d30f473af1b61e64b44 _:a0019f05e81dcb12fbbc970de2b77af8) .
 (<urn:bldg#bldg.CHW1.CWP1.VFD_ENA.DIS_CMD> <urn:bldg#bldg.CHW1.CWP1.VFD_RUN.STOP_CMD>) a s223:QuantifiableActuatableProperty .
 (<urn:bldg#TEST.ACTCHWDPSP> <urn:bldg#TEST.ACTCWDPSP>) qudt:hasUnit unit:UNITLESS .
 (<urn:bldg#TEST.ACTCHWDPSP> <urn:bldg#TEST.ACTCWDPSP>) qudt:hasUnit unit:PERCENT .
@@ -422,7 +422,7 @@
 (<urn:bldg#TEST.ACTCHWDPSP> <urn:bldg#TEST.ACTCWDPSP>) s223:hasRole s223:Role-Condenser .
 (<urn:bldg#TEST.ACTCHWDPSP> <urn:bldg#TEST.ACTCWDPSP>) s223:hasRole s223:OnOff-Unknown .
 (<urn:bldg#TEST.ACTCHWDPSP> <urn:bldg#TEST.ACTCWDPSP>) s223:hasRole s223:Aspect-Command .
-(<urn:bldg#TEST.ACTCHWDPSP> <urn:bldg#TEST.ACTCWDPSP>) s223:hasExternalReference (<urn:bschema-rs:skolem:a000009dc0775d30f473af1b61e64b44> <urn:bschema-rs:skolem:a0019f05e81dcb12fbbc970de2b77af8>) .
+(<urn:bldg#TEST.ACTCHWDPSP> <urn:bldg#TEST.ACTCWDPSP>) s223:hasExternalReference (_:a000009dc0775d30f473af1b61e64b44 _:a0019f05e81dcb12fbbc970de2b77af8) .
 (<urn:bldg#TEST.ACTCHWDPSP> <urn:bldg#TEST.ACTCWDPSP>) a s223:QuantifiableActuatableProperty .
 (<urn:bldg#CHP1> <urn:bldg#CHP2>) s223:hasRole s223:Role-Cooling .
 (<urn:bldg#CHP1> <urn:bldg#CHP2>) s223:hasProperty (<urn:bldg#bldg.CHW2.CHP4_RUNTIME> <urn:bldg#bldg.CHW2.CHP5_RUNTIME>) .
@@ -434,7 +434,7 @@
 (<urn:bldg#bldg.SW.MSA.MAIN.PWR_REAL_3_P> <urn:bldg#bldg.SW.MSB.MAIN.PWR_REAL_3_P>) qudt:hasUnit unit:W .
 (<urn:bldg#bldg.SW.MSA.MAIN.PWR_REAL_3_P> <urn:bldg#bldg.SW.MSB.MAIN.PWR_REAL_3_P>) qudt:hasUnit unit:KiloW .
 (<urn:bldg#bldg.SW.MSA.MAIN.PWR_REAL_3_P> <urn:bldg#bldg.SW.MSB.MAIN.PWR_REAL_3_P>) qudt:hasQuantityKind quantitykind:ActivePower .
-(<urn:bldg#bldg.SW.MSA.MAIN.PWR_REAL_3_P> <urn:bldg#bldg.SW.MSB.MAIN.PWR_REAL_3_P>) s223:hasExternalReference (<urn:bschema-rs:skolem:a000009dc0775d30f473af1b61e64b44> <urn:bschema-rs:skolem:a0019f05e81dcb12fbbc970de2b77af8>) .
+(<urn:bldg#bldg.SW.MSA.MAIN.PWR_REAL_3_P> <urn:bldg#bldg.SW.MSB.MAIN.PWR_REAL_3_P>) s223:hasExternalReference (_:a000009dc0775d30f473af1b61e64b44 _:a0019f05e81dcb12fbbc970de2b77af8) .
 (<urn:bldg#bldg.SW.MSA.MAIN.PWR_REAL_3_P> <urn:bldg#bldg.SW.MSB.MAIN.PWR_REAL_3_P>) a s223:QuantifiableObservableProperty .
 (<urn:bldg#bldg.SW.MSA.MAIN.PWR_REAL_3_P> <urn:bldg#bldg.SW.MSB.MAIN.PWR_REAL_3_P>) a s223:Property .
 (<urn:bldg#AH1A_Isolation_Damper-out> <urn:bldg#AH1B_Isolation_Damper-out>) s223:mapsTo (<urn:bldg#AH1A-sa-out> <urn:bldg#AH1B-sa-out>) .
@@ -598,7 +598,7 @@
 (<urn:bldg#AH2A-ea-out> <urn:bldg#AH2A-ra-in>) s223:hasProperty rdfs:Resource .
 (<urn:bldg#bldg.MDC.CAC07_HIGH_HUMID> <urn:bldg#bldg.MDC.CAC07_HIGH_TEMP>) qudt:hasUnit unit:PERCENT .
 (<urn:bldg#bldg.MDC.CAC07_HIGH_HUMID> <urn:bldg#bldg.MDC.CAC07_HIGH_TEMP>) qudt:hasUnit unit:DEG_F .
-(<urn:bldg#bldg.MDC.CAC07_HIGH_HUMID> <urn:bldg#bldg.MDC.CAC07_HIGH_TEMP>) s223:hasExternalReference (<urn:bschema-rs:skolem:a000009dc0775d30f473af1b61e64b44> <urn:bschema-rs:skolem:a0019f05e81dcb12fbbc970de2b77af8>) .
+(<urn:bldg#bldg.MDC.CAC07_HIGH_HUMID> <urn:bldg#bldg.MDC.CAC07_HIGH_TEMP>) s223:hasExternalReference (_:a000009dc0775d30f473af1b61e64b44 _:a0019f05e81dcb12fbbc970de2b77af8) .
 (<urn:bldg#bldg.MDC.CAC07_HIGH_HUMID> <urn:bldg#bldg.MDC.CAC07_HIGH_TEMP>) a s223:QuantifiableProperty .
 (<urn:bldg#bldg.AH1A.SF_VFD_DRV_ACT_DI_5>) qudt:hasUnit unit:PERCENT .
 (<urn:bldg#bldg.AH1A.SF_VFD_DRV_ACT_DI_5>) s223:hasRole s223:RunStatus-Unknown .
@@ -616,16 +616,16 @@
 (<urn:bldg#discharge-air-flow_50184025> <urn:bldg#discharge-air-flow_84aa4072>) a s223:QuantifiableObservableProperty .
 (<urn:bldg#bldg.SW.MSA.ATS-E01_PEAK_DEMAND> <urn:bldg#bldg.SW.MSA.ATS-E1.PEAK_DEMAND>) qudt:hasUnit unit:W .
 (<urn:bldg#bldg.SW.MSA.ATS-E01_PEAK_DEMAND> <urn:bldg#bldg.SW.MSA.ATS-E1.PEAK_DEMAND>) qudt:hasQuantityKind quantitykind:Power .
-(<urn:bldg#bldg.SW.MSA.ATS-E01_PEAK_DEMAND> <urn:bldg#bldg.SW.MSA.ATS-E1.PEAK_DEMAND>) s223:hasExternalReference (<urn:bschema-rs:skolem:a000009dc0775d30f473af1b61e64b44> <urn:bschema-rs:skolem:a0019f05e81dcb12fbbc970de2b77af8>) .
+(<urn:bldg#bldg.SW.MSA.ATS-E01_PEAK_DEMAND> <urn:bldg#bldg.SW.MSA.ATS-E1.PEAK_DEMAND>) s223:hasExternalReference (_:a000009dc0775d30f473af1b61e64b44 _:a0019f05e81dcb12fbbc970de2b77af8) .
 (<urn:bldg#bldg.SW.MSA.ATS-E01_PEAK_DEMAND> <urn:bldg#bldg.SW.MSA.ATS-E1.PEAK_DEMAND>) a s223:QuantifiableObservableProperty .
 (<urn:bldg#bldg.SCHWP1_RUNTIME> <urn:bldg#bldg.SCHWP2_RUNTIME>) qudt:hasUnit unit:SEC .
-(<urn:bldg#bldg.SCHWP1_RUNTIME> <urn:bldg#bldg.SCHWP2_RUNTIME>) s223:hasExternalReference (<urn:bschema-rs:skolem:a000009dc0775d30f473af1b61e64b44> <urn:bschema-rs:skolem:a0019f05e81dcb12fbbc970de2b77af8>) .
+(<urn:bldg#bldg.SCHWP1_RUNTIME> <urn:bldg#bldg.SCHWP2_RUNTIME>) s223:hasExternalReference (_:a000009dc0775d30f473af1b61e64b44 _:a0019f05e81dcb12fbbc970de2b77af8) .
 (<urn:bldg#bldg.SCHWP1_RUNTIME> <urn:bldg#bldg.SCHWP2_RUNTIME>) a s223:QuantifiableObservableProperty .
 (<urn:bldg#bldg.RAH10_CFM> <urn:bldg#bldg.RAH10_SAT>) qudt:hasUnit unit:FT3-PER-MIN .
 (<urn:bldg#bldg.RAH10_CFM> <urn:bldg#bldg.RAH10_SAT>) qudt:hasUnit unit:DEG_F .
 (<urn:bldg#bldg.RAH10_CFM> <urn:bldg#bldg.RAH10_SAT>) qudt:hasQuantityKind quantitykind:VolumeFlowRate .
 (<urn:bldg#bldg.RAH10_CFM> <urn:bldg#bldg.RAH10_SAT>) s223:hasRole s223:Role-Supply .
-(<urn:bldg#bldg.RAH10_CFM> <urn:bldg#bldg.RAH10_SAT>) s223:hasExternalReference (<urn:bschema-rs:skolem:a000009dc0775d30f473af1b61e64b44> <urn:bschema-rs:skolem:a0019f05e81dcb12fbbc970de2b77af8>) .
+(<urn:bldg#bldg.RAH10_CFM> <urn:bldg#bldg.RAH10_SAT>) s223:hasExternalReference (_:a000009dc0775d30f473af1b61e64b44 _:a0019f05e81dcb12fbbc970de2b77af8) .
 (<urn:bldg#bldg.RAH10_CFM> <urn:bldg#bldg.RAH10_SAT>) a s223:QuantifiableObservableProperty .
 (<urn:bldg#bldg.KW.TOTAL> <urn:bldg#bldg.KWH.TOTAL>) qudt:hasUnit unit:W .
 (<urn:bldg#bldg.KW.TOTAL> <urn:bldg#bldg.KWH.TOTAL>) qudt:hasUnit unit:V-A_Reactive .
@@ -638,22 +638,22 @@
 (<urn:bldg#bldg.KW.TOTAL> <urn:bldg#bldg.KWH.TOTAL>) qudt:hasQuantityKind quantitykind:ReactivePower .
 (<urn:bldg#bldg.KW.TOTAL> <urn:bldg#bldg.KWH.TOTAL>) qudt:hasQuantityKind quantitykind:ElectricPower .
 (<urn:bldg#bldg.KW.TOTAL> <urn:bldg#bldg.KWH.TOTAL>) qudt:hasQuantityKind quantitykind:ActivePower .
-(<urn:bldg#bldg.KW.TOTAL> <urn:bldg#bldg.KWH.TOTAL>) s223:hasExternalReference (<urn:bschema-rs:skolem:a000009dc0775d30f473af1b61e64b44> <urn:bschema-rs:skolem:a0019f05e81dcb12fbbc970de2b77af8>) .
+(<urn:bldg#bldg.KW.TOTAL> <urn:bldg#bldg.KWH.TOTAL>) s223:hasExternalReference (_:a000009dc0775d30f473af1b61e64b44 _:a0019f05e81dcb12fbbc970de2b77af8) .
 (<urn:bldg#bldg.KW.TOTAL> <urn:bldg#bldg.KWH.TOTAL>) a s223:QuantifiableObservableProperty .
 (<urn:bldg#Mode_1_Mode_2_indication_Device_57018> <urn:bldg#Operating_Mode_Device_57018>) qudt:hasUnit unit:UNITLESS .
 (<urn:bldg#Mode_1_Mode_2_indication_Device_57018> <urn:bldg#Operating_Mode_Device_57018>) s223:hasRole s223:RunStatus-Unknown .
 (<urn:bldg#Mode_1_Mode_2_indication_Device_57018> <urn:bldg#Operating_Mode_Device_57018>) a s223:QuantifiableObservableProperty .
 (<urn:bldg#bldg.ELA_KW> <urn:bldg#bldg.ELA_TOTAL.KW>) qudt:hasUnit unit:KiloW .
 (<urn:bldg#bldg.ELA_KW> <urn:bldg#bldg.ELA_TOTAL.KW>) qudt:hasQuantityKind quantitykind:ElectricPower .
-(<urn:bldg#bldg.ELA_KW> <urn:bldg#bldg.ELA_TOTAL.KW>) s223:hasExternalReference (<urn:bschema-rs:skolem:a000009dc0775d30f473af1b61e64b44> <urn:bschema-rs:skolem:a0019f05e81dcb12fbbc970de2b77af8>) .
+(<urn:bldg#bldg.ELA_KW> <urn:bldg#bldg.ELA_TOTAL.KW>) s223:hasExternalReference (_:a000009dc0775d30f473af1b61e64b44 _:a0019f05e81dcb12fbbc970de2b77af8) .
 (<urn:bldg#bldg.ELA_KW> <urn:bldg#bldg.ELA_TOTAL.KW>) a s223:QuantifiableObservableProperty .
 (<urn:bldg#bldg.EF1_CFM> <urn:bldg#bldg.EF2_CFM>) qudt:hasUnit unit:FT3-PER-SEC .
 (<urn:bldg#bldg.EF1_CFM> <urn:bldg#bldg.EF2_CFM>) qudt:hasQuantityKind quantitykind:VolumeFlowRate .
-(<urn:bldg#bldg.EF1_CFM> <urn:bldg#bldg.EF2_CFM>) s223:hasExternalReference (<urn:bschema-rs:skolem:a000009dc0775d30f473af1b61e64b44> <urn:bschema-rs:skolem:a0019f05e81dcb12fbbc970de2b77af8>) .
+(<urn:bldg#bldg.EF1_CFM> <urn:bldg#bldg.EF2_CFM>) s223:hasExternalReference (_:a000009dc0775d30f473af1b61e64b44 _:a0019f05e81dcb12fbbc970de2b77af8) .
 (<urn:bldg#bldg.EF1_CFM> <urn:bldg#bldg.EF2_CFM>) a s223:QuantifiableObservableProperty .
 (<urn:bldg#bldg.DEM.CR26A.CONSUMPTN_HI> <urn:bldg#bldg.DEM.CR26A.CONSUMPTN_LO>) qudt:hasUnit unit:W-HR .
 (<urn:bldg#bldg.DEM.CR26A.CONSUMPTN_HI> <urn:bldg#bldg.DEM.CR26A.CONSUMPTN_LO>) qudt:hasQuantityKind quantitykind:Power .
-(<urn:bldg#bldg.DEM.CR26A.CONSUMPTN_HI> <urn:bldg#bldg.DEM.CR26A.CONSUMPTN_LO>) s223:hasExternalReference (<urn:bschema-rs:skolem:a000009dc0775d30f473af1b61e64b44> <urn:bschema-rs:skolem:a0019f05e81dcb12fbbc970de2b77af8>) .
+(<urn:bldg#bldg.DEM.CR26A.CONSUMPTN_HI> <urn:bldg#bldg.DEM.CR26A.CONSUMPTN_LO>) s223:hasExternalReference (_:a000009dc0775d30f473af1b61e64b44 _:a0019f05e81dcb12fbbc970de2b77af8) .
 (<urn:bldg#bldg.DEM.CR26A.CONSUMPTN_HI> <urn:bldg#bldg.DEM.CR26A.CONSUMPTN_LO>) a s223:QuantifiableObservableProperty .
 (<urn:bldg#bldg.DEM.CR26A.APPARENT_PWR> <urn:bldg#bldg.DEM.CR26A.DEMAND>) qudt:hasUnit unit:V .
 (<urn:bldg#bldg.DEM.CR26A.APPARENT_PWR> <urn:bldg#bldg.DEM.CR26A.DEMAND>) qudt:hasUnit unit:KiloW-HR .
@@ -664,16 +664,16 @@
 (<urn:bldg#bldg.DEM.CR26A.APPARENT_PWR> <urn:bldg#bldg.DEM.CR26A.DEMAND>) qudt:hasQuantityKind quantitykind:ReactivePower .
 (<urn:bldg#bldg.DEM.CR26A.APPARENT_PWR> <urn:bldg#bldg.DEM.CR26A.DEMAND>) qudt:hasQuantityKind quantitykind:ElectricPower .
 (<urn:bldg#bldg.DEM.CR26A.APPARENT_PWR> <urn:bldg#bldg.DEM.CR26A.DEMAND>) qudt:hasQuantityKind quantitykind:ActivePower .
-(<urn:bldg#bldg.DEM.CR26A.APPARENT_PWR> <urn:bldg#bldg.DEM.CR26A.DEMAND>) s223:hasExternalReference (<urn:bschema-rs:skolem:a000009dc0775d30f473af1b61e64b44> <urn:bschema-rs:skolem:a0019f05e81dcb12fbbc970de2b77af8>) .
+(<urn:bldg#bldg.DEM.CR26A.APPARENT_PWR> <urn:bldg#bldg.DEM.CR26A.DEMAND>) s223:hasExternalReference (_:a000009dc0775d30f473af1b61e64b44 _:a0019f05e81dcb12fbbc970de2b77af8) .
 (<urn:bldg#bldg.DEM.CR26A.APPARENT_PWR> <urn:bldg#bldg.DEM.CR26A.DEMAND>) a s223:QuantifiableObservableProperty .
 (<urn:bldg#bldg.CHW2.CHP4_RUNTIME> <urn:bldg#bldg.CHW2.CHP5_RUNTIME>) qudt:hasUnit unit:HR .
 (<urn:bldg#bldg.CHW2.CHP4_RUNTIME> <urn:bldg#bldg.CHW2.CHP5_RUNTIME>) qudt:hasQuantityKind quantitykind:Time .
 (<urn:bldg#bldg.CHW2.CHP4_RUNTIME> <urn:bldg#bldg.CHW2.CHP5_RUNTIME>) s223:hasRole s223:OnOff-Unknown .
-(<urn:bldg#bldg.CHW2.CHP4_RUNTIME> <urn:bldg#bldg.CHW2.CHP5_RUNTIME>) s223:hasExternalReference (<urn:bschema-rs:skolem:a000009dc0775d30f473af1b61e64b44> <urn:bschema-rs:skolem:a0019f05e81dcb12fbbc970de2b77af8>) .
+(<urn:bldg#bldg.CHW2.CHP4_RUNTIME> <urn:bldg#bldg.CHW2.CHP5_RUNTIME>) s223:hasExternalReference (_:a000009dc0775d30f473af1b61e64b44 _:a0019f05e81dcb12fbbc970de2b77af8) .
 (<urn:bldg#bldg.CHW2.CHP4_RUNTIME> <urn:bldg#bldg.CHW2.CHP5_RUNTIME>) a s223:QuantifiableObservableProperty .
 (<urn:bldg#bldg.CHW1.CWP2_CT> <urn:bldg#bldg.CHW1.CWP4_CT>) qudt:hasUnit unit:A .
 (<urn:bldg#bldg.CHW1.CWP2_CT> <urn:bldg#bldg.CHW1.CWP4_CT>) qudt:hasQuantityKind quantitykind:ElectricCurrent .
-(<urn:bldg#bldg.CHW1.CWP2_CT> <urn:bldg#bldg.CHW1.CWP4_CT>) s223:hasExternalReference (<urn:bschema-rs:skolem:a000009dc0775d30f473af1b61e64b44> <urn:bschema-rs:skolem:a0019f05e81dcb12fbbc970de2b77af8>) .
+(<urn:bldg#bldg.CHW1.CWP2_CT> <urn:bldg#bldg.CHW1.CWP4_CT>) s223:hasExternalReference (_:a000009dc0775d30f473af1b61e64b44 _:a0019f05e81dcb12fbbc970de2b77af8) .
 (<urn:bldg#bldg.CHW1.CWP2_CT> <urn:bldg#bldg.CHW1.CWP4_CT>) a s223:QuantifiableObservableProperty .
 (<urn:bldg#bldg.CHW1.CWP1.VFD_CURRENT> <urn:bldg#bldg.CHW1.CWP1.VFD_PCT_OUTPUT>) qudt:hasUnit unit:V .
 (<urn:bldg#bldg.CHW1.CWP1.VFD_CURRENT> <urn:bldg#bldg.CHW1.CWP1.VFD_PCT_OUTPUT>) qudt:hasUnit unit:REV-PER-MIN .
@@ -694,38 +694,38 @@
 (<urn:bldg#bldg.CHW1.CWP1.VFD_CURRENT> <urn:bldg#bldg.CHW1.CWP1.VFD_PCT_OUTPUT>) s223:hasRole s223:Role-Supply .
 (<urn:bldg#bldg.CHW1.CWP1.VFD_CURRENT> <urn:bldg#bldg.CHW1.CWP1.VFD_PCT_OUTPUT>) s223:hasRole s223:Role-Return .
 (<urn:bldg#bldg.CHW1.CWP1.VFD_CURRENT> <urn:bldg#bldg.CHW1.CWP1.VFD_PCT_OUTPUT>) s223:hasRole s223:EnumerationKind-Speed .
-(<urn:bldg#bldg.CHW1.CWP1.VFD_CURRENT> <urn:bldg#bldg.CHW1.CWP1.VFD_PCT_OUTPUT>) s223:hasExternalReference (<urn:bschema-rs:skolem:a000009dc0775d30f473af1b61e64b44> <urn:bschema-rs:skolem:a0019f05e81dcb12fbbc970de2b77af8>) .
+(<urn:bldg#bldg.CHW1.CWP1.VFD_CURRENT> <urn:bldg#bldg.CHW1.CWP1.VFD_PCT_OUTPUT>) s223:hasExternalReference (_:a000009dc0775d30f473af1b61e64b44 _:a0019f05e81dcb12fbbc970de2b77af8) .
 (<urn:bldg#bldg.CHW1.CWP1.VFD_CURRENT> <urn:bldg#bldg.CHW1.CWP1.VFD_PCT_OUTPUT>) a s223:QuantifiableObservableProperty .
 (<urn:bldg#bldg.AH3_RM.TEMP> <urn:bldg#bldg.RAH01_CFM>) qudt:hasUnit unit:FT3-PER-MIN .
 (<urn:bldg#bldg.AH3_RM.TEMP> <urn:bldg#bldg.RAH01_CFM>) qudt:hasUnit unit:DEG_F .
 (<urn:bldg#bldg.AH3_RM.TEMP> <urn:bldg#bldg.RAH01_CFM>) qudt:hasQuantityKind quantitykind:VolumeFlowRate .
 (<urn:bldg#bldg.AH3_RM.TEMP> <urn:bldg#bldg.RAH01_CFM>) s223:hasRole s223:Role-Supply .
 (<urn:bldg#bldg.AH3_RM.TEMP> <urn:bldg#bldg.RAH01_CFM>) s223:hasRole s223:OnOff-Unknown .
-(<urn:bldg#bldg.AH3_RM.TEMP> <urn:bldg#bldg.RAH01_CFM>) s223:hasExternalReference (<urn:bschema-rs:skolem:a000009dc0775d30f473af1b61e64b44> <urn:bschema-rs:skolem:a0019f05e81dcb12fbbc970de2b77af8>) .
+(<urn:bldg#bldg.AH3_RM.TEMP> <urn:bldg#bldg.RAH01_CFM>) s223:hasExternalReference (_:a000009dc0775d30f473af1b61e64b44 _:a0019f05e81dcb12fbbc970de2b77af8) .
 (<urn:bldg#bldg.AH3_RM.TEMP> <urn:bldg#bldg.RAH01_CFM>) a s223:QuantifiableObservableProperty .
 (<urn:bldg#bldg.AH2A.AH2B.RF_CFM.STP>) qudt:hasUnit unit:FT3-PER-MIN .
 (<urn:bldg#bldg.AH2A.AH2B.RF_CFM.STP>) qudt:hasQuantityKind quantitykind:VolumeFlowRate .
 (<urn:bldg#bldg.AH2A.AH2B.RF_CFM.STP>) s223:hasRole s223:Role-Return .
-(<urn:bldg#bldg.AH2A.AH2B.RF_CFM.STP>) s223:hasExternalReference (<urn:bschema-rs:skolem:a000009dc0775d30f473af1b61e64b44> <urn:bschema-rs:skolem:a0019f05e81dcb12fbbc970de2b77af8>) .
+(<urn:bldg#bldg.AH2A.AH2B.RF_CFM.STP>) s223:hasExternalReference (_:a000009dc0775d30f473af1b61e64b44 _:a0019f05e81dcb12fbbc970de2b77af8) .
 (<urn:bldg#bldg.AH2A.AH2B.RF_CFM.STP>) a s223:QuantifiableObservableProperty .
 (<urn:bldg#bldg.AH1_RHC-1_ROOM_TEMP> <urn:bldg#bldg.AH1_RHC-2_ROOM_TEMP>) qudt:hasUnit unit:DEG_F .
 (<urn:bldg#bldg.AH1_RHC-1_ROOM_TEMP> <urn:bldg#bldg.AH1_RHC-2_ROOM_TEMP>) s223:hasRole s223:Role-Supply .
-(<urn:bldg#bldg.AH1_RHC-1_ROOM_TEMP> <urn:bldg#bldg.AH1_RHC-2_ROOM_TEMP>) s223:hasExternalReference (<urn:bschema-rs:skolem:a000009dc0775d30f473af1b61e64b44> <urn:bschema-rs:skolem:a0019f05e81dcb12fbbc970de2b77af8>) .
+(<urn:bldg#bldg.AH1_RHC-1_ROOM_TEMP> <urn:bldg#bldg.AH1_RHC-2_ROOM_TEMP>) s223:hasExternalReference (_:a000009dc0775d30f473af1b61e64b44 _:a0019f05e81dcb12fbbc970de2b77af8) .
 (<urn:bldg#bldg.AH1_RHC-1_ROOM_TEMP> <urn:bldg#bldg.AH1_RHC-2_ROOM_TEMP>) a s223:QuantifiableObservableProperty .
 (<urn:bldg#bldg.AH1A_SHUTDOWN.INPUT> <urn:bldg#bldg.AH1A_SHUTDOWN>) qudt:hasUnit unit:UNITLESS .
 (<urn:bldg#bldg.AH1A_SHUTDOWN.INPUT> <urn:bldg#bldg.AH1A_SHUTDOWN>) s223:hasRole s223:OnOff-Unknown .
 (<urn:bldg#bldg.AH1A_SHUTDOWN.INPUT> <urn:bldg#bldg.AH1A_SHUTDOWN>) s223:hasRole s223:Aspect-Command .
-(<urn:bldg#bldg.AH1A_SHUTDOWN.INPUT> <urn:bldg#bldg.AH1A_SHUTDOWN>) s223:hasExternalReference (<urn:bschema-rs:skolem:a000009dc0775d30f473af1b61e64b44> <urn:bschema-rs:skolem:a0019f05e81dcb12fbbc970de2b77af8>) .
+(<urn:bldg#bldg.AH1A_SHUTDOWN.INPUT> <urn:bldg#bldg.AH1A_SHUTDOWN>) s223:hasExternalReference (_:a000009dc0775d30f473af1b61e64b44 _:a0019f05e81dcb12fbbc970de2b77af8) .
 (<urn:bldg#bldg.AH1A_SHUTDOWN.INPUT> <urn:bldg#bldg.AH1A_SHUTDOWN>) a s223:QuantifiableActuatableProperty .
 (<urn:bldg#bldg.AH1A_HCV.LOOP> <urn:bldg#bldg.AH1A_HCV>) qudt:hasUnit unit:PERCENT .
 (<urn:bldg#bldg.AH1A_HCV.LOOP> <urn:bldg#bldg.AH1A_HCV>) s223:hasRole s223:Position-Unknown .
 (<urn:bldg#bldg.AH1A_HCV.LOOP> <urn:bldg#bldg.AH1A_HCV>) s223:hasRole s223:OnOff-Unknown .
 (<urn:bldg#bldg.AH1A_HCV.LOOP> <urn:bldg#bldg.AH1A_HCV>) s223:hasRole s223:Aspect-Command .
-(<urn:bldg#bldg.AH1A_HCV.LOOP> <urn:bldg#bldg.AH1A_HCV>) s223:hasExternalReference (<urn:bschema-rs:skolem:a000009dc0775d30f473af1b61e64b44> <urn:bschema-rs:skolem:a0019f05e81dcb12fbbc970de2b77af8>) .
+(<urn:bldg#bldg.AH1A_HCV.LOOP> <urn:bldg#bldg.AH1A_HCV>) s223:hasExternalReference (_:a000009dc0775d30f473af1b61e64b44 _:a0019f05e81dcb12fbbc970de2b77af8) .
 (<urn:bldg#bldg.AH1A_HCV.LOOP> <urn:bldg#bldg.AH1A_HCV>) a s223:QuantifiableActuatableProperty .
 (<urn:bldg#bldg.AH1A_ENABLE> <urn:bldg#bldg.AH1B_ENABLE>) qudt:hasUnit unit:UNITLESS .
 (<urn:bldg#bldg.AH1A_ENABLE> <urn:bldg#bldg.AH1B_ENABLE>) s223:hasRole s223:Aspect-Command .
-(<urn:bldg#bldg.AH1A_ENABLE> <urn:bldg#bldg.AH1B_ENABLE>) s223:hasExternalReference (<urn:bschema-rs:skolem:a000009dc0775d30f473af1b61e64b44> <urn:bschema-rs:skolem:a0019f05e81dcb12fbbc970de2b77af8>) .
+(<urn:bldg#bldg.AH1A_ENABLE> <urn:bldg#bldg.AH1B_ENABLE>) s223:hasExternalReference (_:a000009dc0775d30f473af1b61e64b44 _:a0019f05e81dcb12fbbc970de2b77af8) .
 (<urn:bldg#bldg.AH1A_ENABLE> <urn:bldg#bldg.AH1B_ENABLE>) a s223:QuantifiableActuatableProperty .
 (<urn:bldg#reheat-coil-valve-command_03deb7eb> <urn:bldg#reheat-coil-valve-command_086a7fcf>) qudt:hasUnit unit:PERCENT .
 (<urn:bldg#reheat-coil-valve-command_03deb7eb> <urn:bldg#reheat-coil-valve-command_086a7fcf>) qudt:hasQuantityKind quantitykind:DimensionlessRatio .
@@ -741,42 +741,42 @@
 (<urn:bldg#bldg.AH1A_CFM.STP> <urn:bldg#bldg.AH1A_DWP.STP>) qudt:hasQuantityKind quantitykind:VolumeFlowRate .
 (<urn:bldg#bldg.AH1A_CFM.STP> <urn:bldg#bldg.AH1A_DWP.STP>) qudt:hasQuantityKind quantitykind:DewPointTemperature .
 (<urn:bldg#bldg.AH1A_CFM.STP> <urn:bldg#bldg.AH1A_DWP.STP>) s223:hasRole s223:Role-Supply .
-(<urn:bldg#bldg.AH1A_CFM.STP> <urn:bldg#bldg.AH1A_DWP.STP>) s223:hasExternalReference (<urn:bschema-rs:skolem:a000009dc0775d30f473af1b61e64b44> <urn:bschema-rs:skolem:a0019f05e81dcb12fbbc970de2b77af8>) .
+(<urn:bldg#bldg.AH1A_CFM.STP> <urn:bldg#bldg.AH1A_DWP.STP>) s223:hasExternalReference (_:a000009dc0775d30f473af1b61e64b44 _:a0019f05e81dcb12fbbc970de2b77af8) .
 (<urn:bldg#bldg.AH1A_CFM.STP> <urn:bldg#bldg.AH1A_DWP.STP>) a s223:QuantifiableActuatableProperty .
 (<urn:bldg#bldg.SCHWP1_VFD.RUN.STOP.CMD> <urn:bldg#bldg.SCHWP2_VFD.RUN.STOP.CMD>) qudt:hasUnit unit:UNITLESS .
 (<urn:bldg#bldg.SCHWP1_VFD.RUN.STOP.CMD> <urn:bldg#bldg.SCHWP2_VFD.RUN.STOP.CMD>) s223:hasRole s223:Aspect-Command .
-(<urn:bldg#bldg.SCHWP1_VFD.RUN.STOP.CMD> <urn:bldg#bldg.SCHWP2_VFD.RUN.STOP.CMD>) s223:hasExternalReference (<urn:bschema-rs:skolem:a000009dc0775d30f473af1b61e64b44> <urn:bschema-rs:skolem:a0019f05e81dcb12fbbc970de2b77af8>) .
+(<urn:bldg#bldg.SCHWP1_VFD.RUN.STOP.CMD> <urn:bldg#bldg.SCHWP2_VFD.RUN.STOP.CMD>) s223:hasExternalReference (_:a000009dc0775d30f473af1b61e64b44 _:a0019f05e81dcb12fbbc970de2b77af8) .
 (<urn:bldg#bldg.SCHWP1_VFD.RUN.STOP.CMD> <urn:bldg#bldg.SCHWP2_VFD.RUN.STOP.CMD>) a s223:QuantifiableActuatableProperty .
 (<urn:bldg#bldg.SCHW.CHW.BYP_VLV> <urn:bldg#bldg.SECCHW_BYPASS_VLV_LOOPOUT>) qudt:hasUnit unit:PERCENT .
 (<urn:bldg#bldg.SCHW.CHW.BYP_VLV> <urn:bldg#bldg.SECCHW_BYPASS_VLV_LOOPOUT>) s223:hasRole s223:Position-Unknown .
 (<urn:bldg#bldg.SCHW.CHW.BYP_VLV> <urn:bldg#bldg.SECCHW_BYPASS_VLV_LOOPOUT>) s223:hasRole s223:OnOff-Unknown .
 (<urn:bldg#bldg.SCHW.CHW.BYP_VLV> <urn:bldg#bldg.SECCHW_BYPASS_VLV_LOOPOUT>) s223:hasRole s223:Aspect-Command .
-(<urn:bldg#bldg.SCHW.CHW.BYP_VLV> <urn:bldg#bldg.SECCHW_BYPASS_VLV_LOOPOUT>) s223:hasExternalReference (<urn:bschema-rs:skolem:a000009dc0775d30f473af1b61e64b44> <urn:bschema-rs:skolem:a0019f05e81dcb12fbbc970de2b77af8>) .
+(<urn:bldg#bldg.SCHW.CHW.BYP_VLV> <urn:bldg#bldg.SECCHW_BYPASS_VLV_LOOPOUT>) s223:hasExternalReference (_:a000009dc0775d30f473af1b61e64b44 _:a0019f05e81dcb12fbbc970de2b77af8) .
 (<urn:bldg#bldg.SCHW.CHW.BYP_VLV> <urn:bldg#bldg.SECCHW_BYPASS_VLV_LOOPOUT>) a s223:QuantifiableActuatableProperty .
 (<urn:bldg#bldg.S2-13_RM_STPT_DIAL>) qudt:hasUnit unit:DEG_F .
 (<urn:bldg#bldg.S2-13_RM_STPT_DIAL>) s223:hasRole <urn:bldg#OnOff-Unknown> .
 (<urn:bldg#bldg.S2-13_RM_STPT_DIAL>) s223:hasRole s223:OnOff-Unknown .
-(<urn:bldg#bldg.S2-13_RM_STPT_DIAL>) s223:hasExternalReference (<urn:bschema-rs:skolem:a000009dc0775d30f473af1b61e64b44> <urn:bschema-rs:skolem:a0019f05e81dcb12fbbc970de2b77af8>) .
+(<urn:bldg#bldg.S2-13_RM_STPT_DIAL>) s223:hasExternalReference (_:a000009dc0775d30f473af1b61e64b44 _:a0019f05e81dcb12fbbc970de2b77af8) .
 (<urn:bldg#bldg.S2-13_RM_STPT_DIAL>) a s223:QuantifiableActuatableProperty .
 (<urn:bldg#bldg.S1-01_VLV_COMD> <urn:bldg#bldg.S1-02_VLV_COMD>) qudt:hasUnit unit:PERCENT .
 (<urn:bldg#bldg.S1-01_VLV_COMD> <urn:bldg#bldg.S1-02_VLV_COMD>) s223:hasRole s223:Position-Unknown .
 (<urn:bldg#bldg.S1-01_VLV_COMD> <urn:bldg#bldg.S1-02_VLV_COMD>) s223:hasRole s223:OnOff-Unknown .
 (<urn:bldg#bldg.S1-01_VLV_COMD> <urn:bldg#bldg.S1-02_VLV_COMD>) s223:hasRole s223:Aspect-Command .
-(<urn:bldg#bldg.S1-01_VLV_COMD> <urn:bldg#bldg.S1-02_VLV_COMD>) s223:hasExternalReference (<urn:bschema-rs:skolem:a000009dc0775d30f473af1b61e64b44> <urn:bschema-rs:skolem:a0019f05e81dcb12fbbc970de2b77af8>) .
+(<urn:bldg#bldg.S1-01_VLV_COMD> <urn:bldg#bldg.S1-02_VLV_COMD>) s223:hasExternalReference (_:a000009dc0775d30f473af1b61e64b44 _:a0019f05e81dcb12fbbc970de2b77af8) .
 (<urn:bldg#bldg.S1-01_VLV_COMD> <urn:bldg#bldg.S1-02_VLV_COMD>) a s223:QuantifiableActuatableProperty .
 (<urn:bldg#bldg.S1-01_HTG_LOOPOUT> <urn:bldg#bldg.S1-02_HTG_LOOPOUT>) qudt:hasUnit unit:PERCENT .
 (<urn:bldg#bldg.S1-01_HTG_LOOPOUT> <urn:bldg#bldg.S1-02_HTG_LOOPOUT>) s223:hasRole s223:Aspect-Command .
-(<urn:bldg#bldg.S1-01_HTG_LOOPOUT> <urn:bldg#bldg.S1-02_HTG_LOOPOUT>) s223:hasExternalReference (<urn:bschema-rs:skolem:a000009dc0775d30f473af1b61e64b44> <urn:bschema-rs:skolem:a0019f05e81dcb12fbbc970de2b77af8>) .
+(<urn:bldg#bldg.S1-01_HTG_LOOPOUT> <urn:bldg#bldg.S1-02_HTG_LOOPOUT>) s223:hasExternalReference (_:a000009dc0775d30f473af1b61e64b44 _:a0019f05e81dcb12fbbc970de2b77af8) .
 (<urn:bldg#bldg.S1-01_HTG_LOOPOUT> <urn:bldg#bldg.S1-02_HTG_LOOPOUT>) a s223:QuantifiableActuatableProperty .
 (<urn:bldg#bldg.S1-01_DMPR_COMD> <urn:bldg#bldg.S1-02_DMPR_COMD>) qudt:hasUnit unit:PERCENT .
 (<urn:bldg#bldg.S1-01_DMPR_COMD> <urn:bldg#bldg.S1-02_DMPR_COMD>) s223:hasRole s223:Position-Unknown .
 (<urn:bldg#bldg.S1-01_DMPR_COMD> <urn:bldg#bldg.S1-02_DMPR_COMD>) s223:hasRole s223:OnOff-Unknown .
 (<urn:bldg#bldg.S1-01_DMPR_COMD> <urn:bldg#bldg.S1-02_DMPR_COMD>) s223:hasRole s223:Aspect-Command .
-(<urn:bldg#bldg.S1-01_DMPR_COMD> <urn:bldg#bldg.S1-02_DMPR_COMD>) s223:hasExternalReference (<urn:bschema-rs:skolem:a000009dc0775d30f473af1b61e64b44> <urn:bschema-rs:skolem:a0019f05e81dcb12fbbc970de2b77af8>) .
+(<urn:bldg#bldg.S1-01_DMPR_COMD> <urn:bldg#bldg.S1-02_DMPR_COMD>) s223:hasExternalReference (_:a000009dc0775d30f473af1b61e64b44 _:a0019f05e81dcb12fbbc970de2b77af8) .
 (<urn:bldg#bldg.S1-01_DMPR_COMD> <urn:bldg#bldg.S1-02_DMPR_COMD>) a s223:QuantifiableActuatableProperty .
 (<urn:bldg#bldg.S1-01_CTL_TEMP> <urn:bldg#bldg.S1-02_CTL_TEMP>) qudt:hasUnit unit:DEG_F .
 (<urn:bldg#bldg.S1-01_CTL_TEMP> <urn:bldg#bldg.S1-02_CTL_TEMP>) s223:hasRole s223:OnOff-Unknown .
-(<urn:bldg#bldg.S1-01_CTL_TEMP> <urn:bldg#bldg.S1-02_CTL_TEMP>) s223:hasExternalReference (<urn:bschema-rs:skolem:a000009dc0775d30f473af1b61e64b44> <urn:bschema-rs:skolem:a0019f05e81dcb12fbbc970de2b77af8>) .
+(<urn:bldg#bldg.S1-01_CTL_TEMP> <urn:bldg#bldg.S1-02_CTL_TEMP>) s223:hasExternalReference (_:a000009dc0775d30f473af1b61e64b44 _:a0019f05e81dcb12fbbc970de2b77af8) .
 (<urn:bldg#bldg.S1-01_CTL_TEMP> <urn:bldg#bldg.S1-02_CTL_TEMP>) a s223:QuantifiableActuatableProperty .
 (<urn:bldg#bldg.S1-01_CLG_FLOW_MAX> <urn:bldg#bldg.S1-01_CLG_FLOW_MIN>) qudt:hasUnit unit:PERCENT .
 (<urn:bldg#bldg.S1-01_CLG_FLOW_MAX> <urn:bldg#bldg.S1-01_CLG_FLOW_MIN>) qudt:hasUnit unit:FT3-PER-MIN .
@@ -784,218 +784,218 @@
 (<urn:bldg#bldg.S1-01_CLG_FLOW_MAX> <urn:bldg#bldg.S1-01_CLG_FLOW_MIN>) qudt:hasQuantityKind quantitykind:VolumeFlowRate .
 (<urn:bldg#bldg.S1-01_CLG_FLOW_MAX> <urn:bldg#bldg.S1-01_CLG_FLOW_MIN>) s223:hasRole s223:Role-Supply .
 (<urn:bldg#bldg.S1-01_CLG_FLOW_MAX> <urn:bldg#bldg.S1-01_CLG_FLOW_MIN>) s223:hasRole s223:Aspect-Command .
-(<urn:bldg#bldg.S1-01_CLG_FLOW_MAX> <urn:bldg#bldg.S1-01_CLG_FLOW_MIN>) s223:hasExternalReference (<urn:bschema-rs:skolem:a000009dc0775d30f473af1b61e64b44> <urn:bschema-rs:skolem:a0019f05e81dcb12fbbc970de2b77af8>) .
+(<urn:bldg#bldg.S1-01_CLG_FLOW_MAX> <urn:bldg#bldg.S1-01_CLG_FLOW_MIN>) s223:hasExternalReference (_:a000009dc0775d30f473af1b61e64b44 _:a0019f05e81dcb12fbbc970de2b77af8) .
 (<urn:bldg#bldg.S1-01_CLG_FLOW_MAX> <urn:bldg#bldg.S1-01_CLG_FLOW_MIN>) a s223:QuantifiableActuatableProperty .
 (<urn:bldg#bldg.AH1A_CCV.LOOP> <urn:bldg#bldg.AH1A_CCV>) qudt:hasUnit unit:PERCENT .
 (<urn:bldg#bldg.AH1A_CCV.LOOP> <urn:bldg#bldg.AH1A_CCV>) s223:hasRole s223:Position-Unknown .
 (<urn:bldg#bldg.AH1A_CCV.LOOP> <urn:bldg#bldg.AH1A_CCV>) s223:hasRole s223:OnOff-Unknown .
 (<urn:bldg#bldg.AH1A_CCV.LOOP> <urn:bldg#bldg.AH1A_CCV>) s223:hasRole s223:Aspect-Command .
-(<urn:bldg#bldg.AH1A_CCV.LOOP> <urn:bldg#bldg.AH1A_CCV>) s223:hasExternalReference (<urn:bschema-rs:skolem:a000009dc0775d30f473af1b61e64b44> <urn:bschema-rs:skolem:a0019f05e81dcb12fbbc970de2b77af8>) .
+(<urn:bldg#bldg.AH1A_CCV.LOOP> <urn:bldg#bldg.AH1A_CCV>) s223:hasExternalReference (_:a000009dc0775d30f473af1b61e64b44 _:a0019f05e81dcb12fbbc970de2b77af8) .
 (<urn:bldg#bldg.AH1A_CCV.LOOP> <urn:bldg#bldg.AH1A_CCV>) a s223:QuantifiableActuatableProperty .
 (<urn:bldg#bldg.RAH10_ENABLE> <urn:bldg#bldg.RAH10_RESET>) qudt:hasUnit unit:UNITLESS .
 (<urn:bldg#bldg.RAH10_ENABLE> <urn:bldg#bldg.RAH10_RESET>) s223:hasRole s223:Aspect-Command .
-(<urn:bldg#bldg.RAH10_ENABLE> <urn:bldg#bldg.RAH10_RESET>) s223:hasExternalReference (<urn:bschema-rs:skolem:a000009dc0775d30f473af1b61e64b44> <urn:bschema-rs:skolem:a0019f05e81dcb12fbbc970de2b77af8>) .
+(<urn:bldg#bldg.RAH10_ENABLE> <urn:bldg#bldg.RAH10_RESET>) s223:hasExternalReference (_:a000009dc0775d30f473af1b61e64b44 _:a0019f05e81dcb12fbbc970de2b77af8) .
 (<urn:bldg#bldg.RAH10_ENABLE> <urn:bldg#bldg.RAH10_RESET>) a s223:QuantifiableActuatableProperty .
 (<urn:bldg#bldg.RAH10_CFM.STP> <urn:bldg#bldg.RAH11_CFM.STP>) qudt:hasUnit unit:FT3-PER-MIN .
 (<urn:bldg#bldg.RAH10_CFM.STP> <urn:bldg#bldg.RAH11_CFM.STP>) qudt:hasQuantityKind quantitykind:VolumeFlowRate .
 (<urn:bldg#bldg.RAH10_CFM.STP> <urn:bldg#bldg.RAH11_CFM.STP>) s223:hasRole s223:Role-Supply .
-(<urn:bldg#bldg.RAH10_CFM.STP> <urn:bldg#bldg.RAH11_CFM.STP>) s223:hasExternalReference (<urn:bschema-rs:skolem:a000009dc0775d30f473af1b61e64b44> <urn:bschema-rs:skolem:a0019f05e81dcb12fbbc970de2b77af8>) .
+(<urn:bldg#bldg.RAH10_CFM.STP> <urn:bldg#bldg.RAH11_CFM.STP>) s223:hasExternalReference (_:a000009dc0775d30f473af1b61e64b44 _:a0019f05e81dcb12fbbc970de2b77af8) .
 (<urn:bldg#bldg.RAH10_CFM.STP> <urn:bldg#bldg.RAH11_CFM.STP>) a s223:QuantifiableActuatableProperty .
 (<urn:bldg#bldg.RAH01_ISO.DMPR> <urn:bldg#bldg.RAH02_ISO.DMPR>) qudt:hasUnit unit:UNITLESS .
 (<urn:bldg#bldg.RAH01_ISO.DMPR> <urn:bldg#bldg.RAH02_ISO.DMPR>) s223:hasRole s223:Aspect-Command .
-(<urn:bldg#bldg.RAH01_ISO.DMPR> <urn:bldg#bldg.RAH02_ISO.DMPR>) s223:hasExternalReference (<urn:bschema-rs:skolem:a000009dc0775d30f473af1b61e64b44> <urn:bschema-rs:skolem:a0019f05e81dcb12fbbc970de2b77af8>) .
+(<urn:bldg#bldg.RAH01_ISO.DMPR> <urn:bldg#bldg.RAH02_ISO.DMPR>) s223:hasExternalReference (_:a000009dc0775d30f473af1b61e64b44 _:a0019f05e81dcb12fbbc970de2b77af8) .
 (<urn:bldg#bldg.RAH01_ISO.DMPR> <urn:bldg#bldg.RAH02_ISO.DMPR>) a s223:QuantifiableActuatableProperty .
 (<urn:bldg#bldg.RAH01_ENABLE> <urn:bldg#bldg.RAH01_RESET>) qudt:hasUnit unit:UNITLESS .
 (<urn:bldg#bldg.RAH01_ENABLE> <urn:bldg#bldg.RAH01_RESET>) s223:hasRole s223:Aspect-Command .
-(<urn:bldg#bldg.RAH01_ENABLE> <urn:bldg#bldg.RAH01_RESET>) s223:hasExternalReference (<urn:bschema-rs:skolem:a000009dc0775d30f473af1b61e64b44> <urn:bschema-rs:skolem:a0019f05e81dcb12fbbc970de2b77af8>) .
+(<urn:bldg#bldg.RAH01_ENABLE> <urn:bldg#bldg.RAH01_RESET>) s223:hasExternalReference (_:a000009dc0775d30f473af1b61e64b44 _:a0019f05e81dcb12fbbc970de2b77af8) .
 (<urn:bldg#bldg.RAH01_ENABLE> <urn:bldg#bldg.RAH01_RESET>) a s223:QuantifiableActuatableProperty .
 (<urn:bldg#bldg.RAH01_CFM.STP> <urn:bldg#bldg.RAH02_CFM.STP>) qudt:hasUnit unit:FT3-PER-MIN .
 (<urn:bldg#bldg.RAH01_CFM.STP> <urn:bldg#bldg.RAH02_CFM.STP>) qudt:hasQuantityKind quantitykind:VolumeFlowRate .
 (<urn:bldg#bldg.RAH01_CFM.STP> <urn:bldg#bldg.RAH02_CFM.STP>) s223:hasRole s223:Role-Supply .
-(<urn:bldg#bldg.RAH01_CFM.STP> <urn:bldg#bldg.RAH02_CFM.STP>) s223:hasExternalReference (<urn:bschema-rs:skolem:a000009dc0775d30f473af1b61e64b44> <urn:bschema-rs:skolem:a0019f05e81dcb12fbbc970de2b77af8>) .
+(<urn:bldg#bldg.RAH01_CFM.STP> <urn:bldg#bldg.RAH02_CFM.STP>) s223:hasExternalReference (_:a000009dc0775d30f473af1b61e64b44 _:a0019f05e81dcb12fbbc970de2b77af8) .
 (<urn:bldg#bldg.RAH01_CFM.STP> <urn:bldg#bldg.RAH02_CFM.STP>) a s223:QuantifiableActuatableProperty .
 (<urn:bldg#bldg.PCW.SETPOINT> <urn:bldg#bldg.SCHW_CHWST.STP>) qudt:hasUnit unit:DEG_F .
 (<urn:bldg#bldg.PCW.SETPOINT> <urn:bldg#bldg.SCHW_CHWST.STP>) s223:hasRole s223:Role-Supply .
-(<urn:bldg#bldg.PCW.SETPOINT> <urn:bldg#bldg.SCHW_CHWST.STP>) s223:hasExternalReference (<urn:bschema-rs:skolem:a000009dc0775d30f473af1b61e64b44> <urn:bschema-rs:skolem:a0019f05e81dcb12fbbc970de2b77af8>) .
+(<urn:bldg#bldg.PCW.SETPOINT> <urn:bldg#bldg.SCHW_CHWST.STP>) s223:hasExternalReference (_:a000009dc0775d30f473af1b61e64b44 _:a0019f05e81dcb12fbbc970de2b77af8) .
 (<urn:bldg#bldg.PCW.SETPOINT> <urn:bldg#bldg.SCHW_CHWST.STP>) a s223:QuantifiableActuatableProperty .
 (<urn:bldg#bldg.MDC.CAC07_ACT_TEMP_SPS>) qudt:hasUnit unit:DEG_F .
 (<urn:bldg#bldg.MDC.CAC07_ACT_TEMP_SPS>) qudt:hasQuantityKind quantitykind:Temperature .
-(<urn:bldg#bldg.MDC.CAC07_ACT_TEMP_SPS>) s223:hasExternalReference (<urn:bschema-rs:skolem:a000009dc0775d30f473af1b61e64b44> <urn:bschema-rs:skolem:a0019f05e81dcb12fbbc970de2b77af8>) .
+(<urn:bldg#bldg.MDC.CAC07_ACT_TEMP_SPS>) s223:hasExternalReference (_:a000009dc0775d30f473af1b61e64b44 _:a0019f05e81dcb12fbbc970de2b77af8) .
 (<urn:bldg#bldg.MDC.CAC07_ACT_TEMP_SPS>) a s223:QuantifiableActuatableProperty .
 (<urn:bldg#bldg.MDC.CAC07_ACT_SUPT_SPS> <urn:bldg#bldg.MDC.CAC07_TEMP_STPT>) qudt:hasUnit unit:DEG_F .
 (<urn:bldg#bldg.MDC.CAC07_ACT_SUPT_SPS> <urn:bldg#bldg.MDC.CAC07_TEMP_STPT>) s223:hasRole s223:Role-Supply .
-(<urn:bldg#bldg.MDC.CAC07_ACT_SUPT_SPS> <urn:bldg#bldg.MDC.CAC07_TEMP_STPT>) s223:hasExternalReference (<urn:bschema-rs:skolem:a000009dc0775d30f473af1b61e64b44> <urn:bschema-rs:skolem:a0019f05e81dcb12fbbc970de2b77af8>) .
+(<urn:bldg#bldg.MDC.CAC07_ACT_SUPT_SPS> <urn:bldg#bldg.MDC.CAC07_TEMP_STPT>) s223:hasExternalReference (_:a000009dc0775d30f473af1b61e64b44 _:a0019f05e81dcb12fbbc970de2b77af8) .
 (<urn:bldg#bldg.MDC.CAC07_ACT_SUPT_SPS> <urn:bldg#bldg.MDC.CAC07_TEMP_STPT>) a s223:QuantifiableActuatableProperty .
 (<urn:bldg#bldg.HWP1_VFD_INPUT_REF_1> <urn:bldg#bldg.HWP2_VFD_INPUT_REF_1>) qudt:hasUnit unit:PERCENT .
 (<urn:bldg#bldg.HWP1_VFD_INPUT_REF_1> <urn:bldg#bldg.HWP2_VFD_INPUT_REF_1>) s223:hasRole s223:EnumerationKind-Speed .
-(<urn:bldg#bldg.HWP1_VFD_INPUT_REF_1> <urn:bldg#bldg.HWP2_VFD_INPUT_REF_1>) s223:hasExternalReference (<urn:bschema-rs:skolem:a000009dc0775d30f473af1b61e64b44> <urn:bschema-rs:skolem:a0019f05e81dcb12fbbc970de2b77af8>) .
+(<urn:bldg#bldg.HWP1_VFD_INPUT_REF_1> <urn:bldg#bldg.HWP2_VFD_INPUT_REF_1>) s223:hasExternalReference (_:a000009dc0775d30f473af1b61e64b44 _:a0019f05e81dcb12fbbc970de2b77af8) .
 (<urn:bldg#bldg.HWP1_VFD_INPUT_REF_1> <urn:bldg#bldg.HWP2_VFD_INPUT_REF_1>) a s223:QuantifiableActuatableProperty .
 (<urn:bldg#bldg.FIRE_AH2A.ALARM> <urn:bldg#bldg.FIRE_AH2B.ALARM>) qudt:hasUnit unit:UNITLESS .
 (<urn:bldg#bldg.FIRE_AH2A.ALARM> <urn:bldg#bldg.FIRE_AH2B.ALARM>) s223:hasRole s223:OnOff-Unknown .
 (<urn:bldg#bldg.FIRE_AH2A.ALARM> <urn:bldg#bldg.FIRE_AH2B.ALARM>) s223:hasRole s223:Aspect-Command .
-(<urn:bldg#bldg.FIRE_AH2A.ALARM> <urn:bldg#bldg.FIRE_AH2B.ALARM>) s223:hasExternalReference (<urn:bschema-rs:skolem:a000009dc0775d30f473af1b61e64b44> <urn:bschema-rs:skolem:a0019f05e81dcb12fbbc970de2b77af8>) .
+(<urn:bldg#bldg.FIRE_AH2A.ALARM> <urn:bldg#bldg.FIRE_AH2B.ALARM>) s223:hasExternalReference (_:a000009dc0775d30f473af1b61e64b44 _:a0019f05e81dcb12fbbc970de2b77af8) .
 (<urn:bldg#bldg.FIRE_AH2A.ALARM> <urn:bldg#bldg.FIRE_AH2B.ALARM>) a s223:QuantifiableActuatableProperty .
 (<urn:bldg#bldg.AH1A_BBD> <urn:bldg#bldg.AH1A_OAD>) qudt:hasUnit unit:UNITLESS .
 (<urn:bldg#bldg.AH1A_BBD> <urn:bldg#bldg.AH1A_OAD>) qudt:hasUnit unit:PERCENT .
 (<urn:bldg#bldg.AH1A_BBD> <urn:bldg#bldg.AH1A_OAD>) s223:hasRole s223:Position-Unknown .
 (<urn:bldg#bldg.AH1A_BBD> <urn:bldg#bldg.AH1A_OAD>) s223:hasRole s223:OnOff-Unknown .
 (<urn:bldg#bldg.AH1A_BBD> <urn:bldg#bldg.AH1A_OAD>) s223:hasRole s223:Aspect-Command .
-(<urn:bldg#bldg.AH1A_BBD> <urn:bldg#bldg.AH1A_OAD>) s223:hasExternalReference (<urn:bschema-rs:skolem:a000009dc0775d30f473af1b61e64b44> <urn:bschema-rs:skolem:a0019f05e81dcb12fbbc970de2b77af8>) .
+(<urn:bldg#bldg.AH1A_BBD> <urn:bldg#bldg.AH1A_OAD>) s223:hasExternalReference (_:a000009dc0775d30f473af1b61e64b44 _:a0019f05e81dcb12fbbc970de2b77af8) .
 (<urn:bldg#bldg.AH1A_BBD> <urn:bldg#bldg.AH1A_OAD>) a s223:QuantifiableActuatableProperty .
 (<urn:bldg#bldg.FCU-1_VLV_1_COMD> <urn:bldg#bldg.MDC.CAC01_VLV_PCT_OPEN>) qudt:hasUnit unit:PERCENT .
 (<urn:bldg#bldg.FCU-1_VLV_1_COMD> <urn:bldg#bldg.MDC.CAC01_VLV_PCT_OPEN>) s223:hasRole s223:Position-Unknown .
 (<urn:bldg#bldg.FCU-1_VLV_1_COMD> <urn:bldg#bldg.MDC.CAC01_VLV_PCT_OPEN>) s223:hasRole s223:OnOff-Unknown .
 (<urn:bldg#bldg.FCU-1_VLV_1_COMD> <urn:bldg#bldg.MDC.CAC01_VLV_PCT_OPEN>) s223:hasRole s223:Aspect-Command .
-(<urn:bldg#bldg.FCU-1_VLV_1_COMD> <urn:bldg#bldg.MDC.CAC01_VLV_PCT_OPEN>) s223:hasExternalReference (<urn:bschema-rs:skolem:a000009dc0775d30f473af1b61e64b44> <urn:bschema-rs:skolem:a0019f05e81dcb12fbbc970de2b77af8>) .
+(<urn:bldg#bldg.FCU-1_VLV_1_COMD> <urn:bldg#bldg.MDC.CAC01_VLV_PCT_OPEN>) s223:hasExternalReference (_:a000009dc0775d30f473af1b61e64b44 _:a0019f05e81dcb12fbbc970de2b77af8) .
 (<urn:bldg#bldg.FCU-1_VLV_1_COMD> <urn:bldg#bldg.MDC.CAC01_VLV_PCT_OPEN>) a s223:QuantifiableActuatableProperty .
 (<urn:bldg#bldg.FCU-1_CTL_STPT>) qudt:hasUnit unit:DEG_F .
 (<urn:bldg#bldg.FCU-1_CTL_STPT>) s223:hasRole s223:Role-Supply .
-(<urn:bldg#bldg.FCU-1_CTL_STPT>) s223:hasExternalReference (<urn:bschema-rs:skolem:a000009dc0775d30f473af1b61e64b44> <urn:bschema-rs:skolem:a0019f05e81dcb12fbbc970de2b77af8>) .
+(<urn:bldg#bldg.FCU-1_CTL_STPT>) s223:hasExternalReference (_:a000009dc0775d30f473af1b61e64b44 _:a0019f05e81dcb12fbbc970de2b77af8) .
 (<urn:bldg#bldg.FCU-1_CTL_STPT>) a s223:QuantifiableActuatableProperty .
 (<urn:bldg#bldg.EX2_DMPR>) qudt:hasUnit unit:UNITLESS .
 (<urn:bldg#bldg.EX2_DMPR>) s223:hasRole s223:Position-Unknown .
 (<urn:bldg#bldg.EX2_DMPR>) s223:hasRole s223:OnOff-Unknown .
 (<urn:bldg#bldg.EX2_DMPR>) s223:hasRole s223:Aspect-Command .
-(<urn:bldg#bldg.EX2_DMPR>) s223:hasExternalReference (<urn:bschema-rs:skolem:a000009dc0775d30f473af1b61e64b44> <urn:bschema-rs:skolem:a0019f05e81dcb12fbbc970de2b77af8>) .
+(<urn:bldg#bldg.EX2_DMPR>) s223:hasExternalReference (_:a000009dc0775d30f473af1b61e64b44 _:a0019f05e81dcb12fbbc970de2b77af8) .
 (<urn:bldg#bldg.EX2_DMPR>) a s223:QuantifiableActuatableProperty .
 (<urn:bldg#bldg.EMERV_DP.STP>) qudt:hasUnit unit:IN_H2O .
-(<urn:bldg#bldg.EMERV_DP.STP>) s223:hasExternalReference (<urn:bschema-rs:skolem:a000009dc0775d30f473af1b61e64b44> <urn:bschema-rs:skolem:a0019f05e81dcb12fbbc970de2b77af8>) .
+(<urn:bldg#bldg.EMERV_DP.STP>) s223:hasExternalReference (_:a000009dc0775d30f473af1b61e64b44 _:a0019f05e81dcb12fbbc970de2b77af8) .
 (<urn:bldg#bldg.EMERV_DP.STP>) a s223:QuantifiableActuatableProperty .
 (<urn:bldg#bldg.EF4_VFD.SPREQ>) qudt:hasUnit unit:PERCENT .
 (<urn:bldg#bldg.EF4_VFD.SPREQ>) s223:hasRole s223:EnumerationKind-Speed .
 (<urn:bldg#bldg.EF4_VFD.SPREQ>) s223:hasRole s223:Aspect-Command .
-(<urn:bldg#bldg.EF4_VFD.SPREQ>) s223:hasExternalReference (<urn:bschema-rs:skolem:a000009dc0775d30f473af1b61e64b44> <urn:bschema-rs:skolem:a0019f05e81dcb12fbbc970de2b77af8>) .
+(<urn:bldg#bldg.EF4_VFD.SPREQ>) s223:hasExternalReference (_:a000009dc0775d30f473af1b61e64b44 _:a0019f05e81dcb12fbbc970de2b77af8) .
 (<urn:bldg#bldg.EF4_VFD.SPREQ>) a s223:QuantifiableActuatableProperty .
 (<urn:bldg#bldg.EF1_SHUTDOWN.INPUT> <urn:bldg#bldg.EF2_SHUTDOWN.INPUT>) qudt:hasUnit unit:UNITLESS .
 (<urn:bldg#bldg.EF1_SHUTDOWN.INPUT> <urn:bldg#bldg.EF2_SHUTDOWN.INPUT>) s223:hasRole s223:OnOff-Unknown .
 (<urn:bldg#bldg.EF1_SHUTDOWN.INPUT> <urn:bldg#bldg.EF2_SHUTDOWN.INPUT>) s223:hasRole s223:Aspect-Command .
-(<urn:bldg#bldg.EF1_SHUTDOWN.INPUT> <urn:bldg#bldg.EF2_SHUTDOWN.INPUT>) s223:hasExternalReference (<urn:bschema-rs:skolem:a000009dc0775d30f473af1b61e64b44> <urn:bschema-rs:skolem:a0019f05e81dcb12fbbc970de2b77af8>) .
+(<urn:bldg#bldg.EF1_SHUTDOWN.INPUT> <urn:bldg#bldg.EF2_SHUTDOWN.INPUT>) s223:hasExternalReference (_:a000009dc0775d30f473af1b61e64b44 _:a0019f05e81dcb12fbbc970de2b77af8) .
 (<urn:bldg#bldg.EF1_SHUTDOWN.INPUT> <urn:bldg#bldg.EF2_SHUTDOWN.INPUT>) a s223:QuantifiableActuatableProperty .
 (<urn:bldg#bldg.EF1_ENABLE> <urn:bldg#bldg.EF2_ENABLE>) qudt:hasUnit unit:UNITLESS .
 (<urn:bldg#bldg.EF1_ENABLE> <urn:bldg#bldg.EF2_ENABLE>) s223:hasRole s223:Aspect-Command .
-(<urn:bldg#bldg.EF1_ENABLE> <urn:bldg#bldg.EF2_ENABLE>) s223:hasExternalReference (<urn:bschema-rs:skolem:a000009dc0775d30f473af1b61e64b44> <urn:bschema-rs:skolem:a0019f05e81dcb12fbbc970de2b77af8>) .
+(<urn:bldg#bldg.EF1_ENABLE> <urn:bldg#bldg.EF2_ENABLE>) s223:hasExternalReference (_:a000009dc0775d30f473af1b61e64b44 _:a0019f05e81dcb12fbbc970de2b77af8) .
 (<urn:bldg#bldg.EF1_ENABLE> <urn:bldg#bldg.EF2_ENABLE>) a s223:QuantifiableActuatableProperty .
 (<urn:bldg#bldg.EF1.EF2_OA.DMPR1> <urn:bldg#bldg.EF1.EF2_OA.DMPR2>) qudt:hasUnit unit:UNITLESS .
 (<urn:bldg#bldg.EF1.EF2_OA.DMPR1> <urn:bldg#bldg.EF1.EF2_OA.DMPR2>) s223:hasRole s223:Aspect-Command .
-(<urn:bldg#bldg.EF1.EF2_OA.DMPR1> <urn:bldg#bldg.EF1.EF2_OA.DMPR2>) s223:hasExternalReference (<urn:bschema-rs:skolem:a000009dc0775d30f473af1b61e64b44> <urn:bschema-rs:skolem:a0019f05e81dcb12fbbc970de2b77af8>) .
+(<urn:bldg#bldg.EF1.EF2_OA.DMPR1> <urn:bldg#bldg.EF1.EF2_OA.DMPR2>) s223:hasExternalReference (_:a000009dc0775d30f473af1b61e64b44 _:a0019f05e81dcb12fbbc970de2b77af8) .
 (<urn:bldg#bldg.EF1.EF2_OA.DMPR1> <urn:bldg#bldg.EF1.EF2_OA.DMPR2>) a s223:QuantifiableActuatableProperty .
 (<urn:bldg#bldg.EF1.EF2_DSP.STP> <urn:bldg#bldg.EF1_CFM.STP>) qudt:hasUnit unit:IN_H2O .
 (<urn:bldg#bldg.EF1.EF2_DSP.STP> <urn:bldg#bldg.EF1_CFM.STP>) qudt:hasUnit unit:FT3-PER-SEC .
 (<urn:bldg#bldg.EF1.EF2_DSP.STP> <urn:bldg#bldg.EF1_CFM.STP>) qudt:hasQuantityKind quantitykind:VolumeFlowRate .
-(<urn:bldg#bldg.EF1.EF2_DSP.STP> <urn:bldg#bldg.EF1_CFM.STP>) s223:hasExternalReference (<urn:bschema-rs:skolem:a000009dc0775d30f473af1b61e64b44> <urn:bschema-rs:skolem:a0019f05e81dcb12fbbc970de2b77af8>) .
+(<urn:bldg#bldg.EF1.EF2_DSP.STP> <urn:bldg#bldg.EF1_CFM.STP>) s223:hasExternalReference (_:a000009dc0775d30f473af1b61e64b44 _:a0019f05e81dcb12fbbc970de2b77af8) .
 (<urn:bldg#bldg.EF1.EF2_DSP.STP> <urn:bldg#bldg.EF1_CFM.STP>) a s223:QuantifiableActuatableProperty .
 (<urn:bldg#bldg.EF1.2_DP.LOOPOUT> <urn:bldg#bldg.EF1.2_DP2.LOOPOUT>) qudt:hasUnit unit:PERCENT .
 (<urn:bldg#bldg.EF1.2_DP.LOOPOUT> <urn:bldg#bldg.EF1.2_DP2.LOOPOUT>) s223:hasRole s223:Aspect-Command .
-(<urn:bldg#bldg.EF1.2_DP.LOOPOUT> <urn:bldg#bldg.EF1.2_DP2.LOOPOUT>) s223:hasExternalReference (<urn:bschema-rs:skolem:a000009dc0775d30f473af1b61e64b44> <urn:bschema-rs:skolem:a0019f05e81dcb12fbbc970de2b77af8>) .
+(<urn:bldg#bldg.EF1.2_DP.LOOPOUT> <urn:bldg#bldg.EF1.2_DP2.LOOPOUT>) s223:hasExternalReference (_:a000009dc0775d30f473af1b61e64b44 _:a0019f05e81dcb12fbbc970de2b77af8) .
 (<urn:bldg#bldg.EF1.2_DP.LOOPOUT> <urn:bldg#bldg.EF1.2_DP2.LOOPOUT>) a s223:QuantifiableActuatableProperty .
 (<urn:bldg#bldg.AH1A.SF_VFD.CMD.STP.STRT> <urn:bldg#bldg.AH1A.SF_VFD.SPREQ>) qudt:hasUnit unit:UNITLESS .
 (<urn:bldg#bldg.AH1A.SF_VFD.CMD.STP.STRT> <urn:bldg#bldg.AH1A.SF_VFD.SPREQ>) qudt:hasUnit unit:PERCENT .
 (<urn:bldg#bldg.AH1A.SF_VFD.CMD.STP.STRT> <urn:bldg#bldg.AH1A.SF_VFD.SPREQ>) s223:hasRole s223:OnOff-Unknown .
 (<urn:bldg#bldg.AH1A.SF_VFD.CMD.STP.STRT> <urn:bldg#bldg.AH1A.SF_VFD.SPREQ>) s223:hasRole s223:EnumerationKind-Speed .
 (<urn:bldg#bldg.AH1A.SF_VFD.CMD.STP.STRT> <urn:bldg#bldg.AH1A.SF_VFD.SPREQ>) s223:hasRole s223:Aspect-Command .
-(<urn:bldg#bldg.AH1A.SF_VFD.CMD.STP.STRT> <urn:bldg#bldg.AH1A.SF_VFD.SPREQ>) s223:hasExternalReference (<urn:bschema-rs:skolem:a000009dc0775d30f473af1b61e64b44> <urn:bschema-rs:skolem:a0019f05e81dcb12fbbc970de2b77af8>) .
+(<urn:bldg#bldg.AH1A.SF_VFD.CMD.STP.STRT> <urn:bldg#bldg.AH1A.SF_VFD.SPREQ>) s223:hasExternalReference (_:a000009dc0775d30f473af1b61e64b44 _:a0019f05e81dcb12fbbc970de2b77af8) .
 (<urn:bldg#bldg.AH1A.SF_VFD.CMD.STP.STRT> <urn:bldg#bldg.AH1A.SF_VFD.SPREQ>) a s223:QuantifiableActuatableProperty .
 (<urn:bldg#bldg.CHW2.CWP5_SS> <urn:bldg#bldg.CHW2.CWP6_SS>) qudt:hasUnit unit:UNITLESS .
 (<urn:bldg#bldg.CHW2.CWP5_SS> <urn:bldg#bldg.CHW2.CWP6_SS>) s223:hasRole s223:Aspect-Command .
-(<urn:bldg#bldg.CHW2.CWP5_SS> <urn:bldg#bldg.CHW2.CWP6_SS>) s223:hasExternalReference (<urn:bschema-rs:skolem:a000009dc0775d30f473af1b61e64b44> <urn:bschema-rs:skolem:a0019f05e81dcb12fbbc970de2b77af8>) .
+(<urn:bldg#bldg.CHW2.CWP5_SS> <urn:bldg#bldg.CHW2.CWP6_SS>) s223:hasExternalReference (_:a000009dc0775d30f473af1b61e64b44 _:a0019f05e81dcb12fbbc970de2b77af8) .
 (<urn:bldg#bldg.CHW2.CWP5_SS> <urn:bldg#bldg.CHW2.CWP6_SS>) a s223:QuantifiableActuatableProperty .
 (<urn:bldg#bldg.CHW2.CHP1.VFD_INPUT_REF_1>) qudt:hasUnit unit:PERCENT .
 (<urn:bldg#bldg.CHW2.CHP1.VFD_INPUT_REF_1>) s223:hasRole s223:EnumerationKind-Speed .
-(<urn:bldg#bldg.CHW2.CHP1.VFD_INPUT_REF_1>) s223:hasExternalReference (<urn:bschema-rs:skolem:a000009dc0775d30f473af1b61e64b44> <urn:bschema-rs:skolem:a0019f05e81dcb12fbbc970de2b77af8>) .
+(<urn:bldg#bldg.CHW2.CHP1.VFD_INPUT_REF_1>) s223:hasExternalReference (_:a000009dc0775d30f473af1b61e64b44 _:a0019f05e81dcb12fbbc970de2b77af8) .
 (<urn:bldg#bldg.CHW2.CHP1.VFD_INPUT_REF_1>) a s223:QuantifiableActuatableProperty .
 (<urn:bldg#bldg.CHW1.CWP3_SS>) qudt:hasUnit unit:UNITLESS .
 (<urn:bldg#bldg.CHW1.CWP3_SS>) s223:hasRole s223:Aspect-Command .
-(<urn:bldg#bldg.CHW1.CWP3_SS>) s223:hasExternalReference (<urn:bschema-rs:skolem:a000009dc0775d30f473af1b61e64b44> <urn:bschema-rs:skolem:a0019f05e81dcb12fbbc970de2b77af8>) .
+(<urn:bldg#bldg.CHW1.CWP3_SS>) s223:hasExternalReference (_:a000009dc0775d30f473af1b61e64b44 _:a0019f05e81dcb12fbbc970de2b77af8) .
 (<urn:bldg#bldg.CHW1.CWP3_SS>) a s223:QuantifiableActuatableProperty .
 (<urn:bldg#bldg.CHW1.CWP2_SS> <urn:bldg#bldg.CHW1.CWP4_SS>) qudt:hasUnit unit:UNITLESS .
 (<urn:bldg#bldg.CHW1.CWP2_SS> <urn:bldg#bldg.CHW1.CWP4_SS>) s223:hasRole s223:Aspect-Command .
-(<urn:bldg#bldg.CHW1.CWP2_SS> <urn:bldg#bldg.CHW1.CWP4_SS>) s223:hasExternalReference (<urn:bschema-rs:skolem:a000009dc0775d30f473af1b61e64b44> <urn:bschema-rs:skolem:a0019f05e81dcb12fbbc970de2b77af8>) .
+(<urn:bldg#bldg.CHW1.CWP2_SS> <urn:bldg#bldg.CHW1.CWP4_SS>) s223:hasExternalReference (_:a000009dc0775d30f473af1b61e64b44 _:a0019f05e81dcb12fbbc970de2b77af8) .
 (<urn:bldg#bldg.CHW1.CWP2_SS> <urn:bldg#bldg.CHW1.CWP4_SS>) a s223:QuantifiableActuatableProperty .
 (<urn:bldg#bldg.CHW1.CWP1.VFD_INPUT_REF_1> <urn:bldg#bldg.MDC.CAC07_ACT_HUMID_SP>) qudt:hasUnit unit:PERCENT .
 (<urn:bldg#bldg.CHW1.CWP1.VFD_INPUT_REF_1> <urn:bldg#bldg.MDC.CAC07_ACT_HUMID_SP>) qudt:hasQuantityKind quantitykind:RelativeHumidity .
 (<urn:bldg#bldg.CHW1.CWP1.VFD_INPUT_REF_1> <urn:bldg#bldg.MDC.CAC07_ACT_HUMID_SP>) s223:hasRole s223:OnOff-Unknown .
 (<urn:bldg#bldg.CHW1.CWP1.VFD_INPUT_REF_1> <urn:bldg#bldg.MDC.CAC07_ACT_HUMID_SP>) s223:hasRole s223:EnumerationKind-Speed .
-(<urn:bldg#bldg.CHW1.CWP1.VFD_INPUT_REF_1> <urn:bldg#bldg.MDC.CAC07_ACT_HUMID_SP>) s223:hasExternalReference (<urn:bschema-rs:skolem:a000009dc0775d30f473af1b61e64b44> <urn:bschema-rs:skolem:a0019f05e81dcb12fbbc970de2b77af8>) .
+(<urn:bldg#bldg.CHW1.CWP1.VFD_INPUT_REF_1> <urn:bldg#bldg.MDC.CAC07_ACT_HUMID_SP>) s223:hasExternalReference (_:a000009dc0775d30f473af1b61e64b44 _:a0019f05e81dcb12fbbc970de2b77af8) .
 (<urn:bldg#bldg.CHW1.CWP1.VFD_INPUT_REF_1> <urn:bldg#bldg.MDC.CAC07_ACT_HUMID_SP>) a s223:QuantifiableActuatableProperty .
 (<urn:bldg#bldg.CHW1.CHP2_SS> <urn:bldg#bldg.CHW1.CHP3_SS>) qudt:hasUnit unit:UNITLESS .
 (<urn:bldg#bldg.CHW1.CHP2_SS> <urn:bldg#bldg.CHW1.CHP3_SS>) s223:hasRole s223:Aspect-Command .
-(<urn:bldg#bldg.CHW1.CHP2_SS> <urn:bldg#bldg.CHW1.CHP3_SS>) s223:hasExternalReference (<urn:bschema-rs:skolem:a000009dc0775d30f473af1b61e64b44> <urn:bschema-rs:skolem:a0019f05e81dcb12fbbc970de2b77af8>) .
+(<urn:bldg#bldg.CHW1.CHP2_SS> <urn:bldg#bldg.CHW1.CHP3_SS>) s223:hasExternalReference (_:a000009dc0775d30f473af1b61e64b44 _:a0019f05e81dcb12fbbc970de2b77af8) .
 (<urn:bldg#bldg.CHW1.CHP2_SS> <urn:bldg#bldg.CHW1.CHP3_SS>) a s223:QuantifiableActuatableProperty .
 (<urn:bldg#bldg.CHW1.BYP_VLV> <urn:bldg#bldg.CHW2.CHW_BYP.VLV>) qudt:hasUnit unit:PERCENT .
 (<urn:bldg#bldg.CHW1.BYP_VLV> <urn:bldg#bldg.CHW2.CHW_BYP.VLV>) qudt:hasUnit unit:GAL_US-PER-MIN .
 (<urn:bldg#bldg.CHW1.BYP_VLV> <urn:bldg#bldg.CHW2.CHW_BYP.VLV>) s223:hasRole s223:Position-Unknown .
 (<urn:bldg#bldg.CHW1.BYP_VLV> <urn:bldg#bldg.CHW2.CHW_BYP.VLV>) s223:hasRole s223:OnOff-Unknown .
 (<urn:bldg#bldg.CHW1.BYP_VLV> <urn:bldg#bldg.CHW2.CHW_BYP.VLV>) s223:hasRole s223:Aspect-Command .
-(<urn:bldg#bldg.CHW1.BYP_VLV> <urn:bldg#bldg.CHW2.CHW_BYP.VLV>) s223:hasExternalReference (<urn:bschema-rs:skolem:a000009dc0775d30f473af1b61e64b44> <urn:bschema-rs:skolem:a0019f05e81dcb12fbbc970de2b77af8>) .
+(<urn:bldg#bldg.CHW1.BYP_VLV> <urn:bldg#bldg.CHW2.CHW_BYP.VLV>) s223:hasExternalReference (_:a000009dc0775d30f473af1b61e64b44 _:a0019f05e81dcb12fbbc970de2b77af8) .
 (<urn:bldg#bldg.CHW1.BYP_VLV> <urn:bldg#bldg.CHW2.CHW_BYP.VLV>) a s223:QuantifiableActuatableProperty .
 (<urn:bldg#bldg.CH2.COND.REF.PRESS> <urn:bldg#bldg.CH2.EVAP.REF.PRESS>) qudt:hasUnit unit:LB_F-PER-IN2 .
-(<urn:bldg#bldg.CH2.COND.REF.PRESS> <urn:bldg#bldg.CH2.EVAP.REF.PRESS>) s223:hasExternalReference (<urn:bschema-rs:skolem:a000009dc0775d30f473af1b61e64b44> <urn:bschema-rs:skolem:a0019f05e81dcb12fbbc970de2b77af8>) .
+(<urn:bldg#bldg.CH2.COND.REF.PRESS> <urn:bldg#bldg.CH2.EVAP.REF.PRESS>) s223:hasExternalReference (_:a000009dc0775d30f473af1b61e64b44 _:a0019f05e81dcb12fbbc970de2b77af8) .
 (<urn:bldg#bldg.CH2.COND.REF.PRESS> <urn:bldg#bldg.CH2.EVAP.REF.PRESS>) a s223:QuantifiableActuatableProperty .
 (<urn:bldg#bldg.CH1.COND.REF.TEMP> <urn:bldg#bldg.CH2.COMP.REF.TEMP>) qudt:hasUnit unit:DEG_F .
 (<urn:bldg#bldg.CH1.COND.REF.TEMP> <urn:bldg#bldg.CH2.COMP.REF.TEMP>) s223:hasRole s223:Role-Return .
 (<urn:bldg#bldg.CH1.COND.REF.TEMP> <urn:bldg#bldg.CH2.COMP.REF.TEMP>) s223:hasRole s223:Role-Condenser .
 (<urn:bldg#bldg.CH1.COND.REF.TEMP> <urn:bldg#bldg.CH2.COMP.REF.TEMP>) s223:hasRole s223:OnOff-Unknown .
-(<urn:bldg#bldg.CH1.COND.REF.TEMP> <urn:bldg#bldg.CH2.COMP.REF.TEMP>) s223:hasExternalReference (<urn:bschema-rs:skolem:a000009dc0775d30f473af1b61e64b44> <urn:bschema-rs:skolem:a0019f05e81dcb12fbbc970de2b77af8>) .
+(<urn:bldg#bldg.CH1.COND.REF.TEMP> <urn:bldg#bldg.CH2.COMP.REF.TEMP>) s223:hasExternalReference (_:a000009dc0775d30f473af1b61e64b44 _:a0019f05e81dcb12fbbc970de2b77af8) .
 (<urn:bldg#bldg.CH1.COND.REF.TEMP> <urn:bldg#bldg.CH2.COMP.REF.TEMP>) a s223:QuantifiableActuatableProperty .
 (<urn:bldg#bldg.AH1A.SF_HIGH.STATIC> <urn:bldg#bldg.AH1B.SF_HIGH.STATIC>) qudt:hasUnit unit:UNITLESS .
 (<urn:bldg#bldg.AH1A.SF_HIGH.STATIC> <urn:bldg#bldg.AH1B.SF_HIGH.STATIC>) qudt:hasUnit unit:PERCENT .
 (<urn:bldg#bldg.AH1A.SF_HIGH.STATIC> <urn:bldg#bldg.AH1B.SF_HIGH.STATIC>) s223:hasRole s223:EnumerationKind-Speed .
 (<urn:bldg#bldg.AH1A.SF_HIGH.STATIC> <urn:bldg#bldg.AH1B.SF_HIGH.STATIC>) s223:hasRole s223:Aspect-Command .
-(<urn:bldg#bldg.AH1A.SF_HIGH.STATIC> <urn:bldg#bldg.AH1B.SF_HIGH.STATIC>) s223:hasExternalReference (<urn:bschema-rs:skolem:a000009dc0775d30f473af1b61e64b44> <urn:bschema-rs:skolem:a0019f05e81dcb12fbbc970de2b77af8>) .
+(<urn:bldg#bldg.AH1A.SF_HIGH.STATIC> <urn:bldg#bldg.AH1B.SF_HIGH.STATIC>) s223:hasExternalReference (_:a000009dc0775d30f473af1b61e64b44 _:a0019f05e81dcb12fbbc970de2b77af8) .
 (<urn:bldg#bldg.AH1A.SF_HIGH.STATIC> <urn:bldg#bldg.AH1B.SF_HIGH.STATIC>) a s223:QuantifiableActuatableProperty .
 (<urn:bldg#bldg.CH1.CHWST.RESET> <urn:bldg#bldg.CH1.EVAP.REF.TEMP>) qudt:hasUnit unit:DEG_F .
 (<urn:bldg#bldg.CH1.CHWST.RESET> <urn:bldg#bldg.CH1.EVAP.REF.TEMP>) qudt:hasUnit unit:A .
 (<urn:bldg#bldg.CH1.CHWST.RESET> <urn:bldg#bldg.CH1.EVAP.REF.TEMP>) qudt:hasQuantityKind quantitykind:Temperature .
 (<urn:bldg#bldg.CH1.CHWST.RESET> <urn:bldg#bldg.CH1.EVAP.REF.TEMP>) s223:hasRole s223:Role-Supply .
-(<urn:bldg#bldg.CH1.CHWST.RESET> <urn:bldg#bldg.CH1.EVAP.REF.TEMP>) s223:hasExternalReference (<urn:bschema-rs:skolem:a000009dc0775d30f473af1b61e64b44> <urn:bschema-rs:skolem:a0019f05e81dcb12fbbc970de2b77af8>) .
+(<urn:bldg#bldg.CH1.CHWST.RESET> <urn:bldg#bldg.CH1.EVAP.REF.TEMP>) s223:hasExternalReference (_:a000009dc0775d30f473af1b61e64b44 _:a0019f05e81dcb12fbbc970de2b77af8) .
 (<urn:bldg#bldg.CH1.CHWST.RESET> <urn:bldg#bldg.CH1.EVAP.REF.TEMP>) a s223:QuantifiableActuatableProperty .
 (<urn:bldg#bldg.AH4_RM.TEMP.STP> <urn:bldg#bldg.EX5_875.TEMP.STP>) qudt:hasUnit unit:DEG_F .
 (<urn:bldg#bldg.AH4_RM.TEMP.STP> <urn:bldg#bldg.EX5_875.TEMP.STP>) s223:hasRole <urn:bldg#OnOff-Unknown> .
 (<urn:bldg#bldg.AH4_RM.TEMP.STP> <urn:bldg#bldg.EX5_875.TEMP.STP>) s223:hasRole s223:OnOff-Unknown .
-(<urn:bldg#bldg.AH4_RM.TEMP.STP> <urn:bldg#bldg.EX5_875.TEMP.STP>) s223:hasExternalReference (<urn:bschema-rs:skolem:a000009dc0775d30f473af1b61e64b44> <urn:bschema-rs:skolem:a0019f05e81dcb12fbbc970de2b77af8>) .
+(<urn:bldg#bldg.AH4_RM.TEMP.STP> <urn:bldg#bldg.EX5_875.TEMP.STP>) s223:hasExternalReference (_:a000009dc0775d30f473af1b61e64b44 _:a0019f05e81dcb12fbbc970de2b77af8) .
 (<urn:bldg#bldg.AH4_RM.TEMP.STP> <urn:bldg#bldg.EX5_875.TEMP.STP>) a s223:QuantifiableActuatableProperty .
 (<urn:bldg#bldg.AH3_RM.TEMP.STP> <urn:bldg#bldg.RAH01_SAT.STP>) qudt:hasUnit unit:DEG_F .
 (<urn:bldg#bldg.AH3_RM.TEMP.STP> <urn:bldg#bldg.RAH01_SAT.STP>) s223:hasRole s223:Role-Supply .
 (<urn:bldg#bldg.AH3_RM.TEMP.STP> <urn:bldg#bldg.RAH01_SAT.STP>) s223:hasRole s223:OnOff-Unknown .
-(<urn:bldg#bldg.AH3_RM.TEMP.STP> <urn:bldg#bldg.RAH01_SAT.STP>) s223:hasExternalReference (<urn:bschema-rs:skolem:a000009dc0775d30f473af1b61e64b44> <urn:bschema-rs:skolem:a0019f05e81dcb12fbbc970de2b77af8>) .
+(<urn:bldg#bldg.AH3_RM.TEMP.STP> <urn:bldg#bldg.RAH01_SAT.STP>) s223:hasExternalReference (_:a000009dc0775d30f473af1b61e64b44 _:a0019f05e81dcb12fbbc970de2b77af8) .
 (<urn:bldg#bldg.AH3_RM.TEMP.STP> <urn:bldg#bldg.RAH01_SAT.STP>) a s223:QuantifiableActuatableProperty .
 (<urn:bldg#bldg.AH2B.RF_VFD.CMD.STP.STRT>) qudt:hasUnit unit:UNITLESS .
 (<urn:bldg#bldg.AH2B.RF_VFD.CMD.STP.STRT>) s223:hasRole s223:Aspect-Command .
-(<urn:bldg#bldg.AH2B.RF_VFD.CMD.STP.STRT>) s223:hasExternalReference (<urn:bschema-rs:skolem:a000009dc0775d30f473af1b61e64b44> <urn:bschema-rs:skolem:a0019f05e81dcb12fbbc970de2b77af8>) .
+(<urn:bldg#bldg.AH2B.RF_VFD.CMD.STP.STRT>) s223:hasExternalReference (_:a000009dc0775d30f473af1b61e64b44 _:a0019f05e81dcb12fbbc970de2b77af8) .
 (<urn:bldg#bldg.AH2B.RF_VFD.CMD.STP.STRT>) a s223:QuantifiableActuatableProperty .
 (<urn:bldg#bldg.AH2A_EAD> <urn:bldg#bldg.AH2A_RAD>) qudt:hasUnit unit:PERCENT .
 (<urn:bldg#bldg.AH2A_EAD> <urn:bldg#bldg.AH2A_RAD>) s223:hasRole s223:Position-Unknown .
 (<urn:bldg#bldg.AH2A_EAD> <urn:bldg#bldg.AH2A_RAD>) s223:hasRole s223:OnOff-Unknown .
 (<urn:bldg#bldg.AH2A_EAD> <urn:bldg#bldg.AH2A_RAD>) s223:hasRole s223:Aspect-Command .
-(<urn:bldg#bldg.AH2A_EAD> <urn:bldg#bldg.AH2A_RAD>) s223:hasExternalReference (<urn:bschema-rs:skolem:a000009dc0775d30f473af1b61e64b44> <urn:bschema-rs:skolem:a0019f05e81dcb12fbbc970de2b77af8>) .
+(<urn:bldg#bldg.AH2A_EAD> <urn:bldg#bldg.AH2A_RAD>) s223:hasExternalReference (_:a000009dc0775d30f473af1b61e64b44 _:a0019f05e81dcb12fbbc970de2b77af8) .
 (<urn:bldg#bldg.AH2A_EAD> <urn:bldg#bldg.AH2A_RAD>) a s223:QuantifiableActuatableProperty .
 (<urn:bldg#bldg.AH2A_BDD> <urn:bldg#bldg.AH2B_BDD>) qudt:hasUnit unit:UNITLESS .
 (<urn:bldg#bldg.AH2A_BDD> <urn:bldg#bldg.AH2B_BDD>) s223:hasRole s223:Aspect-Command .
-(<urn:bldg#bldg.AH2A_BDD> <urn:bldg#bldg.AH2B_BDD>) s223:hasExternalReference (<urn:bschema-rs:skolem:a000009dc0775d30f473af1b61e64b44> <urn:bschema-rs:skolem:a0019f05e81dcb12fbbc970de2b77af8>) .
+(<urn:bldg#bldg.AH2A_BDD> <urn:bldg#bldg.AH2B_BDD>) s223:hasExternalReference (_:a000009dc0775d30f473af1b61e64b44 _:a0019f05e81dcb12fbbc970de2b77af8) .
 (<urn:bldg#bldg.AH2A_BDD> <urn:bldg#bldg.AH2B_BDD>) a s223:QuantifiableActuatableProperty .
 (<urn:bldg#bldg.AH2A.RF_VFD.CMD.STP.STRT> <urn:bldg#bldg.AH2A.RTN_FAN_CFM_LOOPOUT>) qudt:hasUnit unit:UNITLESS .
 (<urn:bldg#bldg.AH2A.RF_VFD.CMD.STP.STRT> <urn:bldg#bldg.AH2A.RTN_FAN_CFM_LOOPOUT>) qudt:hasUnit unit:PERCENT .
 (<urn:bldg#bldg.AH2A.RF_VFD.CMD.STP.STRT> <urn:bldg#bldg.AH2A.RTN_FAN_CFM_LOOPOUT>) s223:hasRole s223:EnumerationKind-Speed .
 (<urn:bldg#bldg.AH2A.RF_VFD.CMD.STP.STRT> <urn:bldg#bldg.AH2A.RTN_FAN_CFM_LOOPOUT>) s223:hasRole s223:Aspect-Command .
-(<urn:bldg#bldg.AH2A.RF_VFD.CMD.STP.STRT> <urn:bldg#bldg.AH2A.RTN_FAN_CFM_LOOPOUT>) s223:hasExternalReference (<urn:bschema-rs:skolem:a000009dc0775d30f473af1b61e64b44> <urn:bschema-rs:skolem:a0019f05e81dcb12fbbc970de2b77af8>) .
+(<urn:bldg#bldg.AH2A.RF_VFD.CMD.STP.STRT> <urn:bldg#bldg.AH2A.RTN_FAN_CFM_LOOPOUT>) s223:hasExternalReference (_:a000009dc0775d30f473af1b61e64b44 _:a0019f05e81dcb12fbbc970de2b77af8) .
 (<urn:bldg#bldg.AH2A.RF_VFD.CMD.STP.STRT> <urn:bldg#bldg.AH2A.RTN_FAN_CFM_LOOPOUT>) a s223:QuantifiableActuatableProperty .
 (<urn:bldg#bldg.AH2A-B.DUCT_STATIC_LOOPOUT> <urn:bldg#bldg.AH2A.SUP_AIR_TEMP_LOOPOUT>) qudt:hasUnit unit:UNITLESS .
 (<urn:bldg#bldg.AH2A-B.DUCT_STATIC_LOOPOUT> <urn:bldg#bldg.AH2A.SUP_AIR_TEMP_LOOPOUT>) qudt:hasUnit unit:PERCENT .
 (<urn:bldg#bldg.AH2A-B.DUCT_STATIC_LOOPOUT> <urn:bldg#bldg.AH2A.SUP_AIR_TEMP_LOOPOUT>) qudt:hasUnit unit:DEG_F .
 (<urn:bldg#bldg.AH2A-B.DUCT_STATIC_LOOPOUT> <urn:bldg#bldg.AH2A.SUP_AIR_TEMP_LOOPOUT>) s223:hasRole s223:Role-Supply .
 (<urn:bldg#bldg.AH2A-B.DUCT_STATIC_LOOPOUT> <urn:bldg#bldg.AH2A.SUP_AIR_TEMP_LOOPOUT>) s223:hasRole s223:Aspect-Command .
-(<urn:bldg#bldg.AH2A-B.DUCT_STATIC_LOOPOUT> <urn:bldg#bldg.AH2A.SUP_AIR_TEMP_LOOPOUT>) s223:hasExternalReference (<urn:bschema-rs:skolem:a000009dc0775d30f473af1b61e64b44> <urn:bschema-rs:skolem:a0019f05e81dcb12fbbc970de2b77af8>) .
+(<urn:bldg#bldg.AH2A-B.DUCT_STATIC_LOOPOUT> <urn:bldg#bldg.AH2A.SUP_AIR_TEMP_LOOPOUT>) s223:hasExternalReference (_:a000009dc0775d30f473af1b61e64b44 _:a0019f05e81dcb12fbbc970de2b77af8) .
 (<urn:bldg#bldg.AH2A-B.DUCT_STATIC_LOOPOUT> <urn:bldg#bldg.AH2A.SUP_AIR_TEMP_LOOPOUT>) a s223:QuantifiableActuatableProperty .
 (<urn:bldg#bldg.AH1_RHC-1_CTL_STPT> <urn:bldg#bldg.AH1_RHC-2_CTL_STPT>) qudt:hasUnit unit:DEG_F .
 (<urn:bldg#bldg.AH1_RHC-1_CTL_STPT> <urn:bldg#bldg.AH1_RHC-2_CTL_STPT>) s223:hasRole s223:Role-Supply .
-(<urn:bldg#bldg.AH1_RHC-1_CTL_STPT> <urn:bldg#bldg.AH1_RHC-2_CTL_STPT>) s223:hasExternalReference (<urn:bschema-rs:skolem:a000009dc0775d30f473af1b61e64b44> <urn:bschema-rs:skolem:a0019f05e81dcb12fbbc970de2b77af8>) .
+(<urn:bldg#bldg.AH1_RHC-1_CTL_STPT> <urn:bldg#bldg.AH1_RHC-2_CTL_STPT>) s223:hasExternalReference (_:a000009dc0775d30f473af1b61e64b44 _:a0019f05e81dcb12fbbc970de2b77af8) .
 (<urn:bldg#bldg.AH1_RHC-1_CTL_STPT> <urn:bldg#bldg.AH1_RHC-2_CTL_STPT>) a s223:QuantifiableActuatableProperty .
 (<urn:bldg#bldg.AH1_DP.LOOPOUT>) qudt:hasUnit unit:PERCENT .
 (<urn:bldg#bldg.AH1_DP.LOOPOUT>) s223:hasRole s223:Aspect-Command .
-(<urn:bldg#bldg.AH1_DP.LOOPOUT>) s223:hasExternalReference (<urn:bschema-rs:skolem:a000009dc0775d30f473af1b61e64b44> <urn:bschema-rs:skolem:a0019f05e81dcb12fbbc970de2b77af8>) .
+(<urn:bldg#bldg.AH1_DP.LOOPOUT>) s223:hasExternalReference (_:a000009dc0775d30f473af1b61e64b44 _:a0019f05e81dcb12fbbc970de2b77af8) .
 (<urn:bldg#bldg.AH1_DP.LOOPOUT>) a s223:QuantifiableActuatableProperty .
 (<urn:bldg#bldg.AH1A.SF_VFD_DI_5_ACTUAL> <urn:bldg#bldg.AH1A.SF_VFD_DI_6_ACTUAL>) qudt:hasUnit unit:UNITLESS .
-(<urn:bldg#bldg.AH1A.SF_VFD_DI_5_ACTUAL> <urn:bldg#bldg.AH1A.SF_VFD_DI_6_ACTUAL>) s223:hasExternalReference (<urn:bschema-rs:skolem:a000009dc0775d30f473af1b61e64b44> <urn:bschema-rs:skolem:a0019f05e81dcb12fbbc970de2b77af8>) .
+(<urn:bldg#bldg.AH1A.SF_VFD_DI_5_ACTUAL> <urn:bldg#bldg.AH1A.SF_VFD_DI_6_ACTUAL>) s223:hasExternalReference (_:a000009dc0775d30f473af1b61e64b44 _:a0019f05e81dcb12fbbc970de2b77af8) .
 (<urn:bldg#bldg.AH1A.SF_VFD_DI_5_ACTUAL> <urn:bldg#bldg.AH1A.SF_VFD_DI_6_ACTUAL>) a s223:Property .
 (<urn:bldg#131_Tele-Health> <urn:bldg#132_MECH_STEAM>) s223:hasProperty (<urn:bldg#bldg.AH4_RM.TEMP> <urn:bldg#bldg.AUDITORIUM_CO2>) .
 (<urn:bldg#131_Tele-Health> <urn:bldg#132_MECH_STEAM>) s223:hasProperty (<urn:bldg#bldg.AH4_RM.TEMP.STP> <urn:bldg#bldg.EX5_875.TEMP.STP>) .
@@ -1387,32 +1387,32 @@
 (<urn:bldg#ATS_E01> <urn:bldg#ATS_E02>) s223:hasProperty (<urn:bldg#bldg.CHW1.CWP1.VFD_ENA.DIS_CMD> <urn:bldg#bldg.CHW1.CWP1.VFD_RUN.STOP_CMD>) .
 (<urn:bldg#bldg.CHW1_CHW.DPIG> <urn:bldg#bldg.CHW1_CHW.DPPG>) qudt:hasUnit unit:UNITLESS .
 (<urn:bldg#bldg.CHW1_CHW.DPIG> <urn:bldg#bldg.CHW1_CHW.DPPG>) s223:hasRole s223:OnOff-Unknown .
-(<urn:bldg#bldg.CHW1_CHW.DPIG> <urn:bldg#bldg.CHW1_CHW.DPPG>) s223:hasExternalReference (<urn:bschema-rs:skolem:a000009dc0775d30f473af1b61e64b44> <urn:bschema-rs:skolem:a0019f05e81dcb12fbbc970de2b77af8>) .
+(<urn:bldg#bldg.CHW1_CHW.DPIG> <urn:bldg#bldg.CHW1_CHW.DPPG>) s223:hasExternalReference (_:a000009dc0775d30f473af1b61e64b44 _:a0019f05e81dcb12fbbc970de2b77af8) .
 (<urn:bldg#bldg.CHW1_CHW.DPIG> <urn:bldg#bldg.CHW1_CHW.DPPG>) a s223:QuantifiableProperty .
 (<urn:bldg#bldg.AH4_RM.TEMPIG> <urn:bldg#bldg.AH4_RM.TEMPPG>) qudt:hasUnit unit:UNITLESS .
 (<urn:bldg#bldg.AH4_RM.TEMPIG> <urn:bldg#bldg.AH4_RM.TEMPPG>) s223:hasRole s223:OnOff-Unknown .
-(<urn:bldg#bldg.AH4_RM.TEMPIG> <urn:bldg#bldg.AH4_RM.TEMPPG>) s223:hasExternalReference (<urn:bschema-rs:skolem:a000009dc0775d30f473af1b61e64b44> <urn:bschema-rs:skolem:a0019f05e81dcb12fbbc970de2b77af8>) .
+(<urn:bldg#bldg.AH4_RM.TEMPIG> <urn:bldg#bldg.AH4_RM.TEMPPG>) s223:hasExternalReference (_:a000009dc0775d30f473af1b61e64b44 _:a0019f05e81dcb12fbbc970de2b77af8) .
 (<urn:bldg#bldg.AH4_RM.TEMPIG> <urn:bldg#bldg.AH4_RM.TEMPPG>) a s223:QuantifiableProperty .
 (<urn:bldg#bldg.AH3_RM.TEMPIG> <urn:bldg#bldg.AH3_RM.TEMPPG>) qudt:hasUnit unit:UNITLESS .
 (<urn:bldg#bldg.AH3_RM.TEMPIG> <urn:bldg#bldg.AH3_RM.TEMPPG>) s223:hasRole s223:OnOff-Unknown .
-(<urn:bldg#bldg.AH3_RM.TEMPIG> <urn:bldg#bldg.AH3_RM.TEMPPG>) s223:hasExternalReference (<urn:bschema-rs:skolem:a000009dc0775d30f473af1b61e64b44> <urn:bschema-rs:skolem:a0019f05e81dcb12fbbc970de2b77af8>) .
+(<urn:bldg#bldg.AH3_RM.TEMPIG> <urn:bldg#bldg.AH3_RM.TEMPPG>) s223:hasExternalReference (_:a000009dc0775d30f473af1b61e64b44 _:a0019f05e81dcb12fbbc970de2b77af8) .
 (<urn:bldg#bldg.AH3_RM.TEMPIG> <urn:bldg#bldg.AH3_RM.TEMPPG>) a s223:QuantifiableProperty .
 (<urn:bldg#bldg.AH2A_SATIG> <urn:bldg#bldg.AH2A_SATPG>) qudt:hasUnit unit:UNITLESS .
 (<urn:bldg#bldg.AH2A_SATIG> <urn:bldg#bldg.AH2A_SATPG>) s223:hasRole s223:OnOff-Unknown .
-(<urn:bldg#bldg.AH2A_SATIG> <urn:bldg#bldg.AH2A_SATPG>) s223:hasExternalReference (<urn:bschema-rs:skolem:a000009dc0775d30f473af1b61e64b44> <urn:bschema-rs:skolem:a0019f05e81dcb12fbbc970de2b77af8>) .
+(<urn:bldg#bldg.AH2A_SATIG> <urn:bldg#bldg.AH2A_SATPG>) s223:hasExternalReference (_:a000009dc0775d30f473af1b61e64b44 _:a0019f05e81dcb12fbbc970de2b77af8) .
 (<urn:bldg#bldg.AH2A_SATIG> <urn:bldg#bldg.AH2A_SATPG>) a s223:QuantifiableProperty .
 (<urn:bldg#bldg.AH2A.AH2B.RF_CFMPG>) qudt:hasUnit unit:UNITLESS .
 (<urn:bldg#bldg.AH2A.AH2B.RF_CFMPG>) s223:hasRole s223:OnOff-Unknown .
-(<urn:bldg#bldg.AH2A.AH2B.RF_CFMPG>) s223:hasExternalReference (<urn:bschema-rs:skolem:a000009dc0775d30f473af1b61e64b44> <urn:bschema-rs:skolem:a0019f05e81dcb12fbbc970de2b77af8>) .
+(<urn:bldg#bldg.AH2A.AH2B.RF_CFMPG>) s223:hasExternalReference (_:a000009dc0775d30f473af1b61e64b44 _:a0019f05e81dcb12fbbc970de2b77af8) .
 (<urn:bldg#bldg.AH2A.AH2B.RF_CFMPG>) a s223:QuantifiableProperty .
 (<urn:bldg#bldg.AH2A.AH2B.RF_CFMIG>) qudt:hasUnit unit:UNITLESS .
-(<urn:bldg#bldg.AH2A.AH2B.RF_CFMIG>) s223:hasExternalReference (<urn:bschema-rs:skolem:a000009dc0775d30f473af1b61e64b44> <urn:bschema-rs:skolem:a0019f05e81dcb12fbbc970de2b77af8>) .
+(<urn:bldg#bldg.AH2A.AH2B.RF_CFMIG>) s223:hasExternalReference (_:a000009dc0775d30f473af1b61e64b44 _:a0019f05e81dcb12fbbc970de2b77af8) .
 (<urn:bldg#bldg.AH2A.AH2B.RF_CFMIG>) a s223:QuantifiableProperty .
 (<urn:bldg#bldg.AH1A_DWPIG> <urn:bldg#bldg.AH1A_DWPPG>) qudt:hasUnit unit:UNITLESS .
 (<urn:bldg#bldg.AH1A_DWPIG> <urn:bldg#bldg.AH1A_DWPPG>) qudt:hasUnit unit:SEC .
 (<urn:bldg#bldg.AH1A_DWPIG> <urn:bldg#bldg.AH1A_DWPPG>) s223:hasRole s223:Role-Supply .
 (<urn:bldg#bldg.AH1A_DWPIG> <urn:bldg#bldg.AH1A_DWPPG>) s223:hasRole s223:OnOff-Unknown .
-(<urn:bldg#bldg.AH1A_DWPIG> <urn:bldg#bldg.AH1A_DWPPG>) s223:hasExternalReference (<urn:bschema-rs:skolem:a000009dc0775d30f473af1b61e64b44> <urn:bschema-rs:skolem:a0019f05e81dcb12fbbc970de2b77af8>) .
+(<urn:bldg#bldg.AH1A_DWPIG> <urn:bldg#bldg.AH1A_DWPPG>) s223:hasExternalReference (_:a000009dc0775d30f473af1b61e64b44 _:a0019f05e81dcb12fbbc970de2b77af8) .
 (<urn:bldg#bldg.AH1A_DWPIG> <urn:bldg#bldg.AH1A_DWPPG>) a s223:QuantifiableProperty .
 (<urn:bldg#TEST.CHWDP1ERR> <urn:bldg#TEST.CHWDP2ERR>) qudt:hasUnit unit:UNITLESS .
 (<urn:bldg#TEST.CHWDP1ERR> <urn:bldg#TEST.CHWDP2ERR>) qudt:hasUnit unit:SEC .
@@ -1421,17 +1421,17 @@
 (<urn:bldg#TEST.CHWDP1ERR> <urn:bldg#TEST.CHWDP2ERR>) qudt:hasUnit unit:HR .
 (<urn:bldg#TEST.CHWDP1ERR> <urn:bldg#TEST.CHWDP2ERR>) qudt:hasUnit unit:DEG_F .
 (<urn:bldg#TEST.CHWDP1ERR> <urn:bldg#TEST.CHWDP2ERR>) s223:hasRole s223:OnOff-Unknown .
-(<urn:bldg#TEST.CHWDP1ERR> <urn:bldg#TEST.CHWDP2ERR>) s223:hasExternalReference (<urn:bschema-rs:skolem:a000009dc0775d30f473af1b61e64b44> <urn:bschema-rs:skolem:a0019f05e81dcb12fbbc970de2b77af8>) .
+(<urn:bldg#TEST.CHWDP1ERR> <urn:bldg#TEST.CHWDP2ERR>) s223:hasExternalReference (_:a000009dc0775d30f473af1b61e64b44 _:a0019f05e81dcb12fbbc970de2b77af8) .
 (<urn:bldg#TEST.CHWDP1ERR> <urn:bldg#TEST.CHWDP2ERR>) a s223:QuantifiableProperty .
 (<urn:bldg#bldg.SECND8> <urn:bldg#bldg.SECND9>) qudt:hasUnit unit:SEC .
-(<urn:bldg#bldg.SECND8> <urn:bldg#bldg.SECND9>) s223:hasExternalReference (<urn:bschema-rs:skolem:a000009dc0775d30f473af1b61e64b44> <urn:bschema-rs:skolem:a0019f05e81dcb12fbbc970de2b77af8>) .
+(<urn:bldg#bldg.SECND8> <urn:bldg#bldg.SECND9>) s223:hasExternalReference (_:a000009dc0775d30f473af1b61e64b44 _:a0019f05e81dcb12fbbc970de2b77af8) .
 (<urn:bldg#bldg.SECND8> <urn:bldg#bldg.SECND9>) a s223:QuantifiableProperty .
 (<urn:bldg#bldg.SECND10> <urn:bldg#bldg.SECND11>) qudt:hasUnit unit:SEC .
-(<urn:bldg#bldg.SECND10> <urn:bldg#bldg.SECND11>) s223:hasExternalReference (<urn:bschema-rs:skolem:a000009dc0775d30f473af1b61e64b44> <urn:bschema-rs:skolem:a0019f05e81dcb12fbbc970de2b77af8>) .
+(<urn:bldg#bldg.SECND10> <urn:bldg#bldg.SECND11>) s223:hasExternalReference (_:a000009dc0775d30f473af1b61e64b44 _:a0019f05e81dcb12fbbc970de2b77af8) .
 (<urn:bldg#bldg.SECND10> <urn:bldg#bldg.SECND11>) a s223:QuantifiableProperty .
 (<urn:bldg#bldg.SCHW_CHWSTIG> <urn:bldg#bldg.SCHW_CHWSTPG>) qudt:hasUnit unit:UNITLESS .
 (<urn:bldg#bldg.SCHW_CHWSTIG> <urn:bldg#bldg.SCHW_CHWSTPG>) s223:hasRole s223:OnOff-Unknown .
-(<urn:bldg#bldg.SCHW_CHWSTIG> <urn:bldg#bldg.SCHW_CHWSTPG>) s223:hasExternalReference (<urn:bschema-rs:skolem:a000009dc0775d30f473af1b61e64b44> <urn:bschema-rs:skolem:a0019f05e81dcb12fbbc970de2b77af8>) .
+(<urn:bldg#bldg.SCHW_CHWSTIG> <urn:bldg#bldg.SCHW_CHWSTPG>) s223:hasExternalReference (_:a000009dc0775d30f473af1b61e64b44 _:a0019f05e81dcb12fbbc970de2b77af8) .
 (<urn:bldg#bldg.SCHW_CHWSTIG> <urn:bldg#bldg.SCHW_CHWSTPG>) a s223:QuantifiableProperty .
 (<urn:bldg#bldg.S3-01_CLG_BIAS> <urn:bldg#bldg.S3-01_CLG_D_GAIN>) qudt:hasUnit unit:UNITLESS .
 (<urn:bldg#bldg.S3-01_CLG_BIAS> <urn:bldg#bldg.S3-01_CLG_D_GAIN>) qudt:hasUnit unit:SEC .
@@ -1440,14 +1440,14 @@
 (<urn:bldg#bldg.S3-01_CLG_BIAS> <urn:bldg#bldg.S3-01_CLG_D_GAIN>) qudt:hasUnit unit:FT2 .
 (<urn:bldg#bldg.S3-01_CLG_BIAS> <urn:bldg#bldg.S3-01_CLG_D_GAIN>) qudt:hasUnit unit:DEG .
 (<urn:bldg#bldg.S3-01_CLG_BIAS> <urn:bldg#bldg.S3-01_CLG_D_GAIN>) s223:hasRole s223:OnOff-Unknown .
-(<urn:bldg#bldg.S3-01_CLG_BIAS> <urn:bldg#bldg.S3-01_CLG_D_GAIN>) s223:hasExternalReference (<urn:bschema-rs:skolem:a000009dc0775d30f473af1b61e64b44> <urn:bschema-rs:skolem:a0019f05e81dcb12fbbc970de2b77af8>) .
+(<urn:bldg#bldg.S3-01_CLG_BIAS> <urn:bldg#bldg.S3-01_CLG_D_GAIN>) s223:hasExternalReference (_:a000009dc0775d30f473af1b61e64b44 _:a0019f05e81dcb12fbbc970de2b77af8) .
 (<urn:bldg#bldg.S3-01_CLG_BIAS> <urn:bldg#bldg.S3-01_CLG_D_GAIN>) a s223:QuantifiableProperty .
 (<urn:bldg#bldg.EF1.2_DPIG> <urn:bldg#bldg.EF1.2_DPPG>) qudt:hasUnit unit:UNITLESS .
 (<urn:bldg#bldg.EF1.2_DPIG> <urn:bldg#bldg.EF1.2_DPPG>) s223:hasRole s223:OnOff-Unknown .
-(<urn:bldg#bldg.EF1.2_DPIG> <urn:bldg#bldg.EF1.2_DPPG>) s223:hasExternalReference (<urn:bschema-rs:skolem:a000009dc0775d30f473af1b61e64b44> <urn:bschema-rs:skolem:a0019f05e81dcb12fbbc970de2b77af8>) .
+(<urn:bldg#bldg.EF1.2_DPIG> <urn:bldg#bldg.EF1.2_DPPG>) s223:hasExternalReference (_:a000009dc0775d30f473af1b61e64b44 _:a0019f05e81dcb12fbbc970de2b77af8) .
 (<urn:bldg#bldg.EF1.2_DPIG> <urn:bldg#bldg.EF1.2_DPPG>) a s223:QuantifiableProperty .
 (<urn:bldg#bldg.CP.RESET.RAH10.IM> <urn:bldg#bldg.CP.RESET.RAH11.IM>) qudt:hasUnit unit:UNITLESS .
-(<urn:bldg#bldg.CP.RESET.RAH10.IM> <urn:bldg#bldg.CP.RESET.RAH11.IM>) s223:hasExternalReference (<urn:bschema-rs:skolem:a000009dc0775d30f473af1b61e64b44> <urn:bschema-rs:skolem:a0019f05e81dcb12fbbc970de2b77af8>) .
+(<urn:bldg#bldg.CP.RESET.RAH10.IM> <urn:bldg#bldg.CP.RESET.RAH11.IM>) s223:hasExternalReference (_:a000009dc0775d30f473af1b61e64b44 _:a0019f05e81dcb12fbbc970de2b77af8) .
 (<urn:bldg#bldg.CP.RESET.RAH10.IM> <urn:bldg#bldg.CP.RESET.RAH11.IM>) a s223:QuantifiableProperty .
 (<urn:bldg#reheat-coil-valve-position_0c51efe3> <urn:bldg#reheat-coil-valve-position_1500e243>) qudt:hasUnit unit:PERCENT .
 (<urn:bldg#reheat-coil-valve-position_0c51efe3> <urn:bldg#reheat-coil-valve-position_1500e243>) qudt:hasQuantityKind quantitykind:DimensionlessRatio .
@@ -1466,26 +1466,26 @@
 (<urn:bldg#HWP1> <urn:bldg#HWP2>) a s223:Pump .
 (<urn:bldg#bldg.SW.MSA_B.MAIN.PWR_REAL_3_P>) qudt:hasUnit unit:KiloW .
 (<urn:bldg#bldg.SW.MSA_B.MAIN.PWR_REAL_3_P>) s223:hasProperty (<urn:bldg#bldg.SW.MSA.MAIN.PWR_REAL_3_P> <urn:bldg#bldg.SW.MSB.MAIN.PWR_REAL_3_P>) .
-(<urn:bldg#bldg.SW.MSA_B.MAIN.PWR_REAL_3_P>) s223:hasExternalReference (<urn:bschema-rs:skolem:a000009dc0775d30f473af1b61e64b44> <urn:bschema-rs:skolem:a0019f05e81dcb12fbbc970de2b77af8>) .
+(<urn:bldg#bldg.SW.MSA_B.MAIN.PWR_REAL_3_P>) s223:hasExternalReference (_:a000009dc0775d30f473af1b61e64b44 _:a0019f05e81dcb12fbbc970de2b77af8) .
 (<urn:bldg#bldg.SW.MSA_B.MAIN.PWR_REAL_3_P>) a s223:Property .
 (<urn:bldg#bldg.S3-01_CHK_OUT> <urn:bldg#bldg.S3-02_CHK_OUT>) qudt:hasUnit unit:UNITLESS .
-(<urn:bldg#bldg.S3-01_CHK_OUT> <urn:bldg#bldg.S3-02_CHK_OUT>) s223:hasExternalReference (<urn:bschema-rs:skolem:a000009dc0775d30f473af1b61e64b44> <urn:bschema-rs:skolem:a0019f05e81dcb12fbbc970de2b77af8>) .
+(<urn:bldg#bldg.S3-01_CHK_OUT> <urn:bldg#bldg.S3-02_CHK_OUT>) s223:hasExternalReference (_:a000009dc0775d30f473af1b61e64b44 _:a0019f05e81dcb12fbbc970de2b77af8) .
 (<urn:bldg#bldg.S3-01_CHK_OUT> <urn:bldg#bldg.S3-02_CHK_OUT>) a s223:Property .
 (<urn:bldg#bldg.HWP1_VFD_DI_6_ACTUAL> <urn:bldg#bldg.HWP1_VFD_ENA.DIS_ACT>) qudt:hasUnit unit:UNITLESS .
-(<urn:bldg#bldg.HWP1_VFD_DI_6_ACTUAL> <urn:bldg#bldg.HWP1_VFD_ENA.DIS_ACT>) s223:hasExternalReference (<urn:bschema-rs:skolem:a000009dc0775d30f473af1b61e64b44> <urn:bschema-rs:skolem:a0019f05e81dcb12fbbc970de2b77af8>) .
+(<urn:bldg#bldg.HWP1_VFD_DI_6_ACTUAL> <urn:bldg#bldg.HWP1_VFD_ENA.DIS_ACT>) s223:hasExternalReference (_:a000009dc0775d30f473af1b61e64b44 _:a0019f05e81dcb12fbbc970de2b77af8) .
 (<urn:bldg#bldg.HWP1_VFD_DI_6_ACTUAL> <urn:bldg#bldg.HWP1_VFD_ENA.DIS_ACT>) a s223:Property .
 (<urn:bldg#bldg.CHW2.MULTISTACK_LOWCHWFLOW> <urn:bldg#bldg.CHW2.MULTISTACK_LOWCWFLOW>) qudt:hasUnit unit:UNITLESS .
 (<urn:bldg#bldg.CHW2.MULTISTACK_LOWCHWFLOW> <urn:bldg#bldg.CHW2.MULTISTACK_LOWCWFLOW>) qudt:hasUnit unit:SEC .
 (<urn:bldg#bldg.CHW2.MULTISTACK_LOWCHWFLOW> <urn:bldg#bldg.CHW2.MULTISTACK_LOWCWFLOW>) qudt:hasUnit unit:PERCENT .
 (<urn:bldg#bldg.CHW2.MULTISTACK_LOWCHWFLOW> <urn:bldg#bldg.CHW2.MULTISTACK_LOWCWFLOW>) qudt:hasUnit unit:GAL_US .
 (<urn:bldg#bldg.CHW2.MULTISTACK_LOWCHWFLOW> <urn:bldg#bldg.CHW2.MULTISTACK_LOWCWFLOW>) qudt:hasUnit unit:DEG_F .
-(<urn:bldg#bldg.CHW2.MULTISTACK_LOWCHWFLOW> <urn:bldg#bldg.CHW2.MULTISTACK_LOWCWFLOW>) s223:hasExternalReference (<urn:bschema-rs:skolem:a000009dc0775d30f473af1b61e64b44> <urn:bschema-rs:skolem:a0019f05e81dcb12fbbc970de2b77af8>) .
+(<urn:bldg#bldg.CHW2.MULTISTACK_LOWCHWFLOW> <urn:bldg#bldg.CHW2.MULTISTACK_LOWCWFLOW>) s223:hasExternalReference (_:a000009dc0775d30f473af1b61e64b44 _:a0019f05e81dcb12fbbc970de2b77af8) .
 (<urn:bldg#bldg.CHW2.MULTISTACK_LOWCHWFLOW> <urn:bldg#bldg.CHW2.MULTISTACK_LOWCWFLOW>) a s223:Property .
 (<urn:bldg#Mode_1_Volume_Total> <urn:bldg#Mode_1_Volume_Total_Device_57018>) qudt:hasUnit unit:GAL_US .
-(<urn:bldg#Mode_1_Volume_Total> <urn:bldg#Mode_1_Volume_Total_Device_57018>) s223:hasExternalReference (<urn:bschema-rs:skolem:a000009dc0775d30f473af1b61e64b44> <urn:bschema-rs:skolem:a0019f05e81dcb12fbbc970de2b77af8>) .
+(<urn:bldg#Mode_1_Volume_Total> <urn:bldg#Mode_1_Volume_Total_Device_57018>) s223:hasExternalReference (_:a000009dc0775d30f473af1b61e64b44 _:a0019f05e81dcb12fbbc970de2b77af8) .
 (<urn:bldg#Mode_1_Volume_Total> <urn:bldg#Mode_1_Volume_Total_Device_57018>) a s223:Property .
-(<urn:bschema-rs:skolem:a16f22a1d49f00568938b289dee28597> <urn:bschema-rs:skolem:ba726da3c07c4e64e11d2ce0a8b90029>) bacnet:storedAt ("2cH8UkCT5723" "3VVRBXJH12758") .
-(<urn:bschema-rs:skolem:a16f22a1d49f00568938b289dee28597> <urn:bschema-rs:skolem:ba726da3c07c4e64e11d2ce0a8b90029>) a bacnet:Port .
+(_:a16f22a1d49f00568938b289dee28597 _:ba726da3c07c4e64e11d2ce0a8b90029) bacnet:storedAt ("2cH8UkCT5723" "3VVRBXJH12758") .
+(_:a16f22a1d49f00568938b289dee28597 _:ba726da3c07c4e64e11d2ce0a8b90029) a bacnet:Port .
 (<urn:bldg#bldg_Sewage>) s223:hasProperty (<urn:bldg#MEC09.BATTERY> <urn:bldg#bldg.AH1A.SF.S>) .
 (<urn:bldg#bldg_Sewage>) a s223:PhysicalSpace .
 (<urn:bldg#bldg_Building>) s223:hasProperty (<urn:bldg#bldg.ELA_KW> <urn:bldg#bldg.ELA_TOTAL.KW>) .
@@ -1871,7 +1871,7 @@
 (<urn:bldg#131_Tele-Health_hvac_domain_in_connection> <urn:bldg#132_MECH_STEAM_hvac_domain_in_connection>) a s223:Connection .
 (<urn:bldg#CH2_Compressor>) s223:hasProperty (<urn:bldg#bldg.CH2.LOAD> <urn:bldg#bldg.CHW1.CHP3_CT>) .
 (<urn:bldg#CH2_Compressor>) a s223:Compressor .
-(<urn:bldg#4FsOfbEa2841> <urn:bldg#5wSA7AlJ2418>) bacnet:hasPort (<urn:bschema-rs:skolem:a16f22a1d49f00568938b289dee28597> <urn:bschema-rs:skolem:ba726da3c07c4e64e11d2ce0a8b90029>) .
+(<urn:bldg#4FsOfbEa2841> <urn:bldg#5wSA7AlJ2418>) bacnet:hasPort (_:a16f22a1d49f00568938b289dee28597 _:ba726da3c07c4e64e11d2ce0a8b90029) .
 (<urn:bldg#4FsOfbEa2841> <urn:bldg#5wSA7AlJ2418>) bacnet:device-instance rdfs:Resource .
 (<urn:bldg#4FsOfbEa2841> <urn:bldg#5wSA7AlJ2418>) a bacnet:BACnetDevice .
 (<urn:bldg#RHC-1_AHU> <urn:bldg#RHC-2_AHU>) s223:hasProperty (<urn:bldg#MEC09.BATTERY> <urn:bldg#bldg.AH1A.SF.S>) .

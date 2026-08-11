@@ -120,3 +120,34 @@ fn groups_literals_by_topology_and_reports_original_values() {
         other => panic!("expected hasValue's class-pattern object to be a NamedNode, got {other:?}"),
     }
 }
+
+const TTL_WITH_BLANK_NODES: &str = r#"
+    @prefix ex: <urn:example#> .
+
+    ex:sensor1 ex:hasSpec _:b1 .
+    ex:sensor2 ex:hasSpec _:b2 .
+    _:b1 a ex:Spec .
+    _:b2 a ex:Spec .
+"#;
+
+#[test]
+fn groups_blank_nodes_by_topology_and_reports_as_blank_nodes() {
+    let data_graph = RdfGraph::parse_str(TTL_WITH_BLANK_NODES, RdfFormat::Turtle).unwrap();
+    let result = create_bschema(&data_graph, 10, None, true, true).unwrap();
+
+    let member_triples = result.member_graph.triples();
+
+    // No skolem placeholder IRI should leak into the reported output;
+    // blank-node members should be reported as real Turtle blank nodes.
+    assert!(
+        member_triples.iter().all(|t| !t.object.to_string().contains("bschema-rs:skolem:")),
+        "member graph should report original blank nodes, not skolem stand-ins, got {member_triples:?}"
+    );
+
+    let blank_member_count = member_triples
+        .iter()
+        .filter(|t| t.predicate.as_str().ends_with("rdf-schema#member"))
+        .filter(|t| matches!(&t.object, Term::BlankNode(_)))
+        .count();
+    assert_eq!(blank_member_count, 2, "the two isomorphic blank-node specs should be grouped together");
+}

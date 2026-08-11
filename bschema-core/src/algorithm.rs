@@ -351,7 +351,7 @@ pub fn create_bschema(
         A.clone(),
         OWL_ONTOLOGY.clone(),
     ));
-    let (data_graph, literal_reverse) = original_data_graph.skolemize()?;
+    let (data_graph, skolem_reverse) = original_data_graph.skolemize()?;
 
     let mut equivalent_subjects: Vec<Vec<NamedOrBlankNode>> = Vec::new();
     let mut subject_classes: Vec<NamedNode> = Vec::new();
@@ -418,11 +418,11 @@ pub fn create_bschema(
             RDF_SEQ.clone(),
         ));
         for s in &equivalent_subjects[i] {
-            // Report the original literal value, not its skolem stand-in,
-            // for members that were skolemized from a literal.
+            // Report the original literal/blank node, not its skolem
+            // stand-in, for members that were skolemized from one.
             let member_term = match s {
                 NamedOrBlankNode::NamedNode(n) => {
-                    literal_reverse.get(n).cloned().unwrap_or_else(|| Term::from(s.clone()))
+                    skolem_reverse.get(n).cloned().unwrap_or_else(|| Term::from(s.clone()))
                 }
                 NamedOrBlankNode::BlankNode(_) => Term::from(s.clone()),
             };
