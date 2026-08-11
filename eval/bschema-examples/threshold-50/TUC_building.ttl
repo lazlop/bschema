@@ -22,8 +22,8 @@
     saref:Property ,
     quantitykind:Humidity .
 (ns1:ZoneRef_62124 ns1:ZoneRef_62229) a ref:IFCReference .
-(ns1:ZoneRef_62124 ns1:ZoneRef_62229) ref:ifcGlobalID ("" "06B2afrsv0uBHvTl5DaaCm") .
-(ns1:ZoneRef_62124 ns1:ZoneRef_62229) ref:ifcName ("" "06B2afrsv0uBHvTl5DaaCm") .
+(ns1:ZoneRef_62124 ns1:ZoneRef_62229) ref:ifcGlobalID ("06B2afrsv0uBHvTl5DaaCm" "0J5GGcHXH0CP8hbTp3jIv0") .
+(ns1:ZoneRef_62124 ns1:ZoneRef_62229) ref:ifcName ("06B2afrsv0uBHvTl5DaaCm" "0J5GGcHXH0CP8hbTp3jIv0") .
 (ns1:RC04N0041_Lockout_Command ns1:RC04N0042_Lockout_Command) a brick:Lockout_Command .
 (ns1:RC04N0041_Lockout_Command ns1:RC04N0042_Lockout_Command) brick:isPointOf (ns1:RC04N0041_Equipment ns1:RC04N0042_Equipment) .
 (ns1:RC04N0041_Lockout_Command ns1:RC04N0042_Lockout_Command) ref:hasExternalReference [
@@ -85,7 +85,7 @@
 (ns1:Space_1126 ns1:Space_1307) brick:isLocationOf (ns1:RC04N0041_Equipment ns1:RC04N0042_Equipment) .
 (ns1:Space_1126 ns1:Space_1307) ref:hasExternalReference [
     ref:ifcGlobalID ("04fvfeI2P3MOmu2cRam2oG" "04fvfeI2P3MOmu2cRam2oO") ;
-    ref:ifcName ("" "CORRIDOR_A")
+    ref:ifcName ("CORRIDOR_A" "CORRIDOR_B")
 ] .
 (ns1:Space_1126 ns1:Space_1307) s4bldg:contains (ns1:RC04N0041_Equipment ns1:RC04N0042_Equipment) .
 (ns1:BuildingStorey_157 ns1:BuildingStorey_161) a brick:Storey .
@@ -93,7 +93,7 @@
 (ns1:BuildingStorey_157 ns1:BuildingStorey_161) brick:isLocationOf (ns1:null_Equipment) .
 (ns1:BuildingStorey_157 ns1:BuildingStorey_161) ref:hasExternalReference [
     ref:ifcGlobalID ("04fvfeI2P3MOmu2cRam2oG" "04fvfeI2P3MOmu2cRam2oO") ;
-    ref:ifcName ("" "CORRIDOR_A")
+    ref:ifcName ("CORRIDOR_A" "CORRIDOR_B")
 ] .
 (ns1:BuildingStorey_157 ns1:BuildingStorey_161) s4bldg:contains (ns1:null_Equipment) .
 (ns1:RC04N0041_TempSensingPoint ns1:RC04N0042_TempSensingPoint) a

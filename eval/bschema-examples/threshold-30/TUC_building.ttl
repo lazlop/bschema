@@ -13,7 +13,7 @@
 (ns1:RC04N0041_Delay_Parameter ns1:RC04N0042_Delay_Parameter) a brick:Delay_Parameter .
 (ns1:RC04N0041_Delay_Parameter ns1:RC04N0042_Delay_Parameter) brick:isPointOf (ns1:RC04N0041_Equipment ns1:RC04N0042_Equipment) .
 (ns1:RC04N0041_Delay_Parameter ns1:RC04N0042_Delay_Parameter) ref:hasExternalReference [
-    ref:hasTimeseriesId ("" "04fvfeI2P3MOmu2cRam2oG")
+    ref:hasTimeseriesId ("04fvfeI2P3MOmu2cRam2oG" "04fvfeI2P3MOmu2cRam2oO")
 ] .
 (ns1:EnergyProperty) a
     saref:Property ,
@@ -22,34 +22,34 @@
     saref:Property ,
     quantitykind:Humidity .
 (ns1:ZoneRef_62124 ns1:ZoneRef_62229) a ref:IFCReference .
-(ns1:ZoneRef_62124 ns1:ZoneRef_62229) ref:ifcGlobalID ("" "04fvfeI2P3MOmu2cRam2oG") .
-(ns1:ZoneRef_62124 ns1:ZoneRef_62229) ref:ifcName ("" "04fvfeI2P3MOmu2cRam2oG") .
+(ns1:ZoneRef_62124 ns1:ZoneRef_62229) ref:ifcGlobalID ("04fvfeI2P3MOmu2cRam2oG" "04fvfeI2P3MOmu2cRam2oO") .
+(ns1:ZoneRef_62124 ns1:ZoneRef_62229) ref:ifcName ("04fvfeI2P3MOmu2cRam2oG" "04fvfeI2P3MOmu2cRam2oO") .
 (ns1:RC04N0041_Lockout_Command ns1:RC04N0042_Lockout_Command) a brick:Lockout_Command .
 (ns1:RC04N0041_Lockout_Command ns1:RC04N0042_Lockout_Command) brick:isPointOf (ns1:RC04N0041_Equipment ns1:RC04N0042_Equipment) .
 (ns1:RC04N0041_Lockout_Command ns1:RC04N0042_Lockout_Command) ref:hasExternalReference [
-    ref:hasTimeseriesId ("" "04fvfeI2P3MOmu2cRam2oG")
+    ref:hasTimeseriesId ("04fvfeI2P3MOmu2cRam2oG" "04fvfeI2P3MOmu2cRam2oO")
 ] .
 (ns1:RC04N0041_TempSetpointMax ns1:RC04N0042_TempSetpointMax) a brick:Max_Air_Temperature_Setpoint .
 (ns1:RC04N0041_TempSetpointMax ns1:RC04N0042_TempSetpointMax) brick:isPointOf (ns1:RC04N0041_Equipment ns1:RC04N0042_Equipment) .
 (ns1:RC04N0041_TempSetpointMax ns1:RC04N0042_TempSetpointMax) ref:hasExternalReference [
-    ref:hasTimeseriesId ("" "04fvfeI2P3MOmu2cRam2oG")
+    ref:hasTimeseriesId ("04fvfeI2P3MOmu2cRam2oG" "04fvfeI2P3MOmu2cRam2oO")
 ] .
 (ns1:RC04N0041_TempSetpointMin ns1:RC04N0042_TempSetpointMin) a brick:Min_Air_Temperature_Setpoint .
 (ns1:RC04N0041_TempSetpointMin ns1:RC04N0042_TempSetpointMin) brick:isPointOf (ns1:RC04N0041_Equipment ns1:RC04N0042_Equipment) .
 (ns1:RC04N0041_TempSetpointMin ns1:RC04N0042_TempSetpointMin) ref:hasExternalReference [
-    ref:hasTimeseriesId ("" "04fvfeI2P3MOmu2cRam2oG")
+    ref:hasTimeseriesId ("04fvfeI2P3MOmu2cRam2oG" "04fvfeI2P3MOmu2cRam2oO")
 ] .
 (ns1:RC04N0042_Mode_Command ns1:RC04N0043_Mode_Command) a brick:Mode_Command .
 (ns1:RC04N0042_Mode_Command ns1:RC04N0043_Mode_Command) brick:isPointOf (ns1:RC04N0041_Equipment ns1:RC04N0042_Equipment) .
 (ns1:RC04N0042_Mode_Command ns1:RC04N0043_Mode_Command) ref:hasExternalReference [
-    ref:hasTimeseriesId ("" "04fvfeI2P3MOmu2cRam2oG")
+    ref:hasTimeseriesId ("04fvfeI2P3MOmu2cRam2oG" "04fvfeI2P3MOmu2cRam2oO")
 ] .
 (ns1:RC04N0041_OccSensingPoint ns1:RC04N0042_OccSensingPoint) a
     saref:Sensor ,
     brick:Occupancy_Sensor .
 (ns1:RC04N0041_OccSensingPoint ns1:RC04N0042_OccSensingPoint) brick:isPointOf (ns1:RC04N0041_Equipment ns1:RC04N0042_Equipment) .
 (ns1:RC04N0041_OccSensingPoint ns1:RC04N0042_OccSensingPoint) ref:hasExternalReference [
-    ref:hasTimeseriesId ("" "04fvfeI2P3MOmu2cRam2oG")
+    ref:hasTimeseriesId ("04fvfeI2P3MOmu2cRam2oG" "04fvfeI2P3MOmu2cRam2oO")
 ] .
 (ns1:RC04N0041_OccSensingPoint ns1:RC04N0042_OccSensingPoint) saref:observes (ns1:OccProperty) .
 (ns1:OccProperty) a
@@ -58,7 +58,7 @@
 (ns1:RC04N0041_OnOffCommand ns1:RC04N0042_OnOffCommand) a brick:On_Off_Command .
 (ns1:RC04N0041_OnOffCommand ns1:RC04N0042_OnOffCommand) brick:isPointOf (ns1:RC04N0041_Equipment ns1:RC04N0042_Equipment) .
 (ns1:RC04N0041_OnOffCommand ns1:RC04N0042_OnOffCommand) ref:hasExternalReference [
-    ref:hasTimeseriesId ("" "04fvfeI2P3MOmu2cRam2oG")
+    ref:hasTimeseriesId ("04fvfeI2P3MOmu2cRam2oG" "04fvfeI2P3MOmu2cRam2oO")
 ] .
 (ns1:PowerProperty) a
     saref:Property ,
@@ -69,7 +69,7 @@
 (ns1:RC04N0041_Run_Request_Command ns1:RC04N0042_Run_Request_Command) a brick:Run_Request_Command .
 (ns1:RC04N0041_Run_Request_Command ns1:RC04N0042_Run_Request_Command) brick:isPointOf (ns1:RC04N0041_Equipment ns1:RC04N0042_Equipment) .
 (ns1:RC04N0041_Run_Request_Command ns1:RC04N0042_Run_Request_Command) ref:hasExternalReference [
-    ref:hasTimeseriesId ("" "04fvfeI2P3MOmu2cRam2oG")
+    ref:hasTimeseriesId ("04fvfeI2P3MOmu2cRam2oG" "04fvfeI2P3MOmu2cRam2oO")
 ] .
 (ns1:Site_243) a brick:Site .
 (ns1:Site_243) brick:hasPart (ns1:Building_142) .
@@ -79,16 +79,16 @@
     brick:Space .
 (ns1:Space_1126 ns1:Space_1307) brick:isLocationOf (ns1:RC04N0041_Equipment ns1:RC04N0042_Equipment) .
 (ns1:Space_1126 ns1:Space_1307) ref:hasExternalReference [
-    ref:ifcGlobalID ("" "04fvfeI2P3MOmu2cRam2oG") ;
-    ref:ifcName ("" "04fvfeI2P3MOmu2cRam2oG")
+    ref:ifcGlobalID ("04fvfeI2P3MOmu2cRam2oG" "04fvfeI2P3MOmu2cRam2oO") ;
+    ref:ifcName ("04fvfeI2P3MOmu2cRam2oG" "04fvfeI2P3MOmu2cRam2oO")
 ] .
 (ns1:Space_1126 ns1:Space_1307) s4bldg:contains (ns1:RC04N0041_Equipment ns1:RC04N0042_Equipment) .
 (ns1:BuildingStorey_157 ns1:BuildingStorey_161) a brick:Storey .
 (ns1:BuildingStorey_157 ns1:BuildingStorey_161) brick:hasPart (ns1:Space_1126 ns1:Space_1307) .
 (ns1:BuildingStorey_157 ns1:BuildingStorey_161) brick:isLocationOf (ns1:null_Equipment) .
 (ns1:BuildingStorey_157 ns1:BuildingStorey_161) ref:hasExternalReference [
-    ref:ifcGlobalID ("" "04fvfeI2P3MOmu2cRam2oG") ;
-    ref:ifcName ("" "04fvfeI2P3MOmu2cRam2oG")
+    ref:ifcGlobalID ("04fvfeI2P3MOmu2cRam2oG" "04fvfeI2P3MOmu2cRam2oO") ;
+    ref:ifcName ("04fvfeI2P3MOmu2cRam2oG" "04fvfeI2P3MOmu2cRam2oO")
 ] .
 (ns1:BuildingStorey_157 ns1:BuildingStorey_161) s4bldg:contains (ns1:null_Equipment) .
 (ns1:RC04N0041_TempSensingPoint ns1:RC04N0042_TempSensingPoint) a
@@ -96,7 +96,7 @@
     brick:Temperature_Sensor .
 (ns1:RC04N0041_TempSensingPoint ns1:RC04N0042_TempSensingPoint) brick:isPointOf (ns1:RC04N0041_Equipment ns1:RC04N0042_Equipment) .
 (ns1:RC04N0041_TempSensingPoint ns1:RC04N0042_TempSensingPoint) ref:hasExternalReference [
-    ref:hasTimeseriesId ("" "04fvfeI2P3MOmu2cRam2oG")
+    ref:hasTimeseriesId ("04fvfeI2P3MOmu2cRam2oG" "04fvfeI2P3MOmu2cRam2oO")
 ] .
 (ns1:RC04N0041_TempSensingPoint ns1:RC04N0042_TempSensingPoint) saref:observes (ns1:TempProperty) .
 (ns1:RC04N0041_TempSetpoint ns1:RC04N0042_TempSetpoint) a
@@ -104,7 +104,7 @@
     brick:Temperature_Setpoint .
 (ns1:RC04N0041_TempSetpoint ns1:RC04N0042_TempSetpoint) brick:isPointOf (ns1:RC04N0041_Equipment ns1:RC04N0042_Equipment) .
 (ns1:RC04N0041_TempSetpoint ns1:RC04N0042_TempSetpoint) ref:hasExternalReference [
-    ref:hasTimeseriesId ("" "04fvfeI2P3MOmu2cRam2oG")
+    ref:hasTimeseriesId ("04fvfeI2P3MOmu2cRam2oG" "04fvfeI2P3MOmu2cRam2oO")
 ] .
 (ns1:RC04N0041_TempSetpoint ns1:RC04N0042_TempSetpoint) saref:controls (ns1:TempProperty) .
 (ns1:TempProperty) a
@@ -115,8 +115,8 @@
     brick:Terminal_Unit .
 (ns1:null_Equipment) brick:hasLocation (ns1:BuildingStorey_157 ns1:BuildingStorey_161) .
 (ns1:null_Equipment) ref:hasExternalReference [
-    ref:ifcGlobalID ("" "04fvfeI2P3MOmu2cRam2oG") ;
-    ref:ifcName ("" "04fvfeI2P3MOmu2cRam2oG")
+    ref:ifcGlobalID ("04fvfeI2P3MOmu2cRam2oG" "04fvfeI2P3MOmu2cRam2oO") ;
+    ref:ifcName ("04fvfeI2P3MOmu2cRam2oG" "04fvfeI2P3MOmu2cRam2oO")
 ] .
 (ns1:RC04N0041_Equipment ns1:RC04N0042_Equipment) a
     s4bldg:UnitaryControlElement ,
@@ -134,8 +134,8 @@
     (ns1:RC04N0041_Lockout_Command ns1:RC04N0042_Lockout_Command) ,
     (ns1:RC04N0041_Delay_Parameter ns1:RC04N0042_Delay_Parameter) .
 (ns1:RC04N0041_Equipment ns1:RC04N0042_Equipment) ref:hasExternalReference [
-    ref:ifcGlobalID ("" "04fvfeI2P3MOmu2cRam2oG") ;
-    ref:ifcName ("" "04fvfeI2P3MOmu2cRam2oG")
+    ref:ifcGlobalID ("04fvfeI2P3MOmu2cRam2oG" "04fvfeI2P3MOmu2cRam2oO") ;
+    ref:ifcName ("04fvfeI2P3MOmu2cRam2oG" "04fvfeI2P3MOmu2cRam2oO")
 ] .
 (ns1:RC04N0041_Equipment ns1:RC04N0042_Equipment) saref:consistOf
     (ns1:RC04N0041_TempSetpoint ns1:RC04N0042_TempSetpoint) ,
@@ -148,7 +148,7 @@
     (ns1:RC04N0041_TempSetpointMax ns1:RC04N0042_TempSetpointMax) ,
     (ns1:RC04N0041_Lockout_Command ns1:RC04N0042_Lockout_Command) ,
     (ns1:RC04N0041_Delay_Parameter ns1:RC04N0042_Delay_Parameter) .
-(ns1:RC04N0041_Equipment ns1:RC04N0042_Equipment) s4ener:serialNumber ("" "04fvfeI2P3MOmu2cRam2oG") .
+(ns1:RC04N0041_Equipment ns1:RC04N0042_Equipment) s4ener:serialNumber ("04fvfeI2P3MOmu2cRam2oG" "04fvfeI2P3MOmu2cRam2oO") .
 (ns1:Zone_62124 ns1:Zone_62229) a brick:Zone .
 (ns1:Zone_62124 ns1:Zone_62229) brick:hasPart (ns1:Space_1126 ns1:Space_1307) .
 (ns1:Zone_62124 ns1:Zone_62229) ref:hasExternalReference (ns1:ZoneRef_62124 ns1:ZoneRef_62229) .

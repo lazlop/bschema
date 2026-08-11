@@ -137,6 +137,46 @@ fn groups_repeated_subject_predicate_pairs_with_an_object_list() {
     assert!(turtle.contains("(ex:tempB_1 ex:tempB_2)"), "got:\n{turtle}");
 }
 
+const TTL_WITH_A_BLANK_LITERAL_MEMBER: &str = r#"
+    @prefix ex: <urn:example#> .
+    @prefix s223: <http://data.ashrae.org/standard223#> .
+
+    ex:sensor1 a s223:Sensor ; s223:hasValue "" .
+    ex:sensor2 a s223:Sensor ; s223:hasValue "22.5" .
+    ex:sensor3 a s223:Sensor ; s223:hasValue "23.1" .
+"#;
+
+#[test]
+fn prefers_non_blank_literals_as_examples() {
+    // "" is a real member but an uninformative example; with a 2-example
+    // budget and two non-blank alternatives available, it shouldn't
+    // consume a slot that could show "22.5" or "23.1" instead.
+    let data_graph = RdfGraph::parse_str(TTL_WITH_A_BLANK_LITERAL_MEMBER, RdfFormat::Turtle).unwrap();
+    let result = create_bschema(&data_graph, 10, None, true, true).unwrap();
+    let turtle = result.example_turtle(2).unwrap();
+
+    assert!(turtle.contains("\"22.5\""), "got:\n{turtle}");
+    assert!(turtle.contains("\"23.1\""), "got:\n{turtle}");
+    assert!(!turtle.contains("(\"\""), "should not spend an example slot on a blank literal, got:\n{turtle}");
+}
+
+#[test]
+fn still_shows_a_blank_literal_when_no_better_example_exists() {
+    let data_graph = RdfGraph::parse_str(
+        r#"
+            @prefix ex: <urn:example#> .
+            @prefix s223: <http://data.ashrae.org/standard223#> .
+            ex:sensor1 a s223:Sensor ; s223:hasValue "" .
+        "#,
+        RdfFormat::Turtle,
+    )
+    .unwrap();
+    let result = create_bschema(&data_graph, 10, None, true, true).unwrap();
+    let turtle = result.example_turtle(2).unwrap();
+
+    assert!(turtle.contains("hasValue (\"\")"), "the only member is blank, so it should still show up: got:\n{turtle}");
+}
+
 const TTL_WITH_UNKNOWN_NAMESPACE: &str = r#"
     @prefix bldg: <urn:bldg#> .
 

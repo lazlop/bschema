@@ -160,8 +160,12 @@ fn is_literal_marker(t: &Triple) -> bool {
     t.predicate == *namespace::A && matches!(&t.object, Term::NamedNode(n) if n.as_str() == namespace::RDFS_LITERAL.as_str())
 }
 
-/// Groups `member_graph`'s `rdfs:member` triples by class, sorted by each
-/// member's canonical string form for determinism, capped at `example_count`.
+/// Groups `member_graph`'s `rdfs:member` triples by class, capped at
+/// `example_count`. Within a class, non-blank-string members sort first
+/// (then by canonical string form, for determinism): an empty or
+/// whitespace-only literal is technically a real member but a poor example
+/// to spend one of a handful of example slots on when a more informative
+/// member is available.
 fn collect_members(member_graph: &RdfGraph, example_count: usize) -> HashMap<NamedNode, Vec<Term>> {
     let mut by_class: HashMap<NamedNode, Vec<Term>> = HashMap::new();
 
@@ -175,7 +179,7 @@ fn collect_members(member_graph: &RdfGraph, example_count: usize) -> HashMap<Nam
     }
 
     for members in by_class.values_mut() {
-        members.sort_by_key(|t| t.to_string());
+        members.sort_by_key(|t| (is_blank_string_literal(t), t.to_string()));
         members.truncate(example_count);
     }
 
@@ -195,6 +199,10 @@ fn is_blank_like(t: &Term) -> bool {
         Term::NamedNode(n) => n.as_str().starts_with(namespace::BNODE_BASE),
         Term::Literal(_) => false,
     }
+}
+
+fn is_blank_string_literal(t: &Term) -> bool {
+    matches!(t, Term::Literal(l) if l.value().trim().is_empty())
 }
 
 fn observe_position(

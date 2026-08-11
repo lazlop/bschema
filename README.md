@@ -163,6 +163,9 @@ keeping the output actually readable:
   `RdfGraph::skolemize` adds purely so the matching algorithm can treat
   literals uniformly are an implementation artifact, not model content, so
   `example_turtle` filters them out.
+- **Blank examples deprioritized.** An empty or whitespace-only literal is
+  a real member but an uninformative example; it's only picked when no
+  non-blank member is available to fill the `example_count` budget.
 
 `create_bschema` / `create_bschema_from_file` accept:
 
