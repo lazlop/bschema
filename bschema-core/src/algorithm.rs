@@ -195,6 +195,16 @@ pub fn class_isomorphisms(
             .map(|(i, _)| i)
             .collect();
 
+        // KNOWN CAVEAT (see PR #1): at threshold=0.0 this only requires
+        // intersection > 0 - one single shared pattern triple. Now that
+        // literals participate in this same matching (see
+        // `RdfGraph::skolemize`), many instances of a type end up sharing
+        // at least one "resolves to the same derived literal class" triple
+        // (e.g. via a common predicate like hasValue), which alone can
+        // satisfy this bound and merge subjects that otherwise share
+        // nothing - observed on real data to conflate genuinely distinct
+        // physical-quantity classes. Not addressed here by design: the
+        // fix should not vary matching behavior by threshold value.
         let mut found = false;
         for i in indices {
             let existing = &distinct_class_subgraphs[i];
