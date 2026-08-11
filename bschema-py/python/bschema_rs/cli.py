@@ -2,7 +2,12 @@
 import argparse
 import os
 
-from . import create_bschema_from_file
+from . import create_bschema_from_file, example_turtle
+
+
+def _with_suffix(path: str, suffix: str) -> str:
+    base, extension = os.path.splitext(path)
+    return f"{base}{suffix}{extension}"
 
 
 def run():
@@ -20,10 +25,22 @@ def run():
     )
     parser.add_argument("-d", "--delete_added_classes", action="store_true", help="Delete added classes")
     parser.add_argument("-r", "--iterations", type=int, default=10, help="Number of iterations")
+    parser.add_argument(
+        "-e",
+        "--examples",
+        type=int,
+        nargs="?",
+        const=2,
+        default=None,
+        metavar="N",
+        help="Also write a '<output>_examples.<ext>' Turtle file with each bs: class replaced "
+        "by up to N (default 2) of its real members in Turtle list syntax, e.g. "
+        "'(ex:AHU_1 ex:AHU_2) brick:hasPoint (ex:point_1 ex:point_2) .'",
+    )
 
     args = parser.parse_args()
 
-    class_graph, _member_graph, _iterations = create_bschema_from_file(
+    class_graph, member_graph, _iterations = create_bschema_from_file(
         args.input_file, args.iterations, args.threshold, args.delete_added_classes
     )
 
@@ -37,6 +54,12 @@ def run():
         output_file = args.output_file
 
     class_graph.serialize(output_file)
+
+    if args.examples is not None:
+        example_file = _with_suffix(output_file, "_examples")
+        with open(example_file, "w") as f:
+            f.write(example_turtle(class_graph, member_graph, args.examples))
+        print(f"Wrote {args.examples}-example Turtle summary to {example_file}")
 
     from rdflib import Graph
 

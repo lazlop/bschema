@@ -143,7 +143,7 @@ bs:OutletConnectionPoint_version_4 a s223:OutletConnectionPoint ;
     s223:cnx bs:Connection_version_2 .
 
 bs:Port_version_1 a bacnet:Port ;
-    bacnet:storedAt bs:Literal_version_1 .
+    bacnet:storedAt bs:Literal_version_2 .
 
 bs:Resource_version_2 s223:hasProperty bs:Property_version_1,
         bs:QuantifiableActuatableProperty_version_1,
@@ -306,8 +306,6 @@ bs:BACnetExternalReference_version_1 a s223:BACnetExternalReference ;
     bacnet:object-identifier bs:Literal_version_1 ;
     bacnet:object-name bs:Literal_version_1 ;
     bacnet:object-type bs:Literal_version_1 .
-
-bs:Literal_version_1 a rdfs:Literal .
 
 bs:QuantifiableActuatableProperty_version_2 a s223:QuantifiableActuatableProperty,
         s223:QuantifiableObservableProperty ;

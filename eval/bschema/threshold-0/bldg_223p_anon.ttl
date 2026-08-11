@@ -115,7 +115,7 @@ bs:Filter_version_1 a s223:Filter,
     s223:hasProperty bs:QuantifiableObservableProperty_version_1 .
 
 bs:Port_version_1 a bacnet:Port ;
-    bacnet:storedAt bs:Literal_version_1 .
+    bacnet:storedAt bs:Literal_version_2 .
 
 bs:Resource_version_2 s223:hasProperty bs:Property_version_1,
         bs:QuantifiableActuatableProperty_version_1,
@@ -248,8 +248,6 @@ bs:HeatingCoil_version_1 a s223:HeatingCoil,
     s223:hasProperty bs:QuantifiableActuatableProperty_version_1,
         bs:QuantifiableObservableProperty_version_1 ;
     s223:hasRole s223:Role-Heating .
-
-bs:Literal_version_1 a rdfs:Literal .
 
 bs:Valve_version_1 a s223:Valve,
         <http://data.ashrae.org/standard223/1.0/extensions/g36#HotWaterValve> ;

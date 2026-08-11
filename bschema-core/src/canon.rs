@@ -23,9 +23,17 @@ enum Role {
     Object,
 }
 
+/// Canonical string key for a ground (non-blank) IRI, in any triple
+/// position - subject, predicate, or object all use this same form since
+/// bschema's class-pattern graphs never put a blank node in predicate
+/// position and `ground_key`/`subject_key` below cover the other two.
+pub fn named_node_key(iri: &str) -> String {
+    format!("N<{iri}>")
+}
+
 fn ground_key(term: &Term) -> String {
     match term {
-        Term::NamedNode(n) => format!("N<{}>", n.as_str()),
+        Term::NamedNode(n) => named_node_key(n.as_str()),
         Term::Literal(l) => match l.language() {
             Some(lang) => format!("L\"{}\"@{}", l.value(), lang),
             None => format!("L\"{}\"^^<{}>", l.value(), l.datatype().as_str()),
@@ -36,7 +44,7 @@ fn ground_key(term: &Term) -> String {
 
 fn subject_key(subject: &NamedOrBlankNode) -> Option<String> {
     match subject {
-        NamedOrBlankNode::NamedNode(n) => Some(format!("N<{}>", n.as_str())),
+        NamedOrBlankNode::NamedNode(n) => Some(named_node_key(n.as_str())),
         NamedOrBlankNode::BlankNode(_) => None,
     }
 }
@@ -144,7 +152,7 @@ pub fn canonicalize(triples: &[Triple]) -> HashSet<CanonTriple> {
                     NamedOrBlankNode::BlankNode(b) => labels[b].clone(),
                     NamedOrBlankNode::NamedNode(_) => unreachable!(),
                 });
-            let p = format!("N<{}>", t.predicate.as_str());
+            let p = named_node_key(t.predicate.as_str());
             let o = match &t.object {
                 Term::BlankNode(b) => labels[b].clone(),
                 other => ground_key(other),

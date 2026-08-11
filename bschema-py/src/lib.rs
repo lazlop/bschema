@@ -47,6 +47,20 @@ mod _bschema_rs {
         Ok((class_ttl, member_ttl, result.iterations))
     }
 
+    /// Renders a class graph + member graph pair (as produced by
+    /// `create_bschema`) into "example" Turtle text: each `bs:` class node
+    /// replaced by a parenthesized Turtle-collection of up to
+    /// `example_count` of its real members, e.g. `bs:AHU_v1 brick:hasPoint
+    /// bs:Point_v1` becomes `(ex:AHU_1 ex:AHU_2) brick:hasPoint (ex:point_1
+    /// ex:point_2) .`. Meant for humans/LLMs skimming a summary.
+    #[pyfunction]
+    #[pyo3(signature = (class_graph, member_graph, example_count=2))]
+    fn example_turtle(class_graph: &str, member_graph: &str, example_count: usize) -> PyResult<String> {
+        let class_graph = RdfGraph::parse_str(class_graph, bschema_core::RdfFormat::Turtle).map_err(to_py_err)?;
+        let member_graph = RdfGraph::parse_str(member_graph, bschema_core::RdfFormat::Turtle).map_err(to_py_err)?;
+        bschema_core::examples::example_turtle(&class_graph, &member_graph, example_count).map_err(to_py_err)
+    }
+
     /// Runs the bschema summarization algorithm over an RDF file on disk.
     /// The format is inferred from the file extension (`.ttl`, `.nt`, `.rdf`, ...).
     ///

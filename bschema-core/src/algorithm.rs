@@ -1,6 +1,6 @@
 //! Core bschema algorithm, ported from `graph-pattern-id/bschema/bschema.py`.
 
-use crate::canon::{canonicalize, common_canon_triple_count, CanonTriple};
+use crate::canon::{canonicalize, common_canon_triple_count, named_node_key, CanonTriple};
 use crate::error::Result;
 use crate::graph::RdfGraph;
 use crate::namespace::{
@@ -152,6 +152,35 @@ pub struct ClassIsomorphisms {
     pub subject_classes: Vec<NamedNode>,
 }
 
+/// Is `t` the canonical form of `<literal-skolem> a rdfs:Literal`, the
+/// synthetic marker `RdfGraph::skolemize` tags every not-yet-classified
+/// literal skolem with? It's identical for every such literal regardless
+/// of datatype, predicate, or subject, so it carries zero discriminating
+/// power - yet it appears in the 1-hop pattern of anything that mentions
+/// one (the literal's own pattern, and any entity's pattern that has an
+/// edge to it). Because those patterns are small (a literal's own is
+/// typically 2-3 triples total), this one always-shared triple alone can
+/// push an unrelated pair's overlap ratio above a `similarity_threshold`
+/// that would otherwise correctly keep them apart - see the over-merging
+/// discussion on PR #1 and the follow-up literal-topology work. Filtered
+/// out of every pattern in [`class_isomorphisms`] before it's ever stored
+/// or compared, for both exact and threshold-based matching.
+fn is_literal_marker_canon_triple(t: &CanonTriple) -> bool {
+    let literal_key = named_node_key(RDFS_LITERAL.as_str());
+    let type_key = named_node_key(A.as_str());
+    t.0 == literal_key && t.1 == type_key && t.2 == literal_key
+}
+
+/// Is `t` the literal-form (as opposed to [`is_literal_marker_canon_triple`]'s
+/// canonicalized form) of `<literal-skolem> a rdfs:Literal`? Never present
+/// in the original data graph - purely bookkeeping `RdfGraph::skolemize`
+/// adds so the matching algorithm can treat literals uniformly - so it's
+/// stripped from `class_graph` in [`create_bschema`] regardless of
+/// `remove_added_labels` (which only concerns the `bs:` labels themselves).
+pub(crate) fn is_literal_marker(t: &Triple) -> bool {
+    t.predicate == *A && matches!(&t.object, Term::NamedNode(n) if n.as_str() == RDFS_LITERAL.as_str())
+}
+
 /// Groups subjects of `data_graph` by the isomorphism (or, if
 /// `similarity_threshold` is set, high overlap) of their 1-hop class
 /// pattern subgraph. Ports `get_class_isomorphisms`.
@@ -169,7 +198,10 @@ pub fn class_isomorphisms(
             let subject_class = get_class(&Term::from(s.clone()), data_graph);
             let subgraph = subgraph_with_hops(data_graph, s, 1, false)?;
             let pattern_graph = class_graph(&subgraph)?.triples();
-            let canon_pattern = canonicalize(&pattern_graph);
+            let canon_pattern: HashSet<CanonTriple> = canonicalize(&pattern_graph)
+                .into_iter()
+                .filter(|t| !is_literal_marker_canon_triple(t))
+                .collect();
             Ok((s.clone(), subject_class, canon_pattern))
         })
         .collect();
@@ -351,10 +383,9 @@ pub fn create_bschema(
         A.clone(),
         OWL_ONTOLOGY.clone(),
     ));
-    let (data_graph, literal_reverse) = original_data_graph.skolemize()?;
+    let (data_graph, skolem_reverse) = original_data_graph.skolemize()?;
 
     let mut equivalent_subjects: Vec<Vec<NamedOrBlankNode>> = Vec::new();
-    let mut subject_classes: Vec<NamedNode> = Vec::new();
     let mut prev_equivalent_subjects: Option<Vec<Vec<NamedOrBlankNode>>> = None;
     let mut prev_subject_classes: Option<HashMap<NamedOrBlankNode, NamedNode>> = None;
     let mut final_iteration = 0;
@@ -365,7 +396,7 @@ pub fn create_bschema(
 
         let result = class_isomorphisms(&data_graph, similarity_threshold)?;
         equivalent_subjects = result.equivalent_subjects;
-        subject_classes = result.subject_classes;
+        let subject_classes = result.subject_classes;
 
         let new_subject_classes =
             assign_new_classes(&equivalent_subjects, &subject_classes, use_original_names, &mut counter);
@@ -410,19 +441,46 @@ pub fn create_bschema(
         }
     }
 
+    // Unlike the bs: labels above (kept or stripped per remove_added_labels),
+    // the synthetic literal-skolem marker never corresponds to anything in
+    // the original data graph, so it's always stripped from class_graph.
+    for t in class_graph_result.triples() {
+        if is_literal_marker(&t) {
+            class_graph_result.remove(&t);
+        }
+    }
+
+    // Key the member graph by each group's *applied* class - the label
+    // actually inserted into `data_graph` (and thus what `class_graph`
+    // above was built from) - not `subject_classes`, which is each group's
+    // class as of the *start* of the final iteration (before that
+    // iteration's relabeling). Those normally coincide, because the
+    // convergence break fires before a would-be-redundant relabeling is
+    // applied, leaving `subject_classes` describing the same labels
+    // `data_graph` already carries from the previous round. But the
+    // `similarity_threshold == 0.0` path breaks immediately *after*
+    // applying iteration 0's relabeling, so `subject_classes` there still
+    // reflects the *pre*-relabeling classes (e.g. the original `rdf:type`)
+    // while `class_graph` reflects the newly applied `bs:` names - keying
+    // the member graph by `subject_classes` would silently mismatch the
+    // two graphs.
+    let applied_classes = prev_subject_classes.unwrap_or_default();
     let member_graph = RdfGraph::new()?;
-    for (i, subject_class) in subject_classes.iter().enumerate() {
+    for members in &equivalent_subjects {
+        let Some(subject_class) = members.first().and_then(|s| applied_classes.get(s)) else {
+            continue;
+        };
         member_graph.insert(&Triple::new(
             subject_class.clone(),
             A.clone(),
             RDF_SEQ.clone(),
         ));
-        for s in &equivalent_subjects[i] {
-            // Report the original literal value, not its skolem stand-in,
-            // for members that were skolemized from a literal.
+        for s in members {
+            // Report the original literal/blank node, not its skolem
+            // stand-in, for members that were skolemized from one.
             let member_term = match s {
                 NamedOrBlankNode::NamedNode(n) => {
-                    literal_reverse.get(n).cloned().unwrap_or_else(|| Term::from(s.clone()))
+                    skolem_reverse.get(n).cloned().unwrap_or_else(|| Term::from(s.clone()))
                 }
                 NamedOrBlankNode::BlankNode(_) => Term::from(s.clone()),
             };

@@ -106,21 +106,100 @@ from bschema_rs import create_bschema_from_file
 class_graph, member_graph, iterations = create_bschema_from_file("model.ttl")
 ```
 
+### Example graph
+
+`example_turtle(class_graph, member_graph, example_count=2)` renders the
+class graph with each `bs:` class node replaced by a Turtle-collection
+(`( ... )`) of up to `example_count` of its real members from the member
+graph — useful for a human or LLM skimming a summary who wants to see
+concrete instance names instead of abstract class IRIs:
+
+```python
+from bschema_rs import create_bschema, example_turtle
+
+class_graph, member_graph, iterations = create_bschema(data_graph)
+print(example_turtle(class_graph, member_graph, example_count=2))
+# (ex:AHU_1 ex:AHU_2) brick:hasPoint (ex:point_1 ex:point_2) .
+```
+
+The two lists are independently sampled per class (the same members
+wherever that class appears), not aligned real-world edges — list position
+`i` on one side isn't claimed to correspond to position `i` on the other.
+It returns a plain Turtle string rather than an rdflib `Graph`: a
+collection used as a triple's *subject* can't be losslessly round-tripped
+through a generic Turtle writer (rdflib only folds collections used as
+objects), so re-parsing it would only get back an uglier equivalent, not
+this compact form.
+
+A few things it does beyond a literal find-and-replace, all aimed at
+keeping the output actually readable:
+
+- **Repeated subject+predicate.** A subject class often relates to
+  several different object classes through the same predicate; rather than
+  repeat the subject on its own near-duplicate line each time, these share
+  one statement via Turtle's object-list comma syntax:
+  ```turtle
+  (ns1:hvac_cor_zone ns1:hvac_eas_zone) brick:hasPoint
+      (ns1:hvac_reaZonCor_TZon_y ns1:hvac_reaZonEas_TZon_y) ,
+      (ns1:hvac_oveZonSupCor_TZonHeaSet_u ns1:hvac_oveZonSupEas_TZonHeaSet_u) .
+  ```
+- **Multiple predicates on one subject.** Likewise, a subject with several
+  different predicates shares one statement via Turtle's
+  predicateObjectList semicolon syntax instead of repeating the subject
+  once per predicate:
+  ```turtle
+  (ns1:vav_cor ns1:vav_eas) a brick:Variable_Air_Volume_Box_With_Reheat ;
+      brick:feeds (ns1:hvac_cor_zone ns1:hvac_eas_zone) ;
+      brick:hasPoint (...) .
+  ```
+- **Prefixes.** Every namespace used in the output gets a `@prefix`
+  binding — the crate's own known short names (`brick:`, `ex:`, ...) where
+  they apply, else an auto-numbered `ns1:`, `ns2:`, ... Nothing is left as
+  a long bracketed `<...>` IRI unless its local name genuinely isn't safe
+  to abbreviate.
+- **Blank nodes.** A class whose sampled members are *all* blank nodes has
+  no meaningful name to substitute, so instead of listing members it shows
+  what the class itself asserts — its own class-pattern triples, nested
+  inline as a real Turtle blank-node property list:
+  ```turtle
+  (ns1:hvac_reaZonCor_CO2Zon_y ns1:hvac_reaZonEas_CO2Zon_y) ref:hasExternalReference [
+      ref:hasTimeseriesId ("1662.66"^^xsd:float "LowerSetp[cor]")
+  ] .
+  ```
+  A blank class never referenced this way (nothing points to it) still
+  gets shown, as its own top-level `[ ... ] .` statement.
+- **No synthetic bookkeeping.** The `<node> a rdfs:Literal .` triples
+  `RdfGraph::skolemize` adds purely so the matching algorithm can treat
+  literals uniformly are an implementation artifact, not model content, so
+  `example_turtle` filters them out.
+- **Blank examples deprioritized.** An empty or whitespace-only literal is
+  a real member but an uninformative example; it's only picked when no
+  non-blank member is available to fill the `example_count` budget.
+
 `create_bschema` / `create_bschema_from_file` accept:
 
 - `iterations` (default `10`) — max number of relabeling passes.
 - `similarity_threshold` (default `None`) — if set, groups subjects whose
   class-pattern subgraphs overlap above this ratio (0–1), instead of
-  requiring exact isomorphism. **Known caveat:** at `0.0` (merge on any
-  shared pattern triple at all), literals now participate in this matching
-  too, and can supply a triple that's trivially shared by almost every
-  instance of a type (e.g. many properties resolving to the same derived
-  literal class). On some real models this has been observed to merge
-  instances that shouldn't be merged (e.g. distinct physical-quantity types
-  collapsing into one class) - see the discussion on PR #1. Prefer a
-  threshold of `0.3` or higher, or `None`, until this is addressed.
+  requiring exact isomorphism. Literals participate in this matching too
+  (grouped by 1-hop topology, like any other node - see `RdfGraph::skolemize`),
+  and the synthetic `<literal> a rdfs:Literal` marker that makes this
+  possible is excluded from the similarity ratio itself, since it's
+  identical for every literal and would otherwise inflate the overlap
+  between two literals that share nothing else. **Known caveat:** a
+  literal's own 1-hop pattern is still small (its reaching predicate plus
+  its subject's type), so two literals reached via *different* predicates
+  from the *same* subject type can still share enough of that small
+  pattern to merge at a moderate threshold, even though the trivial marker
+  no longer causes false matches *across* unrelated subject types - see the
+  discussion on PR #1 and PR #2. Prefer a threshold of `0.5` or higher, or
+  `None`, until this is addressed.
 - `remove_added_labels` (default `True`) — strip the `bs:` classes the
-  algorithm added from the output class graph.
+  algorithm added from the output class graph. This is unrelated to (and
+  doesn't control) the synthetic `<literal-skolem> a rdfs:Literal` marker
+  `RdfGraph::skolemize` adds internally for matching purposes: that marker
+  never corresponds to anything in the original data graph, so it's always
+  stripped from the class graph, regardless of this flag.
 - `use_original_names` (default `True`) — derive new class names from the
   common substring of grouped subjects' original IRIs, instead of
   versioning the existing class name.
@@ -136,6 +215,9 @@ create-bschema-rs -i model.ttl -o model_bschema.ttl -t 0.5 -r 10
 - `-t/--threshold` — similarity threshold (try `0.5`).
 - `-r/--iterations` — number of iterations (default `10`).
 - `-d/--delete_added_classes` — delete the classes added by the algorithm.
+- `-e/--examples [N]` — also write `<output>_examples.<ext>`, an example
+  Turtle file with each `bs:` class replaced by up to `N` (default `2`) of
+  its real members in Turtle list syntax; see "Example graph" above.
 
 ## Evaluation
 
