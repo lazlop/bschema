@@ -5,194 +5,194 @@
 @prefix ref: <https://brickschema.org/schema/Brick/ref#> .
 @prefix ns1: <urn:bldg/> .
 
-(ns1:hvac_ahu) a brick:AHU .
-(ns1:hvac_ahu) brick:feeds (ns1:vav_cor ns1:vav_eas) .
-(ns1:hvac_ahu) brick:hasPart
-    (ns1:hvac_fanSup) ,
-    (ns1:heating_coil) ,
-    (ns1:cooling_coil) .
-(ns1:hvac_ahu) brick:hasPoint
-    (ns1:hvac_oveAhu_TSupSet_u) ,
-    (ns1:hvac_reaAhu_TSup_y) ,
-    (ns1:hvac_reaAhu_V_flow_sup_y) ,
-    (ns1:hvac_reaAhu_TRet_y) ,
-    (ns1:hvac_reaAhu_V_flow_ret_y) ,
-    (ns1:hvac_reaAhu_TMix_y) .
-(ns1:Building) a brick:Building .
-(ns1:Building) brick:area [
-    brick:value ("1662.66"^^xsd:float)
-] .
-(ns1:Building) brick:hasPart (ns1:hvac_cor_zone ns1:hvac_eas_zone) .
-(ns1:hvac_reaZonCor_CO2Zon_y ns1:hvac_reaZonEas_CO2Zon_y) a brick:CO2_Sensor .
-(ns1:hvac_reaZonCor_CO2Zon_y ns1:hvac_reaZonEas_CO2Zon_y) ref:hasExternalReference [
-    ref:hasTimeseriesId ("LowerSetp[cor]" "LowerSetp[eas]")
-] .
-(ns1:chi_reaTRet_y) a brick:Chilled_Water_Return_Temperature_Sensor .
-(ns1:chi_reaTRet_y) ref:hasExternalReference [
-    ref:hasTimeseriesId ("LowerSetp[cor]" "LowerSetp[eas]")
-] .
-(ns1:chi_reaTSup_y) a brick:Chilled_Water_Supply_Temperature_Sensor .
-(ns1:chi_reaTSup_y) ref:hasExternalReference [
-    ref:hasTimeseriesId ("LowerSetp[cor]" "LowerSetp[eas]")
-] .
-(ns1:chiller) a brick:Chiller .
-(ns1:chiller) brick:feeds (ns1:chi_pump ns1:heat_pump) .
-(ns1:chiller) brick:hasPoint
-    (ns1:chi_reaPChi_y ns1:chi_reaPPumDis_y) ,
-    (ns1:chi_reaTSup_y) ,
-    (ns1:chi_reaTRet_y) .
-(ns1:cooling_coil) a brick:Cooling_Coil .
-(ns1:cooling_coil) brick:hasPoint (ns1:chi_reaPChi_y ns1:chi_reaPPumDis_y) .
-(ns1:cooling_coil) brick:isFedBy (ns1:chiller) .
-(ns1:hvac_oveZonActCor_yDam_u ns1:hvac_oveZonActEas_yDam_u) a brick:Damper_Position_Setpoint .
-(ns1:hvac_oveZonActCor_yDam_u ns1:hvac_oveZonActEas_yDam_u) ref:hasExternalReference [
-    ref:hasTimeseriesId ("LowerSetp[cor]" "LowerSetp[eas]")
-] .
-(ns1:hvac_reaZonCor_V_flow_y ns1:hvac_reaZonEas_V_flow_y) a brick:Discharge_Air_Flow_Sensor .
-(ns1:hvac_reaZonCor_V_flow_y ns1:hvac_reaZonEas_V_flow_y) ref:hasExternalReference [
-    ref:hasTimeseriesId ("LowerSetp[cor]" "LowerSetp[eas]")
-] .
-(ns1:hvac_reaAhu_dp_sup_y) a brick:Discharge_Air_Static_Pressure_Sensor .
-(ns1:hvac_reaAhu_dp_sup_y) ref:hasExternalReference [
-    ref:hasTimeseriesId ("LowerSetp[cor]" "LowerSetp[eas]")
-] .
-(ns1:hvac_reaZonCor_TSup_y ns1:hvac_reaZonEas_TSup_y) a brick:Discharge_Air_Temperature_Sensor .
-(ns1:hvac_reaZonCor_TSup_y ns1:hvac_reaZonEas_TSup_y) ref:hasExternalReference [
-    ref:hasTimeseriesId ("LowerSetp[cor]" "LowerSetp[eas]")
-] .
-(ns1:chi_reaPChi_y ns1:chi_reaPPumDis_y) a brick:Electric_Power_Sensor .
-(ns1:chi_reaPChi_y ns1:chi_reaPPumDis_y) ref:hasExternalReference
-    [
-        a ref:TimeseriesReference ;
-        ref:hasTimeseriesId ("LowerSetp[cor]" "LowerSetp[eas]") ;
-        ref:onTable ("LowerSetp[cor]" "LowerSetp[eas]") ;
-        ref:storedAt ("LowerSetp[cor]" "LowerSetp[eas]")
-    ] ,
-    [
+(ns1:hvac_ahu) a brick:AHU ;
+    brick:feeds (ns1:vav_cor ns1:vav_eas) ;
+    brick:hasPart
+        (ns1:hvac_fanSup) ,
+        (ns1:heating_coil) ,
+        (ns1:cooling_coil) ;
+    brick:hasPoint
+        (ns1:hvac_oveAhu_TSupSet_u) ,
+        (ns1:hvac_reaAhu_TSup_y) ,
+        (ns1:hvac_reaAhu_V_flow_sup_y) ,
+        (ns1:hvac_reaAhu_TRet_y) ,
+        (ns1:hvac_reaAhu_V_flow_ret_y) ,
+        (ns1:hvac_reaAhu_TMix_y) .
+(ns1:Building) a brick:Building ;
+    brick:area [
+        brick:value ("1662.66"^^xsd:float)
+    ] ;
+    brick:hasPart (ns1:hvac_cor_zone ns1:hvac_eas_zone) .
+(ns1:hvac_reaZonCor_CO2Zon_y ns1:hvac_reaZonEas_CO2Zon_y) a brick:CO2_Sensor ;
+    ref:hasExternalReference [
         ref:hasTimeseriesId ("LowerSetp[cor]" "LowerSetp[eas]")
     ] .
-(ns1:hvac_cor_zone ns1:hvac_eas_zone) a brick:HVAC_Zone .
-(ns1:hvac_cor_zone ns1:hvac_eas_zone) rdfs:label ("hvac_cor_zone" "hvac_eas_zone") .
-(ns1:hvac_cor_zone ns1:hvac_eas_zone) brick:hasPoint
-    (ns1:hvac_reaZonCor_TZon_y ns1:hvac_reaZonEas_TZon_y) ,
-    (ns1:hvac_oveZonSupCor_TZonHeaSet_u ns1:hvac_oveZonSupEas_TZonHeaSet_u) ,
-    (ns1:hvac_oveZonSupCor_TZonCooSet_u ns1:hvac_oveZonSupEas_TZonCooSet_u) ,
-    (ns1:occ_cor ns1:occ_eas) ,
-    (ns1:LowerSetp_cor ns1:LowerSetp_eas) ,
-    (ns1:UpperSetp_cor ns1:UpperSetp_eas) ,
-    (ns1:hvac_reaZonCor_V_flow_y ns1:hvac_reaZonEas_V_flow_y) ,
-    (ns1:hvac_reaZonCor_CO2Zon_y ns1:hvac_reaZonEas_CO2Zon_y) .
-(ns1:heating_coil) a brick:Heating_Coil .
-(ns1:heating_coil) brick:hasPoint
-    (ns1:chi_reaPChi_y ns1:chi_reaPPumDis_y) ,
-    rdfs:Resource .
-(ns1:heating_coil) brick:isFedBy (ns1:chi_pump ns1:heat_pump) .
-(ns1:hwd_pump) a brick:Hot_Water_Pump .
-(ns1:hwd_pump) brick:hasPoint (ns1:chi_reaPChi_y ns1:chi_reaPPumDis_y) .
-(ns1:UpperSetp_cor ns1:UpperSetp_eas) a brick:Max_Air_Temperature_Setpoint .
-(ns1:UpperSetp_cor ns1:UpperSetp_eas) ref:hasExternalReference
-    [
-        a ref:TimeseriesReference ;
-        ref:hasTimeseriesId ("LowerSetp[cor]" "LowerSetp[eas]") ;
-        ref:onTable ("LowerSetp[cor]" "LowerSetp[eas]") ;
-        ref:storedAt ("LowerSetp[cor]" "LowerSetp[eas]")
-    ] ,
-    [
+(ns1:chi_reaTRet_y) a brick:Chilled_Water_Return_Temperature_Sensor ;
+    ref:hasExternalReference [
         ref:hasTimeseriesId ("LowerSetp[cor]" "LowerSetp[eas]")
     ] .
-(ns1:LowerSetp_cor ns1:LowerSetp_eas) a brick:Min_Air_Temperature_Setpoint .
-(ns1:LowerSetp_cor ns1:LowerSetp_eas) ref:hasExternalReference
-    [
-        a ref:TimeseriesReference ;
-        ref:hasTimeseriesId ("LowerSetp[cor]" "LowerSetp[eas]") ;
-        ref:onTable ("LowerSetp[cor]" "LowerSetp[eas]") ;
-        ref:storedAt ("LowerSetp[cor]" "LowerSetp[eas]")
-    ] ,
-    [
+(ns1:chi_reaTSup_y) a brick:Chilled_Water_Supply_Temperature_Sensor ;
+    ref:hasExternalReference [
         ref:hasTimeseriesId ("LowerSetp[cor]" "LowerSetp[eas]")
     ] .
-(ns1:hvac_reaAhu_TMix_y) a brick:Mixed_Air_Temperature_Sensor .
-(ns1:hvac_reaAhu_TMix_y) ref:hasExternalReference [
-    ref:hasTimeseriesId ("LowerSetp[cor]" "LowerSetp[eas]")
-] .
-(ns1:occ_cor ns1:occ_eas) a brick:Occupancy_Sensor .
-(ns1:occ_cor ns1:occ_eas) ref:hasExternalReference
-    [
-        a ref:TimeseriesReference ;
-        ref:hasTimeseriesId ("LowerSetp[cor]" "LowerSetp[eas]") ;
-        ref:onTable ("LowerSetp[cor]" "LowerSetp[eas]") ;
-        ref:storedAt ("LowerSetp[cor]" "LowerSetp[eas]")
-    ] ,
-    [
+(ns1:chiller) a brick:Chiller ;
+    brick:feeds (ns1:chi_pump ns1:heat_pump) ;
+    brick:hasPoint
+        (ns1:chi_reaPChi_y ns1:chi_reaPPumDis_y) ,
+        (ns1:chi_reaTSup_y) ,
+        (ns1:chi_reaTRet_y) .
+(ns1:cooling_coil) a brick:Cooling_Coil ;
+    brick:hasPoint (ns1:chi_reaPChi_y ns1:chi_reaPPumDis_y) ;
+    brick:isFedBy (ns1:chiller) .
+(ns1:hvac_oveZonActCor_yDam_u ns1:hvac_oveZonActEas_yDam_u) a brick:Damper_Position_Setpoint ;
+    ref:hasExternalReference [
         ref:hasTimeseriesId ("LowerSetp[cor]" "LowerSetp[eas]")
     ] .
-(ns1:chi_pump ns1:heat_pump) a brick:Pump .
-(ns1:chi_pump ns1:heat_pump) brick:feeds (ns1:hwd_pump) .
-(ns1:chi_pump ns1:heat_pump) brick:hasPoint (ns1:chi_reaPChi_y ns1:chi_reaPPumDis_y) .
-(ns1:hvac_reaAhu_V_flow_ret_y) a brick:Return_Air_Flow_Sensor .
-(ns1:hvac_reaAhu_V_flow_ret_y) ref:hasExternalReference [
-    ref:hasTimeseriesId ("LowerSetp[cor]" "LowerSetp[eas]")
-] .
-(ns1:hvac_reaAhu_TRet_y) a brick:Return_Air_Temperature_Sensor .
-(ns1:hvac_reaAhu_TRet_y) ref:hasExternalReference [
-    ref:hasTimeseriesId ("LowerSetp[cor]" "LowerSetp[eas]")
-] .
-(ns1:hvac_reaAhu_V_flow_sup_y) a brick:Supply_Air_Flow_Sensor .
-(ns1:hvac_reaAhu_V_flow_sup_y) ref:hasExternalReference [
-    ref:hasTimeseriesId ("LowerSetp[cor]" "LowerSetp[eas]")
-] .
-(ns1:hvac_reaAhu_TSup_y) a brick:Supply_Air_Temperature_Sensor .
-(ns1:hvac_reaAhu_TSup_y) ref:hasExternalReference [
-    ref:hasTimeseriesId ("LowerSetp[cor]" "LowerSetp[eas]")
-] .
-(ns1:hvac_oveAhu_TSupSet_u) a brick:Supply_Air_Temperature_Setpoint .
-(ns1:hvac_oveAhu_TSupSet_u) ref:hasExternalReference [
-    ref:hasTimeseriesId ("LowerSetp[cor]" "LowerSetp[eas]")
-] .
-(ns1:hvac_fanSup) a brick:Supply_Fan .
-(ns1:hvac_fanSup) brick:hasPoint
-    (ns1:chi_reaPChi_y ns1:chi_reaPPumDis_y) ,
-    (ns1:hvac_reaAhu_dp_sup_y) .
-(ns1:hvac_oveZonActCor_yReaHea_u ns1:hvac_oveZonActEas_yReaHea_u) a brick:Valve_Command .
-(ns1:hvac_oveZonActCor_yReaHea_u ns1:hvac_oveZonActEas_yReaHea_u) ref:hasExternalReference [
-    ref:hasTimeseriesId ("LowerSetp[cor]" "LowerSetp[eas]")
-] .
-(ns1:vav_cor ns1:vav_eas) a brick:Variable_Air_Volume_Box_With_Reheat .
-(ns1:vav_cor ns1:vav_eas) brick:feeds (ns1:hvac_cor_zone ns1:hvac_eas_zone) .
-(ns1:vav_cor ns1:vav_eas) brick:hasPoint
-    (ns1:hvac_oveZonActCor_yReaHea_u ns1:hvac_oveZonActEas_yReaHea_u) ,
-    (ns1:hvac_reaZonCor_TSup_y ns1:hvac_reaZonEas_TSup_y) ,
-    (ns1:hvac_oveZonActCor_yDam_u ns1:hvac_oveZonActEas_yDam_u) .
-(ns1:hvac_oveZonSupCor_TZonCooSet_u ns1:hvac_oveZonSupEas_TZonCooSet_u) a brick:Zone_Air_Cooling_Temperature_Setpoint .
-(ns1:hvac_oveZonSupCor_TZonCooSet_u ns1:hvac_oveZonSupEas_TZonCooSet_u) ref:hasExternalReference
-    [
-        a ref:TimeseriesReference ;
-        ref:hasTimeseriesId ("LowerSetp[cor]" "LowerSetp[eas]") ;
-        ref:onTable ("LowerSetp[cor]" "LowerSetp[eas]") ;
-        ref:storedAt ("LowerSetp[cor]" "LowerSetp[eas]")
-    ] ,
-    [
+(ns1:hvac_reaZonCor_V_flow_y ns1:hvac_reaZonEas_V_flow_y) a brick:Discharge_Air_Flow_Sensor ;
+    ref:hasExternalReference [
         ref:hasTimeseriesId ("LowerSetp[cor]" "LowerSetp[eas]")
     ] .
-(ns1:hvac_oveZonSupCor_TZonHeaSet_u ns1:hvac_oveZonSupEas_TZonHeaSet_u) a brick:Zone_Air_Heating_Temperature_Setpoint .
-(ns1:hvac_oveZonSupCor_TZonHeaSet_u ns1:hvac_oveZonSupEas_TZonHeaSet_u) ref:hasExternalReference
-    [
-        a ref:TimeseriesReference ;
-        ref:hasTimeseriesId ("LowerSetp[cor]" "LowerSetp[eas]") ;
-        ref:onTable ("LowerSetp[cor]" "LowerSetp[eas]") ;
-        ref:storedAt ("LowerSetp[cor]" "LowerSetp[eas]")
-    ] ,
-    [
+(ns1:hvac_reaAhu_dp_sup_y) a brick:Discharge_Air_Static_Pressure_Sensor ;
+    ref:hasExternalReference [
         ref:hasTimeseriesId ("LowerSetp[cor]" "LowerSetp[eas]")
     ] .
-(ns1:hvac_reaZonCor_TZon_y ns1:hvac_reaZonEas_TZon_y) a brick:Zone_Air_Temperature_Sensor .
-(ns1:hvac_reaZonCor_TZon_y ns1:hvac_reaZonEas_TZon_y) ref:hasExternalReference
-    [
-        a ref:TimeseriesReference ;
-        ref:hasTimeseriesId ("LowerSetp[cor]" "LowerSetp[eas]") ;
-        ref:onTable ("LowerSetp[cor]" "LowerSetp[eas]") ;
-        ref:storedAt ("LowerSetp[cor]" "LowerSetp[eas]")
-    ] ,
-    [
+(ns1:hvac_reaZonCor_TSup_y ns1:hvac_reaZonEas_TSup_y) a brick:Discharge_Air_Temperature_Sensor ;
+    ref:hasExternalReference [
         ref:hasTimeseriesId ("LowerSetp[cor]" "LowerSetp[eas]")
     ] .
+(ns1:chi_reaPChi_y ns1:chi_reaPPumDis_y) a brick:Electric_Power_Sensor ;
+    ref:hasExternalReference
+        [
+            a ref:TimeseriesReference ;
+            ref:hasTimeseriesId ("LowerSetp[cor]" "LowerSetp[eas]") ;
+            ref:onTable ("LowerSetp[cor]" "LowerSetp[eas]") ;
+            ref:storedAt ("LowerSetp[cor]" "LowerSetp[eas]")
+        ] ,
+        [
+            ref:hasTimeseriesId ("LowerSetp[cor]" "LowerSetp[eas]")
+        ] .
+(ns1:hvac_cor_zone ns1:hvac_eas_zone) a brick:HVAC_Zone ;
+    rdfs:label ("hvac_cor_zone" "hvac_eas_zone") ;
+    brick:hasPoint
+        (ns1:hvac_reaZonCor_TZon_y ns1:hvac_reaZonEas_TZon_y) ,
+        (ns1:hvac_oveZonSupCor_TZonHeaSet_u ns1:hvac_oveZonSupEas_TZonHeaSet_u) ,
+        (ns1:hvac_oveZonSupCor_TZonCooSet_u ns1:hvac_oveZonSupEas_TZonCooSet_u) ,
+        (ns1:occ_cor ns1:occ_eas) ,
+        (ns1:LowerSetp_cor ns1:LowerSetp_eas) ,
+        (ns1:UpperSetp_cor ns1:UpperSetp_eas) ,
+        (ns1:hvac_reaZonCor_V_flow_y ns1:hvac_reaZonEas_V_flow_y) ,
+        (ns1:hvac_reaZonCor_CO2Zon_y ns1:hvac_reaZonEas_CO2Zon_y) .
+(ns1:heating_coil) a brick:Heating_Coil ;
+    brick:hasPoint
+        (ns1:chi_reaPChi_y ns1:chi_reaPPumDis_y) ,
+        rdfs:Resource ;
+    brick:isFedBy (ns1:chi_pump ns1:heat_pump) .
+(ns1:hwd_pump) a brick:Hot_Water_Pump ;
+    brick:hasPoint (ns1:chi_reaPChi_y ns1:chi_reaPPumDis_y) .
+(ns1:UpperSetp_cor ns1:UpperSetp_eas) a brick:Max_Air_Temperature_Setpoint ;
+    ref:hasExternalReference
+        [
+            a ref:TimeseriesReference ;
+            ref:hasTimeseriesId ("LowerSetp[cor]" "LowerSetp[eas]") ;
+            ref:onTable ("LowerSetp[cor]" "LowerSetp[eas]") ;
+            ref:storedAt ("LowerSetp[cor]" "LowerSetp[eas]")
+        ] ,
+        [
+            ref:hasTimeseriesId ("LowerSetp[cor]" "LowerSetp[eas]")
+        ] .
+(ns1:LowerSetp_cor ns1:LowerSetp_eas) a brick:Min_Air_Temperature_Setpoint ;
+    ref:hasExternalReference
+        [
+            a ref:TimeseriesReference ;
+            ref:hasTimeseriesId ("LowerSetp[cor]" "LowerSetp[eas]") ;
+            ref:onTable ("LowerSetp[cor]" "LowerSetp[eas]") ;
+            ref:storedAt ("LowerSetp[cor]" "LowerSetp[eas]")
+        ] ,
+        [
+            ref:hasTimeseriesId ("LowerSetp[cor]" "LowerSetp[eas]")
+        ] .
+(ns1:hvac_reaAhu_TMix_y) a brick:Mixed_Air_Temperature_Sensor ;
+    ref:hasExternalReference [
+        ref:hasTimeseriesId ("LowerSetp[cor]" "LowerSetp[eas]")
+    ] .
+(ns1:occ_cor ns1:occ_eas) a brick:Occupancy_Sensor ;
+    ref:hasExternalReference
+        [
+            a ref:TimeseriesReference ;
+            ref:hasTimeseriesId ("LowerSetp[cor]" "LowerSetp[eas]") ;
+            ref:onTable ("LowerSetp[cor]" "LowerSetp[eas]") ;
+            ref:storedAt ("LowerSetp[cor]" "LowerSetp[eas]")
+        ] ,
+        [
+            ref:hasTimeseriesId ("LowerSetp[cor]" "LowerSetp[eas]")
+        ] .
+(ns1:chi_pump ns1:heat_pump) a brick:Pump ;
+    brick:feeds (ns1:hwd_pump) ;
+    brick:hasPoint (ns1:chi_reaPChi_y ns1:chi_reaPPumDis_y) .
+(ns1:hvac_reaAhu_V_flow_ret_y) a brick:Return_Air_Flow_Sensor ;
+    ref:hasExternalReference [
+        ref:hasTimeseriesId ("LowerSetp[cor]" "LowerSetp[eas]")
+    ] .
+(ns1:hvac_reaAhu_TRet_y) a brick:Return_Air_Temperature_Sensor ;
+    ref:hasExternalReference [
+        ref:hasTimeseriesId ("LowerSetp[cor]" "LowerSetp[eas]")
+    ] .
+(ns1:hvac_reaAhu_V_flow_sup_y) a brick:Supply_Air_Flow_Sensor ;
+    ref:hasExternalReference [
+        ref:hasTimeseriesId ("LowerSetp[cor]" "LowerSetp[eas]")
+    ] .
+(ns1:hvac_reaAhu_TSup_y) a brick:Supply_Air_Temperature_Sensor ;
+    ref:hasExternalReference [
+        ref:hasTimeseriesId ("LowerSetp[cor]" "LowerSetp[eas]")
+    ] .
+(ns1:hvac_oveAhu_TSupSet_u) a brick:Supply_Air_Temperature_Setpoint ;
+    ref:hasExternalReference [
+        ref:hasTimeseriesId ("LowerSetp[cor]" "LowerSetp[eas]")
+    ] .
+(ns1:hvac_fanSup) a brick:Supply_Fan ;
+    brick:hasPoint
+        (ns1:chi_reaPChi_y ns1:chi_reaPPumDis_y) ,
+        (ns1:hvac_reaAhu_dp_sup_y) .
+(ns1:hvac_oveZonActCor_yReaHea_u ns1:hvac_oveZonActEas_yReaHea_u) a brick:Valve_Command ;
+    ref:hasExternalReference [
+        ref:hasTimeseriesId ("LowerSetp[cor]" "LowerSetp[eas]")
+    ] .
+(ns1:vav_cor ns1:vav_eas) a brick:Variable_Air_Volume_Box_With_Reheat ;
+    brick:feeds (ns1:hvac_cor_zone ns1:hvac_eas_zone) ;
+    brick:hasPoint
+        (ns1:hvac_oveZonActCor_yReaHea_u ns1:hvac_oveZonActEas_yReaHea_u) ,
+        (ns1:hvac_reaZonCor_TSup_y ns1:hvac_reaZonEas_TSup_y) ,
+        (ns1:hvac_oveZonActCor_yDam_u ns1:hvac_oveZonActEas_yDam_u) .
+(ns1:hvac_oveZonSupCor_TZonCooSet_u ns1:hvac_oveZonSupEas_TZonCooSet_u) a brick:Zone_Air_Cooling_Temperature_Setpoint ;
+    ref:hasExternalReference
+        [
+            a ref:TimeseriesReference ;
+            ref:hasTimeseriesId ("LowerSetp[cor]" "LowerSetp[eas]") ;
+            ref:onTable ("LowerSetp[cor]" "LowerSetp[eas]") ;
+            ref:storedAt ("LowerSetp[cor]" "LowerSetp[eas]")
+        ] ,
+        [
+            ref:hasTimeseriesId ("LowerSetp[cor]" "LowerSetp[eas]")
+        ] .
+(ns1:hvac_oveZonSupCor_TZonHeaSet_u ns1:hvac_oveZonSupEas_TZonHeaSet_u) a brick:Zone_Air_Heating_Temperature_Setpoint ;
+    ref:hasExternalReference
+        [
+            a ref:TimeseriesReference ;
+            ref:hasTimeseriesId ("LowerSetp[cor]" "LowerSetp[eas]") ;
+            ref:onTable ("LowerSetp[cor]" "LowerSetp[eas]") ;
+            ref:storedAt ("LowerSetp[cor]" "LowerSetp[eas]")
+        ] ,
+        [
+            ref:hasTimeseriesId ("LowerSetp[cor]" "LowerSetp[eas]")
+        ] .
+(ns1:hvac_reaZonCor_TZon_y ns1:hvac_reaZonEas_TZon_y) a brick:Zone_Air_Temperature_Sensor ;
+    ref:hasExternalReference
+        [
+            a ref:TimeseriesReference ;
+            ref:hasTimeseriesId ("LowerSetp[cor]" "LowerSetp[eas]") ;
+            ref:onTable ("LowerSetp[cor]" "LowerSetp[eas]") ;
+            ref:storedAt ("LowerSetp[cor]" "LowerSetp[eas]")
+        ] ,
+        [
+            ref:hasTimeseriesId ("LowerSetp[cor]" "LowerSetp[eas]")
+        ] .

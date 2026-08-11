@@ -13,6 +13,12 @@
 //!   repeat the subject on its own near-duplicate line each time, these
 //!   share one statement via Turtle's object-list comma syntax, with each
 //!   object on its own indented continuation line.
+//! - **Multiple predicates on one subject.** Likewise, a subject with
+//!   several different predicates (its own `a`, `brick:feeds`,
+//!   `brick:hasPoint`, ...) shares one statement via Turtle's
+//!   predicateObjectList semicolon syntax instead of repeating the subject
+//!   once per predicate, e.g. `(ex:vav_cor ex:vav_eas) a brick:VAV ;
+//!   brick:feeds (...) ; brick:hasPoint (...) .`.
 //! - **Prefixes.** Every IRI namespace actually used in the output gets a
 //!   `@prefix` binding: the crate's own known short names (`brick:`, `ex:`,
 //!   ...) where they apply, else an auto-numbered `ns1:`, `ns2:`, ... -
@@ -104,34 +110,70 @@ pub fn example_turtle(class_graph: &RdfGraph, member_graph: &RdfGraph, example_c
     let mut referenced: HashSet<NamedNode> = HashSet::new();
     visiting.clear();
 
-    // Group by (subject, predicate): a subject class often relates to
-    // several different object classes through the same predicate (e.g.
-    // several `brick:hasPoint` rows), which otherwise means several
-    // near-duplicate top-level lines repeating the same subject list. Turtle's
-    // standard object-list comma syntax says that once.
-    let mut grouped: HashMap<(NamedOrBlankNode, NamedNode), Vec<Term>> = HashMap::new();
+    // Group by (subject, predicate) first: a subject class often relates
+    // to several different object classes through the same predicate
+    // (e.g. several `brick:hasPoint` rows), which otherwise means several
+    // near-duplicate lines repeating the same subject list. Turtle's
+    // object-list comma syntax says that once.
+    let mut by_subject_predicate: HashMap<(NamedOrBlankNode, NamedNode), Vec<Term>> = HashMap::new();
     for t in &top_level {
-        grouped.entry((t.subject.clone(), t.predicate.clone())).or_default().push(t.object.clone());
+        by_subject_predicate.entry((t.subject.clone(), t.predicate.clone())).or_default().push(t.object.clone());
     }
-    let mut group_keys: Vec<(NamedOrBlankNode, NamedNode)> = grouped.keys().cloned().collect();
-    group_keys.sort_by_key(|(s, p)| (Term::from(s.clone()).to_string(), p.as_str().to_string()));
 
-    for key in &group_keys {
-        let (subject, predicate) = key;
-        let objects = &grouped[key];
+    // Then group *those* by subject alone: a subject with several
+    // predicates (e.g. its own `a`, `brick:feeds`, `brick:hasPoint`, ...)
+    // otherwise means repeating that same subject list once per predicate
+    // too. Turtle's predicateObjectList semicolon syntax says the subject
+    // once, with every predicate (and its own object-list, if it has more
+    // than one object) indented underneath.
+    let mut by_subject: HashMap<NamedOrBlankNode, Vec<NamedNode>> = HashMap::new();
+    for (subject, predicate) in by_subject_predicate.keys() {
+        by_subject.entry(subject.clone()).or_default().push(predicate.clone());
+    }
+    let mut subjects: Vec<NamedOrBlankNode> = by_subject.keys().cloned().collect();
+    subjects.sort_by_key(|s| Term::from(s.clone()).to_string());
+
+    for subject in &subjects {
+        let mut predicates = by_subject[subject].clone();
+        predicates.sort_by_key(|p| p.as_str().to_string());
+
         let subject_text =
             render_position(&Term::from(subject.clone()), &members_by_class, &blank_class_properties, &prefixes, &mut referenced, &mut visiting, 0);
-        let predicate_text = if *predicate == *namespace::A { "a".to_string() } else { prefixes.abbreviate(predicate.as_str()) };
 
-        if let [object] = objects.as_slice() {
-            let object_text = render_position(object, &members_by_class, &blank_class_properties, &prefixes, &mut referenced, &mut visiting, 0);
-            out.push_str(&format!("{subject_text} {predicate_text} {object_text} .\n"));
+        // The first predicate-object shares the subject's own line (indent
+        // level 0 for its own object-list continuation, if any); every
+        // subsequent one gets its own `;`-prefixed, once-indented line
+        // (so its object-list continuation, if any, indents one level
+        // further still, to nest visibly underneath it).
+        let entries: Vec<String> = predicates
+            .iter()
+            .enumerate()
+            .map(|(i, predicate)| {
+                let objects = &by_subject_predicate[&(subject.clone(), predicate.clone())];
+                let predicate_text = if *predicate == *namespace::A { "a".to_string() } else { prefixes.abbreviate(predicate.as_str()) };
+                // Where the predicate text itself sits: 0 for the first
+                // (shares the subject's unindented line), 1 for the rest
+                // (each on its own once-indented, `;`-prefixed line).
+                let predicate_indent = if i == 0 { 0 } else { 1 };
+                render_predicate_objects(
+                    &predicate_text,
+                    objects,
+                    predicate_indent,
+                    &members_by_class,
+                    &blank_class_properties,
+                    &prefixes,
+                    &mut referenced,
+                    &mut visiting,
+                )
+            })
+            .collect();
+
+        if let [only] = entries.as_slice() {
+            out.push_str(&format!("{subject_text} {only} .\n"));
         } else {
-            let object_lines: Vec<String> = objects
-                .iter()
-                .map(|o| format!("    {}", render_position(o, &members_by_class, &blank_class_properties, &prefixes, &mut referenced, &mut visiting, 1)))
-                .collect();
-            out.push_str(&format!("{subject_text} {predicate_text}\n{} .\n", object_lines.join(" ,\n")));
+            let (first, rest) = entries.split_first().expect("entries has at least 2 elements in this branch");
+            let indented_rest: Vec<String> = rest.iter().map(|e| format!("    {e}")).collect();
+            out.push_str(&format!("{subject_text} {first} ;\n{} .\n", indented_rest.join(" ;\n")));
         }
     }
 
@@ -261,6 +303,38 @@ fn observe_iri(namespaces: &mut HashSet<String>, iri: &str) {
     let (ns, local) = split_namespace(iri);
     if !ns.is_empty() && is_safe_pn_local(local) {
         namespaces.insert(ns.to_string());
+    }
+}
+
+/// Renders `predicate` and its object(s) as a Turtle predicateObjectList
+/// entry - no leading subject, no trailing punctuation: `"predicate
+/// object"` for one object, or `"predicate\n<indent>object1 ,\n<indent>
+/// object2"` for several, each additional object on its own line indented
+/// one level deeper than `predicate_indent` (where the predicate text
+/// itself sits, so a nested nested `[ ... ]` object still aligns under
+/// whichever line it's actually attached to).
+#[allow(clippy::too_many_arguments)]
+fn render_predicate_objects(
+    predicate_text: &str,
+    objects: &[Term],
+    predicate_indent: usize,
+    members_by_class: &HashMap<NamedNode, Vec<Term>>,
+    blank_class_properties: &ClassProperties,
+    prefixes: &PrefixTable,
+    referenced: &mut HashSet<NamedNode>,
+    visiting: &mut HashSet<NamedNode>,
+) -> String {
+    if let [object] = objects {
+        let object_text = render_position(object, members_by_class, blank_class_properties, prefixes, referenced, visiting, predicate_indent);
+        format!("{predicate_text} {object_text}")
+    } else {
+        let object_list_indent = predicate_indent + 1;
+        let indent_str = "    ".repeat(object_list_indent);
+        let object_lines: Vec<String> = objects
+            .iter()
+            .map(|o| format!("{indent_str}{}", render_position(o, members_by_class, blank_class_properties, prefixes, referenced, visiting, object_list_indent)))
+            .collect();
+        format!("{predicate_text}\n{}", object_lines.join(" ,\n"))
     }
 }
 

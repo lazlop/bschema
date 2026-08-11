@@ -12,29 +12,20 @@ const TTL: &str = r#"
     ex:point_2 a brick:Sensor .
 "#;
 
-/// Finds the single `... brick:hasPoint ... .` line in the example Turtle
-/// text (there's exactly one `hasPoint` class-pattern triple for this data).
-fn has_point_line(turtle: &str) -> &str {
-    turtle
-        .lines()
-        .find(|l| l.contains("hasPoint"))
-        .unwrap_or_else(|| panic!("expected a hasPoint line in:\n{turtle}"))
-}
-
 #[test]
 fn substitutes_bs_classes_with_member_collections() {
     let data_graph = RdfGraph::parse_str(TTL, RdfFormat::Turtle).unwrap();
     let result = create_bschema(&data_graph, 10, None, true, true).unwrap();
     let turtle = result.example_turtle(2).unwrap();
 
-    let line = has_point_line(&turtle);
-
     // Both AHUs and both points should show up as real ex: instance names,
-    // grouped into parenthesized Turtle collections on each side.
-    assert!(line.contains("(ex:AHU_1 ex:AHU_2)") || line.contains("(ex:AHU_2 ex:AHU_1)"));
-    assert!(line.contains("(ex:point_1 ex:point_2)") || line.contains("(ex:point_2 ex:point_1)"));
-    assert!(line.contains("brick:hasPoint"));
-    assert!(line.trim_end().ends_with('.'));
+    // grouped into parenthesized Turtle collections - the AHU collection
+    // as the subject (shared across its `a` and `brick:hasPoint` lines via
+    // a semicolon-joined predicateObjectList), the point collection as
+    // hasPoint's object.
+    assert!(turtle.contains("(ex:AHU_1 ex:AHU_2)") || turtle.contains("(ex:AHU_2 ex:AHU_1)"), "got:\n{turtle}");
+    assert!(turtle.contains("(ex:point_1 ex:point_2)") || turtle.contains("(ex:point_2 ex:point_1)"), "got:\n{turtle}");
+    assert!(turtle.contains("brick:hasPoint"), "got:\n{turtle}");
 }
 
 #[test]
@@ -43,11 +34,10 @@ fn example_count_caps_the_collection_size() {
     let result = create_bschema(&data_graph, 10, None, true, true).unwrap();
     let turtle = result.example_turtle(1).unwrap();
 
-    let line = has_point_line(&turtle);
     // Exactly one member per side: a singleton collection, not a pair.
-    assert!(line.contains("(ex:AHU_1)") || line.contains("(ex:AHU_2)"));
-    assert!(line.contains("(ex:point_1)") || line.contains("(ex:point_2)"));
-    assert!(!line.contains("AHU_1 ex:AHU_2") && !line.contains("AHU_2 ex:AHU_1"));
+    assert!(turtle.contains("(ex:AHU_1)") || turtle.contains("(ex:AHU_2)"), "got:\n{turtle}");
+    assert!(turtle.contains("(ex:point_1)") || turtle.contains("(ex:point_2)"), "got:\n{turtle}");
+    assert!(!turtle.contains("AHU_1 ex:AHU_2") && !turtle.contains("AHU_2 ex:AHU_1"), "got:\n{turtle}");
 }
 
 #[test]
@@ -135,6 +125,37 @@ fn groups_repeated_subject_predicate_pairs_with_an_object_list() {
 
     assert!(turtle.contains("(ex:tempA_1 ex:tempA_2)"), "got:\n{turtle}");
     assert!(turtle.contains("(ex:tempB_1 ex:tempB_2)"), "got:\n{turtle}");
+}
+
+const TTL_WITH_MULTIPLE_PREDICATES: &str = r#"
+    @prefix ex: <urn:example#> .
+    @prefix brick: <https://brickschema.org/schema/Brick#> .
+
+    ex:vav_cor a brick:VAV ; brick:feeds ex:zone_cor ; brick:hasPoint ex:pt_cor .
+    ex:vav_eas a brick:VAV ; brick:feeds ex:zone_eas ; brick:hasPoint ex:pt_eas .
+    ex:zone_cor a brick:Zone .
+    ex:zone_eas a brick:Zone .
+    ex:pt_cor a brick:Sensor .
+    ex:pt_eas a brick:Sensor .
+"#;
+
+#[test]
+fn groups_multiple_predicates_for_the_same_subject_with_a_semicolon_list() {
+    // The two VAVs each have three predicates (a, brick:feeds,
+    // brick:hasPoint) - that's three class_graph rows sharing the same
+    // subject, which should collapse into one Turtle statement using the
+    // standard predicateObjectList semicolon syntax, rather than repeating
+    // the same subject list once per predicate.
+    let data_graph = RdfGraph::parse_str(TTL_WITH_MULTIPLE_PREDICATES, RdfFormat::Turtle).unwrap();
+    let result = create_bschema(&data_graph, 10, None, true, true).unwrap();
+    let turtle = result.example_turtle(2).unwrap();
+
+    let expected =
+        "(ex:vav_cor ex:vav_eas) a brick:VAV ;\n    brick:feeds (ex:zone_cor ex:zone_eas) ;\n    brick:hasPoint (ex:pt_cor ex:pt_eas) .";
+    assert!(turtle.contains(expected), "expected:\n{expected}\n\ngot:\n{turtle}");
+
+    let occurrences = turtle.matches("(ex:vav_cor ex:vav_eas)").count() + turtle.matches("(ex:vav_eas ex:vav_cor)").count();
+    assert_eq!(occurrences, 1, "expected the subject list to appear exactly once, not once per predicate, got:\n{turtle}");
 }
 
 const TTL_WITH_A_BLANK_LITERAL_MEMBER: &str = r#"

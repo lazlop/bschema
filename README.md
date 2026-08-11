@@ -143,6 +143,15 @@ keeping the output actually readable:
       (ns1:hvac_reaZonCor_TZon_y ns1:hvac_reaZonEas_TZon_y) ,
       (ns1:hvac_oveZonSupCor_TZonHeaSet_u ns1:hvac_oveZonSupEas_TZonHeaSet_u) .
   ```
+- **Multiple predicates on one subject.** Likewise, a subject with several
+  different predicates shares one statement via Turtle's
+  predicateObjectList semicolon syntax instead of repeating the subject
+  once per predicate:
+  ```turtle
+  (ns1:vav_cor ns1:vav_eas) a brick:Variable_Air_Volume_Box_With_Reheat ;
+      brick:feeds (ns1:hvac_cor_zone ns1:hvac_eas_zone) ;
+      brick:hasPoint (...) .
+  ```
 - **Prefixes.** Every namespace used in the output gets a `@prefix`
   binding — the crate's own known short names (`brick:`, `ex:`, ...) where
   they apply, else an auto-numbered `ns1:`, `ns2:`, ... Nothing is left as
