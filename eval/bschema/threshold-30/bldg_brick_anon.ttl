@@ -574,7 +574,7 @@ bs:Override_Command_version_1 a brick:Override_Command ;
     ref:hasExternalReference bs:BACnetReference_version_1 .
 
 bs:Port_version_1 a bacnet:Port ;
-    ref:storedAt rdfs:Literal .
+    ref:storedAt bs:Literal_version_1 .
 
 bs:Pump_Command_version_1 a brick:Pump_Command ;
     s223:hasExternalReference bs:BACnetReference_version_1 ;
@@ -724,7 +724,7 @@ bs:Zone_Air_Humidity_Setpoint_version_1 a brick:Zone_Air_Humidity_Setpoint ;
     ref:hasExternalReference bs:BACnetReference_version_1 .
 
 bs:ukWxk1OT528_version_1 a bacnet:ukWxk1OT528 ;
-    bacnet:device-instance rdfs:Literal ;
+    bacnet:device-instance bs:Literal_version_1 ;
     bacnet:hasPort bs:Port_version_1 .
 
 bs:Active_Power_Sensor_version_1 a brick:Active_Power_Sensor ;
@@ -744,10 +744,6 @@ bs:Air_Differential_Pressure_Sensor_version_1 a brick:Air_Differential_Pressure_
     brick:isPointOf bs:AHU_version_1,
         bs:Exhaust_Fan_version_2 ;
     ref:hasExternalReference bs:BACnetReference_version_1 .
-
-bs:BACnetReference_version_2 a ref:BACnetReference ;
-    bacnet:ReadableProperty rdfs:Literal ;
-    bacnet:object-name rdfs:Literal .
 
 bs:Building_version_1 a brick:Building,
         rec:Building ;
@@ -1413,16 +1409,14 @@ bs:Max_Water_Temperature_Setpoint_version_1 a brick:Max_Water_Temperature_Setpoi
         <urn:bldg#bldg.CW.BLOW.DOWN_FLOW>,
         <urn:bldg#bldg.CW.MAKE.UP_FLOW.V>,
         <urn:bldg#bldg_Water_Meter> ;
-    s223:hasExternalReference bs:BACnetReference_version_1,
-        bs:BACnetReference_version_2 ;
+    s223:hasExternalReference bs:BACnetReference_version_1 ;
     brick:hasPoint bs:Water_Flow_Sensor_version_1 ;
     brick:hasSubstance rdfs:Resource ;
     brick:hasUnit unit:GAL_US ;
     brick:isPointOf bs:Thermal_Power_Meter_version_1,
         bs:Water_Loop_version_1 ;
     brick:meters bs:Water_Loop_version_1 ;
-    ref:hasExternalReference bs:BACnetReference_version_1,
-        bs:BACnetReference_version_2 .
+    ref:hasExternalReference bs:BACnetReference_version_1 .
 
 bs:Outside_Damper_version_1 a brick:Outside_Damper ;
     brick:hasPoint bs:Damper_Position_Command_version_1,
@@ -1808,6 +1802,8 @@ bs:IDF_version_1 a brick:IDF,
     rec:isFedBy bs:VAV_version_1 ;
     rec:isLocationOf bs:VAV_version_1 ;
     rec:locatedIn bs:Floor_version_1 .
+
+bs:Literal_version_1 a rdfs:Literal .
 
 bs:Operating_Mode_Status_version_1 a brick:Operating_Mode_Status ;
     s223:hasExternalReference bs:BACnetReference_version_1 ;
@@ -3256,10 +3252,10 @@ bs:RVAV_version_1 a brick:RVAV,
         bs:Team_Room_version_1 .
 
 bs:BACnetReference_version_1 a ref:BACnetReference ;
-    bacnet:ReadableProperty rdfs:Literal ;
-    bacnet:description rdfs:Literal ;
-    bacnet:object-identifier rdfs:Literal ;
-    bacnet:object-name rdfs:Literal ;
-    bacnet:object-type rdfs:Literal ;
+    bacnet:ReadableProperty bs:Literal_version_1 ;
+    bacnet:description bs:Literal_version_1 ;
+    bacnet:object-identifier bs:Literal_version_1 ;
+    bacnet:object-name bs:Literal_version_1 ;
+    bacnet:object-type bs:Literal_version_1 ;
     bacnet:objectOf bs:ukWxk1OT528_version_1 .
 

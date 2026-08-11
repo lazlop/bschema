@@ -111,7 +111,14 @@ class_graph, member_graph, iterations = create_bschema_from_file("model.ttl")
 - `iterations` (default `10`) — max number of relabeling passes.
 - `similarity_threshold` (default `None`) — if set, groups subjects whose
   class-pattern subgraphs overlap above this ratio (0–1), instead of
-  requiring exact isomorphism.
+  requiring exact isomorphism. **Known caveat:** at `0.0` (merge on any
+  shared pattern triple at all), literals now participate in this matching
+  too, and can supply a triple that's trivially shared by almost every
+  instance of a type (e.g. many properties resolving to the same derived
+  literal class). On some real models this has been observed to merge
+  instances that shouldn't be merged (e.g. distinct physical-quantity types
+  collapsing into one class) - see the discussion on PR #1. Prefer a
+  threshold of `0.3` or higher, or `None`, until this is addressed.
 - `remove_added_labels` (default `True`) — strip the `bs:` classes the
   algorithm added from the output class graph.
 - `use_original_names` (default `True`) — derive new class names from the

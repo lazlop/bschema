@@ -71,7 +71,7 @@ bs:Run_Request_Command_version_1 a brick:Run_Request_Command ;
 bs:Storey_version_1 a brick:Storey ;
     brick:hasPart bs:Space_version_1 ;
     brick:isLocationOf bs:Terminal_Unit_version_1 ;
-    ref:hasExternalReference bs:Resource_version_2 ;
+    ref:hasExternalReference bs:Resource_version_1 ;
     s4bldg:contains bs:Terminal_Unit_version_1 .
 
 bs:Temperature_Sensor_version_1 a brick:Temperature_Sensor,
@@ -92,22 +92,19 @@ bs:Temperature_version_1 a quantitykind:Temperature,
 bs:Terminal_Unit_version_1 a brick:Terminal_Unit,
         s4bldg:FlowTerminal ;
     brick:hasLocation bs:Storey_version_1 ;
-    ref:hasExternalReference bs:Resource_version_2 .
+    ref:hasExternalReference bs:Resource_version_1 .
 
 bs:IFCReference_version_1 a ref:IFCReference ;
-    ref:ifcGlobalID rdfs:Literal ;
-    ref:ifcName rdfs:Literal .
+    ref:ifcGlobalID bs:Literal_version_1 ;
+    ref:ifcName bs:Literal_version_1 .
 
 bs:Space_version_1 a brick:Space,
         s4bldg:BuildingSpace ;
     brick:isLocationOf bs:Thermostat_version_1 ;
-    ref:hasExternalReference bs:Resource_version_2 ;
+    ref:hasExternalReference bs:Resource_version_1 ;
     s4bldg:contains bs:Thermostat_version_1 .
 
-bs:Resource_version_2 ref:ifcGlobalID rdfs:Literal ;
-    ref:ifcName rdfs:Literal .
-
-bs:Resource_version_1 ref:hasTimeseriesId rdfs:Literal .
+bs:Literal_version_1 a rdfs:Literal .
 
 bs:Thermostat_version_1 a brick:Thermostat,
         s4bldg:UnitaryControlElement ;
@@ -122,7 +119,7 @@ bs:Thermostat_version_1 a brick:Thermostat,
         bs:Run_Request_Command_version_1,
         bs:Temperature_Sensor_version_1,
         bs:Temperature_Setpoint_version_1 ;
-    ref:hasExternalReference bs:Resource_version_2 ;
+    ref:hasExternalReference bs:Resource_version_1 ;
     saref:consistOf bs:Delay_Parameter_version_1,
         bs:Lockout_Command_version_1,
         bs:Max_Air_Temperature_Setpoint_version_1,
@@ -133,5 +130,9 @@ bs:Thermostat_version_1 a brick:Thermostat,
         bs:Run_Request_Command_version_1,
         bs:Temperature_Sensor_version_1,
         bs:Temperature_Setpoint_version_1 ;
-    s4ener:serialNumber rdfs:Literal .
+    s4ener:serialNumber bs:Literal_version_1 .
+
+bs:Resource_version_1 ref:hasTimeseriesId bs:Literal_version_1 ;
+    ref:ifcGlobalID bs:Literal_version_1 ;
+    ref:ifcName bs:Literal_version_1 .
 

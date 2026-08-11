@@ -13,6 +13,21 @@ def remove_triples(g, g2):
         g.remove(triple)
 
 
+def serialize_turtle_safe(g, file_path):
+    """Serializes `g` as Turtle, falling back to N-Triples (still valid
+    Turtle syntax, just unprettified/unsorted) if rdflib's Turtle serializer
+    crashes. This happens on some real building data containing
+    "NaN"^^xsd:double placeholder values: rdflib sorts each subject's
+    property list by comparing Literal values, and Python's Decimal("NaN")
+    comparisons raise InvalidOperation instead of just sorting arbitrarily.
+    """
+    try:
+        g.serialize(file_path, format="turtle")
+    except Exception as e:
+        print(f"Warning: Turtle serialization failed for {file_path} ({e}); falling back to N-Triples")
+        g.serialize(file_path, format="nt")
+
+
 def get_graphs(directory_path):
     for file_name in os.listdir(directory_path):
         if file_name.endswith(".ttl"):
@@ -117,12 +132,12 @@ if __name__ == "__main__":
             bschema_file_name = 'bschema/' + threshold_path + file_name
             os.makedirs(os.path.dirname(bschema_file_name), exist_ok=True)
             bind_prefixes(cg)
-            cg.serialize(bschema_file_name, format="turtle")
+            serialize_turtle_safe(cg, bschema_file_name)
 
             member_file_name = 'bschema-members/' + threshold_path + file_name
             os.makedirs(os.path.dirname(member_file_name), exist_ok=True)
             bind_prefixes(mg)
-            mg.serialize(member_file_name, format="turtle")
+            serialize_turtle_safe(mg, member_file_name)
 
             print(f"File: {file_name}, Threshold: {threshold}, compressed to {len(cg)/g_len*100:.2f}% of its original size")
 
